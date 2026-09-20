@@ -65,5 +65,12 @@ Sau khi xong task, báo cáo theo mẫu:
 - Out of scope: [vấn đề phát hiện thêm]
 - Cập nhật các file trong `AI/` tương ứng (`PROJECT_STATE.md`, `TASKS.md`, `CHANGELOG.md`).
 
-## 7. MỤC TIÊU CUỐI CÙNG
+## 7. QUY TẮC QUẢN LÝ GIT & GITHUB (GIT CONTROL PROTOCOL - STRICT)
+- **TUYỆT ĐỐI KHÔNG tự động `git commit` hoặc `git push`**: Mọi thao tác commit và push hoàn toàn do User tự quyết định và quản lý.
+- Mọi thay đổi mã nguồn, tài liệu chỉ được chỉnh sửa trực tiếp trên file (Working Directory).
+- Chỉ thực hiện `git commit` hoặc `git push` khi User chỉ định đích danh câu lệnh (ví dụ: "commit cho tôi", "push lên git").
+
+
+## 8. MỤC TIÊU CUỐI CÙNG
 CORRECTNESS > CONSISTENCY > TRACEABILITY > MAINTAINABILITY > SPEED.
+

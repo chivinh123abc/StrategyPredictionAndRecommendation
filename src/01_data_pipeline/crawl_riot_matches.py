@@ -17,45 +17,38 @@ import requests
 import pandas as pd
 from datetime import datetime
 
-# Xác định đường dẫn thư mục gốc dự án
+# Thêm thư mục gốc vào sys.path để luôn tìm thấy module cấu hình trong src/config
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 if os.path.basename(BASE_DIR) == "01_data_pipeline":
     BASE_DIR = os.path.dirname(os.path.dirname(BASE_DIR))
+if BASE_DIR not in sys.path:
+    sys.path.insert(0, BASE_DIR)
 
-# Hàm nạp cấu hình từ .env (chuẩn thư viện chuẩn Python, không cần cài package ngoài)
-def load_dotenv_custom(env_path):
-    if os.path.exists(env_path):
-        with open(env_path, "r", encoding="utf-8") as f:
-            for line in f:
-                line = line.strip()
-                if line and not line.startswith("#") and "=" in line:
-                    key, val = line.split("=", 1)
-                    os.environ.setdefault(key.strip(), val.strip().strip('"').strip("'"))
+SRC_DIR = os.path.join(BASE_DIR, "src")
+if SRC_DIR not in sys.path:
+    sys.path.insert(0, SRC_DIR)
 
-load_dotenv_custom(os.path.join(BASE_DIR, ".env"))
+try:
+    from src.config import (
+        ACTIVE_SERVERS,
+        OUTPUT_CSV,
+        OUTPUT_DB,
+        RIOT_API_KEY,
+        SERVER_METADATA,
+        TARGET_MATCHES_PER_SERVER,
+    )
+except (ImportError, ModuleNotFoundError):
+    from config import (
+        ACTIVE_SERVERS,
+        OUTPUT_CSV,
+        OUTPUT_DB,
+        RIOT_API_KEY,
+        SERVER_METADATA,
+        TARGET_MATCHES_PER_SERVER,
+    )
 
-# Đọc cấu hình từ .env (hoặc biến môi trường hệ thống)
-RIOT_API_KEY = os.getenv("RIOT_API_KEY", "").strip()
-if not RIOT_API_KEY or "xxx" in RIOT_API_KEY:
-    raise ValueError("❌ LỖI BẢO MẬT: Chưa cấu hình RIOT_API_KEY hợp lệ trong file .env!\nHãy mở file .env và dán key của bạn vào: RIOT_API_KEY=\"RGAPI-...\"")
 
-raw_servers = os.getenv("ACTIVE_SERVERS", "vn2,kr")
-ACTIVE_SERVERS = [s.strip() for s in raw_servers.split(",") if s.strip()]
 
-TARGET_MATCHES_PER_SERVER = int(os.getenv("TARGET_MATCHES_PER_SERVER", "50"))
-
-OUTPUT_CSV = os.path.join(BASE_DIR, "data", "processed", "lol_live_ranked_10min.csv")
-OUTPUT_DB = os.path.join(BASE_DIR, "data", "database", "lol_live_data.db")
-os.makedirs(os.path.dirname(OUTPUT_CSV), exist_ok=True)
-os.makedirs(os.path.dirname(OUTPUT_DB), exist_ok=True)
-
-SERVER_METADATA = {
-    "vn2": {"platform": "vn2", "region": "sea", "country": "Vietnam", "label": "Việt Nam (VN2)"},
-    "kr":  {"platform": "kr",  "region": "asia", "country": "Korea", "label": "Hàn Quốc (KR - Đấu trường Hàn & Trung)"},
-    "tw2": {"platform": "tw2", "region": "sea", "country": "Taiwan", "label": "Đài Loan (TW2)"},
-    "na1": {"platform": "na1", "region": "americas", "country": "North America", "label": "Bắc Mỹ (NA1)"},
-    "euw1":{"platform": "euw1", "region": "europe", "country": "Europe", "label": "Tây Âu (EUW1)"}
-}
 
 # ==============================================================================
 # 2. CLASS QUẢN LÝ GỌI API & CHỐNG CHẶN RATE LIMIT (100 req / 2 phút)
@@ -254,7 +247,7 @@ class RiotApiCrawler:
         print(f"-> Trong cơ sở dữ liệu hiện đã có sẵn {len(existing_ids)} trận.")
 
         for idx, puuid in enumerate(puuids):
-            if len(match_ids) + len(existing_ids) >= target_count:
+            if len(match_ids) >= target_count:
                 break
                 
             url = f"https://{self.region}.api.riotgames.com/lol/match/v5/matches/by-puuid/{puuid}/ids?queue=420&type=ranked&start=0&count=20"
@@ -263,7 +256,7 @@ class RiotApiCrawler:
                 for m_id in ids:
                     if m_id not in existing_ids:
                         match_ids.add(m_id)
-                        if len(match_ids) + len(existing_ids) >= target_count:
+                        if len(match_ids) >= target_count:
                             break
                             
             print(f"   - Đã quét xong người chơi {idx+1}/{len(puuids)}: Gom được {len(match_ids)} mã trận mới.", end="\r")

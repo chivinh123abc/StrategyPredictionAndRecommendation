@@ -18,19 +18,20 @@
 
 | Thư mục / File | Trạng thái thực tế | Ghi chú kỹ thuật |
 | :--- | :--- | :--- |
-| `src/01_data_pipeline/crawl_riot_matches.py` | `VERIFIED - WORKING` | File script cào dữ liệu chính thức duy nhất, xử lý timeline 10 phút, lưu SQLite và CSV. Đã nạp biến môi trường từ `.env`. |
+| `src/config/` | `VERIFIED - WORKING` | Package cấu hình trung tâm dự án (`settings.py`, `__init__.py`). Nạp `.env`, thẩm định API key, quản lý đường dẫn và metadata. |
+| `src/01_data_pipeline/` | `VERIFIED - WORKING` | Chứa script cào chính thức `crawl_riot_matches.py` và tài liệu `README.md`. |
 | `.env` / `.env.example` | `VERIFIED - WORKING` | File cấu hình biến môi trường và file mẫu template an toàn. `.gitignore` đã chặn `.env`. |
-| `src/02_preprocessing/` | `EMPTY (FACT)` | Thư mục rỗng, chưa có mã nguồn làm sạch / lọc ngoại lai IQR. |
-| `src/03_database_sql/` | `EMPTY (FACT)` | Thư mục rỗng, chưa có mã nguồn thực thi 5 câu truy vấn SQL nâng cao. |
-| `src/04_hypothesis_testing/` | `EMPTY (FACT)` | Thư mục rỗng, chưa có mã nguồn kiểm định giả thuyết (A/B testing). |
-| `src/05_visualization/` | `EMPTY (FACT)` | Thư mục rỗng, chưa có mã nguồn vẽ bộ 5 biểu đồ EDA 300 DPI. |
-| `src/06_machine_learning/` | `EMPTY (FACT)` | Thư mục rỗng, chưa có mã nguồn huấn luyện mô hình Draft & Snowball. |
-| `src/07_recommender/` | `EMPTY (FACT)` | Thư mục rỗng, chưa có mã nguồn thuật toán gợi ý cấm/chọn. |
+| `src/02_preprocessing/` | `INITIALIZED` | Đã khởi tạo cấu trúc thư mục kèm tài liệu `README.md` quy định luồng xử lý outlier IQR. Sẵn sàng viết code. |
+| `src/03_database_sql/` | `INITIALIZED` | Đã khởi tạo cấu trúc thư mục kèm tài liệu `README.md` đặc tả schema và 5 câu query SQL. Sẵn sàng viết code. |
+| `src/04_hypothesis_testing/` | `INITIALIZED` | Đã khởi tạo cấu trúc thư mục kèm tài liệu `README.md` quy định 3 bài kiểm định Z/t/Chi-square. Sẵn sàng viết code. |
+| `src/05_visualization/` | `INITIALIZED` | Đã khởi tạo cấu trúc thư mục kèm tài liệu `README.md` đặc tả 5 biểu đồ EDA 300 DPI. Sẵn sàng viết code. |
+| `src/06_machine_learning/` | `INITIALIZED` | Đã khởi tạo cấu trúc thư mục kèm tài liệu `README.md` đặc tả mô hình 2 tầng. Sẵn sàng viết code. |
+| `src/07_recommender/` | `INITIALIZED` | Đã khởi tạo cấu trúc thư mục kèm tài liệu `README.md` thuật toán gợi ý cấm/chọn. Sẵn sàng viết code. |
 | `src/api/` | `NOT CREATED (FACT)` | Chưa tạo thư mục mã nguồn Backend FastAPI. |
 | `web/` | `NOT CREATED (FACT)` | Chưa tạo thư mục giao diện Web App. |
 | `mobile_app/` | `NOT CREATED (FACT)` | Chưa tạo thư mục ứng dụng Android (theo kế hoạch là Giai đoạn 2). |
-| `notebooks/` | `EMPTY (FACT)` | Thư mục rỗng, chưa có file `.ipynb` nào. |
-| `reports/figures/` | `EMPTY (FACT)` | Thư mục rỗng, chưa có ảnh biểu đồ nào được xuất ra. |
+| `notebooks/` | `INITIALIZED` | Đã khởi tạo thư mục kèm tài liệu `README.md` phục vụ thử nghiệm `.ipynb`. |
+| `reports/figures/` | `INITIALIZED` | Đã khởi tạo thư mục kèm tài liệu `README.md` sẵn sàng nhận ảnh xuất 300 DPI từ bước EDA. |
 
 ---
 

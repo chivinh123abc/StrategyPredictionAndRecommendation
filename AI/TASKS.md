@@ -10,9 +10,13 @@ Trạng thái:
 
 ## 🟢 GIAI ĐOẠN 1: THU THẬP, LÀM SẠCH & THIẾT KẾ CSDL (CHƯƠNG 2, 5)
 
+- [x] **Task 1.0 [Cả nhóm]: Thiết lập cấu hình tập trung `src/config` & Cấu trúc thư mục Pipeline chuẩn**
+  - *Mục tiêu:* Tạo package cấu hình chuẩn `src/config/` (`settings.py`, `__init__.py`), bảo vệ Riot API key, nạp `.env`. Khởi tạo đầy đủ cây thư mục từ `02` đến `07`, `notebooks/`, `reports/figures/` đi kèm file tài liệu `README.md` chuẩn hóa.
+  - *Kết quả:* Đã hoàn tất và kiểm thử 100% trơn tru.
+
 - [-] **Task 1.1 [Thành viên 1]: Cào dữ liệu Live Rank VN & KR từ Riot Games API**
   - *Mục tiêu:* Tích lũy tối thiểu 500 - 1,000 trận rank cao (VN2 & KR) đạt chuẩn 1NF/3NF vào `data/database/lol_live_data.db`.
-  - *Hiện trạng:* Đã cào được 100 trận đầu tiên (99 VN2, 1 KR). Script đã chạy tốt, key hoạt động. Đang chờ chạy bổ sung thêm máy chủ KR.
+  - *Hiện trạng:* Đã cào được 100 trận đầu tiên (99 VN2, 1 KR). Script đã tích hợp module cấu hình `src.config`, key hoạt động, kết nối Data Dragon 173 tướng ổn định. Đang chờ kích hoạt cào bổ sung máy chủ KR.
   - *Acceptance Criteria:* Bảng `matches_10min` có $\ge 500$ trận, không có giá trị NULL ở các cột chỉ số chính, tỷ lệ VN2 và KR cân bằng hơn.
 
 - [ ] **Task 1.2 [Thành viên 1]: Nạp dữ liệu giải đấu chuyên nghiệp 2026 vào SQLite**

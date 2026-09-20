@@ -62,3 +62,24 @@ Tài liệu ghi nhận tất cả các quyết định kiến trúc, công ngh�
 - **Ngày quyết định:** 2026-09-20
 - **Bối cảnh:** Môn Lập trình Di động chưa học xong các chương nâng cao (Networking, SQLite).
 - **Quyết định:** Tập trung toàn bộ nguồn lực hoàn thành Web App phục vụ môn Khoa học Dữ liệu (Giai đoạn 1). Mobile App sẽ triển khai ở Giai đoạn 2 khi sinh viên đã học đủ bài giảng.
+
+---
+
+### ADR-008: Giữ Kiến trúc Script Cào Độc Lập & Kiểm Soát Git Push Nghiêm Ngặt
+- **Ngày quyết định:** 2026-09-20
+- **Bối cảnh:** Việc phân tách cấu hình ra nhiều file phụ thuộc ngoài luồng (pyproject.toml, logger, config module) làm phát sinh lỗi phân giải đường dẫn của Language Server (Pyrefly) và gây phức tạp hóa không cần thiết.
+- **Quyết định:**
+  - Giữ script [crawl_riot_matches.py](file:///d:/Chivinh/2026_MonHoc/Nhập môn khoa học dữ liệu/Project/src/01_data_pipeline/crawl_riot_matches.py) độc lập, tự xác định `BASE_DIR = os.path.dirname(...)` và tự nạp cấu hình `.env` nội bộ.
+  - Áp dụng quy tắc Git nghiêm ngặt: **Không bao giờ tự ý push lên GitHub** khi chưa có sự xác nhận/lệnh trực tiếp từ User.
+
+---
+
+### ADR-009: Tập trung cấu hình dự án vào package chuẩn `src/config/`
+- **Ngày quyết định:** 2026-09-20
+- **Bối cảnh:** Việc đặt file `config.py` ở ngay thư mục gốc `Project/` khiến cấu trúc bị phân tán ("đứng giữa đường"), không thuộc package `src/` và làm rối không gian làm việc gốc.
+- **Quyết định:** Chuyển toàn bộ cấu hình vào package chuẩn [src/config/](file:///d:/Chivinh/2026_MonHoc/Nhập%20môn%20khoa%20học%20dữ%20liệu/Project/src/config/) gồm `settings.py` và `__init__.py`. Xóa hoàn toàn `config.py` ở root.
+- **Lý do:**
+  - Gom toàn bộ code dự án vào bên trong `src/` theo đúng chuẩn thiết kế phần mềm sạch.
+  - Cung cấp cơ chế import kép an toàn (`from src.config import ...` hoặc fallback `from config import ...`) đảm bảo script chạy mượt mà từ bất kỳ working directory nào mà không sợ lỗi ModuleNotFoundError.
+  - Tự động xác thực Riot API Key ngay khi khởi động.
+

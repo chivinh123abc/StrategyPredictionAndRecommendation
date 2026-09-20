@@ -134,7 +134,36 @@ python -c "import sqlite3; conn = sqlite3.connect('data/database/lol_live_data.d
 
 ---
 
-## 5. CÁC MÃ LỖI THƯỜNG GẶP & CÁCH XỬ LÝ
+## 5. HỆ THỐNG ĐỒNG BỘ GOOGLE DRIVE (SYNC_GOOGLE_DRIVE.PY)
+
+Module [sync_google_drive.py](file:///d:/Chivinh/2026_MonHoc/Nhập%20môn%20khoa%20học%20dữ%20liệu/Project/src/01_data_pipeline/sync_google_drive.py) kết nối trực tiếp với Thư mục Google Drive lưu trữ toàn bộ các mùa giải Oracle's Elixir (2014 - 2026):
+
+### Các lệnh vận hành:
+1. **Liệt kê danh mục file trên Drive mà không tải (siêu nhẹ):**
+   ```bash
+   python src/01_data_pipeline/sync_google_drive.py --list
+   ```
+2. **Đồng bộ file mùa giải 2026 (mặc định):**
+   ```bash
+   python src/01_data_pipeline/sync_google_drive.py
+   ```
+   *(Tự động kiểm tra file local, nếu dung lượng khớp sẽ bỏ qua để tiết kiệm băng thông).*
+3. **Bắt buộc tải lại bản cập nhật mới nhất:**
+   ```bash
+   python src/01_data_pipeline/sync_google_drive.py --force
+   ```
+4. **Tải file của một năm cụ thể (ví dụ 2024):**
+   ```bash
+   python src/01_data_pipeline/sync_google_drive.py --year 2024
+   ```
+5. **Đồng bộ toàn bộ lịch sử 13 năm (2014 - 2026):**
+   ```bash
+   python src/01_data_pipeline/sync_google_drive.py --all
+   ```
+
+---
+
+## 6. CÁC MÃ LỖI THƯỜNG GẶP & CÁCH XỬ LÝ
 
 | Mã lỗi | Nguyên nhân | Cách khắc phục |
 | :--- | :--- | :--- |

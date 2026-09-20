@@ -60,3 +60,10 @@ SERVER_METADATA = {
     "na1": {"platform": "na1", "region": "americas", "country": "North America", "label": "Bắc Mỹ (NA1)"},
     "euw1":{"platform": "euw1", "region": "europe", "country": "Europe", "label": "Tây Âu (EUW1)"}
 }
+
+# 6. Cấu hình Đồng bộ Google Drive
+GOOGLE_DRIVE_FOLDER_ID = os.getenv("GOOGLE_DRIVE_FOLDER_ID", "1gLSw0RLjBbtaNy0dgnGQDAZOHIgCe-HH").strip()
+GOOGLE_DRIVE_FOLDER_URL = f"https://drive.google.com/drive/folders/{GOOGLE_DRIVE_FOLDER_ID}"
+ESPORTS_RAW_CSV = os.path.join(RAW_DATA_DIR, "2026_LoL_esports_match_data_from_OraclesElixir.csv")
+DRIVE_SYNC_MANIFEST = os.path.join(RAW_DATA_DIR, ".drive_sync_manifest.json")
+

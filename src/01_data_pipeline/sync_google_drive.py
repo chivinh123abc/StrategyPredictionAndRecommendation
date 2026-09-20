@@ -39,7 +39,10 @@ except (ImportError, ModuleNotFoundError):
         RAW_DATA_DIR,
     )
 
-import gdown
+try:
+    import gdown
+except ImportError:
+    gdown = None
 
 
 class GoogleDriveDataSyncer:
@@ -75,6 +78,9 @@ class GoogleDriveDataSyncer:
         mà không cần tải toàn bộ nội dung file (skip_download=True).
         """
         print(f"[*] Đang quét danh mục file từ Google Drive Folder (ID: {self.folder_id})...")
+        if not gdown:
+            print("[!] Cảnh báo: Chưa cài đặt thư viện 'gdown'. Hãy chạy: pip install gdown")
+            return {}
         try:
             drive_files = gdown.download_folder(
                 id=self.folder_id,

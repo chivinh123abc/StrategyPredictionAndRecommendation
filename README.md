@@ -48,10 +48,9 @@ Project/
 │   ├── slides/                         # Slide PowerPoint bảo vệ đồ án
 │   └── final_report/                   # Báo cáo tổng kết đồ án Word/PDF
 │
-├── archive/                            # Lưu trữ các mã nguồn thử nghiệm & nháp cũ
-├── crawl_riot_matches.py               # Script cào nhanh tại root
 ├── requirements.txt                    # Danh sách thư viện Python cần cài đặt
-└── .gitignore                          # Cấu hình bỏ qua file nặng khi commit Git
+├── .env.example                        # File mẫu cấu hình biến môi trường
+└── .gitignore                          # Cấu hình bỏ qua file nặng & bí mật khi commit Git
 ```
 
 ---
@@ -67,7 +66,7 @@ pip install -r requirements.txt
 ### 2. Chạy Pipeline Cào Dữ Liệu Sống (Riot API)
 Mã nguồn hỗ trợ cào song song máy chủ Việt Nam (VN2) và Hàn Quốc (KR):
 ```bash
-python crawl_riot_matches.py
+python src/01_data_pipeline/crawl_riot_matches.py
 ```
 Dữ liệu sẽ tự động được ghi vào:
 * CSDL SQLite: `data/database/lol_live_data.db`

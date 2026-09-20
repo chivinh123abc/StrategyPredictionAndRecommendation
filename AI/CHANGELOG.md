@@ -4,6 +4,15 @@ Tất cả các thay đổi quan trọng về code, CSDL và tài liệu kiến 
 
 ---
 
+## [2026-09-20] - DỌN DẸP DỰ ÁN TINH GỌN (CLEAN CODEBASE)
+- **Xóa bỏ file trùng lặp:**
+  - Xóa file `crawl_riot_matches.py` ở root, chỉ giữ lại một file chính thức duy nhất tại [src/01_data_pipeline/crawl_riot_matches.py](file:///d:/Chivinh/2026_MonHoc/Nhập%20môn%20khoa%20học%20dữ%20liệu/Project/src/01_data_pipeline/crawl_riot_matches.py).
+- **Xóa bỏ thư mục không dùng (`archive/`):**
+  - Xóa toàn bộ thư mục `archive/` chứa các script nháp cũ không liên quan (`vietnam_housing.db`, `test_pull_housing.py`, các file test nháp).
+- **Đồng bộ hóa tài liệu:**
+  - Cập nhật `README.md` và `AI/PROJECT_STATE.md`.
+  - Đẩy thay đổi dọn dẹp lên GitHub repository.
+
 ## [2026-09-20] - KẾT NỐI VÀ ĐẨY DỰ ÁN LÊN GITHUB REPOSITORY
 - **Git & Remote:**
   - Khởi tạo Git repository cục bộ (`git init`).

@@ -18,8 +18,7 @@
 
 | Thư mục / File | Trạng thái thực tế | Ghi chú kỹ thuật |
 | :--- | :--- | :--- |
-| `crawl_riot_matches.py` (root) | `VERIFIED - WORKING` | File script cào dữ liệu từ Riot API, xử lý timeline 10 phút, lưu đồng thời ra SQLite và CSV. Kích thước: ~27.7 KB. Đã tích hợp `.env` bảo mật, 0% hardcode key. |
-| `src/01_data_pipeline/crawl_riot_matches.py` | `VERIFIED - WORKING` | Bản sao đồng bộ của crawler trong cấu trúc module `src/`. Đã tích hợp `.env` bảo mật, 0% hardcode key. |
+| `src/01_data_pipeline/crawl_riot_matches.py` | `VERIFIED - WORKING` | File script cào dữ liệu chính thức duy nhất, xử lý timeline 10 phút, lưu SQLite và CSV. Đã nạp biến môi trường từ `.env`. |
 | `.env` / `.env.example` | `VERIFIED - WORKING` | File cấu hình biến môi trường và file mẫu template an toàn. `.gitignore` đã chặn `.env`. |
 | `src/02_preprocessing/` | `EMPTY (FACT)` | Thư mục rỗng, chưa có mã nguồn làm sạch / lọc ngoại lai IQR. |
 | `src/03_database_sql/` | `EMPTY (FACT)` | Thư mục rỗng, chưa có mã nguồn thực thi 5 câu truy vấn SQL nâng cao. |

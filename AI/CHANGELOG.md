@@ -4,6 +4,15 @@ Tất cả các thay đổi quan trọng về code, CSDL và tài liệu kiến 
 
 ---
 
+## [2026-09-20] - TÁI CẤU TRÚC MÃ NGUỒN CRAWLER CHUẨN CÔNG NGHIỆP (CLEAN CODE)
+- **Tái cấu trúc [src/01_data_pipeline/crawl_riot_matches.py](file:///d:/Chivinh/2026_MonHoc/Nhập%20môn%20khoa%20học%20dữ%20liệu/Project/src/01_data_pipeline/crawl_riot_matches.py):**
+  - Sử dụng `pathlib.Path` chuẩn hóa thay cho chuỗi `os.path` thủ công (đảm bảo tính di động khi đem qua dự án khác).
+  - Tích hợp **Context Manager** (`with self.get_db_connection() as conn:`) cho 100% thao tác với SQLite, chống rò rỉ kết nối và chống lỗi `database is locked` trên Windows.
+  - Bổ sung Type Annotations chuẩn mực (`List`, `Dict`, `Optional`, `Any`) tăng tính tường minh.
+  - Loại bỏ các đoạn code chắp vá cũ (như `backfill_missing_champions` không còn cần thiết vì schema mới đã tạo chuẩn từ đầu).
+  - Giữ nguyên toàn bộ ràng buộc: Bảng `matches_10min` với 42 cột chuẩn 1NF/3NF.
+  - Đã kiểm thử chạy thử (PASS) và đẩy lên GitHub.
+
 ## [2026-09-20] - DỌN DẸP DỰ ÁN TINH GỌN (CLEAN CODEBASE)
 - **Xóa bỏ file trùng lặp:**
   - Xóa file `crawl_riot_matches.py` ở root, chỉ giữ lại một file chính thức duy nhất tại [src/01_data_pipeline/crawl_riot_matches.py](file:///d:/Chivinh/2026_MonHoc/Nhập%20môn%20khoa%20học%20dữ%20liệu/Project/src/01_data_pipeline/crawl_riot_matches.py).

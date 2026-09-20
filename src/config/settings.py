@@ -61,9 +61,46 @@ SERVER_METADATA = {
     "euw1":{"platform": "euw1", "region": "europe", "country": "Europe", "label": "Tây Âu (EUW1)"}
 }
 
-# 6. Cấu hình Đồng bộ Google Drive
+import re
+
+# 6. Cấu hình Đồng bộ Google Drive & Mùa giải Esports
 GOOGLE_DRIVE_FOLDER_ID = os.getenv("GOOGLE_DRIVE_FOLDER_ID", "1gLSw0RLjBbtaNy0dgnGQDAZOHIgCe-HH").strip()
 GOOGLE_DRIVE_FOLDER_URL = f"https://drive.google.com/drive/folders/{GOOGLE_DRIVE_FOLDER_ID}"
-ESPORTS_RAW_CSV = os.path.join(RAW_DATA_DIR, "2026_LoL_esports_match_data_from_OraclesElixir.csv")
 DRIVE_SYNC_MANIFEST = os.path.join(RAW_DATA_DIR, ".drive_sync_manifest.json")
+MIN_MATCHES_THRESHOLD = int(os.getenv("MIN_MATCHES_THRESHOLD", "3000"))
+
+# Danh sách giải đấu trọng tâm (tùy chọn, ví dụ: LCK, LCP, LPL). Mặc định None = lấy toàn bộ giải đấu.
+raw_leagues = os.getenv("ESPORTS_TARGET_LEAGUES", "").strip()
+ESPORTS_TARGET_LEAGUES = [l.strip().upper() for l in raw_leagues.split(",") if l.strip()] if raw_leagues else None
+
+def get_active_esports_season():
+    """Tự động xác định mùa giải Esports mới nhất có trong data/raw/ hoặc theo .env."""
+    env_season = os.getenv("ESPORTS_SEASON", "").strip()
+    if env_season:
+        return env_season
+    found_years = []
+    if os.path.exists(RAW_DATA_DIR):
+        for f in os.listdir(RAW_DATA_DIR):
+            m = re.match(r"^(\d{4})_LoL_esports_match_data_from_OraclesElixir\.csv$", f)
+            if m:
+                found_years.append(int(m.group(1)))
+    return str(max(found_years)) if found_years else "2026"
+
+def get_active_esports_file():
+    """
+    Tự động xác định file dữ liệu giải đấu hoạt động:
+    1. Nếu có cấu hình đường dẫn file trực tiếp trong .env -> dùng file đó.
+    2. Nếu tồn tại tệp ghép thích ứng esports_active_matches.csv -> dùng tệp này.
+    3. Ngược lại, trỏ đến tệp mùa giải mới nhất {ESPORTS_SEASON}_LoL_...csv trong data/raw/.
+    """
+    env_file = os.getenv("ESPORTS_RAW_CSV", "").strip()
+    if env_file and os.path.exists(env_file):
+        return env_file
+    adaptive_file = os.path.join(RAW_DATA_DIR, "esports_active_matches.csv")
+    if os.path.exists(adaptive_file):
+        return adaptive_file
+    return os.path.join(RAW_DATA_DIR, f"{ESPORTS_SEASON}_LoL_esports_match_data_from_OraclesElixir.csv")
+
+ESPORTS_SEASON = get_active_esports_season()
+ESPORTS_RAW_CSV = get_active_esports_file()
 

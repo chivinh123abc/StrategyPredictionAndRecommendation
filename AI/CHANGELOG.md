@@ -4,8 +4,53 @@ Tất cả các thay đổi quan trọng về code, CSDL và tài liệu kiến 
 
 ---
 
+## [2026-09-20] - THUẬT TOÁN QUYẾT ĐỊNH MÙA GIẢI THÔNG MINH (ADR-013) & BỘ LỌC GIẢI ĐẤU (LCK, LCP, LPL...)
+- **Nâng cấp `src/01_data_pipeline/sync_google_drive.py`:**
+  - Bổ sung hàm `parse_leagues()` và hỗ trợ tham số `--leagues` (ví dụ: `LCK,LCP,LPL`, `VCS`...).
+  - Bổ sung hàm `count_matches(filepath, leagues=None)` đếm số lượng trận đấu độc lập trong phạm vi giải đấu chỉ định.
+  - Bổ sung hàm `build_adaptive_dataset(latest_year, previous_year, min_matches, leagues=None)`:
+    - Lấy toàn bộ năm mới nhất + trích xuất phần cuối năm trước (CKTG / Mùa Hè) cho đến khi đủ số lượng yêu cầu.
+  - Bổ sung hàm `sync_smart_latest(min_matches, leagues, force)`:
+    - Tự động thẩm định số trận trong phạm vi giải đấu chỉ định.
+    - Xuất tệp hoạt động `data/raw/esports_active_matches.csv` lọc chuẩn xác các giải đấu yêu cầu.
+- **Nâng cấp `src/config/settings.py` & `src/config/__init__.py`:**
+  - Bổ sung cấu hình `ESPORTS_TARGET_LEAGUES` đọc từ `.env`.
+  - Cập nhật hàm `get_active_esports_file()` tự động nhận diện `esports_active_matches.csv` nếu có.
+- **Cập nhật tài liệu & file mẫu:**
+  - Cập nhật [`src/01_data_pipeline/README_SYNC_DRIVE.md`](../src/01_data_pipeline/README_SYNC_DRIVE.md), `.env.example`, và ghi nhận kiến trúc [ADR-013](DECISIONS.md) trong [`AI/DECISIONS.md`](DECISIONS.md).
+
+---
+
+## [2026-09-20] - THIẾT LẬP MÔI TRƯỜNG ẢO NỘI BỘ (.VENV) & ĐỒNG BỘ TOÀN DIỆN TÀI LIỆU DỰ ÁN
+- **Khởi tạo môi trường ảo `.venv` cục bộ (Python 3.13.14):**
+  - Tọa lạc tại: `d:\Chivinh\2026_MonHoc\Nhập môn khoa học dữ liệu\Project\.venv`.
+  - Cài đặt đầy đủ 100% các package trong `requirements.txt`: `pandas`, `numpy`, `scipy`, `scikit-learn`, `matplotlib`, `seaborn`, `gdown`, `requests`, `python-docx`, `jupyter`, `ipykernel`.
+  - Thiết lập `.vscode/settings.json` tự động nhận diện và kích hoạt `.venv` khi chạy mã trong VS Code.
+  - Bảo vệ Git: Cả `.venv/` và `.vscode/` đều được chặn commit an toàn trong `.gitignore`.
+- **Cập nhật đồng bộ toàn bộ hệ thống tài liệu Markdown (`.md`):**
+  - [`README.md`](../README.md): Viết lại hoàn chỉnh với khối lệnh kích hoạt `.venv` nổi bật, cập nhật cây thư mục mới, và hướng dẫn Quick Start 4 bước rõ ràng.
+  - [`docs/KE_HOACH_THUC_HIEN_DO_AN_3_NGUOI.md`](../docs/KE_HOACH_THUC_HIEN_DO_AN_3_NGUOI.md): Cập nhật Giai đoạn 1 với Task 1.0 (.venv) và Task 1.5 (Cloud Data Auto-Sync).
+  - [`docs/DANH_MUC_API_VA_DATASET.md`](../docs/DANH_MUC_API_VA_DATASET.md): Bổ sung liên kết Google Drive dùng chung và module `sync_google_drive.py`.
+  - [`AI/TASKS.md`](TASKS.md): Nghiệm thu Task 1.0 và làm giàu tiêu chí Task 1.5.
+  - [`AI/DECISIONS.md`](DECISIONS.md): Ghi nhận quyết định kiến trúc [ADR-011](DECISIONS.md) (.venv) và [ADR-012](DECISIONS.md) (Tự động phát hiện mùa giải & Phân tách tài liệu).
+  - [`AI/ARCHITECTURE.md`](ARCHITECTURE.md): Bổ sung trách nhiệm 2 script module 01 và chuẩn môi trường thực thi Section 3.
+  - [`AI/PROJECT_STATE.md`](PROJECT_STATE.md): Cập nhật trạng thái môi trường thực thi `.venv` đã xác thực.
+
+---
+
+## [2026-09-20] - PHÂN TÁCH TÀI LIỆU PIPELINE THÀNH 2 FILE ĐỘC LẬP & TỰ ĐỘNG HÓA MÙA GIẢI ĐỘNG
+- **Phân tách tài liệu chi tiết thành 2 file chuyên biệt:**
+  - [`src/01_data_pipeline/README_CRAWL_RIOT.md`](../src/01_data_pipeline/README_CRAWL_RIOT.md): Hướng dẫn toàn diện module cào Live Rank từ Riot Games API (kiến trúc, bóc tách timeline phút thứ 10, chuẩn 1NF/3NF, chống Rate Limit HTTP 429).
+  - [`src/01_data_pipeline/README_SYNC_DRIVE.md`](../src/01_data_pipeline/README_SYNC_DRIVE.md): Hướng dẫn toàn diện module đồng bộ Google Drive Oracle's Elixir (kiến trúc, cache manifest, regex trích xuất năm, hướng dẫn vượt hạn ngạch Google Drive Quota Exceeded).
+  - [`src/01_data_pipeline/README.md`](../src/01_data_pipeline/README.md): Chuyển thành trang Tổng quan / Hub điều hướng liên kết trực tiếp tới 2 tài liệu trên.
+- **Nâng cấp thuật toán tự động đón đầu tương lai (Future-Proof Season Discovery):**
+  - Cập nhật [`sync_google_drive.py`](../src/01_data_pipeline/sync_google_drive.py) hàm `get_recent_years(n_recent=2)` quét regex `^(\d{4})_LoL_...csv` trên Drive.
+  - Tự động nhận diện và đồng bộ mùa giải mới nhất (khi có 2027 sẽ tự động kéo `[2026, 2027]` mà không cần sửa code).
+
+---
+
 ## [2026-09-20] - XÂY DỰNG HOÀN TẤT MODULE ĐỒNG BỘ GOOGLE DRIVE (SYNC_GOOGLE_DRIVE.PY)
-- **Triển khai module [src/01_data_pipeline/sync_google_drive.py](file:///d:/Chivinh/2026_MonHoc/Nhập%20môn%20khoa%20học%20dữ%20liệu/Project/src/01_data_pipeline/sync_google_drive.py):**
+- **Triển khai module [src/01_data_pipeline/sync_google_drive.py](../src/01_data_pipeline/sync_google_drive.py):**
   - Tích hợp kết nối trực tiếp với Thư mục Google Drive Oracle's Elixir (`1gLSw0RLjBbtaNy0dgnGQDAZOHIgCe-HH`).
   - Sử dụng `gdown` để quét danh mục siêu nhẹ 13 mùa giải (2014-2026) mà không cần tải dữ liệu nặng (`--list`).
   - Cơ chế Cache Manifest (`.drive_sync_manifest.json`): Tự động phát hiện dung lượng file cục bộ để bỏ qua tải trùng lặp, tiết kiệm 71 MB băng thông mạng.
@@ -13,21 +58,21 @@ Tất cả các thay đổi quan trọng về code, CSDL và tài liệu kiến 
 - **Cập nhật cấu hình & tài liệu:**
   - Thêm `GOOGLE_DRIVE_FOLDER_ID` vào `src/config/settings.py`, `src/config/__init__.py`, `.env`, `.env.example`.
   - Bổ sung `gdown>=6.4.0` vào `requirements.txt`.
-  - Cập nhật tài liệu hướng dẫn vận hành trong [src/01_data_pipeline/README.md](file:///d:/Chivinh/2026_MonHoc/Nhập%20môn%20khoa%20học%20dữ%20liệu/Project/src/01_data_pipeline/README.md).
-  - Hoàn thành nghiệm thu **Task 1.5** trong [AI/TASKS.md](file:///d:/Chivinh/2026_MonHoc/Nhập%20môn%20khoa%20học%20dữ%20liệu/Project/AI/TASKS.md).
+  - Cập nhật tài liệu hướng dẫn vận hành trong [src/01_data_pipeline/README.md](../src/01_data_pipeline/README.md).
+  - Hoàn thành nghiệm thu **Task 1.5** trong [AI/TASKS.md](TASKS.md).
 
 ---
 
 ## [2026-09-20] - BỔ SUNG KIẾN TRÚC & TASK ĐỒNG BỘ DỮ LIỆU TỰ ĐỘNG TỪ GOOGLE DRIVE
 - **Quy hoạch tính năng Cloud Data Auto-Sync (Task 1.5):**
-  - Bổ sung quyết định kiến trúc [ADR-010](file:///d:/Chivinh/2026_MonHoc/Nhập%20môn%20khoa%20học%20dữ%20liệu/Project/AI/DECISIONS.md) và phân rã nhiệm vụ trong [AI/TASKS.md](file:///d:/Chivinh/2026_MonHoc/Nhập%20môn%20khoa%20học%20dữ%20liệu/Project/AI/TASKS.md).
+  - Bổ sung quyết định kiến trúc [ADR-010](DECISIONS.md) và phân rã nhiệm vụ trong [AI/TASKS.md](TASKS.md).
   - Cơ chế: Hệ thống tự động kiểm tra thời gian cập nhật (`modifiedTime`) hoặc hash `md5Checksum` của tệp/thư mục Google Drive chia sẻ (tập dữ liệu giải đấu, nhãn bổ sung).
   - Tối ưu hóa: Chỉ tải về `data/raw/` khi trên Drive có dữ liệu mới; tự động kích hoạt pipeline làm sạch và cập nhật CSDL SQLite phục vụ làm việc nhóm khép kín.
 
 ---
 
 ## [2026-09-20] - FIX BUG ĐIỀU KIỆN DỪNG CỦA CRAWLER TRÊN CSDL ĐA MÁY CHỦ
-- **Sửa lỗi ngắt sớm tại hàm `get_match_ids` trong [src/01_data_pipeline/crawl_riot_matches.py](file:///d:/Chivinh/2026_MonHoc/Nhập%20môn%20khoa%20học%20dữ%20liệu/Project/src/01_data_pipeline/crawl_riot_matches.py):**
+- **Sửa lỗi ngắt sớm tại hàm `get_match_ids` trong [src/01_data_pipeline/crawl_riot_matches.py](../src/01_data_pipeline/crawl_riot_matches.py):**
   - Nguyên nhân: Trước đó điều kiện dừng kiểm tra `len(match_ids) + len(existing_ids) >= target_count`. Do CSDL đã có sẵn 99 trận từ máy chủ VN2 (`existing_ids = 99`), khi máy chủ KR vừa cào được đúng 1 trận (`1 + 99 = 100`) thì bị kích hoạt lệnh `break` dừng sớm.
   - Khắc phục: Sửa điều kiện dừng thành `len(match_ids) >= target_count`. Biến `existing_ids` chỉ dùng để lọc trùng lặp trận đã có trong DB (`if m_id not in existing_ids`).
   - Kết quả: Đảm bảo crawler cào đủ số lượng trận độc lập cho từng máy chủ theo đúng cấu hình `TARGET_MATCHES_PER_SERVER`.
@@ -47,10 +92,10 @@ Tất cả các thay đổi quan trọng về code, CSDL và tài liệu kiến 
 
 ## [2026-09-20] - ĐÓNG GÓI CẤU HÌNH VÀO PACKAGE SRC/CONFIG/
 - **Tách cấu hình vào thư mục riêng chuẩn mực:**
-  - Tạo package [src/config/](file:///d:/Chivinh/2026_MonHoc/Nhập%20môn%20khoa%20học%20dữ%20liệu/Project/src/config/) gồm `settings.py` và `__init__.py`.
+  - Tạo package [src/config/](../src/config/) gồm `settings.py` và `__init__.py`.
   - Quản lý tập trung toàn bộ biến môi trường (`.env`), xác thực Riot API key, đường dẫn thư mục I/O (`BASE_DIR`, `DATA_DIR`, `OUTPUT_CSV`, `OUTPUT_DB`), thông số server (`ACTIVE_SERVERS`, `SERVER_METADATA`).
   - Xóa file `config.py` ở thư mục gốc Project để giữ cấu trúc thư mục sạch sẽ, không có file lẻ đứng giữa đường.
-- **Cập nhật script crawler [src/01_data_pipeline/crawl_riot_matches.py](file:///d:/Chivinh/2026_MonHoc/Nhập%20môn%20khoa%20học%20dữ%20liệu/Project/src/01_data_pipeline/crawl_riot_matches.py):**
+- **Cập nhật script crawler [src/01_data_pipeline/crawl_riot_matches.py](../src/01_data_pipeline/crawl_riot_matches.py):**
   - Import cấu hình trực tiếp từ `src.config` (kèm fallback an toàn).
   - Loại bỏ các khối logic kiểm tra key trùng lặp vì module cấu hình đã tự động kiểm tra ngay khi nạp.
   - Chạy thử nghiệm thành công 100% không phát sinh bất kỳ lỗi đường dẫn nào.
@@ -59,17 +104,17 @@ Tất cả các thay đổi quan trọng về code, CSDL và tài liệu kiến 
 ---
 
 ## [2026-09-20] - HOÀN NGUYÊN NGUYÊN TRẠNG BẢN CRAWLER ĐƠN LẬP (COMMIT 40dced0)
-- **Hoàn nguyên mã nguồn [src/01_data_pipeline/crawl_riot_matches.py](file:///d:/Chivinh/2026_MonHoc/Nhập%20môn%20khoa%20học%20dữ%20liệu/Project/src/01_data_pipeline/crawl_riot_matches.py):**
+- **Hoàn nguyên mã nguồn [src/01_data_pipeline/crawl_riot_matches.py](../src/01_data_pipeline/crawl_riot_matches.py):**
   - Giữ nguyên cấu trúc xác định thư mục gốc `BASE_DIR = os.path.dirname(...)` nguyên bản.
   - Giữ nguyên toàn bộ cấu hình `.env`, biến môi trường, đường dẫn I/O và metadata tập trung trong một file duy nhất.
   - Dọn sạch toàn bộ các file cấu hình phát sinh ngoài luồng (`src/config.py`, `src/logger.py`, `pyproject.toml`, `tests/`, `.github/`).
-- **Cập nhật quy tắc quản trị [AI/AI_RULES.md](file:///d:/Chivinh/2026_MonHoc/Nhập%20môn%20khoa%20học%20dữ%20liệu/Project/AI/AI_RULES.md):**
+- **Cập nhật quy tắc quản trị [AI/AI_RULES.md](AI_RULES.md):**
   - Bổ sung quy định bắt buộc: **TUYỆT ĐỐI KHÔNG tự ý chạy lệnh `git push` lên GitHub** khi chưa có sự cho phép trực tiếp từ User.
 
 
 ## [2026-09-20] - DỌN DẸP DỰ ÁN TINH GỌN (CLEAN CODEBASE)
 - **Xóa bỏ file trùng lặp:**
-  - Xóa file `crawl_riot_matches.py` ở root, chỉ giữ lại một file chính thức duy nhất tại [src/01_data_pipeline/crawl_riot_matches.py](file:///d:/Chivinh/2026_MonHoc/Nhập%20môn%20khoa%20học%20dữ%20liệu/Project/src/01_data_pipeline/crawl_riot_matches.py).
+  - Xóa file `crawl_riot_matches.py` ở root, chỉ giữ lại một file chính thức duy nhất tại [src/01_data_pipeline/crawl_riot_matches.py](../src/01_data_pipeline/crawl_riot_matches.py).
 - **Xóa bỏ thư mục không dùng (`archive/`):**
   - Xóa toàn bộ thư mục `archive/` chứa các script nháp cũ không liên quan (`vietnam_housing.db`, `test_pull_housing.py`, các file test nháp).
 - **Đồng bộ hóa tài liệu:**

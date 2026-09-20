@@ -69,7 +69,7 @@ Tài liệu ghi nhận tất cả các quyết định kiến trúc, công ngh�
 - **Ngày quyết định:** 2026-09-20
 - **Bối cảnh:** Việc phân tách cấu hình ra nhiều file phụ thuộc ngoài luồng (pyproject.toml, logger, config module) làm phát sinh lỗi phân giải đường dẫn của Language Server (Pyrefly) và gây phức tạp hóa không cần thiết.
 - **Quyết định:**
-  - Giữ script [crawl_riot_matches.py](file:///d:/Chivinh/2026_MonHoc/Nhập môn khoa học dữ liệu/Project/src/01_data_pipeline/crawl_riot_matches.py) độc lập, tự xác định `BASE_DIR = os.path.dirname(...)` và tự nạp cấu hình `.env` nội bộ.
+  - Giữ script [crawl_riot_matches.py](../src/01_data_pipeline/crawl_riot_matches.py) độc lập, tự xác định `BASE_DIR = os.path.dirname(...)` và tự nạp cấu hình `.env` nội bộ.
   - Áp dụng quy tắc Git nghiêm ngặt: **Không bao giờ tự ý push lên GitHub** khi chưa có sự xác nhận/lệnh trực tiếp từ User.
 
 ---
@@ -77,7 +77,7 @@ Tài liệu ghi nhận tất cả các quyết định kiến trúc, công ngh�
 ### ADR-009: Tập trung cấu hình dự án vào package chuẩn `src/config/`
 - **Ngày quyết định:** 2026-09-20
 - **Bối cảnh:** Việc đặt file `config.py` ở ngay thư mục gốc `Project/` khiến cấu trúc bị phân tán ("đứng giữa đường"), không thuộc package `src/` và làm rối không gian làm việc gốc.
-- **Quyết định:** Chuyển toàn bộ cấu hình vào package chuẩn [src/config/](file:///d:/Chivinh/2026_MonHoc/Nhập%20môn%20khoa%20học%20dữ%20liệu/Project/src/config/) gồm `settings.py` và `__init__.py`. Xóa hoàn toàn `config.py` ở root.
+- **Quyết định:** Chuyển toàn bộ cấu hình vào package chuẩn [src/config/](../src/config/) gồm `settings.py` và `__init__.py`. Xóa hoàn toàn `config.py` ở root.
 - **Lý do:**
   - Gom toàn bộ code dự án vào bên trong `src/` theo đúng chuẩn thiết kế phần mềm sạch.
   - Cung cấp cơ chế import kép an toàn (`from src.config import ...` hoặc fallback `from config import ...`) đảm bảo script chạy mượt mà từ bất kỳ working directory nào mà không sợ lỗi ModuleNotFoundError.
@@ -93,4 +93,51 @@ Tài liệu ghi nhận tất cả các quyết định kiến trúc, công ngh�
   - Tối ưu hóa băng thông mạng: Chỉ tải dữ liệu khi trên đám mây thực sự có phiên bản mới hơn phiên bản cục bộ.
   - Tự động hóa khép kín quy trình làm việc nhóm (Collaborative Data Pipeline).
   - Tự động kích hoạt các bước tiền xử lý (Preprocessing) và cập nhật SQLite khi có dữ liệu mới.
+
+---
+
+### ADR-011: Khởi tạo & Tiêu chuẩn hóa Môi trường ảo Nội bộ (.venv) thay thế Python toàn cục
+- **Ngày quyết định:** 2026-09-20
+- **Bối cảnh:** Máy trạm người dùng có nhiều phiên bản Python (3.10, 3.13) dẫn đến xung đột đường dẫn thư viện (`pip install` vào Python này nhưng VS Code chạy bằng Python khác), gây lỗi `missing-import`.
+- **Quyết định:**
+  - Khởi tạo môi trường ảo `.venv` cô lập ngay tại thư mục gốc dự án (`Project/.venv`) bằng Python 3.13.
+  - Cấu hình `.vscode/settings.json` trỏ trực tiếp `python.defaultInterpreterPath` về `.venv`.
+  - Bổ sung lệnh kích hoạt `.\.venv\Scripts\Activate.ps1` vào đầu các tài liệu hướng dẫn.
+- **Lý do:**
+  - Cô lập 100% môi trường dependencies, không bị ảnh hưởng bởi môi trường Windows toàn cục.
+  - Tái tạo môi trường nhất quán (reproducibility) cho tất cả các thành viên trong nhóm 3 người.
+  - Tránh ô nhiễm mã nguồn do `.venv/` và `.vscode/` đã được chặn hoàn toàn trong `.gitignore`.
+
+---
+
+### ADR-012: Cơ chế Tự động phát hiện Mùa giải mới (Future-Proof Season Discovery) và Phân tách Tài liệu Module 01
+- **Ngày quyết định:** 2026-09-20
+- **Bối cảnh:**
+  - Việc gán cứng các mùa giải trong mã nguồn `sync_google_drive.py` (như `[2025, 2026]`) sẽ khiến hệ thống không tự động kéo được dữ liệu khi Oracle's Elixir đẩy mùa giải mới (2027...) lên Drive chung.
+  - File `README.md` của Module 01 ban đầu quá dài khi gộp cả Riot API và Google Drive, gây khó khăn cho việc tra cứu chuyên biệt theo từng phân công nhiệm vụ.
+- **Quyết định:**
+  - Triển khai thuật toán trích xuất năm qua biểu thức chính quy (Regex: `^(\d{4})_LoL_...csv`) trong hàm `get_recent_years(n_recent=2)`: Tự động sắp xếp và kéo $N$ mùa giải mới nhất có trên Drive (khi có 2027 sẽ tự động kéo `[2026, 2027]` mà không sửa code).
+  - Tách tài liệu Module 01 thành 2 tệp chuyên biệt: [`README_CRAWL_RIOT.md`](../src/01_data_pipeline/README_CRAWL_RIOT.md) và [`README_SYNC_DRIVE.md`](../src/01_data_pipeline/README_SYNC_DRIVE.md); tinh gọn [`README.md`](../src/01_data_pipeline/README.md) làm trang Hub điều hướng.
+- **Lý do:**
+  - Đảm bảo tính mở rộng lâu dài (Open-Closed Principle / Future-Proofing).
+  - Phân tách trách nhiệm tài liệu rõ ràng, minh bạch cho các thành viên trong nhóm.
+
+---
+
+### ADR-013: Thuật toán Quyết định Mùa giải Thông minh dựa trên Ngưỡng Quy mô Trận đấu (Adaptive Season Decision)
+- **Ngày quyết định:** 2026-09-20
+- **Bối cảnh:**
+  - Trong Data Science và game eSports (LoL), giữa các mùa giải luôn có sự thay đổi lớn về bản đồ, mục tiêu (Sâu Hư Không, Atakhan...) và tướng/trang bị. Nếu gộp nhiều năm cũ sẽ gây hiện tượng trôi dạt khái niệm (**Concept Drift**) làm giảm sút chất lượng mô hình.
+  - Tuy nhiên, ở giai đoạn **đầu mùa giải mới** (ví dụ đầu năm 2027), số lượng trận đấu chuyên nghiệp còn quá ít, không đủ cỡ mẫu thống kê để huấn luyện mô hình.
+- **Quy tắc quyết định:**
+  1. Luôn xác định và đồng bộ mùa giải **MỚI NHẤT** trên Google Drive (`latest_year`, ví dụ 2026).
+  2. Đọc nhanh số trận đấu độc lập (`unique gameid`) trong tệp:
+     - **Nếu số trận $\ge$ `MIN_MATCHES_THRESHOLD` (mặc định 3,000 trận):** Đánh giá năm mới nhất **ĐÃ ĐỦ LỚN** (năm 2026 hiện có 8,874 trận). Hệ thống **CHỈ DÙNG DUY NHẤT NĂM NÀY**, tuyệt đối **KHÔNG kéo thêm năm trước** (2025) để bảo toàn Meta trò chơi.
+     - **Nếu số trận $<$ 3,000 trận (giai đoạn đầu mùa):** Tự động kích hoạt cơ chế ghép đuôi thích ứng (`build_adaptive_dataset`):
+       - Lấy **toàn bộ** năm mới nhất.
+       - Sắp xếp dữ liệu năm liền trước theo ngày thi đấu lùi dần từ cuối năm về trước, trích xuất đúng số trận còn thiếu từ **phần cuối năm** của năm trước đó cho đến khi đủ ngưỡng yêu cầu.
+       - Xuất tệp hoạt động `data/raw/esports_active_matches.csv` để các bước tiếp theo phân tích.
+  3. Cấu hình biến `ESPORTS_SEASON` và `ESPORTS_RAW_CSV` trong `src/config/settings.py` tự động phát hiện mùa giải kích hoạt thay vì gán cứng.
+- **Lý do:**
+  - Giải quyết triệt để bài toán cân bằng giữa: **Quy mô mẫu (Sample Size)** và **Tính thời sự của Meta (Recency & Homogeneity)**, tránh việc nạp dữ liệu đầu năm cũ đã quá lỗi thời.
 

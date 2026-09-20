@@ -34,9 +34,11 @@ Tài liệu này tổng hợp toàn bộ các đường link API chính thức, 
 
 ### 🔗 Link 1.5: Oracle's Elixir (Kho dữ liệu Đấu Giải Chuyên Nghiệp VCS, LCK, LPL, CKTG)
 * **Trang chủ & Tải dữ liệu:** [https://oracleselixir.com/tools/downloads](https://oracleselixir.com/tools/downloads)
+* **Thư mục Google Drive dùng chung (13 mùa giải 2014 - nay):** [Google Drive Folder ID: `1gLSw0RLjBbtaNy0dgnGQDAZOHIgCe-HH`](https://drive.google.com/drive/folders/1gLSw0RLjBbtaNy0dgnGQDAZOHIgCe-HH)
+* **Module tự động đồng bộ về máy trạm:** [`src/01_data_pipeline/sync_google_drive.py`](../src/01_data_pipeline/sync_google_drive.py) (Xem tài liệu tại [`README_SYNC_DRIVE.md`](../src/01_data_pipeline/README_SYNC_DRIVE.md))
 * **Kaggle Mirror Dataset:** [League of Legends Pro Matches (Oracle's Elixir)](https://www.kaggle.com/datasets/bobbyscience/league-of-legends-database)
 * **Định nghĩa các trường dữ liệu:** [https://oracleselixir.com/definitions](https://oracleselixir.com/definitions)
-* **Ghi chú:** Kho lưu trữ toàn diện dữ liệu các giải đấu chuyên nghiệp toàn cầu (VCS Việt Nam, LCK Hàn Quốc, LPL Trung Quốc, CKTG/Worlds) từ 2014 đến 2026. Chứa đầy đủ: Tên đội (T1, Gen.G, GAM Esports), tên tuyển thủ (Faker, Chovy, Levi), 10 lượt Cấm (`ban1` - `ban5`), 10 lượt Chọn theo 5 vị trí (`top`, `jng`, `mid`, `bot`, `sup`), chỉ số kinh tế mốc 10 phút (`goldat10`, `xpat10`, `csat10`, `golddiffat10`), rồng đầu, sâu hư không và trụ. Đây là nguồn dữ liệu chuẩn mực để thực hiện Kiểm định giả thuyết A/B (Chương 1) và so sánh Meta Đấu Giải vs Đấu Rank (Chương 3, 4).
+* **Ghi chú:** Kho lưu trữ toàn diện dữ liệu các giải đấu chuyên nghiệp toàn cầu (VCS Việt Nam, LCK Hàn Quốc, LPL Trung Quốc, CKTG/Worlds) từ 2014 đến nay. Chứa đầy đủ: Tên đội (T1, Gen.G, GAM Esports), tên tuyển thủ (Faker, Chovy, Levi), 10 lượt Cấm (`ban1` - `ban5`), 10 lượt Chọn theo 5 vị trí (`top`, `jng`, `mid`, `bot`, `sup`), chỉ số kinh tế mốc 10 phút (`goldat10`, `xpat10`, `csat10`, `golddiffat10`), rồng đầu, sâu hư không và trụ. Đây là nguồn dữ liệu chuẩn mực để thực hiện Kiểm định giả thuyết A/B (Chương 1) và so sánh Meta Đấu Giải vs Đấu Rank (Chương 3, 4). Tích hợp cơ chế tự động đón đầu các mùa giải mới nhất (2026, 2027...), ghép đuôi thích ứng cuối năm trước khi đầu mùa chưa đủ mẫu, và lọc linh hoạt theo giải đấu (`--leagues LCK,LCP,LPL`).
 
 ### 🔗 Link 1.6: Leaguepedia MediaWiki Cargo API (Cổng REST API Đấu Giải LoL Esports Mở 100%)
 * **Endpoint API chính:** `https://lol.fandom.com/api.php`

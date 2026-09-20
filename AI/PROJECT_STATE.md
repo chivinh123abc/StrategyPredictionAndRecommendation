@@ -47,31 +47,29 @@
 - **Các bảng còn thiếu theo đặc tả:** `tournament_matches`, `tournament_players` (chưa được tạo/nạp từ dữ liệu Oracle's Elixir).
 
 ### Các tệp dữ liệu phẳng (CSV):
-1. `data/processed/lol_live_ranked_10min.csv`: 100 dòng dữ liệu tương ứng bảng `matches_10min`. Kích thước: ~72 KB (FACT).
-2. `data/raw/2026_LoL_esports_match_data_from_OraclesElixir.csv`: 106,488 dòng, 165 cột dữ liệu đấu giải chuyên nghiệp năm 2026. Kích thước: 71.1 MB (FACT).
-3. `data/raw/sample_2026_esports_100.csv`: Bản trích mẫu 100 dòng đầu tiên phục vụ phát triển nhanh và chống crash bộ nhớ. Kích thước: ~90 KB (FACT).
+1. `data/processed/lol_live_ranked_10min.csv`: 147 dòng dữ liệu tương ứng bảng `matches_10min`. Kích thước: ~80 KB (FACT).
+2. `data/raw/2026_LoL_esports_match_data_from_OraclesElixir.csv`: 106,488 dòng, 165 cột dữ liệu đấu giải chuyên nghiệp năm 2026 (8,874 trận). Kích thước: 71.1 MB (FACT).
+3. `data/raw/esports_active_matches.csv`: Tệp dữ liệu hoạt động được tạo bởi `sync_google_drive.py` khi kích hoạt bộ lọc giải đấu (`--leagues LCK,LCP,LPL`) hoặc cơ chế ghép đuôi thích ứng (ADR-013). Kích thước: ~12 MB (FACT).
+4. `data/raw/sample_2026_esports_100.csv`: Bản trích mẫu 100 dòng đầu tiên phục vụ phát triển nhanh và chống crash bộ nhớ. Kích thước: ~90 KB (FACT).
 
 ---
 
 ## 4. HIỆN TRẠNG MÔI TRƯỜNG THỰC THI (ENVIRONMENT AUDIT)
 - **Hệ điều hành:** Windows x64 (FACT).
-- **Phiên bản Python:** `Python 3.10.11` (VERIFIED).
-- **Các package ĐÃ CÀI ĐẶT:**
-  - `pandas == 2.3.3`
-  - `numpy == 2.2.6`
-  - `matplotlib == 3.10.9`
+- **Môi trường ảo cô lập (.venv):** Đã khởi tạo tại thư mục gốc dự án: `d:\Chivinh\2026_MonHoc\Nhập môn khoa học dữ liệu\Project\.venv` (VERIFIED - Python 3.13.14).
+- **Cấu hình VS Code:** Đã tạo `.vscode/settings.json` trỏ tự động `python.defaultInterpreterPath` về `.venv`.
+- **Các package ĐÃ CÀI ĐẶT ĐẦY ĐỦ TRONG `.venv`:**
+  - `pandas == 3.0.6`
+  - `numpy == 2.5.3`
+  - `scipy == 1.18.1`
+  - `scikit-learn == 1.9.1`
+  - `matplotlib == 3.11.2`
+  - `seaborn == 0.13.2`
+  - `gdown == 6.4.0`
   - `requests == 2.34.2`
   - `python-docx == 1.2.0`
-  - `beautifulsoup4 == 4.15.0`
-  - `pillow == 12.3.0`
-- **Các package CHƯA CÀI ĐẶT (cần cài khi thực hiện các task tương ứng):**
-  - `scikit-learn` (Cần cho Machine Learning - Giai đoạn 3)
-  - `scipy` (Cần cho Kiểm định thống kê - Giai đoạn 2)
-  - `seaborn` (Cần cho EDA Heatmap - Giai đoạn 2)
-  - `fastapi`, `uvicorn` (Cần cho Backend API - Giai đoạn 4)
-  - `jupyter`, `ipykernel` (Cần khi chạy Notebook `.ipynb`)
+  - `jupyter == 1.1.1` & `ipykernel == 7.3.0`
 - **Kết nối Riot Games API:**
-  - Key hiện tại: `RGAPI-c806266a-1220-4211-bf42-3e437f3ff378`
   - Trạng thái: `VERIFIED - HTTP 200` (Đang hoạt động tốt).
 
 ---

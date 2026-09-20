@@ -10,9 +10,9 @@ Trạng thái:
 
 ## 🟢 GIAI ĐOẠN 1: THU THẬP, LÀM SẠCH & THIẾT KẾ CSDL (CHƯƠNG 2, 5)
 
-- [x] **Task 1.0 [Cả nhóm]: Thiết lập cấu hình tập trung `src/config` & Cấu trúc thư mục Pipeline chuẩn**
-  - *Mục tiêu:* Tạo package cấu hình chuẩn `src/config/` (`settings.py`, `__init__.py`), bảo vệ Riot API key, nạp `.env`. Khởi tạo đầy đủ cây thư mục từ `02` đến `07`, `notebooks/`, `reports/figures/` đi kèm file tài liệu `README.md` chuẩn hóa.
-  - *Kết quả:* Đã hoàn tất và kiểm thử 100% trơn tru.
+- [x] **Task 1.0 [Cả nhóm]: Thiết lập môi trường ảo `.venv`, cấu hình tập trung `src/config` & Cấu trúc thư mục Pipeline chuẩn**
+  - *Mục tiêu:* Khởi tạo `.venv` nội bộ tại thư mục gốc dự án (Python 3.13), cài đầy đủ `requirements.txt` (`pandas`, `scipy`, `scikit-learn`, `gdown`, `jupyter`...), cấu hình `.vscode/settings.json` tự động trỏ interpreter. Tạo package cấu hình chuẩn `src/config/` (`settings.py`, `__init__.py`), bảo vệ Riot API key, nạp `.env`. Khởi tạo đầy đủ cây thư mục từ `02` đến `07`, `notebooks/`, `reports/figures/` đi kèm file tài liệu `README.md` chuẩn hóa.
+  - *Kết quả:* Đã hoàn tất, kích hoạt thành công qua `.\.venv\Scripts\Activate.ps1` và kiểm thử 100% trơn tru.
 
 - [-] **Task 1.1 [Thành viên 1]: Cào dữ liệu Live Rank VN & KR từ Riot Games API**
   - *Mục tiêu:* Tích lũy tối thiểu 500 - 1,000 trận rank cao (VN2 & KR) đạt chuẩn 1NF/3NF vào `data/database/lol_live_data.db`.
@@ -37,7 +37,11 @@ Trạng thái:
 
 - [x] **Task 1.5 [Thành viên 1]: Xây dựng Module Đồng Bộ Dữ Liệu Tự Động từ Google Drive (Cloud Data Auto-Sync)**
   - *Mục tiêu:* Xây dựng module tự động kết nối thư mục Google Drive (`1gLSw0RLjBbtaNy0dgnGQDAZOHIgCe-HH`) lưu trữ toàn bộ mùa giải Oracle's Elixir (2014-2026).
-  - *Kết quả:* Đã hoàn thành module [`src/01_data_pipeline/sync_google_drive.py`](file:///d:/Chivinh/2026_MonHoc/Nhập%20môn%20khoa%20học%20dữ%20liệu/Project/src/01_data_pipeline/sync_google_drive.py). Hỗ trợ kiểm tra danh mục siêu nhẹ (`--list`), tự động bỏ qua nếu file cục bộ đã khớp, hỗ trợ tải từng năm (`--year`), tải toàn bộ (`--all`) và ép buộc tải mới (`--force`). Đã chạy thử nghiệm thành công 100%.
+  - *Kết quả:* Đã hoàn thành module [`src/01_data_pipeline/sync_google_drive.py`](../src/01_data_pipeline/sync_google_drive.py).
+    - Hỗ trợ kiểm tra danh mục siêu nhẹ (`--list`), tự động bỏ qua nếu file cục bộ đã khớp dung lượng, hỗ trợ tải từng năm (`--year`), tải toàn bộ (`--all`) và ép buộc tải mới (`--force`).
+    - Nâng cấp thuật toán quyết định mùa giải thông minh (ADR-013): Tự động phát hiện năm mới nhất; nếu chưa đủ số trận (`min_matches`), tự động ghép toàn bộ năm mới + trích xuất phần cuối năm trước (CKTG / Mùa Hè) cho đến khi đủ số lượng.
+    - Hỗ trợ bộ lọc giải đấu linh hoạt (`--leagues LCK,LCP,LPL`): Tự động trích xuất đúng các giải đấu chỉ định và xuất tệp hoạt động `data/raw/esports_active_matches.csv`.
+    - Phân tách tài liệu chi tiết thành 2 file chuyên biệt [`README_CRAWL_RIOT.md`](../src/01_data_pipeline/README_CRAWL_RIOT.md) và [`README_SYNC_DRIVE.md`](../src/01_data_pipeline/README_SYNC_DRIVE.md). Đã chạy thử nghiệm thành công 100%.
 
 - [ ] **Milestone 1:** Nghiệm thu toàn bộ CSDL SQLite `lol_live_data.db` hoàn chỉnh cả 2 nguồn dữ liệu và cơ chế đồng bộ tự động.
 

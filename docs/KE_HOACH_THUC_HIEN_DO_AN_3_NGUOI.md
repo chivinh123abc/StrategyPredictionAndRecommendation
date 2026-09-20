@@ -50,9 +50,16 @@
 ---
 
 ### 🟢 GIAI ĐOẠN 1: THU THẬP, LÀM SẠCH & THIẾT KẾ CSDL (CHƯƠNG 2, 5)
-*Mục tiêu:* Có kho dữ liệu sạch gồm cả Đấu Rank VN, Đấu Rank Hàn và Đấu Giải 2026 được nạp chuẩn chỉnh vào SQLite.
+*Mục tiêu:* Có kho dữ liệu sạch gồm cả Đấu Rank VN, Đấu Rank Hàn và Đấu Giải 2026 được nạp chuẩn chỉnh vào SQLite, vận hành trên môi trường ảo `.venv` cô lập.
 
-- [ ] **Task 1.1 [Thành viên 1]:** Chạy script `crawl_riot_matches.py` tích lũy tối thiểu $1,000 - 3,000$ trận rank Việt Nam (VN2) và Hàn Quốc (KR) mới nhất vào `lol_live_data.db`.
+- [x] **Task 1.0 [Cả nhóm]: Khởi tạo Môi trường ảo `.venv` & Gói Cấu hình Trung tâm `src/config`**
+  * *Tiêu chí hoàn thành:* Tạo `.venv` nội bộ tại thư mục gốc dự án (Python 3.13), cài đầy đủ `requirements.txt` (`pandas`, `scipy`, `scikit-learn`, `gdown`...). Cấu hình `.vscode/settings.json` tự động kích hoạt.
+  * *Lệnh kích hoạt PowerShell:* `.\.venv\Scripts\Activate.ps1`.
+- [x] **Task 1.5 [Thành viên 1]: Xây dựng Module Đồng Bộ Dữ Liệu Tự Động từ Google Drive (Cloud Data Auto-Sync)**
+  * *Tiêu chí hoàn thành:* Hoàn thành module [`src/01_data_pipeline/sync_google_drive.py`](../src/01_data_pipeline/sync_google_drive.py) kết nối Google Drive folder `1gLSw0RLjBbtaNy0dgnGQDAZOHIgCe-HH`.
+  * *Cơ chế thông minh:* Tự động quét regex phát hiện $N$ mùa giải mới nhất (đón đầu 2027 mà không cần sửa code). Smart Caching qua manifest để tránh tải lại file nặng 71 MB.
+  * *Tài liệu độc lập:* Phân tách thành 2 file chuyên biệt [`README_CRAWL_RIOT.md`](../src/01_data_pipeline/README_CRAWL_RIOT.md) và [`README_SYNC_DRIVE.md`](../src/01_data_pipeline/README_SYNC_DRIVE.md).
+- [-] **Task 1.1 [Thành viên 1]:** Chạy script `crawl_riot_matches.py` tích lũy tối thiểu $1,000 - 3,000$ trận rank Việt Nam (VN2) và Hàn Quốc (KR) mới nhất vào `lol_live_data.db`.
   * *Tiêu chí hoàn thành:* Bảng `matches_10min` có đủ 10 tướng theo 5 lane nguyên tử (`blueTop`..`redSupport`), 10 bans, và kinh tế phút 10.
   * *Chuẩn hóa CSDL 1NF & 3NF:* Triệt tiêu các cột gộp chuỗi `blueChampions`/`redChampions` (1NF) và loại bỏ cột `country` do phụ thuộc hàm vào `server` (3NF).
   * *Chiến lược Multi-server:* Server Hàn Quốc (`kr`) đóng vai trò đại diện cho đấu trường Solo Queue đỉnh cao của khu vực Đông Á (nơi các tuyển thủ Trung Quốc LPL và Hàn Quốc LCK cùng thi đấu).

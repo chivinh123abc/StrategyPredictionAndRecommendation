@@ -57,9 +57,9 @@ Dự án áp dụng mô hình **Kiến trúc phân tầng hướng dịch vụ (
 
 ### `src/01_data_pipeline/`
 - Chịu trách nhiệm: 
-  - Gọi Riot API (Live Rank VN2, KR), xử lý rate limit, retry logic, trích xuất chỉ số phút thứ 10.
-  - Tự động kiểm tra và đồng bộ hóa dữ liệu từ Google Drive (Cloud Data Auto-Sync via modifiedTime/hash).
-- Đầu ra: Bảng `matches_10min` trong SQLite, file CSV `lol_live_ranked_10min.csv` và dữ liệu giải đấu mới nhất trong `data/raw/`.
+  - [`crawl_riot_matches.py`](../src/01_data_pipeline/crawl_riot_matches.py): Gọi Riot Games API (Live Rank VN2, KR), xử lý rate limit HTTP 429 qua Exponential Backoff, trích xuất chỉ số mốc phút thứ 10, chuẩn hóa 1NF & 3NF (Xem [`README_CRAWL_RIOT.md`](../src/01_data_pipeline/README_CRAWL_RIOT.md)).
+  - [`sync_google_drive.py`](../src/01_data_pipeline/sync_google_drive.py): Tự động quét và đồng bộ dữ liệu giải đấu từ Google Drive dùng chung; áp dụng Smart Caching manifest và thuật toán regex tự động đón đầu mùa giải mới nhất (2026, 2027...) (Xem [`README_SYNC_DRIVE.md`](../src/01_data_pipeline/README_SYNC_DRIVE.md)).
+- Đầu ra: Bảng `matches_10min` trong SQLite `lol_live_data.db`, file CSV `lol_live_ranked_10min.csv` và dữ liệu thô các mùa giải tại `data/raw/*.csv`.
 
 ### `src/02_preprocessing/`
 - Chịu trách nhiệm: Đọc dữ liệu thô (cả Rank và Esports), lọc bỏ trận Remake/AFK, phát hiện và xử lý giá trị ngoại lai (IQR & Z-score).
@@ -94,3 +94,15 @@ Dự án áp dụng mô hình **Kiến trúc phân tầng hướng dịch vụ (
 
 ### `mobile_app/` (Planned - Giai đoạn 2)
 - Chịu trách nhiệm: Ứng dụng Android độc lập gọi REST API từ máy tính, phục vụ nộp bài môn Lập trình Di động.
+
+---
+
+## 3. TIÊU CHUẨN MÔI TRƯỜNG THỰC THI (RUNTIME ENVIRONMENT STANDARD)
+
+- **Môi trường ảo nội bộ (.venv):** Tọa lạc tại `d:\Chivinh\2026_MonHoc\Nhập môn khoa học dữ liệu\Project\.venv` sử dụng **Python 3.13.14**.
+- **Cấu hình IDE:** Tự động nhận diện qua `.vscode/settings.json` (`python.defaultInterpreterPath`).
+- **Lệnh kích hoạt nhanh:**
+  - PowerShell: `.\.venv\Scripts\Activate.ps1`
+  - Command Prompt: `.\.venv\Scripts\activate.bat`
+  - Git Bash / Linux: `source .venv/Scripts/activate`
+- **Bộ thư viện cốt lõi:** Đã cài đặt hoàn chỉnh `pandas==3.0.6`, `numpy==2.5.3`, `scipy==1.18.1`, `scikit-learn==1.9.1`, `matplotlib==3.11.2`, `seaborn==0.13.2`, `gdown==6.4.0`, `jupyter==1.1.1`.

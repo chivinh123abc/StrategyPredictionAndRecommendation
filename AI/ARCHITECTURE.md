@@ -56,8 +56,10 @@ Dự án áp dụng mô hình **Kiến trúc phân tầng hướng dịch vụ (
 ## 2. PHÂN TRÁCH NHIỆM TỪNG MODULE (MODULE BOUNDARIES)
 
 ### `src/01_data_pipeline/`
-- Chịu trách nhiệm: Gọi Riot API (Live Rank VN2, KR), xử lý rate limit, retry logic, trích xuất chỉ số phút thứ 10.
-- Đầu ra: Bảng `matches_10min` trong SQLite và file CSV `lol_live_ranked_10min.csv`.
+- Chịu trách nhiệm: 
+  - Gọi Riot API (Live Rank VN2, KR), xử lý rate limit, retry logic, trích xuất chỉ số phút thứ 10.
+  - Tự động kiểm tra và đồng bộ hóa dữ liệu từ Google Drive (Cloud Data Auto-Sync via modifiedTime/hash).
+- Đầu ra: Bảng `matches_10min` trong SQLite, file CSV `lol_live_ranked_10min.csv` và dữ liệu giải đấu mới nhất trong `data/raw/`.
 
 ### `src/02_preprocessing/`
 - Chịu trách nhiệm: Đọc dữ liệu thô (cả Rank và Esports), lọc bỏ trận Remake/AFK, phát hiện và xử lý giá trị ngoại lai (IQR & Z-score).

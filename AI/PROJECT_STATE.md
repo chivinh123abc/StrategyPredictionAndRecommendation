@@ -19,7 +19,7 @@
 | Thư mục / File | Trạng thái thực tế | Ghi chú kỹ thuật |
 | :--- | :--- | :--- |
 | `src/config/` | `VERIFIED - WORKING` | Package cấu hình trung tâm dự án (`settings.py`, `__init__.py`). Nạp `.env`, thẩm định API key, quản lý đường dẫn và metadata. |
-| `src/01_data_pipeline/` | `VERIFIED - WORKING` | Chứa script cào chính thức `crawl_riot_matches.py` và tài liệu `README.md`. |
+| `src/01_data_pipeline/` | `VERIFIED - WORKING` | Chứa script cào chính thức `crawl_riot_matches.py`, tài liệu `README.md`, và quy hoạch module đồng bộ Google Drive Auto-Sync. |
 | `.env` / `.env.example` | `VERIFIED - WORKING` | File cấu hình biến môi trường và file mẫu template an toàn. `.gitignore` đã chặn `.env`. |
 | `src/02_preprocessing/` | `INITIALIZED` | Đã khởi tạo cấu trúc thư mục kèm tài liệu `README.md` quy định luồng xử lý outlier IQR. Sẵn sàng viết code. |
 | `src/03_database_sql/` | `INITIALIZED` | Đã khởi tạo cấu trúc thư mục kèm tài liệu `README.md` đặc tả schema và 5 câu query SQL. Sẵn sàng viết code. |

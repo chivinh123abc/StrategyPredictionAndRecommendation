@@ -35,7 +35,11 @@ Trạng thái:
   - *Truy vấn 5:* MultiIndex / Pivot Table đối chiếu tỷ lệ thắng.
   - *Acceptance Criteria:* Viết trong file `src/03_database_sql/queries.sql` hoặc notebook, chạy ra kết quả bảng dữ liệu chính xác.
 
-- [ ] **Milestone 1:** Nghiệm thu toàn bộ CSDL SQLite `lol_live_data.db` hoàn chỉnh cả 2 nguồn dữ liệu.
+- [ ] **Task 1.5 [Thành viên 1]: Xây dựng Module Đồng Bộ Dữ Liệu Tự Động từ Google Drive (Cloud Data Auto-Sync)**
+  - *Mục tiêu:* Xây dựng module tự động kiểm tra mốc thời gian cập nhật (`modifiedTime`) hoặc hash file trên Google Drive (tập dữ liệu giải đấu, file nhãn/bổ sung từ các thành viên nhóm). Tự động tải bản mới nhất về `data/raw/` khi phát hiện Drive có thay đổi và kích hoạt cập nhật vào CSDL SQLite.
+  - *Acceptance Criteria:* Script kiểm tra được thay đổi từ Drive link mà không cần tải lại toàn bộ file nếu không có cập nhật; tự động tải về `data/raw/` khi Drive có phiên bản mới.
+
+- [ ] **Milestone 1:** Nghiệm thu toàn bộ CSDL SQLite `lol_live_data.db` hoàn chỉnh cả 2 nguồn dữ liệu và cơ chế đồng bộ tự động.
 
 ---
 

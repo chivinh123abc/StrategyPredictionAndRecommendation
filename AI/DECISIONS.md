@@ -83,3 +83,14 @@ Tài liệu ghi nhận tất cả các quyết định kiến trúc, công ngh�
   - Cung cấp cơ chế import kép an toàn (`from src.config import ...` hoặc fallback `from config import ...`) đảm bảo script chạy mượt mà từ bất kỳ working directory nào mà không sợ lỗi ModuleNotFoundError.
   - Tự động xác thực Riot API Key ngay khi khởi động.
 
+---
+
+### ADR-010: Cơ chế Đồng bộ Hóa Dữ liệu Tự động từ Google Drive (Cloud Data Auto-Sync)
+- **Ngày quyết định:** 2026-09-20
+- **Bối cảnh:** Dữ liệu giải đấu chuyên nghiệp và các bộ dữ liệu nhãn/bổ sung do các thành viên nhóm cập nhật lên Google Drive dùng chung. Cần cơ chế để máy trạm tự động phát hiện và đồng bộ về local mà không cần tải thủ công.
+- **Quyết định:** Tích hợp module kiểm tra thay đổi dựa trên siêu dữ liệu thời gian sửa đổi (`modifiedTime`) hoặc hash `md5Checksum` qua Google Drive API / `gdown`.
+- **Lý do:**
+  - Tối ưu hóa băng thông mạng: Chỉ tải dữ liệu khi trên đám mây thực sự có phiên bản mới hơn phiên bản cục bộ.
+  - Tự động hóa khép kín quy trình làm việc nhóm (Collaborative Data Pipeline).
+  - Tự động kích hoạt các bước tiền xử lý (Preprocessing) và cập nhật SQLite khi có dữ liệu mới.
+

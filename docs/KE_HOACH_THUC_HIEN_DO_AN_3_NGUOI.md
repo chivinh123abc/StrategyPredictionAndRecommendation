@@ -57,14 +57,14 @@
   * *Lệnh kích hoạt PowerShell:* `.\.venv\Scripts\Activate.ps1`.
 - [x] **Task 1.5 [Thành viên 1]: Xây dựng Module Đồng Bộ Dữ Liệu Tự Động từ Google Drive (Cloud Data Auto-Sync)**
   * *Tiêu chí hoàn thành:* Hoàn thành module [`src/01_data_pipeline/sync_google_drive.py`](../src/01_data_pipeline/sync_google_drive.py) kết nối Google Drive folder `1gLSw0RLjBbtaNy0dgnGQDAZOHIgCe-HH`.
-  * *Cơ chế thông minh:* Tự động quét regex phát hiện $N$ mùa giải mới nhất (đón đầu 2027 mà không cần sửa code). Smart Caching qua manifest để tránh tải lại file nặng 71 MB.
+  * *Cơ chế thông minh:* Tự động quét regex phát hiện $N$ mùa giải mới nhất (đón đầu 2027 mà không cần sửa code). Smart Caching qua manifest để tránh tải lại file nặng 71 MB. Cơ chế chống Quota Exceeded 2 tầng (Tầng 1: gdown, Tầng 2: Google Drive API v3 OAuth 2.0 Desktop App với thuật toán Smart Copy). Tự động trích xuất trọn vẹn bộ 6 giải đấu đỉnh cao (`LCK, LCP, LPL, MSI, WLDS, EWC`) kết hợp ghép bù mẫu từ cuối 2025 thành `data/raw/esports_active_matches.csv` (26.8 MB, đúng 3,000 trận đỉnh cao, 36,000 dòng). Tỷ lệ có Timeline 10 phút đạt **79.0% (2,369 / 3,000 trận)**. Bổ sung hàm chuyên dụng `filter_esports_by_leagues()`, hàm kiểm định sức khỏe `check_data_health()` và các cờ CLI `--filter`, `--check`.
   * *Tài liệu độc lập:* Phân tách thành 2 file chuyên biệt [`README_CRAWL_RIOT.md`](../src/01_data_pipeline/README_CRAWL_RIOT.md) và [`README_SYNC_DRIVE.md`](../src/01_data_pipeline/README_SYNC_DRIVE.md).
-- [-] **Task 1.1 [Thành viên 1]:** Chạy script `crawl_riot_matches.py` tích lũy tối thiểu $1,000 - 3,000$ trận rank Việt Nam (VN2) và Hàn Quốc (KR) mới nhất vào `lol_live_data.db`.
-  * *Tiêu chí hoàn thành:* Bảng `matches_10min` có đủ 10 tướng theo 5 lane nguyên tử (`blueTop`..`redSupport`), 10 bans, và kinh tế phút 10.
-  * *Chuẩn hóa CSDL 1NF & 3NF:* Triệt tiêu các cột gộp chuỗi `blueChampions`/`redChampions` (1NF) và loại bỏ cột `country` do phụ thuộc hàm vào `server` (3NF).
-  * *Chiến lược Multi-server:* Server Hàn Quốc (`kr`) đóng vai trò đại diện cho đấu trường Solo Queue đỉnh cao của khu vực Đông Á (nơi các tuyển thủ Trung Quốc LPL và Hàn Quốc LCK cùng thi đấu).
-- [ ] **Task 1.2 [Thành viên 1]:** Xây dựng module trích xuất file `2026_LoL_esports_match_data_from_OraclesElixir.csv` vào CSDL SQLite.
-  * *Tiêu chí hoàn thành:* Tạo 2 bảng quan hệ `tournament_matches` (thông tin trận, đội, kết quả) và `tournament_players` (10 vị trí cá nhân).
+- [x] **Task 1.1 [Thành viên 1]:** Chạy script `crawl_riot_matches.py` tích lũy tối thiểu $1,000 - 3,000$ trận rank Việt Nam (VN2) và Hàn Quốc (KR) mới nhất vào `lol_live_data.db`.
+  * *Tiêu chí hoàn thành:* Đã tích lũy thành công **1,009 trận** (550 trận VN2, 459 trận KR) đạt chuẩn 1NF/3NF vào `data/database/lol_live_data.db` và xuất `data/processed/lol_live_ranked_10min.csv` (1,009 dòng $\times$ 42 cột).
+  * *Chuẩn hóa CSDL 1NF & 3NF:* Bảng `matches_10min` có đủ 10 tướng theo 5 lane nguyên tử (`blueTop`..`redSupport`), 10 bans, và kinh tế phút 10; triệt tiêu các cột gộp chuỗi `blueChampions`/`redChampions` (1NF) và loại bỏ cột `country` do phụ thuộc hàm vào `server` (3NF).
+  * *Chiến lược Multi-server:* Server Hàn Quốc (`KR`) đóng vai trò đại diện cho đấu trường Solo Queue đỉnh cao của khu vực Đông Á (nơi các tuyển thủ Trung Quốc LPL và Hàn Quốc LCK cùng thi đấu). Đã cân bằng tỷ lệ giữa 2 máy chủ (~55% VN2 / 45% KR).
+- [ ] **Task 1.2 [Thành viên 1]:** Xây dựng module nạp dữ liệu giải đấu hoạt động (`get_active_esports_file()` / `esports_active_matches.csv`) vào CSDL SQLite.
+  * *Tiêu chí hoàn thành:* Tạo 2 bảng quan hệ chuẩn `tournament_matches` (thông tin trận, giải đấu, đội tuyển, kết quả) và `tournament_players` (10 vị trí cá nhân của các tuyển thủ). Tự động ưu tiên nạp từ tệp hoạt động đã lọc giải (LCK, LCP, LPL...) theo cấu hình trung tâm.
 - [ ] **Task 1.3 [Thành viên 1]:** Viết hàm làm sạch dữ liệu (Data Cleaning) theo Chương 2:
   * Lọc bỏ $100\%$ trận Remake ($<10$ phút) và AFK qua chỉ số lính ($CS < 10$ lúc 10 phút).
   * Phát hiện và xử lý ngoại lai (Outliers) bằng thuật toán IQR và Z-Score.

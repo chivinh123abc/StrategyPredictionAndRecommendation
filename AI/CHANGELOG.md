@@ -4,6 +4,39 @@ Tất cả các thay đổi quan trọng về code, CSDL và tài liệu kiến 
 
 ---
 
+## [2026-09-20] - TÍCH HỢP BỘ 6 GIẢI ĐẤU QUỐC TẾ (MSI, WLDS, EWC) & CHỨC NĂNG THẨM ĐỊNH SỨC KHỎE DỮ LIỆU (--CHECK)
+- **Tích hợp các giải đấu quốc tế danh giá vào tập dữ liệu:**
+  - Bổ sung các mã giải quốc tế chính thức của Oracle's Elixir: `WLDS` (World Championship / CKTG), `MSI` (Mid-Season Invitational), `EWC` (Esports World Cup).
+  - Chạy đồng bộ lệnh: `python src/01_data_pipeline/sync_google_drive.py --leagues LCK,LCP,LPL,MSI,WLDS,EWC`.
+  - Kết quả: Tập dữ liệu đạt **3,000 trận (36,000 dòng, 26.8 MB)**, trong đó số trận có Timeline mốc 10 phút tăng vọt từ 70.4% lên **79.0% (2,369 / 3,000 trận)**.
+  - Phân bổ chi tiết: LPL (1,160 trận), LCK (850 trận), LCP (466 trận), EWC (265 trận), MSI (151 trận), WLDS (108 trận).
+- **Phát triển module Thẩm định Sức khỏe Dữ liệu (Data Health Card):**
+  - Thêm phương thức `check_data_health(filepath)` trong `GoogleDriveDataSyncer` và hàm cấp module `check_esports_data_health()`.
+  - Hỗ trợ cờ CLI `python src/01_data_pipeline/sync_google_drive.py --check`.
+  - Thẩm định đa tầng: Quy mô, cấu trúc chuẩn 12 dòng/trận của Oracle's Elixir (đạt 100% hoàn hảo), phân bổ giải đấu, và audit missing values theo phân tầng: Cốt lõi, Mục tiêu Team (0% khuyết), và Timeline mốc 10 phút.
+- **Giải quyết triệt để lỗi Google Drive Quota Exceeded (Lỗi 403 tải ẩn danh):**
+  - Tích hợp kiến trúc tải 2 tầng trong `src/01_data_pipeline/sync_google_drive.py`:
+    - **Tầng 1:** `gdown` tải ẩn danh nhanh; kiểm tra tính toàn vẹn (file > 100 KB, không phải HTML lỗi).
+    - **Tầng 2:** Kích hoạt tự động khi gặp Quota Exceeded, dùng Google Drive API v3 kết hợp OAuth 2.0 (`credentials.json` Desktop Client, lưu token cache `.gdrive_token.json`).
+    - Áp dụng thuật toán **Smart Copy**: Tự nhân bản file công khai vào Google Drive cá nhân của người dùng qua `service.files().copy()` $\rightarrow$ Vượt 100% hạn ngạch công khai $\rightarrow$ Stream tải 8MB/chunk $\rightarrow$ Tự động xóa bản sao tạm bằng `service.files().delete()`.
+- **Bảo mật & Cập nhật tài liệu:**
+  - Bổ sung `credentials.json`, `token.json`, `.gdrive_token.json` vào `.gitignore`.
+  - Đồng bộ toàn bộ tài liệu: `README.md`, `README_SYNC_DRIVE.md`, `AI/PROJECT_STATE.md`, `AI/TASKS.md`, `docs/KE_HOACH_THUC_HIEN_DO_AN_3_NGUOI.md`.
+
+---
+
+## [2026-09-20] - HOÀN THÀNH TASK 1.1: TÍCH LŨY 1,009 TRẬN RANK ĐỈNH CAO (VN2 & KR) ĐẠT CHUẨN 1NF/3NF
+- **Cào dữ liệu Live Rank hoàn tất qua `crawl_riot_matches.py`:**
+  - Tích lũy thành công **1,009 trận** xếp hạng đơn/đôi (vượt mốc chỉ tiêu 1,000 trận).
+  - Phân bổ cân đối Multi-server: **550 trận** máy chủ Việt Nam (`VN2`) và **459 trận** máy chủ Hàn Quốc (`KR`).
+  - Đảm bảo 100% chuẩn 1NF (10 cột lane nguyên tử `blueTop`..`redSupport`), 3NF (loại bỏ cột `country` phụ thuộc hàm, lưu cột `server`).
+  - Thu thập đầy đủ 10 lượt cấm (`blueBans`, `redBans`) và chỉ số kinh tế mốc 10 phút.
+  - Đồng bộ lưu song song vào CSDL SQLite `data/database/lol_live_data.db` (bảng `matches_10min`) và file `data/processed/lol_live_ranked_10min.csv` (1,009 $\times$ 42 cột, 0 giá trị NULL ở các cột chính).
+- **Cập nhật trạng thái:**
+  - Đánh dấu hoàn thành Task 1.1 trong [`docs/KE_HOACH_THUC_HIEN_DO_AN_3_NGUOI.md`](../docs/KE_HOACH_THUC_HIEN_DO_AN_3_NGUOI.md) và [`AI/TASKS.md`](TASKS.md).
+
+---
+
 ## [2026-09-20] - THUẬT TOÁN QUYẾT ĐỊNH MÙA GIẢI THÔNG MINH (ADR-013) & BỘ LỌC GIẢI ĐẤU (LCK, LCP, LPL...)
 - **Nâng cấp `src/01_data_pipeline/sync_google_drive.py`:**
   - Bổ sung hàm `parse_leagues()` và hỗ trợ tham số `--leagues` (ví dụ: `LCK,LCP,LPL`, `VCS`...).

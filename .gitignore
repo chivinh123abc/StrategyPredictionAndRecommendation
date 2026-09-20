@@ -14,7 +14,7 @@ env/
 ENV/
 
 # Large Datasets & Local Databases (Không push file > 50MB hoặc DB cá nhân lên GitHub)
-data/raw/*.csv
+data/raw/
 data/database/*.db
 data/database/*.sqlite
 
@@ -25,6 +25,9 @@ data/database/*.sqlite
 .env
 .env.*
 !.env.example
+credentials.json
+token.json
+.gdrive_token.json
 
 # IDE & OS
 .vscode/

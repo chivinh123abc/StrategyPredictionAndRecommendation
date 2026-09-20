@@ -11,17 +11,17 @@ Trạng thái:
 ## 🟢 GIAI ĐOẠN 1: THU THẬP, LÀM SẠCH & THIẾT KẾ CSDL (CHƯƠNG 2, 5)
 
 - [x] **Task 1.0 [Cả nhóm]: Thiết lập môi trường ảo `.venv`, cấu hình tập trung `src/config` & Cấu trúc thư mục Pipeline chuẩn**
-  - *Mục tiêu:* Khởi tạo `.venv` nội bộ tại thư mục gốc dự án (Python 3.13), cài đầy đủ `requirements.txt` (`pandas`, `scipy`, `scikit-learn`, `gdown`, `jupyter`...), cấu hình `.vscode/settings.json` tự động trỏ interpreter. Tạo package cấu hình chuẩn `src/config/` (`settings.py`, `__init__.py`), bảo vệ Riot API key, nạp `.env`. Khởi tạo đầy đủ cây thư mục từ `02` đến `07`, `notebooks/`, `reports/figures/` đi kèm file tài liệu `README.md` chuẩn hóa.
+  - *Mục tiêu:* Khởi tạo `.venv` nội bộ tại thư mục gốc dự án (Python 3.13), cài đầy đủ `requirements.txt` (`pandas`, `scipy`, `scikit-learn`, `gdown`, `jupyter`, `google-api-python-client`...), cấu hình `.vscode/settings.json` tự động trỏ interpreter. Tạo package cấu hình chuẩn `src/config/` (`settings.py`, `__init__.py`), bảo vệ Riot API key, nạp `.env`. Khởi tạo đầy đủ cây thư mục từ `02` đến `07`, `notebooks/`, `reports/figures/` đi kèm file tài liệu `README.md` chuẩn hóa.
   - *Kết quả:* Đã hoàn tất, kích hoạt thành công qua `.\.venv\Scripts\Activate.ps1` và kiểm thử 100% trơn tru.
 
-- [-] **Task 1.1 [Thành viên 1]: Cào dữ liệu Live Rank VN & KR từ Riot Games API**
-  - *Mục tiêu:* Tích lũy tối thiểu 500 - 1,000 trận rank cao (VN2 & KR) đạt chuẩn 1NF/3NF vào `data/database/lol_live_data.db`.
-  - *Hiện trạng:* Đã cào được 100 trận đầu tiên (99 VN2, 1 KR). Script đã tích hợp module cấu hình `src.config`, key hoạt động, kết nối Data Dragon 173 tướng ổn định. Đang chờ kích hoạt cào bổ sung máy chủ KR.
-  - *Acceptance Criteria:* Bảng `matches_10min` có $\ge 500$ trận, không có giá trị NULL ở các cột chỉ số chính, tỷ lệ VN2 và KR cân bằng hơn.
+- [x] **Task 1.1 [Thành viên 1]: Cào dữ liệu Live Rank VN & KR từ Riot Games API**
+  - *Mục tiêu:* Tích lũy tối thiểu 1,000 - 3,000 trận rank cao (VN2 & KR) đạt chuẩn 1NF/3NF vào `data/database/lol_live_data.db`.
+  - *Kết quả:* Đã tích lũy thành công **1,009 trận** thực tế (550 trận VN2, 459 trận KR), xuất song song ra `data/processed/lol_live_ranked_10min.csv` (1,009 dòng $\times$ 42 cột).
+  - *Acceptance Criteria:* Bảng `matches_10min` có $\ge 1,000$ trận, 0 giá trị NULL ở các cột kinh tế và 10 tướng, tỷ lệ VN2 (54.5%) và KR (45.5%) cân đối hoàn hảo. Đạt chuẩn 1NF (10 cột lane nguyên tử) và 3NF (khử cột phụ thuộc hàm). Hoàn thành 100%.
 
-- [ ] **Task 1.2 [Thành viên 1]: Nạp dữ liệu giải đấu chuyên nghiệp 2026 vào SQLite**
-  - *Mục tiêu:* Viết script ETL đọc `data/raw/2026_LoL_esports_match_data_from_OraclesElixir.csv` nạp vào 2 bảng `tournament_matches` và `tournament_players`.
-  - *Acceptance Criteria:* CSDL có 2 bảng mới, truy vấn thử lấy đúng thông tin các giải LCK, LPL, VCS năm 2026.
+- [ ] **Task 1.2 [Thành viên 1]: Nạp dữ liệu giải đấu chuyên nghiệp vào SQLite**
+  - *Mục tiêu:* Viết script ETL đọc tệp dữ liệu hoạt động (`get_active_esports_file()` / `data/raw/esports_active_matches.csv`) nạp vào 2 bảng `tournament_matches` và `tournament_players` trong `lol_live_data.db`.
+  - *Acceptance Criteria:* CSDL có 2 bảng mới chuẩn hóa, có quan hệ Foreign Key `gameid`, truy vấn thử lấy đúng thông tin các giải đấu mục tiêu (LCK, LPL, LCP, VCS...).
 
 - [ ] **Task 1.3 [Thành viên 1]: Viết module làm sạch dữ liệu & khử ngoại lai (IQR/Z-Score)**
   - *Mục tiêu:* Viết hàm trong `src/02_preprocessing/cleaner.py` lọc bỏ 100% trận Remake (< 10 phút), AFK (CS < 10), và outlier chênh lệch vàng bất thường.
@@ -40,8 +40,11 @@ Trạng thái:
   - *Kết quả:* Đã hoàn thành module [`src/01_data_pipeline/sync_google_drive.py`](../src/01_data_pipeline/sync_google_drive.py).
     - Hỗ trợ kiểm tra danh mục siêu nhẹ (`--list`), tự động bỏ qua nếu file cục bộ đã khớp dung lượng, hỗ trợ tải từng năm (`--year`), tải toàn bộ (`--all`) và ép buộc tải mới (`--force`).
     - Nâng cấp thuật toán quyết định mùa giải thông minh (ADR-013): Tự động phát hiện năm mới nhất; nếu chưa đủ số trận (`min_matches`), tự động ghép toàn bộ năm mới + trích xuất phần cuối năm trước (CKTG / Mùa Hè) cho đến khi đủ số lượng.
-    - Hỗ trợ bộ lọc giải đấu linh hoạt (`--leagues LCK,LCP,LPL`): Tự động trích xuất đúng các giải đấu chỉ định và xuất tệp hoạt động `data/raw/esports_active_matches.csv`.
-    - Phân tách tài liệu chi tiết thành 2 file chuyên biệt [`README_CRAWL_RIOT.md`](../src/01_data_pipeline/README_CRAWL_RIOT.md) và [`README_SYNC_DRIVE.md`](../src/01_data_pipeline/README_SYNC_DRIVE.md). Đã chạy thử nghiệm thành công 100%.
+    - Hỗ trợ bộ lọc giải đấu linh hoạt (`--leagues LCK,LCP,LPL,MSI,WLDS,EWC`): Tự động trích xuất đúng các giải đấu chỉ định kết hợp các giải quốc tế danh giá (Worlds, MSI, EWC), xuất tệp hoạt động `data/raw/esports_active_matches.csv` (26.8 MB, 36,000 dòng, đúng 3,000 trận đỉnh cao: 1,774 trận từ 2026 + 1,226 trận từ cuối 2025). Tỷ lệ có Timeline 10 phút tăng vọt lên **79.0% (2,369 / 3,000 trận)**.
+    - Bổ sung hàm chuyên dụng `filter_leagues()` và `filter_esports_by_leagues()` cùng cờ CLI `--filter --filter-leagues`.
+    - Bổ sung hàm kiểm tra sức khỏe và độ sạch dữ liệu `check_data_health()` / `check_esports_data_health()` cùng cờ CLI `--check` xuất Data Health Card trực quan.
+    - Cơ chế chống Quota Exceeded 2 tầng: Tầng 1 (gdown trực tiếp), Tầng 2 (Google Drive API v3 + OAuth 2.0 Desktop App qua cơ chế Smart Copy vào My Drive rồi tự dọn dẹp file tạm). Đã kiểm thử live thành công 100%.
+    - Phân tách tài liệu chi tiết thành 2 file chuyên biệt [`README_CRAWL_RIOT.md`](../src/01_data_pipeline/README_CRAWL_RIOT.md) và [`README_SYNC_DRIVE.md`](../src/01_data_pipeline/README_SYNC_DRIVE.md). Hoàn thành 100%.
 
 - [ ] **Milestone 1:** Nghiệm thu toàn bộ CSDL SQLite `lol_live_data.db` hoàn chỉnh cả 2 nguồn dữ liệu và cơ chế đồng bộ tự động.
 

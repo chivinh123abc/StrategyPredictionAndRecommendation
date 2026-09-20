@@ -28,17 +28,25 @@ Thư mục này quản lý toàn bộ quy trình thu thập, trích xuất và �
 - **Tài liệu:** Đọc hướng dẫn toàn diện tại [**`README_SYNC_DRIVE.md`**](README_SYNC_DRIVE.md).
 - **Điểm nổi bật:**
   - Tự động nhận diện thư mục Google Drive chung chứa 13 mùa giải (2014 - nay).
-  - Thuật toán quyết định mùa giải thông minh (ADR-013): Ưu tiên năm mới nhất; nếu đầu mùa chưa đủ mẫu thì tự động ghép với phần cuối năm trước.
-  - Hỗ trợ bộ lọc giải đấu linh hoạt (`--leagues LCK,LCP,LPL`) để lọc đúng giải mong muốn vào `data/raw/esports_active_matches.csv`.
+  - Thuật toán quyết định mùa giải thông minh (ADR-013): Ưu tiên năm mới nhất; nếu đầu mùa chưa đủ mẫu thì tự động ghép thích ứng với phần cuối năm trước (CKTG / Mùa Hè).
+  - Hỗ trợ bộ lọc giải đấu linh hoạt (`--leagues LCK,LCP,LPL`) và xuất ra tệp hoạt động `data/raw/esports_active_matches.csv` (27.2 MB, 3,000 trận đỉnh cao, 36,000 dòng).
+  - Hàm lọc chuyên biệt `filter_esports_by_leagues()` và cờ CLI `--filter --filter-leagues LCK,LCP,LPL` cho phép lọc offline không cần tải lại.
   - Tối ưu băng thông (Smart Caching): Tự động kiểm tra và bỏ qua không tải lại các file đã có sẵn trên máy trạm.
+  - Cơ chế chống Quota Exceeded 2 tầng: Tầng 1 (`gdown` tải ẩn danh nhanh) $\rightarrow$ Tầng 2 (`Google Drive API v3 + OAuth2` sao chép My Drive vượt hạn ngạch).
 - **Lệnh chạy nhanh:**
   ```bash
   # Tự động thẩm định mùa giải mới nhất và đồng bộ:
   python src/01_data_pipeline/sync_google_drive.py
-  
-  # Chỉ lấy các giải đấu trọng tâm (LCK, LCP, LPL):
-  python src/01_data_pipeline/sync_google_drive.py --leagues LCK,LCP,LPL
-  
+
+  # Đồng bộ trọn vẹn 6 giải đấu đỉnh cao (LCK, LCP, LPL, MSI, WLDS, EWC):
+  python src/01_data_pipeline/sync_google_drive.py --leagues LCK,LCP,LPL,MSI,WLDS,EWC
+
+  # Lọc trực tiếp từ file đã có trên máy:
+  python src/01_data_pipeline/sync_google_drive.py --filter --filter-leagues LCK,LCP,LPL,MSI,WLDS,EWC
+
+  # Kiểm tra độ sạch & sức khỏe dữ liệu (Data Health Card):
+  python src/01_data_pipeline/sync_google_drive.py --check
+
   # Liệt kê danh mục file trên Drive:
   python src/01_data_pipeline/sync_google_drive.py --list
   ```

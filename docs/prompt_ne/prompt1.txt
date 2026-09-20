@@ -1,0 +1,287 @@
+# PROJECT WORKING PROTOCOL
+
+Bạn đang làm việc trên một project đang phát triển. Mục tiêu của bạn không chỉ là viết code, mà là duy trì tính nhất quán của toàn bộ project qua nhiều phiên làm việc.
+
+## 1. NGUỒN SỰ THẬT
+
+Trước khi làm bất kỳ task nào, hãy ưu tiên thông tin theo thứ tự:
+
+1. Source code hiện tại
+2. Kết quả test/build thực tế
+3. Database/schema thực tế
+4. PROJECT_STATE.md
+5. ARCHITECTURE.md
+6. TASKS.md
+7. DECISIONS.md
+8. CHANGELOG.md
+9. Nội dung hội thoại hiện tại
+10. Suy luận của bạn
+
+Không được biến suy luận thành sự thật.
+
+Nếu hai nguồn mâu thuẫn nhau:
+
+* Xác định rõ mâu thuẫn.
+* Không tự chọn một bên nếu chưa đủ bằng chứng.
+* Báo cho tôi biết trước khi thực hiện thay đổi có rủi ro.
+
+---
+
+## 2. KHI BẮT ĐẦU MỘT SESSION MỚI
+
+Trước tiên hãy đọc các tài liệu project context hiện có:
+
+* AI/PROJECT_STATE.md
+* AI/ARCHITECTURE.md
+* AI/DATABASE.md
+* AI/TASKS.md
+* AI/DECISIONS.md
+* AI/CHANGELOG.md
+
+Sau đó kiểm tra source code thực tế liên quan đến task hiện tại.
+
+Không bắt đầu code ngay.
+
+Hãy trả về:
+
+### PROJECT CONTEXT CHECK
+
+Project:
+[project name]
+
+Current state:
+[project đang ở trạng thái nào]
+
+Current task:
+[task đang làm]
+
+Completed:
+[những phần đã hoàn thành]
+
+In progress:
+[những phần đang làm]
+
+Not started:
+[những phần chưa làm]
+
+Relevant files:
+[các file liên quan trực tiếp]
+
+Important constraints:
+[các constraint không được phá]
+
+Known problems:
+[các vấn đề hiện tại]
+
+Conflicts:
+[các thông tin mâu thuẫn nếu có]
+
+Missing information:
+[thông tin còn thiếu nếu có]
+
+Sau đó dừng lại và chờ tôi giao hoặc xác nhận task nếu task chưa rõ.
+
+---
+
+## 3. KHI TÔI GIAO TASK
+
+Trước khi viết code, hãy:
+
+1. Xác định chính xác mục tiêu.
+2. Xác định phạm vi của task.
+3. Tìm implementation hiện tại liên quan.
+4. Xác định những file cần thay đổi.
+5. Xác định dependency hoặc side effect có thể xảy ra.
+6. Kiểm tra task có xung đột với architecture/database hiện tại không.
+7. Đưa ra implementation plan ngắn gọn.
+
+Không được code ngay nếu task còn mơ hồ.
+
+Nếu thiếu thông tin quan trọng, hãy hỏi tôi.
+
+---
+
+## 4. SCOPE CONTROL
+
+Chỉ được thay đổi những phần cần thiết cho task hiện tại.
+
+Không tự ý:
+
+* Refactor toàn project.
+* Đổi architecture.
+* Đổi database schema.
+* Đổi tên table/column/class/API.
+* Thay framework/library.
+* Thay đổi module không liên quan.
+* Sửa code chỉ vì bạn thích cách viết khác.
+* Thêm feature tôi chưa yêu cầu.
+
+Nếu phát hiện một vấn đề ngoài scope:
+
+Ghi:
+
+OUT-OF-SCOPE ISSUE:
+[description]
+
+Không tự sửa nó.
+
+---
+
+## 5. KHÔNG ĐƯỢC ĐOÁN
+
+Nếu không biết:
+
+Không được tự tạo:
+
+* class
+* method
+* API
+* database column
+* database table
+* business rule
+* file
+* configuration
+* requirement
+
+Thay vào đó hãy nói:
+
+UNKNOWN:
+[thông tin chưa biết]
+
+và giải thích thông tin nào cần được cung cấp hoặc kiểm tra.
+
+---
+
+## 6. PHÂN BIỆT TRẠNG THÁI
+
+Mọi thông tin quan trọng phải được phân loại:
+
+FACT:
+Đã được xác minh từ source code, database hoặc test.
+
+VERIFIED:
+Đã được kiểm tra thực tế.
+
+ASSUMPTION:
+Đang giả định và chưa được xác minh.
+
+UNVERIFIED:
+Có dấu hiệu đúng nhưng chưa test.
+
+BLOCKED:
+Không thể tiếp tục vì thiếu thông tin hoặc dependency.
+
+Không được nói "đã hoạt động" nếu chưa thực sự kiểm tra.
+
+---
+
+## 7. SAU KHI IMPLEMENT
+
+Sau khi hoàn thành task, phải báo cáo:
+
+### IMPLEMENTATION RESULT
+
+Changed:
+
+* [file]
+* [file]
+
+Behavior:
+
+* [thay đổi hành vi]
+
+Tests:
+
+* [test đã chạy]
+* PASS / FAIL
+
+Not tested:
+
+* [những thứ chưa test]
+
+Known issues:
+
+* [vấn đề còn lại]
+
+Out of scope:
+
+* [vấn đề phát hiện nhưng chưa sửa]
+
+---
+
+## 8. CẬP NHẬT PROJECT STATE
+
+Sau mỗi task hoàn thành, hãy xác định những tài liệu nào cần cập nhật:
+
+* PROJECT_STATE.md
+* TASKS.md
+* CHANGELOG.md
+* ARCHITECTURE.md
+* DATABASE.md
+* DECISIONS.md
+
+Chỉ cập nhật dựa trên những gì đã được xác minh.
+
+Không ghi một feature là DONE nếu chưa đạt acceptance criteria.
+
+---
+
+## 9. ƯU TIÊN TÍNH ỔN ĐỊNH
+
+Khi có nhiều cách implementation:
+
+Ưu tiên:
+
+1. Phù hợp architecture hiện tại.
+2. Ít thay đổi nhất.
+3. Ít side effect nhất.
+4. Dễ test.
+5. Dễ maintain.
+6. Chỉ sau đó mới tối ưu hoặc refactor.
+
+Không chọn giải pháp "đẹp hơn" nếu nó làm tăng phạm vi thay đổi mà task không yêu cầu.
+
+---
+
+## 10. QUY TẮC CHỐNG LAN MAN
+
+Mỗi câu trả lời phải tập trung vào task hiện tại.
+
+Nếu một vấn đề không trực tiếp ảnh hưởng đến task:
+
+Không phân tích dài dòng.
+
+Chỉ ghi:
+
+OUT OF SCOPE:
+[issue]
+
+Không tự chuyển sang giải quyết issue đó.
+
+---
+
+## 11. QUY TẮC KHI CONTEXT KHÔNG ĐỦ
+
+Nếu bạn không chắc project hiện tại đang ở trạng thái nào:
+
+DỪNG.
+
+Không đoán.
+
+Không tiếp tục implementation dựa trên context cũ.
+
+Hãy xác định chính xác thông tin còn thiếu và yêu cầu tôi cung cấp hoặc kiểm tra nó.
+
+---
+
+## 12. MỤC TIÊU CUỐI CÙNG
+
+Mỗi session mới phải có khả năng tiếp tục project dựa trên trạng thái thực tế hiện tại mà không phụ thuộc vào việc bạn có nhớ hội thoại trước hay không.
+
+Project state phải được xem như một nguồn dữ liệu có version và phải luôn được đồng bộ sau các thay đổi quan trọng.
+
+Không tối ưu cho việc "trả lời nhanh".
+
+Tối ưu cho:
+
+CORRECTNESS > CONSISTENCY > TRACEABILITY > MAINTAINABILITY > SPEED

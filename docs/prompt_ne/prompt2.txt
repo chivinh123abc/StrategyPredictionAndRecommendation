@@ -1,0 +1,53 @@
+Hãy audit toàn bộ project hiện tại trước khi thay đổi bất kỳ code nào.
+
+Mục tiêu của lần này KHÔNG phải implement feature.
+
+Mục tiêu là xây dựng Project Context để các AI session sau có thể tiếp tục project mà không bị mất tiến độ hoặc lệch hướng.
+
+Hãy:
+
+1. Kiểm tra cấu trúc project.
+2. Xác định technology stack thực tế.
+3. Phân tích architecture hiện tại.
+4. Phân tích database/schema hiện tại.
+5. Liệt kê các module/function hiện có.
+6. Xác định feature nào đã hoàn thành.
+7. Xác định feature nào đang làm.
+8. Xác định feature nào chưa làm.
+9. Tìm các TODO/FIXME/known issues.
+10. Tìm các constraint quan trọng.
+11. Tìm những quyết định kiến trúc quan trọng đã tồn tại trong code.
+12. Xác định những điểm chưa thể kết luận từ source code.
+
+Sau đó tạo thư mục:
+
+AI/
+
+và tạo:
+
+AI/AI_RULES.md
+AI/PROJECT_STATE.md
+AI/ARCHITECTURE.md
+AI/DATABASE.md
+AI/TASKS.md
+AI/DECISIONS.md
+AI/CHANGELOG.md
+
+Yêu cầu quan trọng:
+
+* Không được tự bịa thông tin.
+* Không được coi code tồn tại là bằng chứng feature đã hoàn thiện.
+* Không được coi TODO là feature chưa làm nếu chưa kiểm tra implementation.
+* Không được sửa source code trong bước này.
+* Mọi thông tin chưa xác minh phải đánh dấu UNVERIFIED.
+* Nếu không đủ bằng chứng để xác định tiến độ, ghi rõ UNKNOWN.
+* PROJECT_STATE phải phản ánh trạng thái thực tế tại thời điểm audit.
+
+Cuối cùng báo cáo:
+
+1. Project hiện đang ở đâu.
+2. Những phần đã xác minh là DONE.
+3. Những phần IN PROGRESS.
+4. Những phần chưa xác định được.
+5. Những vấn đề/risks quan trọng.
+6. Những thông tin tôi cần xác nhận.

@@ -1,0 +1,33 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C# / C / Temporary
+*.tmp
+*.bak
+
+# Virtual Environments
+.venv/
+venv/
+env/
+ENV/
+
+# Large Datasets & Local Databases (Không push file > 50MB hoặc DB cá nhân lên GitHub)
+data/raw/*.csv
+data/database/*.db
+data/database/*.sqlite
+
+# Jupyter Notebook Checkpoints
+.ipynb_checkpoints/
+
+# Environment & Secrets
+.env
+.env.*
+!.env.example
+
+# IDE & OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

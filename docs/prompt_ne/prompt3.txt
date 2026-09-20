@@ -1,0 +1,19 @@
+Tiếp tục project theo PROJECT WORKING PROTOCOL.
+
+Trước tiên đọc:
+
+* AI/AI_RULES.md
+* AI/PROJECT_STATE.md
+* AI/ARCHITECTURE.md
+* AI/DATABASE.md
+* AI/TASKS.md
+* AI/DECISIONS.md
+* AI/CHANGELOG.md
+
+Sau đó kiểm tra source code liên quan đến trạng thái hiện tại.
+
+Không code ngay.
+
+Hãy thực hiện PROJECT CONTEXT CHECK và cho tôi biết chính xác project hiện đang ở đâu.
+
+Chỉ sau khi xác định được context hiện tại mới tiếp tục task tôi giao.

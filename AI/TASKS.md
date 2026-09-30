@@ -114,9 +114,22 @@ Trạng thái:
 - [ ] **Task 3.3 [Thành viên 3]:** Đánh giá mô hình: ROC-AUC Curve, Confusion Matrix, Feature Importance.
 - [ ] **Task 3.4 [Thành viên 3]: Phân cụm K-Means & Nhận diện 4 Trường phái Đội hình (Draft Archetypes - Chương 4)**
   - *Mục tiêu:* Vector hóa 159 tướng theo 5 trục sức mạnh `[Early_Power, Scaling, Teamfight_AOE, Pick_Potential, Objective_Control]`. Dùng K-Means + PCA gom cụm nhận diện 4 trường phái đội hình: Early Snowball / Dive, Dragon Soul Stacking, Late-Game Hypercarry, Pick & Split-Push 1-3-1.
-- [ ] **Task 3.5 [Thành viên 3 + 1]: Hệ thống Gợi ý Cấm/Chọn (Counter Pick & Synergy Apriori) & Engine Phân tích Điều kiện thắng (Win Condition Card - ADR-014)**
-  - *Mục tiêu:* Xây dựng Recommender gợi ý Counter-Pick và Synergy Duo; tự động xuất Thẻ Điều kiện thắng (Win Condition Card) chỉ rõ: Chủ lực gánh đội (Core Carry), Điểm rơi sức mạnh (Power Spike Timing), Mục tiêu ưu tiên số 1 (Primary Objective), và Điều kiện thất bại cần tránh (Lose Condition).
-- [ ] **Milestone 3:** Xuất các file mô hình `draft_model.pkl`, `snowball_model.pkl`, `archetype_kmeans.pkl`, `recommender.pkl`.
+- [ ] **Task 3.5 [Thành viên 3 + 1]: Hệ thống Gợi ý Cấm/Chọn Thông Minh (Hybrid Opponent Target Ban, Meta Recommender & Punisher Engine) & Engine Phân tích Điều kiện thắng (Win Condition Card - ADR-014)**
+  - *Mục tiêu & Cơ chế:*
+    - **1. Phân hệ CẤM lai ghép mục tiêu theo Tuyển thủ Đối phương (Hybrid Opponent Target Ban):** 
+      - *Trọng số Đấu Giải (60-70%):* Khai thác 30,000 dòng `tournament_players` trong SQLite, tính điểm nguy hiểm/tướng tủ ổn định (Bayesian Smoothed Winrate + 10m Laning Dominance) của tuyển thủ đối phương (ví dụ: Keria -> Bard/Renata, Kiaya -> Rumble/Renekton, Chovy -> Yone/Ahri). Tự động nhận diện hồ sơ tân binh ngay khi có trận đấu giải mới.
+      - *Trọng số Solo Rank Gần Nhất (30-40% - Hidden Weapon / Pocket Pick Detector):* Tích hợp cơ chế Pro Player Registry (`data/pro_player_accounts.json`) và Riot Games Account API (PUUID) để cào 20-50 trận Rank Thách Đấu gần nhất của tuyển thủ đối phương, phát hiện bài dị đang bí mật spam luyện tập (Spike in Pick Rate & Winrate > 65%).
+      - *Cơ chế Cập nhật & Tự học Tuyển thủ Mới:* Hỗ trợ CLI/API link tài khoản Rank mới (`--link-player "Player" --riot-id "Name#Tag"`) và cơ chế Fallback an toàn về dữ liệu giải đấu nếu chưa có Riot ID.
+      - *Đầu ra:* Tự động xuất **Top 3-5 tướng bắt buộc phải CẤM (Target Ban & Pocket Pick Alert 🚨)**.
+    - **2. Phân hệ CHỌN theo Chuẩn Meta & Khắc chế Đội hình (Meta-based Pick Recommender):** Gợi ý chọn tướng tối ưu dựa trên Counter-Pick đối đầu lane trực tiếp, Synergy Duo (Mid-Jungle, Bot-Sup) và bù đắp thuộc tính đội hình (AD/AP/CC/Engage). Độ thuận tay của phe mình sẽ để người chơi/tuyển thủ tự quyết định bên ngoài.
+    - **3. Phân hệ NHẬN DIỆN LỖ HỔNG CẤM/CHỌN CỦA ĐỊCH & GỢI Ý CON BÀI TRỪNG PHẠT (Draft Flaw & Punisher Recommender):**
+      - Tự động quét Vector thuộc tính đội hình địch để phát hiện 4 lỗ hổng chí mạng:
+        - *Lỗ hổng 1 (Heavy Melee - Đối thủ pick 3-4 tướng cận chiến/tay ngắn):* Tự động bật cảnh báo đỏ và đẩy điểm gợi ý con bài trừng phạt chống càn diện rộng lên Top 1 (ví dụ: **Illaoi, Darius, Mordekaiser, Cassiopeia, Brand** - tăng vọt +15% đến +20% Winrate dự đoán như trận Siwoo Illaoi).
+        - *Lỗ hổng 2 (Full AD - Thiếu sát thương phép):* Gợi ý siêu đỡ đòn giáp (**Malphite, Rammus, K'Sante, Taric**).
+        - *Lỗ hổng 3 (Zero Hard CC - Thiếu khống chế cứng):* Gợi ý siêu sát thủ/quẩy giao tranh (**Master Yi, Katarina, Irelia, Zeri**).
+        - *Lỗ hổng 4 (Full Squishy - Máu giấy/Thiếu mở combat):* Gợi ý càn quét mở giao tranh (**Nocturne, Jarvan IV, Hecarim, Akali**).
+    - **4. Engine Phân tích Điều kiện thắng (Win Condition Card - ADR-014):** Tự động trích xuất Thẻ chiến thuật chỉ rõ: Chủ lực gánh đội (Core Carry), Điểm rơi sức mạnh (Power Spike Timing), Mục tiêu ưu tiên số 1 (Primary Objective) và Điều kiện thua cần tránh (Lose Condition).
+- [ ] **Milestone 3:** Xuất các file mô hình `draft_model.pkl`, `snowball_model.pkl`, `archetype_kmeans.pkl`, `target_ban_engine.pkl`, `recommender.pkl`, `punisher_engine.pkl`, `win_condition_engine.pkl`.
 
 ---
 
@@ -125,10 +138,13 @@ Trạng thái:
 - [ ] **Task 4.1 [Thành viên 1]:** Xây dựng Backend REST API bằng **FastAPI** (`src/api/`):
   - `POST /api/v1/predict`: Dự đoán tỉ lệ thắng 2 giai đoạn (Phút 0 & Phút 10).
   - `GET /api/v1/champions`: Danh sách 173 tướng + Vector thuộc tính.
-  - `POST /api/v1/recommend`: Gợi ý cấm/chọn tối ưu (Counter & Synergy).
+  - `POST /api/v1/target-ban`: Phân tích và gợi ý CẤM mục tiêu theo 5 tuyển thủ đối phương (kết hợp Đấu Giải + Solo Rank).
+  - `POST /api/v1/players/link-account`: Thêm / Cập nhật tài khoản Riot ID Rank cho tuyển thủ mới.
+  - `POST /api/v1/recommend`: Gợi ý chọn tướng cấm/chọn tối ưu theo Meta (Counter & Synergy).
+  - `POST /api/v1/detect-flaws`: Quét đội hình địch và trả về Cảnh báo Lỗ hổng + Gợi ý Con bài Trừng phạt (Punisher Picks).
   - `POST /api/v1/win-condition`: Trích xuất Radar Chart 5 trục & Thẻ điều kiện thắng của đội hình (ADR-014).
   - `GET /api/v1/analytics`: Số liệu thống kê Meta giải đấu & Rank.
-- [ ] **Task 4.2 [Thành viên 1 + 3]:** Xây dựng Giao diện Web App tương tác (`web/` hoặc Streamlit) tích hợp Radar Chart 5 trục và Thẻ chiến thuật Win Condition trực quan.
+- [ ] **Task 4.2 [Thành viên 1 + 3]:** Xây dựng Giao diện Web App tương tác (`web/` hoặc Streamlit) tích hợp chọn Tuyển thủ đối phương, Thẻ cảnh báo Lỗ hổng & Con bài Trừng phạt (Punisher Card), Radar Chart 5 trục và Thẻ chiến thuật Win Condition trực quan.
 - [ ] **Milestone 4:** Demo hoàn chỉnh Web App kết nối API nộp môn Nhập môn Khoa học Dữ liệu.
 
 ---

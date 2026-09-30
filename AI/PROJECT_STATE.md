@@ -28,7 +28,7 @@
 | `notebooks/` | `VERIFIED - WORKING` | Đã hoàn thành và đóng gói Notebook toàn diện `01_kham_pha_du_lieu_EDA.ipynb` (21 cells, thực thi và render 100% outputs hình ảnh & bảng thống kê). Hoàn thành Milestone 2. |
 | `docs/figure_explain/` | `VERIFIED - WORKING` | Trọn bộ 6 tệp tài liệu giải thích học thuật và phản biện chi tiết cho Bộ 5 biểu đồ EDA 300 DPI. |
 | `src/06_machine_learning/` | `INITIALIZED` | Đã khởi tạo cấu trúc thư mục kèm tài liệu `README.md` đặc tả mô hình 2 tầng. Sẵn sàng viết code. |
-| `src/07_recommender/` | `INITIALIZED` | Đã khởi tạo cấu trúc thư mục kèm tài liệu `README.md` thuật toán gợi ý cấm/chọn. Sẵn sàng viết code. |
+| `src/07_recommender/` | `INITIALIZED` | Đã khởi tạo cấu trúc thư mục kèm tài liệu `README.md` đặc tả hệ thống Gợi ý Cấm/Chọn (Hybrid Target Ban, Meta Pick, Punisher Engine & Win Condition). Sẵn sàng viết code. |
 | `src/api/` | `NOT CREATED (FACT)` | Chưa tạo thư mục mã nguồn Backend FastAPI. |
 | `web/` | `NOT CREATED (FACT)` | Chưa tạo thư mục giao diện Web App. |
 | `mobile_app/` | `NOT CREATED (FACT)` | Chưa tạo thư mục ứng dụng Android (theo kế hoạch là Giai đoạn 2). |

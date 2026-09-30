@@ -4,6 +4,15 @@ Tất cả các thay đổi quan trọng về code, CSDL và tài liệu kiến 
 
 ---
 
+## [2026-09-30] - BỔ SUNG KIẾN TRÚC DRAFT FLAW & PUNISHER RECOMMENDER
+- **Cập nhật đặc tả Task 3.5, Task 4.1 & Module `src/07_recommender/`:**
+  - **Phân hệ Nhận diện Lỗ hổng Cấm/Chọn của Địch (Draft Flaw Exploitation):** Tự động phát hiện 4 lỗ hổng chí mạng của đội hình địch: Heavy Melee (3-4 cận chiến), Full AD (không có AP), Zero Hard CC (không có khống chế cứng), Full Squishy (máu giấy không có tanker/mở combat).
+  - **Gợi ý Con Bài Trừng Phạt (Punisher Pick Recommender):** Tự động đề xuất các con bài trừng phạt tối thượng tương ứng như trận Siwoo Illaoi (Illaoi/Darius khắc chế Heavy Melee, Malphite/Rammus khắc chế Full AD, Master Yi/Katarina trừng phạt Zero CC) giúp tăng vọt +15% đến +20% winrate dự đoán.
+  - **Bổ sung Endpoint API & Web UI:** `POST /api/v1/detect-flaws` trả về Thẻ Cảnh báo Lỗ hổng & Con bài Trừng phạt (Punisher Card) trực quan trên giao diện cấm/chọn.
+  - Cập nhật [`AI/TASKS.md`](TASKS.md), [`AI/PROJECT_STATE.md`](PROJECT_STATE.md), [`src/07_recommender/README.md`](../src/07_recommender/README.md).
+
+---
+
 ## [2026-09-30] - HOÀN THÀNH VÀ ĐÓNG GÓI MILESTONE 2: JUPYTER NOTEBOOK EDA
 - **Hoàn thành và đóng gói Notebook [`notebooks/01_kham_pha_du_lieu_EDA.ipynb`](../notebooks/01_kham_pha_du_lieu_EDA.ipynb):**
   - Tích hợp toàn diện 21 cells (6 Markdown dẫn nhập & tổng kết học thuật, 15 Code cells thực thi) bao phủ trọn vẹn chương trình môn học:

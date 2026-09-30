@@ -141,3 +141,23 @@ Tài liệu ghi nhận tất cả các quyết định kiến trúc, công ngh�
 - **Lý do:**
   - Giải quyết triệt để bài toán cân bằng giữa: **Quy mô mẫu (Sample Size)** và **Tính thời sự của Meta (Recency & Homogeneity)**, tránh việc nạp dữ liệu đầu năm cũ đã quá lỗi thời.
 
+---
+
+### ADR-014: Hệ Thống Nhận Diện Trường Phái Đội Hình & Khuyến Nghị Điều Kiện Thắng (Draft Win Condition & Archetype Engine)
+- **Ngày quyết định:** 2026-09-28
+- **Bối cảnh:** Khi chọn xong đội hình cấm/chọn (Draft Phase lúc Phút 0), người dùng và ban huấn luyện không chỉ muốn biết tỷ lệ thắng tổng quan (% Winrate) mà còn cần chỉ dẫn chiến thuật cụ thể: Đội hình này thắng bằng cách nào? Cần đánh xoay quanh ai? Điểm rơi sức mạnh là khi nào? và Cần kiểm soát mục tiêu gì (Rồng hay Sâu Hư Không)?
+- **Quyết định:**
+  - Tích hợp module phân tích điều kiện thắng vào Giai đoạn 3 (Machine Learning & Recommender):
+  - **1. Phân cụm Đội hình (Archetype Clustering qua K-Means & PCA - Chương 4):** Phân loại 159 tướng thành 5 trục sức mạnh `[Early_Power, Scaling, Teamfight_AOE, Pick_Potential, Objective_Control]` và nhận diện 4 trường phái đội hình:
+    1. *Early Game Snowball / Dive* (Lăn cầu tuyết sớm).
+    2. *Dragon Soul Stacking / Teamfight Control* (Kiểm soát chuỗi Rồng).
+    3. *Late-Game Hypercarry Scaling* (Hậu kỳ tăng tiến sức mạnh).
+    4. *Pick & Split-Push 1-3-1* (Bắt lẻ & Đẩy lẻ đường biên).
+  - **2. Xuất Thẻ Điều Kiện Thắng (Win Condition Card):**
+    - Trích xuất vị trí chủ lực gánh đội (Core Carry: Jinx, Smolder, Draven, Renekton...).
+    - Xác định điểm rơi sức mạnh (Power Spike Timing: Trước phút 25 vs Sau phút 25).
+    - Khuyến nghị mục tiêu ưu tiên số 1 (Primary Objective) và điều kiện thất bại cần tránh (Lose Condition).
+  - **3. Đóng gói vào API & UI:** Trả về qua endpoint `POST /api/v1/recommend` và `POST /api/v1/predict`, hiển thị trực quan dưới dạng Radar Chart 5 trục trên Web Streamlit và Android App.
+- **Lý do:** Nâng tầm đồ án từ một mô hình dự báo xác suất cơ bản thành một **Trợ lý Chiến thuật Toàn diện (AI Strategic Assistant)**, giúp đồ án đạt điểm số tối đa (A+) trước hội đồng giảng viên.
+
+

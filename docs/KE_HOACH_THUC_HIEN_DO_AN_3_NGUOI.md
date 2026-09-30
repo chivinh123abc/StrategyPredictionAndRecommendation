@@ -63,27 +63,29 @@
   * *Tiêu chí hoàn thành:* Đã tích lũy thành công **1,009 trận** (550 trận VN2, 459 trận KR) đạt chuẩn 1NF/3NF vào `data/database/lol_live_data.db` và xuất `data/processed/lol_live_ranked_10min.csv` (1,009 dòng $\times$ 42 cột).
   * *Chuẩn hóa CSDL 1NF & 3NF:* Bảng `matches_10min` có đủ 10 tướng theo 5 lane nguyên tử (`blueTop`..`redSupport`), 10 bans, và kinh tế phút 10; triệt tiêu các cột gộp chuỗi `blueChampions`/`redChampions` (1NF) và loại bỏ cột `country` do phụ thuộc hàm vào `server` (3NF).
   * *Chiến lược Multi-server:* Server Hàn Quốc (`KR`) đóng vai trò đại diện cho đấu trường Solo Queue đỉnh cao của khu vực Đông Á (nơi các tuyển thủ Trung Quốc LPL và Hàn Quốc LCK cùng thi đấu). Đã cân bằng tỷ lệ giữa 2 máy chủ (~55% VN2 / 45% KR).
-- [ ] **Task 1.2 [Thành viên 1]:** Xây dựng module nạp dữ liệu giải đấu hoạt động (`get_active_esports_file()` / `esports_active_matches.csv`) vào CSDL SQLite.
-  * *Tiêu chí hoàn thành:* Tạo 2 bảng quan hệ chuẩn `tournament_matches` (thông tin trận, giải đấu, đội tuyển, kết quả) và `tournament_players` (10 vị trí cá nhân của các tuyển thủ). Tự động ưu tiên nạp từ tệp hoạt động đã lọc giải (LCK, LCP, LPL...) theo cấu hình trung tâm.
-- [ ] **Task 1.3 [Thành viên 1]:** Viết hàm làm sạch dữ liệu (Data Cleaning) theo Chương 2:
-  * Lọc bỏ $100\%$ trận Remake ($<10$ phút) và AFK qua chỉ số lính ($CS < 10$ lúc 10 phút).
-  * Phát hiện và xử lý ngoại lai (Outliers) bằng thuật toán IQR và Z-Score.
-- [ ] **Task 1.4 [Thành viên 2 + 1]:** Viết 5 truy vấn SQL nâng cao theo Chương 5:
-  * Truy vấn 1: Phân tích Kèo đấu Khắc chế 1v1 (Lane Matchup: Top Akali vs Jax, Mid Katarina vs Lissandra) dùng `JOIN` và `GROUP BY`.
-  * Truy vấn 2: Phân tích Cặp đôi Ăn ý Đường Dưới (Bot Lane Synergy: Lucian+Nami, Jinx+Thresh) có `HAVING count(*) >= 10`.
-  * Truy vấn 3: `Subquery` tìm các tướng có tỷ lệ Cấm/Chọn (Presence) cao nhất giải đấu LCK/LPL.
-  * Truy vấn 4: Thống kê chỉ số lấn đường mốc 10 phút (`golddiffat10`, `csdiffat10`) của các tuyển thủ hàng đầu (Faker, Chovy, Levi).
-  * Truy vấn 5: `MultiIndex` và Pivot Table bằng Pandas (Chương 5x) đối chiếu winrate theo tổ hợp vai trò.
-- [ ] **Milestone 1:** Họp nhóm nghiệm thu CSDL SQLite hoàn chỉnh, export ra 2 file CSV sạch (`clean_ranked_10min.csv` và `clean_tournament_10min.csv`).
+- [x] **Task 1.2 [Thành viên 1]:** Xây dựng module nạp dữ liệu giải đấu hoạt động (`get_active_esports_file()` / `esports_active_matches.csv`) vào CSDL SQLite.
+  * *Tiêu chí hoàn thành:* Đã tạo module [`src/01_data_pipeline/load_esports_to_db.py`](../src/01_data_pipeline/load_esports_to_db.py) nạp thành công 2 bảng chuẩn hóa 1NF/3NF vào `data/database/lol_live_data.db`: `tournament_matches` (6,000 dòng, 155 cột) và `tournament_players` (30,000 dòng, 129 cột). Thiết lập khóa chính composite, khóa ngoại và 12 Indexes tối ưu hóa truy vấn SQL.
+- [x] **Task 1.3 [Thành viên 1]:** Viết hàm làm sạch dữ liệu (Data Cleaning) theo Chương 2:
+  * *Tiêu chí hoàn thành:* Đã tạo module [`src/02_preprocessing/cleaner.py`](../src/02_preprocessing/cleaner.py). Lọc bỏ 100% trận Remake (< 10 phút) và AFK ($CS < 10$). Xử lý missing values theo 5 nhóm chuẩn và lọc/cắt ngọn outlier bằng 2 thuật toán IQR & Z-Score. Xuất 4 tập dữ liệu sạch (`clean_ranked_10min.csv`, `clean_tournament_10min.csv`, `clean_tournament_draft.csv`, `clean_tournament_players.csv`) vào `data/processed/`.
+- [x] **Task 1.4 [Thành viên 2 + 1]:** Viết 5 truy vấn SQL nâng cao theo Chương 5 & 5x:
+  * *Tiêu chí hoàn thành:* Đã hoàn thành [`src/03_database_sql/queries.sql`](../src/03_database_sql/queries.sql) và [`src/03_database_sql/execute_queries.py`](../src/03_database_sql/execute_queries.py):
+  * Truy vấn 1: Phân tích Kèo đấu Khắc chế 1v1 (Lane Matchup) dùng `Self-JOIN`, `GROUP BY` và `HAVING`.
+  * Truy vấn 2: Phân tích Cặp đôi Ăn ý Đường Dưới (Bot Lane Synergy: Lucian+Nami, Caitlyn+Lux) có `Intra-team JOIN` và `HAVING count(*) >= 10`.
+  * Truy vấn 3: `Subquery / CTE` và `Unpivot UNION ALL` tìm các tướng có tỷ lệ Cấm/Chọn (Presence) cao nhất giải đấu.
+  * Truy vấn 4: Window Functions (`DENSE_RANK() OVER (PARTITION BY position)`) xếp hạng tuyển thủ đè đường mốc 10 phút và đối chiếu Benchmark.
+  * Truy vấn 5: Phân tầng `CASE WHEN` kết hợp `UNION ALL` đối chiếu hiệu quả lăn cầu tuyết giữa Đấu Giải vs Rank Đơn.
+  * Tự động xuất 5 tệp kết quả phân tích sạch vào `data/processed/sql_query_[1-5]_result.csv`.
+- [x] **Milestone 1:** Họp nhóm nghiệm thu CSDL SQLite `lol_live_data.db` hoàn chỉnh cả 2 nguồn dữ liệu, module tiền xử lý dữ liệu sạch, bộ 5 truy vấn SQL nâng cao và xuất các file CSV sạch sang `data/processed/`.
 
 ---
 
 ### 🔵 GIAI ĐOẠN 2: THỐNG KÊ SUY DIỄN & TRỰC QUAN HÓA EDA (CHƯƠNG 1, 3)
 *Mục tiêu:* Chứng minh các giả thuyết bằng toán học thống kê và tạo bộ biểu đồ trực quan sắc nét.
 
-- [ ] **Task 2.1 [Thành viên 2]:** Thực hiện Kiểm định giả thuyết A/B số 1 (Chương 1):
+- [x] **Task 2.1 [Thành viên 2]:** Thực hiện Kiểm định giả thuyết A/B số 1 (Chương 1):
   * *Bài toán:* "Lợi thế Phe Xanh (Blue Side Advantage) có ý nghĩa thống kê hay không?"
-  * *Phương pháp:* $Z$-test tỷ lệ 2 phía ($\alpha = 0.05$). Tính toán tỷ lệ thắng thực tế, $Z$-score và $p$-value.
+  * *Phương pháp:* $Z$-test tỷ lệ 2 phía ($\alpha = 0.05$). Tính toán tỷ lệ thắng thực tế, $Z$-score, $p$-value và khoảng tin cậy 95%.
+  * *Kết quả:* Đã hoàn thành [`src/04_hypothesis_testing/test_blue_side_advantage.py`](../src/04_hypothesis_testing/test_blue_side_advantage.py). Bác bỏ $H_0$ trên Đấu Giải Pro Play ($53.50\%$, $Z=+3.834, p=0.000126 < 0.001$) và Solo Rank ($45.49\%$, $Z=-2.865, p=0.00417 < 0.01$). Xuất file `data/processed/hypothesis_test_1_blue_side.csv`.
 - [ ] **Task 2.2 [Thành viên 2]:** Thực hiện Kiểm định giả thuyết A/B số 2 (Trọng tâm đồ án):
   * *Bài toán:* "Hiệu quả Lăn Cầu Tuyết (Snowball Lead) ở Đấu Giải chuyên nghiệp có vượt trội hơn Đấu Rank Kim Cương có ý nghĩa thống kê không?"
   * *Phương pháp:* Independent Two-sample $t$-test so sánh tỷ lệ chuyển hóa lợi thế $2,000$ vàng lúc 10 phút.
@@ -110,25 +112,26 @@
   * *Đầu vào:* Chất tướng + Chỉ số kinh tế phút 10 (chênh lệch vàng, trụ, rồng, sâu, lính 5 đường).
   * *Mô hình thử nghiệm:* Random Forest, Gradient Boosting, Multi-Layer Perceptron. Kỳ vọng: Độ chính xác $\approx 80 - 85\%$.
 - [ ] **Task 3.3 [Thành viên 3]:** Đánh giá & So sánh mô hình: Vẽ ROC Curve, AUC, Confusion Matrix, Feature Importance.
-- [ ] **Task 3.4 [Thành viên 3]:** Phân cụm K-Means: Phân loại đội hình thành 4 trường phái chiến thuật (*Poke, Dive, Teamfight, Split-push*).
-- [ ] **Task 3.5 [Thành viên 3 + 1]:** Xây dựng Hệ thống Gợi ý Cấm/Chọn Thông minh (Chương 6):
+- [ ] **Task 3.4 [Thành viên 3]:** Phân cụm K-Means & PCA (Chương 4): Phân loại 159 tướng theo 5 trục sức mạnh `[Early_Power, Scaling, Teamfight_AOE, Pick_Potential, Objective_Control]` và nhận diện 4 trường phái đội hình chiến thuật (*Early Snowball / Dive, Dragon Soul Stacking, Late-Game Hypercarry, Pick & Split-Push 1-3-1*).
+- [ ] **Task 3.5 [Thành viên 3 + 1]:** Xây dựng Hệ thống Gợi ý Cấm/Chọn Thông minh (Chương 6) & Engine Nhận Diện Điều Kiện Thắng (ADR-014):
   * **Chức năng 1 (Counter Pick):** Gợi ý tướng khắc chế trực tiếp theo đường (đối phương pick Zed Mid $\rightarrow$ gợi ý Lissandra/Malzahar).
   * **Chức năng 2 (Synergy Pick):** Khai phá luật kết hợp Apriori tìm cặp đôi ăn ý (Yasuo $\rightarrow$ Gragas/Diana; Lucian $\rightarrow$ Nami).
-- [ ] **Milestone 3:** Lưu trữ các mô hình đã huấn luyện thành công vào file (`draft_model.pkl`, `snowball_model.pkl`, `recommender.pkl`).
+  * **Chức năng 3 (Win Condition Engine):** Tự động xuất Thẻ Điều kiện thắng (Win Condition Card) chỉ rõ: Chủ lực gánh đội (Core Carry), Điểm rơi sức mạnh (Power Spike Timing), Mục tiêu ưu tiên số 1 (Rồng / Sâu / Trụ), và Điều kiện thất bại cần tránh (Lose Condition).
+- [ ] **Milestone 3:** Lưu trữ các mô hình đã huấn luyện thành công vào file (`draft_model.pkl`, `snowball_model.pkl`, `archetype_kmeans.pkl`, `recommender.pkl`).
 
 ---
 
 ### 🟣 GIAI ĐOẠN 4: ĐÓNG GÓI REST API (FASTAPI) & DỰNG WEB DEMO (STREAMLIT)
 *Mục tiêu:* Tạo "cầu nối" API để mô hình Machine Learning có thể phục vụ đồng thời cho cả Web thuyết trình lẫn Mobile App.
 
-- [ ] **Task 4.1 [Thành viên 1]:** Xây dựng Backend REST API bằng **FastAPI** (`src/api/app.py`):
-  * `GET /api/champions`: Trả về danh sách 173 tướng, ảnh đại diện và thuộc tính.
-  * `POST /api/predict/draft`: Nhận 10 tướng $\rightarrow$ trả về xác suất thắng lúc chọn tướng.
-  * `POST /api/predict/snowball`: Nhận 10 tướng + kinh tế phút 10 $\rightarrow$ trả về xác suất thắng lúc 10 phút.
-  * `GET /api/recommend/counter`: Nhận tên tướng đối thủ $\rightarrow$ trả về top 3 tướng khắc chế và winrate.
-  * `GET /api/stats/matchups`: Trả về lịch sử đối đầu 1v1 từ CSDL SQLite.
-- [ ] **Task 4.2 [Thành viên 1 + 3]:** Dựng Web Dashboard bằng **Streamlit** (`src/web_dashboard/app.py`):
-  * Giao diện 3 Tab trực quan: Tra cứu CSDL SQLite, Dự đoán tỷ lệ thắng live, và Gợi ý Cấm/Chọn.
+- [ ] **Task 4.1 [Thành viên 1]:** Xây dựng Backend REST API bằng **FastAPI** (`src/api/`):
+  * `GET /api/v1/champions`: Trả về danh sách 173 tướng, ảnh đại diện và thuộc tính.
+  * `POST /api/v1/predict`: Nhận 10 tướng / chỉ số phút 10 $\rightarrow$ trả về xác suất thắng lúc cấm chọn & lúc 10 phút.
+  * `POST /api/v1/recommend`: Gợi ý tướng khắc chế và cặp đôi ăn ý tối ưu.
+  * `POST /api/v1/win-condition`: Trả về Radar Chart 5 trục và Thẻ phân tích điều kiện thắng (ADR-014).
+  * `GET /api/v1/stats/matchups`: Trả về lịch sử đối đầu 1v1 từ CSDL SQLite.
+- [ ] **Task 4.2 [Thành viên 1 + 3]:** Dựng Web Dashboard bằng **Streamlit** (`web/` hoặc `src/web/`):
+  * Giao diện trực quan tích hợp: Tra cứu CSDL SQLite, Dự đoán tỷ lệ thắng live, Radar Chart 5 trục sức mạnh đội hình và Thẻ chiến thuật Điều kiện thắng.
   * Phục vụ demo trực tiếp trên máy chiếu giảng đường khi bảo vệ đồ án Data Science.
 - [ ] **Milestone 4:** Chạy thử nghiệm thành công toàn bộ hệ thống qua Web Streamlit và kiểm tra Swagger Docs tại `http://localhost:8000/docs`.
 
@@ -159,3 +162,5 @@
    * Tạo 3 nhánh làm việc độc lập: `feature/data-sql-api` (Thành viên 1), `feature/stats-eda` (Thành viên 2), `feature/ml-recsys` (Thành viên 3).
 2. **Quy tắc "Không chặn nhau" (No Blockers):**
    * Do đã có sẵn file `2026_LoL_esports_match_data_from_OraclesElixir.csv` và CSDL mẫu `lol_live_data.db`, Thành viên 2 và Thành viên 3 có thể làm ngay Thống kê, EDA và Machine Learning mà không cần đợi Thành viên 1!
+3. **Tra cứu Hàm & API Nội bộ:**
+   * Tra cứu danh mục toàn bộ các Class, Hàm và Tham số tại [Từ điển Danh mục Hàm & Module](DANH_MUC_HAM_VA_MODULES.md).

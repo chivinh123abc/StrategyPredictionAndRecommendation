@@ -31,14 +31,17 @@ Nếu hai nguồn mâu thuẫn nhau:
 
 Trước tiên hãy đọc các tài liệu project context hiện có:
 
+* AI/AI_RULES.md
 * AI/PROJECT_STATE.md
 * AI/ARCHITECTURE.md
 * AI/DATABASE.md
 * AI/TASKS.md
 * AI/DECISIONS.md
 * AI/CHANGELOG.md
+* docs/DANH_MUC_HAM_VA_MODULES.md
+* docs/KE_HOACH_THUC_HIEN_DO_AN_3_NGUOI.md
 
-Sau đó kiểm tra source code thực tế liên quan đến task hiện tại.
+Sau đó kiểm tra source code thực tế và môi trường `.venv` liên quan đến task hiện tại.
 
 Không bắt đầu code ngay.
 

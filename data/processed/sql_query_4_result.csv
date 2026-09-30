@@ -1,0 +1,16 @@
+﻿playername,position,teamname,league,games_played,avg_gold_diff_10,avg_cs_diff_10,winrate_pct,lane_gold_rank,position_benchmark_gold_diff
+Peyz,bot,T1,MSI,21,382.0,6.4,71.4,1,-8.0
+Berserker,bot,LYON,MSI,17,260.0,4.1,64.7,2,-8.0
+Eddie,bot,Team Secret Whales,LCP,129,209.0,4.8,70.5,3,-8.0
+Lucid,jng,Dplus Kia,EWC,26,178.0,6.7,61.5,1,-11.0
+Gury,jng,MGN Vikings Esports,LCP,45,114.0,3.7,55.6,2,-11.0
+Kanavi,jng,Hanwha Life Esports,MSI,20,104.0,1.4,65.0,3,-11.0
+Knight,mid,Bilibili Gaming,LPL,242,237.0,4.5,67.4,1,-10.0
+Caps,mid,G2 Esports,EWC,21,202.0,0.7,61.9,2,-10.0
+Bdd,mid,KT Rolster,WLDs,16,189.0,7.4,75.0,3,-10.0
+Bie,sup,Team Secret Whales,LCP,79,121.0,-0.3,79.7,1,-8.0
+MISSING,sup,LNG Esports,LPL,45,120.0,-0.8,60.0,2,-8.0
+Keria,sup,T1,EWC,27,108.0,1.6,66.7,3,-8.0
+Zest,top,LØS,EWC,19,291.0,6.6,63.2,1,-1.0
+1Jiang,top,Ground Zero Gaming,LCP,63,226.0,8.5,42.9,2,-1.0
+Bin,top,Bilibili Gaming,MSI,38,220.0,6.2,60.5,3,-1.0

@@ -1,0 +1,11 @@
+﻿dataset_type,gold_diff_tier,total_matches,wins,winrate_pct,avg_duration_min
+1. Đấu Giải (Oracle Esports),1. Dẫn Lớn (>= +2000g),230,192,83.48,29.8
+1. Đấu Giải (Oracle Esports),2. Dẫn Vừa (+1000g đến +1999g),695,525,75.54,32.0
+1. Đấu Giải (Oracle Esports),3. Cân Bằng (-999g đến +999g),2876,1438,50.0,32.9
+1. Đấu Giải (Oracle Esports),4. Thua Vừa (-1000g đến -1999g),695,170,24.46,32.0
+1. Đấu Giải (Oracle Esports),5. Thua Sâu (<= -2000g),256,51,19.92,30.2
+2. Solo Rank (Riot API),1. Dẫn Lớn (>= +2000g),186,156,83.87,24.4
+2. Solo Rank (Riot API),2. Dẫn Vừa (+1000g đến +1999g),130,88,67.69,26.0
+2. Solo Rank (Riot API),3. Cân Bằng (-999g đến +999g),352,158,44.89,27.1
+2. Solo Rank (Riot API),4. Thua Vừa (-1000g đến -1999g),133,32,24.06,25.5
+2. Solo Rank (Riot API),5. Thua Sâu (<= -2000g),208,25,12.02,24.5

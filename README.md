@@ -118,10 +118,33 @@ python src/01_data_pipeline/sync_google_drive.py --list
 
 ---
 
-### 4. Kiểm tra Dữ liệu Đã Thu Thập
+### 4. Tiền Xử Lý & Làm Sạch Dữ Liệu (Module 02 - Chương 2)
+Chạy module lọc bỏ Remake/AFK, xử lý missing values và khử ngoại lai IQR/Z-Score:
+```bash
+# Tiền xử lý toàn bộ và xuất 4 file dữ liệu sạch:
+python src/02_preprocessing/cleaner.py
+
+# Xuất ra data/processed/: clean_ranked_10min.csv, clean_tournament_10min.csv, clean_tournament_draft.csv, clean_tournament_players.csv
+```
+
+---
+
+### 5. Thực Thi 5 Truy Vấn SQL Nâng Cao (Module 03 - Chương 5 & 5x)
+Thực thi 5 câu truy vấn phân tích chuyên sâu trên CSDL SQLite:
+```bash
+# Thực thi cả 5 truy vấn và tự động xuất file CSV kết quả:
+python src/03_database_sql/execute_queries.py --export
+
+# Thực thi riêng câu truy vấn chỉ định (ví dụ: Q4 Xếp hạng tuyển thủ đè đường):
+python src/03_database_sql/execute_queries.py --query 4 --limit 15
+```
+
+---
+
+### 6. Kiểm tra Dữ liệu Đã Thu Thập & Làm Sạch
 Kiểm tra số lượng bản ghi trận đấu trong SQLite:
 ```bash
-python -c "import sqlite3; conn = sqlite3.connect('data/database/lol_live_data.db'); c = conn.cursor(); c.execute('SELECT server, count(*) FROM matches_10min GROUP BY server'); print('Trận theo server:', c.fetchall()); conn.close()"
+python -c "import sqlite3; conn = sqlite3.connect('data/database/lol_live_data.db'); c = conn.cursor(); c.execute('SELECT count(*) FROM tournament_matches'); print('Trận đấu giải:', c.fetchone()[0]); c.execute('SELECT count(*) FROM matches_10min'); print('Trận Rank:', c.fetchone()[0]); conn.close()"
 ```
 
 ---
@@ -151,6 +174,7 @@ python -c "import sqlite3; conn = sqlite3.connect('data/database/lol_live_data.d
 
 ## 📚 TÀI LIỆU THAM KHẢO NỘI BỘ
 * [Kế hoạch thực hiện đồ án 3 người](docs/KE_HOACH_THUC_HIEN_DO_AN_3_NGUOI.md)
+* [Từ điển Danh mục Hàm & Module toàn dự án (Function Catalog)](docs/DANH_MUC_HAM_VA_MODULES.md)
 * [Checklist liên môn Data Science & Android](docs/KE_HOACH_LIEN_MON_DATA_SCIENCE_VA_ANDROID.md)
 * [Danh mục API & Dataset](docs/DANH_MUC_API_VA_DATASET.md)
 * [Nhật ký thay đổi kỹ thuật (Changelog)](AI/CHANGELOG.md)

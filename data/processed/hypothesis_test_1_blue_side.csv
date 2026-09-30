@@ -1,0 +1,11 @@
+﻿dataset,total_matches,blue_wins,red_wins,blue_winrate_pct,red_winrate_pct,z_score,p_value,ci_95_lower_pct,ci_95_upper_pct,reject_h0,significance_level,conclusion
+1. Toàn Bộ Đấu Giải (Pro Play),3000,1605,1395,53.5,46.5,3.8341,0.00012604645012070925,51.72,55.28,True,0.05,Bác bỏ H0 ở mức ý nghĩa alpha=0.05 (p = 0.000126 < 0.05). Phe Xanh thắng vượt trội có ý nghĩa thống kê.
+2. Toàn Bộ Solo Rank (VN2 & KR),1009,459,550,45.49,54.51,-2.8648,0.0041725964612071564,42.42,48.56,True,0.05,Bác bỏ H0 ở mức ý nghĩa alpha=0.05 (p = 0.004173 < 0.05). Phe Xanh thua lép vế có ý nghĩa thống kê.
+2a. Solo Rank Việt Nam (VN2),550,259,291,47.09,52.91,-1.3645,0.1724151026113807,42.92,51.26,False,0.05,Chưa đủ bằng chứng bác bỏ H0 (p = 0.1724 >= 0.05). Sự chênh lệch tỷ lệ thắng (47.1%) có thể do biến thiên ngẫu nhiên.
+2b. Solo Rank Hàn Quốc (KR),459,200,259,43.57,56.43,-2.7539,0.005889260786154482,39.04,48.11,True,0.05,Bác bỏ H0 ở mức ý nghĩa alpha=0.05 (p = 0.005889 < 0.05). Phe Xanh thua lép vế có ý nghĩa thống kê.
+3. Giải Đấu EWC,265,143,122,53.96,46.04,1.29,0.19704380251210107,47.96,59.96,False,0.05,Chưa đủ bằng chứng bác bỏ H0 (p = 0.1970 >= 0.05). Sự chênh lệch tỷ lệ thắng (54.0%) có thể do biến thiên ngẫu nhiên.
+3. Giải Đấu LCK,850,449,401,52.82,47.18,1.6464,0.09968422771368823,49.47,56.18,False,0.05,Chưa đủ bằng chứng bác bỏ H0 (p = 0.0997 >= 0.05). Sự chênh lệch tỷ lệ thắng (52.8%) có thể do biến thiên ngẫu nhiên.
+3. Giải Đấu LCP,466,257,209,55.15,44.85,2.2236,0.026178260170091727,50.63,59.67,True,0.05,Bác bỏ H0 ở mức ý nghĩa alpha=0.05 (p = 0.026178 < 0.05). Phe Xanh thắng vượt trội có ý nghĩa thống kê.
+3. Giải Đấu LPL,1160,612,548,52.76,47.24,1.8791,0.06023019818715536,49.89,55.63,False,0.05,Chưa đủ bằng chứng bác bỏ H0 (p = 0.0602 >= 0.05). Sự chênh lệch tỷ lệ thắng (52.8%) có thể do biến thiên ngẫu nhiên.
+3. Giải Đấu MSI,151,89,62,58.94,41.06,2.1972,0.02800410695975497,51.09,66.79,True,0.05,Bác bỏ H0 ở mức ý nghĩa alpha=0.05 (p = 0.028004 < 0.05). Phe Xanh thắng vượt trội có ý nghĩa thống kê.
+3. Giải Đấu WLDs,108,55,53,50.93,49.07,0.1925,0.8473896596867136,41.5,60.35,False,0.05,Chưa đủ bằng chứng bác bỏ H0 (p = 0.8474 >= 0.05). Sự chênh lệch tỷ lệ thắng (50.9%) có thể do biến thiên ngẫu nhiên.

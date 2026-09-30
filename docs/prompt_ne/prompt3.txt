@@ -1,6 +1,6 @@
 Tiếp tục project theo PROJECT WORKING PROTOCOL.
 
-Trước tiên đọc:
+Trước tiên hãy đọc toàn bộ hệ thống tài liệu quản trị ngữ cảnh hiện có:
 
 * AI/AI_RULES.md
 * AI/PROJECT_STATE.md
@@ -9,8 +9,15 @@ Trước tiên đọc:
 * AI/TASKS.md
 * AI/DECISIONS.md
 * AI/CHANGELOG.md
+* docs/DANH_MUC_HAM_VA_MODULES.md
+* docs/KE_HOACH_THUC_HIEN_DO_AN_3_NGUOI.md
 
-Sau đó kiểm tra source code liên quan đến trạng thái hiện tại.
+Quy định thực thi bắt buộc:
+1. Môi trường thực thi: Luôn sử dụng môi trường ảo `.venv` (`.\.venv\Scripts\python.exe`).
+2. Tuyệt đối KHÔNG tự động `git commit` hoặc `git push` lên remote nếu chưa có lệnh rõ ràng từ người dùng.
+3. Giữ vững cấu trúc CSDL đạt chuẩn 1NF và 3NF.
+
+Sau đó kiểm tra source code và CSDL SQLite thực tế liên quan đến trạng thái hiện tại.
 
 Không code ngay.
 

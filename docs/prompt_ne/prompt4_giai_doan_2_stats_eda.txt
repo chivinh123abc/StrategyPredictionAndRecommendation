@@ -1,0 +1,22 @@
+Tiếp tục thực hiện GIAI ĐOẠN 2: THỐNG KÊ SUY DIỄN & TRỰC QUAN HÓA EDA (CHƯƠNG 1 & 3) theo PROJECT WORKING PROTOCOL.
+
+Đọc kỹ các tài liệu context:
+* AI/AI_RULES.md
+* AI/PROJECT_STATE.md
+* AI/TASKS.md
+* AI/DATABASE.md
+* docs/DANH_MUC_HAM_VA_MODULES.md
+* docs/KE_HOACH_THUC_HIEN_DO_AN_3_NGUOI.md
+
+Các task cần triển khai trong Giai đoạn 2 [Thành viên 2]:
+1. Task 2.1: Kiểm định Z-test tỷ lệ 2 phía Lợi thế Phe Xanh (Blue Side Advantage) với alpha = 0.05.
+2. Task 2.2: Kiểm định Two-sample t-test Hiệu quả Lăn Cầu Tuyết (Snowball Lead) Đấu Giải vs Solo Rank.
+3. Task 2.3: Kiểm định Chi-square (Chi^2) Mục tiêu lớn (Rồng Nguyên Tố vs 3 Sâu Hư Không đầu).
+4. Task 2.4: Xuất bộ 5 biểu đồ EDA chất lượng cao 300 DPI lưu vào reports/figures/.
+5. Milestone 2: Hoàn thiện Notebook notebooks/01_kham_pha_du_lieu_EDA.ipynb.
+
+Quy định bắt buộc:
+- Sử dụng môi trường ảo .venv (.\.venv\Scripts\python.exe).
+- Sử dụng dữ liệu sạch tại data/processed/ hoặc bảng tournament_matches / matches_10min trong SQLite.
+- Tuyệt đối KHÔNG tự ý git push.
+- Báo cáo kết quả theo mẫu IMPLEMENTATION RESULT và cập nhật các file trong AI/.

@@ -103,7 +103,7 @@ Trạng thái:
   - *Tài liệu giải thích chuyên sâu:* Đã xây dựng trọn bộ 6 tệp tài liệu trong thư mục [`docs/figure_explain/`](../docs/figure_explain/) (đồng bộ tại `reports/figures/figure_explain/`).
   - *Acceptance Criteria:* Chạy lệnh CLI trơn tru (hỗ trợ cả `--all` và `--fig 1..5`), xuất file ảnh 300 DPI sắc nét, có chú thích học thuật rõ ràng, không lỗi font Tiếng Việt. Hoàn thành 100%.
 
-- [ ] **Milestone 2:** Báo cáo Thống kê & EDA hoàn tất trong Notebook `01_kham_pha_du_lieu_EDA.ipynb`.
+- [x] **Milestone 2:** Báo cáo Thống kê & EDA hoàn tất trong Notebook [`notebooks/01_kham_pha_du_lieu_EDA.ipynb`](../notebooks/01_kham_pha_du_lieu_EDA.ipynb). Tích hợp trọn vẹn 5 phần: Tổng quan CSDL SQLite (37,009 dòng), 5 Truy vấn SQL nâng cao, 3 Bài kiểm định Thống kê suy diễn (Z-test, Welch's t-test, Chi-square & Odds Ratio) và Bộ 5 biểu đồ EDA 300 DPI kèm diễn giải học thuật chuyên sâu. Đã thực thi và lưu trữ trọn vẹn kết quả bảng số liệu + hình ảnh render sẵn. Hoàn thành 100%.
 
 ---
 

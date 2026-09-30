@@ -9,8 +9,8 @@
 - **Tên dự án:** Hệ Thống Trợ Lý Phân Tích Cấm/Chọn (Ban/Pick AI), Dự Đoán Thắng Thua Sớm 2 Giai Đoạn & Đối Chiếu Chiến Thuật Đấu Giải (Pro Play) vs Đấu Xếp Hạng (Solo Queue) - LMHT.
 - **Môn học chính:** Nhập môn Khoa học Dữ liệu (TS. Thái Tuyết Hải, PTIT).
 - **Môn học mở rộng:** Lập trình trên thiết bị di động (ThS. Nguyễn Trung Hiếu, PTITHCM).
-- **Giai đoạn hiện tại:** Đang hoàn tất Giai đoạn 2 (Thống kê suy diễn & Trực quan hóa EDA - Chương 1, 3). Sẵn sàng đóng gói Milestone 2.
-- **Đánh giá tiến độ tổng:** ~65% (Hoàn thành 100% Giai đoạn 1 + Hoàn thành 100% Task 2.1, Task 2.2, Task 2.3, Task 2.4).
+- **Giai đoạn hiện tại:** Đã hoàn thành 100% Giai đoạn 2 (Thống kê suy diễn & Trực quan hóa EDA - Chương 1, 3) và Milestone 2. Sẵn sàng bước sang Giai đoạn 3 (Machine Learning 2 Giai Đoạn & Ban/Pick AI).
+- **Đánh giá tiến độ tổng:** ~70% (Hoàn thành 100% Giai đoạn 1 + Hoàn thành 100% Giai đoạn 2 + Milestone 1 & Milestone 2).
 
 ---
 
@@ -25,13 +25,14 @@
 | `src/03_database_sql/` | `VERIFIED - WORKING` | Gồm `queries.sql` (5 câu truy vấn SQL nâng cao Chương 5 & 5x), `execute_queries.py` (CLI runner tự động xuất 5 file CSV kết quả), `__init__.py` và `README.md`. Hoàn thành Task 1.4. |
 | `src/04_hypothesis_testing/` | `VERIFIED - WORKING` | Gồm `test_blue_side_advantage.py` & `.md` (Task 2.1: Z-test lợi thế Phe Xanh), `test_snowball_effect.py` & `.md` (Task 2.2: Two-sample Welch t-test & Z-test Lăn cầu tuyết Pro vs Rank), `test_voidgrubs_vs_dragon.py` & `.md` (Task 2.3: Chi-square & Odds Ratio 3 Sâu vs Rồng 1), `__init__.py` và `README.md`. **Hoàn thành trọn vẹn 3 bài toán Thống kê suy diễn (100% Chương 1)**. |
 | `src/05_visualization/` | `VERIFIED - WORKING` | Gồm `plot_eda_figures.py` (Bộ 5 biểu đồ EDA 300 DPI theo Giáo trình Chương 3), `plot_eda_figures.md`, `__init__.py` và `README.md`. Xuất 5 tệp PNG 300 DPI vào `reports/figures/`. Hoàn thành Task 2.4. |
+| `notebooks/` | `VERIFIED - WORKING` | Đã hoàn thành và đóng gói Notebook toàn diện `01_kham_pha_du_lieu_EDA.ipynb` (21 cells, thực thi và render 100% outputs hình ảnh & bảng thống kê). Hoàn thành Milestone 2. |
+| `docs/figure_explain/` | `VERIFIED - WORKING` | Trọn bộ 6 tệp tài liệu giải thích học thuật và phản biện chi tiết cho Bộ 5 biểu đồ EDA 300 DPI. |
 | `src/06_machine_learning/` | `INITIALIZED` | Đã khởi tạo cấu trúc thư mục kèm tài liệu `README.md` đặc tả mô hình 2 tầng. Sẵn sàng viết code. |
 | `src/07_recommender/` | `INITIALIZED` | Đã khởi tạo cấu trúc thư mục kèm tài liệu `README.md` thuật toán gợi ý cấm/chọn. Sẵn sàng viết code. |
 | `src/api/` | `NOT CREATED (FACT)` | Chưa tạo thư mục mã nguồn Backend FastAPI. |
 | `web/` | `NOT CREATED (FACT)` | Chưa tạo thư mục giao diện Web App. |
 | `mobile_app/` | `NOT CREATED (FACT)` | Chưa tạo thư mục ứng dụng Android (theo kế hoạch là Giai đoạn 2). |
-| `notebooks/` | `INITIALIZED` | Đã khởi tạo thư mục kèm tài liệu `README.md` phục vụ thử nghiệm `.ipynb`. |
-| `reports/figures/` | `INITIALIZED` | Đã khởi tạo thư mục kèm tài liệu `README.md` sẵn sàng nhận ảnh xuất 300 DPI từ bước EDA. |
+| `reports/figures/` | `VERIFIED - WORKING` | Lưu trữ 5 tệp hình ảnh 300 DPI xuất bản từ pipeline trực quan hóa EDA. |
 
 ---
 

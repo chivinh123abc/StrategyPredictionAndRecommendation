@@ -4,6 +4,19 @@ Tất cả các thay đổi quan trọng về code, CSDL và tài liệu kiến 
 
 ---
 
+## [2026-09-30] - HOÀN THÀNH VÀ ĐÓNG GÓI MILESTONE 2: JUPYTER NOTEBOOK EDA
+- **Hoàn thành và đóng gói Notebook [`notebooks/01_kham_pha_du_lieu_EDA.ipynb`](../notebooks/01_kham_pha_du_lieu_EDA.ipynb):**
+  - Tích hợp toàn diện 21 cells (6 Markdown dẫn nhập & tổng kết học thuật, 15 Code cells thực thi) bao phủ trọn vẹn chương trình môn học:
+    - **Phần 1: Khởi tạo & Tổng quan CSDL SQLite (Chương 2, 5):** Thống kê quy mô 37,009 bản ghi chuẩn 1NF/3NF từ 2 nguồn Đấu Giải và Solo Rank.
+    - **Phần 2: 5 Truy vấn SQL nâng cao (Chương 5 & 5x):** Kèo 1v1 đường trên, Cặp đôi đường dưới, Tỷ lệ chọn tướng, Xếp hạng đè đường DENSE_RANK và Phân tầng Lăn cầu tuyết.
+    - **Phần 3: 3 Bài toán Thống kê suy diễn (Chương 1):** Two-sample Proportion Z-test Lợi thế Phe Xanh, Two-sample Welch's t-test & Z-test Lăn cầu tuyết lead >= 2,000g, Chi-square & Odds Ratio 3 Sâu Hư Không vs Rồng 1.
+    - **Phần 4: Bộ 5 Biểu đồ Trực quan hóa EDA 300 DPI (Chương 3):** Fig 1 (Correlation Heatmap 9x9), Fig 2 (Histogram + KDE Chênh vàng 10p), Fig 3 (Boxplot Kinh tế 5 vị trí), Fig 4 (Scatter + OLS Vàng dẫn vs Thời lượng), Fig 5 (Ma trận 8 tổ hợp mục tiêu lớn Pro vs Rank).
+    - **Phần 5: Tổng kết Insights & Định hướng Kỹ thuật:** Tổng hợp 5 phát hiện cốt lõi và tiêu chuẩn kỹ thuật chuyển giao cho Giai đoạn 3 (Machine Learning 2 Giai Đoạn).
+  - Đã thực thi qua kernel Jupyter/nbconvert, lưu trữ toàn vẹn toàn bộ outputs bảng số liệu và hình ảnh đồ họa chất lượng cao sẵn sàng nộp và trình chiếu.
+  - Hoàn tất 100% Giai đoạn 2 và Milestone 2.
+
+---
+
 ## [2026-09-30] - NÂNG CẤP BIỂU ĐỒ FIG 5 (MA TRẬN 8 TỔ HỢP) & XÂY DỰNG BỘ TÀI LIỆU GIẢI THÍCH DOCS/FIGURE_EXPLAIN/
 - **Nâng cấp mã nguồn trực quan hóa [`src/05_visualization/plot_eda_figures.py`](../src/05_visualization/plot_eda_figures.py):**
   - **Tối ưu đồ họa Fig 1 (Correlation Heatmap):** Chuẩn hóa thang đo Colorbar $[-1.0, +1.0]$, căn thẳng hàng tuyệt đối với ma trận bằng `make_axes_locatable`, khử 100% đường lưới trục ngầm bằng `sns.axes_style("white")`.

@@ -1,0 +1,166 @@
+{
+  "version": "1.0",
+  "last_updated": "2026-10-08",
+  "description": "Pro Player Registry & Recent Solo Queue Tracking for Target Ban Engine",
+  "players": {
+    "Peyz": {
+      "riot_id": "Peyz#KR1",
+      "server": "KR",
+      "tier": "Challenger 1450LP",
+      "team": "T1",
+      "position": "Bot",
+      "recent_rank_matches": 48,
+      "recent_rank_picks": {
+        "Ezreal": {"games": 18, "wins": 14, "winrate": 0.778, "spike": true, "note": "Kỹ năng định hướng đỉnh cao"},
+        "Kai'Sa": {"games": 14, "wins": 11, "winrate": 0.786, "spike": true, "note": "Hypercarry lao vào giao tranh"},
+        "Kalista": {"games": 8, "wins": 6, "winrate": 0.750, "spike": false, "note": "Đè đường snowball"},
+        "Zeri": {"games": 5, "wins": 4, "winrate": 0.800, "spike": false, "note": "Quẩy combat late game"},
+        "Varus": {"games": 3, "wins": 2, "winrate": 0.667, "spike": false, "note": "Cấu máu"}
+      }
+    },
+    "Keria": {
+      "riot_id": "Keria#KR1",
+      "server": "KR",
+      "tier": "Challenger 1250LP",
+      "team": "T1",
+      "position": "Support",
+      "recent_rank_matches": 45,
+      "recent_rank_picks": {
+        "Bard": {"games": 18, "wins": 14, "winrate": 0.778, "spike": true, "note": "Spam liên tục trong 3 ngày qua"},
+        "Renata Glasc": {"games": 12, "wins": 9, "winrate": 0.750, "spike": false, "note": "Bài đánh counter engage"},
+        "Camille": {"games": 8, "wins": 6, "winrate": 0.750, "spike": true, "note": "Bài dị Support đi kèm AD đè đường"},
+        "Nautilus": {"games": 4, "wins": 2, "winrate": 0.500, "spike": false, "note": "Pick cơ bản"},
+        "Neeko": {"games": 3, "wins": 2, "winrate": 0.667, "spike": false, "note": "Thử nghiệm"}
+      }
+    },
+    "Chovy": {
+      "riot_id": "Chovy#KR1",
+      "server": "KR",
+      "tier": "Challenger 1580LP",
+      "team": "Gen.G",
+      "position": "Mid",
+      "recent_rank_matches": 50,
+      "recent_rank_picks": {
+        "Yone": {"games": 20, "wins": 16, "winrate": 0.800, "spike": true, "note": "Tướng tủ gánh team số 1"},
+        "Ahri": {"games": 12, "wins": 9, "winrate": 0.750, "spike": false, "note": "Pick cơ động mở giao tranh"},
+        "Tristana": {"games": 10, "wins": 7, "winrate": 0.700, "spike": true, "note": "Xạ thủ đè đường Mid"},
+        "Azir": {"games": 5, "wins": 4, "winrate": 0.800, "spike": false, "note": "Pick chuẩn late-game"},
+        "Smolder": {"games": 3, "wins": 2, "winrate": 0.667, "spike": false, "note": "Farm late"}
+      }
+    },
+    "Faker": {
+      "riot_id": "Hide on bush#KR1",
+      "server": "KR",
+      "tier": "Challenger 980LP",
+      "team": "T1",
+      "position": "Mid",
+      "recent_rank_matches": 40,
+      "recent_rank_picks": {
+        "Orianna": {"games": 14, "wins": 10, "winrate": 0.714, "spike": false, "note": "Kiểm soát giao tranh"},
+        "Ahri": {"games": 10, "wins": 7, "winrate": 0.700, "spike": false, "note": "Tướng tủ mở combat"},
+        "Galio": {"games": 8, "wins": 6, "winrate": 0.750, "spike": true, "note": "Bài đánh bảo kê 2 cánh"},
+        "Sylas": {"games": 5, "wins": 3, "winrate": 0.600, "spike": false, "note": "Counter mage"},
+        "Azir": {"games": 3, "wins": 2, "winrate": 0.667, "spike": false, "note": "Giao tranh late"}
+      }
+    },
+    "Kiaya": {
+      "riot_id": "Kiaya#VN2",
+      "server": "VN",
+      "tier": "Challenger 1100LP",
+      "team": "GAM Esports",
+      "position": "Top",
+      "recent_rank_matches": 38,
+      "recent_rank_picks": {
+        "Rumble": {"games": 15, "wins": 12, "winrate": 0.800, "spike": true, "note": "Sát thương giao tranh tổng cực mạnh"},
+        "Renekton": {"games": 11, "wins": 8, "winrate": 0.727, "spike": false, "note": "Kèo đè đường chuẩn"},
+        "K'Sante": {"games": 7, "wins": 5, "winrate": 0.714, "spike": false, "note": "Chống chịu gánh team"},
+        "Urgot": {"games": 5, "wins": 4, "winrate": 0.800, "spike": true, "note": "Bài dị đè tướng cận chiến"}
+      }
+    },
+    "Levi": {
+      "riot_id": "Levi#VN2",
+      "server": "VN",
+      "tier": "Challenger 1050LP",
+      "team": "GAM Esports",
+      "position": "Jungle",
+      "recent_rank_matches": 42,
+      "recent_rank_picks": {
+        "Lee Sin": {"games": 16, "wins": 12, "winrate": 0.750, "spike": false, "note": "Tướng tủ thương hiệu"},
+        "Nocturne": {"games": 12, "wins": 9, "winrate": 0.750, "spike": true, "note": "Kiểm soát bắt lẻ bản đồ"},
+        "Karthus": {"games": 8, "wins": 6, "winrate": 0.750, "spike": true, "note": "Bài dị Rừng farm AP gánh late"},
+        "Vi": {"games": 6, "wins": 4, "winrate": 0.667, "spike": false, "note": "Khóa mục tiêu"}
+      }
+    },
+    "Knight": {
+      "riot_id": "Knight#BLG",
+      "server": "KR",
+      "tier": "Challenger 1420LP",
+      "team": "Bilibili Gaming",
+      "position": "Mid",
+      "recent_rank_matches": 48,
+      "recent_rank_picks": {
+        "Ahri": {"games": 16, "wins": 13, "winrate": 0.813, "spike": true, "note": "Độ cơ động và bắt lẻ tuyệt đối"},
+        "Syndra": {"games": 12, "wins": 9, "winrate": 0.750, "spike": false, "note": "Pháp sư dồn dame sốc"},
+        "Jayce": {"games": 10, "wins": 7, "winrate": 0.700, "spike": false, "note": "Cấu rỉa máu từ xa"},
+        "Annie": {"games": 6, "wins": 5, "winrate": 0.833, "spike": true, "note": "Vũ khí bí mật mở combat chớp nhoáng"},
+        "Taliyah": {"games": 4, "wins": 3, "winrate": 0.750, "spike": false, "note": "Đẩy đường đảo gank"}
+      }
+    },
+    "Bin": {
+      "riot_id": "Bin#BLG",
+      "server": "KR",
+      "tier": "Challenger 1350LP",
+      "team": "Bilibili Gaming",
+      "position": "Top",
+      "recent_rank_matches": 44,
+      "recent_rank_picks": {
+        "Jax": {"games": 16, "wins": 13, "winrate": 0.813, "spike": true, "note": "Vua đẩy lẻ và solo đường"},
+        "Camille": {"games": 12, "wins": 9, "winrate": 0.750, "spike": false, "note": "Bắt lẻ chủ lực"},
+        "Renekton": {"games": 8, "wins": 6, "winrate": 0.750, "spike": false, "note": "Đè đường sớm"},
+        "Fiora": {"games": 5, "wins": 4, "winrate": 0.800, "spike": true, "note": "Khắc chế đấu sĩ cận chiến"}
+      }
+    },
+    "Ruler": {
+      "riot_id": "Ruler#KR1",
+      "server": "KR",
+      "tier": "Challenger 1520LP",
+      "team": "JD Gaming",
+      "position": "Bot",
+      "recent_rank_matches": 46,
+      "recent_rank_picks": {
+        "Zeri": {"games": 18, "wins": 14, "winrate": 0.778, "spike": true, "note": "Quẩy giao tranh vô địch"},
+        "Jinx": {"games": 12, "wins": 9, "winrate": 0.750, "spike": false, "note": "Hypercarry late game"},
+        "Varus": {"games": 9, "wins": 6, "winrate": 0.667, "spike": false, "note": "Đè đường cấu máu"},
+        "Kalista": {"games": 7, "wins": 5, "winrate": 0.714, "spike": false, "note": "Snowball early"}
+      }
+    },
+    "Viper": {
+      "riot_id": "Viper#KR1",
+      "server": "KR",
+      "tier": "Challenger 1480LP",
+      "team": "Hanwha Life Esports",
+      "position": "Bot",
+      "recent_rank_matches": 45,
+      "recent_rank_picks": {
+        "Lucian": {"games": 15, "wins": 12, "winrate": 0.800, "spike": true, "note": "Cặp đôi Nami Lucian hủy diệt"},
+        "Kai'Sa": {"games": 14, "wins": 10, "winrate": 0.714, "spike": false, "note": "Sát thủ xạ thủ lao vào"},
+        "Ezreal": {"games": 9, "wins": 6, "winrate": 0.667, "spike": false, "note": "Kỹ năng cá nhân đỉnh cao"},
+        "Smolder": {"games": 7, "wins": 6, "winrate": 0.857, "spike": true, "note": "Nuôi rồng late game"}
+      }
+    },
+    "Canyon": {
+      "riot_id": "Canyon#KR1",
+      "server": "KR",
+      "tier": "Challenger 1490LP",
+      "team": "Gen.G",
+      "position": "Jungle",
+      "recent_rank_matches": 48,
+      "recent_rank_picks": {
+        "Nidalee": {"games": 18, "wins": 15, "winrate": 0.833, "spike": true, "note": "Thương hiệu rừng gánh đội thế giới"},
+        "Karthus": {"games": 12, "wins": 9, "winrate": 0.750, "spike": true, "note": "Rừng farm AP siêu late"},
+        "Sejuani": {"games": 10, "wins": 7, "winrate": 0.700, "spike": false, "note": "Chống chịu kiểm soát"},
+        "Lee Sin": {"games": 8, "wins": 5, "winrate": 0.625, "spike": false, "note": "Tạo đột biến"}
+      }
+    }
+  }
+}

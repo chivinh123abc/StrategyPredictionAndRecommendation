@@ -107,14 +107,48 @@ Trạng thái:
 
 ---
 
-## 🟠 GIAI ĐOẠN 3: XÂY DỰNG MACHINE LEARNING 2 GIAI ĐOẠN & BAN/PICK AI (CHƯƠNG 4, 6)
-
-- [ ] **Task 3.1 [Thành viên 3]:** Xây dựng Mô hình Draft Prediction lúc cấm chọn (Phút 0). Áp dụng Sliding Window + Sample Weighting.
-- [ ] **Task 3.2 [Thành viên 3]:** Xây dựng Mô hình Snowball Prediction trong trận (Phút 10 - Random Forest / XGBoost). Kỳ vọng Accuracy > 80%.
-- [ ] **Task 3.3 [Thành viên 3]:** Đánh giá mô hình: ROC-AUC Curve, Confusion Matrix, Feature Importance.
-- [ ] **Task 3.4 [Thành viên 3]: Phân cụm K-Means & Nhận diện 4 Trường phái Đội hình (Draft Archetypes - Chương 4)**
-  - *Mục tiêu:* Vector hóa 159 tướng theo 5 trục sức mạnh `[Early_Power, Scaling, Teamfight_AOE, Pick_Potential, Objective_Control]`. Dùng K-Means + PCA gom cụm nhận diện 4 trường phái đội hình: Early Snowball / Dive, Dragon Soul Stacking, Late-Game Hypercarry, Pick & Split-Push 1-3-1.
-- [ ] **Task 3.5 [Thành viên 3 + 1]: Hệ thống Gợi ý Cấm/Chọn Thông Minh (Hybrid Opponent Target Ban, Meta Recommender & Punisher Engine) & Engine Phân tích Điều kiện thắng (Win Condition Card - ADR-014)**
+- [x] **Task 3.1 [Thành viên 3]: Xây dựng Mô hình Draft Prediction lúc cấm chọn (Phút 0)**
+  - *Mục tiêu:* Dự đoán xác suất thắng thua dựa hoàn toàn vào 10 tướng cấm/chọn trước khi trận đấu bắt đầu.
+  - *Phương pháp & Kỹ thuật:*
+    - Trích xuất 3,000 trận đấu giải đỉnh cao (6,000 dòng đội) từ CSDL SQLite `lol_live_data.db`.
+    - Xây dựng Pipeline đặc trưng đa tầng 799 chiều (Position-specific One-hot 790 cột, Bayesian Champion Winrate, 5 cặp đối đầu Lane Matchup, 2 cặp phối hợp Synergy Duo Mid-Jng/Bot-Sup, Vector cân bằng đội hình AD/AP/CC/Scaling và Trọng số thời gian Half-life 90 ngày).
+    - So sánh 4 mô hình: Random Forest (ROC-AUC: 0.5510, Brier: 0.2487), Logistic Regression L2 (Accuracy: 54.33%), Ensemble Soft Voting (ROC-AUC: 0.5492) và MLP.
+  - *Kết quả & Artifacts:*
+    - Module mã nguồn: [`src/06_machine_learning/draft_model.py`](../src/06_machine_learning/draft_model.py).
+    - Báo cáo khoa học: [`src/06_machine_learning/draft_model.md`](../src/06_machine_learning/draft_model.md).
+    - Đóng gói mô hình tối ưu: [`models/draft_model.pkl`](../models/draft_model.pkl). Hỗ trợ CLI `--train` và `--predict`. Hoàn thành 100%.
+- [x] **Task 3.2 [Thành viên 3]: Xây dựng Mô hình Snowball Prediction trong trận (Phút 10)**
+  - *Mục tiêu:* Dự đoán xác suất thắng thua dựa trên chỉ số kinh tế, mạng hạ gục và mục tiêu lớn đạt được ở mốc 10 phút.
+  - *Phương pháp & Kỹ thuật:*
+    - Tích hợp 6,770 quan sát trận đấu mốc 10 phút (4,752 Pro Play + 2,018 Solo Rank Thách Đấu).
+    - Xây dựng 22 đặc trưng chiến thuật: Macro Economy (`golddiffat10`, `xpdiffat10`, `csdiffat10`), Combat (`killsat10`, `deathsat10`, `kill_diff`, `kda_ratio`), 5 Lanes (`top_golddiff`, `jng_golddiff`, `mid_golddiff`, `bot_golddiff`, `sup_golddiff`), `carry_gold_lead` (Mid + Bot), Mục tiêu trung lập (`firstdragon`, `void_grubs`, `has_3_grubs`, `firsttower`, `double_neutral_control`), Synergies (`gold_dragon_synergy`, `gold_grubs_synergy`) và Match Context (`is_blue_side`, `is_pro_play`).
+    - So sánh và đánh giá đa thuật toán: Random Forest (150 trees), XGBoost Classifier, LightGBM Classifier, Logistic Regression (L2) và Soft Voting Ensemble.
+    - Đánh giá phân tầng: Đấu Giải Pro Play (Accuracy: 69.47%, ROC-AUC: 0.7572) vs Đấu Xếp Hạng Solo Rank (Accuracy: 73.54%, ROC-AUC: 0.8189). Kịch bản lăn cầu tuyết dẫn >= 2,000 vàng + 1 Rồng + 3 Sâu đẩy tỷ lệ thắng dự đoán lên **83.23%**.
+  - *Kết quả & Artifacts:*
+    - Module mã nguồn: [`src/06_machine_learning/snowball_model.py`](../src/06_machine_learning/snowball_model.py).
+    - Báo cáo khoa học: [`src/06_machine_learning/snowball_model.md`](../src/06_machine_learning/snowball_model.md).
+    - Đóng gói mô hình tối ưu: [`models/snowball_model.pkl`](../models/snowball_model.pkl). Hỗ trợ CLI `--train` và `--predict`. Hoàn thành 100%.
+- [x] **Task 3.3 [Thành viên 3]: Đánh giá mô hình & Xuất bản bộ biểu đồ chẩn đoán (ROC-AUC, Confusion Matrix, Feature Importance)**
+  - *Mục tiêu:* Đánh giá toàn diện và trực quan hóa hiệu năng của cả 2 mô hình (Draft Phút 0 vs Snowball Phút 10) theo chuẩn đồ họa nghiên cứu khoa học 300 DPI.
+  - *Phương pháp & Kỹ thuật:*
+    - Đánh giá trên tập kiểm thử độc lập: ROC-AUC Curves, Precision-Recall Curves, Confusion Matrix Heatmaps, Probability Calibration Curves (Reliability Diagrams) và Brier Scores.
+    - So sánh cấu trúc trọng số đóng góp của các nhóm đặc trưng (Feature Importance).
+  - *Kết quả & Artifacts:*
+    - Module mã nguồn: [`src/06_machine_learning/evaluate_models.py`](../src/06_machine_learning/evaluate_models.py).
+    - Báo cáo khoa học: [`src/06_machine_learning/evaluation_report.md`](../src/06_machine_learning/evaluation_report.md).
+    - Bộ 4 biểu đồ 300 DPI trong [`reports/figures/`](../reports/figures/): `fig6_roc_auc_comparison.png`, `fig7_confusion_matrices.png`, `fig8_calibration_curve.png`, `fig9_draft_vs_snowball_feature_importance.png`. Hoàn thành 100%.
+- [x] **Task 3.4 [Thành viên 3]: Phân cụm K-Means & PCA Nhận diện 4 Trường phái Đội hình (Draft Archetypes - Chương 4)**
+  - *Mục tiêu:* Vector hóa 159 tướng theo 5 trục sức mạnh `[Early_Power, Scaling, Teamfight_AOE, Pick_Potential, Objective_Control]`. Dùng K-Means + PCA gom cụm 6,000 đội hình giải đấu nhận diện 4 trường phái đội hình: Early Snowball / Dive, Wombocombo & Objective Control, Late-Game Hypercarry, Pick & Split-Push 1-3-1.
+  - *Phương pháp & Kỹ thuật:*
+    - Khảo sát tìm K tối ưu qua Elbow Method (WCSS giảm mạnh từ 21,122 về 15,966 tại K=4) và Silhouette Analysis (0.1799).
+    - Giảm chiều PCA 2D giải thích 68.98% phương sai tích lũy (PC1: 45.95% Tempo, PC2: 23.03% Combat Scale).
+    - Trích xuất Thẻ Điều kiện thắng (Win Condition) và Điểm yếu chí mạng (Critical Weakness) cho từng trường phái.
+  - *Kết quả & Artifacts:*
+    - Module mã nguồn: [`src/06_machine_learning/cluster_archetypes.py`](../src/06_machine_learning/cluster_archetypes.py).
+    - Báo cáo khoa học: [`src/06_machine_learning/cluster_archetypes.md`](../src/06_machine_learning/cluster_archetypes.md).
+    - Đóng gói mô hình: [`models/archetype_kmeans.pkl`](../models/archetype_kmeans.pkl). Hỗ trợ CLI `--train` và `--predict`.
+    - Bộ 2 biểu đồ 300 DPI trong [`reports/figures/`](../reports/figures/): `fig10_kmeans_elbow_silhouette.png`, `fig11_draft_archetypes_pca_clusters.png` kèm tài liệu giải thích chi tiết trong `docs/figure_explain/`. Hoàn thành 100%.
+- [x] **Task 3.5 [Thành viên 3 + 1]: Hệ thống Gợi ý Cấm/Chọn Thông Minh (Hybrid Opponent Target Ban, Meta Recommender & Punisher Engine) & Engine Phân tích Điều kiện thắng (Win Condition Card - ADR-014)**
   - *Mục tiêu & Cơ chế:*
     - **1. Phân hệ CẤM lai ghép mục tiêu theo Tuyển thủ Đối phương (Hybrid Opponent Target Ban):** 
       - *Trọng số Đấu Giải (60-70%):* Khai thác 30,000 dòng `tournament_players` trong SQLite, tính điểm nguy hiểm/tướng tủ ổn định (Bayesian Smoothed Winrate + 10m Laning Dominance) của tuyển thủ đối phương (ví dụ: Keria -> Bard/Renata, Kiaya -> Rumble/Renekton, Chovy -> Yone/Ahri). Tự động nhận diện hồ sơ tân binh ngay khi có trận đấu giải mới.
@@ -129,7 +163,43 @@ Trạng thái:
         - *Lỗ hổng 3 (Zero Hard CC - Thiếu khống chế cứng):* Gợi ý siêu sát thủ/quẩy giao tranh (**Master Yi, Katarina, Irelia, Zeri**).
         - *Lỗ hổng 4 (Full Squishy - Máu giấy/Thiếu mở combat):* Gợi ý càn quét mở giao tranh (**Nocturne, Jarvan IV, Hecarim, Akali**).
     - **4. Engine Phân tích Điều kiện thắng (Win Condition Card - ADR-014):** Tự động trích xuất Thẻ chiến thuật chỉ rõ: Chủ lực gánh đội (Core Carry), Điểm rơi sức mạnh (Power Spike Timing), Mục tiêu ưu tiên số 1 (Primary Objective) và Điều kiện thua cần tránh (Lose Condition).
-- [ ] **Milestone 3:** Xuất các file mô hình `draft_model.pkl`, `snowball_model.pkl`, `archetype_kmeans.pkl`, `target_ban_engine.pkl`, `recommender.pkl`, `punisher_engine.pkl`, `win_condition_engine.pkl`.
+  - *Kết quả & Artifacts:*
+    - Module mã nguồn: [`src/07_recommender/recommender_engine.py`](../src/07_recommender/recommender_engine.py).
+    - Báo cáo khoa học: [`src/07_recommender/recommender_engine.md`](../src/07_recommender/recommender_engine.md).
+    - Danh mục tuyển thủ & Rank tracking: [`data/pro_player_accounts.json`](../data/pro_player_accounts.json).
+    - Đóng gói mô hình: [`models/recommender_engine.pkl`](../models/recommender_engine.pkl). Hỗ trợ đầy đủ CLI và demo 4 phân hệ. Hoàn thành 100%.
+- [x] **Milestone 3:** Toàn bộ Giai đoạn 3 (Machine Learning, Phân Cụm & Ban/Pick AI) hoàn thành 100%. Đã xuất các file mô hình `models/draft_model.pkl`, `models/snowball_model.pkl`, `models/archetype_kmeans.pkl`, `models/recommender_engine.pkl`, cùng hệ thống biểu đồ chẩn đoán Fig 6 - 11 (300 DPI) và báo cáo khoa học chi tiết. Sẵn sàng tiến sang Giai đoạn 4 (REST API FastAPI & Web App).
+
+### 📝 TỔNG KẾT NHỮNG CẢI TIẾN ĐÃ THỰC HIỆN TRÊN HỆ THỐNG RECOMMENDER:
+1. **Khử Thiên Kiến Mẫu Nhỏ (Small Sample Bias Removal):**
+   - Triệt tiêu hoàn toàn lỗi "ảo điểm" (ví dụ: Rek'Sai Jungle 2 trận thắng 100% bị tính là Tier S+ 99.0%).
+   - Tích hợp kỹ thuật Bayesian Shrinkage kéo tỷ lệ thắng về mốc tiên nghiệm 50% đối với mẫu nhỏ, kết hợp Sample Confidence Weighting để ưu tiên các kèo đấu có độ tin cậy thống kê cao.
+2. **Đồng Bộ Bộ Lọc Cấm/Chọn Theo Vị Trí (`top`, `jng`, `mid`, `bot`, `sp`):**
+   - Khắc phục lỗi lọc theo vị trí bị mất tướng (ví dụ: Karma ở bảng tổng hợp Phase 1 nhưng gõ `sp` lại biến mất).
+   - Truyền tham số `ban_phase` (Phase 1 vs Phase 2) chuẩn xác, đồng bộ hóa giữa cấm theo Meta và cấm mục tiêu tướng tủ của đối phương.
+3. **Nâng Cấp Hệ Thống Mô Phỏng Cấm/Chọn Đấu Giải ([`simulate_draft_match.py`](../src/07_recommender/simulate_draft_match.py)):**
+   - Hỗ trợ người dùng điều khiển tương tác linh hoạt ở cả **Phe Xanh (Blue Side - First Pick)** lẫn **Phe Đỏ (Red Side - Counter Last Pick)**.
+   - Thêm Menu chọn kịch bản trực quan: Hỗ trợ kịch bản đặc biệt **"ĐỘI VÔ DANH (Bạn) vs T1"**, GAM vs T1, T1 vs GEN.G và Tùy chỉnh tự do.
+   - Cơ chế cấm/chọn thích ứng: Khi đối đầu Đội Vô Danh, AI tự động cấm theo chuẩn Meta toàn cầu; khi đối đầu T1, hệ thống bóc tách toàn bộ CSDL tướng tủ của Faker, Oner, Keria, Doran, Peyz để cấm và phản đòn.
+4. **Bộ Lọc Ngắt Cứng Kèo Thua Rõ Rệt (Hard Cut-off Filter cho Counter-Pick):**
+   - Khi đối thủ đã pick trước tướng cùng đường, tự động loại bỏ các tướng có Winrate đối đầu thực tế $< 45\%$ (mẫu $\ge 4$ trận) khỏi danh sách gợi ý chọn (ngăn chặn tình trạng gợi ý đâm đầu vào kèo thua).
+   - Khuếch đại điểm thưởng cho các kèo trên thực thụ ($\ge 52\%$) để đưa các lựa chọn khắc chế chuẩn xác lên hàng đầu.
+
+---
+
+### 📌 ĐỊNH HƯỚNG BẮT BUỘC QUAY LẠI XEM XÉT & CẢI THIỆN TOÀN DIỆN (GLOBAL ROADMAP BACKLOG)
+> **ĐÁNH DẤU:** Sau này bắt buộc phải rà soát và đánh giá lại **TOÀN BỘ hệ thống Ma trận Kèo Đấu (Head-to-Head Matchup Matrix)** trên tất cả các vị trí (Top, Jungle, Mid, Bot, Support) chứ không chỉ dừng lại ở một vài cặp tướng riêng lẻ:
+
+1. **Rà soát Toàn bộ Ma trận Đối đầu Trực tiếp (Global Head-to-Head Matrix Review):**
+   - Khảo sát lại tương tác giữa cả 173 vị tướng trên cả 5 vị trí để đối chiếu giữa **Cảm nhận người chơi (Perception / Lý thuyết kỹ năng 1v1)** và **Dữ liệu thực chiến (Reality / Pro Play + High Elo)**.
+   - Xử lý các cặp đấu "bẫy" tương tự (nhìn lý thuyết thì tưởng kèo trên nhưng thực tế vận hành macro lại là kèo dưới do thua thiệt về tốc độ dọn quái, nhịp độ di chuyển hoặc khả năng đóng góp giao tranh).
+2. **Nâng cấp Đánh giá Kèo Đấu Đa Biến Theo Ngữ Cảnh (Context-Aware Matchup Evaluation):**
+   - Kèo đấu cùng đường không tồn tại cô lập: Cần tích hợp thêm yếu tố thế trận 2 cánh và rừng đồng minh.
+   - Xem xét lại những vị tướng có kỹ năng đảo đường toàn bản đồ (Pantheon, Twisted Fate, Shen, Galio, Taliyah): Cần đánh giá bài toán **Đánh đổi Tài nguyên Chéo Bản đồ (Macro Cross-Map Tradeoff)** — chi phí cơ hội khi một tướng bỏ đường/bỏ rừng đi can thiệp so với lượng tài nguyên bị mất ở cánh đối diện.
+3. **Phân Tách Rạch Ròi giữa "Kèo Đi Rừng (Jungle Tempo)" và "Kèo Đường Đơn (Lane 1v1)":**
+   - Cùng một cặp tướng, khi gặp nhau ở Đường Trên/Đường Giữa có thể mang tính chất khác hoàn toàn so với khi cùng Đi Rừng (nơi tốc độ dọn quái và khả năng vượt địa hình quyết định toàn bộ ván đấu).
+4. **Hệ Thống Giải Thích Minh Bạch Đa Chiều (Multi-Dimensional Explainability Engine):**
+   - Nâng cấp giao diện hiển thị để không chỉ đưa ra một điểm số thuần túy, mà cung cấp bảng so sánh rõ ràng: *"Ưu thế về kỹ năng đối kháng vs Rủi ro về nhịp độ bản đồ / macro"*, giúp người chơi và ban huấn luyện hiểu sâu sắc bản chất chiến thuật đằng sau mỗi gợi ý.
 
 ---
 

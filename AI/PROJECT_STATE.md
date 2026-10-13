@@ -9,8 +9,9 @@
 - **Tên dự án:** Hệ Thống Trợ Lý Phân Tích Cấm/Chọn (Ban/Pick AI), Dự Đoán Thắng Thua Sớm 2 Giai Đoạn & Đối Chiếu Chiến Thuật Đấu Giải (Pro Play) vs Đấu Xếp Hạng (Solo Queue) - LMHT.
 - **Môn học chính:** Nhập môn Khoa học Dữ liệu (TS. Thái Tuyết Hải, PTIT).
 - **Môn học mở rộng:** Lập trình trên thiết bị di động (ThS. Nguyễn Trung Hiếu, PTITHCM).
-- **Giai đoạn hiện tại:** Đã hoàn thành 100% Giai đoạn 2 (Thống kê suy diễn & Trực quan hóa EDA - Chương 1, 3) và Milestone 2. Sẵn sàng bước sang Giai đoạn 3 (Machine Learning 2 Giai Đoạn & Ban/Pick AI).
-- **Đánh giá tiến độ tổng:** ~70% (Hoàn thành 100% Giai đoạn 1 + Hoàn thành 100% Giai đoạn 2 + Milestone 1 & Milestone 2).
+- **Giai đoạn hiện tại:** Đã hoàn thành 100% Giai đoạn 1 (Thu thập & CSDL), Giai đoạn 2 (Thống kê suy diễn & EDA), và Giai đoạn 3 (Machine Learning, Phân Cụm & Ban/Pick AI - Milestone 3). Sẵn sàng bước sang Giai đoạn 4 (REST API FastAPI & Web App).
+- **Trạng thái thực thi hiện tại:** ❄️ **FROZEN (TẠM ĐÓNG BĂNG)** — Tạm dừng dự án lớn để tập trung 100% ưu tiên hoàn tất Bài tập lớn Giữa kỳ: **Topic 2 - Outlier Detection** tại thư mục [`midterm_assignment/`](../midterm_assignment/). Sau khi nộp bài Midterm sẽ quay lại kích hoạt Giai đoạn 4.
+- **Đánh giá tiến độ tổng:** ~85% (Hoàn thành trọn vẹn Milestone 1, Milestone 2, Milestone 3).
 
 ---
 
@@ -26,13 +27,14 @@
 | `src/04_hypothesis_testing/` | `VERIFIED - WORKING` | Gồm `test_blue_side_advantage.py` & `.md` (Task 2.1: Z-test lợi thế Phe Xanh), `test_snowball_effect.py` & `.md` (Task 2.2: Two-sample Welch t-test & Z-test Lăn cầu tuyết Pro vs Rank), `test_voidgrubs_vs_dragon.py` & `.md` (Task 2.3: Chi-square & Odds Ratio 3 Sâu vs Rồng 1), `__init__.py` và `README.md`. **Hoàn thành trọn vẹn 3 bài toán Thống kê suy diễn (100% Chương 1)**. |
 | `src/05_visualization/` | `VERIFIED - WORKING` | Gồm `plot_eda_figures.py` (Bộ 5 biểu đồ EDA 300 DPI theo Giáo trình Chương 3), `plot_eda_figures.md`, `__init__.py` và `README.md`. Xuất 5 tệp PNG 300 DPI vào `reports/figures/`. Hoàn thành Task 2.4. |
 | `notebooks/` | `VERIFIED - WORKING` | Đã hoàn thành và đóng gói Notebook toàn diện `01_kham_pha_du_lieu_EDA.ipynb` (21 cells, thực thi và render 100% outputs hình ảnh & bảng thống kê). Hoàn thành Milestone 2. |
-| `docs/figure_explain/` | `VERIFIED - WORKING` | Trọn bộ 6 tệp tài liệu giải thích học thuật và phản biện chi tiết cho Bộ 5 biểu đồ EDA 300 DPI. |
-| `src/06_machine_learning/` | `INITIALIZED` | Đã khởi tạo cấu trúc thư mục kèm tài liệu `README.md` đặc tả mô hình 2 tầng. Sẵn sàng viết code. |
-| `src/07_recommender/` | `INITIALIZED` | Đã khởi tạo cấu trúc thư mục kèm tài liệu `README.md` đặc tả hệ thống Gợi ý Cấm/Chọn (Hybrid Target Ban, Meta Pick, Punisher Engine & Win Condition). Sẵn sàng viết code. |
+| `docs/figure_explain/` | `VERIFIED - WORKING` | Trọn bộ 11 tệp tài liệu giải thích học thuật và phản biện chi tiết cho Bộ biểu đồ Fig 1..11 (300 DPI). |
+| `src/06_machine_learning/` | `VERIFIED - WORKING` | Gồm `draft_model.py` (Draft AI Phút 0), `snowball_model.py` (Snowball AI Phút 10), `evaluate_models.py` (Đánh giá & xuất Fig 6..9), `cluster_archetypes.py` (Phân cụm K-Means & PCA 4 Trường phái Đội hình & xuất Fig 10..11), `draft_model.md`, `snowball_model.md`, `evaluation_report.md`, `cluster_archetypes.md`, `models/draft_model.pkl`, `models/snowball_model.pkl` và `models/archetype_kmeans.pkl`. Hoàn thành Task 3.1, 3.2, 3.3, 3.4. |
+| `src/07_recommender/` | `VERIFIED - WORKING` | Gồm `recommender_engine.py` (Hybrid Target Ban Tuyển thủ, Meta Pick & Duo Synergy, Punisher Engine Quét lỗ hổng, Win Condition Card Engine ADR-014), `recommender_engine.md`, `models/recommender_engine.pkl` và `data/pro_player_accounts.json`. Hoàn thành Task 3.5. |
 | `src/api/` | `NOT CREATED (FACT)` | Chưa tạo thư mục mã nguồn Backend FastAPI. |
 | `web/` | `NOT CREATED (FACT)` | Chưa tạo thư mục giao diện Web App. |
 | `mobile_app/` | `NOT CREATED (FACT)` | Chưa tạo thư mục ứng dụng Android (theo kế hoạch là Giai đoạn 2). |
-| `reports/figures/` | `VERIFIED - WORKING` | Lưu trữ 5 tệp hình ảnh 300 DPI xuất bản từ pipeline trực quan hóa EDA. |
+| `midterm_assignment/` | `VERIFIED - WORKING` | Phục vụ Bài tập lớn Giữa kỳ Topic 2 (TS. Thái Tuyết Hải): Thư mục độc lập gồm data (2,304 ván Pro Play 2026), mã nguồn thí nghiệm (`outlier_experiment.py`, `build_deliverables.py`), bộ 4 biểu đồ 300 DPI, Báo cáo Word (`MIDTERM_REPORT_TOPIC2.docx`), Slide PowerPoint (`MIDTERM_SLIDES_TOPIC2.pptx`), `README.md` và đặc tả toàn bộ yêu cầu đặt ra [`REQUIREMENTS.md`](../midterm_assignment/REQUIREMENTS.md). |
+| `reports/figures/` | `VERIFIED - WORKING` | Lưu trữ 11 tệp hình ảnh 300 DPI (Bộ 5 biểu đồ EDA Fig 1..5 + Bộ 4 biểu đồ Model Diagnostics Fig 6..9 + Bộ 2 biểu đồ K-Means & PCA Fig 10..11) xuất bản từ pipeline. |
 
 ---
 
@@ -84,8 +86,10 @@
 
 ---
 
-## 5. CÁC RỦI RO & VẤN ĐỀ ĐANG TỒN TẠI (KNOWN RISKS)
-1. **Google Drive Quota Exceeded:** `[RESOLVED 100%]` Đã khắc phục triệt để bằng cơ chế tải 2 tầng tích hợp Google Drive API v3 (OAuth 2.0 Smart Copy). Đã kiểm thử tải trực tiếp thành công 100% với `--force`.
-2. **Dữ liệu đấu giải 2026 nạp vào CSDL:** `[RESOLVED 100%]` Đã nạp thành công 6,000 dòng `tournament_matches` và 30,000 dòng `tournament_players` vào `lol_live_data.db` qua `load_esports_to_db.py`.
-3. **Các thư mục code phân tầng tiếp theo:** Cần tiếp tục triển khai module làm sạch dữ liệu (`src/02_preprocessing/cleaner.py` - Task 1.3) và 5 truy vấn SQL (`src/03_database_sql/queries.sql` - Task 1.4).
+## 5. CÁC RỦI RO, TỐI ƯU HÓA & DANH MỤC CẢI THIỆN (IMPROVEMENT BACKLOG)
+1. **Google Drive Quota Exceeded:** `[RESOLVED 100%]` Đã khắc phục triệt để bằng cơ chế tải 2 tầng tích hợp Google Drive API v3 (OAuth 2.0 Smart Copy).
+2. **Dữ liệu đấu giải 2026 nạp vào CSDL:** `[RESOLVED 100%]` Đã nạp thành công 6,000 dòng `tournament_matches` và 30,000 dòng `tournament_players` vào `lol_live_data.db`.
+3. **Hệ Thống Ma Trận Kèo Đấu & Gợi Ý Đối Đầu Toàn Diện (Global Head-to-Head Matchup Matrix):** `[HOTFIXED & FLAGGED FOR GLOBAL REVIEW]`
+   - *Đã hoàn thành:* Sửa lỗi thiên kiến mẫu nhỏ (Rek'Sai 100%), sửa lỗi lọc lane Phase 1/2 (Karma), hoàn thiện mô phỏng tương tác 2 chiều (Đội Vô Danh vs T1), và thiết lập Hard Cut-off Filter loại bỏ các tướng có Winrate đối đầu $< 45\%$ khỏi danh sách gợi ý.
+   - *Backlog bắt buộc xem xét & cải thiện toàn diện sau này:* Rà soát và đánh giá lại **TOÀN BỘ ma trận đối đầu giữa tất cả 173 tướng trên cả 5 vị trí**, phân tích chuyên sâu sự khác biệt giữa *Cảm nhận người chơi (Perception)* vs *Dữ liệu thực chiến (Reality)*, và tích hợp bài toán *Đánh đổi Tài nguyên Chéo Bản đồ (Macro Cross-Map Tradeoff)*.
 

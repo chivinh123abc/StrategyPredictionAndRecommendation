@@ -4,6 +4,132 @@ Tất cả các thay đổi quan trọng về code, CSDL và tài liệu kiến 
 
 ---
 
+## [2026-10-10] - CẬP NHẬT TOÀN DIỆN RECOMMENDER: SỬA LỖI MẪU NHỎ, LỌC LANE PHASE 1/2, MÔ PHỎNG ĐA KỊCH BẢN (ĐỘI VÔ DANH VS T1) & GHI CHÚ ROADMAP
+- **Tổng hợp Những Việc Đã Hoàn Thành (Completed Enhancements):**
+  - **1. Khử Thiên kiến Mẫu nhỏ (Small Sample Bias):** Khắc phục triệt để lỗi Rek'Sai Jungle 2 trận thắng 100% bị tính Tier S+ 99.0% nhờ kỹ thuật Bayesian Shrinkage và Sample Confidence Weighting.
+  - **2. Sửa lỗi Lọc Cấm theo Vị trí:** Khắc phục lỗi mất tướng khi lọc theo lane (Karma ở bảng tổng nhưng gõ `sp` bị mất); đồng bộ chuẩn xác `ban_phase` giữa Meta Bans và Target Bans.
+  - **3. Sửa lỗi cú pháp & runtime:** Khắc phục lỗi `NameError: reason_text` và `KeyError: tournament_stats` khi xử lý dữ liệu tuyển thủ tân binh/ẩn danh.
+  - **4. Nâng cấp Mô phỏng Tournament Draft ([`src/07_recommender/simulate_draft_match.py`](../src/07_recommender/simulate_draft_match.py)):**
+    - Hỗ trợ đầy đủ tương tác 2 chiều cho cả Phe Xanh (First Pick) và Phe Đỏ (Counter Last Pick).
+    - Tích hợp Menu chọn kịch bản trực quan: Hỗ trợ "ĐỘI VÔ DANH (Bạn) vs T1 (Faker, Oner, Keria, Doran, Peyz)", GAM vs T1, T1 vs GEN.G.
+    - T1 AI cấm theo Meta toàn cầu đối với tuyển thủ vô danh; người dùng nhận gợi ý bóc tách toàn bộ tướng tủ của từng thành viên T1.
+  - **5. Bộ lọc Ngắt cứng Kèo thua rõ rệt (Hard Cut-off Filter):** Khi đối thủ đã pick trước tướng cùng đường, loại bỏ hoàn toàn các tướng có Winrate đối đầu $< 45\%$ khỏi danh sách gợi ý chọn (loại trừ các kèo bị counter cứng).
+  - **6. Khuếch đại Điểm Kèo trên Thực thụ:** Thưởng điểm mạnh cho các kèo trên ($\ge 52\%$) có mẫu tin cậy để đưa Vi (65%), Poppy (80%), Trundle (50%), Jarvan IV (54.1%) lên Top đầu.
+- **Đánh dấu Định hướng Cải thiện Toàn diện Tương lai (Global Roadmap Backlog):**
+  - Bắt buộc quay lại rà soát và đánh giá lại **TOÀN BỘ hệ thống Ma trận Kèo Đấu (Head-to-Head Matchup Matrix) trên TẤT CẢ các cặp tướng và 5 vị trí**, đối chiếu giữa *Cảm nhận người chơi (Perception)* vs *Dữ liệu thực chiến (Reality)*, và mô phỏng chi phí cơ hội *Đánh đổi Tài nguyên Chéo Bản đồ (Macro Tradeoff)*.
+
+---
+
+## [2026-10-08] - HOÀN THÀNH TASK 3.5 & MILESTONE 3: HỆ THỐNG GỢI Ý CẤM/CHỌN THÔNG MINH, NHẬN DIỆN LỖ HỔNG & THẺ ĐIỀU KIỆN THẮNG
+- **Triển khai module Recommender [`src/07_recommender/recommender_engine.py`](../src/07_recommender/recommender_engine.py):**
+  - **Phân hệ 1: TargetBanEngine (Hybrid Opponent Target Ban):**
+    - Kết hợp 65% Trọng số Đấu Giải (30,000 bản ghi `tournament_players`, Bayesian Smoothed Winrate, 10m Laning Dominance, KDA, Damage Share) + 35% Solo Rank 30 trận gần nhất (`data/pro_player_accounts.json`).
+    - Nhận diện đột biến (Spike in Pick Rate & Winrate >= 70%) phát hiện và gắn cờ `🚨 POCKET PICK SPAM RANK` / `🔥 TƯỚNG TỦ THƯƠNG HIỆU`.
+    - Đã kiểm thử xuất sắc trên Keria (Bard, Camille, Renata), Chovy (Yone, Tristana, Ahri), Kiaya (Rumble, Urgot, Gwen), Levi, Knight, Bin, Ruler.
+  - **Phân hệ 2: MetaPickRecommender (Gợi ý Chọn Chuẩn Meta & Synergy):**
+    - Tích hợp Counter-Pick đối đầu lane trực tiếp, Duo Synergy (Mid-Jng, Bot-Sup) và Dynamic Composition Balance (bù đắp AP khi Full AD, bổ sung Hard CC và Frontline).
+  - **Phân hệ 3: PunisherEngine (Quét Lỗ Hổng & Con Bài Trừng Phạt):**
+    - Nhận diện 4 lỗ hổng cấm/chọn chí mạng: Heavy Melee (3-4 cận chiến -> Illaoi, Darius, Cassiopeia, Brand), Full AD (0 AP -> Malphite, Rammus, Taric), Zero Hard CC (Master Yi, Katarina, Zeri), Full Squishy (Nocturne, Jarvan IV).
+    - Tác động gia tăng +12% đến +18.5% Winrate dự đoán (minh chứng qua Hiện tượng Siwoo Illaoi tại LCK).
+  - **Phân hệ 4: WinConditionEngine (ADR-014: Thẻ Điều Kiện Thắng):**
+    - Tích hợp mô hình K-Means `models/archetype_kmeans.pkl` xác định trường phái đội hình, vẽ Radar 5 trục và trích xuất Thẻ Chiến thuật hoàn chỉnh: Core Carry, Power Spike Timing, Primary Objective, Win Condition, Lose Condition, Do's & Don'ts.
+- **Đóng gói mô hình & Artifacts:**
+  - Xuất file mô hình đóng gói [`models/recommender_engine.pkl`](../models/recommender_engine.pkl).
+  - Danh mục tuyển thủ & Rank tracking: [`data/pro_player_accounts.json`](../data/pro_player_accounts.json).
+  - Soạn thảo báo cáo khoa học toàn diện [`src/07_recommender/recommender_engine.md`](../src/07_recommender/recommender_engine.md).
+  - Cập nhật [`AI/TASKS.md`](TASKS.md) và [`AI/PROJECT_STATE.md`](PROJECT_STATE.md).
+- **🎉 HOÀN THÀNH 100% MILESTONE 3 (GIAI ĐOẠN 3: MACHINE LEARNING & BAN/PICK AI)!** Sẵn sàng bước sang Giai đoạn 4 (REST API FastAPI & Web App).
+
+---
+
+## [2026-10-08] - HOÀN THÀNH TASK 3.4: PHÂN CỤM K-MEANS & PCA NHẬN DIỆN 4 TRƯỜNG PHÁI ĐỘI HÌNH
+- **Triển khai module Machine Learning [`src/06_machine_learning/cluster_archetypes.py`](../src/06_machine_learning/cluster_archetypes.py):**
+  - **Vector hóa 160+ tướng:** Xây dựng từ điển thuộc tính chiến thuật 5 trục chuẩn hóa [Early_Power, Scaling, Teamfight_AOE, Pick_Potential, Objective_Control] và tính toán Vector Đội hình có trọng số vị trí.
+  - **Phân cụm K-Means & PCA (Chương 4):**
+    - Khảo sát tìm số cụm tối ưu K=4 qua phương pháp Elbow (WCSS giảm mạnh từ 21,122 về 15,966) và Silhouette Analysis (0.1799).
+    - Giảm chiều PCA 2D giải thích 68.98% phương sai tích lũy (PC1: 45.95% Tempo, PC2: 23.03% Combat Scale).
+    - Phân tích và định danh 4 trường phái đội hình kinh điển:
+      1. **Early Snowball & Dive (24.1%):** Đè đường, ép trụ và kết thúc sớm (Win condition: Ăn Sâu Hư Không đợt 1, Trụ Đầu trước phút 14).
+      2. **Wombocombo & Objective Control (16.3%):** Giao tranh diện rộng 5v5 quanh hang Rồng và Baron.
+      3. **Late-Game Hypercarry (22.7%):** Nuôi siêu chủ lực (Smolder, Jinx, Azir, Kayle) đánh về cuối trận.
+      4. **Pick & Split-Push 1-3-1 (36.9%):** Đẩy lẻ 2 cánh và bắt lẻ mục tiêu đơn lập.
+  - **Đóng gói mô hình:** Lưu trữ thành công vào [`models/archetype_kmeans.pkl`](../models/archetype_kmeans.pkl). Hỗ trợ CLI `--train` và `--predict`.
+  - **Xuất bản bộ 2 biểu đồ 300 DPI vào [`reports/figures/`](../reports/figures/):**
+    - **Fig 10:** [`fig10_kmeans_elbow_silhouette.png`](../reports/figures/fig10_kmeans_elbow_silhouette.png) - Phương pháp Elbow & Silhouette Score.
+    - **Fig 11:** [`fig11_draft_archetypes_pca_clusters.png`](../reports/figures/fig11_draft_archetypes_pca_clusters.png) - Không gian phân cụm PCA 2D & Bộ 4 biểu đồ Radar 5 trục.
+- **Tài liệu & Báo cáo:**
+  - Soạn thảo báo cáo khoa học chi tiết [`src/06_machine_learning/cluster_archetypes.md`](../src/06_machine_learning/cluster_archetypes.md).
+  - Soạn thảo 2 tệp giải thích học thuật trong `docs/figure_explain/` (`fig10` và `fig11`) và đồng bộ `reports/figures/figure_explain/`.
+  - Cập nhật [`AI/TASKS.md`](TASKS.md), [`AI/PROJECT_STATE.md`](PROJECT_STATE.md).
+  - **Hoàn thành 100% Task 3.4.** Sẵn sàng bước sang Task 3.5 (Hệ thống Gợi ý Cấm/Chọn Thông Minh).
+
+---
+
+## [2026-10-04] - HOÀN THÀNH TASK 3.3: ĐÁNH GIÁ TOÀN DIỆN MÔ HÌNH VÀ XUẤT BẢN BỘ 4 BIỂU ĐỒ DIAGNOSTICS (300 DPI)
+- **Triển khai module Machine Learning [`src/06_machine_learning/evaluate_models.py`](../src/06_machine_learning/evaluate_models.py):**
+  - **Đánh giá hiệu năng 2 giai đoạn:**
+    - Cấm/Chọn (Phút 0): Random Forest đạt ROC-AUC = 0.5510, Accuracy = 53.83%, Brier Score = 0.2487, F1 = 0.5771.
+    - Thực chiến (Phút 10): Random Forest đạt ROC-AUC = 0.7780, Accuracy = 70.75%, Brier Score = 0.1925, F1 = 0.7023.
+  - **Thiết kế và xuất bản bộ 4 biểu đồ nghiên cứu khoa học (300 DPI) vào [`reports/figures/`](../reports/figures/):**
+    - **Fig 6:** [`fig6_roc_auc_comparison.png`](../reports/figures/fig6_roc_auc_comparison.png) - Đường cong ROC và Precision-Recall đối chiếu Phút 0 vs Phút 10.
+    - **Fig 7:** [`fig7_confusion_matrices.png`](../reports/figures/fig7_confusion_matrices.png) - Ma trận nhầm lẫn (Confusion Matrices Heatmap).
+    - **Fig 8:** [`fig8_calibration_curve.png`](../reports/figures/fig8_calibration_curve.png) - Biểu đồ độ tin cậy hiệu chuẩn xác suất (Reliability Diagram).
+    - **Fig 9:** [`fig9_draft_vs_snowball_feature_importance.png`](../reports/figures/fig9_draft_vs_snowball_feature_importance.png) - So sánh cơ chế đặc trưng quyết định Phút 0 vs Phút 10.
+- **Tài liệu & Báo cáo:**
+  - Soạn thảo báo cáo khoa học chi tiết [`src/06_machine_learning/evaluation_report.md`](../src/06_machine_learning/evaluation_report.md).
+  - Cập nhật [`AI/TASKS.md`](TASKS.md), [`AI/PROJECT_STATE.md`](PROJECT_STATE.md).
+  - **Hoàn thành 100% Task 3.3.** Sẵn sàng bước sang Task 3.4 (Phân cụm 4 Trường phái Đội hình) và Task 3.5 (Hệ thống Gợi ý Ban/Pick Thông Minh).
+
+---
+
+## [2026-10-04] - HOÀN THÀNH TASK 3.2: XÂY DỰNG MÔ HÌNH SNOWBALL PREDICTION (PHÚT 10)
+- **Triển khai module Machine Learning [`src/06_machine_learning/snowball_model.py`](../src/06_machine_learning/snowball_model.py):**
+  - **Tích hợp dữ liệu đa nguồn:** Trích xuất và hợp nhất 6,770 quan sát mốc 10 phút từ CSDL SQLite `lol_live_data.db` (4,752 Pro Play bóc tách 5 lane + 2,018 Solo Rank Thách Đấu VN2/KR).
+  - **Kỹ thuật 22 đặc trưng chiến thuật:**
+    - Macro: `golddiffat10`, `xpdiffat10`, `csdiffat10`, `killsat10`, `deathsat10`, `kill_diff`, `kda_ratio`.
+    - Micro 5 Lanes: `top_golddiff`, `jng_golddiff`, `mid_golddiff`, `bot_golddiff`, `sup_golddiff`, `carry_gold_lead` (Mid + Bot).
+    - Mục tiêu lớn: `firstdragon`, `void_grubs`, `has_3_grubs`, `firsttower`, `double_neutral_control`.
+    - Synergy phi tuyến & Context: `gold_dragon_synergy`, `gold_grubs_synergy`, `is_blue_side`, `is_pro_play`.
+  - **So sánh mô hình (Test Set 1,354 trận):**
+    - Random Forest (150 trees): **ROC-AUC = 0.7780**, Accuracy = 70.75%, Log Loss = 0.5682, Brier Score = 0.1925.
+    - Soft Voting Ensemble (LGB + XGB + RF + LR): Accuracy = 71.20%, ROC-AUC = 0.7774.
+    - XGBoost: Accuracy = 71.20%, ROC-AUC = 0.7751.
+    - Logistic Regression L2: Accuracy = 71.20%, ROC-AUC = 0.7746.
+    - LightGBM: Accuracy = 71.27%, ROC-AUC = 0.7730.
+  - **Đối chiếu Đấu Giải vs Solo Rank:**
+    - Solo Rank: **ROC-AUC = 0.8189**, Accuracy = 73.54% (Lăn cầu tuyết tàn phá tâm lý và không thể lật kèo do thiếu phối hợp).
+    - Pro Play: **ROC-AUC = 0.7572**, Accuracy = 69.47% (Các đội chuyên nghiệp kiểm soát tầm nhìn và có thể lật kèo nhờ đội hình Scaling).
+  - **Đóng gói mô hình:** Lưu trữ thành công vào [`models/snowball_model.pkl`](../models/snowball_model.pkl). Hỗ trợ CLI `--train` và `--predict`.
+- **Tài liệu & Báo cáo:**
+  - Soạn thảo báo cáo khoa học [`src/06_machine_learning/snowball_model.md`](../src/06_machine_learning/snowball_model.md).
+  - Cập nhật [`AI/TASKS.md`](TASKS.md), [`AI/PROJECT_STATE.md`](PROJECT_STATE.md).
+  - **Hoàn thành 100% Task 3.2.** Sẵn sàng bước sang Task 3.3 (Đánh giá mô hình ROC-AUC & Confusion Matrix).
+
+---
+
+## [2026-10-04] - HOÀN THÀNH TASK 3.1: XÂY DỰNG MÔ HÌNH DRAFT PREDICTION (PHÚT 0)
+- **Triển khai module Machine Learning [`src/06_machine_learning/draft_model.py`](../src/06_machine_learning/draft_model.py):**
+  - **Trích xuất dữ liệu:** Nạp và xoay trục 3,000 trận đấu giải đỉnh cao (6,000 dòng đội) chuẩn 1NF/3NF từ CSDL SQLite `lol_live_data.db`.
+  - **Feature Pipeline đa tầng (799 chiều):**
+    - Position-specific Differential One-Hot Vectors (+1 Blue, -1 Red theo 5 lane $\times$ 158 tướng = 790 cột).
+    - Tỷ lệ thắng làm mịn Bayes (Bayesian Smoothed Winrates C=10).
+    - Tương quan đối đầu trực tiếp 5 cặp đường (Lane Matchup Advantage).
+    - Phối hợp cặp đôi (Synergy Duo Mid-Jng và Bot-Sup).
+    - Cân bằng thuộc tính đội hình (AD/AP ratio, Hard CC, Tankiness, Early vs Late Scaling).
+    - Trọng số suy giảm theo thời gian (Time-decay sample weights Half-life 90 ngày).
+  - **So sánh mô hình (Test Set 600 trận theo thời gian):**
+    - Random Forest (150 trees): **ROC-AUC = 0.5510**, Brier Score = 0.2487 (Mô hình tối ưu nhất).
+    - Logistic Regression L2: **Accuracy = 54.33%**, ROC-AUC = 0.5485.
+    - Soft Voting Ensemble: ROC-AUC = 0.5492.
+  - **Đóng gói mô hình:** Lưu trữ thành công vào [`models/draft_model.pkl`](../models/draft_model.pkl).
+  - **Hỗ trợ CLI Runner:** `--train` để huấn luyện, `--predict` để dự đoán tỷ lệ thắng và bóc tách lợi thế 5 lane theo thời gian thực.
+- **Tài liệu & Báo cáo:**
+  - Soạn thảo báo cáo khoa học chi tiết [`src/06_machine_learning/draft_model.md`](../src/06_machine_learning/draft_model.md).
+  - Cập nhật [`AI/TASKS.md`](TASKS.md), [`AI/PROJECT_STATE.md`](PROJECT_STATE.md).
+  - **Hoàn thành 100% Task 3.1.** Sẵn sàng bước sang Task 3.2 (Mô hình Snowball Phút 10).
+
+---
+
 ## [2026-09-30] - BỔ SUNG KIẾN TRÚC DRAFT FLAW & PUNISHER RECOMMENDER
 - **Cập nhật đặc tả Task 3.5, Task 4.1 & Module `src/07_recommender/`:**
   - **Phân hệ Nhận diện Lỗ hổng Cấm/Chọn của Địch (Draft Flaw Exploitation):** Tự động phát hiện 4 lỗ hổng chí mạng của đội hình địch: Heavy Melee (3-4 cận chiến), Full AD (không có AP), Zero Hard CC (không có khống chế cứng), Full Squishy (máu giấy không có tanker/mở combat).

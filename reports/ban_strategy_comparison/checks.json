@@ -1,0 +1,28 @@
+{
+  "regression_tests_passed": 57,
+  "all_three_series_complete": true,
+  "each_series_unique_picks": 50,
+  "actual_branch_paths_replayed": 583,
+  "root_evaluations": 295,
+  "max_search_plies": 9,
+  "no_future_actual_draft_supplied_to_search": true,
+  "same_snapshot_rosters_pick_schedule": true,
+  "root_source_sha256": {
+    "ban_planner": "cd801e13444e3610945649bc45004eeeb6a097ce75146b64b374f859e8567f3f",
+    "draft_advisor": "545e10f23888b8d3aa12e6f050af72d8fc5b8922126423fc001d240d6ad9fdb5",
+    "simulate_draft_match": "00ff0870c1e3606c61f769d004f5e6b15d069a955429c5029b84b7be20a39175",
+    "simulate_fearless_series": "5e8704af5651917da538dad9cb39456c0caad20034b553c63dd982396195a1b0"
+  },
+  "all_modes": [
+    "legacy",
+    "contextual",
+    "lookahead"
+  ],
+  "completed_drafts": 15,
+  "total_real_draft_actions": 300,
+  "for_each_series_unique_picks": 50,
+  "raw_database_modified": false,
+  "new_model_training": false,
+  "results": "reports/ban_strategy_comparison/COMPARISON.md",
+  "metrics": "reports/ban_strategy_comparison/comparison.json"
+}

@@ -1,0 +1,254 @@
+Đang nạp lịch sử trận đấu và hồ sơ tướng...
+GIẢ LẬP BAN/PICK MỘT VÁN — LỊCH SỬ + CONTENT-BASED
+Bạn: blue; phe chọn trước: blue; dữ liệu: WLDS
+SNAPSHOT LỊCH SỬ: patch dataset 16.20, dữ liệu đến 2026-11-09T00:56:00+00:00, cũ 4 ngày so với mốc yêu cầu
+106 trận trong cửa sổ 60 ngày, 94 trận patch đích; không gọi là live meta.
+Lineup T1 (latest_observed_lineup_not_live_roster): top=Doran, jng=Oner, mid=Faker, bot=Peyz, sup=Keria
+Lineup Gen.G (latest_observed_lineup_not_live_roster): top=Kiin, jng=Canyon, mid=Chovy, bot=Ruler, sup=Duro
+Ưu tiên presence/nhịp draft gần đây; bể tướng, đối đầu và cosine là tín hiệu hỗ trợ. Điểm không phải xác suất.
+
+==========================================================================================
+BLUE T1 | Cấm: —
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: —
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 1/20: BLUE T1 — CẤM
+ĐÃ CẤM: Nocturne
+  Căn cứ: Presence gần đây 86.8%, bị cấm 69.5%; điểm ưu tiên đối thủ 0.385; chênh lựa chọn 0.021
+
+==========================================================================================
+BLUE T1 | Cấm: Nocturne
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: —
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 2/20: RED Gen.G — CẤM
+ĐÃ CẤM: Renata Glasc
+  Căn cứ: Presence gần đây 78.0%, bị cấm 61.8%; điểm ưu tiên đối thủ 0.342; chênh lựa chọn 0.280
+
+==========================================================================================
+BLUE T1 | Cấm: Nocturne
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Renata Glasc
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 3/20: BLUE T1 — CẤM
+ĐÃ CẤM: Vi
+  Căn cứ: Presence gần đây 76.2%, bị cấm 60.1%; điểm ưu tiên đối thủ 0.341; chênh lựa chọn 0.000
+
+==========================================================================================
+BLUE T1 | Cấm: Nocturne, Vi
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Renata Glasc
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 4/20: RED Gen.G — CẤM
+ĐÃ CẤM: Cassiopeia
+  Căn cứ: Presence gần đây 66.2%, bị cấm 48.0%; điểm ưu tiên đối thủ 0.340; chênh lựa chọn 0.200
+
+==========================================================================================
+BLUE T1 | Cấm: Nocturne, Vi
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Renata Glasc, Cassiopeia
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 5/20: BLUE T1 — CẤM
+ĐÃ CẤM: Olaf
+  Căn cứ: Presence gần đây 59.9%, bị cấm 40.5%; điểm ưu tiên đối thủ 0.333; chênh lựa chọn 0.232
+
+==========================================================================================
+BLUE T1 | Cấm: Nocturne, Vi, Olaf
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Renata Glasc, Cassiopeia
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 6/20: RED Gen.G — CẤM
+ĐÃ CẤM: Qiyana
+  Căn cứ: Presence gần đây 57.5%, bị cấm 34.0%; điểm ưu tiên đối thủ 0.296; chênh lựa chọn 0.194
+
+==========================================================================================
+BLUE T1 | Cấm: Nocturne, Vi, Olaf
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Renata Glasc, Cassiopeia, Qiyana
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 7/20: BLUE T1 — CHỌN
+ĐÃ CHỌN: Kai'Sa [bot]
+  Căn cứ: Slot F1: ưu tiên chọn quan sát 0.008; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Nocturne, Vi, Olaf
+Top: — | Rừng: — | Mid: — | Xạ thủ: Kai'Sa | Hỗ trợ: —
+RED Gen.G | Cấm: Renata Glasc, Cassiopeia, Qiyana
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 8/20: RED Gen.G — CHỌN
+ĐÃ CHỌN: Ahri [mid]
+  Căn cứ: Slot S1: ưu tiên chọn quan sát 0.006; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Nocturne, Vi, Olaf
+Top: — | Rừng: — | Mid: — | Xạ thủ: Kai'Sa | Hỗ trợ: —
+RED Gen.G | Cấm: Renata Glasc, Cassiopeia, Qiyana
+Top: — | Rừng: — | Mid: Ahri | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 9/20: RED Gen.G — CHỌN
+ĐÃ CHỌN: Sivir [bot]
+  Căn cứ: Slot S2: ưu tiên chọn quan sát 0.003; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Nocturne, Vi, Olaf
+Top: — | Rừng: — | Mid: — | Xạ thủ: Kai'Sa | Hỗ trợ: —
+RED Gen.G | Cấm: Renata Glasc, Cassiopeia, Qiyana
+Top: — | Rừng: — | Mid: Ahri | Xạ thủ: Sivir | Hỗ trợ: —
+
+LƯỢT 10/20: BLUE T1 — CHỌN
+ĐÃ CHỌN: Ryze [mid]
+  Căn cứ: Slot F2: ưu tiên chọn quan sát 0.008; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Nocturne, Vi, Olaf
+Top: — | Rừng: — | Mid: Ryze | Xạ thủ: Kai'Sa | Hỗ trợ: —
+RED Gen.G | Cấm: Renata Glasc, Cassiopeia, Qiyana
+Top: — | Rừng: — | Mid: Ahri | Xạ thủ: Sivir | Hỗ trợ: —
+
+LƯỢT 11/20: BLUE T1 — CHỌN
+ĐÃ CHỌN: Naafiri [jng]
+  Căn cứ: Slot F3: ưu tiên chọn quan sát 0.012; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Nocturne, Vi, Olaf
+Top: — | Rừng: Naafiri | Mid: Ryze | Xạ thủ: Kai'Sa | Hỗ trợ: —
+RED Gen.G | Cấm: Renata Glasc, Cassiopeia, Qiyana
+Top: — | Rừng: — | Mid: Ahri | Xạ thủ: Sivir | Hỗ trợ: —
+
+LƯỢT 12/20: RED Gen.G — CHỌN
+ĐÃ CHỌN: Ornn [top]
+  Căn cứ: Slot S3: ưu tiên chọn quan sát 0.006; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Nocturne, Vi, Olaf
+Top: — | Rừng: Naafiri | Mid: Ryze | Xạ thủ: Kai'Sa | Hỗ trợ: —
+RED Gen.G | Cấm: Renata Glasc, Cassiopeia, Qiyana
+Top: Ornn | Rừng: — | Mid: Ahri | Xạ thủ: Sivir | Hỗ trợ: —
+
+LƯỢT 13/20: RED Gen.G — CẤM
+ĐÃ CẤM: Vayne
+  Căn cứ: Presence gần đây 12.1%, bị cấm 9.3%; điểm ưu tiên đối thủ 0.126; chênh lựa chọn 0.000
+
+==========================================================================================
+BLUE T1 | Cấm: Nocturne, Vi, Olaf
+Top: — | Rừng: Naafiri | Mid: Ryze | Xạ thủ: Kai'Sa | Hỗ trợ: —
+RED Gen.G | Cấm: Renata Glasc, Cassiopeia, Qiyana, Vayne
+Top: Ornn | Rừng: — | Mid: Ahri | Xạ thủ: Sivir | Hỗ trợ: —
+
+LƯỢT 14/20: BLUE T1 — CẤM
+ĐÃ CẤM: Skarner
+  Căn cứ: Presence gần đây 16.3%, bị cấm 9.8%; điểm ưu tiên đối thủ 0.157; chênh lựa chọn 0.043
+
+==========================================================================================
+BLUE T1 | Cấm: Nocturne, Vi, Olaf, Skarner
+Top: — | Rừng: Naafiri | Mid: Ryze | Xạ thủ: Kai'Sa | Hỗ trợ: —
+RED Gen.G | Cấm: Renata Glasc, Cassiopeia, Qiyana, Vayne
+Top: Ornn | Rừng: — | Mid: Ahri | Xạ thủ: Sivir | Hỗ trợ: —
+
+LƯỢT 15/20: RED Gen.G — CẤM
+ĐÃ CẤM: Aurora
+  Căn cứ: Presence gần đây 8.9%, bị cấm 2.6%; điểm ưu tiên đối thủ 0.148; chênh lựa chọn 0.000
+
+==========================================================================================
+BLUE T1 | Cấm: Nocturne, Vi, Olaf, Skarner
+Top: — | Rừng: Naafiri | Mid: Ryze | Xạ thủ: Kai'Sa | Hỗ trợ: —
+RED Gen.G | Cấm: Renata Glasc, Cassiopeia, Qiyana, Vayne, Aurora
+Top: Ornn | Rừng: — | Mid: Ahri | Xạ thủ: Sivir | Hỗ trợ: —
+
+LƯỢT 16/20: BLUE T1 — CẤM
+ĐÃ CẤM: Shen
+  Căn cứ: Presence gần đây 8.3%, bị cấm 2.2%; điểm ưu tiên đối thủ 0.125; chênh lựa chọn 0.000
+
+==========================================================================================
+BLUE T1 | Cấm: Nocturne, Vi, Olaf, Skarner, Shen
+Top: — | Rừng: Naafiri | Mid: Ryze | Xạ thủ: Kai'Sa | Hỗ trợ: —
+RED Gen.G | Cấm: Renata Glasc, Cassiopeia, Qiyana, Vayne, Aurora
+Top: Ornn | Rừng: — | Mid: Ahri | Xạ thủ: Sivir | Hỗ trợ: —
+
+LƯỢT 17/20: RED Gen.G — CHỌN
+ĐÃ CHỌN: Rell [sup]
+  Căn cứ: Slot S4: ưu tiên chọn quan sát 0.016; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Nocturne, Vi, Olaf, Skarner, Shen
+Top: — | Rừng: Naafiri | Mid: Ryze | Xạ thủ: Kai'Sa | Hỗ trợ: —
+RED Gen.G | Cấm: Renata Glasc, Cassiopeia, Qiyana, Vayne, Aurora
+Top: Ornn | Rừng: — | Mid: Ahri | Xạ thủ: Sivir | Hỗ trợ: Rell
+
+LƯỢT 18/20: BLUE T1 — CHỌN
+ĐÃ CHỌN: Zaahen [top]
+  Căn cứ: Slot F4: ưu tiên chọn quan sát 0.003; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Nocturne, Vi, Olaf, Skarner, Shen
+Top: Zaahen | Rừng: Naafiri | Mid: Ryze | Xạ thủ: Kai'Sa | Hỗ trợ: —
+RED Gen.G | Cấm: Renata Glasc, Cassiopeia, Qiyana, Vayne, Aurora
+Top: Ornn | Rừng: — | Mid: Ahri | Xạ thủ: Sivir | Hỗ trợ: Rell
+
+LƯỢT 19/20: BLUE T1 — CHỌN
+ĐÃ CHỌN: Poppy [sup]
+  Căn cứ: Slot F5: ưu tiên chọn quan sát 0.009; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Nocturne, Vi, Olaf, Skarner, Shen
+Top: Zaahen | Rừng: Naafiri | Mid: Ryze | Xạ thủ: Kai'Sa | Hỗ trợ: Poppy
+RED Gen.G | Cấm: Renata Glasc, Cassiopeia, Qiyana, Vayne, Aurora
+Top: Ornn | Rừng: — | Mid: Ahri | Xạ thủ: Sivir | Hỗ trợ: Rell
+
+LƯỢT 20/20: RED Gen.G — CHỌN
+ĐÃ CHỌN: Sejuani [jng]
+  Căn cứ: Slot S5: ưu tiên chọn quan sát 0.010; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Nocturne, Vi, Olaf, Skarner, Shen
+Top: Zaahen | Rừng: Naafiri | Mid: Ryze | Xạ thủ: Kai'Sa | Hỗ trợ: Poppy
+RED Gen.G | Cấm: Renata Glasc, Cassiopeia, Qiyana, Vayne, Aurora
+Top: Ornn | Rừng: Sejuani | Mid: Ahri | Xạ thủ: Sivir | Hỗ trợ: Rell
+Căn cứ cặp T1: observed_pairs=0, sparse_pairs=4, unobserved_pairs=2, insufficient_anchor_pairs=4
+Căn cứ cặp Gen.G: observed_pairs=0, sparse_pairs=2, unobserved_pairs=8, insufficient_anchor_pairs=0
+
+===============================================================================================
+📋 BẢNG ĐỘI HÌNH HOÀN THIỆN SAU KHI CẤM/CHỌN (FINAL DRAFT)
+===============================================================================================
+🔷 PHE XANH (T1):
+   • TOP: Zaahen (Doran)
+   • JNG: Naafiri (Oner)
+   • MID: Ryze (Faker)
+   • BOT: Kai'Sa (Peyz)
+   • SUP: Poppy (Keria)
+
+🔴 PHE ĐỎ (Gen.G):
+   • TOP: Ornn (Kiin)
+   • JNG: Sejuani (Canyon)
+   • MID: Ahri (Chovy)
+   • BOT: Sivir (Ruler)
+   • SUP: Rell (Duro)
+Radar và thẻ chiến thuật dùng thuộc tính/quy tắc chuyên gia; chưa được xác nhận như điều kiện thắng nhân quả.
+
+────────────────────────────────────── THẺ CHIẾN THUẬT: T1 (BLUE) ──────────────────────────────────────
+🏆 Trường phái: [LATE-GAME HYPERCARRY]
+📊 Radar 5 trục: Early: 0.588 | Scaling: 0.818 | Combat: 0.637 | Pick: 0.777 | Obj: 0.677
+⭐ Chủ lực (Core Carry): Ryze
+⏱️ Điểm rơi sức mạnh: Cuối trận (Sau Phút 28 - Khi chủ lực đạt ngưỡng 3-4 trang bị chuẩn)
+🐉 Mục tiêu số 1: Baron Nashor & Rồng Ngàn Tuổi (Elder Dragon)
+✅ Điều kiện thắng: Bảo kê tuyệt đối cho siêu chủ lực farm an toàn; chấp nhận nhường mục tiêu sớm nếu cần; hủy diệt giao tranh cuối trận.
+❌ Cần tránh: Bị đối thủ băng trụ lăn cầu tuyết thua > 2,500 vàng lúc 10 phút dẫn đến vỡ trận sớm.
+
+────────────────────────────────────── THẺ CHIẾN THUẬT: GEN.G (RED) ──────────────────────────────────────
+🏆 Trường phái: [PICK & SPLIT-PUSH 1-3-1]
+📊 Radar 5 trục: Early: 0.578 | Scaling: 0.813 | Combat: 0.847 | Pick: 0.85 | Obj: 0.693
+⭐ Chủ lực (Core Carry): Sivir
+⏱️ Điểm rơi sức mạnh: Xuyên suốt trận đấu (Đặc biệt phát huy từ Phút 15 đến Phút 30)
+🐉 Mục tiêu số 1: Trụ 2 cánh bản đồ & Bắt lẻ cô lập mục tiêu đi lẻ
+✅ Điều kiện thắng: Tạo thế đẩy lẻ 1-3-1 hoặc 1-4, buộc đối thủ phải phân tán phòng thủ; rình rập bắt lẻ khi địch di chuyển và ép Baron khi hơn người.
+❌ Cần tránh: Bị đối thủ ép giao tranh 5v5 trực diện bất ngờ khi đội hình chưa kịp gom quân.
+Phiên có mốc lịch sử: bỏ dự báo từ model lưu sẵn vì chưa bảo đảm model được fit trước mốc này.
+Đã lưu phiên: reports\legacy_contextual_comparison\legacy\game_5.json

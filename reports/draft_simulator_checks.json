@@ -1,0 +1,81 @@
+{
+  "regression_suite_returncode": 0,
+  "regression_tests": 24,
+  "cli_scenarios": [
+    {
+      "args": [
+        "--auto",
+        "--blue-team",
+        "T1",
+        "--red-team",
+        "GEN.G",
+        "--region",
+        "LCK"
+      ],
+      "returncode": 0,
+      "complete": true,
+      "unique_champions": 20,
+      "first_pick_side": "blue"
+    },
+    {
+      "args": [
+        "--auto",
+        "--blue-team",
+        "BLG",
+        "--red-team",
+        "TES",
+        "--region",
+        "LPL",
+        "--first-pick",
+        "red"
+      ],
+      "returncode": 0,
+      "complete": true,
+      "unique_champions": 20,
+      "first_pick_side": "red"
+    },
+    {
+      "args": [
+        "--blue-team",
+        "UNDERDOG",
+        "--red-team",
+        "T1",
+        "--region",
+        "ALL",
+        "--user-side",
+        "red",
+        "--first-pick",
+        "red"
+      ],
+      "returncode": 0,
+      "complete": true,
+      "unique_champions": 20,
+      "first_pick_side": "red"
+    },
+    {
+      "args": [
+        "--auto",
+        "--blue-team",
+        "T1",
+        "--red-team",
+        "GEN.G",
+        "--region",
+        "LCK",
+        "--wishlist",
+        "Zeri,Lulu"
+      ],
+      "returncode": 0,
+      "complete": true,
+      "unique_champions": 20,
+      "first_pick_side": "blue"
+    },
+    {
+      "args": [],
+      "returncode": 0,
+      "complete": true,
+      "unique_champions": 20,
+      "first_pick_side": "blue"
+    }
+  ],
+  "performance_claim": "No benchmark establishes global optimality or winrate uplift."
+}

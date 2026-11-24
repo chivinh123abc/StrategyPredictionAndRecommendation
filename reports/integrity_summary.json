@@ -1,0 +1,10 @@
+{
+  "rank_rows": 1009,
+  "negative_blue_gold_rows": 525,
+  "inconsistent_clean_gold_rows": 0,
+  "notebook_executed_code_cells": 8,
+  "notebook_png_outputs": 5,
+  "unit_tests_passed": 11,
+  "workflow_commands_passed": 12,
+  "gpu_preflight": "passed"
+}

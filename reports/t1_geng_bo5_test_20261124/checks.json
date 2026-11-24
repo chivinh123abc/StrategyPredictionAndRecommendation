@@ -1,0 +1,251 @@
+{
+  "completed_games": 5,
+  "total_actions": 100,
+  "unique_picks_across_series": 50,
+  "no_repeated_pick": true,
+  "prior_lock_counts": [
+    0,
+    10,
+    20,
+    30,
+    40
+  ],
+  "draft_order_legal": true,
+  "no_locked_champion_picked_or_banned": true,
+  "only_picks_carry_over_not_standard_bans": true,
+  "explicit_test_override": true,
+  "flagged_pick_count": 38,
+  "flagged_picks": [
+    {
+      "game": 1,
+      "turn": 8,
+      "champion": "Syndra",
+      "team": "Gen.G"
+    },
+    {
+      "game": 1,
+      "turn": 9,
+      "champion": "Rumble",
+      "team": "Gen.G"
+    },
+    {
+      "game": 1,
+      "turn": 18,
+      "champion": "Jayce",
+      "team": "T1"
+    },
+    {
+      "game": 1,
+      "turn": 19,
+      "champion": "Galio",
+      "team": "T1"
+    },
+    {
+      "game": 2,
+      "turn": 10,
+      "champion": "Gnar",
+      "team": "Gen.G"
+    },
+    {
+      "game": 2,
+      "turn": 11,
+      "champion": "Seraphine",
+      "team": "Gen.G"
+    },
+    {
+      "game": 2,
+      "turn": 12,
+      "champion": "Yunara",
+      "team": "T1"
+    },
+    {
+      "game": 2,
+      "turn": 17,
+      "champion": "Trundle",
+      "team": "T1"
+    },
+    {
+      "game": 2,
+      "turn": 18,
+      "champion": "Ashe",
+      "team": "Gen.G"
+    },
+    {
+      "game": 2,
+      "turn": 19,
+      "champion": "Xin Zhao",
+      "team": "Gen.G"
+    },
+    {
+      "game": 2,
+      "turn": 20,
+      "champion": "Camille",
+      "team": "T1"
+    },
+    {
+      "game": 3,
+      "turn": 8,
+      "champion": "Pantheon",
+      "team": "Gen.G"
+    },
+    {
+      "game": 3,
+      "turn": 9,
+      "champion": "Taliyah",
+      "team": "Gen.G"
+    },
+    {
+      "game": 3,
+      "turn": 10,
+      "champion": "Wukong",
+      "team": "T1"
+    },
+    {
+      "game": 3,
+      "turn": 11,
+      "champion": "Lucian",
+      "team": "T1"
+    },
+    {
+      "game": 3,
+      "turn": 12,
+      "champion": "Ambessa",
+      "team": "Gen.G"
+    },
+    {
+      "game": 3,
+      "turn": 17,
+      "champion": "Rakan",
+      "team": "Gen.G"
+    },
+    {
+      "game": 3,
+      "turn": 18,
+      "champion": "Milio",
+      "team": "T1"
+    },
+    {
+      "game": 3,
+      "turn": 19,
+      "champion": "Jax",
+      "team": "T1"
+    },
+    {
+      "game": 3,
+      "turn": 20,
+      "champion": "Xayah",
+      "team": "Gen.G"
+    },
+    {
+      "game": 4,
+      "turn": 8,
+      "champion": "K'Sante",
+      "team": "T1"
+    },
+    {
+      "game": 4,
+      "turn": 9,
+      "champion": "Karma",
+      "team": "T1"
+    },
+    {
+      "game": 4,
+      "turn": 10,
+      "champion": "Renekton",
+      "team": "Gen.G"
+    },
+    {
+      "game": 4,
+      "turn": 11,
+      "champion": "Kalista",
+      "team": "Gen.G"
+    },
+    {
+      "game": 4,
+      "turn": 12,
+      "champion": "Caitlyn",
+      "team": "T1"
+    },
+    {
+      "game": 4,
+      "turn": 17,
+      "champion": "Anivia",
+      "team": "T1"
+    },
+    {
+      "game": 4,
+      "turn": 18,
+      "champion": "Leona",
+      "team": "Gen.G"
+    },
+    {
+      "game": 4,
+      "turn": 19,
+      "champion": "Maokai",
+      "team": "Gen.G"
+    },
+    {
+      "game": 4,
+      "turn": 20,
+      "champion": "Cho'Gath",
+      "team": "T1"
+    },
+    {
+      "game": 5,
+      "turn": 8,
+      "champion": "Ahri",
+      "team": "Gen.G"
+    },
+    {
+      "game": 5,
+      "turn": 9,
+      "champion": "Sivir",
+      "team": "Gen.G"
+    },
+    {
+      "game": 5,
+      "turn": 10,
+      "champion": "Ryze",
+      "team": "T1"
+    },
+    {
+      "game": 5,
+      "turn": 11,
+      "champion": "Naafiri",
+      "team": "T1"
+    },
+    {
+      "game": 5,
+      "turn": 12,
+      "champion": "Ornn",
+      "team": "Gen.G"
+    },
+    {
+      "game": 5,
+      "turn": 17,
+      "champion": "Rell",
+      "team": "Gen.G"
+    },
+    {
+      "game": 5,
+      "turn": 18,
+      "champion": "Zaahen",
+      "team": "T1"
+    },
+    {
+      "game": 5,
+      "turn": 19,
+      "champion": "Poppy",
+      "team": "T1"
+    },
+    {
+      "game": 5,
+      "turn": 20,
+      "champion": "Sejuani",
+      "team": "Gen.G"
+    }
+  ],
+  "report_team_names_correct": true,
+  "per_team_ban_pick_numbering_checked": true,
+  "knowledge_impact": "NV existing test override exposed in series CLI/report; no new statistical method"
+}

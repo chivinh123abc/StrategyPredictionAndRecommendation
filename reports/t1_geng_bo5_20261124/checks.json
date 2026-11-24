@@ -1,0 +1,26 @@
+{
+  "requested_drafts": 5,
+  "completed_drafts": 1,
+  "partial_drafts": 1,
+  "unstarted_drafts": [
+    3,
+    4,
+    5
+  ],
+  "applied_actions": 39,
+  "unique_picked_champions": 19,
+  "no_pick_repeats_across_games": true,
+  "fearless_locks_before_started_games": [
+    0,
+    10
+  ],
+  "stopped_at_game": 2,
+  "stopped_before_turn": 20,
+  "withheld_candidate": "Camille",
+  "manual_review_status": "required",
+  "trundle_picked_before_full_enemy_reveal": true,
+  "trundle_turn": 17,
+  "trundle_enemy_coverage": 0.0,
+  "regression_suite_rerun": false,
+  "algorithm_or_model_changes": false
+}

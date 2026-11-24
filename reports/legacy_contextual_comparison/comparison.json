@@ -1,0 +1,46 @@
+{
+  "active_strategies": [
+    "legacy",
+    "contextual"
+  ],
+  "snapshot": {
+    "region": "WLDS",
+    "dataset_patch": "16.20",
+    "data_through": "2026-11-09T00:56:00+00:00",
+    "requested_as_of": "2026-11-13T23:59:59.999999999+00:00",
+    "staleness_days": 4,
+    "history_games": 106,
+    "patch_games": 94,
+    "lookback_days": 60,
+    "half_life_days": 21.0,
+    "claim": "historical_snapshot_not_live_meta"
+  },
+  "metrics": {
+    "legacy": {
+      "completed_games": 5,
+      "actions": 100,
+      "unique_picks": 50,
+      "distinct_opening_ban_sets": 1,
+      "mean_pairwise_opening_jaccard": 1.0,
+      "review_required_picks": 38
+    },
+    "contextual": {
+      "completed_games": 5,
+      "actions": 100,
+      "unique_picks": 50,
+      "distinct_opening_ban_sets": 5,
+      "mean_pairwise_opening_jaccard": 0.4714285714285714,
+      "review_required_picks": 38
+    }
+  },
+  "checks": {
+    "all_series_complete": true,
+    "same_snapshot_rosters_schedule": true,
+    "per_series_distinct_picks": 50
+  },
+  "limitations": [
+    "Ban diversity does not establish better strategy or winrate.",
+    "Different ban policies lead to different subsequent picks and pools.",
+    "No response search or full BO5 optimization; manual weights remain."
+  ]
+}

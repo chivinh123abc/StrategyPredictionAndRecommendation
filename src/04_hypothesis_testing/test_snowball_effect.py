@@ -8,6 +8,9 @@ Giáo trình: Chương 1 - Thống kê suy diễn & Kiểm định giả thuyế
 
 import sys
 import argparse
+import sys
+from pathlib import Path
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 import sqlite3
 from pathlib import Path
 import pandas as pd
@@ -46,14 +49,14 @@ class SnowballHypothesisTester:
         - Pro Play (bảng tournament_matches): datacompleteness == 'complete' và golddiffat10 >= lead_gold
         - Solo Rank (bảng matches_10min): blueGoldDiff >= lead_gold HOẶC blueGoldDiff <= -lead_gold
         """
-        conn = sqlite3.connect(self.db_path)
+        conn = __import__('analysis_data', fromlist=['open_clean_connection']).open_clean_connection(self.db_path)
 
         # 1. Đấu Giải Chuyên Nghiệp (Pro Play)
         q_pro = f"""
         SELECT gameid, side, teamname, league, result, 
                gamelength / 60.0 AS duration_min, 
                golddiffat10 AS gold_diff
-        FROM tournament_matches
+        FROM tournament_matches_10min
         WHERE datacompleteness = 'complete' AND golddiffat10 >= {self.lead_gold}
         """
         df_pro = pd.read_sql_query(q_pro, conn)
@@ -200,7 +203,7 @@ class SnowballHypothesisTester:
         tiers = [1000, 1500, 2000, 3000]
         results = []
 
-        conn = sqlite3.connect(self.db_path)
+        conn = __import__('analysis_data', fromlist=['open_clean_connection']).open_clean_connection(self.db_path)
         for t in tiers:
             # Pro
             q_p = f"SELECT result, gamelength/60.0 AS dur FROM tournament_matches WHERE datacompleteness='complete' AND golddiffat10 >= {t}"
@@ -253,7 +256,7 @@ class SnowballHypothesisTester:
         tier_summary = self.run_multi_tier_analysis()
 
         print("=" * 100)
-        print(f"📊 BÁO CÁO KIỂM ĐỊNH GIẢ THUYẾT A/B: HIỆU QUẢ LĂN CẦU TUYẾT (SNOWBALL LEAD >= {self.lead_gold}G)")
+        print(f"📊 BÁO CÁO KIỂM ĐỊNH LIÊN HỆ TRONG DỮ LIỆU QUAN SÁT: HIỆU QUẢ LĂN CẦU TUYẾT (SNOWBALL LEAD >= {self.lead_gold}G)")
         print(f"   • Đối tượng so sánh: Đấu Giải Chuyên Nghiệp (Pro Play) vs Đấu Solo Rank Thách Đấu (Solo Queue)")
         print(f"   • Phương pháp: Two-sample Welch's t-test (Thời lượng) & Two-sample Z-test (Tỷ lệ thắng)")
         print(f"   • Mức ý nghĩa: alpha = {self.alpha}")
@@ -283,18 +286,10 @@ class SnowballHypothesisTester:
         print(display_tier.to_string(index=False))
         print("-" * 100)
 
-        print("\n🧠 TỔNG HỢP NHẬN XÉT & Ý NGHĨA NGHIỆP VỤ LMHT (DOMAIN INSIGHTS):")
-        print("  1. Khả năng chuyển hóa chiến thắng (Winrate Conversion):")
-        print(f"     • Khi dẫn >= {self.lead_gold}g tại phút 10, tỷ lệ thắng ở cả 2 môi trường đều cực kỳ áp đảo (Pro: {res1['pro_metric']}%, Rank: {res1['rank_metric']}%).")
-        print("     • Phép kiểm định Z-test cho thấy không có sự khác biệt có ý nghĩa thống kê về tỷ lệ thắng (p = 0.3859 > 0.05).")
-        print("       --> Nghĩa là: Ở cả Pro Play và Rank Thách Đấu, dẫn 2,000 vàng lúc 10 phút gần như đảm bảo chiến thắng 85%!")
-        print("\n  2. Tốc độ kết thúc trận đấu (Game Duration Dynamics):")
-        print(f"     • Kiểm định Welch's t-test (t = +11.46, p < 10^-26) chứng minh trận Solo Rank kết thúc NHANH HƠN 5.3 PHÚT so với Đấu Giải.")
-        print("     • NGUYÊN NHÂN: Trong Solo Rank có cơ chế đầu hàng (Surrender / FF15) và lối đánh khát máu đẩy nhanh nhịp độ.")
-        print("     • Trong Đấu Giải, các đội bị dẫn luôn cố gắng kéo dài trận đấu, phòng thủ nhà chính chờ cơ hội trừng phạt sai lầm đối phương.")
-        print("\n  3. Kỷ luật và Tính Ổn Định (Discipline & Variance):")
-        print("     • Đấu Giải có độ lệch chuẩn thời gian chỉ 4.7 phút (rất kỷ luật, ít quăng game).")
-        print("     • Solo Rank có độ lệch chuẩn 6.8 phút (phân tán mạnh, dễ quăng shutdown hoặc ép đối thủ đầu hàng sớm).")
+        print("\nDIỄN GIẢI: nghiên cứu quan sát, không phải thử nghiệm A/B ngẫu nhiên.")
+        print(f"Winrate dẫn vàng: Pro={res1['pro_metric']}%, Rank={res1['rank_metric']}%; p={res1['p_value']:.6g}")
+        print("Không suy ra dẫn vàng đảm bảo chiến thắng hoặc khác biệt do môi trường thi đấu gây ra.")
+        print("Phân tầng nhiều ngưỡng là khám phá; chưa hiệu chỉnh đa kiểm định và chưa kiểm soát team/player/patch.")
 
         if export:
             out_file = Path(PROCESSED_DATA_DIR) / "hypothesis_test_2_snowball.csv"

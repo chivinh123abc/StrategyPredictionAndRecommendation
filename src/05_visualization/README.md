@@ -1,3 +1,5 @@
+> **Integrity v2:** Nội dung dưới đây là thiết kế/lịch sử trước đợt sửa. Hành vi hiện hành, các giới hạn và lệnh chạy được mô tả tại [INTEGRITY_V2.md](../../docs/INTEGRITY_V2.md). Không dùng các tỷ lệ/kết luận cũ làm bằng chứng kết quả hiện tại.
+
 # MODULE 05: TRỰC QUAN HÓA DỮ LIỆU EDA (DATA VISUALIZATION - CHƯƠNG 3)
 
 > **Môn học:** Nhập môn Khoa học Dữ liệu (PTIT)  

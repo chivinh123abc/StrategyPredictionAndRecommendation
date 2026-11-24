@@ -1,0 +1,127 @@
+{
+  "unit_tests_passed": 31,
+  "cli_scenarios": [
+    {
+      "args": [
+        "--auto",
+        "--region",
+        "LCK",
+        "--first-pick",
+        "red",
+        "--as-of",
+        "2026-09-13"
+      ],
+      "returncode": 0,
+      "complete": true,
+      "unique_champions": 20,
+      "meta_scope": {
+        "region": "LCK",
+        "dataset_patch": "16.16",
+        "data_through": "2026-09-13T08:19:05+00:00",
+        "requested_as_of": "2026-09-13T23:59:59.999999999+00:00",
+        "staleness_days": 0,
+        "history_games": 153,
+        "patch_games": 80,
+        "lookback_days": 60,
+        "half_life_days": 21,
+        "claim": "historical_snapshot_not_live_meta"
+      }
+    },
+    {
+      "args": [
+        "--auto",
+        "--region",
+        "LPL",
+        "--blue-team",
+        "BLG",
+        "--red-team",
+        "TES"
+      ],
+      "returncode": 0,
+      "complete": true,
+      "unique_champions": 20,
+      "meta_scope": {
+        "region": "LPL",
+        "dataset_patch": "16.17",
+        "data_through": "2026-09-13T12:03:56+00:00",
+        "requested_as_of": "2026-11-23T10:30:41.915057+00:00",
+        "staleness_days": 70,
+        "history_games": 221,
+        "patch_games": 49,
+        "lookback_days": 60,
+        "half_life_days": 21,
+        "claim": "historical_snapshot_not_live_meta"
+      }
+    },
+    {
+      "args": [
+        "--auto",
+        "--region",
+        "ALL",
+        "--blue-team",
+        "UNDERDOG",
+        "--red-team",
+        "T1"
+      ],
+      "returncode": 0,
+      "complete": true,
+      "unique_champions": 20,
+      "meta_scope": {
+        "region": "ALL",
+        "dataset_patch": "16.20",
+        "data_through": "2026-11-14T23:18:11+00:00",
+        "requested_as_of": "2026-11-23T10:30:55.474318+00:00",
+        "staleness_days": 8,
+        "history_games": 128,
+        "patch_games": 98,
+        "lookback_days": 60,
+        "half_life_days": 21,
+        "claim": "historical_snapshot_not_live_meta"
+      }
+    },
+    {
+      "args": [
+        "--auto",
+        "--region",
+        "LCK",
+        "--used-champions",
+        "Olaf,Ryze,Shen"
+      ],
+      "returncode": 0,
+      "complete": true,
+      "unique_champions": 20,
+      "meta_scope": {
+        "region": "LCK",
+        "dataset_patch": "16.16",
+        "data_through": "2026-09-13T08:19:05+00:00",
+        "requested_as_of": "2026-11-23T10:31:08.368735+00:00",
+        "staleness_days": 71,
+        "history_games": 153,
+        "patch_games": 80,
+        "lookback_days": 60,
+        "half_life_days": 21,
+        "claim": "historical_snapshot_not_live_meta"
+      }
+    },
+    {
+      "args": [
+        "--auto",
+        "--region",
+        "LCK",
+        "--max-data-age-days",
+        "14"
+      ],
+      "returncode": 2
+    },
+    {
+      "args": [
+        "--auto",
+        "--region",
+        "LCK",
+        "--patch",
+        "26.23"
+      ],
+      "returncode": 2
+    }
+  ]
+}

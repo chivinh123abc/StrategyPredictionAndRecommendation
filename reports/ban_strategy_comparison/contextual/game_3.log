@@ -1,0 +1,254 @@
+Đang nạp lịch sử trận đấu và hồ sơ tướng...
+GIẢ LẬP BAN/PICK MỘT VÁN — LỊCH SỬ + CONTENT-BASED
+Bạn: blue; phe chọn trước: blue; dữ liệu: WLDS
+SNAPSHOT LỊCH SỬ: patch dataset 16.20, dữ liệu đến 2026-11-09T00:56:00+00:00, cũ 4 ngày so với mốc yêu cầu
+106 trận trong cửa sổ 60 ngày, 94 trận patch đích; không gọi là live meta.
+Lineup T1 (latest_observed_lineup_not_live_roster): top=Doran, jng=Oner, mid=Faker, bot=Peyz, sup=Keria
+Lineup Gen.G (latest_observed_lineup_not_live_roster): top=Kiin, jng=Canyon, mid=Chovy, bot=Ruler, sup=Duro
+Ưu tiên presence/nhịp draft gần đây; bể tướng, đối đầu và cosine là tín hiệu hỗ trợ. Điểm không phải xác suất.
+
+==========================================================================================
+BLUE T1 | Cấm: —
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: —
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 1/20: BLUE T1 — CẤM
+ĐÃ CẤM: Ashe
+  Căn cứ: Mất pool địch 0.0061; chi phí tự cấm 0.0003; đội mình lấy lượt pick tới trước địch=True; Fearless khóa 20; chấm theo pool ngữ cảnh
+
+==========================================================================================
+BLUE T1 | Cấm: Ashe
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: —
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 2/20: RED Gen.G — CẤM
+ĐÃ CẤM: Nocturne
+  Căn cứ: Mất pool địch 0.0162; chi phí tự cấm 0.0060; đội mình lấy lượt pick tới trước địch=False; Fearless khóa 20; chấm theo pool ngữ cảnh
+
+==========================================================================================
+BLUE T1 | Cấm: Ashe
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Nocturne
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 3/20: BLUE T1 — CẤM
+ĐÃ CẤM: Qiyana
+  Căn cứ: Mất pool địch 0.0147; chi phí tự cấm 0.0090; đội mình lấy lượt pick tới trước địch=True; Fearless khóa 20; chấm theo pool ngữ cảnh
+
+==========================================================================================
+BLUE T1 | Cấm: Ashe, Qiyana
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Nocturne
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 4/20: RED Gen.G — CẤM
+ĐÃ CẤM: Vi
+  Căn cứ: Mất pool địch 0.0186; chi phí tự cấm 0.0075; đội mình lấy lượt pick tới trước địch=False; Fearless khóa 20; chấm theo pool ngữ cảnh
+
+==========================================================================================
+BLUE T1 | Cấm: Ashe, Qiyana
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Nocturne, Vi
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 5/20: BLUE T1 — CẤM
+ĐÃ CẤM: Seraphine
+  Căn cứ: Mất pool địch 0.0091; chi phí tự cấm 0.0054; đội mình lấy lượt pick tới trước địch=True; Fearless khóa 20; chấm theo pool ngữ cảnh
+
+==========================================================================================
+BLUE T1 | Cấm: Ashe, Qiyana, Seraphine
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Nocturne, Vi
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 6/20: RED Gen.G — CẤM
+ĐÃ CẤM: Jayce
+  Căn cứ: Mất pool địch 0.0074; chi phí tự cấm 0.0022; đội mình lấy lượt pick tới trước địch=False; Fearless khóa 20; chấm theo pool ngữ cảnh
+
+==========================================================================================
+BLUE T1 | Cấm: Ashe, Qiyana, Seraphine
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Nocturne, Vi, Jayce
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 7/20: BLUE T1 — CHỌN
+ĐÃ CHỌN: Orianna [mid]
+  Căn cứ: Slot F1: ưu tiên chọn quan sát 0.047; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Ashe, Qiyana, Seraphine
+Top: — | Rừng: — | Mid: Orianna | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Nocturne, Vi, Jayce
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 8/20: RED Gen.G — CHỌN
+ĐÃ CHỌN: Locke [mid]
+  Căn cứ: Slot S1: ưu tiên chọn quan sát 0.009; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Ashe, Qiyana, Seraphine
+Top: — | Rừng: — | Mid: Orianna | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Nocturne, Vi, Jayce
+Top: — | Rừng: — | Mid: Locke | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 9/20: RED Gen.G — CHỌN
+ĐÃ CHỌN: K'Sante [top]
+  Căn cứ: Slot S2: ưu tiên chọn quan sát 0.014; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Ashe, Qiyana, Seraphine
+Top: — | Rừng: — | Mid: Orianna | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Nocturne, Vi, Jayce
+Top: K'Sante | Rừng: — | Mid: Locke | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 10/20: BLUE T1 — CHỌN
+ĐÃ CHỌN: Gnar [top]
+  Căn cứ: Slot F2: ưu tiên chọn quan sát 0.010; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Ashe, Qiyana, Seraphine
+Top: Gnar | Rừng: — | Mid: Orianna | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Nocturne, Vi, Jayce
+Top: K'Sante | Rừng: — | Mid: Locke | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 11/20: BLUE T1 — CHỌN
+ĐÃ CHỌN: Wukong [jng]
+  Căn cứ: Slot F3: ưu tiên chọn quan sát 0.011; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Ashe, Qiyana, Seraphine
+Top: Gnar | Rừng: Wukong | Mid: Orianna | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Nocturne, Vi, Jayce
+Top: K'Sante | Rừng: — | Mid: Locke | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 12/20: RED Gen.G — CHỌN
+ĐÃ CHỌN: Alistar [sup]
+  Căn cứ: Slot S3: ưu tiên chọn quan sát 0.067; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Ashe, Qiyana, Seraphine
+Top: Gnar | Rừng: Wukong | Mid: Orianna | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Nocturne, Vi, Jayce
+Top: K'Sante | Rừng: — | Mid: Locke | Xạ thủ: — | Hỗ trợ: Alistar
+
+LƯỢT 13/20: RED Gen.G — CẤM
+ĐÃ CẤM: Karma
+  Căn cứ: Mất pool địch 0.0050; chi phí tự cấm 0.0000; đội mình lấy lượt pick tới trước địch=True; Fearless khóa 20; chấm theo pool ngữ cảnh
+
+==========================================================================================
+BLUE T1 | Cấm: Ashe, Qiyana, Seraphine
+Top: Gnar | Rừng: Wukong | Mid: Orianna | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Nocturne, Vi, Jayce, Karma
+Top: K'Sante | Rừng: — | Mid: Locke | Xạ thủ: — | Hỗ trợ: Alistar
+
+LƯỢT 14/20: BLUE T1 — CẤM
+ĐÃ CẤM: Naafiri
+  Căn cứ: Mất pool địch 0.0056; chi phí tự cấm 0.0000; đội mình lấy lượt pick tới trước địch=False; Fearless khóa 20; chấm theo pool ngữ cảnh
+
+==========================================================================================
+BLUE T1 | Cấm: Ashe, Qiyana, Seraphine, Naafiri
+Top: Gnar | Rừng: Wukong | Mid: Orianna | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Nocturne, Vi, Jayce, Karma
+Top: K'Sante | Rừng: — | Mid: Locke | Xạ thủ: — | Hỗ trợ: Alistar
+
+LƯỢT 15/20: RED Gen.G — CẤM
+ĐÃ CẤM: Rakan
+  Căn cứ: Mất pool địch 0.0022; chi phí tự cấm 0.0000; đội mình lấy lượt pick tới trước địch=True; Fearless khóa 20; chấm theo pool ngữ cảnh
+
+==========================================================================================
+BLUE T1 | Cấm: Ashe, Qiyana, Seraphine, Naafiri
+Top: Gnar | Rừng: Wukong | Mid: Orianna | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Nocturne, Vi, Jayce, Karma, Rakan
+Top: K'Sante | Rừng: — | Mid: Locke | Xạ thủ: — | Hỗ trợ: Alistar
+
+LƯỢT 16/20: BLUE T1 — CẤM
+ĐÃ CẤM: Trundle
+  Căn cứ: Mất pool địch 0.0066; chi phí tự cấm 0.0000; đội mình lấy lượt pick tới trước địch=False; Fearless khóa 20; chấm theo pool ngữ cảnh
+
+==========================================================================================
+BLUE T1 | Cấm: Ashe, Qiyana, Seraphine, Naafiri, Trundle
+Top: Gnar | Rừng: Wukong | Mid: Orianna | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Nocturne, Vi, Jayce, Karma, Rakan
+Top: K'Sante | Rừng: — | Mid: Locke | Xạ thủ: — | Hỗ trợ: Alistar
+
+LƯỢT 17/20: RED Gen.G — CHỌN
+ĐÃ CHỌN: Corki [bot]
+  Căn cứ: Slot S4: ưu tiên chọn quan sát 0.006; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Ashe, Qiyana, Seraphine, Naafiri, Trundle
+Top: Gnar | Rừng: Wukong | Mid: Orianna | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Nocturne, Vi, Jayce, Karma, Rakan
+Top: K'Sante | Rừng: — | Mid: Locke | Xạ thủ: Corki | Hỗ trợ: Alistar
+
+LƯỢT 18/20: BLUE T1 — CHỌN
+ĐÃ CHỌN: Lucian [bot]
+  Căn cứ: Slot F4: ưu tiên chọn quan sát 0.020; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Ashe, Qiyana, Seraphine, Naafiri, Trundle
+Top: Gnar | Rừng: Wukong | Mid: Orianna | Xạ thủ: Lucian | Hỗ trợ: —
+RED Gen.G | Cấm: Nocturne, Vi, Jayce, Karma, Rakan
+Top: K'Sante | Rừng: — | Mid: Locke | Xạ thủ: Corki | Hỗ trợ: Alistar
+
+LƯỢT 19/20: BLUE T1 — CHỌN
+ĐÃ CHỌN: Milio [sup]
+  Căn cứ: Slot F5: ưu tiên chọn quan sát 0.019; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Ashe, Qiyana, Seraphine, Naafiri, Trundle
+Top: Gnar | Rừng: Wukong | Mid: Orianna | Xạ thủ: Lucian | Hỗ trợ: Milio
+RED Gen.G | Cấm: Nocturne, Vi, Jayce, Karma, Rakan
+Top: K'Sante | Rừng: — | Mid: Locke | Xạ thủ: Corki | Hỗ trợ: Alistar
+
+LƯỢT 20/20: RED Gen.G — CHỌN
+ĐÃ CHỌN: Xin Zhao [jng]
+  Căn cứ: Slot S5: ưu tiên chọn quan sát 0.005; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Ashe, Qiyana, Seraphine, Naafiri, Trundle
+Top: Gnar | Rừng: Wukong | Mid: Orianna | Xạ thủ: Lucian | Hỗ trợ: Milio
+RED Gen.G | Cấm: Nocturne, Vi, Jayce, Karma, Rakan
+Top: K'Sante | Rừng: Xin Zhao | Mid: Locke | Xạ thủ: Corki | Hỗ trợ: Alistar
+Căn cứ cặp T1: observed_pairs=2, sparse_pairs=6, unobserved_pairs=2, insufficient_anchor_pairs=0
+Căn cứ cặp Gen.G: observed_pairs=0, sparse_pairs=7, unobserved_pairs=3, insufficient_anchor_pairs=0
+
+===============================================================================================
+📋 BẢNG ĐỘI HÌNH HOÀN THIỆN SAU KHI CẤM/CHỌN (FINAL DRAFT)
+===============================================================================================
+🔷 PHE XANH (T1):
+   • TOP: Gnar (Doran)
+   • JNG: Wukong (Oner)
+   • MID: Orianna (Faker)
+   • BOT: Lucian (Peyz)
+   • SUP: Milio (Keria)
+
+🔴 PHE ĐỎ (Gen.G):
+   • TOP: K'Sante (Kiin)
+   • JNG: Xin Zhao (Canyon)
+   • MID: Locke (Chovy)
+   • BOT: Corki (Ruler)
+   • SUP: Alistar (Duro)
+Radar và thẻ chiến thuật dùng thuộc tính/quy tắc chuyên gia; chưa được xác nhận như điều kiện thắng nhân quả.
+
+────────────────────────────────────── THẺ CHIẾN THUẬT: T1 (BLUE) ──────────────────────────────────────
+🏆 Trường phái: [LATE-GAME HYPERCARRY]
+📊 Radar 5 trục: Early: 0.672 | Scaling: 0.747 | Combat: 0.835 | Pick: 0.66 | Obj: 0.672
+⭐ Chủ lực (Core Carry): Orianna
+⏱️ Điểm rơi sức mạnh: Cuối trận (Sau Phút 28 - Khi chủ lực đạt ngưỡng 3-4 trang bị chuẩn)
+🐉 Mục tiêu số 1: Baron Nashor & Rồng Ngàn Tuổi (Elder Dragon)
+✅ Điều kiện thắng: Bảo kê tuyệt đối cho siêu chủ lực farm an toàn; chấp nhận nhường mục tiêu sớm nếu cần; hủy diệt giao tranh cuối trận.
+❌ Cần tránh: Bị đối thủ băng trụ lăn cầu tuyết thua > 2,500 vàng lúc 10 phút dẫn đến vỡ trận sớm.
+
+────────────────────────────────────── THẺ CHIẾN THUẬT: GEN.G (RED) ──────────────────────────────────────
+🏆 Trường phái: [WOMBOCOMBO & OBJECTIVE CONTROL]
+📊 Radar 5 trục: Early: 0.635 | Scaling: 0.72 | Combat: 0.7 | Pick: 0.765 | Obj: 0.642
+⭐ Chủ lực (Core Carry): Corki
+⏱️ Điểm rơi sức mạnh: Giữa và Cuối trận (Phút 20 đến Phút 35 - Giai đoạn Rồng 3, 4 và Baron)
+🐉 Mục tiêu số 1: Rồng Nguyên Tố (Thiết lập Linh Hồn Rồng) & Hang Baron
+✅ Điều kiện thắng: Kiểm soát tầm nhìn trước 1 phút tại hang mục tiêu lớn, ép đối thủ vào các góc hẹp của sông và tung Wombocombo 5v5 quét sạch.
+❌ Cần tránh: Để đối thủ chia cắt đội hình đẩy lẻ 1-3-1 hoặc giao tranh khi chưa có đủ chiêu cuối mở combat.
+Phiên có mốc lịch sử: bỏ dự báo từ model lưu sẵn vì chưa bảo đảm model được fit trước mốc này.
+Đã lưu phiên: reports\ban_strategy_comparison\contextual\game_3.json

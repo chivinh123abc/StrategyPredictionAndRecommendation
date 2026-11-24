@@ -1,0 +1,401 @@
+{
+  "method": "content_based_cosine",
+  "evaluation_partition": "validation_not_final_test",
+  "protocol": "retrospective_final_draft_slot_retrieval_with_known_player",
+  "data_fingerprint": "55b0797bf1b11e74ac294f68f30cb9137e902347c4d72bdbbc2beeadad234009",
+  "historical_cutoff_exclusive": "2026-04-29T08:05:12+00:00",
+  "historical_games": 1801,
+  "heldout_games": 299,
+  "features": [
+    "dpm",
+    "cspm",
+    "wpm",
+    "damagetakenperminute",
+    "earnedgoldshare"
+  ],
+  "min_profile_games": 5,
+  "overall": {
+    "content_based": {
+      "queries": 2990,
+      "candidate_coverage": 0.9789297658862877,
+      "recall_at_5": 0.29899665551839466,
+      "precision_at_5": 0.05979933110367893,
+      "mrr_at_5": 0.1389576365663322,
+      "recall_at_10": 0.4936454849498328,
+      "precision_at_10": 0.04936454849498328,
+      "mrr_at_10": 0.16448611774698732
+    },
+    "popularity": {
+      "queries": 2990,
+      "candidate_coverage": 0.9789297658862877,
+      "recall_at_5": 0.4652173913043478,
+      "precision_at_5": 0.09304347826086956,
+      "mrr_at_5": 0.2212207357859532,
+      "recall_at_10": 0.7491638795986622,
+      "precision_at_10": 0.07491638795986622,
+      "mrr_at_10": 0.25820950788342095
+    },
+    "player_frequency": {
+      "queries": 2990,
+      "candidate_coverage": 0.9789297658862877,
+      "recall_at_5": 0.48394648829431436,
+      "precision_at_5": 0.09678929765886288,
+      "mrr_at_5": 0.24031772575250834,
+      "recall_at_10": 0.7558528428093646,
+      "precision_at_10": 0.07558528428093646,
+      "mrr_at_10": 0.2763458884111058
+    }
+  },
+  "warm_user_cohort": {
+    "content_based": {
+      "queries": 2871,
+      "candidate_coverage": 0.978753047718565,
+      "recall_at_5": 0.3113897596656217,
+      "precision_at_5": 0.06227795193312434,
+      "mrr_at_5": 0.1447172878207361,
+      "recall_at_10": 0.5141065830721003,
+      "precision_at_10": 0.05141065830721003,
+      "mrr_at_10": 0.17130389831539256
+    },
+    "popularity": {
+      "queries": 2871,
+      "candidate_coverage": 0.978753047718565,
+      "recall_at_5": 0.4656913967258795,
+      "precision_at_5": 0.0931382793451759,
+      "mrr_at_5": 0.22128758852896782,
+      "recall_at_10": 0.7502612330198537,
+      "precision_at_10": 0.07502612330198537,
+      "mrr_at_10": 0.25843022452217856
+    },
+    "player_frequency": {
+      "queries": 2871,
+      "candidate_coverage": 0.978753047718565,
+      "recall_at_5": 0.48519679554162315,
+      "precision_at_5": 0.09703935910832463,
+      "mrr_at_5": 0.24117612910716363,
+      "recall_at_10": 0.7572274468826193,
+      "precision_at_10": 0.07572274468826193,
+      "mrr_at_10": 0.2773183393873049
+    }
+  },
+  "user_profile_coverage": 0.960200668896321,
+  "precision_at_10_ci95_game_bootstrap": [
+    0.04787541806020067,
+    0.051339464882943144
+  ],
+  "examples": {
+    "similar_to_ahri": {
+      "method": "content_based_cosine",
+      "score_kind": "cosine_similarity_not_probability",
+      "role": "mid",
+      "region": "ALL",
+      "feature_names": [
+        "dpm",
+        "cspm",
+        "wpm",
+        "damagetakenperminute",
+        "earnedgoldshare"
+      ],
+      "profile": {
+        "kind": "seed_item_profile",
+        "champion": "Ahri",
+        "games": 252
+      },
+      "historical_cutoff_exclusive": "2026-04-29 08:05:12+00:00",
+      "probability": null,
+      "causal_uplift": null,
+      "limitations": [
+        "Measured performance depends on team, player, patch and opponent.",
+        "Pick frequency is implicit preference, not an explicit rating or proof of skill.",
+        "Similarity does not imply counter-pick, synergy or winrate improvement."
+      ],
+      "status": "ok",
+      "normalized_query_profile": {
+        "dpm": 0.2713829263236992,
+        "cspm": 0.6524856299858242,
+        "wpm": 0.1749821298531157,
+        "damagetakenperminute": 0.35197935728238594,
+        "earnedgoldshare": 0.419631025169483
+      },
+      "recommendations": [
+        {
+          "champion": "Yone",
+          "cosine_similarity": 0.9548752153292785,
+          "score_kind": "cosine_similarity_not_probability",
+          "probability": null,
+          "profile_games": 128,
+          "raw_item_profile": {
+            "dpm": 635.77520390625,
+            "cspm": 9.22208203125,
+            "wpm": 0.3783765625,
+            "damagetakenperminute": 851.8765976562499,
+            "earnedgoldshare": 0.2387082890625
+          },
+          "normalized_item_profile": {
+            "dpm": 0.22036153513393048,
+            "cspm": 0.8456869584456634,
+            "wpm": 0.4318395300649364,
+            "damagetakenperminute": 0.8445363484609657,
+            "earnedgoldshare": 0.6273393145335602
+          }
+        },
+        {
+          "champion": "Aurora",
+          "cosine_similarity": 0.9472606260771309,
+          "score_kind": "cosine_similarity_not_probability",
+          "probability": null,
+          "profile_games": 271,
+          "raw_item_profile": {
+            "dpm": 754.1722505535055,
+            "cspm": 8.418523985239853,
+            "wpm": 0.3280247232472325,
+            "damagetakenperminute": 650.5982601476014,
+            "earnedgoldshare": 0.22130057195571953
+          },
+          "normalized_item_profile": {
+            "dpm": 0.49106946900915993,
+            "cspm": 0.4996270425060303,
+            "wpm": 0.24559864270361864,
+            "damagetakenperminute": 0.46469552331533576,
+            "earnedgoldshare": 0.3632983804435368
+          }
+        },
+        {
+          "champion": "Corki",
+          "cosine_similarity": 0.9437500738241588,
+          "score_kind": "cosine_similarity_not_probability",
+          "probability": null,
+          "profile_games": 30,
+          "raw_item_profile": {
+            "dpm": 725.4539199999999,
+            "cspm": 9.480583333333334,
+            "wpm": 0.44725333333333334,
+            "damagetakenperminute": 578.08882,
+            "earnedgoldshare": 0.25413633333333335
+          },
+          "normalized_item_profile": {
+            "dpm": 0.4254066830813356,
+            "cspm": 0.957013003046198,
+            "wpm": 0.6866002519958054,
+            "damagetakenperminute": 0.3278599059437985,
+            "earnedgoldshare": 0.8613524936003519
+          }
+        },
+        {
+          "champion": "Lissandra",
+          "cosine_similarity": 0.9264093564642045,
+          "score_kind": "cosine_similarity_not_probability",
+          "probability": null,
+          "profile_games": 12,
+          "raw_item_profile": {
+            "dpm": 609.0410166666667,
+            "cspm": 8.2935,
+            "wpm": 0.369875,
+            "damagetakenperminute": 611.3890166666666,
+            "earnedgoldshare": 0.217656
+          },
+          "normalized_item_profile": {
+            "dpm": 0.15923537703791782,
+            "cspm": 0.44578427403726045,
+            "wpm": 0.40039403437987703,
+            "damagetakenperminute": 0.39070210911350073,
+            "earnedgoldshare": 0.30801737043840177
+          }
+        },
+        {
+          "champion": "Akali",
+          "cosine_similarity": 0.9263071142909894,
+          "score_kind": "cosine_similarity_not_probability",
+          "probability": null,
+          "profile_games": 148,
+          "raw_item_profile": {
+            "dpm": 627.1007466216216,
+            "cspm": 8.410300675675677,
+            "wpm": 0.3003351351351351,
+            "damagetakenperminute": 760.1653844594595,
+            "earnedgoldshare": 0.2248657364864865
+          },
+          "normalized_item_profile": {
+            "dpm": 0.20052789506006202,
+            "cspm": 0.4960855960222893,
+            "wpm": 0.14318066677272026,
+            "damagetakenperminute": 0.671464256714983,
+            "earnedgoldshare": 0.41737493552046107
+          }
+        }
+      ]
+    },
+    "player_faker": {
+      "method": "content_based_cosine",
+      "score_kind": "cosine_similarity_not_probability",
+      "role": "mid",
+      "region": "ALL",
+      "feature_names": [
+        "dpm",
+        "cspm",
+        "wpm",
+        "damagetakenperminute",
+        "earnedgoldshare"
+      ],
+      "profile": {
+        "kind": "weighted_mean_item_profiles",
+        "player": "Faker",
+        "weight_kind": "historical_pick_count_implicit_preference",
+        "history_games": 160,
+        "represented_games": 160,
+        "item_weights": {
+          "Ahri": 4,
+          "Akali": 4,
+          "Anivia": 5,
+          "Annie": 11,
+          "Aurora": 5,
+          "Azir": 18,
+          "Cassiopeia": 2,
+          "Corki": 1,
+          "Galio": 18,
+          "Hwei": 2,
+          "LeBlanc": 1,
+          "Mel": 2,
+          "Orianna": 22,
+          "Ryze": 23,
+          "Smolder": 1,
+          "Sylas": 10,
+          "Taliyah": 14,
+          "Twisted Fate": 4,
+          "Viktor": 11,
+          "Yone": 2
+        }
+      },
+      "historical_cutoff_exclusive": "2026-04-29 08:05:12+00:00",
+      "probability": null,
+      "causal_uplift": null,
+      "limitations": [
+        "Measured performance depends on team, player, patch and opponent.",
+        "Pick frequency is implicit preference, not an explicit rating or proof of skill.",
+        "Similarity does not imply counter-pick, synergy or winrate improvement."
+      ],
+      "status": "ok",
+      "normalized_query_profile": {
+        "dpm": 0.28852055057874143,
+        "cspm": 0.623523334123348,
+        "wpm": 0.6207743218443147,
+        "damagetakenperminute": 0.43781665056183616,
+        "earnedgoldshare": 0.40178407099653884
+      },
+      "recommendations": [
+        {
+          "champion": "Ryze",
+          "cosine_similarity": 0.993813091058138,
+          "score_kind": "cosine_similarity_not_probability",
+          "probability": null,
+          "profile_games": 412,
+          "raw_item_profile": {
+            "dpm": 638.3443553398059,
+            "cspm": 9.250196116504855,
+            "wpm": 0.4883322815533981,
+            "damagetakenperminute": 707.9895182038836,
+            "earnedgoldshare": 0.2308075291262136
+          },
+          "normalized_item_profile": {
+            "dpm": 0.22623574987226433,
+            "cspm": 0.8577945566811886,
+            "wpm": 0.8385426612883116,
+            "damagetakenperminute": 0.5730009827406816,
+            "earnedgoldshare": 0.507500278731127
+          }
+        },
+        {
+          "champion": "Lissandra",
+          "cosine_similarity": 0.991607427918407,
+          "score_kind": "cosine_similarity_not_probability",
+          "probability": null,
+          "profile_games": 12,
+          "raw_item_profile": {
+            "dpm": 609.0410166666667,
+            "cspm": 8.2935,
+            "wpm": 0.369875,
+            "damagetakenperminute": 611.3890166666666,
+            "earnedgoldshare": 0.217656
+          },
+          "normalized_item_profile": {
+            "dpm": 0.15923537703791782,
+            "cspm": 0.44578427403726045,
+            "wpm": 0.40039403437987703,
+            "damagetakenperminute": 0.39070210911350073,
+            "earnedgoldshare": 0.30801737043840177
+          }
+        },
+        {
+          "champion": "Aurelion Sol",
+          "cosine_similarity": 0.9875728148314505,
+          "score_kind": "cosine_similarity_not_probability",
+          "probability": null,
+          "profile_games": 6,
+          "raw_item_profile": {
+            "dpm": 700.0666166666666,
+            "cspm": 9.15885,
+            "wpm": 0.49709999999999993,
+            "damagetakenperminute": 591.7193000000001,
+            "earnedgoldshare": 0.23120616666666668
+          },
+          "normalized_item_profile": {
+            "dpm": 0.36736009639150036,
+            "cspm": 0.8184554827262464,
+            "wpm": 0.8709726119686052,
+            "damagetakenperminute": 0.35358255863665744,
+            "earnedgoldshare": 0.5135468285399806
+          }
+        },
+        {
+          "champion": "Azir",
+          "cosine_similarity": 0.9866038216521766,
+          "score_kind": "cosine_similarity_not_probability",
+          "probability": null,
+          "profile_games": 359,
+          "raw_item_profile": {
+            "dpm": 707.5711331476323,
+            "cspm": 9.28153426183844,
+            "wpm": 0.47911253481894145,
+            "damagetakenperminute": 589.4614598885794,
+            "earnedgoldshare": 0.23497794150417825
+          },
+          "normalized_item_profile": {
+            "dpm": 0.3845187351314297,
+            "cspm": 0.8712906270568035,
+            "wpm": 0.8044407528266969,
+            "damagetakenperminute": 0.3493216935004274,
+            "earnedgoldshare": 0.5707572568324927
+          }
+        },
+        {
+          "champion": "Cassiopeia",
+          "cosine_similarity": 0.9770604566573604,
+          "score_kind": "cosine_similarity_not_probability",
+          "probability": null,
+          "profile_games": 77,
+          "raw_item_profile": {
+            "dpm": 619.1173909090909,
+            "cspm": 8.752032467532468,
+            "wpm": 0.4914727272727273,
+            "damagetakenperminute": 730.2266298701298,
+            "earnedgoldshare": 0.2193432987012987
+          },
+          "normalized_item_profile": {
+            "dpm": 0.18227441837690606,
+            "cspm": 0.6432556427302379,
+            "wpm": 0.8501585110002121,
+            "damagetakenperminute": 0.6149655724164065,
+            "earnedgoldshare": 0.3336103831491991
+          }
+        }
+      ]
+    }
+  },
+  "limitations": [
+    "One observed pick is relevant per query; Precision@K=Recall@K/K with unfilled slots treated as misses.",
+    "Retrospective query sees other nine picks, not real draft pick order or bans.",
+    "This is validation evidence, not a fresh final-test claim or a winrate-uplift experiment.",
+    "Observed picks reflect team/coach/patch constraints; frequency is implicit preference.",
+    "Raw item attributes summarize past full-match performance, not champion mechanics."
+  ]
+}

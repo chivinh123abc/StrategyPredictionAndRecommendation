@@ -1,0 +1,106 @@
+[
+  {
+    "command": [
+      "src/03_database_sql/execute_queries.py",
+      "--export"
+    ],
+    "returncode": 0
+  },
+  {
+    "command": [
+      "src/04_hypothesis_testing/test_blue_side_advantage.py"
+    ],
+    "returncode": 0
+  },
+  {
+    "command": [
+      "src/04_hypothesis_testing/test_snowball_effect.py"
+    ],
+    "returncode": 0
+  },
+  {
+    "command": [
+      "src/04_hypothesis_testing/test_voidgrubs_vs_dragon.py"
+    ],
+    "returncode": 0
+  },
+  {
+    "command": [
+      "src/06_machine_learning/evaluate_models.py"
+    ],
+    "returncode": 0
+  },
+  {
+    "command": [
+      "src/07_recommender/recommender_engine.py",
+      "--demo"
+    ],
+    "returncode": 0
+  },
+  {
+    "command": [
+      "src/07_recommender/simulate_draft_match.py",
+      "--auto",
+      "--blue-team",
+      "T1",
+      "--red-team",
+      "GEN.G",
+      "--region",
+      "LCK"
+    ],
+    "returncode": 0
+  },
+  {
+    "command": [
+      "src/07_recommender/simulate_draft_match.py",
+      "--auto",
+      "--blue-team",
+      "UNDERDOG",
+      "--red-team",
+      "T1",
+      "--region",
+      "LCK",
+      "--user-side",
+      "red"
+    ],
+    "returncode": 0
+  },
+  {
+    "command": [
+      "src/06_machine_learning/draft_model.py",
+      "--predict"
+    ],
+    "returncode": 0
+  },
+  {
+    "command": [
+      "src/06_machine_learning/snowball_model.py",
+      "--predict",
+      "--gold-diff",
+      "-1000",
+      "--xp-diff",
+      "-500",
+      "--cs-diff",
+      "-10",
+      "--kills",
+      "2",
+      "--deaths",
+      "4"
+    ],
+    "returncode": 0
+  },
+  {
+    "command": [
+      "src/06_machine_learning/cluster_archetypes.py",
+      "--predict"
+    ],
+    "returncode": 0
+  },
+  {
+    "command": [
+      "src/07_recommender/recommender_engine.py",
+      "--save-model"
+    ],
+    "returncode": 0
+  }
+]

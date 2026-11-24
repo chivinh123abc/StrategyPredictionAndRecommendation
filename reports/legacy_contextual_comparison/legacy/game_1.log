@@ -1,0 +1,254 @@
+Đang nạp lịch sử trận đấu và hồ sơ tướng...
+GIẢ LẬP BAN/PICK MỘT VÁN — LỊCH SỬ + CONTENT-BASED
+Bạn: blue; phe chọn trước: blue; dữ liệu: WLDS
+SNAPSHOT LỊCH SỬ: patch dataset 16.20, dữ liệu đến 2026-11-09T00:56:00+00:00, cũ 4 ngày so với mốc yêu cầu
+106 trận trong cửa sổ 60 ngày, 94 trận patch đích; không gọi là live meta.
+Lineup T1 (latest_observed_lineup_not_live_roster): top=Doran, jng=Oner, mid=Faker, bot=Peyz, sup=Keria
+Lineup Gen.G (latest_observed_lineup_not_live_roster): top=Kiin, jng=Canyon, mid=Chovy, bot=Ruler, sup=Duro
+Ưu tiên presence/nhịp draft gần đây; bể tướng, đối đầu và cosine là tín hiệu hỗ trợ. Điểm không phải xác suất.
+
+==========================================================================================
+BLUE T1 | Cấm: —
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: —
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 1/20: BLUE T1 — CẤM
+ĐÃ CẤM: Nocturne
+  Căn cứ: Presence gần đây 86.8%, bị cấm 69.5%; điểm ưu tiên đối thủ 0.385; chênh lựa chọn 0.021
+
+==========================================================================================
+BLUE T1 | Cấm: Nocturne
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: —
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 2/20: RED Gen.G — CẤM
+ĐÃ CẤM: Vi
+  Căn cứ: Presence gần đây 76.2%, bị cấm 60.1%; điểm ưu tiên đối thủ 0.397; chênh lựa chọn 0.079
+
+==========================================================================================
+BLUE T1 | Cấm: Nocturne
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Vi
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 3/20: BLUE T1 — CẤM
+ĐÃ CẤM: Renata Glasc
+  Căn cứ: Presence gần đây 78.0%, bị cấm 61.8%; điểm ưu tiên đối thủ 0.338; chênh lựa chọn 0.057
+
+==========================================================================================
+BLUE T1 | Cấm: Nocturne, Renata Glasc
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Vi
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 4/20: RED Gen.G — CẤM
+ĐÃ CẤM: Cassiopeia
+  Căn cứ: Presence gần đây 66.2%, bị cấm 48.0%; điểm ưu tiên đối thủ 0.340; chênh lựa chọn 0.033
+
+==========================================================================================
+BLUE T1 | Cấm: Nocturne, Renata Glasc
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Vi, Cassiopeia
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 5/20: BLUE T1 — CẤM
+ĐÃ CẤM: Olaf
+  Căn cứ: Presence gần đây 59.9%, bị cấm 40.5%; điểm ưu tiên đối thủ 0.333; chênh lựa chọn 0.079
+
+==========================================================================================
+BLUE T1 | Cấm: Nocturne, Renata Glasc, Olaf
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Vi, Cassiopeia
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 6/20: RED Gen.G — CẤM
+ĐÃ CẤM: Qiyana
+  Căn cứ: Presence gần đây 57.5%, bị cấm 34.0%; điểm ưu tiên đối thủ 0.296; chênh lựa chọn 0.000
+
+==========================================================================================
+BLUE T1 | Cấm: Nocturne, Renata Glasc, Olaf
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Vi, Cassiopeia, Qiyana
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 7/20: BLUE T1 — CHỌN
+ĐÃ CHỌN: Lee Sin [jng]
+  Căn cứ: Slot F1: ưu tiên chọn quan sát 0.097; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Nocturne, Renata Glasc, Olaf
+Top: — | Rừng: Lee Sin | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Vi, Cassiopeia, Qiyana
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 8/20: RED Gen.G — CHỌN
+ĐÃ CHỌN: Syndra [mid]
+  Căn cứ: Slot S1: ưu tiên chọn quan sát 0.033; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Nocturne, Renata Glasc, Olaf
+Top: — | Rừng: Lee Sin | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Vi, Cassiopeia, Qiyana
+Top: — | Rừng: — | Mid: Syndra | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 9/20: RED Gen.G — CHỌN
+ĐÃ CHỌN: Rumble [top]
+  Căn cứ: Slot S2: ưu tiên chọn quan sát 0.036; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Nocturne, Renata Glasc, Olaf
+Top: — | Rừng: Lee Sin | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Vi, Cassiopeia, Qiyana
+Top: Rumble | Rừng: — | Mid: Syndra | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 10/20: BLUE T1 — CHỌN
+ĐÃ CHỌN: Ezreal [bot]
+  Căn cứ: Slot F2: ưu tiên chọn quan sát 0.067; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Nocturne, Renata Glasc, Olaf
+Top: — | Rừng: Lee Sin | Mid: — | Xạ thủ: Ezreal | Hỗ trợ: —
+RED Gen.G | Cấm: Vi, Cassiopeia, Qiyana
+Top: Rumble | Rừng: — | Mid: Syndra | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 11/20: BLUE T1 — CHỌN
+ĐÃ CHỌN: Nautilus [sup]
+  Căn cứ: Slot F3: ưu tiên chọn quan sát 0.099; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Nocturne, Renata Glasc, Olaf
+Top: — | Rừng: Lee Sin | Mid: — | Xạ thủ: Ezreal | Hỗ trợ: Nautilus
+RED Gen.G | Cấm: Vi, Cassiopeia, Qiyana
+Top: Rumble | Rừng: — | Mid: Syndra | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 12/20: RED Gen.G — CHỌN
+ĐÃ CHỌN: Jarvan IV [jng]
+  Căn cứ: Slot S3: ưu tiên chọn quan sát 0.049; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Nocturne, Renata Glasc, Olaf
+Top: — | Rừng: Lee Sin | Mid: — | Xạ thủ: Ezreal | Hỗ trợ: Nautilus
+RED Gen.G | Cấm: Vi, Cassiopeia, Qiyana
+Top: Rumble | Rừng: Jarvan IV | Mid: Syndra | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 13/20: RED Gen.G — CẤM
+ĐÃ CẤM: Orianna
+  Căn cứ: Presence gần đây 50.5%, bị cấm 25.6%; điểm ưu tiên đối thủ 0.352; chênh lựa chọn 0.062
+
+==========================================================================================
+BLUE T1 | Cấm: Nocturne, Renata Glasc, Olaf
+Top: — | Rừng: Lee Sin | Mid: — | Xạ thủ: Ezreal | Hỗ trợ: Nautilus
+RED Gen.G | Cấm: Vi, Cassiopeia, Qiyana, Orianna
+Top: Rumble | Rừng: Jarvan IV | Mid: Syndra | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 14/20: BLUE T1 — CẤM
+ĐÃ CẤM: Lulu
+  Căn cứ: Presence gần đây 43.8%, bị cấm 21.1%; điểm ưu tiên đối thủ 0.263; chênh lựa chọn 0.000
+
+==========================================================================================
+BLUE T1 | Cấm: Nocturne, Renata Glasc, Olaf, Lulu
+Top: — | Rừng: Lee Sin | Mid: — | Xạ thủ: Ezreal | Hỗ trợ: Nautilus
+RED Gen.G | Cấm: Vi, Cassiopeia, Qiyana, Orianna
+Top: Rumble | Rừng: Jarvan IV | Mid: Syndra | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 15/20: RED Gen.G — CẤM
+ĐÃ CẤM: Locke
+  Căn cứ: Presence gần đây 49.2%, bị cấm 36.0%; điểm ưu tiên đối thủ 0.290; chênh lựa chọn 0.034
+
+==========================================================================================
+BLUE T1 | Cấm: Nocturne, Renata Glasc, Olaf, Lulu
+Top: — | Rừng: Lee Sin | Mid: — | Xạ thủ: Ezreal | Hỗ trợ: Nautilus
+RED Gen.G | Cấm: Vi, Cassiopeia, Qiyana, Orianna, Locke
+Top: Rumble | Rừng: Jarvan IV | Mid: Syndra | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 16/20: BLUE T1 — CẤM
+ĐÃ CẤM: Seraphine
+  Căn cứ: Presence gần đây 39.4%, bị cấm 20.4%; điểm ưu tiên đối thủ 0.300; chênh lựa chọn 0.038
+
+==========================================================================================
+BLUE T1 | Cấm: Nocturne, Renata Glasc, Olaf, Lulu, Seraphine
+Top: — | Rừng: Lee Sin | Mid: — | Xạ thủ: Ezreal | Hỗ trợ: Nautilus
+RED Gen.G | Cấm: Vi, Cassiopeia, Qiyana, Orianna, Locke
+Top: Rumble | Rừng: Jarvan IV | Mid: Syndra | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 17/20: RED Gen.G — CHỌN
+ĐÃ CHỌN: Jhin [bot]
+  Căn cứ: Slot S4: ưu tiên chọn quan sát 0.050; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Nocturne, Renata Glasc, Olaf, Lulu, Seraphine
+Top: — | Rừng: Lee Sin | Mid: — | Xạ thủ: Ezreal | Hỗ trợ: Nautilus
+RED Gen.G | Cấm: Vi, Cassiopeia, Qiyana, Orianna, Locke
+Top: Rumble | Rừng: Jarvan IV | Mid: Syndra | Xạ thủ: Jhin | Hỗ trợ: —
+
+LƯỢT 18/20: BLUE T1 — CHỌN
+ĐÃ CHỌN: Jayce [top]
+  Căn cứ: Slot F4: ưu tiên chọn quan sát 0.017; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Nocturne, Renata Glasc, Olaf, Lulu, Seraphine
+Top: Jayce | Rừng: Lee Sin | Mid: — | Xạ thủ: Ezreal | Hỗ trợ: Nautilus
+RED Gen.G | Cấm: Vi, Cassiopeia, Qiyana, Orianna, Locke
+Top: Rumble | Rừng: Jarvan IV | Mid: Syndra | Xạ thủ: Jhin | Hỗ trợ: —
+
+LƯỢT 19/20: BLUE T1 — CHỌN
+ĐÃ CHỌN: Galio [mid]
+  Căn cứ: Slot F5: ưu tiên chọn quan sát 0.045; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Nocturne, Renata Glasc, Olaf, Lulu, Seraphine
+Top: Jayce | Rừng: Lee Sin | Mid: Galio | Xạ thủ: Ezreal | Hỗ trợ: Nautilus
+RED Gen.G | Cấm: Vi, Cassiopeia, Qiyana, Orianna, Locke
+Top: Rumble | Rừng: Jarvan IV | Mid: Syndra | Xạ thủ: Jhin | Hỗ trợ: —
+
+LƯỢT 20/20: RED Gen.G — CHỌN
+ĐÃ CHỌN: Alistar [sup]
+  Căn cứ: Slot S5: ưu tiên chọn quan sát 0.027; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Nocturne, Renata Glasc, Olaf, Lulu, Seraphine
+Top: Jayce | Rừng: Lee Sin | Mid: Galio | Xạ thủ: Ezreal | Hỗ trợ: Nautilus
+RED Gen.G | Cấm: Vi, Cassiopeia, Qiyana, Orianna, Locke
+Top: Rumble | Rừng: Jarvan IV | Mid: Syndra | Xạ thủ: Jhin | Hỗ trợ: Alistar
+Căn cứ cặp T1: observed_pairs=2, sparse_pairs=7, unobserved_pairs=1, insufficient_anchor_pairs=0
+Căn cứ cặp Gen.G: observed_pairs=4, sparse_pairs=6, unobserved_pairs=0, insufficient_anchor_pairs=0
+
+===============================================================================================
+📋 BẢNG ĐỘI HÌNH HOÀN THIỆN SAU KHI CẤM/CHỌN (FINAL DRAFT)
+===============================================================================================
+🔷 PHE XANH (T1):
+   • TOP: Jayce (Doran)
+   • JNG: Lee Sin (Oner)
+   • MID: Galio (Faker)
+   • BOT: Ezreal (Peyz)
+   • SUP: Nautilus (Keria)
+
+🔴 PHE ĐỎ (Gen.G):
+   • TOP: Rumble (Kiin)
+   • JNG: Jarvan IV (Canyon)
+   • MID: Syndra (Chovy)
+   • BOT: Jhin (Ruler)
+   • SUP: Alistar (Duro)
+Radar và thẻ chiến thuật dùng thuộc tính/quy tắc chuyên gia; chưa được xác nhận như điều kiện thắng nhân quả.
+
+────────────────────────────────────── THẺ CHIẾN THUẬT: T1 (BLUE) ──────────────────────────────────────
+🏆 Trường phái: [WOMBOCOMBO & OBJECTIVE CONTROL]
+📊 Radar 5 trục: Early: 0.82 | Scaling: 0.693 | Combat: 0.743 | Pick: 0.867 | Obj: 0.63
+⭐ Chủ lực (Core Carry): Ezreal
+⏱️ Điểm rơi sức mạnh: Giữa và Cuối trận (Phút 20 đến Phút 35 - Giai đoạn Rồng 3, 4 và Baron)
+🐉 Mục tiêu số 1: Rồng Nguyên Tố (Thiết lập Linh Hồn Rồng) & Hang Baron
+✅ Điều kiện thắng: Kiểm soát tầm nhìn trước 1 phút tại hang mục tiêu lớn, ép đối thủ vào các góc hẹp của sông và tung Wombocombo 5v5 quét sạch.
+❌ Cần tránh: Để đối thủ chia cắt đội hình đẩy lẻ 1-3-1 hoặc giao tranh khi chưa có đủ chiêu cuối mở combat.
+
+────────────────────────────────────── THẺ CHIẾN THUẬT: GEN.G (RED) ──────────────────────────────────────
+🏆 Trường phái: [EARLY SNOWBALL & DIVE]
+📊 Radar 5 trục: Early: 0.8 | Scaling: 0.755 | Combat: 0.845 | Pick: 0.868 | Obj: 0.655
+⭐ Chủ lực (Core Carry): Syndra
+⏱️ Điểm rơi sức mạnh: Đầu trận (Phút 1 đến Phút 20 - Trước mốc Baron xuất hiện)
+🐉 Mục tiêu số 1: Sâu Hư Không đợt 1 + Trụ Đầu (First Tower) trước phút 14
+✅ Điều kiện thắng: Tạo chênh lệch >= 2,000 vàng lúc 10 phút, băng trụ 2 cánh liên tục, ép đối thủ vỡ trận trước 25 phút.
+❌ Cần tránh: Bị đối thủ phòng ngự kéo dài trận đấu qua phút 30 khi chất tướng hết thời gian lăn cầu tuyết.
+Phiên có mốc lịch sử: bỏ dự báo từ model lưu sẵn vì chưa bảo đảm model được fit trước mốc này.
+Đã lưu phiên: reports\legacy_contextual_comparison\legacy\game_1.json

@@ -1,0 +1,12 @@
+{
+  "legacy_picks_bans_unchanged": true,
+  "contextual_picks_bans_unchanged": true,
+  "simulate_draft_match.py_old_mode_rejected": true,
+  "simulate_fearless_series.py_old_mode_rejected": true,
+  "regression_tests_passed": 57,
+  "no_search_fields_in_new_runs": true,
+  "active_strategies": [
+    "legacy",
+    "contextual"
+  ]
+}

@@ -19,6 +19,9 @@ import sys
 import os
 import argparse
 import pickle
+import sys
+from pathlib import Path
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 import sqlite3
 import warnings
 from pathlib import Path
@@ -277,7 +280,7 @@ def load_all_team_compositions(db_path: Path = DB_PATH) -> pd.DataFrame:
     if not db_path.exists():
         raise FileNotFoundError(f"Không tìm thấy CSDL tại {db_path}")
 
-    conn = sqlite3.connect(db_path)
+    conn = __import__('analysis_data', fromlist=['open_clean_connection']).open_clean_connection(db_path)
     q = """
     SELECT 
         m.gameid,
@@ -615,13 +618,16 @@ class DraftArchetypeClusteringSystem:
             "archetype_name": arch_info['name'],
             "archetype_code": arch_info['code'],
             "cluster_id": cluster_idx + 1,
-            "confidence_pct": round(confidence, 1),
+            "confidence_pct": None,
+            "similarity_score": round(confidence, 1),
+            "score_kind": "normalized_distance_similarity_not_probability",
+            "evidence_kind": "expert_tactical_vectors",
             "tagline": arch_info['tagline'],
             "description": arch_info['description'],
             "key_win_condition": arch_info['key_condition'],
             "critical_weakness": arch_info['weakness'],
             "radar_scores": {axis: round(float(val), 2) for axis, val in zip(TACTICAL_AXES, team_vec)},
-            "all_archetype_probabilities": {
+            "all_archetype_similarity_scores": {
                 self.ARCHETYPE_PROFILES[self.cluster_mapping[i]]['name']: round(float(prob_dist[i]) * 100.0, 1)
                 for i in range(self.n_clusters)
             }
@@ -652,7 +658,7 @@ if __name__ == "__main__":
         print("=" * 75)
         print(f"👥 ĐỘI HÌNH: Top: {args.top} | Rừng: {args.jng} | Mid: {args.mid} | Bot: {args.bot} | Sp: {args.sup}")
         print("-" * 75)
-        print(f"🏆 TRƯỜNG PHÁI: {res['archetype_name'].upper()} (Độ tin cậy: {res['confidence_pct']}%)")
+        print(f"🏆 TRƯỜNG PHÁI: {res['archetype_name'].upper()} (Điểm tương đồng: {res['similarity_score']}; không phải xác suất)")
         print(f"💬 KHẨU HIỆU  : {res['tagline']}")
         print(f"📖 MÔ TẢ      : {res['description']}")
         print(f"⭐ ĐIỀU KIỆN THẮNG (WIN CONDITION): {res['key_win_condition']}")

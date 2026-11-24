@@ -45,8 +45,7 @@ load_dotenv_custom(os.path.join(BASE_DIR, ".env"))
 
 # 5. Biến Riot API & Cấu hình máy chủ
 RIOT_API_KEY = os.getenv("RIOT_API_KEY", "").strip()
-if not RIOT_API_KEY or "xxx" in RIOT_API_KEY:
-    raise ValueError("LỖI BẢO MẬT: Chưa cấu hình RIOT_API_KEY hợp lệ trong file .env!\nHãy mở file .env và dán key của bạn vào: RIOT_API_KEY=\"RGAPI-...\"")
+# Offline cleaning/analysis does not need an API key. The crawler validates it.
 
 raw_servers = os.getenv("ACTIVE_SERVERS", "vn2,kr")
 ACTIVE_SERVERS = [s.strip() for s in raw_servers.split(",") if s.strip()]

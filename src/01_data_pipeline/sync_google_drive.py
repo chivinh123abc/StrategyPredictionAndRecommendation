@@ -66,11 +66,11 @@ TOKEN_FILE = os.path.join(BASE_DIR, ".gdrive_token.json")
 GDRIVE_API_SCOPES = ["https://www.googleapis.com/auth/drive"]
 
 
-def _get_gdrive_service():
+def _get_gdrive_service(allow_interactive=True):
     """
     Xác thực OAuth2 và khởi tạo Google Drive API Service.
-    - Lần đầu: Tự động mở trình duyệt để người dùng đăng nhập và ủy quyền.
-    - Sau đó: Tự động dùng token cache trong .gdrive_token.json (không cần mở lại).
+    - Nếu allow_interactive=False: Chỉ dùng token có sẵn (nếu hợp lệ), không bật trình duyệt tránh treo tiến trình.
+    - Nếu allow_interactive=True: Bật trình duyệt đăng nhập khi Tầng 1 (gdown) bị Quota Exceeded.
     """
     if not os.path.exists(CREDENTIALS_FILE):
         return None
@@ -91,21 +91,28 @@ def _get_gdrive_service():
             if creds and creds.expired and creds.refresh_token:
                 try:
                     creds.refresh(Request())
-                except Exception:
+                except Exception as refresh_err:
+                    err_msg = str(refresh_err)
+                    if "Failed to resolve" in err_msg or "Max retries exceeded" in err_msg or "Connection" in err_msg:
+                        print(f"[!] Không có kết nối mạng để làm mới OAuth token: {refresh_err}", flush=True)
+                        return None
+                    print(f"[!] Token OAuth cũ đã hết hạn ({refresh_err}).", flush=True)
                     creds = None
             if not creds or not creds.valid:
-                print("\n[*] Đang khởi tạo luồng ủy quyền Google OAuth 2.0 (Google Drive API)...")
-                print("-> Trình duyệt web sẽ tự động mở để bạn đăng nhập tài khoản Google.")
+                if not allow_interactive:
+                    return None
+                print("\n[*] Đang khởi tạo luồng ủy quyền Google OAuth 2.0 (Google Drive API)...", flush=True)
+                print("-> Trình duyệt web sẽ tự động mở để bạn đăng nhập tài khoản Google.", flush=True)
                 flow = InstalledAppFlow.from_client_secrets_file(CREDENTIALS_FILE, GDRIVE_API_SCOPES)
                 creds = flow.run_local_server(port=0)
 
             with open(TOKEN_FILE, "w", encoding="utf-8") as f:
                 f.write(creds.to_json())
-            print("[✓] Đã lưu phiên đăng nhập an toàn vào '.gdrive_token.json'!")
+            print("[✓] Đã lưu phiên đăng nhập an toàn vào '.gdrive_token.json'!", flush=True)
 
         return build("drive", "v3", credentials=creds)
     except Exception as e:
-        print(f"[!] Lỗi khi kết nối Google Drive API: {e}")
+        print(f"[!] Lỗi khi kết nối Google Drive API: {e}", flush=True)
         return None
 
 
@@ -225,15 +232,36 @@ class GoogleDriveDataSyncer:
     def list_folder_files(self, force_refresh=False):
         """
         Lấy danh sách siêu dữ liệu (Tên file, File ID) từ Google Drive
-        mà không cần tải toàn bộ nội dung file (skip_download=True).
-        Có cơ chế lưu cache trong phiên chạy để không phải quét nhiều lần.
+        mà không cần tải toàn bộ nội dung file.
+        Ưu tiên dùng Google Drive API v3 (nhanh < 0.5s), fallback sang gdown nếu chưa có token.
         """
         if self._remote_files_cache is not None and not force_refresh:
             return self._remote_files_cache
 
-        print(f"[*] Đang quét danh mục file từ Google Drive Folder (ID: {self.folder_id})...")
+        print(f"[*] Đang quét danh mục file từ Google Drive Folder (ID: {self.folder_id})...", flush=True)
+
+        # Thử Tầng API v3 không tương tác (nếu token còn sống)
+        service = _get_gdrive_service(allow_interactive=False)
+        if service:
+            try:
+                results = service.files().list(
+                    q=f"'{self.folder_id}' in parents and trashed = false",
+                    pageSize=100,
+                    fields="files(id, name, size, modifiedTime)",
+                    supportsAllDrives=True,
+                    includeItemsFromAllDrives=True,
+                ).execute()
+                items = results.get("files", [])
+                if items:
+                    file_map = {item["name"]: item["id"] for item in items}
+                    print(f"[+] Tìm thấy {len(file_map)} file dữ liệu trên Google Drive (qua Drive API v3).", flush=True)
+                    self._remote_files_cache = file_map
+                    return file_map
+            except Exception as api_err:
+                print(f"[!] Quét qua Drive API không thành công ({api_err}), chuyển sang gdown...", flush=True)
+
         if not gdown:
-            print("[!] Cảnh báo: Chưa cài đặt thư viện 'gdown'. Hãy chạy: pip install gdown")
+            print("[!] Cảnh báo: Chưa cài đặt thư viện 'gdown'. Hãy chạy: pip install gdown", flush=True)
             return {}
         try:
             drive_files = gdown.download_folder(
@@ -244,11 +272,11 @@ class GoogleDriveDataSyncer:
             file_map = {}
             for item in drive_files:
                 file_map[item.path] = item.id
-            print(f"[+] Tìm thấy {len(file_map)} file dữ liệu trên Google Drive.")
+            print(f"[+] Tìm thấy {len(file_map)} file dữ liệu trên Google Drive.", flush=True)
             self._remote_files_cache = file_map
             return file_map
         except Exception as e:
-            print(f"[!] Lỗi khi quét thư mục Google Drive: {e}")
+            print(f"[!] Lỗi khi quét thư mục Google Drive: {e}", flush=True)
             return {}
 
     def get_available_years(self):
@@ -471,23 +499,30 @@ class GoogleDriveDataSyncer:
             print("    -> Bỏ qua tải lại để tiết kiệm băng thông (Dùng --force nếu muốn tải lại bản mới nhất).")
             return True
 
-        # 3. Thực hiện tải file mới về từ Drive
-        # Tầng 1: Thử tải nhanh qua gdown
-        print(f"\n[↓] Bắt đầu tải file '{filename}' từ Google Drive (File ID: {file_id})...")
+        # 3. Thực hiện tải file mới về từ Drive (tải vào file tạm .downloading để tránh đè/nhầm với file cũ)
+        tmp_dest_path = dest_path + ".downloading"
+        if os.path.exists(tmp_dest_path):
+            try:
+                os.remove(tmp_dest_path)
+            except OSError:
+                pass
+
+        print(f"\n[↓] Bắt đầu tải file '{filename}' từ Google Drive (File ID: {file_id})...", flush=True)
         download_success = False
         is_quota_error = False
 
+        # Tầng 1: Tải trực tiếp file công khai qua gdown (không cần đăng nhập OAuth)
         if gdown:
             try:
-                gdown.download(id=file_id, output=dest_path, quiet=True, resume=True)
+                res = gdown.download(id=file_id, output=tmp_dest_path, quiet=False, resume=False)
                 # Kiểm tra file tải về hợp lệ (> 100 KB và không phải trang HTML Quota exceeded)
-                if os.path.exists(dest_path) and os.path.getsize(dest_path) > 1024 * 100:
+                if res and os.path.exists(tmp_dest_path) and os.path.getsize(tmp_dest_path) > 1024 * 100:
                     download_success = True
                 else:
                     is_quota_error = True
-                    if os.path.exists(dest_path):
+                    if os.path.exists(tmp_dest_path):
                         try:
-                            os.remove(dest_path)
+                            os.remove(tmp_dest_path)
                         except OSError:
                             pass
             except Exception as e:
@@ -495,20 +530,20 @@ class GoogleDriveDataSyncer:
                 if "Too many users" in err_str or "Quota exceeded" in err_str or "quota" in err_str.lower():
                     is_quota_error = True
                 else:
-                    print(f"[!] Lỗi khi tải file qua gdown: {err_str}")
+                    print(f"[!] Lỗi khi tải file qua gdown: {err_str}", flush=True)
+                    is_quota_error = True
         else:
             is_quota_error = True
 
-        # Tầng 2: Google Drive API v3 + OAuth2 (tự động kích hoạt khi Tầng 1 gặp Quota Exceeded)
-        if not download_success and is_quota_error:
-            print(f"[!] Tầng 1 (gdown) gặp Quota Exceeded: File công khai bị Google tạm khóa lượt tải ẩn danh.")
-            if os.path.exists(CREDENTIALS_FILE):
-                download_success = _download_via_api(file_id=file_id, dest_path=dest_path, filename=filename)
-            else:
-                print(f"[!] Không tìm thấy '{CREDENTIALS_FILE}' để kích hoạt Tầng 2 (Drive API).")
+        # Tầng 2 fallback: Chỉ khi gdown bị Google chặn Quota Exceeded mới dùng Drive API OAuth 2.0
+        if not download_success and is_quota_error and os.path.exists(CREDENTIALS_FILE):
+            print(f"[!] Tầng 1 (gdown) gặp Quota Exceeded: Kích hoạt Tầng 2 (Drive API OAuth 2.0)...", flush=True)
+            download_success = _download_via_api(file_id=file_id, dest_path=tmp_dest_path, filename=filename)
 
-        if not download_success or not os.path.exists(dest_path):
+        if not download_success or not os.path.exists(tmp_dest_path):
             return False
+
+        os.replace(tmp_dest_path, dest_path)
 
         new_size = os.path.getsize(dest_path)
         now_iso = datetime.now().isoformat()

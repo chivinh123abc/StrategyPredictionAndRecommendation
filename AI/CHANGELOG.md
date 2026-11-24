@@ -1,6 +1,138 @@
+## Hiện hành: chỉ legacy và contextual — 2026-11-24
+
+Theo yêu cầu người dùng, đã BỎ lookahead khỏi mã ban và CLI; không chỉ ẩn menu. BanPlanner chỉ còn one-stepcontextual, ContextualBanPolicy(top3pool/owncost). Gỡ response_distribution/evaluate_root/rollout/leaf/predictor dependency và --ban-response-model; --ban-strategy chỉ legacy|contextual, legacygiữmặcđịnh. Contextual dùng pool_impact/contextual_trace, không xuất search_trace/branches/sensitivity. OpponentModelcũ giữ độc lập, không được contextual dùng đểban; không mởrộngchứcnăngkhác.
+
+VERIFIED:57testsPASS;2seriesT1–Gen.GWorldscutoff13/11patchdataset16.20đều5draft/100actions/50uniquePicks,locks0/10/20/30/40, testtop1override. Pick/ban của cảlegacy/contextual giống phiêntrước (đã so cả100lượtmỗiseries); CLIonegame vàseries từchốilookahead(exit2), helpkhôngcònban-response-model. Newoutputs khôngsearchfields. Báocáohiệnhành reports/legacy_contextual_comparison/{COMPARISON.md,comparison.json,checks.json,legacy/,contextual/}; doc docs/BAN_LEGACY_VA_CONTEXTUAL.md. Khôngtrainmodel/đổiDB/raw. Tài liệu vàreportlookaheadcũđánh dấuLỊCHSỬ, khôngxóa artifact/minhchứng; cácmốcbêndướilàlịch sử trướcquyếtđịnhnày.
+
+## Bản chạy contextual riêng T1–Gen.G — 2026-11-24
+
+VERIFIED RUN ONLY: đã chạy contextual riêng theo yêu cầu, xuất reports/t1_geng_contextual_20261124/{QUICK_VIEW.md,REPORT.md,series.json,game_1..5.json/log,checks.json}. Worlds cutoff13/11 patchdataset16.20, T1Blue/Gen.GRed,first-pickluânphiên, test chọn số1thiếutincậy.5draft/100actions/50uniquePicks,locks0/10/20/30/40; validate_game vàBan1–5/Pick1–5PASS.38pickreview_required giữnhãn. Không kiến thức/phương pháp mới, không đổi code/model/DB hoặctrain; MR-13/NV-08 vẫn áp dụng. Không gọi đây là tối ưu hoặc có tỉ số thắng/thua.
+
+## Hoàn tất3mục ban ngữ cảnh, rollout phản ứng và đối chiếu5draft — 2026-11-24
+
+VERIFIED: ban_planner.py/BanPlanner có contextual pool loss địch trừ self-denial theo thứ tựpick thật/roster/Fearless; lookahead shortlist6ban,2response ởfirstopponentturn rồigreedyđến3pick mới/max12plies. OpponentModelđãcó dùng inference, khôngfitmới; fallbacksoftmaxcónhãn. Không épdiversity, khôngcasechampion/team. Mặc địnhlegacy đểtáilập; bật --ban-strategy contextual|lookahead, --ban-response-model PATH. Trace lưu mọiroot/branch/leaf/coverage/omittedmass và sensitivitybounds (khôngCIthốngkê), why/REPORTgiảithích theo lượt.
+
+57testsPASS; so3seriesT1–Gen.GWorlds cùngcutoff13/11patchdataset16.20/rosters/lịchfirstpick, testoverrideTrue theoủyquyền. Mỗi5draft100actions50uniquePicks, khóa0/10/20/30/40; 583branchpaths/295rootreplay hợp lệ, sâu tốiđa9<12. Tập6ban đầu:legacy1tập lặp5ván, contextual5,lookahead5; Jaccard1/.471/.145, khôngclaimđadạng=tốthơn. Lookahead~.471s/banmean,p95.787s,max1.371s trênlầnchạy;cócache. 23/50ban kháccontexttop1. Giữ2response chỉphủmean21.1%khốihỗtrợ,min5.8%;48/50sensitivityboundsoverlap. 41/50pickvẫnthiếucontextđủmẫu. Chưaindependentbanqualitybenchmark/counterevaluator/fullflex hoặcfullBO5plannerđểdànhtướng.
+
+Artifacts: reports/ban_strategy_comparison/COMPARISON.md,comparison.json,checks.json và{legacy,contextual,lookahead}/{QUICK_VIEW.md,REPORT.md,series.json,game_1..5.json/log}. Sổkiếnthứcmục14/MR-13/KH-02 cậpnhật; docs/BAN_NGU_CANH_VA_LOOKAHEAD.md. KhôngđổiDB/schema/raw, khôngtrainmodel, khôngcommit/push. Trạngtháidừngtrướcđượcusergiaotiếprõ3mục; phạmvihoànthànhtạibảnrolloutgiớihạnnày.
+
+## Test đủ5draft T1–Gen.G theo yêu cầu — 2026-11-24
+
+VERIFIED: thêm --allow-statistical-auto cho series, defaultFalse không đổi. User yêu cầu test thiếu tin cậy vẫn chọn số1; toàn bộ5ván chạyTrue, không manualreviewstop nhưng vẫn giữreview_required/counterstatus/coverage. Worlds cutoff13/11 patchdataset16.20.100actions/50uniquePicks, locks0/10/20/30/40 vàvalidate_gamePASS; 38pick thiếu đối đầu đủ mẫu có nhãn. Report dùng đúng tên2đội vàBan1..5/Pick1..5mỗiđội kèmturn1..20. reports/t1_geng_bo5_test_20261124/REPORT.md,QUICK_VIEW.md,series.json,checks.json. Khôngtạo tỉsố hoặc chứngminhcounter/tốiưu. Khôngfitmodel/đổiDB hoặcphươngphápthốngkê. Lượt này chỉ mởtestoverride trongdriver vàđánh sốreport; khôngtiếptụcsearch/planner.
+
+## Chạy lại BO5 T1–Gen.G — 2026-11-24
+
+VERIFIED RUN ONLY: Worlds as-of2026-11-13 patchdataset16.20, 5draft được yêu cầu, mặc địnhtactical-reviewgate, khôngopponentmodel/override. Ván1hoàn thành20actions; ván2dừngtrước20(chỉ19actions) trướcCamille topT1, alternativesRenekton/Jax/Ornnđềucoverage0; ván3–5chưa chạy.39actions/19uniquePicks, khóa0rồi10, khônglặp hoặc dùngtướngbịkhóa. Reports:t1_geng_bo5_20261124/REPORT.md,series.json,game_1/2.json,checks.json.
+
+Giới hạn xác nhận: Trundle vẫn được chọn ởván2trước khiđịch đủ5, coverage0; gatechỉkiểmtrađịchđủ5khônggiảiquyếthếtchấtlượngcounter/cáclựachọnkhác. Không đượcgọiBO5hoànthành hoặcfixcountertoàndiện. Lượtchỉchạyvàghiartifact, khôngđổiphươngpháp/code/model/DB, khôngretrain hoặc chạyregressionsuitekhôngliênquan. Userchỉyêucầuchạythử, khôngtựmởrộngfix/search/planner.
+
+## Hoàn tất phạm vi Trundle/các lựa chọn tương tự, dừng phát triển tiếp — 2026-11-24
+
+VERIFIED: enemy_evidence/evaluate_enemy_context xét mọi role địch, giữ n/CI/coverage và trạng thái mechanical_counter:not_evaluated. Audit50pick đúng state vàtop5, không blacklist tên. Actual Trundle ván2lượt20 vẫn topheuristic nhưng coverage0cũng như alternatives; không có căn cứ xác nhận counter/tướng thay thế tối ưu. Mặc định auto khi địch đủ5và pick thiếu mọi đối đầu đủ mẫu sẽ dừng trướcapply, lưu manual_review/completefalse vàCLIexit3; chọn tay được phép, demoonegame có --allow-statistical-auto rõ nghĩa. Exactcase giữ19actions/jungletrống; CLI casePantheon cũng dừng19actions. 51testsPASS, checks reports/tactical_review_checks.json; docs/RA_SOAT_LUA_CHON_THEO_DOI_HINH.md và sổ kiến thức mục11. Seriesdriver dừng khi cầnreview; các5draft trước đó là lịch sử trướcgate, không được gọicounterđãxác nhận.
+
+Theo chỉ đạo mới, DỪNG sau khi hoàn tất phạm vi trên. Trước chỉ đạo dừng đã dựng4120draftstate/206ván/93seriesWorlds và fit OpponentModel CUDA, validation/time-series split train142/val22/holdout42ván; 840query phát triển R5=.3917 so slot=.2202. Cácmodel/dataset/forecastartifact được giữ, đã ghi sổ; không tiếp tục phát triển hoặc retrain sau thu hẹp phạm vi. Predictor mô phỏng hành vi, không là evaluator cơ chế hoặc planner. Opponent/search/BO5 và nguồn cơ chế patch-specific còn backlog. Không sửa rawDB/schema, không commit/push.
+
+## Quy định cập nhật kiến thức bắt buộc trong SpecKit/agent — 2026-11-23
+
+VERIFIED CONFIGURATION: AI/KNOWLEDGE_RULES.md quy định mọi thay đổi kiến thức/phương pháp/chức năng/output phải cập nhật docs/TONG_HOP_KIEN_THUC_VA_MO_RONG_BAO_CAO.md trong cùng đợt: ID, MH/UD/MR/NV, chương/nguồn, hàm/module, công dụng/giả định, artifact/tái lập, trạng thái/minh chứng/giới hạn. No-impact có lý do; không tạo lý thuyết giả hoặc retrain model không đổi. Root AGENTS.md/GEMINI.md và AI/AI_RULES dẫn quy định; constitution thêmVI, version1.1.0. PrincipleV được làm rõ kiểm chứng theo tác động, không ép sửa tài liệu phải tái tạo.pkl.
+
+SpecKit dùng4project overrides spec/plan/tasks/checklist với mapping và task cập nhật kiến thức bắt buộc; analyze giữread-only, checklist giữreviewownership. Đã kiểm tra actual Resolve-TemplateContent chọn đúng4override;70link sổ kiến thức PASS. Checker bền vững: .specify/scripts/powershell/check-knowledge-templates.ps1. Core templates,9Gemini commandprompts và manifest cài đặt giữ nguyên; không ghi policy vào installation metadata. Đây là policy/template enforcement qua agent và review, chưa là CI bảo đảm tự động mọi thay đổi. Không sửa code thuật toán/model/DB; không train hoặc chạy lại suite ML không liên quan.
+
+## Tổng hợp kiến thức và mục tiêu mở rộng BO5 — 2026-11-23
+
+VERIFIED DOCUMENTATION: docs/TONG_HOP_KIEN_THUC_VA_MO_RONG_BAO_CAO.md là file tổng hợp dùng viết báo cáo: MH-01..14 đối chiếu Chương1..6/5x với hàm, chức năng và đầu ra; MR-01..11 ghi rõ các kỹ thuật ngoài nội dung cụ thể của slide; NV-01..05 ghi nghiệp vụ/Fearless/CLI; KH-01..06 ghi mục tiêu opponent modeling/search/để dành tướng/planner BO5 và đầu ra DỰ KIẾN. Giữ hướng người dùng yêu cầu: vận dụng môn học có mở rộng, có tính trước phản ứng và tối ưu phân bổ tướng cả series. Không ghi planner/opponent model như chức năng đã hiện thực: driver hiện tại vẫn greedy từng lượt.
+
+Đã đối chiếu source, slide text, manifests và artifacts; 65liên kết nội bộ PASS, không link hỏng. Ghi rõ XGBoost CUDA là luồng fit hiện hành; RF/boosting/PCA/K-Means có nền trong bài nhưng import không chứng minh đãfit. Số liệu hiện hành lấy manifest/reports, không trộn mốc cũ. Đây là lượt tài liệu, không đổi thuật toán, DB/model/raw hoặc chạy lại training/benchmark.
+
+## Hiện hành — 5 ván Fearless Worlds (2026-11-23)
+
+VERIFIED: simulate_fearless_series.py chạy đủ5ván Gen.G–Bilibili Gaming, snapshotWLDS as-of2026-11-13 patch dataset16.20 (106ván/94ván patch), cố định Gen.G Blue/BLG Red và luân phiên first-pick B/R/B/R/B theo lịch demo. Không mô phỏng thắng/thua hoặc ép tỉ số2-2; đây là5draft liên tiếp. Fearless khóa mọi tướng PICK trước đó cho cả hai đội, không carry standard bans, không reset ván5. Validator kiểm tra20lượt/5role/5ban mỗi đội và pool dùng trước; 100actions,50uniquePicks, locks[0,10,20,30,40],38testsPASS. Lưu toàn bộ100lượt và căn cứ ở reports/worlds_fearless_bo5/REPORT.md, series.json và game_1..5.json/log.
+
+Pilot min5 dừng ván5 vì pool support không đủ. Tách candidate_min_games khỏi min_games(evidence): series cho ứng viên từ1lần quan sát, giữ evidence5; luôn ưu tiên lớp>=5 trước lớp ít mẫu trong các role đang mở. Chỉ có Yuumi ván5 là sparse_candidate (4trận). Không invent role/tướng hoặc tự giảm ngưỡng tin cậy. Positive log-lift shrink theo weighted_pair/(weighted_pair+10), negative theo weighted_anchor/(weighted_anchor+10), trước geometric aggregation, để chặn bonus lớn từ cặp một-mẫu. Policy có công khai, chưa tối ưu cả series. Default one-game vẫn candidate/evidence5. CLI evaluate WLDS cập nhật audit: Recall@5=.36, Recall@1=.095,MRR5=.184, CI mô tả vsrecent[+.015,+.102625]; benchmark là phát triển nhỏ, chưa đánh giá fullFearless hoặc tăng thắng. Những số liệu36%/MRR.21225 bên dưới thuộc phiên trước shrink bổ sung.
+
+Không đổi DB/schema/raw, tải dữ liệu mới, fit ML hoặc commit/push.
+
+## Hiện hành — phối hợp mọi cặp role, chạy Worlds (2026-11-23)
+
+VERIFIED: DraftMetaSnapshot thống kê đủ 10 cặp role (20 chiều) trên gameid+side, giữ role của cả hai tướng, counts/Wilson cho tần suất ghép cặp và riêng kết quả cả trận. DraftAdvisor dùng conditional co-pick share shrink về marginal, geometric lift qua mọi đồng đội, điều chỉnh odds điểm nền; composition exponent1 là policy công khai chưa học/tune. Synergy WR cũng đã sửa giữ cả hai role. Không có case theo tên tướng, không biến association thành synergy cơ học/tăng thắng. JSON lưu formula/base/lift/evidence và ma trận10cặp/đội; why giải thích công thức.
+
+35 tests PASS, gồm nhiều cặp role, tránh ghép đối thủ, flex role, thiếu mẫu/cutoff, đổi tên tướng không đổi điểm. Hai phiên Gen.G–Bilibili Gaming tại Worlds, Blue/Red first, hoàn thành20lượt/tướng khác nhau; snapshot trước chung kết as-of2026-11-13 patch dataset16.20, 106ván/94ván patch, không dùng4ván final14/11. Lucian–Milio đứng đầu truy vấn support khi đã có Lucian trong hai snapshot LCK/Worlds đã kiểm tra; không ép kết quả hoặc khóa cặp khác.
+
+Audit Worlds200lượt: Recall@5 cũ30%, recent-presence30%, mới36%, MRR@5=0.21225; CI mô tả chênh với baseline[+1,+12]điểm phần trăm. Đây là tập phát triển nhỏ đã xem, chưa phải final test độc lập/đánh giá tăng thắng; chưa tái dựng Fearless series trong benchmark. Candidate coverage86%. Không tải dữ liệu mới, sửa schema/raw DB hoặc huấn luyện ML.
+
+Nguồn hiện hành: docs/WORLDS_ROLE_PAIR_REVIEW.md, reports/worlds_draft_role_pairs.json, reports/worlds_role_pair_checks.json, reports/wlds_draft_policy_evaluation.json; baseline cũ được giữ trong reports/worlds_replay_before_role_pairs.json. LCK và hybrid ghi bên dưới là các mốc lịch sử trước sửa composition.
+
+## Rà soát LCK và meta theo patch — 2026-11-23
+
+VERIFIED: snapshot patch/thời gian chung trong draft_meta.py; presence/slot/player share có decay 21 ngày, cửa sổ 60 ngày; bỏ percentile, giảm cosine, matchup theo phân phối role một-một. Lineup lấy từ trận gần nhất, không là live roster. CLI có as-of/patch/freshness guard/used-champions. Phiên lịch sử bỏ dự báo model để tránh model fit sau cutoff. LCK local đến 2026-09-13, patch dataset16.16, 153 ván cửa sổ/80 ván patch; không có dữ liệu mới được tải. 31 unit tests và 6 CLI scenarios PASS (LCK/LPL/ALL, Red first, previous-game pool, stale-data rejection, missing-patch rejection); checks: reports/lck_meta_checks.json. Replay đóng băng trước 20 trận/200 lượt: Recall@5 policy28.5%, recent-presence27%, long-history24%; CI chênh [-1.5,+4.5] điểm phần trăm, chưa chứng minh ưu thế hoặc tăng thắng. Coverage84.5%, chưa replay đầy đủ Fearless series. Chi tiết docs/LCK_DRAFT_REVIEW.md; reports/lck_draft_policy_evaluation.json. Không sửa raw DB/schema hoặc huấn luyện ML.
+
+## Bản hybrid trước sửa — lịch sử, đã thay policy bên dưới
+
+## Giả lập hybrid ban/pick — 2026-11-23
+
+VERIFIED: giả lập hybrid 20 lượt đã tích hợp historical + content-based/cosine; 24 tests PASS và 5 smoke scenarios hoàn tất 20 tướng khác nhau. Giữ lựa chọn đội/phe, lọc đường, why, chọn tay, swap, wishlist, auto và lưu JSON căn cứ. Pick tối đa điểm weighted rank aggregation; ban theo chênh top1/top2 đối thủ trên bảng hiện tại. Màu phe độc lập thứ tự draft qua --first-pick. Không tuyên bố tối ưu toàn cục/tăng thắng, không đổi benchmark cũ hay huấn luyện model mới. Hướng dẫn: docs/GIA_LAP_BAN_PICK.md; checks: reports/draft_simulator_checks.json.
+
+
+## Cập nhật Chương 6 — 2026-11-23
+
+VERIFIED: content-based filtering đã có item profile → user profile có trọng số → cosine similarity theo Chương 6. Notebook 02 đã chạy đủ 6 cell mã; 16 regression tests PASS, ba CLI (seed, player, cold-start) và tích hợp engine PASS. Benchmark validation: 299 trận, 2990 truy vấn; Precision@10=0.0494, Recall@5=0.2990; popularity Recall@5=0.4652. Chưa vượt baseline về truy hồi; không tuyên bố tăng thắng. Không huấn luyện lại ML hoặc thay schema/raw DB. Hướng: vận dụng kiến thức môn học, có phần mở rộng. Xem docs/CHUONG_6_CONTENT_BASED.md và reports/content_based_evaluation.md.
+
+> **TRẠNG THÁI ƯU TIÊN — Integrity v2, 2026-11-23.** Dự án đang triển khai theo roadmap; API/web chưa triển khai là công việc kế hoạch. Các tuyên bố cũ bên dưới như “100% Zero-Hardcode”, “hoàn thành 85% về chất lượng”, kết quả model cũ và kết luận nhân quả không còn là trạng thái nghiệm thu. Nguồn hiện hành: [INTEGRITY_V2.md](../docs/INTEGRITY_V2.md), [đánh giá ML](../src/06_machine_learning/evaluation_report.md), [benchmark recommender](../reports/recommender_evaluation.json).
+
+2026-11-23 — Integrity v2 theo yêu cầu 4 mục. Không đổi schema/raw SQLite. Bổ sung `analysis_data.py`, `validation.py`, `historical_recommender.py`, `evaluate_recommender.py`, regression tests. Các loader SQL/EDA/ML cùng domain snapshot; export lại CSV. XGBoost 3.4.1 build CUDA13.3 không chạy với driver CUDA12.6; đã cài/pin XGBoost3.0.5 và kiểm tra thiết bị booster CUDA. Draft: accuracy=0.5517, AUC=0.5628, logloss=0.6834; Snowball: accuracy=0.6718, AUC=0.7413, logloss=0.6004.
+
+Recommender được đánh giá trên 6.000 truy vấn từ 600 trận: heuristic yếu hơn popularity về Recall@5. Kết quả được ghi nguyên trạng; không sửa thuật toán theo test để làm đẹp điểm. Notebook/tài liệu/figures được cập nhật; xem `reports/integrity_checks.json` cho kiểm chứng luồng thực thi và `tests/test_data_integrity.py` cho regression.
+
+Kiểm chứng Integrity v2 cuối lượt: {"rank_rows": 1009, "negative_blue_gold_rows": 525, "inconsistent_clean_gold_rows": 0, "notebook_executed_code_cells": 8, "notebook_png_outputs": 5, "unit_tests_passed": 11, "workflow_commands_passed": 12, "gpu_preflight": "passed"}. Raw DB không sửa; notebook có output thực; ML/ranking metrics xem báo cáo hiện hành.
+
+---
+
+NỘI DUNG LỊCH SỬ / KẾ HOẠCH TRƯỚC INTEGRITY V2:
+
 # CHANGELOG (NHẬT KÝ THAY ĐỔI DỰ ÁN)
 
 Tất cả các thay đổi quan trọng về code, CSDL và tài liệu kiến trúc được ghi lại tại đây theo thứ tự thời gian.
+
+---
+
+## [2026-11-23] - NÂNG CẤP THUẬT TOÁN KHẮC CHẾ ĐƯỜNG TỔNG QUÁT (UNIVERSAL COUNTER-PICK ENGINE), PHÂN TẦNG KHU VỰC (LCK/LPL/LCP/MSI/WLDS), TĂNG TỐC GPU CUDA & CẬP NHẬT BỘ QUY TẮC AI_RULES
+- **1. Tăng tốc Huấn luyện GPU (NVIDIA GeForce RTX 4070 CUDA) & Tối ưu Composite Indexes SQLite:**
+  - Cập nhật `src/06_machine_learning/draft_model.py` và `src/06_machine_learning/snowball_model.py` tự động phát hiện và huấn luyện `XGBClassifier` trên GPU (`device='cuda', tree_method='hist'`).
+  - Bổ sung 2 chỉ mục phức hợp `idx_tp_game_pos_side` và `idx_tp_game_side_pos` trong `src/01_data_pipeline/load_esports_to_db.py`, tăng tốc truy vấn Self-JOIN ma trận 3,098 cặp kèo đối đầu 1v1 lên hơn 50 lần.
+- **2. Phân tầng Meta Cấm/Chọn theo từng Khu vực & Giải đấu Quốc tế (`ADR-015`):**
+  - Hỗ trợ 8 chế độ khu vực/giải đấu (`LCK`, `LPL`, `LCP`, `WLDS`/CKTG, `MSI`, `EWC`, `INTERNATIONAL`, `ALL`) trên toàn bộ `recommender_engine.py`, `draft_model.py` (808 chiều đặc trưng) và `simulate_draft_match.py` (bổ sung cờ `--region` và `--interactive`).
+  - Áp dụng công thức Hòa trộn Thích ứng ($w_{\text{reg}} = \frac{n_{\text{reg}}}{n_{\text{reg}} + \tau}$) giữa thống kê khu vực và toàn cầu.
+- **3. Triển khai Thuật toán Khắc chế & Đi đường Tổng quát 100% Dựa trên Dữ liệu (`ADR-016` - Zero-Hardcode):**
+  - Áp dụng cho toàn bộ **5 vị trí (`Top`, `Jungle`, `Mid`, `Bot`, `Support`)** và **3,098 cặp đối đầu trực tiếp 1v1** trong `src/07_recommender/recommender_engine.py` và `src/07_recommender/simulate_draft_match.py`:
+    - Nhận diện chính xác 1-1 tướng đối thủ cùng đường (`_infer_enemy_lane_assignment` & truyền trực tiếp dictionary 5 vị trí).
+    - Tách biệt 2 chế độ chấm điểm `Blind Pick` (chưa lộ đối thủ cùng đường) và `Counter Pick` (đã lộ đối thủ cùng đường).
+    - Thiết lập **Bộ lọc Ngắt cứng Tổng quát (Universal Hard Cut-off)**: Tự động loại bỏ mọi ứng viên có tỷ lệ thắng đối đầu $< 47.5\%$ (mẫu $\ge 3$ trận) HOẶC bị đè đường phút 10 ($\text{GD@10} < -110\text{g}$ đối với Top/Jng/Mid/Bot; $< -150\text{g}$ đối với Sup nếu không có tỷ lệ lật kèo $\ge 52.5\%$).
+    - Khóa điểm Tướng Tủ (`player_bonus` giảm 85–90%) nếu tướng tủ rơi vào kèo dưới hoặc chưa được kiểm chứng khả năng đi đường trước tướng đối diện.
+    - Nâng tiên nghiệm làm mịn Bayes lên $C = 10.0$, hệ số tin cậy mẫu $\alpha = \frac{n}{n + 8.0}$, hiệu chuẩn điểm đơn điệu (`0.48 + 0.52 * raw_score`) và bổ sung Bộ lọc độ tinh khiết vị trí (Role Purity Filter: yêu cầu $\ge 35$ trận toàn cầu hoặc $\ge 15$ trận khu vực cho các tướng flex trái vị trí gốc).
+  - Đã huấn luyện lại và cập nhật toàn bộ `models/recommender_engine.pkl`, `models/draft_model.pkl`, `models/snowball_model.pkl`, `models/archetype_kmeans.pkl`.
+- **4. Biên soạn Tài liệu Kỹ thuật & Cập nhật Quy chuẩn Làm việc AI (`AI/AI_RULES.md`):**
+  - Tạo mới tài liệu kỹ thuật tổng hợp [`docs/CO_CHE_BAN_PICK_COUNTER_VA_PHAN_TANG_KHU_VUC.md`](../docs/CO_CHE_BAN_PICK_COUNTER_VA_PHAN_TANG_KHU_VUC.md) và cập nhật [`src/07_recommender/recommender_engine.md`](../src/07_recommender/recommender_engine.md).
+  - Cập nhật [`AI/AI_RULES.md`](AI_RULES.md) với 3 nguyên tắc bắt buộc từ User:
+    1. **Cấm tuyệt đối tự suy luận chủ quan & cấm Hardcode tình huống lẻ (100% Algorithmic & Data-Driven)**.
+    2. **Bắt buộc huấn luyện mô hình bằng GPU (Mandatory GPU-First Training - NVIDIA CUDA `device='cuda', tree_method='hist'`)**.
+    3. **Bắt buộc cập nhật đồng bộ toàn bộ thư mục `AI/` và tiến độ dự án ngay sau mỗi thao tác**.
+- **5. Cài đặt và Khởi tạo GitHub SpecKit (`specify-cli v1.4.4`):**
+  - Cài đặt `specify-cli` vào `.venv` và khởi tạo đầy đủ cấu trúc `.specify/` (`.specify/memory/constitution.md`, `.specify/scripts/powershell/`, `.specify/templates/`, `.specify/workflows/`) cùng bộ 9 lệnh `/speckit.*` tại `.gemini/commands/`.
+  - Đồng bộ hóa nội dung `.specify/memory/constitution.md` với `AI/AI_RULES.md`.
+
+---
+
+## [2026-11-22] - DỌN DẸP CÁC TỆP PHÁT SINH NGOÀI DỰ ÁN, CẬP NHẬT DỮ LIỆU ESPORTS MỚI NHẤT & TINH GỌN ĐỊNH HƯỚNG 100% WEB APP MÔN KHOA HỌC DỮ LIỆU
+- **Cập nhật bộ dữ liệu giải đấu `2026_LoL_esports_match_data_from_OraclesElixir.csv` mới nhất (đến ngày 2026-11-14):**
+  - Tổng số trận của năm 2026 thuộc 6 giải đấu lớn (`LCK, LCP, LPL, MSI, WLDS, EWC`) tăng lên **1,890 trận** (bổ sung trọn vẹn giải CKTG / Worlds 2026 `WLDS`: 206 trận).
+  - Ghép thích ứng với 1,110 trận cuối năm 2025 tạo thành `data/raw/esports_active_matches.csv` (3,000 trận, 36,000 dòng, 26.97 MB): LPL (1,092), LCK (812), LCP (474), EWC (265), WLDS (206), MSI (151). Tỷ lệ có Timeline mốc 10 phút tăng lên **81.23% (2,437 / 3,000 trận)**.
+  - Đã nạp mới hoàn toàn vào CSDL SQLite `data/database/lol_live_data.db` (`tournament_matches`: 6,000 dòng, `tournament_players`: 30,000 dòng) và chạy `cleaner.py` xuất 4 tệp dữ liệu sạch vào `data/processed/`.
+- **Xóa bỏ toàn bộ thư mục/tệp phát sinh không thuộc dự án chính:**
+  - Xóa thư mục bài tập ngoài luồng `Homework/`, `sql/`, `midterm_assignment/` và các file DB rỗng thừa (`lol_live_data.db` ở root, `data/lol_context.db`, `data/lol_live_data.db`), chỉ giữ lại CSDL chính thức `data/database/lol_live_data.db` (28.3 MB, 37,009 bản ghi).
+  - Xóa tài liệu liên môn cũ `docs/KE_HOACH_LIEN_MON_DATA_SCIENCE_VA_ANDROID.md` và lọc sạch các chủ đề ngoài luồng trong `docs/DANH_MUC_API_VA_DATASET.md`.
+- **Chuẩn hóa định hướng kiến trúc & tài liệu (`AI/`, `docs/`, `README.md`):**
+  - Cập nhật đồng bộ toàn bộ hệ thống tài liệu quản trị ngữ cảnh (`AI/PROJECT_STATE.md`, `AI/ARCHITECTURE.md`, `AI/TASKS.md`, `AI/DECISIONS.md`, `README.md`, `docs/KE_HOACH_THUC_HIEN_DO_AN_3_NGUOI.md`, `docs/clickup_import_lol_project.csv`).
+  - Tập trung 100% mục tiêu dự án vào môn **Nhập môn Khoa học Dữ liệu (PTIT)** với kiến trúc Backend FastAPI & Giao diện **Web App** tương tác.
 
 ---
 
@@ -270,7 +402,7 @@ Tất cả các thay đổi quan trọng về code, CSDL và tài liệu kiến 
 
 ## [2026-09-28] - TÍCH HỢP QUYẾT ĐỊNH KIẾN TRÚC ADR-014: NHẬN DIỆN ĐIỀU KIỆN THẮNG & TRƯỜNG PHÁI ĐỘI HÌNH
 - **Ghi nhận quyết định kiến trúc [ADR-014](DECISIONS.md) trong [`AI/DECISIONS.md`](DECISIONS.md):**
-  - Tích hợp tính năng phân tích **Trường phái đội hình (Draft Archetypes qua K-Means & PCA)** và **Khuyến nghị Điều kiện thắng (Win Condition Card)** cho Giai đoạn 3 (ML & Recommender), Giai đoạn 4 (FastAPI Backend endpoint `/api/v1/win-condition` & Web Streamlit) và Giai đoạn 5 (Android App).
+  - Tích hợp tính năng phân tích **Trường phái đội hình (Draft Archetypes qua K-Means & PCA)** và **Khuyến nghị Điều kiện thắng (Win Condition Card)** cho Giai đoạn 3 (ML & Recommender) và Giai đoạn 4 (FastAPI Backend endpoint `/api/v1/win-condition` & Web App).
   - Phân loại 4 trường phái: *Early Snowball / Dive, Dragon Soul Stacking, Late-Game Hypercarry Scaling, Pick & Split-Push 1-3-1*.
   - Xuất Thẻ điều kiện thắng tự động gồm: Chủ lực gánh đội (Core Carry), Điểm rơi sức mạnh (Power Spike Timing), Mục tiêu ưu tiên số 1 (Primary Objective), và Điều kiện thất bại cần tránh (Lose Condition).
 - **Đồng bộ toàn bộ tài liệu:**
@@ -492,14 +624,14 @@ Tất cả các thay đổi quan trọng về code, CSDL và tài liệu kiến 
 - **Tài liệu tạo mới trong `AI/`:**
   - `AI/AI_RULES.md`: Bộ quy tắc làm việc và giao thức bắt buộc cho AI sessions.
   - `AI/PROJECT_STATE.md`: Hiện trạng thực tế sau audit.
-  - `AI/ARCHITECTURE.md`: Kiến trúc hệ thống 3 tầng (Data $\rightarrow$ FastAPI $\rightarrow$ Web/Mobile).
+  - `AI/ARCHITECTURE.md`: Kiến trúc hệ thống 3 tầng (Data $\rightarrow$ FastAPI $\rightarrow$ Web App).
   - `AI/DATABASE.md`: Đặc tả chi tiết 42 cột của bảng `matches_10min` và các bảng giải đấu dự kiến.
   - `AI/TASKS.md`: Atomic checklist chi tiết 5 giai đoạn cho 3 thành viên.
   - `AI/DECISIONS.md`: Ghi nhận 7 quyết định kiến trúc cốt lõi (ADR-001 đến ADR-007).
   - `AI/CHANGELOG.md`: Nhật ký thay đổi này.
 - **Tài liệu hỗ trợ quản lý:**
-  - Tạo `docs/clickup_import_lol_project.csv` hỗ trợ kéo thả toàn bộ 23 task vào ClickUp trong 30 giây.
-  - Cập nhật `README.md` phân tầng rõ ràng Giao diện Web App (Giai đoạn 1) và Mobile App (Giai đoạn 2).
+  - Tạo `docs/clickup_import_lol_project.csv` hỗ trợ kéo thả toàn bộ task vào ClickUp.
+  - Cập nhật `README.md` chuẩn hóa kiến trúc dự án và Giao diện Web App.
 
 ---
 
@@ -517,5 +649,10 @@ Tất cả các thay đổi quan trọng về code, CSDL và tài liệu kiến 
 
 ## [2026-09-18] - KHỞI TẠO DỰ ÁN & ĐẶC TẢ ĐỒ ÁN
 - Khởi tạo cấu trúc dự án `src/`, `data/`, `docs/`, `notebooks/`, `reports/`.
-- Soạn thảo đặc tả đề tài liên môn gửi TS. Thái Tuyết Hải và ThS. Nguyễn Trung Hiếu.
+- Soạn thảo đặc tả đề tài môn Nhập môn Khoa học Dữ liệu gửi TS. Thái Tuyết Hải.
 - Viết crawler ban đầu kết nối Riot Games Developer API.
+
+
+---
+
+2026-11-23 — Đang triển khai integrity remediation: không thay đổi raw SQLite/schema; snapshot sạch dùng chung, giữ chênh lệch âm và ngoại lai hợp lệ; Snowball chỉ dùng macro thực đo; lựa chọn model bằng validation log loss, calibration độc lập, test theo nhóm trận; Draft encoding chỉ dùng lịch sử trước block. Chưa công bố kết quả cho đến khi kiểm thử.

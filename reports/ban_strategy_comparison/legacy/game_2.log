@@ -1,0 +1,254 @@
+Đang nạp lịch sử trận đấu và hồ sơ tướng...
+GIẢ LẬP BAN/PICK MỘT VÁN — LỊCH SỬ + CONTENT-BASED
+Bạn: blue; phe chọn trước: red; dữ liệu: WLDS
+SNAPSHOT LỊCH SỬ: patch dataset 16.20, dữ liệu đến 2026-11-09T00:56:00+00:00, cũ 4 ngày so với mốc yêu cầu
+106 trận trong cửa sổ 60 ngày, 94 trận patch đích; không gọi là live meta.
+Lineup T1 (latest_observed_lineup_not_live_roster): top=Doran, jng=Oner, mid=Faker, bot=Peyz, sup=Keria
+Lineup Gen.G (latest_observed_lineup_not_live_roster): top=Kiin, jng=Canyon, mid=Chovy, bot=Ruler, sup=Duro
+Ưu tiên presence/nhịp draft gần đây; bể tướng, đối đầu và cosine là tín hiệu hỗ trợ. Điểm không phải xác suất.
+
+==========================================================================================
+BLUE T1 | Cấm: —
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: —
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 1/20: RED Gen.G — CẤM
+ĐÃ CẤM: Nocturne
+  Căn cứ: Presence gần đây 86.8%, bị cấm 69.5%; điểm ưu tiên đối thủ 0.406; chênh lựa chọn 0.043
+
+==========================================================================================
+BLUE T1 | Cấm: —
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Nocturne
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 2/20: BLUE T1 — CẤM
+ĐÃ CẤM: Renata Glasc
+  Căn cứ: Presence gần đây 78.0%, bị cấm 61.8%; điểm ưu tiên đối thủ 0.340; chênh lựa chọn 0.075
+
+==========================================================================================
+BLUE T1 | Cấm: Renata Glasc
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Nocturne
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 3/20: RED Gen.G — CẤM
+ĐÃ CẤM: Vi
+  Căn cứ: Presence gần đây 76.2%, bị cấm 60.1%; điểm ưu tiên đối thủ 0.363; chênh lựa chọn 0.080
+
+==========================================================================================
+BLUE T1 | Cấm: Renata Glasc
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Nocturne, Vi
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 4/20: BLUE T1 — CẤM
+ĐÃ CẤM: Cassiopeia
+  Căn cứ: Presence gần đây 66.2%, bị cấm 48.0%; điểm ưu tiên đối thủ 0.345; chênh lựa chọn 0.079
+
+==========================================================================================
+BLUE T1 | Cấm: Renata Glasc, Cassiopeia
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Nocturne, Vi
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 5/20: RED Gen.G — CẤM
+ĐÃ CẤM: Olaf
+  Căn cứ: Presence gần đây 59.9%, bị cấm 40.5%; điểm ưu tiên đối thủ 0.326; chênh lựa chọn 0.104
+
+==========================================================================================
+BLUE T1 | Cấm: Renata Glasc, Cassiopeia
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Nocturne, Vi, Olaf
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 6/20: BLUE T1 — CẤM
+ĐÃ CẤM: Qiyana
+  Căn cứ: Presence gần đây 57.5%, bị cấm 34.0%; điểm ưu tiên đối thủ 0.378; chênh lựa chọn 0.174
+
+==========================================================================================
+BLUE T1 | Cấm: Renata Glasc, Cassiopeia, Qiyana
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Nocturne, Vi, Olaf
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 7/20: RED Gen.G — CHỌN
+ĐÃ CHỌN: Orianna [mid]
+  Căn cứ: Slot F1: ưu tiên chọn quan sát 0.047; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Renata Glasc, Cassiopeia, Qiyana
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Nocturne, Vi, Olaf
+Top: — | Rừng: — | Mid: Orianna | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 8/20: BLUE T1 — CHỌN
+ĐÃ CHỌN: Locke [mid]
+  Căn cứ: Slot S1: ưu tiên chọn quan sát 0.009; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Renata Glasc, Cassiopeia, Qiyana
+Top: — | Rừng: — | Mid: Locke | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Nocturne, Vi, Olaf
+Top: — | Rừng: — | Mid: Orianna | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 9/20: BLUE T1 — CHỌN
+ĐÃ CHỌN: Lulu [sup]
+  Căn cứ: Slot S2: ưu tiên chọn quan sát 0.100; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Renata Glasc, Cassiopeia, Qiyana
+Top: — | Rừng: — | Mid: Locke | Xạ thủ: — | Hỗ trợ: Lulu
+RED Gen.G | Cấm: Nocturne, Vi, Olaf
+Top: — | Rừng: — | Mid: Orianna | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 10/20: RED Gen.G — CHỌN
+ĐÃ CHỌN: Gnar [top]
+  Căn cứ: Slot F2: ưu tiên chọn quan sát 0.010; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Renata Glasc, Cassiopeia, Qiyana
+Top: — | Rừng: — | Mid: Locke | Xạ thủ: — | Hỗ trợ: Lulu
+RED Gen.G | Cấm: Nocturne, Vi, Olaf
+Top: Gnar | Rừng: — | Mid: Orianna | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 11/20: RED Gen.G — CHỌN
+ĐÃ CHỌN: Seraphine [sup]
+  Căn cứ: Slot F3: ưu tiên chọn quan sát 0.040; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Renata Glasc, Cassiopeia, Qiyana
+Top: — | Rừng: — | Mid: Locke | Xạ thủ: — | Hỗ trợ: Lulu
+RED Gen.G | Cấm: Nocturne, Vi, Olaf
+Top: Gnar | Rừng: — | Mid: Orianna | Xạ thủ: — | Hỗ trợ: Seraphine
+
+LƯỢT 12/20: BLUE T1 — CHỌN
+ĐÃ CHỌN: Yunara [bot]
+  Căn cứ: Slot S3: ưu tiên chọn quan sát 0.034; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Renata Glasc, Cassiopeia, Qiyana
+Top: — | Rừng: — | Mid: Locke | Xạ thủ: Yunara | Hỗ trợ: Lulu
+RED Gen.G | Cấm: Nocturne, Vi, Olaf
+Top: Gnar | Rừng: — | Mid: Orianna | Xạ thủ: — | Hỗ trợ: Seraphine
+
+LƯỢT 13/20: BLUE T1 — CẤM
+ĐÃ CẤM: Wukong
+  Căn cứ: Presence gần đây 36.4%, bị cấm 20.4%; điểm ưu tiên đối thủ 0.246; chênh lựa chọn 0.005
+
+==========================================================================================
+BLUE T1 | Cấm: Renata Glasc, Cassiopeia, Qiyana, Wukong
+Top: — | Rừng: — | Mid: Locke | Xạ thủ: Yunara | Hỗ trợ: Lulu
+RED Gen.G | Cấm: Nocturne, Vi, Olaf
+Top: Gnar | Rừng: — | Mid: Orianna | Xạ thủ: — | Hỗ trợ: Seraphine
+
+LƯỢT 14/20: RED Gen.G — CẤM
+ĐÃ CẤM: K'Sante
+  Căn cứ: Presence gần đây 41.1%, bị cấm 18.9%; điểm ưu tiên đối thủ 0.206; chênh lựa chọn 0.000
+
+==========================================================================================
+BLUE T1 | Cấm: Renata Glasc, Cassiopeia, Qiyana, Wukong
+Top: — | Rừng: — | Mid: Locke | Xạ thủ: Yunara | Hỗ trợ: Lulu
+RED Gen.G | Cấm: Nocturne, Vi, Olaf, K'Sante
+Top: Gnar | Rừng: — | Mid: Orianna | Xạ thủ: — | Hỗ trợ: Seraphine
+
+LƯỢT 15/20: BLUE T1 — CẤM
+ĐÃ CẤM: Pantheon
+  Căn cứ: Presence gần đây 33.6%, bị cấm 15.0%; điểm ưu tiên đối thủ 0.241; chênh lựa chọn 0.029
+
+==========================================================================================
+BLUE T1 | Cấm: Renata Glasc, Cassiopeia, Qiyana, Wukong, Pantheon
+Top: — | Rừng: — | Mid: Locke | Xạ thủ: Yunara | Hỗ trợ: Lulu
+RED Gen.G | Cấm: Nocturne, Vi, Olaf, K'Sante
+Top: Gnar | Rừng: — | Mid: Orianna | Xạ thủ: — | Hỗ trợ: Seraphine
+
+LƯỢT 16/20: RED Gen.G — CẤM
+ĐÃ CẤM: Ambessa
+  Căn cứ: Presence gần đây 34.2%, bị cấm 9.8%; điểm ưu tiên đối thủ 0.266; chênh lựa chọn 0.049
+
+==========================================================================================
+BLUE T1 | Cấm: Renata Glasc, Cassiopeia, Qiyana, Wukong, Pantheon
+Top: — | Rừng: — | Mid: Locke | Xạ thủ: Yunara | Hỗ trợ: Lulu
+RED Gen.G | Cấm: Nocturne, Vi, Olaf, K'Sante, Ambessa
+Top: Gnar | Rừng: — | Mid: Orianna | Xạ thủ: — | Hỗ trợ: Seraphine
+
+LƯỢT 17/20: BLUE T1 — CHỌN
+ĐÃ CHỌN: Trundle [jng]
+  Căn cứ: Slot S4: ưu tiên chọn quan sát 0.046; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Renata Glasc, Cassiopeia, Qiyana, Wukong, Pantheon
+Top: — | Rừng: Trundle | Mid: Locke | Xạ thủ: Yunara | Hỗ trợ: Lulu
+RED Gen.G | Cấm: Nocturne, Vi, Olaf, K'Sante, Ambessa
+Top: Gnar | Rừng: — | Mid: Orianna | Xạ thủ: — | Hỗ trợ: Seraphine
+
+LƯỢT 18/20: RED Gen.G — CHỌN
+ĐÃ CHỌN: Ashe [bot]
+  Căn cứ: Slot F4: ưu tiên chọn quan sát 0.022; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Renata Glasc, Cassiopeia, Qiyana, Wukong, Pantheon
+Top: — | Rừng: Trundle | Mid: Locke | Xạ thủ: Yunara | Hỗ trợ: Lulu
+RED Gen.G | Cấm: Nocturne, Vi, Olaf, K'Sante, Ambessa
+Top: Gnar | Rừng: — | Mid: Orianna | Xạ thủ: Ashe | Hỗ trợ: Seraphine
+
+LƯỢT 19/20: RED Gen.G — CHỌN
+ĐÃ CHỌN: Xin Zhao [jng]
+  Căn cứ: Slot F5: ưu tiên chọn quan sát 0.011; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Renata Glasc, Cassiopeia, Qiyana, Wukong, Pantheon
+Top: — | Rừng: Trundle | Mid: Locke | Xạ thủ: Yunara | Hỗ trợ: Lulu
+RED Gen.G | Cấm: Nocturne, Vi, Olaf, K'Sante, Ambessa
+Top: Gnar | Rừng: Xin Zhao | Mid: Orianna | Xạ thủ: Ashe | Hỗ trợ: Seraphine
+
+LƯỢT 20/20: BLUE T1 — CHỌN
+ĐÃ CHỌN: Camille [top]
+  Căn cứ: Slot S5: ưu tiên chọn quan sát 0.024; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Renata Glasc, Cassiopeia, Qiyana, Wukong, Pantheon
+Top: Camille | Rừng: Trundle | Mid: Locke | Xạ thủ: Yunara | Hỗ trợ: Lulu
+RED Gen.G | Cấm: Nocturne, Vi, Olaf, K'Sante, Ambessa
+Top: Gnar | Rừng: Xin Zhao | Mid: Orianna | Xạ thủ: Ashe | Hỗ trợ: Seraphine
+Căn cứ cặp T1: observed_pairs=1, sparse_pairs=7, unobserved_pairs=2, insufficient_anchor_pairs=0
+Căn cứ cặp Gen.G: observed_pairs=2, sparse_pairs=6, unobserved_pairs=2, insufficient_anchor_pairs=0
+
+===============================================================================================
+📋 BẢNG ĐỘI HÌNH HOÀN THIỆN SAU KHI CẤM/CHỌN (FINAL DRAFT)
+===============================================================================================
+🔷 PHE XANH (T1):
+   • TOP: Camille (Doran)
+   • JNG: Trundle (Oner)
+   • MID: Locke (Faker)
+   • BOT: Yunara (Peyz)
+   • SUP: Lulu (Keria)
+
+🔴 PHE ĐỎ (Gen.G):
+   • TOP: Gnar (Kiin)
+   • JNG: Xin Zhao (Canyon)
+   • MID: Orianna (Chovy)
+   • BOT: Ashe (Ruler)
+   • SUP: Seraphine (Duro)
+Radar và thẻ chiến thuật dùng thuộc tính/quy tắc chuyên gia; chưa được xác nhận như điều kiện thắng nhân quả.
+
+────────────────────────────────────── THẺ CHIẾN THUẬT: T1 (BLUE) ──────────────────────────────────────
+🏆 Trường phái: [LATE-GAME HYPERCARRY]
+📊 Radar 5 trục: Early: 0.598 | Scaling: 0.585 | Combat: 0.485 | Pick: 0.62 | Obj: 0.682
+⭐ Chủ lực (Core Carry): Locke
+⏱️ Điểm rơi sức mạnh: Cuối trận (Sau Phút 28 - Khi chủ lực đạt ngưỡng 3-4 trang bị chuẩn)
+🐉 Mục tiêu số 1: Baron Nashor & Rồng Ngàn Tuổi (Elder Dragon)
+✅ Điều kiện thắng: Bảo kê tuyệt đối cho siêu chủ lực farm an toàn; chấp nhận nhường mục tiêu sớm nếu cần; hủy diệt giao tranh cuối trận.
+❌ Cần tránh: Bị đối thủ băng trụ lăn cầu tuyết thua > 2,500 vàng lúc 10 phút dẫn đến vỡ trận sớm.
+
+────────────────────────────────────── THẺ CHIẾN THUẬT: GEN.G (RED) ──────────────────────────────────────
+🏆 Trường phái: [LATE-GAME HYPERCARRY]
+📊 Radar 5 trục: Early: 0.715 | Scaling: 0.757 | Combat: 0.772 | Pick: 0.683 | Obj: 0.688
+⭐ Chủ lực (Core Carry): Orianna
+⏱️ Điểm rơi sức mạnh: Cuối trận (Sau Phút 28 - Khi chủ lực đạt ngưỡng 3-4 trang bị chuẩn)
+🐉 Mục tiêu số 1: Baron Nashor & Rồng Ngàn Tuổi (Elder Dragon)
+✅ Điều kiện thắng: Bảo kê tuyệt đối cho siêu chủ lực farm an toàn; chấp nhận nhường mục tiêu sớm nếu cần; hủy diệt giao tranh cuối trận.
+❌ Cần tránh: Bị đối thủ băng trụ lăn cầu tuyết thua > 2,500 vàng lúc 10 phút dẫn đến vỡ trận sớm.
+Phiên có mốc lịch sử: bỏ dự báo từ model lưu sẵn vì chưa bảo đảm model được fit trước mốc này.
+Đã lưu phiên: reports\ban_strategy_comparison\legacy\game_2.json

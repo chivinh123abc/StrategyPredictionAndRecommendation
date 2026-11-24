@@ -1,0 +1,254 @@
+Đang nạp lịch sử trận đấu và hồ sơ tướng...
+GIẢ LẬP BAN/PICK MỘT VÁN — LỊCH SỬ + CONTENT-BASED
+Bạn: blue; phe chọn trước: blue; dữ liệu: WLDS
+SNAPSHOT LỊCH SỬ: patch dataset 16.20, dữ liệu đến 2026-11-09T00:56:00+00:00, cũ 4 ngày so với mốc yêu cầu
+106 trận trong cửa sổ 60 ngày, 94 trận patch đích; không gọi là live meta.
+Lineup T1 (latest_observed_lineup_not_live_roster): top=Doran, jng=Oner, mid=Faker, bot=Peyz, sup=Keria
+Lineup Gen.G (latest_observed_lineup_not_live_roster): top=Kiin, jng=Canyon, mid=Chovy, bot=Ruler, sup=Duro
+Ưu tiên presence/nhịp draft gần đây; bể tướng, đối đầu và cosine là tín hiệu hỗ trợ. Điểm không phải xác suất.
+
+==========================================================================================
+BLUE T1 | Cấm: —
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: —
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 1/20: BLUE T1 — CẤM
+ĐÃ CẤM: Nocturne
+  Căn cứ: Presence gần đây 86.8%, bị cấm 69.5%; điểm ưu tiên đối thủ 0.385; chênh lựa chọn 0.021
+
+==========================================================================================
+BLUE T1 | Cấm: Nocturne
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: —
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 2/20: RED Gen.G — CẤM
+ĐÃ CẤM: Renata Glasc
+  Căn cứ: Presence gần đây 78.0%, bị cấm 61.8%; điểm ưu tiên đối thủ 0.342; chênh lựa chọn 0.185
+
+==========================================================================================
+BLUE T1 | Cấm: Nocturne
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Renata Glasc
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 3/20: BLUE T1 — CẤM
+ĐÃ CẤM: Vi
+  Căn cứ: Presence gần đây 76.2%, bị cấm 60.1%; điểm ưu tiên đối thủ 0.341; chênh lựa chọn 0.000
+
+==========================================================================================
+BLUE T1 | Cấm: Nocturne, Vi
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Renata Glasc
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 4/20: RED Gen.G — CẤM
+ĐÃ CẤM: Cassiopeia
+  Căn cứ: Presence gần đây 66.2%, bị cấm 48.0%; điểm ưu tiên đối thủ 0.340; chênh lựa chọn 0.107
+
+==========================================================================================
+BLUE T1 | Cấm: Nocturne, Vi
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Renata Glasc, Cassiopeia
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 5/20: BLUE T1 — CẤM
+ĐÃ CẤM: Olaf
+  Căn cứ: Presence gần đây 59.9%, bị cấm 40.5%; điểm ưu tiên đối thủ 0.333; chênh lựa chọn 0.130
+
+==========================================================================================
+BLUE T1 | Cấm: Nocturne, Vi, Olaf
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Renata Glasc, Cassiopeia
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 6/20: RED Gen.G — CẤM
+ĐÃ CẤM: Qiyana
+  Căn cứ: Presence gần đây 57.5%, bị cấm 34.0%; điểm ưu tiên đối thủ 0.296; chênh lựa chọn 0.095
+
+==========================================================================================
+BLUE T1 | Cấm: Nocturne, Vi, Olaf
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Renata Glasc, Cassiopeia, Qiyana
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 7/20: BLUE T1 — CHỌN
+ĐÃ CHỌN: Akali [mid]
+  Căn cứ: Slot F1: ưu tiên chọn quan sát 0.009; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Nocturne, Vi, Olaf
+Top: — | Rừng: — | Mid: Akali | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Renata Glasc, Cassiopeia, Qiyana
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 8/20: RED Gen.G — CHỌN
+ĐÃ CHỌN: Pantheon [jng]
+  Căn cứ: Slot S1: ưu tiên chọn quan sát 0.035; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Nocturne, Vi, Olaf
+Top: — | Rừng: — | Mid: Akali | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Renata Glasc, Cassiopeia, Qiyana
+Top: — | Rừng: Pantheon | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 9/20: RED Gen.G — CHỌN
+ĐÃ CHỌN: Taliyah [mid]
+  Căn cứ: Slot S2: ưu tiên chọn quan sát 0.008; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Nocturne, Vi, Olaf
+Top: — | Rừng: — | Mid: Akali | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Renata Glasc, Cassiopeia, Qiyana
+Top: — | Rừng: Pantheon | Mid: Taliyah | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 10/20: BLUE T1 — CHỌN
+ĐÃ CHỌN: Wukong [jng]
+  Căn cứ: Slot F2: ưu tiên chọn quan sát 0.035; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Nocturne, Vi, Olaf
+Top: — | Rừng: Wukong | Mid: Akali | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Renata Glasc, Cassiopeia, Qiyana
+Top: — | Rừng: Pantheon | Mid: Taliyah | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 11/20: BLUE T1 — CHỌN
+ĐÃ CHỌN: Lucian [bot]
+  Căn cứ: Slot F3: ưu tiên chọn quan sát 0.012; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Nocturne, Vi, Olaf
+Top: — | Rừng: Wukong | Mid: Akali | Xạ thủ: Lucian | Hỗ trợ: —
+RED Gen.G | Cấm: Renata Glasc, Cassiopeia, Qiyana
+Top: — | Rừng: Pantheon | Mid: Taliyah | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 12/20: RED Gen.G — CHỌN
+ĐÃ CHỌN: Ambessa [top]
+  Căn cứ: Slot S3: ưu tiên chọn quan sát 0.071; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Nocturne, Vi, Olaf
+Top: — | Rừng: Wukong | Mid: Akali | Xạ thủ: Lucian | Hỗ trợ: —
+RED Gen.G | Cấm: Renata Glasc, Cassiopeia, Qiyana
+Top: Ambessa | Rừng: Pantheon | Mid: Taliyah | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 13/20: RED Gen.G — CẤM
+ĐÃ CẤM: K'Sante
+  Căn cứ: Presence gần đây 41.1%, bị cấm 18.9%; điểm ưu tiên đối thủ 0.242; chênh lựa chọn 0.051
+
+==========================================================================================
+BLUE T1 | Cấm: Nocturne, Vi, Olaf
+Top: — | Rừng: Wukong | Mid: Akali | Xạ thủ: Lucian | Hỗ trợ: —
+RED Gen.G | Cấm: Renata Glasc, Cassiopeia, Qiyana, K'Sante
+Top: Ambessa | Rừng: Pantheon | Mid: Taliyah | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 14/20: BLUE T1 — CẤM
+ĐÃ CẤM: Caitlyn
+  Căn cứ: Presence gần đây 24.2%, bị cấm 16.1%; điểm ưu tiên đối thủ 0.170; chênh lựa chọn 0.000
+
+==========================================================================================
+BLUE T1 | Cấm: Nocturne, Vi, Olaf, Caitlyn
+Top: — | Rừng: Wukong | Mid: Akali | Xạ thủ: Lucian | Hỗ trợ: —
+RED Gen.G | Cấm: Renata Glasc, Cassiopeia, Qiyana, K'Sante
+Top: Ambessa | Rừng: Pantheon | Mid: Taliyah | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 15/20: RED Gen.G — CẤM
+ĐÃ CẤM: Renekton
+  Căn cứ: Presence gần đây 25.2%, bị cấm 14.5%; điểm ưu tiên đối thủ 0.191; chênh lựa chọn 0.005
+
+==========================================================================================
+BLUE T1 | Cấm: Nocturne, Vi, Olaf, Caitlyn
+Top: — | Rừng: Wukong | Mid: Akali | Xạ thủ: Lucian | Hỗ trợ: —
+RED Gen.G | Cấm: Renata Glasc, Cassiopeia, Qiyana, K'Sante, Renekton
+Top: Ambessa | Rừng: Pantheon | Mid: Taliyah | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 16/20: BLUE T1 — CẤM
+ĐÃ CẤM: Karma
+  Căn cứ: Presence gần đây 20.8%, bị cấm 4.9%; điểm ưu tiên đối thủ 0.176; chênh lựa chọn 0.000
+
+==========================================================================================
+BLUE T1 | Cấm: Nocturne, Vi, Olaf, Caitlyn, Karma
+Top: — | Rừng: Wukong | Mid: Akali | Xạ thủ: Lucian | Hỗ trợ: —
+RED Gen.G | Cấm: Renata Glasc, Cassiopeia, Qiyana, K'Sante, Renekton
+Top: Ambessa | Rừng: Pantheon | Mid: Taliyah | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 17/20: RED Gen.G — CHỌN
+ĐÃ CHỌN: Rakan [sup]
+  Căn cứ: Slot S4: ưu tiên chọn quan sát 0.014; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Nocturne, Vi, Olaf, Caitlyn, Karma
+Top: — | Rừng: Wukong | Mid: Akali | Xạ thủ: Lucian | Hỗ trợ: —
+RED Gen.G | Cấm: Renata Glasc, Cassiopeia, Qiyana, K'Sante, Renekton
+Top: Ambessa | Rừng: Pantheon | Mid: Taliyah | Xạ thủ: — | Hỗ trợ: Rakan
+
+LƯỢT 18/20: BLUE T1 — CHỌN
+ĐÃ CHỌN: Milio [sup]
+  Căn cứ: Slot F4: ưu tiên chọn quan sát 0.011; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Nocturne, Vi, Olaf, Caitlyn, Karma
+Top: — | Rừng: Wukong | Mid: Akali | Xạ thủ: Lucian | Hỗ trợ: Milio
+RED Gen.G | Cấm: Renata Glasc, Cassiopeia, Qiyana, K'Sante, Renekton
+Top: Ambessa | Rừng: Pantheon | Mid: Taliyah | Xạ thủ: — | Hỗ trợ: Rakan
+
+LƯỢT 19/20: BLUE T1 — CHỌN
+ĐÃ CHỌN: Jax [top]
+  Căn cứ: Slot F5: ưu tiên chọn quan sát 0.013; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Nocturne, Vi, Olaf, Caitlyn, Karma
+Top: Jax | Rừng: Wukong | Mid: Akali | Xạ thủ: Lucian | Hỗ trợ: Milio
+RED Gen.G | Cấm: Renata Glasc, Cassiopeia, Qiyana, K'Sante, Renekton
+Top: Ambessa | Rừng: Pantheon | Mid: Taliyah | Xạ thủ: — | Hỗ trợ: Rakan
+
+LƯỢT 20/20: RED Gen.G — CHỌN
+ĐÃ CHỌN: Xayah [bot]
+  Căn cứ: Slot S5: ưu tiên chọn quan sát 0.008; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Nocturne, Vi, Olaf, Caitlyn, Karma
+Top: Jax | Rừng: Wukong | Mid: Akali | Xạ thủ: Lucian | Hỗ trợ: Milio
+RED Gen.G | Cấm: Renata Glasc, Cassiopeia, Qiyana, K'Sante, Renekton
+Top: Ambessa | Rừng: Pantheon | Mid: Taliyah | Xạ thủ: Xayah | Hỗ trợ: Rakan
+Căn cứ cặp T1: observed_pairs=1, sparse_pairs=8, unobserved_pairs=1, insufficient_anchor_pairs=0
+Căn cứ cặp Gen.G: observed_pairs=2, sparse_pairs=8, unobserved_pairs=0, insufficient_anchor_pairs=0
+
+===============================================================================================
+📋 BẢNG ĐỘI HÌNH HOÀN THIỆN SAU KHI CẤM/CHỌN (FINAL DRAFT)
+===============================================================================================
+🔷 PHE XANH (T1):
+   • TOP: Jax (Doran)
+   • JNG: Wukong (Oner)
+   • MID: Akali (Faker)
+   • BOT: Lucian (Peyz)
+   • SUP: Milio (Keria)
+
+🔴 PHE ĐỎ (Gen.G):
+   • TOP: Ambessa (Kiin)
+   • JNG: Pantheon (Canyon)
+   • MID: Taliyah (Chovy)
+   • BOT: Xayah (Ruler)
+   • SUP: Rakan (Duro)
+Radar và thẻ chiến thuật dùng thuộc tính/quy tắc chuyên gia; chưa được xác nhận như điều kiện thắng nhân quả.
+
+────────────────────────────────────── THẺ CHIẾN THUẬT: T1 (BLUE) ──────────────────────────────────────
+🏆 Trường phái: [WOMBOCOMBO & OBJECTIVE CONTROL]
+📊 Radar 5 trục: Early: 0.685 | Scaling: 0.735 | Combat: 0.615 | Pick: 0.728 | Obj: 0.647
+⭐ Chủ lực (Core Carry): Akali
+⏱️ Điểm rơi sức mạnh: Giữa và Cuối trận (Phút 20 đến Phút 35 - Giai đoạn Rồng 3, 4 và Baron)
+🐉 Mục tiêu số 1: Rồng Nguyên Tố (Thiết lập Linh Hồn Rồng) & Hang Baron
+✅ Điều kiện thắng: Kiểm soát tầm nhìn trước 1 phút tại hang mục tiêu lớn, ép đối thủ vào các góc hẹp của sông và tung Wombocombo 5v5 quét sạch.
+❌ Cần tránh: Để đối thủ chia cắt đội hình đẩy lẻ 1-3-1 hoặc giao tranh khi chưa có đủ chiêu cuối mở combat.
+
+────────────────────────────────────── THẺ CHIẾN THUẬT: GEN.G (RED) ──────────────────────────────────────
+🏆 Trường phái: [EARLY SNOWBALL & DIVE]
+📊 Radar 5 trục: Early: 0.795 | Scaling: 0.792 | Combat: 0.75 | Pick: 0.873 | Obj: 0.655
+⭐ Chủ lực (Core Carry): Taliyah
+⏱️ Điểm rơi sức mạnh: Đầu trận (Phút 1 đến Phút 20 - Trước mốc Baron xuất hiện)
+🐉 Mục tiêu số 1: Sâu Hư Không đợt 1 + Trụ Đầu (First Tower) trước phút 14
+✅ Điều kiện thắng: Tạo chênh lệch >= 2,000 vàng lúc 10 phút, băng trụ 2 cánh liên tục, ép đối thủ vỡ trận trước 25 phút.
+❌ Cần tránh: Bị đối thủ phòng ngự kéo dài trận đấu qua phút 30 khi chất tướng hết thời gian lăn cầu tuyết.
+Phiên có mốc lịch sử: bỏ dự báo từ model lưu sẵn vì chưa bảo đảm model được fit trước mốc này.
+Đã lưu phiên: reports\legacy_contextual_comparison\legacy\game_3.json

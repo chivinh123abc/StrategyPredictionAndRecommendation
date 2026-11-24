@@ -8,6 +8,9 @@ Giáo trình: Chương 1 - Thống kê suy diễn & Kiểm định giả thuyế
 
 import sys
 import argparse
+import sys
+from pathlib import Path
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 import sqlite3
 from pathlib import Path
 import pandas as pd
@@ -100,7 +103,7 @@ class BlueSideHypothesisTester:
         2. Solo Rank Đỉnh Cao (1,009 trận: VN2 + KR)
         3. Từng Giải đấu riêng biệt (LCK, LPL, LCP, MSI, Worlds, EWC)
         """
-        conn = sqlite3.connect(self.db_path)
+        conn = __import__('analysis_data', fromlist=['open_clean_connection']).open_clean_connection(self.db_path)
         
         results = []
         
@@ -157,12 +160,21 @@ class BlueSideHypothesisTester:
             ))
 
         conn.close()
-        return pd.DataFrame(results)
+        result = pd.DataFrame(results)
+        # Region/server breakdowns are exploratory, with Holm adjustment.
+        pvals=result['p_value'].to_numpy()
+        order=np.argsort(pvals)
+        adjusted=np.maximum.accumulate([(len(pvals)-i)*pvals[k] for i,k in enumerate(order)])
+        result['p_value_holm']=0.0
+        result.loc[order,'p_value_holm']=np.minimum(adjusted,1.0)
+        result['reject_h0_holm']=result.p_value_holm<self.alpha
+        result['interpretation']='Observational association; no randomized side assignment; repeated teams/players remain dependent.'
+        return result
 
     def display_report(self, df_results: pd.DataFrame, export: bool = True):
         """In thẻ báo cáo kiểm định thống kê trực quan (Hypothesis Test Report Card)"""
         print("=" * 100)
-        print("📊 BÁO CÁO KIỂM ĐỊNH GIẢ THUYẾT A/B: LỢI THẾ PHE XANH (BLUE SIDE ADVANTAGE)")
+        print("📊 BÁO CÁO KIỂM ĐỊNH TỶ LỆ QUAN SÁT: LỢI THẾ PHE XANH (BLUE SIDE ADVANTAGE)")
         print(f"   • Phương pháp: Z-test tỷ lệ 2 phía (Two-tailed Proportion Z-test)")
         print(f"   • Mức ý nghĩa: alpha = {self.alpha} | Ngưỡng Z_critical = +- {self.z_critical:.2f}")
         print(f"   • Giả thuyết H0: p = 0.5 (Tỷ lệ thắng Phe Xanh = 50%)")
@@ -172,7 +184,7 @@ class BlueSideHypothesisTester:
         # Bảng tóm tắt kết quả
         display_cols = [
             'dataset', 'total_matches', 'blue_wins', 'blue_winrate_pct',
-            'z_score', 'p_value', 'ci_95_lower_pct', 'ci_95_upper_pct', 'reject_h0'
+            'z_score', 'p_value_holm', 'ci_95_lower_pct', 'ci_95_upper_pct', 'reject_h0_holm'
         ]
         
         df_display = df_results[display_cols].copy()
@@ -194,22 +206,8 @@ class BlueSideHypothesisTester:
         print("📌 KÝ HIỆU MỨC Ý NGHĨA: *** (p < 0.001, Cực kỳ rõ rệt) | ** (p < 0.01) | * (p < 0.05)")
         print("=" * 100)
         
-        print("\n🧠 NHẬN XÉT & PHÂN TÍCH CHUYÊN SÂU THEO NGHIỆP VỤ (DOMAIN KNOWLEDGE):")
-        for _, row in df_results.iterrows():
-            dname = row['dataset']
-            wr = row['blue_winrate_pct']
-            pval = row['p_value']
-            z = row['z_score']
-            if "1. Toàn Bộ Đấu Giải" in dname:
-                print(f"  1. Trong ĐẤU GIẢI CHUYÊN NGHIỆP (Pro Play - 3,000 trận):")
-                print(f"     • Winrate Phe Xanh đạt {wr}% (Z = {z:+.3f}, p = {pval:.6f}).")
-                print(f"     • KẾT LUẬN: BÁC BỎ H0. Phe Xanh có lợi thế vượt trội có ý nghĩa thống kê cao.")
-                print(f"     • NGUYÊN NHÂN: Quyền First Pick các tướng Meta 2026 (Varus, Orianna, Vi, Rumble) + Góc nhìn camera thuận lợi.")
-            elif "2. Toàn Bộ Solo Rank" in dname:
-                print(f"\n  2. Trong SOLO RANK (1,009 trận Thách Đấu/Cao Thủ):")
-                print(f"     • Winrate Phe Xanh chỉ đạt {wr}%, Phe Đỏ đạt {row['red_winrate_pct']}% (Z = {z:+.3f}, p = {pval:.6f}).")
-                print(f"     • KẾT LUẬN: BÁC BỎ H0. Phe Đỏ có tỷ lệ thắng cao hơn có ý nghĩa thống kê.")
-                print(f"     • NGUYÊN NHÂN: Cơ chế xếp trận Matchmaking của Riot Games thường ưu tiên xếp đội có điểm MMR/Elo trung bình cao hơn sang Phe Đỏ (Red Side) để cân bằng với góc nhìn camera và lợi thế địa hình của Phe Xanh!")
+        print("\nDIỄN GIẢI: tỷ lệ quan sát; không chứng minh nguyên nhân do first pick, camera hay matchmaking.")
+        print("Bảng dùng p-value Holm; CI là CI biên chưa điều chỉnh đồng thời. Đội/tuyển thủ lặp lại vẫn có thể phụ thuộc.")
 
         if export:
             out_file = Path(PROCESSED_DATA_DIR) / "hypothesis_test_1_blue_side.csv"

@@ -1,0 +1,254 @@
+Đang nạp lịch sử trận đấu và hồ sơ tướng...
+GIẢ LẬP BAN/PICK MỘT VÁN — LỊCH SỬ + CONTENT-BASED
+Bạn: blue; phe chọn trước: red; dữ liệu: WLDS
+SNAPSHOT LỊCH SỬ: patch dataset 16.20, dữ liệu đến 2026-11-09T00:56:00+00:00, cũ 4 ngày so với mốc yêu cầu
+106 trận trong cửa sổ 60 ngày, 94 trận patch đích; không gọi là live meta.
+Lineup T1 (latest_observed_lineup_not_live_roster): top=Doran, jng=Oner, mid=Faker, bot=Peyz, sup=Keria
+Lineup Gen.G (latest_observed_lineup_not_live_roster): top=Kiin, jng=Canyon, mid=Chovy, bot=Ruler, sup=Duro
+Ưu tiên presence/nhịp draft gần đây; bể tướng, đối đầu và cosine là tín hiệu hỗ trợ. Điểm không phải xác suất.
+
+==========================================================================================
+BLUE T1 | Cấm: —
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: —
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 1/20: RED Gen.G — CẤM
+ĐÃ CẤM: Milio
+  Căn cứ: Mất pool địch 0.0032; chi phí tự cấm 0.0017; đội mình lấy lượt pick tới trước địch=True; Fearless khóa 30; 2 nhánh, giá trị dự kiến -0.0004
+
+==========================================================================================
+BLUE T1 | Cấm: —
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Milio
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 2/20: BLUE T1 — CẤM
+ĐÃ CẤM: Camille
+  Căn cứ: Mất pool địch 0.0056; chi phí tự cấm 0.0021; đội mình lấy lượt pick tới trước địch=False; Fearless khóa 30; 2 nhánh, giá trị dự kiến 0.0027
+
+==========================================================================================
+BLUE T1 | Cấm: Camille
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Milio
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 3/20: RED Gen.G — CẤM
+ĐÃ CẤM: Karma
+  Căn cứ: Mất pool địch 0.0029; chi phí tự cấm 0.0007; đội mình lấy lượt pick tới trước địch=True; Fearless khóa 30; 2 nhánh, giá trị dự kiến -0.0049
+
+==========================================================================================
+BLUE T1 | Cấm: Camille
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Milio, Karma
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 4/20: BLUE T1 — CẤM
+ĐÃ CẤM: Viktor
+  Căn cứ: Mất pool địch 0.0071; chi phí tự cấm 0.0029; đội mình lấy lượt pick tới trước địch=False; Fearless khóa 30; 2 nhánh, giá trị dự kiến 0.0189
+
+==========================================================================================
+BLUE T1 | Cấm: Camille, Viktor
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Milio, Karma
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 5/20: RED Gen.G — CẤM
+ĐÃ CẤM: Xayah
+  Căn cứ: Mất pool địch 0.0032; chi phí tự cấm 0.0013; đội mình lấy lượt pick tới trước địch=True; Fearless khóa 30; 2 nhánh, giá trị dự kiến -0.0006
+
+==========================================================================================
+BLUE T1 | Cấm: Camille, Viktor
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Milio, Karma, Xayah
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 6/20: BLUE T1 — CẤM
+ĐÃ CẤM: Akali
+  Căn cứ: Mất pool địch 0.0088; chi phí tự cấm 0.0046; đội mình lấy lượt pick tới trước địch=False; Fearless khóa 30; 2 nhánh, giá trị dự kiến 0.0254
+
+==========================================================================================
+BLUE T1 | Cấm: Camille, Viktor, Akali
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Milio, Karma, Xayah
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 7/20: RED Gen.G — CHỌN
+ĐÃ CHỌN: Nocturne [jng]
+  Căn cứ: Slot F1: ưu tiên chọn quan sát 0.129; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Camille, Viktor, Akali
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Milio, Karma, Xayah
+Top: — | Rừng: Nocturne | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 8/20: BLUE T1 — CHỌN
+ĐÃ CHỌN: Jarvan IV [jng]
+  Căn cứ: Slot S1: ưu tiên chọn quan sát 0.057; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Camille, Viktor, Akali
+Top: — | Rừng: Jarvan IV | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Milio, Karma, Xayah
+Top: — | Rừng: Nocturne | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 9/20: BLUE T1 — CHỌN
+ĐÃ CHỌN: K'Sante [top]
+  Căn cứ: Slot S2: ưu tiên chọn quan sát 0.014; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Camille, Viktor, Akali
+Top: K'Sante | Rừng: Jarvan IV | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Milio, Karma, Xayah
+Top: — | Rừng: Nocturne | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 10/20: RED Gen.G — CHỌN
+ĐÃ CHỌN: Taliyah [mid]
+  Căn cứ: Slot F2: ưu tiên chọn quan sát 0.008; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Camille, Viktor, Akali
+Top: K'Sante | Rừng: Jarvan IV | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Milio, Karma, Xayah
+Top: — | Rừng: Nocturne | Mid: Taliyah | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 11/20: RED Gen.G — CHỌN
+ĐÃ CHỌN: Alistar [sup]
+  Căn cứ: Slot F3: ưu tiên chọn quan sát 0.041; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Camille, Viktor, Akali
+Top: K'Sante | Rừng: Jarvan IV | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Milio, Karma, Xayah
+Top: — | Rừng: Nocturne | Mid: Taliyah | Xạ thủ: — | Hỗ trợ: Alistar
+
+LƯỢT 12/20: BLUE T1 — CHỌN
+ĐÃ CHỌN: Caitlyn [bot]
+  Căn cứ: Slot S3: ưu tiên chọn quan sát 0.014; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Camille, Viktor, Akali
+Top: K'Sante | Rừng: Jarvan IV | Mid: — | Xạ thủ: Caitlyn | Hỗ trợ: —
+RED Gen.G | Cấm: Milio, Karma, Xayah
+Top: — | Rừng: Nocturne | Mid: Taliyah | Xạ thủ: — | Hỗ trợ: Alistar
+
+LƯỢT 13/20: BLUE T1 — CẤM
+ĐÃ CẤM: Ornn
+  Căn cứ: Mất pool địch 0.0000; chi phí tự cấm 0.0000; đội mình lấy lượt pick tới trước địch=True; Fearless khóa 30; 2 nhánh, giá trị dự kiến -0.0014
+
+==========================================================================================
+BLUE T1 | Cấm: Camille, Viktor, Akali, Ornn
+Top: K'Sante | Rừng: Jarvan IV | Mid: — | Xạ thủ: Caitlyn | Hỗ trợ: —
+RED Gen.G | Cấm: Milio, Karma, Xayah
+Top: — | Rừng: Nocturne | Mid: Taliyah | Xạ thủ: — | Hỗ trợ: Alistar
+
+LƯỢT 14/20: RED Gen.G — CẤM
+ĐÃ CẤM: Rell
+  Căn cứ: Mất pool địch 0.0231; chi phí tự cấm 0.0000; đội mình lấy lượt pick tới trước địch=False; Fearless khóa 30; 2 nhánh, giá trị dự kiến 0.0151
+
+==========================================================================================
+BLUE T1 | Cấm: Camille, Viktor, Akali, Ornn
+Top: K'Sante | Rừng: Jarvan IV | Mid: — | Xạ thủ: Caitlyn | Hỗ trợ: —
+RED Gen.G | Cấm: Milio, Karma, Xayah, Rell
+Top: — | Rừng: Nocturne | Mid: Taliyah | Xạ thủ: — | Hỗ trợ: Alistar
+
+LƯỢT 15/20: BLUE T1 — CẤM
+ĐÃ CẤM: Jax
+  Căn cứ: Mất pool địch 0.0064; chi phí tự cấm 0.0000; đội mình lấy lượt pick tới trước địch=True; Fearless khóa 30; 2 nhánh, giá trị dự kiến -0.0026
+
+==========================================================================================
+BLUE T1 | Cấm: Camille, Viktor, Akali, Ornn, Jax
+Top: K'Sante | Rừng: Jarvan IV | Mid: — | Xạ thủ: Caitlyn | Hỗ trợ: —
+RED Gen.G | Cấm: Milio, Karma, Xayah, Rell
+Top: — | Rừng: Nocturne | Mid: Taliyah | Xạ thủ: — | Hỗ trợ: Alistar
+
+LƯỢT 16/20: RED Gen.G — CẤM
+ĐÃ CẤM: Bard
+  Căn cứ: Mất pool địch 0.0031; chi phí tự cấm 0.0000; đội mình lấy lượt pick tới trước địch=False; Fearless khóa 30; 2 nhánh, giá trị dự kiến 0.0114
+
+==========================================================================================
+BLUE T1 | Cấm: Camille, Viktor, Akali, Ornn, Jax
+Top: K'Sante | Rừng: Jarvan IV | Mid: — | Xạ thủ: Caitlyn | Hỗ trợ: —
+RED Gen.G | Cấm: Milio, Karma, Xayah, Rell, Bard
+Top: — | Rừng: Nocturne | Mid: Taliyah | Xạ thủ: — | Hỗ trợ: Alistar
+
+LƯỢT 17/20: BLUE T1 — CHỌN
+ĐÃ CHỌN: Ryze [mid]
+  Căn cứ: Slot S4: ưu tiên chọn quan sát 0.006; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Camille, Viktor, Akali, Ornn, Jax
+Top: K'Sante | Rừng: Jarvan IV | Mid: Ryze | Xạ thủ: Caitlyn | Hỗ trợ: —
+RED Gen.G | Cấm: Milio, Karma, Xayah, Rell, Bard
+Top: — | Rừng: Nocturne | Mid: Taliyah | Xạ thủ: — | Hỗ trợ: Alistar
+
+LƯỢT 18/20: RED Gen.G — CHỌN
+ĐÃ CHỌN: Corki [bot]
+  Căn cứ: Slot F4: ưu tiên chọn quan sát 0.046; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Camille, Viktor, Akali, Ornn, Jax
+Top: K'Sante | Rừng: Jarvan IV | Mid: Ryze | Xạ thủ: Caitlyn | Hỗ trợ: —
+RED Gen.G | Cấm: Milio, Karma, Xayah, Rell, Bard
+Top: — | Rừng: Nocturne | Mid: Taliyah | Xạ thủ: Corki | Hỗ trợ: Alistar
+
+LƯỢT 19/20: RED Gen.G — CHỌN
+ĐÃ CHỌN: Zaahen [top]
+  Căn cứ: Slot F5: ưu tiên chọn quan sát 0.003; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Camille, Viktor, Akali, Ornn, Jax
+Top: K'Sante | Rừng: Jarvan IV | Mid: Ryze | Xạ thủ: Caitlyn | Hỗ trợ: —
+RED Gen.G | Cấm: Milio, Karma, Xayah, Rell, Bard
+Top: Zaahen | Rừng: Nocturne | Mid: Taliyah | Xạ thủ: Corki | Hỗ trợ: Alistar
+
+LƯỢT 20/20: BLUE T1 — CHỌN
+ĐÃ CHỌN: Shen [sup]
+  Căn cứ: Slot S5: ưu tiên chọn quan sát 0.026; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Camille, Viktor, Akali, Ornn, Jax
+Top: K'Sante | Rừng: Jarvan IV | Mid: Ryze | Xạ thủ: Caitlyn | Hỗ trợ: Shen
+RED Gen.G | Cấm: Milio, Karma, Xayah, Rell, Bard
+Top: Zaahen | Rừng: Nocturne | Mid: Taliyah | Xạ thủ: Corki | Hỗ trợ: Alistar
+Căn cứ cặp T1: observed_pairs=0, sparse_pairs=6, unobserved_pairs=0, insufficient_anchor_pairs=4
+Căn cứ cặp Gen.G: observed_pairs=0, sparse_pairs=5, unobserved_pairs=5, insufficient_anchor_pairs=0
+
+===============================================================================================
+📋 BẢNG ĐỘI HÌNH HOÀN THIỆN SAU KHI CẤM/CHỌN (FINAL DRAFT)
+===============================================================================================
+🔷 PHE XANH (T1):
+   • TOP: K'Sante (Doran)
+   • JNG: Jarvan IV (Oner)
+   • MID: Ryze (Faker)
+   • BOT: Caitlyn (Peyz)
+   • SUP: Shen (Keria)
+
+🔴 PHE ĐỎ (Gen.G):
+   • TOP: Zaahen (Kiin)
+   • JNG: Nocturne (Canyon)
+   • MID: Taliyah (Chovy)
+   • BOT: Corki (Ruler)
+   • SUP: Alistar (Duro)
+Radar và thẻ chiến thuật dùng thuộc tính/quy tắc chuyên gia; chưa được xác nhận như điều kiện thắng nhân quả.
+
+────────────────────────────────────── THẺ CHIẾN THUẬT: T1 (BLUE) ──────────────────────────────────────
+🏆 Trường phái: [PICK & SPLIT-PUSH 1-3-1]
+📊 Radar 5 trục: Early: 0.652 | Scaling: 0.823 | Combat: 0.735 | Pick: 0.805 | Obj: 0.71
+⭐ Chủ lực (Core Carry): Ryze
+⏱️ Điểm rơi sức mạnh: Xuyên suốt trận đấu (Đặc biệt phát huy từ Phút 15 đến Phút 30)
+🐉 Mục tiêu số 1: Trụ 2 cánh bản đồ & Bắt lẻ cô lập mục tiêu đi lẻ
+✅ Điều kiện thắng: Tạo thế đẩy lẻ 1-3-1 hoặc 1-4, buộc đối thủ phải phân tán phòng thủ; rình rập bắt lẻ khi địch di chuyển và ép Baron khi hơn người.
+❌ Cần tránh: Bị đối thủ ép giao tranh 5v5 trực diện bất ngờ khi đội hình chưa kịp gom quân.
+
+────────────────────────────────────── THẺ CHIẾN THUẬT: GEN.G (RED) ──────────────────────────────────────
+🏆 Trường phái: [EARLY SNOWBALL & DIVE]
+📊 Radar 5 trục: Early: 0.625 | Scaling: 0.797 | Combat: 0.72 | Pick: 0.835 | Obj: 0.688
+⭐ Chủ lực (Core Carry): Corki
+⏱️ Điểm rơi sức mạnh: Đầu trận (Phút 1 đến Phút 20 - Trước mốc Baron xuất hiện)
+🐉 Mục tiêu số 1: Sâu Hư Không đợt 1 + Trụ Đầu (First Tower) trước phút 14
+✅ Điều kiện thắng: Tạo chênh lệch >= 2,000 vàng lúc 10 phút, băng trụ 2 cánh liên tục, ép đối thủ vỡ trận trước 25 phút.
+❌ Cần tránh: Bị đối thủ phòng ngự kéo dài trận đấu qua phút 30 khi chất tướng hết thời gian lăn cầu tuyết.
+Phiên có mốc lịch sử: bỏ dự báo từ model lưu sẵn vì chưa bảo đảm model được fit trước mốc này.
+Đã lưu phiên: reports\ban_strategy_comparison\lookahead\game_4.json

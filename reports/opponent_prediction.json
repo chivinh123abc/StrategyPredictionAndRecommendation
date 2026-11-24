@@ -1,0 +1,117 @@
+{
+  "state": {
+    "date": "2026-11-13T23:59:59.999999999+00:00",
+    "league": "WLDS",
+    "patch": "16.20",
+    "game_number": 2,
+    "turn": 18,
+    "action": "pick",
+    "slot": "F_pick4",
+    "actor_team": "Bilibili Gaming",
+    "opponent_team": "Gen.G",
+    "own_picks": [
+      "Jarvan IV",
+      "Locke",
+      "Lulu"
+    ],
+    "enemy_picks": [
+      "Rumble",
+      "Alistar",
+      "Viktor",
+      "Ashe"
+    ],
+    "own_bans": [
+      "Nocturne",
+      "Vi",
+      "Olaf",
+      "Wukong",
+      "Lucian"
+    ],
+    "enemy_bans": [
+      "Renata Glasc",
+      "Cassiopeia",
+      "Qiyana",
+      "Jayce",
+      "Galio"
+    ],
+    "used_champions": [
+      "Ezreal",
+      "Lee Sin",
+      "Syndra",
+      "Seraphine",
+      "K'Sante",
+      "Orianna",
+      "Nautilus",
+      "Ambessa",
+      "Jhin",
+      "Pantheon"
+    ],
+    "unavailable": [
+      "Alistar",
+      "Ambessa",
+      "Ashe",
+      "Cassiopeia",
+      "Ezreal",
+      "Galio",
+      "Jarvan IV",
+      "Jayce",
+      "Jhin",
+      "K'Sante",
+      "Lee Sin",
+      "Locke",
+      "Lucian",
+      "Lulu",
+      "Nautilus",
+      "Nocturne",
+      "Olaf",
+      "Orianna",
+      "Pantheon",
+      "Qiyana",
+      "Renata Glasc",
+      "Rumble",
+      "Seraphine",
+      "Syndra",
+      "Vi",
+      "Viktor",
+      "Wukong"
+    ]
+  },
+  "predictions": [
+    {
+      "champion": "Renekton",
+      "next_action_probability": 0.03784415501030791,
+      "probability_kind": "uncalibrated_masked_action_probability_not_winrate"
+    },
+    {
+      "champion": "Kalista",
+      "next_action_probability": 0.03529029520149069,
+      "probability_kind": "uncalibrated_masked_action_probability_not_winrate"
+    },
+    {
+      "champion": "Jax",
+      "next_action_probability": 0.03519796970929824,
+      "probability_kind": "uncalibrated_masked_action_probability_not_winrate"
+    },
+    {
+      "champion": "Sivir",
+      "next_action_probability": 0.03377021512515159,
+      "probability_kind": "uncalibrated_masked_action_probability_not_winrate"
+    },
+    {
+      "champion": "Aatrox",
+      "next_action_probability": 0.03287880418551348,
+      "probability_kind": "uncalibrated_masked_action_probability_not_winrate"
+    }
+  ],
+  "trained_through": "2026-10-24T20:12:44+00:00",
+  "reference_action_in_saved_session": "Yunara",
+  "reference_kind": "saved_simulation_choice_not_real_coach_label",
+  "limitations": [
+    "This imitates observed choices, not mechanical counters or optimal picks.",
+    "Probabilities are masked/renormalized and uncalibrated; not game win probabilities.",
+    "Champions not observed in training cannot be predicted; coverage is reported.",
+    "Series grouping reconstructed from team pairs/game numbers; not official series IDs.",
+    "Pick role-feasibility mask uses training-era observed roles and may miss novel flex roles.",
+    "No claim of independent fresh test, causal uplift or BO5 optimality."
+  ]
+}

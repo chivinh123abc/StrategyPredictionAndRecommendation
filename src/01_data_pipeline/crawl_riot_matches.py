@@ -55,6 +55,8 @@ except (ImportError, ModuleNotFoundError):
 # ==============================================================================
 class RiotApiCrawler:
     def __init__(self, api_key, platform="vn2"):
+        if not api_key or not api_key.strip().startswith('RGAPI-'):
+            raise ValueError('A valid RIOT_API_KEY is required for crawling')
         self.api_key = api_key.strip()
         self.platform = platform.lower()
         meta = SERVER_METADATA.get(self.platform, {"region": "sea", "country": "Unknown", "label": self.platform})
@@ -318,6 +320,8 @@ class RiotApiCrawler:
 
         for f in frames[:11]:
             for event in f.get("events", []):
+                if event.get("timestamp", 600001) > 600000:
+                    continue
                 e_type = event.get("type")
                 if e_type == "CHAMPION_KILL":
                     killer = event.get("killerId", 0)

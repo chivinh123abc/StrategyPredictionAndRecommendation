@@ -1,3 +1,19 @@
+## 24/11 — Chỉ legacy/contextual
+
+Không thay đổi dữ liệu/schema/index hoặc model khi bỏ lookahead. Chỉ gỡ code/CLI search, giữ snapshot sạch chung; kết quả so2chếđộở reports/legacy_contextual_comparison. Report3chếđộ/searchtrướclàartifactlịchsử, khôngdùnglàmtrạngtháihiệnhành.
+
+## 24/11/2026 — BanPlanner không đổi dữ liệu/schema
+
+Ban ngữ cảnh/rollout tái sử dụng DraftMetaSnapshot sạch trong bộ nhớ và model hành động đã lưu; không tạo bảng, không đổi rawSQLite/index, không tải dữ liệu hoặc fitmodelmới. Thêm JSONtrace/Markdowncomparison trong reports/ban_strategy_comparison, không là bảng dữ liệu mới. CutoffWorlds13/11patchdataset16.20 giữ nguyên trong cả3chếđộ.
+
+> **TRẠNG THÁI ƯU TIÊN — Integrity v2, 2026-11-23.** Dự án đang triển khai theo roadmap; API/web chưa triển khai là công việc kế hoạch. Các tuyên bố cũ bên dưới như “100% Zero-Hardcode”, “hoàn thành 85% về chất lượng”, kết quả model cũ và kết luận nhân quả không còn là trạng thái nghiệm thu. Nguồn hiện hành: [INTEGRITY_V2.md](../docs/INTEGRITY_V2.md), [đánh giá ML](../src/06_machine_learning/evaluation_report.md), [benchmark recommender](../reports/recommender_evaluation.json).
+
+Không thay đổi ba bảng raw hoặc khóa/index. Snapshot sạch trong bộ nhớ bổ sung `tournament_matches_10min` cho các truy vấn phút 10, không tạo bảng vật lý mới. CSV canonical giữ signed differences; snapshot/exports dùng cùng policy `domain-v2-signed-no-trimming`. Rank hiện thiếu event time và JSON timeline; `crawled_at` không được dùng thay ngày trận. Missing không đồng nghĩa 0.
+
+---
+
+NỘI DUNG LỊCH SỬ / KẾ HOẠCH TRƯỚC INTEGRITY V2:
+
 # DATABASE SPECIFICATION & SCHEMA DICTIONARY
 
 *Công nghệ:* SQLite 3  

@@ -232,6 +232,8 @@ CREATE TABLE IF NOT EXISTS tournament_players (
             "CREATE INDEX IF NOT EXISTS idx_tp_champ_pos ON tournament_players (champion, position);",
             "CREATE INDEX IF NOT EXISTS idx_tp_teamname ON tournament_players (teamname);",
             "CREATE INDEX IF NOT EXISTS idx_tp_league ON tournament_players (league);",
+            "CREATE INDEX IF NOT EXISTS idx_tp_game_pos_side ON tournament_players (gameid, position, side);",
+            "CREATE INDEX IF NOT EXISTS idx_tp_game_side_pos ON tournament_players (gameid, side, position);",
         ]
 
         for idx_sql in indexes:

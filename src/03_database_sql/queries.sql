@@ -173,7 +173,7 @@ WITH ProPlayLead AS (
         SUM(result) AS wins,
         ROUND(AVG(result) * 100.0, 2) AS winrate_pct,
         ROUND(AVG(gamelength) / 60.0, 1) AS avg_duration_min
-    FROM tournament_matches
+    FROM tournament_matches_10min
     WHERE datacompleteness = 'complete'
     GROUP BY gold_diff_tier
 ),

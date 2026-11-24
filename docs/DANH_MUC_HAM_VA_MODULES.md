@@ -1,3 +1,48 @@
+## Hiện hành24/11 — legacy/contextual
+
+- `ban_planner.py`: `ContextualBanPolicy`, `BanPlanner.contextual/recommend`, `contextual_trace`; gỡsearch/rollout/predictorban, khôngcònBanSearchPolicy.
+- Simulator/series chỉ `--ban-strategy legacy|contextual`, khôngban-response-model.
+- `compare_ban_strategies.py`chỉsohai mode, output `reports/legacy_contextual_comparison`; [hướngdẫn](BAN_LEGACY_VA_CONTEXTUAL.md).
+- Các mô tảsearch phía dưới là lịch sử đã ngừng sử dụng, không phải module hiện hành.
+
+## 24/11 — BanPlanner và đối chiếu3chiến lược
+
+- `ban_planner.py`: `BanPlanner.contextual/pools/access_before_enemy` đo loss pool/backup và self-denial; `response_distribution` lấy2phảnứnghợplệvới coverage; `evaluate_root/finish_rollout/leaf_value/recommend`rolloutgiớihạnvàxếphạng; `BanSearchPolicy`giữbudget.
+- `simulate_draft_match.py`/`simulate_fearless_series.py`: `--ban-strategy legacy|contextual|lookahead`, `--ban-response-model`;banadvicegiữroot/branch/proxy/coverage/latency; whylýdo/nhánh.
+- `compare_ban_strategies.py`: `summarize/quick_view`, validate3×5draft, replay583branch/295root, xuấtbảngBan/Pickvàsosánh.
+- [Chi tiết kiến thức và output](BAN_NGU_CANH_VA_LOOKAHEAD.md);nguồnhiệnhànhtrongsổmục14, khôngtựnhậnfullBO5planner.
+
+## 24/11 — audit lựa chọn, phạm vi chốt Trundle
+
+- `DraftMetaSnapshot.enemy_evidence`, `DraftAdvisor.evaluate_enemy_context`: thống kê địch mọi role, coverage và nhãn chưa xác nhậncounter.
+- `needs_tactical_review`, `alternatives_same_role`, `manual_review`: không apply auto thiếu căn cứ khi địch đủ5, exit3/partial session; [báo cáo](RA_SOAT_LUA_CHON_THEO_DOI_HINH.md).
+- `audit_draft_choices.py`: so sánh50pick đúngpublicstate, không sửa kết quả để loại một tên tướng.
+- Trước chỉ đạo dừng đã có `draft_states.py` và `opponent_model.py` (CUDA next-action prototype); xem sổ kiến thức mục11 cho trạng thái/artifacts. Không triển khai tiếp search/planner.
+
+## Series Fearless — 23/11/2026
+
+- `simulate_fearless_series.py`: `run_series`, `validate_game`, `markdown_report`; giữ union picks qua ván, kiểm tra lượt/pool, xuất100lượt và JSON căn cứ.
+- `AdvisorPolicy.candidate_min_games`: tách pool dữ liệu và ngưỡng evidence; lớp đủ mẫu được ưu tiên trước.
+- `pair_evidence.effective_lift`: shrink positive association theo pair sample và negative theo anchor sample.
+- Kết quả đã chạy: [5ván Worlds Fearless](../reports/worlds_fearless_bo5/REPORT.md).
+
+## Cập nhật role-pair / Worlds — 23/11/2026
+
+- `DraftMetaSnapshot._build_role_pairs`, `pair_evidence`: các cặp đúng game/side/cả hai role, co-pick share/Wilson, winrate riêng, conditional lift/decay và trạng thái thiếu mẫu.
+- `DraftAdvisor.recommend_picks`: điểm nền + geometric role-pair lift; `score_formula`, `base_priority`, `composition_lift`, `composition_evidence`. Không dùng tên đồng đội bỏ role như trước.
+- `simulate_draft_match.py`: giải thích composition không cộng tuyến tính, lưu căn cứ từng lượt và `composition_summary`10cặp/đội.
+- `evaluate_draft_policy.py --region WLDS`: replay và baseline trên Worlds; [số liệu và giới hạn](WORLDS_ROLE_PAIR_REVIEW.md).
+
+## Cập nhật 23/11/2026 — draft theo snapshot
+
+- `draft_meta.py`: MetaPolicy, DraftMetaSnapshot; cutoff/patch/decay/presence/slot/lineup; không sửa raw DB.
+- `draft_advisor.py`: điểm ổn định theo thành phần, phân phối flex role, cấm theo meta + đối thủ; policy có nhãn, không là probability.
+- `evaluate_draft_policy.py`: replay thứ tự pick, frozen historical snapshot, ba baseline/policy, game-bootstrap CI và ví dụ; chưa replay đầy đủ Fearless.
+- `simulate_draft_match.py`: as-of/patch/lookback/half-life/max-data-age/used-champions, lưu nguồn dữ liệu từng lượt.
+- Chi tiết và số liệu hiện hành: [LCK_DRAFT_REVIEW.md](LCK_DRAFT_REVIEW.md).
+
+> **Giả lập cấm/chọn hybrid:** chạy `.\.venv\Scripts\python.exe src/07_recommender/simulate_draft_match.py` tại thư mục gốc để mở menu. Có historical + content-based/cosine, gợi ý theo lượt, chọn tay/why/swap và lưu phiên. [Hướng dẫn](GIA_LAP_BAN_PICK.md). Đã kiểm chứng 24 tests và 5 kịch bản; chưa có bằng chứng tối ưu toàn cục/tăng thắng.
+
 # TỪ ĐIỂN DANH MỤC HÀM, CLASS & MODULE TOÀN BỘ DỰ ÁN (FUNCTION & API CATALOG)
 
 > **Môn học:** Nhập môn Khoa học Dữ liệu (Introduction to Data Science) - PTIT  

@@ -1,0 +1,254 @@
+Đang nạp lịch sử trận đấu và hồ sơ tướng...
+GIẢ LẬP BAN/PICK MỘT VÁN — LỊCH SỬ + CONTENT-BASED
+Bạn: blue; phe chọn trước: red; dữ liệu: WLDS
+SNAPSHOT LỊCH SỬ: patch dataset 16.20, dữ liệu đến 2026-11-09T00:56:00+00:00, cũ 4 ngày so với mốc yêu cầu
+106 trận trong cửa sổ 60 ngày, 94 trận patch đích; không gọi là live meta.
+Lineup T1 (latest_observed_lineup_not_live_roster): top=Doran, jng=Oner, mid=Faker, bot=Peyz, sup=Keria
+Lineup Gen.G (latest_observed_lineup_not_live_roster): top=Kiin, jng=Canyon, mid=Chovy, bot=Ruler, sup=Duro
+Ưu tiên presence/nhịp draft gần đây; bể tướng, đối đầu và cosine là tín hiệu hỗ trợ. Điểm không phải xác suất.
+
+==========================================================================================
+BLUE T1 | Cấm: —
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: —
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 1/20: RED Gen.G — CẤM
+ĐÃ CẤM: Jayce
+  Căn cứ: Mất pool địch 0.0038; chi phí tự cấm 0.0020; đội mình lấy lượt pick tới trước địch=True; Fearless khóa 10; 2 nhánh, giá trị dự kiến -0.0123
+
+==========================================================================================
+BLUE T1 | Cấm: —
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Jayce
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 2/20: BLUE T1 — CẤM
+ĐÃ CẤM: Nocturne
+  Căn cứ: Mất pool địch 0.0147; chi phí tự cấm 0.0067; đội mình lấy lượt pick tới trước địch=False; Fearless khóa 10; 2 nhánh, giá trị dự kiến 0.0155
+
+==========================================================================================
+BLUE T1 | Cấm: Nocturne
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Jayce
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 3/20: RED Gen.G — CẤM
+ĐÃ CẤM: Jarvan IV
+  Căn cứ: Mất pool địch 0.0088; chi phí tự cấm 0.0058; đội mình lấy lượt pick tới trước địch=True; Fearless khóa 10; 2 nhánh, giá trị dự kiến -0.0098
+
+==========================================================================================
+BLUE T1 | Cấm: Nocturne
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Jayce, Jarvan IV
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 4/20: BLUE T1 — CẤM
+ĐÃ CẤM: Pantheon
+  Căn cứ: Mất pool địch 0.0039; chi phí tự cấm 0.0008; đội mình lấy lượt pick tới trước địch=False; Fearless khóa 10; 2 nhánh, giá trị dự kiến 0.0166
+
+==========================================================================================
+BLUE T1 | Cấm: Nocturne, Pantheon
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Jayce, Jarvan IV
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 5/20: RED Gen.G — CẤM
+ĐÃ CẤM: Ambessa
+  Căn cứ: Mất pool địch 0.0024; chi phí tự cấm 0.0005; đội mình lấy lượt pick tới trước địch=True; Fearless khóa 10; 2 nhánh, giá trị dự kiến -0.0207
+
+==========================================================================================
+BLUE T1 | Cấm: Nocturne, Pantheon
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Jayce, Jarvan IV, Ambessa
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 6/20: BLUE T1 — CẤM
+ĐÃ CẤM: Nautilus
+  Căn cứ: Mất pool địch 0.0067; chi phí tự cấm 0.0029; đội mình lấy lượt pick tới trước địch=False; Fearless khóa 10; 2 nhánh, giá trị dự kiến 0.0551
+
+==========================================================================================
+BLUE T1 | Cấm: Nocturne, Pantheon, Nautilus
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Jayce, Jarvan IV, Ambessa
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 7/20: RED Gen.G — CHỌN
+ĐÃ CHỌN: Olaf [top]
+  Căn cứ: Slot F1: ưu tiên chọn quan sát 0.053; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Nocturne, Pantheon, Nautilus
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Jayce, Jarvan IV, Ambessa
+Top: Olaf | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 8/20: BLUE T1 — CHỌN
+ĐÃ CHỌN: Renata Glasc [sup]
+  Căn cứ: Slot S1: ưu tiên chọn quan sát 0.013; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Nocturne, Pantheon, Nautilus
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: Renata Glasc
+RED Gen.G | Cấm: Jayce, Jarvan IV, Ambessa
+Top: Olaf | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 9/20: BLUE T1 — CHỌN
+ĐÃ CHỌN: Kalista [bot]
+  Căn cứ: Slot S2: ưu tiên chọn quan sát 0.011; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Nocturne, Pantheon, Nautilus
+Top: — | Rừng: — | Mid: — | Xạ thủ: Kalista | Hỗ trợ: Renata Glasc
+RED Gen.G | Cấm: Jayce, Jarvan IV, Ambessa
+Top: Olaf | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 10/20: RED Gen.G — CHỌN
+ĐÃ CHỌN: Jhin [bot]
+  Căn cứ: Slot F2: ưu tiên chọn quan sát 0.036; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Nocturne, Pantheon, Nautilus
+Top: — | Rừng: — | Mid: — | Xạ thủ: Kalista | Hỗ trợ: Renata Glasc
+RED Gen.G | Cấm: Jayce, Jarvan IV, Ambessa
+Top: Olaf | Rừng: — | Mid: — | Xạ thủ: Jhin | Hỗ trợ: —
+
+LƯỢT 11/20: RED Gen.G — CHỌN
+ĐÃ CHỌN: Lee Sin [jng]
+  Căn cứ: Slot F3: ưu tiên chọn quan sát 0.028; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Nocturne, Pantheon, Nautilus
+Top: — | Rừng: — | Mid: — | Xạ thủ: Kalista | Hỗ trợ: Renata Glasc
+RED Gen.G | Cấm: Jayce, Jarvan IV, Ambessa
+Top: Olaf | Rừng: Lee Sin | Mid: — | Xạ thủ: Jhin | Hỗ trợ: —
+
+LƯỢT 12/20: BLUE T1 — CHỌN
+ĐÃ CHỌN: Orianna [mid]
+  Căn cứ: Slot S3: ưu tiên chọn quan sát 0.053; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Nocturne, Pantheon, Nautilus
+Top: — | Rừng: — | Mid: Orianna | Xạ thủ: Kalista | Hỗ trợ: Renata Glasc
+RED Gen.G | Cấm: Jayce, Jarvan IV, Ambessa
+Top: Olaf | Rừng: Lee Sin | Mid: — | Xạ thủ: Jhin | Hỗ trợ: —
+
+LƯỢT 13/20: BLUE T1 — CẤM
+ĐÃ CẤM: Alistar
+  Căn cứ: Mất pool địch 0.0063; chi phí tự cấm 0.0000; đội mình lấy lượt pick tới trước địch=True; Fearless khóa 10; 2 nhánh, giá trị dự kiến -0.0027
+
+==========================================================================================
+BLUE T1 | Cấm: Nocturne, Pantheon, Nautilus, Alistar
+Top: — | Rừng: — | Mid: Orianna | Xạ thủ: Kalista | Hỗ trợ: Renata Glasc
+RED Gen.G | Cấm: Jayce, Jarvan IV, Ambessa
+Top: Olaf | Rừng: Lee Sin | Mid: — | Xạ thủ: Jhin | Hỗ trợ: —
+
+LƯỢT 14/20: RED Gen.G — CẤM
+ĐÃ CẤM: Wukong
+  Căn cứ: Mất pool địch 0.0059; chi phí tự cấm 0.0000; đội mình lấy lượt pick tới trước địch=False; Fearless khóa 10; 2 nhánh, giá trị dự kiến 0.0140
+
+==========================================================================================
+BLUE T1 | Cấm: Nocturne, Pantheon, Nautilus, Alistar
+Top: — | Rừng: — | Mid: Orianna | Xạ thủ: Kalista | Hỗ trợ: Renata Glasc
+RED Gen.G | Cấm: Jayce, Jarvan IV, Ambessa, Wukong
+Top: Olaf | Rừng: Lee Sin | Mid: — | Xạ thủ: Jhin | Hỗ trợ: —
+
+LƯỢT 15/20: BLUE T1 — CẤM
+ĐÃ CẤM: Lulu
+  Căn cứ: Mất pool địch 0.0074; chi phí tự cấm 0.0000; đội mình lấy lượt pick tới trước địch=True; Fearless khóa 10; 2 nhánh, giá trị dự kiến -0.0018
+
+==========================================================================================
+BLUE T1 | Cấm: Nocturne, Pantheon, Nautilus, Alistar, Lulu
+Top: — | Rừng: — | Mid: Orianna | Xạ thủ: Kalista | Hỗ trợ: Renata Glasc
+RED Gen.G | Cấm: Jayce, Jarvan IV, Ambessa, Wukong
+Top: Olaf | Rừng: Lee Sin | Mid: — | Xạ thủ: Jhin | Hỗ trợ: —
+
+LƯỢT 16/20: RED Gen.G — CẤM
+ĐÃ CẤM: K'Sante
+  Căn cứ: Mất pool địch 0.0047; chi phí tự cấm 0.0000; đội mình lấy lượt pick tới trước địch=False; Fearless khóa 10; 2 nhánh, giá trị dự kiến 0.0058
+
+==========================================================================================
+BLUE T1 | Cấm: Nocturne, Pantheon, Nautilus, Alistar, Lulu
+Top: — | Rừng: — | Mid: Orianna | Xạ thủ: Kalista | Hỗ trợ: Renata Glasc
+RED Gen.G | Cấm: Jayce, Jarvan IV, Ambessa, Wukong, K'Sante
+Top: Olaf | Rừng: Lee Sin | Mid: — | Xạ thủ: Jhin | Hỗ trợ: —
+
+LƯỢT 17/20: BLUE T1 — CHỌN
+ĐÃ CHỌN: Renekton [top]
+  Căn cứ: Slot S4: ưu tiên chọn quan sát 0.007; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Nocturne, Pantheon, Nautilus, Alistar, Lulu
+Top: Renekton | Rừng: — | Mid: Orianna | Xạ thủ: Kalista | Hỗ trợ: Renata Glasc
+RED Gen.G | Cấm: Jayce, Jarvan IV, Ambessa, Wukong, K'Sante
+Top: Olaf | Rừng: Lee Sin | Mid: — | Xạ thủ: Jhin | Hỗ trợ: —
+
+LƯỢT 18/20: RED Gen.G — CHỌN
+ĐÃ CHỌN: Galio [mid]
+  Căn cứ: Slot F4: ưu tiên chọn quan sát 0.009; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Nocturne, Pantheon, Nautilus, Alistar, Lulu
+Top: Renekton | Rừng: — | Mid: Orianna | Xạ thủ: Kalista | Hỗ trợ: Renata Glasc
+RED Gen.G | Cấm: Jayce, Jarvan IV, Ambessa, Wukong, K'Sante
+Top: Olaf | Rừng: Lee Sin | Mid: Galio | Xạ thủ: Jhin | Hỗ trợ: —
+
+LƯỢT 19/20: RED Gen.G — CHỌN
+ĐÃ CHỌN: Rakan [sup]
+  Căn cứ: Slot F5: ưu tiên chọn quan sát 0.057; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Nocturne, Pantheon, Nautilus, Alistar, Lulu
+Top: Renekton | Rừng: — | Mid: Orianna | Xạ thủ: Kalista | Hỗ trợ: Renata Glasc
+RED Gen.G | Cấm: Jayce, Jarvan IV, Ambessa, Wukong, K'Sante
+Top: Olaf | Rừng: Lee Sin | Mid: Galio | Xạ thủ: Jhin | Hỗ trợ: Rakan
+
+LƯỢT 20/20: BLUE T1 — CHỌN
+ĐÃ CHỌN: Xin Zhao [jng]
+  Căn cứ: Slot S5: ưu tiên chọn quan sát 0.005; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Nocturne, Pantheon, Nautilus, Alistar, Lulu
+Top: Renekton | Rừng: Xin Zhao | Mid: Orianna | Xạ thủ: Kalista | Hỗ trợ: Renata Glasc
+RED Gen.G | Cấm: Jayce, Jarvan IV, Ambessa, Wukong, K'Sante
+Top: Olaf | Rừng: Lee Sin | Mid: Galio | Xạ thủ: Jhin | Hỗ trợ: Rakan
+Căn cứ cặp T1: observed_pairs=1, sparse_pairs=9, unobserved_pairs=0, insufficient_anchor_pairs=0
+Căn cứ cặp Gen.G: observed_pairs=2, sparse_pairs=7, unobserved_pairs=1, insufficient_anchor_pairs=0
+
+===============================================================================================
+📋 BẢNG ĐỘI HÌNH HOÀN THIỆN SAU KHI CẤM/CHỌN (FINAL DRAFT)
+===============================================================================================
+🔷 PHE XANH (T1):
+   • TOP: Renekton (Doran)
+   • JNG: Xin Zhao (Oner)
+   • MID: Orianna (Faker)
+   • BOT: Kalista (Peyz)
+   • SUP: Renata Glasc (Keria)
+
+🔴 PHE ĐỎ (Gen.G):
+   • TOP: Olaf (Kiin)
+   • JNG: Lee Sin (Canyon)
+   • MID: Galio (Chovy)
+   • BOT: Jhin (Ruler)
+   • SUP: Rakan (Duro)
+Radar và thẻ chiến thuật dùng thuộc tính/quy tắc chuyên gia; chưa được xác nhận như điều kiện thắng nhân quả.
+
+────────────────────────────────────── THẺ CHIẾN THUẬT: T1 (BLUE) ──────────────────────────────────────
+🏆 Trường phái: [WOMBOCOMBO & OBJECTIVE CONTROL]
+📊 Radar 5 trục: Early: 0.812 | Scaling: 0.652 | Combat: 0.768 | Pick: 0.75 | Obj: 0.745
+⭐ Chủ lực (Core Carry): Orianna
+⏱️ Điểm rơi sức mạnh: Giữa và Cuối trận (Phút 20 đến Phút 35 - Giai đoạn Rồng 3, 4 và Baron)
+🐉 Mục tiêu số 1: Rồng Nguyên Tố (Thiết lập Linh Hồn Rồng) & Hang Baron
+✅ Điều kiện thắng: Kiểm soát tầm nhìn trước 1 phút tại hang mục tiêu lớn, ép đối thủ vào các góc hẹp của sông và tung Wombocombo 5v5 quét sạch.
+❌ Cần tránh: Để đối thủ chia cắt đội hình đẩy lẻ 1-3-1 hoặc giao tranh khi chưa có đủ chiêu cuối mở combat.
+
+────────────────────────────────────── THẺ CHIẾN THUẬT: GEN.G (RED) ──────────────────────────────────────
+🏆 Trường phái: [WOMBOCOMBO & OBJECTIVE CONTROL]
+📊 Radar 5 trục: Early: 0.83 | Scaling: 0.675 | Combat: 0.722 | Pick: 0.853 | Obj: 0.632
+⭐ Chủ lực (Core Carry): Jhin
+⏱️ Điểm rơi sức mạnh: Giữa và Cuối trận (Phút 20 đến Phút 35 - Giai đoạn Rồng 3, 4 và Baron)
+🐉 Mục tiêu số 1: Rồng Nguyên Tố (Thiết lập Linh Hồn Rồng) & Hang Baron
+✅ Điều kiện thắng: Kiểm soát tầm nhìn trước 1 phút tại hang mục tiêu lớn, ép đối thủ vào các góc hẹp của sông và tung Wombocombo 5v5 quét sạch.
+❌ Cần tránh: Để đối thủ chia cắt đội hình đẩy lẻ 1-3-1 hoặc giao tranh khi chưa có đủ chiêu cuối mở combat.
+Phiên có mốc lịch sử: bỏ dự báo từ model lưu sẵn vì chưa bảo đảm model được fit trước mốc này.
+Đã lưu phiên: reports\ban_strategy_comparison\lookahead\game_2.json

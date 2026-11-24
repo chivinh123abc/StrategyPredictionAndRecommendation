@@ -1,3 +1,15 @@
+> **Hiện hành24/11: chỉ legacy và contextual.** Lookahead đã gỡ khỏi code/CLI. Hai chế độ đều được chạy kiểm tra đủ5draftT1–Gen.G;57testsPASS. [Phương pháp/lệnhchạy](../../docs/BAN_LEGACY_VA_CONTEXTUAL.md). Những mô tảsearch phía dưới là lịch sử trước quyết định này.
+
+> **24/11 — sửa tự chọn thiếu căn cứ:** auto dừng chờreview khi địch đã lộ5và pick không có đối đầu đủ mẫu, lưu alternatives/completefalse; không xác nhậncounter. [Phạm viTrundle, kết quả và lệnh chạy](../../docs/RA_SOAT_LUA_CHON_THEO_DOI_HINH.md). 51testsPASS; dừng phát triển tiếp theo yêu cầu người dùng.
+
+> **5ván Worlds Fearless:** chạy `.\.venv\Scripts\python.exe src/07_recommender/simulate_fearless_series.py`. Đã validate100lượt,50picks khác nhau, khóa0/10/20/30/40,38testsPASS. Không gán kết quả game. [Ban/pick đầy đủ](../../reports/worlds_fearless_bo5/REPORT.md).
+
+> **Draft Worlds và phối hợp toàn đội:** đã thêm association cho mọi cặp role, counts/CI và ma trận10cặp/đội; không gán cứng combo theo tên. 35 tests PASS, 2 phiên Worlds20lượt; audit200lượt Recall@5=36% so với baseline30%, chưa là final test hoặc bằng chứng tăng thắng. [Kết quả và lệnh chạy](../../docs/WORLDS_ROLE_PAIR_REVIEW.md).
+
+> **Minh chứng Chương 6:** đã bổ sung content-based item/user profiles + cosine; đã kiểm chứng (16 tests, notebook 6 cell mã, CLI/engine PASS). Xem [hướng dẫn](../../docs/CHUONG_6_CONTENT_BASED.md).
+
+> **Integrity v2:** Nội dung dưới đây là thiết kế/lịch sử trước đợt sửa. Hành vi hiện hành, các giới hạn và lệnh chạy được mô tả tại [INTEGRITY_V2.md](../../docs/INTEGRITY_V2.md). Không dùng các tỷ lệ/kết luận cũ làm bằng chứng kết quả hiện tại.
+
 # Module 07: Hệ Thống Gợi Ý Cấm/Chọn & Nhận Diện Điều Kiện Thắng (Ban/Pick Recommender & Win Condition Engine)
 
 ## Mục tiêu & Trách nhiệm

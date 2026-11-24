@@ -1,0 +1,1575 @@
+{
+  "first_pick_side": "blue",
+  "picks": {
+    "blue": {
+      "jng": "Lee Sin",
+      "mid": "Orianna",
+      "sup": "Nautilus",
+      "top": "Ambessa",
+      "bot": "Jhin"
+    },
+    "red": {
+      "bot": "Ezreal",
+      "mid": "Syndra",
+      "sup": "Seraphine",
+      "jng": "Wukong",
+      "top": "Galio"
+    }
+  },
+  "bans": {
+    "blue": [
+      "Nocturne",
+      "Renata Glasc",
+      "Qiyana",
+      "Jarvan IV",
+      "K'Sante"
+    ],
+    "red": [
+      "Vi",
+      "Cassiopeia",
+      "Olaf",
+      "Jayce",
+      "Rumble"
+    ]
+  },
+  "history": [
+    {
+      "turn": 1,
+      "side": "blue",
+      "action": "ban",
+      "champion": "Nocturne",
+      "role": null,
+      "advice": {
+        "score_kind": "patch_aware_ban_priority_points",
+        "denial_loss": 0.04185999153581832,
+        "ban_priority": 0.618955000562912,
+        "reasons": [
+          "Presence gần đây 86.0%, bị cấm 68.1%; điểm ưu tiên đối thủ 0.387; chênh lựa chọn 0.042"
+        ],
+        "reason": "Presence gần đây 86.0%, bị cấm 68.1%; điểm ưu tiên đối thủ 0.387; chênh lựa chọn 0.042",
+        "meta_scope": {
+          "region": "WLDS",
+          "dataset_patch": "16.20",
+          "data_through": "2026-11-14T23:18:11+00:00",
+          "requested_as_of": "2026-11-14T23:59:59.999999999+00:00",
+          "staleness_days": 0,
+          "history_games": 110,
+          "patch_games": 98,
+          "lookback_days": 60,
+          "half_life_days": 21,
+          "claim": "historical_snapshot_not_live_meta"
+        }
+      }
+    },
+    {
+      "turn": 2,
+      "side": "red",
+      "action": "ban",
+      "champion": "Vi",
+      "role": null,
+      "advice": {
+        "score_kind": "patch_aware_ban_priority_points",
+        "denial_loss": 0.07978326836132998,
+        "ban_priority": 0.5680411714998621,
+        "reasons": [
+          "Presence gần đây 76.1%, bị cấm 59.4%; điểm ưu tiên đối thủ 0.397; chênh lựa chọn 0.080"
+        ],
+        "reason": "Presence gần đây 76.1%, bị cấm 59.4%; điểm ưu tiên đối thủ 0.397; chênh lựa chọn 0.080",
+        "meta_scope": {
+          "region": "WLDS",
+          "dataset_patch": "16.20",
+          "data_through": "2026-11-14T23:18:11+00:00",
+          "requested_as_of": "2026-11-14T23:59:59.999999999+00:00",
+          "staleness_days": 0,
+          "history_games": 110,
+          "patch_games": 98,
+          "lookback_days": 60,
+          "half_life_days": 21,
+          "claim": "historical_snapshot_not_live_meta"
+        }
+      }
+    },
+    {
+      "turn": 3,
+      "side": "blue",
+      "action": "ban",
+      "champion": "Renata Glasc",
+      "role": null,
+      "advice": {
+        "score_kind": "patch_aware_ban_priority_points",
+        "denial_loss": 0.058535044102823675,
+        "ban_priority": 0.5373171486547488,
+        "reasons": [
+          "Presence gần đây 74.3%, bị cấm 57.5%; điểm ưu tiên đối thủ 0.331; chênh lựa chọn 0.059"
+        ],
+        "reason": "Presence gần đây 74.3%, bị cấm 57.5%; điểm ưu tiên đối thủ 0.331; chênh lựa chọn 0.059",
+        "meta_scope": {
+          "region": "WLDS",
+          "dataset_patch": "16.20",
+          "data_through": "2026-11-14T23:18:11+00:00",
+          "requested_as_of": "2026-11-14T23:59:59.999999999+00:00",
+          "staleness_days": 0,
+          "history_games": 110,
+          "patch_games": 98,
+          "lookback_days": 60,
+          "half_life_days": 21,
+          "claim": "historical_snapshot_not_live_meta"
+        }
+      }
+    },
+    {
+      "turn": 4,
+      "side": "red",
+      "action": "ban",
+      "champion": "Cassiopeia",
+      "role": null,
+      "advice": {
+        "score_kind": "patch_aware_ban_priority_points",
+        "denial_loss": 0.04154553628785951,
+        "ban_priority": 0.4823312199672758,
+        "reasons": [
+          "Presence gần đây 65.1%, bị cấm 46.4%; điểm ưu tiên đối thủ 0.342; chênh lựa chọn 0.042"
+        ],
+        "reason": "Presence gần đây 65.1%, bị cấm 46.4%; điểm ưu tiên đối thủ 0.342; chênh lựa chọn 0.042",
+        "meta_scope": {
+          "region": "WLDS",
+          "dataset_patch": "16.20",
+          "data_through": "2026-11-14T23:18:11+00:00",
+          "requested_as_of": "2026-11-14T23:59:59.999999999+00:00",
+          "staleness_days": 0,
+          "history_games": 110,
+          "patch_games": 98,
+          "lookback_days": 60,
+          "half_life_days": 21,
+          "claim": "historical_snapshot_not_live_meta"
+        }
+      }
+    },
+    {
+      "turn": 5,
+      "side": "blue",
+      "action": "ban",
+      "champion": "Qiyana",
+      "role": null,
+      "advice": {
+        "score_kind": "patch_aware_ban_priority_points",
+        "denial_loss": 0.06250421747265367,
+        "ban_priority": 0.45847606002255403,
+        "reasons": [
+          "Presence gần đây 60.5%, bị cấm 38.5%; điểm ưu tiên đối thủ 0.345; chênh lựa chọn 0.063"
+        ],
+        "reason": "Presence gần đây 60.5%, bị cấm 38.5%; điểm ưu tiên đối thủ 0.345; chênh lựa chọn 0.063",
+        "meta_scope": {
+          "region": "WLDS",
+          "dataset_patch": "16.20",
+          "data_through": "2026-11-14T23:18:11+00:00",
+          "requested_as_of": "2026-11-14T23:59:59.999999999+00:00",
+          "staleness_days": 0,
+          "history_games": 110,
+          "patch_games": 98,
+          "lookback_days": 60,
+          "half_life_days": 21,
+          "claim": "historical_snapshot_not_live_meta"
+        }
+      }
+    },
+    {
+      "turn": 6,
+      "side": "red",
+      "action": "ban",
+      "champion": "Olaf",
+      "role": null,
+      "advice": {
+        "score_kind": "patch_aware_ban_priority_points",
+        "denial_loss": 0.05597931117161603,
+        "ban_priority": 0.4354344160002163,
+        "reasons": [
+          "Presence gần đây 57.5%, bị cấm 37.7%; điểm ưu tiên đối thủ 0.328; chênh lựa chọn 0.056"
+        ],
+        "reason": "Presence gần đây 57.5%, bị cấm 37.7%; điểm ưu tiên đối thủ 0.328; chênh lựa chọn 0.056",
+        "meta_scope": {
+          "region": "WLDS",
+          "dataset_patch": "16.20",
+          "data_through": "2026-11-14T23:18:11+00:00",
+          "requested_as_of": "2026-11-14T23:59:59.999999999+00:00",
+          "staleness_days": 0,
+          "history_games": 110,
+          "patch_games": 98,
+          "lookback_days": 60,
+          "half_life_days": 21,
+          "claim": "historical_snapshot_not_live_meta"
+        }
+      }
+    },
+    {
+      "turn": 7,
+      "side": "blue",
+      "action": "pick",
+      "champion": "Lee Sin",
+      "role": "jng",
+      "advice": {
+        "score_kind": "patch_aware_draft_priority_points",
+        "ranking_score": 31.7,
+        "score_components": {
+          "meta": {
+            "value": 0.5055579119871747,
+            "weight": 1.0
+          },
+          "draft_order": {
+            "value": 0.10682465223282252,
+            "weight": 1.0
+          },
+          "historical": {
+            "value": 0.37772167637354503,
+            "weight": 0.25
+          },
+          "mastery": {
+            "value": 0.2078580792503742,
+            "weight": 0.5
+          },
+          "content": {
+            "value": 0.9257605565942181,
+            "weight": 0.1
+          }
+        },
+        "cosine_similarity": 0.9257605565942181,
+        "games": 31,
+        "historical": {
+          "wins": 17,
+          "games": 31,
+          "winrate": 0.5483870967741935,
+          "ci95_wilson": [
+            0.37772167637354503,
+            0.7083826401947998
+          ],
+          "statistic_kind": "historical_team_result",
+          "causal_uplift": null
+        },
+        "matchup": null,
+        "matchup_candidates": [],
+        "synergies": [],
+        "player_history": {
+          "wins": 3,
+          "games": 3,
+          "winrate": 1.0,
+          "ci95_wilson": [
+            0.4385029682449546,
+            1.0
+          ],
+          "statistic_kind": "historical_team_result",
+          "causal_uplift": null
+        },
+        "reasons": [
+          "Patch dataset 16.20: presence cửa sổ gần đây 50.6%; 30 lượt chọn đúng vị trí trên patch, 31 trận trong cửa sổ gần đây",
+          "Slot F1: ưu tiên chọn quan sát 0.107; không phải xác suất thắng",
+          "Chưa đủ căn cứ đối đầu cùng đường; không gán kèo khắc chế cố định",
+          "Cosine 0.926 từ profile tuyển thủ Oner; chỉ là hỗ trợ tương đồng"
+        ],
+        "draft_slot": "F1",
+        "meta_scope": {
+          "region": "WLDS",
+          "dataset_patch": "16.20",
+          "data_through": "2026-11-14T23:18:11+00:00",
+          "requested_as_of": "2026-11-14T23:59:59.999999999+00:00",
+          "staleness_days": 0,
+          "history_games": 110,
+          "patch_games": 98,
+          "lookback_days": 60,
+          "half_life_days": 21,
+          "claim": "historical_snapshot_not_live_meta"
+        }
+      }
+    },
+    {
+      "turn": 8,
+      "side": "red",
+      "action": "pick",
+      "champion": "Ezreal",
+      "role": "bot",
+      "advice": {
+        "score_kind": "patch_aware_draft_priority_points",
+        "ranking_score": 33.11,
+        "score_components": {
+          "meta": {
+            "value": 0.5232888684142046,
+            "weight": 1.0
+          },
+          "draft_order": {
+            "value": 0.08007565912524137,
+            "weight": 1.0
+          },
+          "historical": {
+            "value": 0.30869387108068835,
+            "weight": 0.25
+          },
+          "matchup": {
+            "value": 0.5,
+            "weight": 0.5
+          },
+          "mastery": {
+            "value": 0.182071088520533,
+            "weight": 0.5
+          },
+          "content": {
+            "value": 0.8771876562946026,
+            "weight": 0.1
+          }
+        },
+        "cosine_similarity": 0.8771876562946026,
+        "games": 32,
+        "historical": {
+          "wins": 15,
+          "games": 32,
+          "winrate": 0.46875,
+          "ci95_wilson": [
+            0.30869387108068835,
+            0.6355048288102536
+          ],
+          "statistic_kind": "historical_team_result",
+          "causal_uplift": null
+        },
+        "matchup": null,
+        "matchup_candidates": [],
+        "synergies": [],
+        "player_history": {
+          "wins": 2,
+          "games": 3,
+          "winrate": 0.6666666666666666,
+          "ci95_wilson": [
+            0.2076596008020477,
+            0.9385080552796037
+          ],
+          "statistic_kind": "historical_team_result",
+          "causal_uplift": null
+        },
+        "reasons": [
+          "Patch dataset 16.20: presence cửa sổ gần đây 52.3%; 29 lượt chọn đúng vị trí trên patch, 32 trận trong cửa sổ gần đây",
+          "Slot S1: ưu tiên chọn quan sát 0.080; không phải xác suất thắng",
+          "Chưa đủ căn cứ đối đầu cùng đường; không gán kèo khắc chế cố định",
+          "Cosine 0.877 từ profile tuyển thủ Ruler; chỉ là hỗ trợ tương đồng"
+        ],
+        "draft_slot": "S1",
+        "meta_scope": {
+          "region": "WLDS",
+          "dataset_patch": "16.20",
+          "data_through": "2026-11-14T23:18:11+00:00",
+          "requested_as_of": "2026-11-14T23:59:59.999999999+00:00",
+          "staleness_days": 0,
+          "history_games": 110,
+          "patch_games": 98,
+          "lookback_days": 60,
+          "half_life_days": 21,
+          "claim": "historical_snapshot_not_live_meta"
+        }
+      }
+    },
+    {
+      "turn": 9,
+      "side": "red",
+      "action": "pick",
+      "champion": "Syndra",
+      "role": "mid",
+      "advice": {
+        "score_kind": "patch_aware_draft_priority_points",
+        "ranking_score": 33.42,
+        "score_components": {
+          "meta": {
+            "value": 0.540931054447787,
+            "weight": 1.0
+          },
+          "draft_order": {
+            "value": 0.017839828266383407,
+            "weight": 1.0
+          },
+          "historical": {
+            "value": 0.4253485008511553,
+            "weight": 0.25
+          },
+          "matchup": {
+            "value": 0.5,
+            "weight": 0.5
+          },
+          "synergy": {
+            "value": 0.5,
+            "weight": 0.25
+          },
+          "mastery": {
+            "value": 0.13522030021993822,
+            "weight": 0.5
+          },
+          "content": {
+            "value": 0.9548899909208864,
+            "weight": 0.1
+          }
+        },
+        "cosine_similarity": 0.9548899909208864,
+        "games": 26,
+        "historical": {
+          "wins": 16,
+          "games": 26,
+          "winrate": 0.6153846153846154,
+          "ci95_wilson": [
+            0.4253485008511553,
+            0.7757140556428721
+          ],
+          "statistic_kind": "historical_team_result",
+          "causal_uplift": null
+        },
+        "matchup": null,
+        "matchup_candidates": [],
+        "synergies": [
+          {
+            "wins": 1,
+            "games": 3,
+            "winrate": 0.3333333333333333,
+            "ci95_wilson": [
+              0.06149194472039621,
+              0.7923403991979522
+            ],
+            "statistic_kind": "historical_team_result",
+            "causal_uplift": null,
+            "ally": "Ezreal"
+          }
+        ],
+        "player_history": {
+          "wins": 2,
+          "games": 2,
+          "winrate": 1.0,
+          "ci95_wilson": [
+            0.34238022750665303,
+            1.0
+          ],
+          "statistic_kind": "historical_team_result",
+          "causal_uplift": null
+        },
+        "reasons": [
+          "Patch dataset 16.20: presence cửa sổ gần đây 54.1%; 24 lượt chọn đúng vị trí trên patch, 26 trận trong cửa sổ gần đây",
+          "Slot S2: ưu tiên chọn quan sát 0.018; không phải xác suất thắng",
+          "Chưa đủ căn cứ đối đầu cùng đường; không gán kèo khắc chế cố định",
+          "Cosine 0.955 từ profile tuyển thủ Chovy; chỉ là hỗ trợ tương đồng"
+        ],
+        "draft_slot": "S2",
+        "meta_scope": {
+          "region": "WLDS",
+          "dataset_patch": "16.20",
+          "data_through": "2026-11-14T23:18:11+00:00",
+          "requested_as_of": "2026-11-14T23:59:59.999999999+00:00",
+          "staleness_days": 0,
+          "history_games": 110,
+          "patch_games": 98,
+          "lookback_days": 60,
+          "half_life_days": 21,
+          "claim": "historical_snapshot_not_live_meta"
+        }
+      }
+    },
+    {
+      "turn": 10,
+      "side": "blue",
+      "action": "pick",
+      "champion": "Orianna",
+      "role": "mid",
+      "advice": {
+        "score_kind": "patch_aware_draft_priority_points",
+        "ranking_score": 32.19,
+        "score_components": {
+          "meta": {
+            "value": 0.5043911052289662,
+            "weight": 1.0
+          },
+          "draft_order": {
+            "value": 0.038643727315448365,
+            "weight": 1.0
+          },
+          "historical": {
+            "value": 0.4253485008511553,
+            "weight": 0.25
+          },
+          "matchup": {
+            "value": 0.5,
+            "weight": 0.5
+          },
+          "synergy": {
+            "value": 0.5192307692307692,
+            "weight": 0.25
+          },
+          "mastery": {
+            "value": 0.06316985304358481,
+            "weight": 0.5
+          },
+          "content": {
+            "value": 0.981190253881332,
+            "weight": 0.1
+          }
+        },
+        "cosine_similarity": 0.981190253881332,
+        "games": 26,
+        "historical": {
+          "wins": 16,
+          "games": 26,
+          "winrate": 0.6153846153846154,
+          "ci95_wilson": [
+            0.4253485008511553,
+            0.7757140556428721
+          ],
+          "statistic_kind": "historical_team_result",
+          "causal_uplift": null
+        },
+        "matchup": null,
+        "matchup_candidates": [
+          {
+            "wins": 0,
+            "games": 2,
+            "winrate": 0.0,
+            "ci95_wilson": [
+              0.0,
+              0.6576197724933469
+            ],
+            "statistic_kind": "historical_team_result",
+            "causal_uplift": null,
+            "opponent": "Syndra",
+            "role_probability": 1.0
+          }
+        ],
+        "synergies": [
+          {
+            "wins": 4,
+            "games": 6,
+            "winrate": 0.6666666666666666,
+            "ci95_wilson": [
+              0.299993315138392,
+              0.9032285888942195
+            ],
+            "statistic_kind": "historical_team_result",
+            "causal_uplift": null,
+            "ally": "Lee Sin"
+          }
+        ],
+        "player_history": {
+          "wins": 1,
+          "games": 1,
+          "winrate": 1.0,
+          "ci95_wilson": [
+            0.20654931437723745,
+            1.0
+          ],
+          "statistic_kind": "historical_team_result",
+          "causal_uplift": null
+        },
+        "reasons": [
+          "Patch dataset 16.20: presence cửa sổ gần đây 50.4%; 24 lượt chọn đúng vị trí trên patch, 26 trận trong cửa sổ gần đây",
+          "Slot F2: ưu tiên chọn quan sát 0.039; không phải xác suất thắng",
+          "Vị trí địch còn là giả định: Syndra p(role)=1.00, n=2",
+          "Phối hợp lịch sử: Lee Sin n=6",
+          "Cosine 0.981 từ profile tuyển thủ Faker; chỉ là hỗ trợ tương đồng"
+        ],
+        "draft_slot": "F2",
+        "meta_scope": {
+          "region": "WLDS",
+          "dataset_patch": "16.20",
+          "data_through": "2026-11-14T23:18:11+00:00",
+          "requested_as_of": "2026-11-14T23:59:59.999999999+00:00",
+          "staleness_days": 0,
+          "history_games": 110,
+          "patch_games": 98,
+          "lookback_days": 60,
+          "half_life_days": 21,
+          "claim": "historical_snapshot_not_live_meta"
+        }
+      }
+    },
+    {
+      "turn": 11,
+      "side": "blue",
+      "action": "pick",
+      "champion": "Nautilus",
+      "role": "sup",
+      "advice": {
+        "score_kind": "patch_aware_draft_priority_points",
+        "ranking_score": 33.09,
+        "score_components": {
+          "meta": {
+            "value": 0.44637829159260267,
+            "weight": 1.0
+          },
+          "draft_order": {
+            "value": 0.09282470098732197,
+            "weight": 1.0
+          },
+          "historical": {
+            "value": 0.4422923441210239,
+            "weight": 0.25
+          },
+          "matchup": {
+            "value": 0.5,
+            "weight": 0.5
+          },
+          "synergy": {
+            "value": 0.5180343742435245,
+            "weight": 0.25
+          },
+          "mastery": {
+            "value": 0.14834413075919103,
+            "weight": 0.5
+          },
+          "content": {
+            "value": 0.8783222356452445,
+            "weight": 0.1
+          }
+        },
+        "cosine_similarity": 0.8783222356452445,
+        "games": 27,
+        "historical": {
+          "wins": 17,
+          "games": 27,
+          "winrate": 0.6296296296296297,
+          "ci95_wilson": [
+            0.4422923441210239,
+            0.784674870390344
+          ],
+          "statistic_kind": "historical_team_result",
+          "causal_uplift": null
+        },
+        "matchup": null,
+        "matchup_candidates": [],
+        "synergies": [
+          {
+            "wins": 4,
+            "games": 8,
+            "winrate": 0.5,
+            "ci95_wilson": [
+              0.21521606221387757,
+              0.7847839377861224
+            ],
+            "statistic_kind": "historical_team_result",
+            "causal_uplift": null,
+            "ally": "Lee Sin"
+          },
+          {
+            "wins": 6,
+            "games": 7,
+            "winrate": 0.8571428571428571,
+            "ci95_wilson": [
+              0.4868721707256811,
+              0.9743203756552565
+            ],
+            "statistic_kind": "historical_team_result",
+            "causal_uplift": null,
+            "ally": "Orianna"
+          }
+        ],
+        "player_history": {
+          "wins": 2,
+          "games": 2,
+          "winrate": 1.0,
+          "ci95_wilson": [
+            0.34238022750665303,
+            1.0
+          ],
+          "statistic_kind": "historical_team_result",
+          "causal_uplift": null
+        },
+        "reasons": [
+          "Patch dataset 16.20: presence cửa sổ gần đây 44.6%; 25 lượt chọn đúng vị trí trên patch, 27 trận trong cửa sổ gần đây",
+          "Slot F3: ưu tiên chọn quan sát 0.093; không phải xác suất thắng",
+          "Chưa đủ căn cứ đối đầu cùng đường; không gán kèo khắc chế cố định",
+          "Phối hợp lịch sử: Lee Sin n=8, Orianna n=7",
+          "Cosine 0.878 từ profile tuyển thủ Keria; chỉ là hỗ trợ tương đồng"
+        ],
+        "draft_slot": "F3",
+        "meta_scope": {
+          "region": "WLDS",
+          "dataset_patch": "16.20",
+          "data_through": "2026-11-14T23:18:11+00:00",
+          "requested_as_of": "2026-11-14T23:59:59.999999999+00:00",
+          "staleness_days": 0,
+          "history_games": 110,
+          "patch_games": 98,
+          "lookback_days": 60,
+          "half_life_days": 21,
+          "claim": "historical_snapshot_not_live_meta"
+        }
+      }
+    },
+    {
+      "turn": 12,
+      "side": "red",
+      "action": "pick",
+      "champion": "Seraphine",
+      "role": "sup",
+      "advice": {
+        "score_kind": "patch_aware_draft_priority_points",
+        "ranking_score": 30.78,
+        "score_components": {
+          "meta": {
+            "value": 0.41824535120262846,
+            "weight": 1.0
+          },
+          "draft_order": {
+            "value": 0.02579924861220577,
+            "weight": 1.0
+          },
+          "historical": {
+            "value": 0.43285427668523624,
+            "weight": 0.25
+          },
+          "matchup": {
+            "value": 0.5,
+            "weight": 0.5
+          },
+          "synergy": {
+            "value": 0.5,
+            "weight": 0.25
+          },
+          "mastery": {
+            "value": 0.1834687688658744,
+            "weight": 0.5
+          },
+          "content": {
+            "value": 0.8925174542040707,
+            "weight": 0.1
+          }
+        },
+        "cosine_similarity": 0.8925174542040707,
+        "games": 20,
+        "historical": {
+          "wins": 13,
+          "games": 20,
+          "winrate": 0.65,
+          "ci95_wilson": [
+            0.43285427668523624,
+            0.818808175898918
+          ],
+          "statistic_kind": "historical_team_result",
+          "causal_uplift": null
+        },
+        "matchup": null,
+        "matchup_candidates": [
+          {
+            "wins": 3,
+            "games": 3,
+            "winrate": 1.0,
+            "ci95_wilson": [
+              0.4385029682449546,
+              1.0
+            ],
+            "statistic_kind": "historical_team_result",
+            "causal_uplift": null,
+            "opponent": "Nautilus",
+            "role_probability": 1.0
+          }
+        ],
+        "synergies": [
+          {
+            "wins": 1,
+            "games": 2,
+            "winrate": 0.5,
+            "ci95_wilson": [
+              0.09453120573423074,
+              0.9054687942657693
+            ],
+            "statistic_kind": "historical_team_result",
+            "causal_uplift": null,
+            "ally": "Ezreal"
+          },
+          {
+            "wins": 2,
+            "games": 2,
+            "winrate": 1.0,
+            "ci95_wilson": [
+              0.34238022750665303,
+              1.0
+            ],
+            "statistic_kind": "historical_team_result",
+            "causal_uplift": null,
+            "ally": "Syndra"
+          }
+        ],
+        "player_history": {
+          "wins": 3,
+          "games": 3,
+          "winrate": 1.0,
+          "ci95_wilson": [
+            0.4385029682449546,
+            1.0
+          ],
+          "statistic_kind": "historical_team_result",
+          "causal_uplift": null
+        },
+        "reasons": [
+          "Patch dataset 16.20: presence cửa sổ gần đây 41.8%; 17 lượt chọn đúng vị trí trên patch, 20 trận trong cửa sổ gần đây",
+          "Slot S3: ưu tiên chọn quan sát 0.026; không phải xác suất thắng",
+          "Vị trí địch còn là giả định: Nautilus p(role)=1.00, n=3",
+          "Cosine 0.893 từ profile tuyển thủ Duro; chỉ là hỗ trợ tương đồng"
+        ],
+        "draft_slot": "S3",
+        "meta_scope": {
+          "region": "WLDS",
+          "dataset_patch": "16.20",
+          "data_through": "2026-11-14T23:18:11+00:00",
+          "requested_as_of": "2026-11-14T23:59:59.999999999+00:00",
+          "staleness_days": 0,
+          "history_games": 110,
+          "patch_games": 98,
+          "lookback_days": 60,
+          "half_life_days": 21,
+          "claim": "historical_snapshot_not_live_meta"
+        }
+      }
+    },
+    {
+      "turn": 13,
+      "side": "red",
+      "action": "ban",
+      "champion": "Jayce",
+      "role": null,
+      "advice": {
+        "score_kind": "patch_aware_ban_priority_points",
+        "denial_loss": 0.024537249773840974,
+        "ban_priority": 0.38229585734430543,
+        "reasons": [
+          "Presence gần đây 49.9%, bị cấm 35.6%; điểm ưu tiên đối thủ 0.316; chênh lựa chọn 0.025"
+        ],
+        "reason": "Presence gần đây 49.9%, bị cấm 35.6%; điểm ưu tiên đối thủ 0.316; chênh lựa chọn 0.025",
+        "meta_scope": {
+          "region": "WLDS",
+          "dataset_patch": "16.20",
+          "data_through": "2026-11-14T23:18:11+00:00",
+          "requested_as_of": "2026-11-14T23:59:59.999999999+00:00",
+          "staleness_days": 0,
+          "history_games": 110,
+          "patch_games": 98,
+          "lookback_days": 60,
+          "half_life_days": 21,
+          "claim": "historical_snapshot_not_live_meta"
+        }
+      }
+    },
+    {
+      "turn": 14,
+      "side": "blue",
+      "action": "ban",
+      "champion": "Jarvan IV",
+      "role": null,
+      "advice": {
+        "score_kind": "patch_aware_ban_priority_points",
+        "denial_loss": 0.01714600752798434,
+        "ban_priority": 0.3898617024235575,
+        "reasons": [
+          "Presence gần đây 52.0%, bị cấm 26.7%; điểm ưu tiên đối thủ 0.301; chênh lựa chọn 0.017"
+        ],
+        "reason": "Presence gần đây 52.0%, bị cấm 26.7%; điểm ưu tiên đối thủ 0.301; chênh lựa chọn 0.017",
+        "meta_scope": {
+          "region": "WLDS",
+          "dataset_patch": "16.20",
+          "data_through": "2026-11-14T23:18:11+00:00",
+          "requested_as_of": "2026-11-14T23:59:59.999999999+00:00",
+          "staleness_days": 0,
+          "history_games": 110,
+          "patch_games": 98,
+          "lookback_days": 60,
+          "half_life_days": 21,
+          "claim": "historical_snapshot_not_live_meta"
+        }
+      }
+    },
+    {
+      "turn": 15,
+      "side": "red",
+      "action": "ban",
+      "champion": "Rumble",
+      "role": null,
+      "advice": {
+        "score_kind": "patch_aware_ban_priority_points",
+        "denial_loss": 0.0,
+        "ban_priority": 0.3578770471999438,
+        "reasons": [
+          "Presence gần đây 47.5%, bị cấm 22.1%; điểm ưu tiên đối thủ 0.291; chênh lựa chọn 0.000"
+        ],
+        "reason": "Presence gần đây 47.5%, bị cấm 22.1%; điểm ưu tiên đối thủ 0.291; chênh lựa chọn 0.000",
+        "meta_scope": {
+          "region": "WLDS",
+          "dataset_patch": "16.20",
+          "data_through": "2026-11-14T23:18:11+00:00",
+          "requested_as_of": "2026-11-14T23:59:59.999999999+00:00",
+          "staleness_days": 0,
+          "history_games": 110,
+          "patch_games": 98,
+          "lookback_days": 60,
+          "half_life_days": 21,
+          "claim": "historical_snapshot_not_live_meta"
+        }
+      }
+    },
+    {
+      "turn": 16,
+      "side": "blue",
+      "action": "ban",
+      "champion": "K'Sante",
+      "role": null,
+      "advice": {
+        "score_kind": "patch_aware_ban_priority_points",
+        "denial_loss": 0.002810793031924941,
+        "ban_priority": 0.30928059988033746,
+        "reasons": [
+          "Presence gần đây 39.9%, bị cấm 17.6%; điểm ưu tiên đối thủ 0.277; chênh lựa chọn 0.003"
+        ],
+        "reason": "Presence gần đây 39.9%, bị cấm 17.6%; điểm ưu tiên đối thủ 0.277; chênh lựa chọn 0.003",
+        "meta_scope": {
+          "region": "WLDS",
+          "dataset_patch": "16.20",
+          "data_through": "2026-11-14T23:18:11+00:00",
+          "requested_as_of": "2026-11-14T23:59:59.999999999+00:00",
+          "staleness_days": 0,
+          "history_games": 110,
+          "patch_games": 98,
+          "lookback_days": 60,
+          "half_life_days": 21,
+          "claim": "historical_snapshot_not_live_meta"
+        }
+      }
+    },
+    {
+      "turn": 17,
+      "side": "red",
+      "action": "pick",
+      "champion": "Wukong",
+      "role": "jng",
+      "advice": {
+        "score_kind": "patch_aware_draft_priority_points",
+        "ranking_score": 28.35,
+        "score_components": {
+          "meta": {
+            "value": 0.35634353788024126,
+            "weight": 1.0
+          },
+          "draft_order": {
+            "value": 0.07001134017574753,
+            "weight": 1.0
+          },
+          "historical": {
+            "value": 0.18481232558863633,
+            "weight": 0.25
+          },
+          "matchup": {
+            "value": 0.5,
+            "weight": 0.5
+          },
+          "synergy": {
+            "value": 0.5,
+            "weight": 0.25
+          },
+          "mastery": {
+            "value": 0.16221619207776078,
+            "weight": 0.5
+          },
+          "content": {
+            "value": 0.9176637840729474,
+            "weight": 0.1
+          }
+        },
+        "cosine_similarity": 0.9176637840729474,
+        "games": 16,
+        "historical": {
+          "wins": 6,
+          "games": 16,
+          "winrate": 0.375,
+          "ci95_wilson": [
+            0.18481232558863633,
+            0.6135895945449727
+          ],
+          "statistic_kind": "historical_team_result",
+          "causal_uplift": null
+        },
+        "matchup": null,
+        "matchup_candidates": [
+          {
+            "wins": 2,
+            "games": 3,
+            "winrate": 0.6666666666666666,
+            "ci95_wilson": [
+              0.2076596008020477,
+              0.9385080552796037
+            ],
+            "statistic_kind": "historical_team_result",
+            "causal_uplift": null,
+            "opponent": "Lee Sin",
+            "role_probability": 1.0
+          }
+        ],
+        "synergies": [
+          {
+            "wins": 0,
+            "games": 1,
+            "winrate": 0.0,
+            "ci95_wilson": [
+              0.0,
+              0.7934506856227626
+            ],
+            "statistic_kind": "historical_team_result",
+            "causal_uplift": null,
+            "ally": "Ezreal"
+          },
+          {
+            "wins": 2,
+            "games": 3,
+            "winrate": 0.6666666666666666,
+            "ci95_wilson": [
+              0.2076596008020477,
+              0.9385080552796037
+            ],
+            "statistic_kind": "historical_team_result",
+            "causal_uplift": null,
+            "ally": "Syndra"
+          },
+          {
+            "wins": 1,
+            "games": 2,
+            "winrate": 0.5,
+            "ci95_wilson": [
+              0.09453120573423074,
+              0.9054687942657693
+            ],
+            "statistic_kind": "historical_team_result",
+            "causal_uplift": null,
+            "ally": "Seraphine"
+          }
+        ],
+        "player_history": {
+          "wins": 1,
+          "games": 2,
+          "winrate": 0.5,
+          "ci95_wilson": [
+            0.09453120573423074,
+            0.9054687942657693
+          ],
+          "statistic_kind": "historical_team_result",
+          "causal_uplift": null
+        },
+        "reasons": [
+          "Patch dataset 16.20: presence cửa sổ gần đây 35.6%; 16 lượt chọn đúng vị trí trên patch, 16 trận trong cửa sổ gần đây",
+          "Slot S4: ưu tiên chọn quan sát 0.070; không phải xác suất thắng",
+          "Vị trí địch còn là giả định: Lee Sin p(role)=1.00, n=3",
+          "Cosine 0.918 từ profile tuyển thủ Canyon; chỉ là hỗ trợ tương đồng"
+        ],
+        "draft_slot": "S4",
+        "meta_scope": {
+          "region": "WLDS",
+          "dataset_patch": "16.20",
+          "data_through": "2026-11-14T23:18:11+00:00",
+          "requested_as_of": "2026-11-14T23:59:59.999999999+00:00",
+          "staleness_days": 0,
+          "history_games": 110,
+          "patch_games": 98,
+          "lookback_days": 60,
+          "half_life_days": 21,
+          "claim": "historical_snapshot_not_live_meta"
+        }
+      }
+    },
+    {
+      "turn": 18,
+      "side": "blue",
+      "action": "pick",
+      "champion": "Ambessa",
+      "role": "top",
+      "advice": {
+        "score_kind": "patch_aware_draft_priority_points",
+        "ranking_score": 29.13,
+        "score_components": {
+          "meta": {
+            "value": 0.3352873874344395,
+            "weight": 1.0
+          },
+          "draft_order": {
+            "value": 0.052776508955286634,
+            "weight": 1.0
+          },
+          "historical": {
+            "value": 0.27585858177023004,
+            "weight": 0.25
+          },
+          "matchup": {
+            "value": 0.5,
+            "weight": 0.5
+          },
+          "synergy": {
+            "value": 0.5518518518518518,
+            "weight": 0.25
+          },
+          "mastery": {
+            "value": 0.21306072496307388,
+            "weight": 0.5
+          },
+          "content": {
+            "value": 0.9707939848916853,
+            "weight": 0.1
+          }
+        },
+        "cosine_similarity": 0.9707939848916853,
+        "games": 27,
+        "historical": {
+          "wins": 12,
+          "games": 27,
+          "winrate": 0.4444444444444444,
+          "ci95_wilson": [
+            0.27585858177023004,
+            0.6268697548677552
+          ],
+          "statistic_kind": "historical_team_result",
+          "causal_uplift": null
+        },
+        "matchup": null,
+        "matchup_candidates": [],
+        "synergies": [
+          {
+            "wins": 1,
+            "games": 2,
+            "winrate": 0.5,
+            "ci95_wilson": [
+              0.09453120573423074,
+              0.9054687942657693
+            ],
+            "statistic_kind": "historical_team_result",
+            "causal_uplift": null,
+            "ally": "Lee Sin"
+          },
+          {
+            "wins": 2,
+            "games": 5,
+            "winrate": 0.4,
+            "ci95_wilson": [
+              0.11762077423264783,
+              0.769275718723987
+            ],
+            "statistic_kind": "historical_team_result",
+            "causal_uplift": null,
+            "ally": "Orianna"
+          },
+          {
+            "wins": 4,
+            "games": 5,
+            "winrate": 0.8,
+            "ci95_wilson": [
+              0.37553462976252533,
+              0.9637758913675698
+            ],
+            "statistic_kind": "historical_team_result",
+            "causal_uplift": null,
+            "ally": "Nautilus"
+          }
+        ],
+        "player_history": {
+          "wins": 2,
+          "games": 3,
+          "winrate": 0.6666666666666666,
+          "ci95_wilson": [
+            0.2076596008020477,
+            0.9385080552796037
+          ],
+          "statistic_kind": "historical_team_result",
+          "causal_uplift": null
+        },
+        "reasons": [
+          "Patch dataset 16.20: presence cửa sổ gần đây 33.5%; 24 lượt chọn đúng vị trí trên patch, 27 trận trong cửa sổ gần đây",
+          "Slot F4: ưu tiên chọn quan sát 0.053; không phải xác suất thắng",
+          "Chưa đủ căn cứ đối đầu cùng đường; không gán kèo khắc chế cố định",
+          "Phối hợp lịch sử: Orianna n=5, Nautilus n=5",
+          "Cosine 0.971 từ profile tuyển thủ Doran; chỉ là hỗ trợ tương đồng"
+        ],
+        "draft_slot": "F4",
+        "meta_scope": {
+          "region": "WLDS",
+          "dataset_patch": "16.20",
+          "data_through": "2026-11-14T23:18:11+00:00",
+          "requested_as_of": "2026-11-14T23:59:59.999999999+00:00",
+          "staleness_days": 0,
+          "history_games": 110,
+          "patch_games": 98,
+          "lookback_days": 60,
+          "half_life_days": 21,
+          "claim": "historical_snapshot_not_live_meta"
+        }
+      }
+    },
+    {
+      "turn": 19,
+      "side": "blue",
+      "action": "pick",
+      "champion": "Jhin",
+      "role": "bot",
+      "advice": {
+        "score_kind": "patch_aware_draft_priority_points",
+        "ranking_score": 29.09,
+        "score_components": {
+          "meta": {
+            "value": 0.32928472081469473,
+            "weight": 1.0
+          },
+          "draft_order": {
+            "value": 0.030475517292697443,
+            "weight": 1.0
+          },
+          "historical": {
+            "value": 0.3507486535891948,
+            "weight": 0.25
+          },
+          "matchup": {
+            "value": 0.5122549019607843,
+            "weight": 0.5
+          },
+          "synergy": {
+            "value": 0.4633101851851852,
+            "weight": 0.25
+          },
+          "mastery": {
+            "value": 0.26675512657315426,
+            "weight": 0.5
+          },
+          "content": {
+            "value": 0.9434515996416499,
+            "weight": 0.1
+          }
+        },
+        "cosine_similarity": 0.9434515996416499,
+        "games": 24,
+        "historical": {
+          "wins": 13,
+          "games": 24,
+          "winrate": 0.5416666666666666,
+          "ci95_wilson": [
+            0.3507486535891948,
+            0.72108666268789
+          ],
+          "statistic_kind": "historical_team_result",
+          "causal_uplift": null
+        },
+        "matchup": null,
+        "matchup_candidates": [
+          {
+            "wins": 4,
+            "games": 7,
+            "winrate": 0.5714285714285714,
+            "ci95_wilson": [
+              0.2504583645276572,
+              0.8417801447485302
+            ],
+            "statistic_kind": "historical_team_result",
+            "causal_uplift": null,
+            "opponent": "Ezreal",
+            "role_probability": 1.0
+          }
+        ],
+        "synergies": [
+          {
+            "wins": 3,
+            "games": 6,
+            "winrate": 0.5,
+            "ci95_wilson": [
+              0.1876163064826506,
+              0.8123836935173494
+            ],
+            "statistic_kind": "historical_team_result",
+            "causal_uplift": null,
+            "ally": "Lee Sin"
+          },
+          {
+            "wins": 2,
+            "games": 2,
+            "winrate": 1.0,
+            "ci95_wilson": [
+              0.34238022750665303,
+              1.0
+            ],
+            "statistic_kind": "historical_team_result",
+            "causal_uplift": null,
+            "ally": "Orianna"
+          },
+          {
+            "wins": 1,
+            "games": 5,
+            "winrate": 0.2,
+            "ci95_wilson": [
+              0.03622410863243014,
+              0.6244653702374747
+            ],
+            "statistic_kind": "historical_team_result",
+            "causal_uplift": null,
+            "ally": "Nautilus"
+          },
+          {
+            "wins": 3,
+            "games": 5,
+            "winrate": 0.6,
+            "ci95_wilson": [
+              0.2307242812760128,
+              0.882379225767352
+            ],
+            "statistic_kind": "historical_team_result",
+            "causal_uplift": null,
+            "ally": "Ambessa"
+          }
+        ],
+        "player_history": {
+          "wins": 4,
+          "games": 4,
+          "winrate": 1.0,
+          "ci95_wilson": [
+            0.5101091635454027,
+            1.0
+          ],
+          "statistic_kind": "historical_team_result",
+          "causal_uplift": null
+        },
+        "reasons": [
+          "Patch dataset 16.20: presence cửa sổ gần đây 32.9%; 21 lượt chọn đúng vị trí trên patch, 24 trận trong cửa sổ gần đây",
+          "Slot F5: ưu tiên chọn quan sát 0.030; không phải xác suất thắng",
+          "Vị trí địch còn là giả định: Ezreal p(role)=1.00, n=7",
+          "Phối hợp lịch sử: Lee Sin n=6, Nautilus n=5, Ambessa n=5",
+          "Cosine 0.943 từ profile tuyển thủ Peyz; chỉ là hỗ trợ tương đồng"
+        ],
+        "draft_slot": "F5",
+        "meta_scope": {
+          "region": "WLDS",
+          "dataset_patch": "16.20",
+          "data_through": "2026-11-14T23:18:11+00:00",
+          "requested_as_of": "2026-11-14T23:59:59.999999999+00:00",
+          "staleness_days": 0,
+          "history_games": 110,
+          "patch_games": 98,
+          "lookback_days": 60,
+          "half_life_days": 21,
+          "claim": "historical_snapshot_not_live_meta"
+        }
+      }
+    },
+    {
+      "turn": 20,
+      "side": "red",
+      "action": "pick",
+      "champion": "Galio",
+      "role": "top",
+      "advice": {
+        "score_kind": "patch_aware_draft_priority_points",
+        "ranking_score": 26.51,
+        "score_components": {
+          "meta": {
+            "value": 0.36946218764949795,
+            "weight": 1.0
+          },
+          "draft_order": {
+            "value": 0.03010772014580393,
+            "weight": 1.0
+          },
+          "historical": {
+            "value": 0.43649717781352987,
+            "weight": 0.25
+          },
+          "matchup": {
+            "value": 0.5,
+            "weight": 0.5
+          },
+          "synergy": {
+            "value": 0.5,
+            "weight": 0.25
+          },
+          "mastery": {
+            "value": 0.0,
+            "weight": 0.5
+          },
+          "content": {
+            "value": 0.706605431657508,
+            "weight": 0.1
+          }
+        },
+        "cosine_similarity": 0.706605431657508,
+        "games": 6,
+        "historical": {
+          "wins": 5,
+          "games": 6,
+          "winrate": 0.8333333333333334,
+          "ci95_wilson": [
+            0.43649717781352987,
+            0.9699466302516935
+          ],
+          "statistic_kind": "historical_team_result",
+          "causal_uplift": null
+        },
+        "matchup": null,
+        "matchup_candidates": [
+          {
+            "wins": 0,
+            "games": 0,
+            "winrate": null,
+            "ci95_wilson": [
+              null,
+              null
+            ],
+            "statistic_kind": "historical_team_result",
+            "causal_uplift": null,
+            "opponent": "Ambessa",
+            "role_probability": 1.0
+          }
+        ],
+        "synergies": [
+          {
+            "wins": 1,
+            "games": 1,
+            "winrate": 1.0,
+            "ci95_wilson": [
+              0.20654931437723745,
+              1.0
+            ],
+            "statistic_kind": "historical_team_result",
+            "causal_uplift": null,
+            "ally": "Ezreal"
+          },
+          {
+            "wins": 1,
+            "games": 2,
+            "winrate": 0.5,
+            "ci95_wilson": [
+              0.09453120573423074,
+              0.9054687942657693
+            ],
+            "statistic_kind": "historical_team_result",
+            "causal_uplift": null,
+            "ally": "Syndra"
+          },
+          {
+            "wins": 2,
+            "games": 2,
+            "winrate": 1.0,
+            "ci95_wilson": [
+              0.34238022750665303,
+              1.0
+            ],
+            "statistic_kind": "historical_team_result",
+            "causal_uplift": null,
+            "ally": "Seraphine"
+          },
+          {
+            "wins": 2,
+            "games": 2,
+            "winrate": 1.0,
+            "ci95_wilson": [
+              0.34238022750665303,
+              1.0
+            ],
+            "statistic_kind": "historical_team_result",
+            "causal_uplift": null,
+            "ally": "Wukong"
+          }
+        ],
+        "player_history": {
+          "wins": 0,
+          "games": 0,
+          "winrate": null,
+          "ci95_wilson": [
+            null,
+            null
+          ],
+          "statistic_kind": "historical_team_result",
+          "causal_uplift": null
+        },
+        "reasons": [
+          "Patch dataset 16.20: presence cửa sổ gần đây 36.9%; 5 lượt chọn đúng vị trí trên patch, 6 trận trong cửa sổ gần đây",
+          "Slot S5: ưu tiên chọn quan sát 0.030; không phải xác suất thắng",
+          "Vị trí địch còn là giả định: Ambessa p(role)=1.00, n=0",
+          "Cosine 0.707 từ profile tuyển thủ Kiin; chỉ là hỗ trợ tương đồng"
+        ],
+        "draft_slot": "S5",
+        "meta_scope": {
+          "region": "WLDS",
+          "dataset_patch": "16.20",
+          "data_through": "2026-11-14T23:18:11+00:00",
+          "requested_as_of": "2026-11-14T23:59:59.999999999+00:00",
+          "staleness_days": 0,
+          "history_games": 110,
+          "patch_games": 98,
+          "lookback_days": 60,
+          "half_life_days": 21,
+          "claim": "historical_snapshot_not_live_meta"
+        }
+      }
+    }
+  ],
+  "swaps": [],
+  "complete": true,
+  "used_champions": [],
+  "teams": {
+    "blue": "T1",
+    "red": "GEN.G"
+  },
+  "rosters": {
+    "blue": {
+      "top": "Doran",
+      "jng": "Oner",
+      "mid": "Faker",
+      "bot": "Peyz",
+      "sup": "Keria"
+    },
+    "red": {
+      "top": "Kiin",
+      "jng": "Canyon",
+      "mid": "Chovy",
+      "bot": "Ruler",
+      "sup": "Duro"
+    }
+  },
+  "region": "WLDS",
+  "policy": {
+    "meta": 1.0,
+    "draft_order": 1.0,
+    "historical": 0.25,
+    "matchup": 0.5,
+    "synergy": 0.25,
+    "mastery": 0.5,
+    "content": 0.1
+  },
+  "objective": "patch_aware_presence_draft_order_context",
+  "causal_uplift": null,
+  "meta_scope": {
+    "region": "WLDS",
+    "dataset_patch": "16.20",
+    "data_through": "2026-11-14T23:18:11+00:00",
+    "requested_as_of": "2026-11-14T23:59:59.999999999+00:00",
+    "staleness_days": 0,
+    "history_games": 110,
+    "patch_games": 98,
+    "lookback_days": 60,
+    "half_life_days": 21,
+    "claim": "historical_snapshot_not_live_meta"
+  },
+  "roster_sources": {
+    "blue": {
+      "players": {
+        "top": "Doran",
+        "jng": "Oner",
+        "mid": "Faker",
+        "bot": "Peyz",
+        "sup": "Keria"
+      },
+      "date": "2026-11-09 00:56:00",
+      "gameid": "LOLTMNT02_488304",
+      "kind": "latest_observed_lineup_not_live_roster"
+    },
+    "red": {
+      "players": {
+        "top": "Kiin",
+        "jng": "Canyon",
+        "mid": "Chovy",
+        "bot": "Ruler",
+        "sup": "Duro"
+      },
+      "date": "2026-11-14 23:18:11",
+      "gameid": "LOLTMNT02_488489",
+      "kind": "latest_observed_lineup_not_live_roster"
+    }
+  },
+  "ban_policy": {
+    "presence": 0.6,
+    "enemy_priority": 0.25,
+    "gap": 0.15
+  }
+}

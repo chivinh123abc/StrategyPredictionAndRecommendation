@@ -1,0 +1,310 @@
+{
+  "case": "saved_game2_turn20",
+  "source": "reports/worlds_fearless_bo5/game_2.json",
+  "public_state_before_choice": {
+    "first_pick_side": "red",
+    "picks": {
+      "blue": {
+        "top": "Rumble",
+        "sup": "Alistar",
+        "mid": "Viktor",
+        "bot": "Ashe"
+      },
+      "red": {
+        "jng": "Jarvan IV",
+        "mid": "Locke",
+        "sup": "Lulu",
+        "bot": "Yunara",
+        "top": "Gnar"
+      }
+    },
+    "bans": {
+      "blue": [
+        "Renata Glasc",
+        "Cassiopeia",
+        "Qiyana",
+        "Jayce",
+        "Galio"
+      ],
+      "red": [
+        "Nocturne",
+        "Vi",
+        "Olaf",
+        "Wukong",
+        "Lucian"
+      ]
+    },
+    "history": [
+      {
+        "turn": 1,
+        "side": "red",
+        "action": "ban",
+        "champion": "Nocturne",
+        "role": null
+      },
+      {
+        "turn": 2,
+        "side": "blue",
+        "action": "ban",
+        "champion": "Renata Glasc",
+        "role": null
+      },
+      {
+        "turn": 3,
+        "side": "red",
+        "action": "ban",
+        "champion": "Vi",
+        "role": null
+      },
+      {
+        "turn": 4,
+        "side": "blue",
+        "action": "ban",
+        "champion": "Cassiopeia",
+        "role": null
+      },
+      {
+        "turn": 5,
+        "side": "red",
+        "action": "ban",
+        "champion": "Olaf",
+        "role": null
+      },
+      {
+        "turn": 6,
+        "side": "blue",
+        "action": "ban",
+        "champion": "Qiyana",
+        "role": null
+      },
+      {
+        "turn": 7,
+        "side": "red",
+        "action": "pick",
+        "champion": "Jarvan IV",
+        "role": "jng"
+      },
+      {
+        "turn": 8,
+        "side": "blue",
+        "action": "pick",
+        "champion": "Rumble",
+        "role": "top"
+      },
+      {
+        "turn": 9,
+        "side": "blue",
+        "action": "pick",
+        "champion": "Alistar",
+        "role": "sup"
+      },
+      {
+        "turn": 10,
+        "side": "red",
+        "action": "pick",
+        "champion": "Locke",
+        "role": "mid"
+      },
+      {
+        "turn": 11,
+        "side": "red",
+        "action": "pick",
+        "champion": "Lulu",
+        "role": "sup"
+      },
+      {
+        "turn": 12,
+        "side": "blue",
+        "action": "pick",
+        "champion": "Viktor",
+        "role": "mid"
+      },
+      {
+        "turn": 13,
+        "side": "blue",
+        "action": "ban",
+        "champion": "Jayce",
+        "role": null
+      },
+      {
+        "turn": 14,
+        "side": "red",
+        "action": "ban",
+        "champion": "Wukong",
+        "role": null
+      },
+      {
+        "turn": 15,
+        "side": "blue",
+        "action": "ban",
+        "champion": "Galio",
+        "role": null
+      },
+      {
+        "turn": 16,
+        "side": "red",
+        "action": "ban",
+        "champion": "Lucian",
+        "role": null
+      },
+      {
+        "turn": 17,
+        "side": "blue",
+        "action": "pick",
+        "champion": "Ashe",
+        "role": "bot"
+      },
+      {
+        "turn": 18,
+        "side": "red",
+        "action": "pick",
+        "champion": "Yunara",
+        "role": "bot"
+      },
+      {
+        "turn": 19,
+        "side": "red",
+        "action": "pick",
+        "champion": "Gnar",
+        "role": "top"
+      }
+    ],
+    "swaps": [],
+    "complete": false,
+    "used_champions": [
+      "Ezreal",
+      "Lee Sin",
+      "Syndra",
+      "Seraphine",
+      "K'Sante",
+      "Orianna",
+      "Nautilus",
+      "Ambessa",
+      "Jhin",
+      "Pantheon"
+    ]
+  },
+  "enemy_revealed": {
+    "jng": "Jarvan IV",
+    "mid": "Locke",
+    "sup": "Lulu",
+    "bot": "Yunara",
+    "top": "Gnar"
+  },
+  "statistical_top_candidate": "Trundle",
+  "candidate_score": 0.1868075320221726,
+  "enemy_context_coverage": 0.0,
+  "enemy_context_evidence": [
+    {
+      "wins": 0,
+      "games": 0,
+      "winrate": null,
+      "ci95_wilson": [
+        null,
+        null
+      ],
+      "statistic_kind": "historical_team_result",
+      "causal_uplift": null,
+      "enemy_role": "top",
+      "opponent": "Gnar",
+      "interpretation": "observed_whole_game_result_not_mechanical_counter",
+      "role_probability": 1.0,
+      "status": "insufficient_context"
+    },
+    {
+      "wins": 0,
+      "games": 0,
+      "winrate": null,
+      "ci95_wilson": [
+        null,
+        null
+      ],
+      "statistic_kind": "historical_team_result",
+      "causal_uplift": null,
+      "enemy_role": "jng",
+      "opponent": "Jarvan IV",
+      "interpretation": "observed_whole_game_result_not_mechanical_counter",
+      "role_probability": 1.0,
+      "status": "insufficient_context"
+    },
+    {
+      "wins": 1,
+      "games": 1,
+      "winrate": 1.0,
+      "ci95_wilson": [
+        0.20654931437723745,
+        1.0
+      ],
+      "statistic_kind": "historical_team_result",
+      "causal_uplift": null,
+      "enemy_role": "mid",
+      "opponent": "Locke",
+      "interpretation": "observed_whole_game_result_not_mechanical_counter",
+      "role_probability": 1.0,
+      "status": "insufficient_context"
+    },
+    {
+      "wins": 0,
+      "games": 0,
+      "winrate": null,
+      "ci95_wilson": [
+        null,
+        null
+      ],
+      "statistic_kind": "historical_team_result",
+      "causal_uplift": null,
+      "enemy_role": "bot",
+      "opponent": "Yunara",
+      "interpretation": "observed_whole_game_result_not_mechanical_counter",
+      "role_probability": 1.0,
+      "status": "insufficient_context"
+    },
+    {
+      "wins": 0,
+      "games": 0,
+      "winrate": null,
+      "ci95_wilson": [
+        null,
+        null
+      ],
+      "statistic_kind": "historical_team_result",
+      "causal_uplift": null,
+      "enemy_role": "sup",
+      "opponent": "Lulu",
+      "interpretation": "observed_whole_game_result_not_mechanical_counter",
+      "role_probability": 1.0,
+      "status": "insufficient_context"
+    }
+  ],
+  "mechanical_counter_status": "not_evaluated",
+  "alternatives": [
+    {
+      "champion": "Skarner",
+      "ranking_score": 17.88,
+      "games": 8,
+      "enemy_context_coverage": 0.0,
+      "mechanical_counter_status": "not_evaluated",
+      "evidence_status": "observed_candidate"
+    },
+    {
+      "champion": "Naafiri",
+      "ranking_score": 15.32,
+      "games": 9,
+      "enemy_context_coverage": 0.0,
+      "mechanical_counter_status": "not_evaluated",
+      "evidence_status": "observed_candidate"
+    },
+    {
+      "champion": "Xin Zhao",
+      "ranking_score": 15.1,
+      "games": 7,
+      "enemy_context_coverage": 0.0,
+      "mechanical_counter_status": "not_evaluated",
+      "evidence_status": "observed_candidate"
+    }
+  ],
+  "automatic_finalization_blocked": true,
+  "actions_applied": 19,
+  "jungle_slot_still_empty": true,
+  "interpretation": "No unsupported counter auto-finalized. No claim that an alternative is mechanically superior."
+}

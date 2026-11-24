@@ -1,0 +1,254 @@
+Đang nạp lịch sử trận đấu và hồ sơ tướng...
+GIẢ LẬP BAN/PICK MỘT VÁN — LỊCH SỬ + CONTENT-BASED
+Bạn: blue; phe chọn trước: blue; dữ liệu: WLDS
+SNAPSHOT LỊCH SỬ: patch dataset 16.20, dữ liệu đến 2026-11-09T00:56:00+00:00, cũ 4 ngày so với mốc yêu cầu
+106 trận trong cửa sổ 60 ngày, 94 trận patch đích; không gọi là live meta.
+Lineup T1 (latest_observed_lineup_not_live_roster): top=Doran, jng=Oner, mid=Faker, bot=Peyz, sup=Keria
+Lineup Gen.G (latest_observed_lineup_not_live_roster): top=Kiin, jng=Canyon, mid=Chovy, bot=Ruler, sup=Duro
+Ưu tiên presence/nhịp draft gần đây; bể tướng, đối đầu và cosine là tín hiệu hỗ trợ. Điểm không phải xác suất.
+
+==========================================================================================
+BLUE T1 | Cấm: —
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: —
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 1/20: BLUE T1 — CẤM
+ĐÃ CẤM: Pantheon
+  Căn cứ: Mất pool địch 0.0001; chi phí tự cấm 0.0000; đội mình lấy lượt pick tới trước địch=True; Fearless khóa 20; 2 nhánh, giá trị dự kiến -0.0037
+
+==========================================================================================
+BLUE T1 | Cấm: Pantheon
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: —
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 2/20: RED Gen.G — CẤM
+ĐÃ CẤM: Akali
+  Căn cứ: Mất pool địch 0.0056; chi phí tự cấm 0.0020; đội mình lấy lượt pick tới trước địch=False; Fearless khóa 20; 2 nhánh, giá trị dự kiến 0.0526
+
+==========================================================================================
+BLUE T1 | Cấm: Pantheon
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Akali
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 3/20: BLUE T1 — CẤM
+ĐÃ CẤM: Yunara
+  Căn cứ: Mất pool địch 0.0031; chi phí tự cấm 0.0018; đội mình lấy lượt pick tới trước địch=True; Fearless khóa 20; 2 nhánh, giá trị dự kiến -0.0044
+
+==========================================================================================
+BLUE T1 | Cấm: Pantheon, Yunara
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Akali
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 4/20: RED Gen.G — CẤM
+ĐÃ CẤM: Nocturne
+  Căn cứ: Mất pool địch 0.0189; chi phí tự cấm 0.0080; đội mình lấy lượt pick tới trước địch=False; Fearless khóa 20; 2 nhánh, giá trị dự kiến 0.0083
+
+==========================================================================================
+BLUE T1 | Cấm: Pantheon, Yunara
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Akali, Nocturne
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 5/20: BLUE T1 — CẤM
+ĐÃ CẤM: Xayah
+  Căn cứ: Mất pool địch 0.0012; chi phí tự cấm 0.0002; đội mình lấy lượt pick tới trước địch=True; Fearless khóa 20; 2 nhánh, giá trị dự kiến 0.0075
+
+==========================================================================================
+BLUE T1 | Cấm: Pantheon, Yunara, Xayah
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Akali, Nocturne
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 6/20: RED Gen.G — CẤM
+ĐÃ CẤM: Jarvan IV
+  Căn cứ: Mất pool địch 0.0142; chi phí tự cấm 0.0062; đội mình lấy lượt pick tới trước địch=False; Fearless khóa 20; 2 nhánh, giá trị dự kiến 0.0224
+
+==========================================================================================
+BLUE T1 | Cấm: Pantheon, Yunara, Xayah
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Akali, Nocturne, Jarvan IV
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 7/20: BLUE T1 — CHỌN
+ĐÃ CHỌN: Jayce [top]
+  Căn cứ: Slot F1: ưu tiên chọn quan sát 0.032; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Pantheon, Yunara, Xayah
+Top: Jayce | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Akali, Nocturne, Jarvan IV
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 8/20: RED Gen.G — CHỌN
+ĐÃ CHỌN: Nautilus [sup]
+  Căn cứ: Slot S1: ưu tiên chọn quan sát 0.052; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Pantheon, Yunara, Xayah
+Top: Jayce | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Akali, Nocturne, Jarvan IV
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: Nautilus
+
+LƯỢT 9/20: RED Gen.G — CHỌN
+ĐÃ CHỌN: Ambessa [top]
+  Căn cứ: Slot S2: ưu tiên chọn quan sát 0.016; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Pantheon, Yunara, Xayah
+Top: Jayce | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Akali, Nocturne, Jarvan IV
+Top: Ambessa | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: Nautilus
+
+LƯỢT 10/20: BLUE T1 — CHỌN
+ĐÃ CHỌN: Wukong [jng]
+  Căn cứ: Slot F2: ưu tiên chọn quan sát 0.035; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Pantheon, Yunara, Xayah
+Top: Jayce | Rừng: Wukong | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Akali, Nocturne, Jarvan IV
+Top: Ambessa | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: Nautilus
+
+LƯỢT 11/20: BLUE T1 — CHỌN
+ĐÃ CHỌN: Lulu [sup]
+  Căn cứ: Slot F3: ưu tiên chọn quan sát 0.045; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Pantheon, Yunara, Xayah
+Top: Jayce | Rừng: Wukong | Mid: — | Xạ thủ: — | Hỗ trợ: Lulu
+RED Gen.G | Cấm: Akali, Nocturne, Jarvan IV
+Top: Ambessa | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: Nautilus
+
+LƯỢT 12/20: RED Gen.G — CHỌN
+ĐÃ CHỌN: Locke [mid]
+  Căn cứ: Slot S3: ưu tiên chọn quan sát 0.046; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Pantheon, Yunara, Xayah
+Top: Jayce | Rừng: Wukong | Mid: — | Xạ thủ: — | Hỗ trợ: Lulu
+RED Gen.G | Cấm: Akali, Nocturne, Jarvan IV
+Top: Ambessa | Rừng: — | Mid: Locke | Xạ thủ: — | Hỗ trợ: Nautilus
+
+LƯỢT 13/20: RED Gen.G — CẤM
+ĐÃ CẤM: Viktor
+  Căn cứ: Mất pool địch 0.0069; chi phí tự cấm 0.0000; đội mình lấy lượt pick tới trước địch=True; Fearless khóa 20; 2 nhánh, giá trị dự kiến 0.0006
+
+==========================================================================================
+BLUE T1 | Cấm: Pantheon, Yunara, Xayah
+Top: Jayce | Rừng: Wukong | Mid: — | Xạ thủ: — | Hỗ trợ: Lulu
+RED Gen.G | Cấm: Akali, Nocturne, Jarvan IV, Viktor
+Top: Ambessa | Rừng: — | Mid: Locke | Xạ thủ: — | Hỗ trợ: Nautilus
+
+LƯỢT 14/20: BLUE T1 — CẤM
+ĐÃ CẤM: Trundle
+  Căn cứ: Mất pool địch 0.0063; chi phí tự cấm 0.0000; đội mình lấy lượt pick tới trước địch=False; Fearless khóa 20; 2 nhánh, giá trị dự kiến 0.0160
+
+==========================================================================================
+BLUE T1 | Cấm: Pantheon, Yunara, Xayah, Trundle
+Top: Jayce | Rừng: Wukong | Mid: — | Xạ thủ: — | Hỗ trợ: Lulu
+RED Gen.G | Cấm: Akali, Nocturne, Jarvan IV, Viktor
+Top: Ambessa | Rừng: — | Mid: Locke | Xạ thủ: — | Hỗ trợ: Nautilus
+
+LƯỢT 15/20: RED Gen.G — CẤM
+ĐÃ CẤM: Taliyah
+  Căn cứ: Mất pool địch 0.0014; chi phí tự cấm 0.0000; đội mình lấy lượt pick tới trước địch=True; Fearless khóa 20; 2 nhánh, giá trị dự kiến 0.0006
+
+==========================================================================================
+BLUE T1 | Cấm: Pantheon, Yunara, Xayah, Trundle
+Top: Jayce | Rừng: Wukong | Mid: — | Xạ thủ: — | Hỗ trợ: Lulu
+RED Gen.G | Cấm: Akali, Nocturne, Jarvan IV, Viktor, Taliyah
+Top: Ambessa | Rừng: — | Mid: Locke | Xạ thủ: — | Hỗ trợ: Nautilus
+
+LƯỢT 16/20: BLUE T1 — CẤM
+ĐÃ CẤM: Naafiri
+  Căn cứ: Mất pool địch 0.0070; chi phí tự cấm 0.0000; đội mình lấy lượt pick tới trước địch=False; Fearless khóa 20; 2 nhánh, giá trị dự kiến 0.0224
+
+==========================================================================================
+BLUE T1 | Cấm: Pantheon, Yunara, Xayah, Trundle, Naafiri
+Top: Jayce | Rừng: Wukong | Mid: — | Xạ thủ: — | Hỗ trợ: Lulu
+RED Gen.G | Cấm: Akali, Nocturne, Jarvan IV, Viktor, Taliyah
+Top: Ambessa | Rừng: — | Mid: Locke | Xạ thủ: — | Hỗ trợ: Nautilus
+
+LƯỢT 17/20: RED Gen.G — CHỌN
+ĐÃ CHỌN: Ashe [bot]
+  Căn cứ: Slot S4: ưu tiên chọn quan sát 0.011; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Pantheon, Yunara, Xayah, Trundle, Naafiri
+Top: Jayce | Rừng: Wukong | Mid: — | Xạ thủ: — | Hỗ trợ: Lulu
+RED Gen.G | Cấm: Akali, Nocturne, Jarvan IV, Viktor, Taliyah
+Top: Ambessa | Rừng: — | Mid: Locke | Xạ thủ: Ashe | Hỗ trợ: Nautilus
+
+LƯỢT 18/20: BLUE T1 — CHỌN
+ĐÃ CHỌN: Lucian [bot]
+  Căn cứ: Slot F4: ưu tiên chọn quan sát 0.020; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Pantheon, Yunara, Xayah, Trundle, Naafiri
+Top: Jayce | Rừng: Wukong | Mid: — | Xạ thủ: Lucian | Hỗ trợ: Lulu
+RED Gen.G | Cấm: Akali, Nocturne, Jarvan IV, Viktor, Taliyah
+Top: Ambessa | Rừng: — | Mid: Locke | Xạ thủ: Ashe | Hỗ trợ: Nautilus
+
+LƯỢT 19/20: BLUE T1 — CHỌN
+ĐÃ CHỌN: Ahri [mid]
+  Căn cứ: Slot F5: ưu tiên chọn quan sát 0.006; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Pantheon, Yunara, Xayah, Trundle, Naafiri
+Top: Jayce | Rừng: Wukong | Mid: Ahri | Xạ thủ: Lucian | Hỗ trợ: Lulu
+RED Gen.G | Cấm: Akali, Nocturne, Jarvan IV, Viktor, Taliyah
+Top: Ambessa | Rừng: — | Mid: Locke | Xạ thủ: Ashe | Hỗ trợ: Nautilus
+
+LƯỢT 20/20: RED Gen.G — CHỌN
+ĐÃ CHỌN: Skarner [jng]
+  Căn cứ: Slot S5: ưu tiên chọn quan sát 0.013; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Pantheon, Yunara, Xayah, Trundle, Naafiri
+Top: Jayce | Rừng: Wukong | Mid: Ahri | Xạ thủ: Lucian | Hỗ trợ: Lulu
+RED Gen.G | Cấm: Akali, Nocturne, Jarvan IV, Viktor, Taliyah
+Top: Ambessa | Rừng: Skarner | Mid: Locke | Xạ thủ: Ashe | Hỗ trợ: Nautilus
+Căn cứ cặp T1: observed_pairs=0, sparse_pairs=6, unobserved_pairs=4, insufficient_anchor_pairs=0
+Căn cứ cặp Gen.G: observed_pairs=1, sparse_pairs=5, unobserved_pairs=4, insufficient_anchor_pairs=0
+
+===============================================================================================
+📋 BẢNG ĐỘI HÌNH HOÀN THIỆN SAU KHI CẤM/CHỌN (FINAL DRAFT)
+===============================================================================================
+🔷 PHE XANH (T1):
+   • TOP: Jayce (Doran)
+   • JNG: Wukong (Oner)
+   • MID: Ahri (Faker)
+   • BOT: Lucian (Peyz)
+   • SUP: Lulu (Keria)
+
+🔴 PHE ĐỎ (Gen.G):
+   • TOP: Ambessa (Kiin)
+   • JNG: Skarner (Canyon)
+   • MID: Locke (Chovy)
+   • BOT: Ashe (Ruler)
+   • SUP: Nautilus (Duro)
+Radar và thẻ chiến thuật dùng thuộc tính/quy tắc chuyên gia; chưa được xác nhận như điều kiện thắng nhân quả.
+
+────────────────────────────────────── THẺ CHIẾN THUẬT: T1 (BLUE) ──────────────────────────────────────
+🏆 Trường phái: [WOMBOCOMBO & OBJECTIVE CONTROL]
+📊 Radar 5 trục: Early: 0.78 | Scaling: 0.66 | Combat: 0.662 | Pick: 0.778 | Obj: 0.64
+⭐ Chủ lực (Core Carry): Ahri
+⏱️ Điểm rơi sức mạnh: Giữa và Cuối trận (Phút 20 đến Phút 35 - Giai đoạn Rồng 3, 4 và Baron)
+🐉 Mục tiêu số 1: Rồng Nguyên Tố (Thiết lập Linh Hồn Rồng) & Hang Baron
+✅ Điều kiện thắng: Kiểm soát tầm nhìn trước 1 phút tại hang mục tiêu lớn, ép đối thủ vào các góc hẹp của sông và tung Wombocombo 5v5 quét sạch.
+❌ Cần tránh: Để đối thủ chia cắt đội hình đẩy lẻ 1-3-1 hoặc giao tranh khi chưa có đủ chiêu cuối mở combat.
+
+────────────────────────────────────── THẺ CHIẾN THUẬT: GEN.G (RED) ──────────────────────────────────────
+🏆 Trường phái: [WOMBOCOMBO & OBJECTIVE CONTROL]
+📊 Radar 5 trục: Early: 0.695 | Scaling: 0.62 | Combat: 0.678 | Pick: 0.81 | Obj: 0.632
+⭐ Chủ lực (Core Carry): Ashe
+⏱️ Điểm rơi sức mạnh: Giữa và Cuối trận (Phút 20 đến Phút 35 - Giai đoạn Rồng 3, 4 và Baron)
+🐉 Mục tiêu số 1: Rồng Nguyên Tố (Thiết lập Linh Hồn Rồng) & Hang Baron
+✅ Điều kiện thắng: Kiểm soát tầm nhìn trước 1 phút tại hang mục tiêu lớn, ép đối thủ vào các góc hẹp của sông và tung Wombocombo 5v5 quét sạch.
+❌ Cần tránh: Để đối thủ chia cắt đội hình đẩy lẻ 1-3-1 hoặc giao tranh khi chưa có đủ chiêu cuối mở combat.
+Phiên có mốc lịch sử: bỏ dự báo từ model lưu sẵn vì chưa bảo đảm model được fit trước mốc này.
+Đã lưu phiên: reports\ban_strategy_comparison\lookahead\game_3.json

@@ -1,0 +1,254 @@
+Đang nạp lịch sử trận đấu và hồ sơ tướng...
+GIẢ LẬP BAN/PICK MỘT VÁN — LỊCH SỬ + CONTENT-BASED
+Bạn: blue; phe chọn trước: blue; dữ liệu: WLDS
+SNAPSHOT LỊCH SỬ: patch dataset 16.20, dữ liệu đến 2026-11-09T00:56:00+00:00, cũ 4 ngày so với mốc yêu cầu
+106 trận trong cửa sổ 60 ngày, 94 trận patch đích; không gọi là live meta.
+Lineup T1 (latest_observed_lineup_not_live_roster): top=Doran, jng=Oner, mid=Faker, bot=Peyz, sup=Keria
+Lineup Gen.G (latest_observed_lineup_not_live_roster): top=Kiin, jng=Canyon, mid=Chovy, bot=Ruler, sup=Duro
+Ưu tiên presence/nhịp draft gần đây; bể tướng, đối đầu và cosine là tín hiệu hỗ trợ. Điểm không phải xác suất.
+
+==========================================================================================
+BLUE T1 | Cấm: —
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: —
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 1/20: BLUE T1 — CẤM
+ĐÃ CẤM: Pantheon
+  Căn cứ: Mất pool địch 0.0088; chi phí tự cấm 0.0073; đội mình lấy lượt pick tới trước địch=True; Fearless khóa 40; 2 nhánh, giá trị dự kiến -0.0058
+
+==========================================================================================
+BLUE T1 | Cấm: Pantheon
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: —
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 2/20: RED Gen.G — CẤM
+ĐÃ CẤM: Camille
+  Căn cứ: Mất pool địch 0.0041; chi phí tự cấm 0.0025; đội mình lấy lượt pick tới trước địch=False; Fearless khóa 40; 2 nhánh, giá trị dự kiến 0.0096
+
+==========================================================================================
+BLUE T1 | Cấm: Pantheon
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Camille
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 3/20: BLUE T1 — CẤM
+ĐÃ CẤM: Yunara
+  Căn cứ: Mất pool địch 0.0074; chi phí tự cấm 0.0053; đội mình lấy lượt pick tới trước địch=True; Fearless khóa 40; 2 nhánh, giá trị dự kiến -0.0095
+
+==========================================================================================
+BLUE T1 | Cấm: Pantheon, Yunara
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Camille
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 4/20: RED Gen.G — CẤM
+ĐÃ CẤM: Viktor
+  Căn cứ: Mất pool địch 0.0072; chi phí tự cấm 0.0035; đội mình lấy lượt pick tới trước địch=False; Fearless khóa 40; 2 nhánh, giá trị dự kiến 0.0098
+
+==========================================================================================
+BLUE T1 | Cấm: Pantheon, Yunara
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Camille, Viktor
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 5/20: BLUE T1 — CẤM
+ĐÃ CẤM: Naafiri
+  Căn cứ: Mất pool địch 0.0046; chi phí tự cấm 0.0025; đội mình lấy lượt pick tới trước địch=True; Fearless khóa 40; 2 nhánh, giá trị dự kiến 0.0150
+
+==========================================================================================
+BLUE T1 | Cấm: Pantheon, Yunara, Naafiri
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Camille, Viktor
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 6/20: RED Gen.G — CẤM
+ĐÃ CẤM: Trundle
+  Căn cứ: Mất pool địch 0.0083; chi phí tự cấm 0.0038; đội mình lấy lượt pick tới trước địch=False; Fearless khóa 40; 2 nhánh, giá trị dự kiến 0.0106
+
+==========================================================================================
+BLUE T1 | Cấm: Pantheon, Yunara, Naafiri
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Camille, Viktor, Trundle
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 7/20: BLUE T1 — CHỌN
+ĐÃ CHỌN: Akali [mid]
+  Căn cứ: Slot F1: ưu tiên chọn quan sát 0.009; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Pantheon, Yunara, Naafiri
+Top: — | Rừng: — | Mid: Akali | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Camille, Viktor, Trundle
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 8/20: RED Gen.G — CHỌN
+ĐÃ CHỌN: Xayah [bot]
+  Căn cứ: Slot S1: ưu tiên chọn quan sát 0.041; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Pantheon, Yunara, Naafiri
+Top: — | Rừng: — | Mid: Akali | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Camille, Viktor, Trundle
+Top: — | Rừng: — | Mid: — | Xạ thủ: Xayah | Hỗ trợ: —
+
+LƯỢT 9/20: RED Gen.G — CHỌN
+ĐÃ CHỌN: Ornn [top]
+  Căn cứ: Slot S2: ưu tiên chọn quan sát 0.006; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Pantheon, Yunara, Naafiri
+Top: — | Rừng: — | Mid: Akali | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Camille, Viktor, Trundle
+Top: Ornn | Rừng: — | Mid: — | Xạ thủ: Xayah | Hỗ trợ: —
+
+LƯỢT 10/20: BLUE T1 — CHỌN
+ĐÃ CHỌN: Karma [sup]
+  Căn cứ: Slot F2: ưu tiên chọn quan sát 0.020; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Pantheon, Yunara, Naafiri
+Top: — | Rừng: — | Mid: Akali | Xạ thủ: — | Hỗ trợ: Karma
+RED Gen.G | Cấm: Camille, Viktor, Trundle
+Top: Ornn | Rừng: — | Mid: — | Xạ thủ: Xayah | Hỗ trợ: —
+
+LƯỢT 11/20: BLUE T1 — CHỌN
+ĐÃ CHỌN: Sivir [bot]
+  Căn cứ: Slot F3: ưu tiên chọn quan sát 0.003; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Pantheon, Yunara, Naafiri
+Top: — | Rừng: — | Mid: Akali | Xạ thủ: Sivir | Hỗ trợ: Karma
+RED Gen.G | Cấm: Camille, Viktor, Trundle
+Top: Ornn | Rừng: — | Mid: — | Xạ thủ: Xayah | Hỗ trợ: —
+
+LƯỢT 12/20: RED Gen.G — CHỌN
+ĐÃ CHỌN: Anivia [mid]
+  Căn cứ: Slot S3: ưu tiên chọn quan sát 0.014; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Pantheon, Yunara, Naafiri
+Top: — | Rừng: — | Mid: Akali | Xạ thủ: Sivir | Hỗ trợ: Karma
+RED Gen.G | Cấm: Camille, Viktor, Trundle
+Top: Ornn | Rừng: — | Mid: Anivia | Xạ thủ: Xayah | Hỗ trợ: —
+
+LƯỢT 13/20: RED Gen.G — CẤM
+ĐÃ CẤM: Jax
+  Căn cứ: Mất pool địch 0.0333; chi phí tự cấm 0.0000; đội mình lấy lượt pick tới trước địch=True; Fearless khóa 40; 2 nhánh, giá trị dự kiến -0.0039
+
+==========================================================================================
+BLUE T1 | Cấm: Pantheon, Yunara, Naafiri
+Top: — | Rừng: — | Mid: Akali | Xạ thủ: Sivir | Hỗ trợ: Karma
+RED Gen.G | Cấm: Camille, Viktor, Trundle, Jax
+Top: Ornn | Rừng: — | Mid: Anivia | Xạ thủ: Xayah | Hỗ trợ: —
+
+LƯỢT 14/20: BLUE T1 — CẤM
+ĐÃ CẤM: Maokai
+  Căn cứ: Mất pool địch 0.0021; chi phí tự cấm 0.0000; đội mình lấy lượt pick tới trước địch=False; Fearless khóa 40; 2 nhánh, giá trị dự kiến 0.0073
+
+==========================================================================================
+BLUE T1 | Cấm: Pantheon, Yunara, Naafiri, Maokai
+Top: — | Rừng: — | Mid: Akali | Xạ thủ: Sivir | Hỗ trợ: Karma
+RED Gen.G | Cấm: Camille, Viktor, Trundle, Jax
+Top: Ornn | Rừng: — | Mid: Anivia | Xạ thủ: Xayah | Hỗ trợ: —
+
+LƯỢT 15/20: RED Gen.G — CẤM
+ĐÃ CẤM: Gwen
+  Căn cứ: Mất pool địch 0.0015; chi phí tự cấm 0.0000; đội mình lấy lượt pick tới trước địch=True; Fearless khóa 40; 1 nhánh, giá trị dự kiến -0.0031
+
+==========================================================================================
+BLUE T1 | Cấm: Pantheon, Yunara, Naafiri, Maokai
+Top: — | Rừng: — | Mid: Akali | Xạ thủ: Sivir | Hỗ trợ: Karma
+RED Gen.G | Cấm: Camille, Viktor, Trundle, Jax, Gwen
+Top: Ornn | Rừng: — | Mid: Anivia | Xạ thủ: Xayah | Hỗ trợ: —
+
+LƯỢT 16/20: BLUE T1 — CẤM
+ĐÃ CẤM: Cho'Gath
+  Căn cứ: Mất pool địch 0.0000; chi phí tự cấm 0.0000; đội mình lấy lượt pick tới trước địch=False; Fearless khóa 40; 2 nhánh, giá trị dự kiến 0.0110
+
+==========================================================================================
+BLUE T1 | Cấm: Pantheon, Yunara, Naafiri, Maokai, Cho'Gath
+Top: — | Rừng: — | Mid: Akali | Xạ thủ: Sivir | Hỗ trợ: Karma
+RED Gen.G | Cấm: Camille, Viktor, Trundle, Jax, Gwen
+Top: Ornn | Rừng: — | Mid: Anivia | Xạ thủ: Xayah | Hỗ trợ: —
+
+LƯỢT 17/20: RED Gen.G — CHỌN
+ĐÃ CHỌN: Milio [sup]
+  Căn cứ: Slot S4: ưu tiên chọn quan sát 0.011; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Pantheon, Yunara, Naafiri, Maokai, Cho'Gath
+Top: — | Rừng: — | Mid: Akali | Xạ thủ: Sivir | Hỗ trợ: Karma
+RED Gen.G | Cấm: Camille, Viktor, Trundle, Jax, Gwen
+Top: Ornn | Rừng: — | Mid: Anivia | Xạ thủ: Xayah | Hỗ trợ: Milio
+
+LƯỢT 18/20: BLUE T1 — CHỌN
+ĐÃ CHỌN: Sejuani [jng]
+  Căn cứ: Slot F4: ưu tiên chọn quan sát 0.032; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Pantheon, Yunara, Naafiri, Maokai, Cho'Gath
+Top: — | Rừng: Sejuani | Mid: Akali | Xạ thủ: Sivir | Hỗ trợ: Karma
+RED Gen.G | Cấm: Camille, Viktor, Trundle, Jax, Gwen
+Top: Ornn | Rừng: — | Mid: Anivia | Xạ thủ: Xayah | Hỗ trợ: Milio
+
+LƯỢT 19/20: BLUE T1 — CHỌN
+ĐÃ CHỌN: Vayne [top]
+  Căn cứ: Slot F5: ưu tiên chọn quan sát 0.002; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Pantheon, Yunara, Naafiri, Maokai, Cho'Gath
+Top: Vayne | Rừng: Sejuani | Mid: Akali | Xạ thủ: Sivir | Hỗ trợ: Karma
+RED Gen.G | Cấm: Camille, Viktor, Trundle, Jax, Gwen
+Top: Ornn | Rừng: — | Mid: Anivia | Xạ thủ: Xayah | Hỗ trợ: Milio
+
+LƯỢT 20/20: RED Gen.G — CHỌN
+ĐÃ CHỌN: Malphite [jng]
+  Căn cứ: Slot S5: ưu tiên chọn quan sát 0.000; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Pantheon, Yunara, Naafiri, Maokai, Cho'Gath
+Top: Vayne | Rừng: Sejuani | Mid: Akali | Xạ thủ: Sivir | Hỗ trợ: Karma
+RED Gen.G | Cấm: Camille, Viktor, Trundle, Jax, Gwen
+Top: Ornn | Rừng: Malphite | Mid: Anivia | Xạ thủ: Xayah | Hỗ trợ: Milio
+Căn cứ cặp T1: observed_pairs=0, sparse_pairs=4, unobserved_pairs=6, insufficient_anchor_pairs=0
+Căn cứ cặp Gen.G: observed_pairs=0, sparse_pairs=3, unobserved_pairs=6, insufficient_anchor_pairs=1
+
+===============================================================================================
+📋 BẢNG ĐỘI HÌNH HOÀN THIỆN SAU KHI CẤM/CHỌN (FINAL DRAFT)
+===============================================================================================
+🔷 PHE XANH (T1):
+   • TOP: Vayne (Doran)
+   • JNG: Sejuani (Oner)
+   • MID: Akali (Faker)
+   • BOT: Sivir (Peyz)
+   • SUP: Karma (Keria)
+
+🔴 PHE ĐỎ (Gen.G):
+   • TOP: Ornn (Kiin)
+   • JNG: Malphite (Canyon)
+   • MID: Anivia (Chovy)
+   • BOT: Xayah (Ruler)
+   • SUP: Milio (Duro)
+Radar và thẻ chiến thuật dùng thuộc tính/quy tắc chuyên gia; chưa được xác nhận như điều kiện thắng nhân quả.
+
+────────────────────────────────────── THẺ CHIẾN THUẬT: T1 (BLUE) ──────────────────────────────────────
+🏆 Trường phái: [LATE-GAME HYPERCARRY]
+📊 Radar 5 trục: Early: 0.562 | Scaling: 0.848 | Combat: 0.57 | Pick: 0.815 | Obj: 0.695
+⭐ Chủ lực (Core Carry): Sivir
+⏱️ Điểm rơi sức mạnh: Cuối trận (Sau Phút 28 - Khi chủ lực đạt ngưỡng 3-4 trang bị chuẩn)
+🐉 Mục tiêu số 1: Baron Nashor & Rồng Ngàn Tuổi (Elder Dragon)
+✅ Điều kiện thắng: Bảo kê tuyệt đối cho siêu chủ lực farm an toàn; chấp nhận nhường mục tiêu sớm nếu cần; hủy diệt giao tranh cuối trận.
+❌ Cần tránh: Bị đối thủ băng trụ lăn cầu tuyết thua > 2,500 vàng lúc 10 phút dẫn đến vỡ trận sớm.
+
+────────────────────────────────────── THẺ CHIẾN THUẬT: GEN.G (RED) ──────────────────────────────────────
+🏆 Trường phái: [PICK & SPLIT-PUSH 1-3-1]
+📊 Radar 5 trục: Early: 0.462 | Scaling: 0.87 | Combat: 0.89 | Pick: 0.677 | Obj: 0.682
+⭐ Chủ lực (Core Carry): Anivia
+⏱️ Điểm rơi sức mạnh: Xuyên suốt trận đấu (Đặc biệt phát huy từ Phút 15 đến Phút 30)
+🐉 Mục tiêu số 1: Trụ 2 cánh bản đồ & Bắt lẻ cô lập mục tiêu đi lẻ
+✅ Điều kiện thắng: Tạo thế đẩy lẻ 1-3-1 hoặc 1-4, buộc đối thủ phải phân tán phòng thủ; rình rập bắt lẻ khi địch di chuyển và ép Baron khi hơn người.
+❌ Cần tránh: Bị đối thủ ép giao tranh 5v5 trực diện bất ngờ khi đội hình chưa kịp gom quân.
+Phiên có mốc lịch sử: bỏ dự báo từ model lưu sẵn vì chưa bảo đảm model được fit trước mốc này.
+Đã lưu phiên: reports\ban_strategy_comparison\lookahead\game_5.json

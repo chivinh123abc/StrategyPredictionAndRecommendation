@@ -1,12 +1,12 @@
 # KẾ HOẠCH & CHECKLIST THỰC HIỆN ĐỒ ÁN TOÀN DIỆN (NHÓM 3 NGƯỜI)
-**Chiến lược kép:** Hoàn thành xuất sắc môn **Nhập môn Khoa học Dữ liệu** & Tái sử dụng trọn vẹn cho môn **Lập trình Thiết bị Di động**  
+**Môn học:** Nhập môn Khoa học Dữ liệu (Introduction to Data Science)  
 **Học viện:** Học viện Công nghệ Bưu chính Viễn thông (PTIT)  
-**Giảng viên Data Science:** TS. Thái Tuyết Hải  
+**Giảng viên hướng dẫn:** TS. Thái Tuyết Hải  
 **Đề tài chính thức:** **Hệ Thống Trợ Lý Phân Tích Cấm/Chọn (Ban/Pick AI), Dự Đoán Thắng Thua Sớm 2 Giai Đoạn & Đối Chiếu Chiến Thuật Đấu Giải (Pro Play) vs Đấu Xếp Hạng (Solo Queue) trong Esports Liên Minh Huyền Thoại**  
 
 ---
 
-## 🏛️ KIẾN TRÚC TỔNG THỂ DÙNG CHUNG CHO CẢ 2 MÔN HỌC
+## 🏛️ KIẾN TRÚC TỔNG THỂ HỆ THỐNG
 
 ```
                       [ 🧠 DATA SCIENCE & BACKEND ENGINE ]
@@ -17,13 +17,13 @@
            ├── Mô hình Machine Learning 2 giai đoạn (Draft & Snowball)
            └── Thuật toán Gợi ý Cấm/Chọn Recommender (Chương 6)
                                         │
-             ┌──────────────────────────┴──────────────────────────┐
-             ▼                                                     ▼
- [ 📊 GIAO DIỆN WEB STREAMLIT ]                        [ 📱 GIAO DIỆN MOBILE APP ]
-   (Phục vụ Báo cáo & Demo trước hội đồng)             (Phục vụ nộp môn Lập trình Di động)
-   - Chiếu slide & Demo trực tiếp máy chiếu            - Ứng dụng Android/Flutter chạy điện thoại
-   - Biểu đồ Seaborn/Plotly tương tác cao              - Giao diện tra cứu 173 tướng từ Riot CDN
-   - Bảng truy vấn SQL & Kiểm định A/B                 - Phòng Ban/Pick Live & Dự đoán tỷ lệ thắng
+                                        ▼
+                       [ 📊 GIAO DIỆN WEB APP TƯƠNG TÁC ]
+                    (Phục vụ Báo cáo & Demo trước hội đồng)
+                    - Chiếu slide & Demo trực tiếp trên trình duyệt
+                    - Biểu đồ Seaborn/Plotly & Radar Chart 5 trục
+                    - Bảng truy vấn SQL & Kiểm định giả thuyết A/B
+                    - Phòng mô phỏng Ban/Pick Live & Dự đoán tỷ lệ thắng
 ```
 
 ---
@@ -32,10 +32,10 @@
 
 | Thành viên | Vị trí phân công | Trọng tâm phụ trách chính | Sản phẩm đầu ra |
 | :--- | :--- | :--- | :--- |
-| **Thành viên 1** *(Trưởng nhóm)* | **Data Engineer & Backend Lead** | Pipeline cào dữ liệu Riot API, chuẩn hóa CSDL 1NF/3NF, thiết kế REST API (FastAPI) & Mobile Client. | `lol_live_data.db`, `crawl_riot_matches.py`, `api_service.py`, Mobile App. |
+| **Thành viên 1** *(Trưởng nhóm)* | **Data Engineer, Backend & Web Lead** | Pipeline cào dữ liệu Riot API, chuẩn hóa CSDL 1NF/3NF, thiết kế REST API (FastAPI) & Web App. | `lol_live_data.db`, `crawl_riot_matches.py`, `api_service.py`, Web App. |
 | **Thành viên 2** | **Data Analyst & Statistician** | Thống kê suy diễn, kiểm định giả thuyết A/B ($t$-test, $Z$-test), trực quan hóa dữ liệu khám phá EDA đa chiều. | Báo cáo Thống kê Chương 1, Bộ biểu đồ 300 DPI Chương 3. |
 | **Thành viên 3** | **AI / Machine Learning Lead** | Huấn luyện mô hình ML 2 giai đoạn (Draft & Snowball), đánh giá mô hình, thuật toán Gợi ý Cấm/Chọn (Recommender). | Pipeline Machine Learning Chương 4, Thuật toán Gợi ý Chương 6. |
-| **Cả 3 thành viên** | **Tích hợp & Báo cáo** | Viết báo cáo Word chính thức, thiết kế slide bảo vệ, Web Demo Streamlit và tổng duyệt thuyết trình. | File Word, Slide PowerPoint, Web Demo. |
+| **Cả 3 thành viên** | **Tích hợp & Báo cáo** | Viết báo cáo Word chính thức, thiết kế slide bảo vệ, Web Demo và tổng duyệt thuyết trình. | File Word, Slide PowerPoint, Web Demo. |
 
 ---
 
@@ -43,7 +43,7 @@
 
 ```
 [ Giai đoạn 1 ] ──► [ Giai đoạn 2 ] ──► [ Giai đoạn 3 ] ──► [ Giai đoạn 4 ] ──► [ Giai đoạn 5 ]
-  Dữ liệu & SQL       Thống kê & EDA       Machine Learning     Đóng gói API & Web    Mobile App & Báo cáo
+  Dữ liệu & SQL       Thống kê & EDA       Machine Learning     Đóng gói API & Web    Báo cáo & Bảo vệ
    (Tuần 1 - 2)        (Tuần 2 - 3)          (Tuần 3 - 4)          (Tuần 4)            (Tuần 5)
 ```
 
@@ -121,8 +121,8 @@
 
 ---
 
-### 🟣 GIAI ĐOẠN 4: ĐÓNG GÓI REST API (FASTAPI) & DỰNG WEB DEMO (STREAMLIT)
-*Mục tiêu:* Tạo "cầu nối" API để mô hình Machine Learning có thể phục vụ đồng thời cho cả Web thuyết trình lẫn Mobile App.
+### 🟣 GIAI ĐOẠN 4: ĐÓNG GÓI REST API (FASTAPI) & DỰNG WEB APP TƯƠNG TÁC
+*Mục tiêu:* Xây dựng Backend API kết nối các mô hình Machine Learning với giao diện Web App tương tác.
 
 - [ ] **Task 4.1 [Thành viên 1]:** Xây dựng Backend REST API bằng **FastAPI** (`src/api/`):
   * `GET /api/v1/champions`: Trả về danh sách 173 tướng, ảnh đại diện và thuộc tính.
@@ -130,30 +130,24 @@
   * `POST /api/v1/recommend`: Gợi ý tướng khắc chế và cặp đôi ăn ý tối ưu.
   * `POST /api/v1/win-condition`: Trả về Radar Chart 5 trục và Thẻ phân tích điều kiện thắng (ADR-014).
   * `GET /api/v1/stats/matchups`: Trả về lịch sử đối đầu 1v1 từ CSDL SQLite.
-- [ ] **Task 4.2 [Thành viên 1 + 3]:** Dựng Web Dashboard bằng **Streamlit** (`web/` hoặc `src/web/`):
+- [ ] **Task 4.2 [Thành viên 1 + 3]:** Dựng Giao diện Web App tương tác (`web/`):
   * Giao diện trực quan tích hợp: Tra cứu CSDL SQLite, Dự đoán tỷ lệ thắng live, Radar Chart 5 trục sức mạnh đội hình và Thẻ chiến thuật Điều kiện thắng.
   * Phục vụ demo trực tiếp trên máy chiếu giảng đường khi bảo vệ đồ án Data Science.
-- [ ] **Milestone 4:** Chạy thử nghiệm thành công toàn bộ hệ thống qua Web Streamlit và kiểm tra Swagger Docs tại `http://localhost:8000/docs`.
+- [ ] **Milestone 4:** Chạy thử nghiệm thành công toàn bộ hệ thống qua Web App và kiểm tra Swagger Docs tại `http://localhost:8000/docs`.
 
 ---
 
-### 🔴 GIAI ĐOẠN 5: XÂY DỰNG MOBILE APP, VIẾT BÁO CÁO & BẢO VỆ ĐỒ ÁN
-*Mục tiêu:* Đóng gói sản phẩm hoàn hảo cho cả 2 môn học, sẵn sàng đạt điểm 10 tuyệt đối.
+### 🔴 GIAI ĐOẠN 5: VIẾT BÁO CÁO TỔNG KẾT & BẢO VỆ ĐỒ ÁN
+*Mục tiêu:* Đóng gói sản phẩm hoàn hảo cho môn Nhập môn Khoa học Dữ liệu, sẵn sàng bảo vệ trước hội đồng.
 
-- [ ] **Task 5.1 [Thành viên 1 — Môn Lập trình Di động]:** Xây dựng Ứng dụng Mobile (Android Native / Flutter):
-  * **Màn hình 1 (Danh mục tướng):** `GridView` 173 tướng tải ảnh bất đồng bộ từ Riot Data Dragon CDN qua URL.
-  * **Màn hình 2 (Phòng Cấm/Chọn Thông minh):** Chọn tướng 2 phe $\rightarrow$ gọi API `predict/draft` $\rightarrow$ hiển thị thanh `ProgressBar` tỷ lệ thắng kèm animation.
-  * **Màn hình 3 (Trợ lý Khắc chế):** Chọn tướng địch $\rightarrow$ gọi API `recommend/counter` $\rightarrow$ hiển thị thẻ gợi ý tướng khắc chế.
-  * **Màn hình 4 (Tra cứu CSDL):** Xem tỷ lệ thắng của các kèo đấu đối đầu từ SQLite.
-- [ ] **Task 5.2 [Thành viên 1, 2, 3 — Môn Data Science]:** Soạn thảo Báo cáo tổng thể Word/PDF:
-  * Thành viên 1: Phần Mở đầu, Chương 2 (Tiền xử lý), Chương 5 (CSDL SQL & Pandas), Kiến trúc API.
+- [ ] **Task 5.1 [Thành viên 1, 2, 3]:** Soạn thảo Báo cáo tổng thể Word/PDF:
+  * Thành viên 1: Phần Mở đầu, Chương 2 (Tiền xử lý), Chương 5 (CSDL SQL & Pandas), Kiến trúc API & Web App.
   * Thành viên 2: Chương 1 (Thống kê suy diễn), Chương 3 (Trực quan hóa EDA), nhận xét biểu đồ.
   * Thành viên 3: Chương 4 (Machine Learning 2 giai đoạn), Chương 6 (Gợi ý Cấm/Chọn), Đánh giá mô hình.
-- [ ] **Task 5.3 [Cả 3 thành viên]:** Thiết kế Slide thuyết trình PowerPoint ($20 - 25$ slides trực quan).
-- [ ] **Task 5.4 [Cả 3 thành viên]:** Kịch bản Demo Live:
-  * Trình chiếu Web Dashboard Streamlit trên máy chiếu.
-  * Cầm điện thoại mở Mobile App thao tác trực tiếp $\rightarrow$ Cả 2 nền tảng cùng nhận kết quả từ mô hình Machine Learning.
-- [ ] **Milestone 5:** Bảo vệ thành công đồ án với điểm số tối đa ở cả 2 môn học!
+- [ ] **Task 5.2 [Cả 3 thành viên]:** Thiết kế Slide thuyết trình PowerPoint ($20 - 25$ slides trực quan).
+- [ ] **Task 5.3 [Cả 3 thành viên]:** Kịch bản Demo Live:
+  * Trình chiếu Web App trực tiếp trên máy chiếu giảng đường, mô phỏng cấm/chọn và dự đoán thời gian thực từ mô hình Machine Learning.
+- [ ] **Milestone 5:** Bảo vệ thành công đồ án môn Nhập môn Khoa học Dữ liệu với điểm số tối đa!
 
 ---
 

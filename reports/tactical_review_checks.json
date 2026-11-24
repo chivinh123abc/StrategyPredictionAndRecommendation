@@ -1,0 +1,8 @@
+{
+  "regression_tests_passed": 51,
+  "strict_auto_cli_returncode": 3,
+  "strict_auto_complete": false,
+  "strict_auto_actions": 19,
+  "exact_trundle_case": "reports/trundle_case_review.json",
+  "all_pick_audit": "reports/draft_choice_audit.json"
+}

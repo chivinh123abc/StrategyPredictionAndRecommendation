@@ -1,0 +1,178 @@
+{
+  "protocol": "frozen_history_chronological_actual_pick_order_replay",
+  "region": "WLDS",
+  "historical_cutoff_exclusive": "2026-11-04T23:06:05+00:00",
+  "meta_scope": {
+    "region": "WLDS",
+    "dataset_patch": "16.20",
+    "data_through": "2026-11-04T22:13:57+00:00",
+    "requested_as_of": "2026-11-04T23:06:04.999999999+00:00",
+    "staleness_days": 0,
+    "history_games": 90,
+    "patch_games": 78,
+    "lookback_days": 60,
+    "half_life_days": 21.0,
+    "claim": "historical_snapshot_not_live_meta"
+  },
+  "requested_holdout_games": 20,
+  "accepted_games": 20,
+  "rejected_games": [],
+  "example_replay": [
+    {
+      "gameid": "LOLTMNT02_488033",
+      "slot": "F1",
+      "observed_pick": "Cassiopeia",
+      "suggested_top5": [
+        "Ezreal",
+        "Olaf",
+        "Qiyana",
+        "Lee Sin",
+        "Cassiopeia"
+      ]
+    },
+    {
+      "gameid": "LOLTMNT02_488033",
+      "slot": "S1",
+      "observed_pick": "Jarvan IV",
+      "suggested_top5": [
+        "Qiyana",
+        "Olaf",
+        "Ezreal",
+        "Rumble",
+        "Nautilus"
+      ]
+    },
+    {
+      "gameid": "LOLTMNT02_488033",
+      "slot": "S2",
+      "observed_pick": "Ashe",
+      "suggested_top5": [
+        "Rumble",
+        "Ezreal",
+        "Jhin",
+        "Orianna",
+        "Olaf"
+      ]
+    },
+    {
+      "gameid": "LOLTMNT02_488033",
+      "slot": "F2",
+      "observed_pick": "Wukong",
+      "suggested_top5": [
+        "Olaf",
+        "Ezreal",
+        "Lee Sin",
+        "Nautilus",
+        "Rumble"
+      ]
+    },
+    {
+      "gameid": "LOLTMNT02_488033",
+      "slot": "F3",
+      "observed_pick": "Jayce",
+      "suggested_top5": [
+        "Olaf",
+        "Ezreal",
+        "Nautilus",
+        "Rumble",
+        "Lulu"
+      ]
+    },
+    {
+      "gameid": "LOLTMNT02_488033",
+      "slot": "S3",
+      "observed_pick": "Seraphine",
+      "suggested_top5": [
+        "Rumble",
+        "Olaf",
+        "Orianna",
+        "Seraphine",
+        "Galio"
+      ]
+    },
+    {
+      "gameid": "LOLTMNT02_488033",
+      "slot": "S4",
+      "observed_pick": "Sion",
+      "suggested_top5": [
+        "Olaf",
+        "Orianna",
+        "Galio",
+        "Ambessa",
+        "Locke"
+      ]
+    },
+    {
+      "gameid": "LOLTMNT02_488033",
+      "slot": "F4",
+      "observed_pick": "Mel",
+      "suggested_top5": [
+        "Ezreal",
+        "Nautilus",
+        "Alistar",
+        "Jhin",
+        "Kalista"
+      ]
+    },
+    {
+      "gameid": "LOLTMNT02_488033",
+      "slot": "F5",
+      "observed_pick": "Pyke",
+      "suggested_top5": [
+        "Nautilus",
+        "Karma",
+        "Alistar",
+        "Milio",
+        "Rakan"
+      ]
+    },
+    {
+      "gameid": "LOLTMNT02_488033",
+      "slot": "S5",
+      "observed_pick": "Viktor",
+      "suggested_top5": [
+        "Galio",
+        "Orianna",
+        "Locke",
+        "Viktor",
+        "Ahri"
+      ]
+    }
+  ],
+  "metrics": {
+    "long_history_presence": {
+      "queries": 200,
+      "recall_at_1": 0.04,
+      "recall_at_5": 0.29,
+      "mrr_at_5": 0.11958333333333332,
+      "candidate_coverage": 0.86
+    },
+    "recent_presence": {
+      "queries": 200,
+      "recall_at_1": 0.095,
+      "recall_at_5": 0.3,
+      "mrr_at_5": 0.16558333333333333,
+      "candidate_coverage": 0.86
+    },
+    "patch_context_priority": {
+      "queries": 200,
+      "recall_at_1": 0.095,
+      "recall_at_5": 0.36,
+      "mrr_at_5": 0.184,
+      "candidate_coverage": 0.86
+    }
+  },
+  "limitations": [
+    "Only previously revealed picks and phase-available bans are supplied.",
+    "Own/enemy role assignments inferred from frozen historical frequencies, not heldout final role labels.",
+    "All compared methods share the same recent-patch eligible candidate pool.",
+    "Pick retrieval is imitation evidence; no causal strategy/winrate benefit is measured.",
+    "A fixed historical snapshot is not updated with holdout game outcomes.",
+    "Prior-game Fearless restrictions are not reconstructed in this benchmark.",
+    "Small development audit, not an independent final test or a validation-tuned policy."
+  ],
+  "recall5_difference_vs_recent_presence_ci95": [
+    0.015000000000000013,
+    0.10262499999999988
+  ]
+}

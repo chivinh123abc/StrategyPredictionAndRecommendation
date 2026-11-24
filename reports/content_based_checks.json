@@ -1,0 +1,47 @@
+{
+  "cli_checks": [
+    {
+      "command": [
+        "src/07_recommender/recommender_engine.py",
+        "--content-based",
+        "--seed-champion",
+        "Ahri",
+        "--lane",
+        "mid"
+      ],
+      "returncode": 0,
+      "status": "ok"
+    },
+    {
+      "command": [
+        "src/07_recommender/recommender_engine.py",
+        "--content-based",
+        "--content-player",
+        "Faker",
+        "--lane",
+        "mid"
+      ],
+      "returncode": 0,
+      "status": "ok"
+    },
+    {
+      "command": [
+        "src/07_recommender/recommender_engine.py",
+        "--content-based",
+        "--content-player",
+        "__unknown__",
+        "--lane",
+        "mid"
+      ],
+      "returncode": 0,
+      "status": "insufficient_profile"
+    }
+  ],
+  "engine_integration": "passed",
+  "notebook_code_cells": 6,
+  "regression_tests": {
+    "passed": 16,
+    "failed": 0
+  },
+  "evaluation_partition": "validation_not_final_test"
+}

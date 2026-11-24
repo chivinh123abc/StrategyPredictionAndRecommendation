@@ -1,0 +1,21 @@
+{
+  "completed_games": 5,
+  "total_actions": 100,
+  "unique_picks_across_series": 50,
+  "no_repeated_pick": true,
+  "prior_lock_counts": [
+    0,
+    10,
+    20,
+    30,
+    40
+  ],
+  "draft_order_legal": true,
+  "no_locked_champion_picked_or_banned": true,
+  "only_picks_carry_over_not_standard_bans": true,
+  "explicit_test_override": true,
+  "ban_strategy": "contextual",
+  "ban_pick_numbering_checked": true,
+  "review_required_picks": 38,
+  "no_new_algorithm_or_training": true
+}

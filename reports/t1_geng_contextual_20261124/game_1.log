@@ -1,0 +1,254 @@
+Đang nạp lịch sử trận đấu và hồ sơ tướng...
+GIẢ LẬP BAN/PICK MỘT VÁN — LỊCH SỬ + CONTENT-BASED
+Bạn: blue; phe chọn trước: blue; dữ liệu: WLDS
+SNAPSHOT LỊCH SỬ: patch dataset 16.20, dữ liệu đến 2026-11-09T00:56:00+00:00, cũ 4 ngày so với mốc yêu cầu
+106 trận trong cửa sổ 60 ngày, 94 trận patch đích; không gọi là live meta.
+Lineup T1 (latest_observed_lineup_not_live_roster): top=Doran, jng=Oner, mid=Faker, bot=Peyz, sup=Keria
+Lineup Gen.G (latest_observed_lineup_not_live_roster): top=Kiin, jng=Canyon, mid=Chovy, bot=Ruler, sup=Duro
+Ưu tiên presence/nhịp draft gần đây; bể tướng, đối đầu và cosine là tín hiệu hỗ trợ. Điểm không phải xác suất.
+
+==========================================================================================
+BLUE T1 | Cấm: —
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: —
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 1/20: BLUE T1 — CẤM
+ĐÃ CẤM: Qiyana
+  Căn cứ: Mất pool địch 0.0050; chi phí tự cấm 0.0000; đội mình lấy lượt pick tới trước địch=True; Fearless khóa 0; chấm theo pool ngữ cảnh
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: —
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 2/20: RED Gen.G — CẤM
+ĐÃ CẤM: Nocturne
+  Căn cứ: Mất pool địch 0.0086; chi phí tự cấm 0.0036; đội mình lấy lượt pick tới trước địch=False; Fearless khóa 0; chấm theo pool ngữ cảnh
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Nocturne
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 3/20: BLUE T1 — CẤM
+ĐÃ CẤM: Seraphine
+  Căn cứ: Mất pool địch 0.0022; chi phí tự cấm 0.0000; đội mình lấy lượt pick tới trước địch=True; Fearless khóa 0; chấm theo pool ngữ cảnh
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana, Seraphine
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Nocturne
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 4/20: RED Gen.G — CẤM
+ĐÃ CẤM: Vi
+  Căn cứ: Mất pool địch 0.0131; chi phí tự cấm 0.0045; đội mình lấy lượt pick tới trước địch=False; Fearless khóa 0; chấm theo pool ngữ cảnh
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana, Seraphine
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Nocturne, Vi
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 5/20: BLUE T1 — CẤM
+ĐÃ CẤM: Ashe
+  Căn cứ: Mất pool địch 0.0021; chi phí tự cấm 0.0000; đội mình lấy lượt pick tới trước địch=True; Fearless khóa 0; chấm theo pool ngữ cảnh
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana, Seraphine, Ashe
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Nocturne, Vi
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 6/20: RED Gen.G — CẤM
+ĐÃ CẤM: Lee Sin
+  Căn cứ: Mất pool địch 0.0093; chi phí tự cấm 0.0024; đội mình lấy lượt pick tới trước địch=False; Fearless khóa 0; chấm theo pool ngữ cảnh
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana, Seraphine, Ashe
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Nocturne, Vi, Lee Sin
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 7/20: BLUE T1 — CHỌN
+ĐÃ CHỌN: Renata Glasc [sup]
+  Căn cứ: Slot F1: ưu tiên chọn quan sát 0.020; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana, Seraphine, Ashe
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: Renata Glasc
+RED Gen.G | Cấm: Nocturne, Vi, Lee Sin
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 8/20: RED Gen.G — CHỌN
+ĐÃ CHỌN: Olaf [top]
+  Căn cứ: Slot S1: ưu tiên chọn quan sát 0.026; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana, Seraphine, Ashe
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: Renata Glasc
+RED Gen.G | Cấm: Nocturne, Vi, Lee Sin
+Top: Olaf | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 9/20: RED Gen.G — CHỌN
+ĐÃ CHỌN: Cassiopeia [mid]
+  Căn cứ: Slot S2: ưu tiên chọn quan sát 0.021; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana, Seraphine, Ashe
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: Renata Glasc
+RED Gen.G | Cấm: Nocturne, Vi, Lee Sin
+Top: Olaf | Rừng: — | Mid: Cassiopeia | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 10/20: BLUE T1 — CHỌN
+ĐÃ CHỌN: Kalista [bot]
+  Căn cứ: Slot F2: ưu tiên chọn quan sát 0.038; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana, Seraphine, Ashe
+Top: — | Rừng: — | Mid: — | Xạ thủ: Kalista | Hỗ trợ: Renata Glasc
+RED Gen.G | Cấm: Nocturne, Vi, Lee Sin
+Top: Olaf | Rừng: — | Mid: Cassiopeia | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 11/20: BLUE T1 — CHỌN
+ĐÃ CHỌN: Jarvan IV [jng]
+  Căn cứ: Slot F3: ưu tiên chọn quan sát 0.027; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana, Seraphine, Ashe
+Top: — | Rừng: Jarvan IV | Mid: — | Xạ thủ: Kalista | Hỗ trợ: Renata Glasc
+RED Gen.G | Cấm: Nocturne, Vi, Lee Sin
+Top: Olaf | Rừng: — | Mid: Cassiopeia | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 12/20: RED Gen.G — CHỌN
+ĐÃ CHỌN: Nautilus [sup]
+  Căn cứ: Slot S3: ưu tiên chọn quan sát 0.033; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana, Seraphine, Ashe
+Top: — | Rừng: Jarvan IV | Mid: — | Xạ thủ: Kalista | Hỗ trợ: Renata Glasc
+RED Gen.G | Cấm: Nocturne, Vi, Lee Sin
+Top: Olaf | Rừng: — | Mid: Cassiopeia | Xạ thủ: — | Hỗ trợ: Nautilus
+
+LƯỢT 13/20: RED Gen.G — CẤM
+ĐÃ CẤM: Orianna
+  Căn cứ: Mất pool địch 0.0035; chi phí tự cấm 0.0000; đội mình lấy lượt pick tới trước địch=True; Fearless khóa 0; chấm theo pool ngữ cảnh
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana, Seraphine, Ashe
+Top: — | Rừng: Jarvan IV | Mid: — | Xạ thủ: Kalista | Hỗ trợ: Renata Glasc
+RED Gen.G | Cấm: Nocturne, Vi, Lee Sin, Orianna
+Top: Olaf | Rừng: — | Mid: Cassiopeia | Xạ thủ: — | Hỗ trợ: Nautilus
+
+LƯỢT 14/20: BLUE T1 — CẤM
+ĐÃ CẤM: Jhin
+  Căn cứ: Mất pool địch 0.0077; chi phí tự cấm 0.0000; đội mình lấy lượt pick tới trước địch=False; Fearless khóa 0; chấm theo pool ngữ cảnh
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana, Seraphine, Ashe, Jhin
+Top: — | Rừng: Jarvan IV | Mid: — | Xạ thủ: Kalista | Hỗ trợ: Renata Glasc
+RED Gen.G | Cấm: Nocturne, Vi, Lee Sin, Orianna
+Top: Olaf | Rừng: — | Mid: Cassiopeia | Xạ thủ: — | Hỗ trợ: Nautilus
+
+LƯỢT 15/20: RED Gen.G — CẤM
+ĐÃ CẤM: Locke
+  Căn cứ: Mất pool địch 0.0027; chi phí tự cấm 0.0000; đội mình lấy lượt pick tới trước địch=True; Fearless khóa 0; chấm theo pool ngữ cảnh
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana, Seraphine, Ashe, Jhin
+Top: — | Rừng: Jarvan IV | Mid: — | Xạ thủ: Kalista | Hỗ trợ: Renata Glasc
+RED Gen.G | Cấm: Nocturne, Vi, Lee Sin, Orianna, Locke
+Top: Olaf | Rừng: — | Mid: Cassiopeia | Xạ thủ: — | Hỗ trợ: Nautilus
+
+LƯỢT 16/20: BLUE T1 — CẤM
+ĐÃ CẤM: Wukong
+  Căn cứ: Mất pool địch 0.0075; chi phí tự cấm 0.0000; đội mình lấy lượt pick tới trước địch=False; Fearless khóa 0; chấm theo pool ngữ cảnh
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana, Seraphine, Ashe, Jhin, Wukong
+Top: — | Rừng: Jarvan IV | Mid: — | Xạ thủ: Kalista | Hỗ trợ: Renata Glasc
+RED Gen.G | Cấm: Nocturne, Vi, Lee Sin, Orianna, Locke
+Top: Olaf | Rừng: — | Mid: Cassiopeia | Xạ thủ: — | Hỗ trợ: Nautilus
+
+LƯỢT 17/20: RED Gen.G — CHỌN
+ĐÃ CHỌN: Ezreal [bot]
+  Căn cứ: Slot S4: ưu tiên chọn quan sát 0.040; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana, Seraphine, Ashe, Jhin, Wukong
+Top: — | Rừng: Jarvan IV | Mid: — | Xạ thủ: Kalista | Hỗ trợ: Renata Glasc
+RED Gen.G | Cấm: Nocturne, Vi, Lee Sin, Orianna, Locke
+Top: Olaf | Rừng: — | Mid: Cassiopeia | Xạ thủ: Ezreal | Hỗ trợ: Nautilus
+
+LƯỢT 18/20: BLUE T1 — CHỌN
+ĐÃ CHỌN: Ambessa [top]
+  Căn cứ: Slot F4: ưu tiên chọn quan sát 0.054; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana, Seraphine, Ashe, Jhin, Wukong
+Top: Ambessa | Rừng: Jarvan IV | Mid: — | Xạ thủ: Kalista | Hỗ trợ: Renata Glasc
+RED Gen.G | Cấm: Nocturne, Vi, Lee Sin, Orianna, Locke
+Top: Olaf | Rừng: — | Mid: Cassiopeia | Xạ thủ: Ezreal | Hỗ trợ: Nautilus
+
+LƯỢT 19/20: BLUE T1 — CHỌN
+ĐÃ CHỌN: Syndra [mid]
+  Căn cứ: Slot F5: ưu tiên chọn quan sát 0.035; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana, Seraphine, Ashe, Jhin, Wukong
+Top: Ambessa | Rừng: Jarvan IV | Mid: Syndra | Xạ thủ: Kalista | Hỗ trợ: Renata Glasc
+RED Gen.G | Cấm: Nocturne, Vi, Lee Sin, Orianna, Locke
+Top: Olaf | Rừng: — | Mid: Cassiopeia | Xạ thủ: Ezreal | Hỗ trợ: Nautilus
+
+LƯỢT 20/20: RED Gen.G — CHỌN
+ĐÃ CHỌN: Pantheon [jng]
+  Căn cứ: Slot S5: ưu tiên chọn quan sát 0.012; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana, Seraphine, Ashe, Jhin, Wukong
+Top: Ambessa | Rừng: Jarvan IV | Mid: Syndra | Xạ thủ: Kalista | Hỗ trợ: Renata Glasc
+RED Gen.G | Cấm: Nocturne, Vi, Lee Sin, Orianna, Locke
+Top: Olaf | Rừng: Pantheon | Mid: Cassiopeia | Xạ thủ: Ezreal | Hỗ trợ: Nautilus
+Căn cứ cặp T1: observed_pairs=1, sparse_pairs=7, unobserved_pairs=2, insufficient_anchor_pairs=0
+Căn cứ cặp Gen.G: observed_pairs=1, sparse_pairs=9, unobserved_pairs=0, insufficient_anchor_pairs=0
+
+===============================================================================================
+📋 BẢNG ĐỘI HÌNH HOÀN THIỆN SAU KHI CẤM/CHỌN (FINAL DRAFT)
+===============================================================================================
+🔷 PHE XANH (T1):
+   • TOP: Ambessa (Doran)
+   • JNG: Jarvan IV (Oner)
+   • MID: Syndra (Faker)
+   • BOT: Kalista (Peyz)
+   • SUP: Renata Glasc (Keria)
+
+🔴 PHE ĐỎ (Gen.G):
+   • TOP: Olaf (Kiin)
+   • JNG: Pantheon (Canyon)
+   • MID: Cassiopeia (Chovy)
+   • BOT: Ezreal (Ruler)
+   • SUP: Nautilus (Duro)
+Radar và thẻ chiến thuật dùng thuộc tính/quy tắc chuyên gia; chưa được xác nhận như điều kiện thắng nhân quả.
+
+────────────────────────────────────── THẺ CHIẾN THUẬT: T1 (BLUE) ──────────────────────────────────────
+🏆 Trường phái: [WOMBOCOMBO & OBJECTIVE CONTROL]
+📊 Radar 5 trục: Early: 0.81 | Scaling: 0.668 | Combat: 0.778 | Pick: 0.838 | Obj: 0.717
+⭐ Chủ lực (Core Carry): Syndra
+⏱️ Điểm rơi sức mạnh: Giữa và Cuối trận (Phút 20 đến Phút 35 - Giai đoạn Rồng 3, 4 và Baron)
+🐉 Mục tiêu số 1: Rồng Nguyên Tố (Thiết lập Linh Hồn Rồng) & Hang Baron
+✅ Điều kiện thắng: Kiểm soát tầm nhìn trước 1 phút tại hang mục tiêu lớn, ép đối thủ vào các góc hẹp của sông và tung Wombocombo 5v5 quét sạch.
+❌ Cần tránh: Để đối thủ chia cắt đội hình đẩy lẻ 1-3-1 hoặc giao tranh khi chưa có đủ chiêu cuối mở combat.
+
+────────────────────────────────────── THẺ CHIẾN THUẬT: GEN.G (RED) ──────────────────────────────────────
+🏆 Trường phái: [WOMBOCOMBO & OBJECTIVE CONTROL]
+📊 Radar 5 trục: Early: 0.77 | Scaling: 0.745 | Combat: 0.647 | Pick: 0.835 | Obj: 0.662
+⭐ Chủ lực (Core Carry): Cassiopeia
+⏱️ Điểm rơi sức mạnh: Giữa và Cuối trận (Phút 20 đến Phút 35 - Giai đoạn Rồng 3, 4 và Baron)
+🐉 Mục tiêu số 1: Rồng Nguyên Tố (Thiết lập Linh Hồn Rồng) & Hang Baron
+✅ Điều kiện thắng: Kiểm soát tầm nhìn trước 1 phút tại hang mục tiêu lớn, ép đối thủ vào các góc hẹp của sông và tung Wombocombo 5v5 quét sạch.
+❌ Cần tránh: Để đối thủ chia cắt đội hình đẩy lẻ 1-3-1 hoặc giao tranh khi chưa có đủ chiêu cuối mở combat.
+Phiên có mốc lịch sử: bỏ dự báo từ model lưu sẵn vì chưa bảo đảm model được fit trước mốc này.
+Đã lưu phiên: reports\t1_geng_contextual_20261124\game_1.json

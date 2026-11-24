@@ -1,0 +1,254 @@
+Đang nạp lịch sử trận đấu và hồ sơ tướng...
+GIẢ LẬP BAN/PICK MỘT VÁN — LỊCH SỬ + CONTENT-BASED
+Bạn: blue; phe chọn trước: blue; dữ liệu: WLDS
+SNAPSHOT LỊCH SỬ: patch dataset 16.20, dữ liệu đến 2026-11-09T00:56:00+00:00, cũ 4 ngày so với mốc yêu cầu
+106 trận trong cửa sổ 60 ngày, 94 trận patch đích; không gọi là live meta.
+Lineup T1 (latest_observed_lineup_not_live_roster): top=Doran, jng=Oner, mid=Faker, bot=Peyz, sup=Keria
+Lineup Gen.G (latest_observed_lineup_not_live_roster): top=Kiin, jng=Canyon, mid=Chovy, bot=Ruler, sup=Duro
+Ưu tiên presence/nhịp draft gần đây; bể tướng, đối đầu và cosine là tín hiệu hỗ trợ. Điểm không phải xác suất.
+
+==========================================================================================
+BLUE T1 | Cấm: —
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: —
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 1/20: BLUE T1 — CẤM
+ĐÃ CẤM: Nautilus
+  Căn cứ: Mất pool địch 0.0033; chi phí tự cấm 0.0025; đội mình lấy lượt pick tới trước địch=True; Fearless khóa 0; 2 nhánh, giá trị dự kiến -0.0086
+
+==========================================================================================
+BLUE T1 | Cấm: Nautilus
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: —
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 2/20: RED Gen.G — CẤM
+ĐÃ CẤM: Renata Glasc
+  Căn cứ: Mất pool địch 0.0117; chi phí tự cấm 0.0052; đội mình lấy lượt pick tới trước địch=False; Fearless khóa 0; 2 nhánh, giá trị dự kiến 0.0241
+
+==========================================================================================
+BLUE T1 | Cấm: Nautilus
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Renata Glasc
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 3/20: BLUE T1 — CẤM
+ĐÃ CẤM: Alistar
+  Căn cứ: Mất pool địch 0.0017; chi phí tự cấm 0.0007; đội mình lấy lượt pick tới trước địch=True; Fearless khóa 0; 2 nhánh, giá trị dự kiến -0.0107
+
+==========================================================================================
+BLUE T1 | Cấm: Nautilus, Alistar
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Renata Glasc
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 4/20: RED Gen.G — CẤM
+ĐÃ CẤM: Nocturne
+  Căn cứ: Mất pool địch 0.0086; chi phí tự cấm 0.0032; đội mình lấy lượt pick tới trước địch=False; Fearless khóa 0; 2 nhánh, giá trị dự kiến 0.0295
+
+==========================================================================================
+BLUE T1 | Cấm: Nautilus, Alistar
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Renata Glasc, Nocturne
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 5/20: BLUE T1 — CẤM
+ĐÃ CẤM: Olaf
+  Căn cứ: Mất pool địch 0.0086; chi phí tự cấm 0.0074; đội mình lấy lượt pick tới trước địch=True; Fearless khóa 0; 2 nhánh, giá trị dự kiến -0.0022
+
+==========================================================================================
+BLUE T1 | Cấm: Nautilus, Alistar, Olaf
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Renata Glasc, Nocturne
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 6/20: RED Gen.G — CẤM
+ĐÃ CẤM: Jayce
+  Căn cứ: Mất pool địch 0.0045; chi phí tự cấm 0.0008; đội mình lấy lượt pick tới trước địch=False; Fearless khóa 0; 2 nhánh, giá trị dự kiến 0.0194
+
+==========================================================================================
+BLUE T1 | Cấm: Nautilus, Alistar, Olaf
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Renata Glasc, Nocturne, Jayce
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 7/20: BLUE T1 — CHỌN
+ĐÃ CHỌN: Vi [jng]
+  Căn cứ: Slot F1: ưu tiên chọn quan sát 0.117; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Nautilus, Alistar, Olaf
+Top: — | Rừng: Vi | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Renata Glasc, Nocturne, Jayce
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 8/20: RED Gen.G — CHỌN
+ĐÃ CHỌN: Qiyana [jng]
+  Căn cứ: Slot S1: ưu tiên chọn quan sát 0.068; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Nautilus, Alistar, Olaf
+Top: — | Rừng: Vi | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Renata Glasc, Nocturne, Jayce
+Top: — | Rừng: Qiyana | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 9/20: RED Gen.G — CHỌN
+ĐÃ CHỌN: Cassiopeia [mid]
+  Căn cứ: Slot S2: ưu tiên chọn quan sát 0.021; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Nautilus, Alistar, Olaf
+Top: — | Rừng: Vi | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Renata Glasc, Nocturne, Jayce
+Top: — | Rừng: Qiyana | Mid: Cassiopeia | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 10/20: BLUE T1 — CHỌN
+ĐÃ CHỌN: Syndra [mid]
+  Căn cứ: Slot F2: ưu tiên chọn quan sát 0.042; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Nautilus, Alistar, Olaf
+Top: — | Rừng: Vi | Mid: Syndra | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Renata Glasc, Nocturne, Jayce
+Top: — | Rừng: Qiyana | Mid: Cassiopeia | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 11/20: BLUE T1 — CHỌN
+ĐÃ CHỌN: Ezreal [bot]
+  Căn cứ: Slot F3: ưu tiên chọn quan sát 0.041; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Nautilus, Alistar, Olaf
+Top: — | Rừng: Vi | Mid: Syndra | Xạ thủ: Ezreal | Hỗ trợ: —
+RED Gen.G | Cấm: Renata Glasc, Nocturne, Jayce
+Top: — | Rừng: Qiyana | Mid: Cassiopeia | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 12/20: RED Gen.G — CHỌN
+ĐÃ CHỌN: Rumble [top]
+  Căn cứ: Slot S3: ưu tiên chọn quan sát 0.018; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Nautilus, Alistar, Olaf
+Top: — | Rừng: Vi | Mid: Syndra | Xạ thủ: Ezreal | Hỗ trợ: —
+RED Gen.G | Cấm: Renata Glasc, Nocturne, Jayce
+Top: Rumble | Rừng: Qiyana | Mid: Cassiopeia | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 13/20: RED Gen.G — CẤM
+ĐÃ CẤM: Karma
+  Căn cứ: Mất pool địch 0.0026; chi phí tự cấm 0.0000; đội mình lấy lượt pick tới trước địch=True; Fearless khóa 0; 2 nhánh, giá trị dự kiến 0.0044
+
+==========================================================================================
+BLUE T1 | Cấm: Nautilus, Alistar, Olaf
+Top: — | Rừng: Vi | Mid: Syndra | Xạ thủ: Ezreal | Hỗ trợ: —
+RED Gen.G | Cấm: Renata Glasc, Nocturne, Jayce, Karma
+Top: Rumble | Rừng: Qiyana | Mid: Cassiopeia | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 14/20: BLUE T1 — CẤM
+ĐÃ CẤM: Jhin
+  Căn cứ: Mất pool địch 0.0075; chi phí tự cấm 0.0000; đội mình lấy lượt pick tới trước địch=False; Fearless khóa 0; 2 nhánh, giá trị dự kiến 0.0094
+
+==========================================================================================
+BLUE T1 | Cấm: Nautilus, Alistar, Olaf, Jhin
+Top: — | Rừng: Vi | Mid: Syndra | Xạ thủ: Ezreal | Hỗ trợ: —
+RED Gen.G | Cấm: Renata Glasc, Nocturne, Jayce, Karma
+Top: Rumble | Rừng: Qiyana | Mid: Cassiopeia | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 15/20: RED Gen.G — CẤM
+ĐÃ CẤM: Lulu
+  Căn cứ: Mất pool địch 0.0052; chi phí tự cấm 0.0028; đội mình lấy lượt pick tới trước địch=True; Fearless khóa 0; 2 nhánh, giá trị dự kiến 0.0041
+
+==========================================================================================
+BLUE T1 | Cấm: Nautilus, Alistar, Olaf, Jhin
+Top: — | Rừng: Vi | Mid: Syndra | Xạ thủ: Ezreal | Hỗ trợ: —
+RED Gen.G | Cấm: Renata Glasc, Nocturne, Jayce, Karma, Lulu
+Top: Rumble | Rừng: Qiyana | Mid: Cassiopeia | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 16/20: BLUE T1 — CẤM
+ĐÃ CẤM: Ashe
+  Căn cứ: Mất pool địch 0.0006; chi phí tự cấm 0.0000; đội mình lấy lượt pick tới trước địch=False; Fearless khóa 0; 2 nhánh, giá trị dự kiến 0.0108
+
+==========================================================================================
+BLUE T1 | Cấm: Nautilus, Alistar, Olaf, Jhin, Ashe
+Top: — | Rừng: Vi | Mid: Syndra | Xạ thủ: Ezreal | Hỗ trợ: —
+RED Gen.G | Cấm: Renata Glasc, Nocturne, Jayce, Karma, Lulu
+Top: Rumble | Rừng: Qiyana | Mid: Cassiopeia | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 17/20: RED Gen.G — CHỌN
+ĐÃ CHỌN: Seraphine [sup]
+  Căn cứ: Slot S4: ưu tiên chọn quan sát 0.013; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Nautilus, Alistar, Olaf, Jhin, Ashe
+Top: — | Rừng: Vi | Mid: Syndra | Xạ thủ: Ezreal | Hỗ trợ: —
+RED Gen.G | Cấm: Renata Glasc, Nocturne, Jayce, Karma, Lulu
+Top: Rumble | Rừng: Qiyana | Mid: Cassiopeia | Xạ thủ: — | Hỗ trợ: Seraphine
+
+LƯỢT 18/20: BLUE T1 — CHỌN
+ĐÃ CHỌN: Gnar [top]
+  Căn cứ: Slot F4: ưu tiên chọn quan sát 0.027; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Nautilus, Alistar, Olaf, Jhin, Ashe
+Top: Gnar | Rừng: Vi | Mid: Syndra | Xạ thủ: Ezreal | Hỗ trợ: —
+RED Gen.G | Cấm: Renata Glasc, Nocturne, Jayce, Karma, Lulu
+Top: Rumble | Rừng: Qiyana | Mid: Cassiopeia | Xạ thủ: — | Hỗ trợ: Seraphine
+
+LƯỢT 19/20: BLUE T1 — CHỌN
+ĐÃ CHỌN: Leona [sup]
+  Căn cứ: Slot F5: ưu tiên chọn quan sát 0.014; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Nautilus, Alistar, Olaf, Jhin, Ashe
+Top: Gnar | Rừng: Vi | Mid: Syndra | Xạ thủ: Ezreal | Hỗ trợ: Leona
+RED Gen.G | Cấm: Renata Glasc, Nocturne, Jayce, Karma, Lulu
+Top: Rumble | Rừng: Qiyana | Mid: Cassiopeia | Xạ thủ: — | Hỗ trợ: Seraphine
+
+LƯỢT 20/20: RED Gen.G — CHỌN
+ĐÃ CHỌN: Kai'Sa [bot]
+  Căn cứ: Slot S5: ưu tiên chọn quan sát 0.025; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Nautilus, Alistar, Olaf, Jhin, Ashe
+Top: Gnar | Rừng: Vi | Mid: Syndra | Xạ thủ: Ezreal | Hỗ trợ: Leona
+RED Gen.G | Cấm: Renata Glasc, Nocturne, Jayce, Karma, Lulu
+Top: Rumble | Rừng: Qiyana | Mid: Cassiopeia | Xạ thủ: Kai'Sa | Hỗ trợ: Seraphine
+Căn cứ cặp T1: observed_pairs=1, sparse_pairs=8, unobserved_pairs=1, insufficient_anchor_pairs=0
+Căn cứ cặp Gen.G: observed_pairs=1, sparse_pairs=7, unobserved_pairs=2, insufficient_anchor_pairs=0
+
+===============================================================================================
+📋 BẢNG ĐỘI HÌNH HOÀN THIỆN SAU KHI CẤM/CHỌN (FINAL DRAFT)
+===============================================================================================
+🔷 PHE XANH (T1):
+   • TOP: Gnar (Doran)
+   • JNG: Vi (Oner)
+   • MID: Syndra (Faker)
+   • BOT: Ezreal (Peyz)
+   • SUP: Leona (Keria)
+
+🔴 PHE ĐỎ (Gen.G):
+   • TOP: Rumble (Kiin)
+   • JNG: Qiyana (Canyon)
+   • MID: Cassiopeia (Chovy)
+   • BOT: Kai'Sa (Ruler)
+   • SUP: Seraphine (Duro)
+Radar và thẻ chiến thuật dùng thuộc tính/quy tắc chuyên gia; chưa được xác nhận như điều kiện thắng nhân quả.
+
+────────────────────────────────────── THẺ CHIẾN THUẬT: T1 (BLUE) ──────────────────────────────────────
+🏆 Trường phái: [EARLY SNOWBALL & DIVE]
+📊 Radar 5 trục: Early: 0.71 | Scaling: 0.77 | Combat: 0.793 | Pick: 0.897 | Obj: 0.677
+⭐ Chủ lực (Core Carry): Syndra
+⏱️ Điểm rơi sức mạnh: Đầu trận (Phút 1 đến Phút 20 - Trước mốc Baron xuất hiện)
+🐉 Mục tiêu số 1: Sâu Hư Không đợt 1 + Trụ Đầu (First Tower) trước phút 14
+✅ Điều kiện thắng: Tạo chênh lệch >= 2,000 vàng lúc 10 phút, băng trụ 2 cánh liên tục, ép đối thủ vỡ trận trước 25 phút.
+❌ Cần tránh: Bị đối thủ phòng ngự kéo dài trận đấu qua phút 30 khi chất tướng hết thời gian lăn cầu tuyết.
+
+────────────────────────────────────── THẺ CHIẾN THUẬT: GEN.G (RED) ──────────────────────────────────────
+🏆 Trường phái: [LATE-GAME HYPERCARRY]
+📊 Radar 5 trục: Early: 0.693 | Scaling: 0.85 | Combat: 0.785 | Pick: 0.685 | Obj: 0.705
+⭐ Chủ lực (Core Carry): Cassiopeia
+⏱️ Điểm rơi sức mạnh: Cuối trận (Sau Phút 28 - Khi chủ lực đạt ngưỡng 3-4 trang bị chuẩn)
+🐉 Mục tiêu số 1: Baron Nashor & Rồng Ngàn Tuổi (Elder Dragon)
+✅ Điều kiện thắng: Bảo kê tuyệt đối cho siêu chủ lực farm an toàn; chấp nhận nhường mục tiêu sớm nếu cần; hủy diệt giao tranh cuối trận.
+❌ Cần tránh: Bị đối thủ băng trụ lăn cầu tuyết thua > 2,500 vàng lúc 10 phút dẫn đến vỡ trận sớm.
+Phiên có mốc lịch sử: bỏ dự báo từ model lưu sẵn vì chưa bảo đảm model được fit trước mốc này.
+Đã lưu phiên: reports\ban_strategy_comparison\lookahead\game_1.json

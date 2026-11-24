@@ -8,10 +8,15 @@ Giáo trình: Nhập môn Khoa học Dữ liệu - TS. Thái Tuyết Hải (PTIT
 
 import sys
 import argparse
+import sys
+from pathlib import Path
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 import sqlite3
 from pathlib import Path
 import pandas as pd
 import numpy as np
+import matplotlib
+matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 import seaborn as sns
 
@@ -58,7 +63,7 @@ class EDAPlotter:
 
     def load_data(self) -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
         """Trích xuất 3 tập dữ liệu từ CSDL SQLite: Pro Matches, Rank Matches, Pro Players"""
-        conn = sqlite3.connect(self.db_path)
+        conn = __import__('analysis_data', fromlist=['open_clean_connection']).open_clean_connection(self.db_path)
 
         # 1. Đấu Giải Cấp Đội (Pro Matches)
         q_pro = """
@@ -68,7 +73,7 @@ class EDAPlotter:
                killsat10, deathsat10,
                towers, firstdragon,
                void_grubs, dragons
-        FROM tournament_matches
+        FROM tournament_matches_10min
         WHERE datacompleteness = 'complete'
         """
         df_pro = pd.read_sql_query(q_pro, conn)
@@ -94,7 +99,7 @@ class EDAPlotter:
                p.killsat10, p.deathsat10, p.assistsat10,
                p.golddiffat10, p.xpdiffat10, p.csdiffat10
         FROM tournament_players p
-        JOIN tournament_matches m ON p.gameid = m.gameid AND p.side = m.side
+        JOIN tournament_matches_10min m ON p.gameid = m.gameid AND p.side = m.side
         WHERE m.datacompleteness = 'complete'
         """
         df_players = pd.read_sql_query(q_players, conn)
@@ -112,12 +117,11 @@ class EDAPlotter:
         # Chọn các đặc trưng kinh tế & mục tiêu lúc 10 phút của Đấu Giải
         feature_cols = [
             'result', 'golddiffat10', 'xpdiffat10', 'csdiffat10',
-            'killsat10', 'deathsat10', 'firstdragon', 'void_grubs', 'duration_min'
+            'killsat10', 'deathsat10'
         ]
         feature_labels = [
             'Thắng Trận\n(Result)', 'Chênh Vàng\n(Gold Diff 10)', 'Chênh XP\n(XP Diff 10)', 
-            'Chênh Lính\n(CS Diff 10)', 'Số Mạng Ăn\n(Kills 10)', 'Số Mạng Chết\n(Deaths 10)', 
-            'Ăn Rồng 1\n(First Dragon)', 'Sâu Hư Không\n(Voidgrubs)', 'Thời Lượng\n(Duration)'
+            'Chênh Lính\n(CS Diff 10)', 'Số Mạng Ăn\n(Kills 10)', 'Số Mạng Chết\n(Deaths 10)'
         ]
         
         corr_matrix = df_pro[feature_cols].corr()
@@ -329,82 +333,30 @@ class EDAPlotter:
         plt.close(fig)
         return out_path
 
-    def plot_fig5_neutral_objectives_scenarios(self) -> Path:
-        """
-        Fig 5: Biểu Đồ Cột Nhóm Toàn Diện 8 Tổ Hợp Mục Tiêu Lớn (Rồng 1 x 0, 1, 2, 3 Sâu)
-        So sánh chi tiết Tỷ lệ thắng giữa Đấu Giải (Pro Play) và Solo Rank (Task 2.3).
-        """
-        df_pro, df_rank, _ = self.load_data()
-
-        # 1. Tính số liệu 8 tổ hợp cho Đấu Giải (Pro Play)
-        df_pro_work = df_pro[df_pro['void_grubs'].isin([0, 1, 2, 3])].copy()
-        df_pro_work['has_drag'] = df_pro_work['firstdragon'].fillna(0).astype(int)
-        pro_stats = df_pro_work.groupby(['has_drag', 'void_grubs'])['result'].mean() * 100.0
-
-        # 2. Tính số liệu 8 tổ hợp cho Solo Rank
-        df_rank_blue = pd.DataFrame({
-            'has_drag': (df_rank['blueDragons'] > 0).astype(int),
-            'void_grubs': df_rank['blueVoidgrubs'].clip(0, 3),
-            'result': df_rank['blueWins']
-        })
-        df_rank_red = pd.DataFrame({
-            'has_drag': (df_rank['redDragons'] > 0).astype(int),
-            'void_grubs': df_rank['redVoidgrubs'].clip(0, 3),
-            'result': 1 - df_rank['blueWins']
-        })
-        df_rank_all = pd.concat([df_rank_blue, df_rank_red], ignore_index=True)
-        rank_stats = df_rank_all.groupby(['has_drag', 'void_grubs'])['result'].mean() * 100.0
-
-        grub_labels = ['0 Sâu\n(0 Grubs)', '1 Sâu\n(1 Grub)', '2 Sâu\n(2 Grubs)', '3 Sâu\n(3 Grubs)']
-        x = np.arange(len(grub_labels))
-        width = 0.36
-
-        fig, axes = plt.subplots(1, 2, figsize=(14, 6), dpi=self.dpi, sharey=True)
-
-        # Function helper vẽ từng subplot
-        def draw_subplot(ax, stats, title, subtitle):
-            no_drag = [stats.get((0, g), 0.0) for g in range(4)]
-            has_drag = [stats.get((1, g), 0.0) for g in range(4)]
-
-            rects_no = ax.bar(x - width/2, no_drag, width, label='Mất Rồng 1 (0 Dragons)', color='#C53030', alpha=0.9, edgecolor='black', linewidth=0.8)
-            rects_has = ax.bar(x + width/2, has_drag, width, label='Có Rồng 1 (First Dragon)', color='#2B6CB0', alpha=0.9, edgecolor='black', linewidth=0.8)
-
-            ax.axhline(50, color='gray', linestyle='--', linewidth=1.2, alpha=0.8, label='Mốc Cân Bằng (50%)')
-
-            for rect in rects_no:
-                h = rect.get_height()
-                ax.annotate(f'{h:.1f}%',
-                            xy=(rect.get_x() + rect.get_width() / 2, h),
-                            xytext=(0, 3), textcoords="offset points",
-                            ha='center', va='bottom', fontsize=8.5, fontweight='bold', color='#742A2A')
-
-            for rect in rects_has:
-                h = rect.get_height()
-                ax.annotate(f'{h:.1f}%',
-                            xy=(rect.get_x() + rect.get_width() / 2, h),
-                            xytext=(0, 3), textcoords="offset points",
-                            ha='center', va='bottom', fontsize=8.5, fontweight='bold', color='#1A365D')
-
-            ax.set_title(f"{title}\n({subtitle})", fontsize=11, fontweight='bold', color='#1A365D', pad=10)
-            ax.set_xlabel("Số Lượng Sâu Hư Không Ăn Được Lúc 10 Phút", fontsize=10, fontweight='bold')
-            ax.set_xticks(x)
-            ax.set_xticklabels(grub_labels, fontsize=9.5)
-            ax.set_ylim(0, 90)
-            ax.legend(loc='upper left', frameon=True, fontsize=8.5)
-
-        draw_subplot(axes[0], pro_stats, "Đấu Giải Chuyên Nghiệp (Pro Play)", "4,752 quan sát đội")
-        draw_subplot(axes[1], rank_stats, "Solo Rank Thách Đấu (VN & KR)", "2,018 quan sát đội")
-
-        axes[0].set_ylabel("Tỷ Lệ Thắng Cuối Trận (%)", fontsize=10, fontweight='bold')
-
-        fig.suptitle("FIG 5: MA TRẬN 8 TỔ HỢP MỤC TIÊU LỚN 10 PHÚT (RỒNG 1 x 0, 1, 2, 3 SÂU HƯ KHÔNG)", 
-                     fontsize=12.5, fontweight='bold', y=0.98, color='#1A365D')
-
-        plt.tight_layout()
-        out_path = self.output_dir / "fig5_neutral_objectives_scenarios_bar.png"
-        fig.savefig(out_path, dpi=self.dpi)
-        plt.close(fig)
-        return out_path
+    def plot_fig5_neutral_objectives_scenarios(self):
+        from analysis_data import load_clean_tables
+        from scipy.stats import norm
+        rank,_,_=load_clean_tables(self.db_path)
+        rank=rank.copy()
+        rank['dragon_before10']=(rank.blueDragons>0).astype(int)
+        stats=rank.groupby(['dragon_before10','blueVoidgrubs']).blueWins.agg(['sum','size','mean'])
+        fig,ax=plt.subplots(figsize=(11,6),dpi=self.dpi)
+        labels=[]
+        for i,((dragon,grubs),r) in enumerate(stats.iterrows()):
+            n=r['size'];p=r['mean'];z=norm.ppf(.975)
+            center=(p+z*z/(2*n))/(1+z*z/n)
+            half=z*((p*(1-p)/n+z*z/(4*n*n))**.5)/(1+z*z/n)
+            ax.bar(i,p*100,color='#2563eb' if dragon else '#ca4343')
+            ax.plot([i,i],[(center-half)*100,(center+half)*100],color='black')
+            ax.text(i,p*100+3,f'n={int(n)}',ha='center',fontsize=8)
+            labels.append(f'D={dragon}, G={int(grubs)}')
+        ax.set_xticks(range(len(labels)),labels,rotation=35)
+        ax.set_ylim(0,110)
+        ax.set_ylabel('Historical Blue team winrate (%)')
+        ax.set_title('Rank only: observed objectives before 10 min; Wilson 95% CI\nPro unavailable without event timestamps; association is not causation')
+        fig.tight_layout();path=self.output_dir/'fig5_neutral_objectives_scenarios_bar.png'
+        fig.savefig(path,dpi=self.dpi);plt.close(fig)
+        return path
 
     def plot_all(self) -> dict[str, Path]:
         """Tạo toàn bộ bộ 5 biểu đồ EDA chất lượng cao 300 DPI"""

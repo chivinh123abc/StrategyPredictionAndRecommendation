@@ -1,0 +1,200 @@
+{
+  "experiment": "same_snapshot_same_rosters_alternating_first_pick_T1_GenG_five_drafts_each",
+  "snapshot": {
+    "region": "WLDS",
+    "dataset_patch": "16.20",
+    "data_through": "2026-11-09T00:56:00+00:00",
+    "requested_as_of": "2026-11-13T23:59:59.999999999+00:00",
+    "staleness_days": 4,
+    "history_games": 106,
+    "patch_games": 94,
+    "lookback_days": 60,
+    "half_life_days": 21.0,
+    "claim": "historical_snapshot_not_live_meta"
+  },
+  "metrics": {
+    "legacy": {
+      "completed_games": 5,
+      "actions": 100,
+      "unique_picks": 50,
+      "distinct_opening_ban_sets": 1,
+      "mean_pairwise_opening_jaccard": 1.0,
+      "opening_ban_sets": [
+        [
+          "Cassiopeia",
+          "Nocturne",
+          "Olaf",
+          "Qiyana",
+          "Renata Glasc",
+          "Vi"
+        ],
+        [
+          "Cassiopeia",
+          "Nocturne",
+          "Olaf",
+          "Qiyana",
+          "Renata Glasc",
+          "Vi"
+        ],
+        [
+          "Cassiopeia",
+          "Nocturne",
+          "Olaf",
+          "Qiyana",
+          "Renata Glasc",
+          "Vi"
+        ],
+        [
+          "Cassiopeia",
+          "Nocturne",
+          "Olaf",
+          "Qiyana",
+          "Renata Glasc",
+          "Vi"
+        ],
+        [
+          "Cassiopeia",
+          "Nocturne",
+          "Olaf",
+          "Qiyana",
+          "Renata Glasc",
+          "Vi"
+        ]
+      ],
+      "review_required_picks": 38
+    },
+    "contextual": {
+      "completed_games": 5,
+      "actions": 100,
+      "unique_picks": 50,
+      "distinct_opening_ban_sets": 5,
+      "mean_pairwise_opening_jaccard": 0.4714285714285714,
+      "opening_ban_sets": [
+        [
+          "Ashe",
+          "Lee Sin",
+          "Nocturne",
+          "Qiyana",
+          "Seraphine",
+          "Vi"
+        ],
+        [
+          "Jayce",
+          "Locke",
+          "Nocturne",
+          "Orianna",
+          "Qiyana",
+          "Vi"
+        ],
+        [
+          "Ashe",
+          "Jayce",
+          "Nocturne",
+          "Qiyana",
+          "Seraphine",
+          "Vi"
+        ],
+        [
+          "Jayce",
+          "Karma",
+          "Nocturne",
+          "Qiyana",
+          "Trundle",
+          "Vi"
+        ],
+        [
+          "Jayce",
+          "Naafiri",
+          "Nocturne",
+          "Qiyana",
+          "Taliyah",
+          "Vi"
+        ]
+      ],
+      "review_required_picks": 38
+    },
+    "lookahead": {
+      "completed_games": 5,
+      "actions": 100,
+      "unique_picks": 50,
+      "distinct_opening_ban_sets": 5,
+      "mean_pairwise_opening_jaccard": 0.14484848484848484,
+      "opening_ban_sets": [
+        [
+          "Alistar",
+          "Jayce",
+          "Nautilus",
+          "Nocturne",
+          "Olaf",
+          "Renata Glasc"
+        ],
+        [
+          "Ambessa",
+          "Jarvan IV",
+          "Jayce",
+          "Nautilus",
+          "Nocturne",
+          "Pantheon"
+        ],
+        [
+          "Akali",
+          "Jarvan IV",
+          "Nocturne",
+          "Pantheon",
+          "Xayah",
+          "Yunara"
+        ],
+        [
+          "Akali",
+          "Camille",
+          "Karma",
+          "Milio",
+          "Viktor",
+          "Xayah"
+        ],
+        [
+          "Camille",
+          "Naafiri",
+          "Pantheon",
+          "Trundle",
+          "Viktor",
+          "Yunara"
+        ]
+      ],
+      "review_required_picks": 41,
+      "mean_ban_search_seconds": 0.471361858000746,
+      "p95_ban_search_seconds": 0.7872284650045912,
+      "max_ban_search_seconds": 1.3712927000015043,
+      "mean_selected_supported_response_mass": 0.2110849815071015,
+      "min_selected_supported_response_mass": 0.057656273513543965,
+      "selected_ban_differs_from_context_top1": 23,
+      "decisions_with_overlapping_truncation_sensitivity_bounds": 48,
+      "response_sources": [
+        "opponent_model_uncalibrated_conditioned_on_supported_actions"
+      ]
+    }
+  },
+  "checks": {
+    "all_three_series_complete": true,
+    "each_series_unique_picks": 50,
+    "actual_branch_paths_replayed": 583,
+    "root_evaluations": 295,
+    "max_search_plies": 9,
+    "no_future_actual_draft_supplied_to_search": true,
+    "same_snapshot_rosters_pick_schedule": true,
+    "root_source_sha256": {
+      "ban_planner": "cd801e13444e3610945649bc45004eeeb6a097ce75146b64b374f859e8567f3f",
+      "draft_advisor": "545e10f23888b8d3aa12e6f050af72d8fc5b8922126423fc001d240d6ad9fdb5",
+      "simulate_draft_match": "00ff0870c1e3606c61f769d004f5e6b15d069a955429c5029b84b7be20a39175",
+      "simulate_fearless_series": "5e8704af5651917da538dad9cb39456c0caad20034b553c63dd982396195a1b0"
+    }
+  },
+  "limitations": [
+    "Diversity/change of bans is a behavior check, not strategy or winrate evidence.",
+    "Different ban policies produce different subsequent states; no controlled causal comparison.",
+    "Two modeled response branches cover limited mass; probabilities are uncalibrated.",
+    "Truncation bounds are sensitivity bounds on a bounded proxy, not statistical CIs.",
+    "No new independent historical benchmark of ban quality or real-match experiment.",
+    "No full BO5 planning or complete flex-role search."
+  ]
+}

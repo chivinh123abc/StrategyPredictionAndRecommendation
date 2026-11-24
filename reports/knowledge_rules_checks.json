@@ -1,0 +1,24 @@
+{
+  "project_overrides": 4,
+  "actual_resolver_checks": "passed",
+  "registry_local_links_checked": 70,
+  "broken_registry_links": 0,
+  "constitution_version": "1.1.0",
+  "installed_files_unchanged": {
+    ".specify/templates/checklist-template.md": true,
+    ".specify/templates/constitution-template.md": true,
+    ".specify/templates/plan-template.md": true,
+    ".specify/templates/spec-template.md": true,
+    ".specify/templates/tasks-template.md": true,
+    ".gemini/commands/speckit.analyze.toml": true,
+    ".gemini/commands/speckit.clarify.toml": true,
+    ".gemini/commands/speckit.constitution.toml": true,
+    ".gemini/commands/speckit.implement.toml": true,
+    ".gemini/commands/speckit.converge.toml": true,
+    ".gemini/commands/speckit.plan.toml": true,
+    ".gemini/commands/speckit.checklist.toml": true,
+    ".gemini/commands/speckit.specify.toml": true,
+    ".gemini/commands/speckit.tasks.toml": true
+  },
+  "scope": "Governance/templates/docs only; no model training"
+}

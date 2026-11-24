@@ -1,0 +1,254 @@
+Đang nạp lịch sử trận đấu và hồ sơ tướng...
+GIẢ LẬP BAN/PICK MỘT VÁN — LỊCH SỬ + CONTENT-BASED
+Bạn: blue; phe chọn trước: blue; dữ liệu: WLDS
+SNAPSHOT LỊCH SỬ: patch dataset 16.20, dữ liệu đến 2026-11-09T00:56:00+00:00, cũ 4 ngày so với mốc yêu cầu
+106 trận trong cửa sổ 60 ngày, 94 trận patch đích; không gọi là live meta.
+Lineup Gen.G (latest_observed_lineup_not_live_roster): top=Kiin, jng=Canyon, mid=Chovy, bot=Ruler, sup=Duro
+Lineup Bilibili Gaming (latest_observed_lineup_not_live_roster): top=Bin, jng=Xun, mid=Knight, bot=Viper, sup=ON
+Ưu tiên presence/nhịp draft gần đây; bể tướng, đối đầu và cosine là tín hiệu hỗ trợ. Điểm không phải xác suất.
+
+==========================================================================================
+BLUE Gen.G | Cấm: —
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Bilibili Gaming | Cấm: —
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 1/20: BLUE Gen.G — CẤM
+ĐÃ CẤM: Nocturne
+  Căn cứ: Presence gần đây 86.8%, bị cấm 69.5%; điểm ưu tiên đối thủ 0.375; chênh lựa chọn 0.024
+
+==========================================================================================
+BLUE Gen.G | Cấm: Nocturne
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Bilibili Gaming | Cấm: —
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 2/20: RED Bilibili Gaming — CẤM
+ĐÃ CẤM: Renata Glasc
+  Căn cứ: Presence gần đây 78.0%, bị cấm 61.8%; điểm ưu tiên đối thủ 0.340; chênh lựa chọn 0.067
+
+==========================================================================================
+BLUE Gen.G | Cấm: Nocturne
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Bilibili Gaming | Cấm: Renata Glasc
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 3/20: BLUE Gen.G — CẤM
+ĐÃ CẤM: Vi
+  Căn cứ: Presence gần đây 76.2%, bị cấm 60.1%; điểm ưu tiên đối thủ 0.351; chênh lựa chọn 0.049
+
+==========================================================================================
+BLUE Gen.G | Cấm: Nocturne, Vi
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Bilibili Gaming | Cấm: Renata Glasc
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 4/20: RED Bilibili Gaming — CẤM
+ĐÃ CẤM: Cassiopeia
+  Căn cứ: Presence gần đây 66.2%, bị cấm 48.0%; điểm ưu tiên đối thủ 0.345; chênh lựa chọn 0.054
+
+==========================================================================================
+BLUE Gen.G | Cấm: Nocturne, Vi
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Bilibili Gaming | Cấm: Renata Glasc, Cassiopeia
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 5/20: BLUE Gen.G — CẤM
+ĐÃ CẤM: Olaf
+  Căn cứ: Presence gần đây 59.9%, bị cấm 40.5%; điểm ưu tiên đối thủ 0.306; chênh lựa chọn 0.076
+
+==========================================================================================
+BLUE Gen.G | Cấm: Nocturne, Vi, Olaf
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Bilibili Gaming | Cấm: Renata Glasc, Cassiopeia
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 6/20: RED Bilibili Gaming — CẤM
+ĐÃ CẤM: Qiyana
+  Căn cứ: Presence gần đây 57.5%, bị cấm 34.0%; điểm ưu tiên đối thủ 0.378; chênh lựa chọn 0.083
+
+==========================================================================================
+BLUE Gen.G | Cấm: Nocturne, Vi, Olaf
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Bilibili Gaming | Cấm: Renata Glasc, Cassiopeia, Qiyana
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 7/20: BLUE Gen.G — CHỌN
+ĐÃ CHỌN: Ezreal [bot]
+  Căn cứ: Slot F1: ưu tiên chọn quan sát 0.086; không phải xác suất thắng
+
+==========================================================================================
+BLUE Gen.G | Cấm: Nocturne, Vi, Olaf
+Top: — | Rừng: — | Mid: — | Xạ thủ: Ezreal | Hỗ trợ: —
+RED Bilibili Gaming | Cấm: Renata Glasc, Cassiopeia, Qiyana
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 8/20: RED Bilibili Gaming — CHỌN
+ĐÃ CHỌN: Orianna [mid]
+  Căn cứ: Slot S1: ưu tiên chọn quan sát 0.058; không phải xác suất thắng
+
+==========================================================================================
+BLUE Gen.G | Cấm: Nocturne, Vi, Olaf
+Top: — | Rừng: — | Mid: — | Xạ thủ: Ezreal | Hỗ trợ: —
+RED Bilibili Gaming | Cấm: Renata Glasc, Cassiopeia, Qiyana
+Top: — | Rừng: — | Mid: Orianna | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 9/20: RED Bilibili Gaming — CHỌN
+ĐÃ CHỌN: Nautilus [sup]
+  Căn cứ: Slot S2: ưu tiên chọn quan sát 0.055; không phải xác suất thắng
+
+==========================================================================================
+BLUE Gen.G | Cấm: Nocturne, Vi, Olaf
+Top: — | Rừng: — | Mid: — | Xạ thủ: Ezreal | Hỗ trợ: —
+RED Bilibili Gaming | Cấm: Renata Glasc, Cassiopeia, Qiyana
+Top: — | Rừng: — | Mid: Orianna | Xạ thủ: — | Hỗ trợ: Nautilus
+
+LƯỢT 10/20: BLUE Gen.G — CHỌN
+ĐÃ CHỌN: Lee Sin [jng]
+  Căn cứ: Slot F2: ưu tiên chọn quan sát 0.061; không phải xác suất thắng
+
+==========================================================================================
+BLUE Gen.G | Cấm: Nocturne, Vi, Olaf
+Top: — | Rừng: Lee Sin | Mid: — | Xạ thủ: Ezreal | Hỗ trợ: —
+RED Bilibili Gaming | Cấm: Renata Glasc, Cassiopeia, Qiyana
+Top: — | Rừng: — | Mid: Orianna | Xạ thủ: — | Hỗ trợ: Nautilus
+
+LƯỢT 11/20: BLUE Gen.G — CHỌN
+ĐÃ CHỌN: Syndra [mid]
+  Căn cứ: Slot F3: ưu tiên chọn quan sát 0.054; không phải xác suất thắng
+
+==========================================================================================
+BLUE Gen.G | Cấm: Nocturne, Vi, Olaf
+Top: — | Rừng: Lee Sin | Mid: Syndra | Xạ thủ: Ezreal | Hỗ trợ: —
+RED Bilibili Gaming | Cấm: Renata Glasc, Cassiopeia, Qiyana
+Top: — | Rừng: — | Mid: Orianna | Xạ thủ: — | Hỗ trợ: Nautilus
+
+LƯỢT 12/20: RED Bilibili Gaming — CHỌN
+ĐÃ CHỌN: Ambessa [top]
+  Căn cứ: Slot S3: ưu tiên chọn quan sát 0.071; không phải xác suất thắng
+
+==========================================================================================
+BLUE Gen.G | Cấm: Nocturne, Vi, Olaf
+Top: — | Rừng: Lee Sin | Mid: Syndra | Xạ thủ: Ezreal | Hỗ trợ: —
+RED Bilibili Gaming | Cấm: Renata Glasc, Cassiopeia, Qiyana
+Top: Ambessa | Rừng: — | Mid: Orianna | Xạ thủ: — | Hỗ trợ: Nautilus
+
+LƯỢT 13/20: RED Bilibili Gaming — CẤM
+ĐÃ CẤM: Rumble
+  Căn cứ: Presence gần đây 49.2%, bị cấm 21.9%; điểm ưu tiên đối thủ 0.327; chênh lựa chọn 0.054
+
+==========================================================================================
+BLUE Gen.G | Cấm: Nocturne, Vi, Olaf
+Top: — | Rừng: Lee Sin | Mid: Syndra | Xạ thủ: Ezreal | Hỗ trợ: —
+RED Bilibili Gaming | Cấm: Renata Glasc, Cassiopeia, Qiyana, Rumble
+Top: Ambessa | Rừng: — | Mid: Orianna | Xạ thủ: — | Hỗ trợ: Nautilus
+
+LƯỢT 14/20: BLUE Gen.G — CẤM
+ĐÃ CẤM: Jarvan IV
+  Căn cứ: Presence gần đây 54.0%, bị cấm 28.6%; điểm ưu tiên đối thủ 0.284; chênh lựa chọn 0.030
+
+==========================================================================================
+BLUE Gen.G | Cấm: Nocturne, Vi, Olaf, Jarvan IV
+Top: — | Rừng: Lee Sin | Mid: Syndra | Xạ thủ: Ezreal | Hỗ trợ: —
+RED Bilibili Gaming | Cấm: Renata Glasc, Cassiopeia, Qiyana, Rumble
+Top: Ambessa | Rừng: — | Mid: Orianna | Xạ thủ: — | Hỗ trợ: Nautilus
+
+LƯỢT 15/20: RED Bilibili Gaming — CẤM
+ĐÃ CẤM: Jayce
+  Căn cứ: Presence gần đây 48.1%, bị cấm 32.7%; điểm ưu tiên đối thủ 0.261; chênh lựa chọn 0.000
+
+==========================================================================================
+BLUE Gen.G | Cấm: Nocturne, Vi, Olaf, Jarvan IV
+Top: — | Rừng: Lee Sin | Mid: Syndra | Xạ thủ: Ezreal | Hỗ trợ: —
+RED Bilibili Gaming | Cấm: Renata Glasc, Cassiopeia, Qiyana, Rumble, Jayce
+Top: Ambessa | Rừng: — | Mid: Orianna | Xạ thủ: — | Hỗ trợ: Nautilus
+
+LƯỢT 16/20: BLUE Gen.G — CẤM
+ĐÃ CẤM: Wukong
+  Căn cứ: Presence gần đây 36.4%, bị cấm 20.4%; điểm ưu tiên đối thủ 0.224; chênh lựa chọn 0.000
+
+==========================================================================================
+BLUE Gen.G | Cấm: Nocturne, Vi, Olaf, Jarvan IV, Wukong
+Top: — | Rừng: Lee Sin | Mid: Syndra | Xạ thủ: Ezreal | Hỗ trợ: —
+RED Bilibili Gaming | Cấm: Renata Glasc, Cassiopeia, Qiyana, Rumble, Jayce
+Top: Ambessa | Rừng: — | Mid: Orianna | Xạ thủ: — | Hỗ trợ: Nautilus
+
+LƯỢT 17/20: RED Bilibili Gaming — CHỌN
+ĐÃ CHỌN: Jhin [bot]
+  Căn cứ: Slot S4: ưu tiên chọn quan sát 0.050; không phải xác suất thắng
+
+==========================================================================================
+BLUE Gen.G | Cấm: Nocturne, Vi, Olaf, Jarvan IV, Wukong
+Top: — | Rừng: Lee Sin | Mid: Syndra | Xạ thủ: Ezreal | Hỗ trợ: —
+RED Bilibili Gaming | Cấm: Renata Glasc, Cassiopeia, Qiyana, Rumble, Jayce
+Top: Ambessa | Rừng: — | Mid: Orianna | Xạ thủ: Jhin | Hỗ trợ: Nautilus
+
+LƯỢT 18/20: BLUE Gen.G — CHỌN
+ĐÃ CHỌN: Seraphine [sup]
+  Căn cứ: Slot F4: ưu tiên chọn quan sát 0.013; không phải xác suất thắng
+
+==========================================================================================
+BLUE Gen.G | Cấm: Nocturne, Vi, Olaf, Jarvan IV, Wukong
+Top: — | Rừng: Lee Sin | Mid: Syndra | Xạ thủ: Ezreal | Hỗ trợ: Seraphine
+RED Bilibili Gaming | Cấm: Renata Glasc, Cassiopeia, Qiyana, Rumble, Jayce
+Top: Ambessa | Rừng: — | Mid: Orianna | Xạ thủ: Jhin | Hỗ trợ: Nautilus
+
+LƯỢT 19/20: BLUE Gen.G — CHỌN
+ĐÃ CHỌN: K'Sante [top]
+  Căn cứ: Slot F5: ưu tiên chọn quan sát 0.058; không phải xác suất thắng
+
+==========================================================================================
+BLUE Gen.G | Cấm: Nocturne, Vi, Olaf, Jarvan IV, Wukong
+Top: K'Sante | Rừng: Lee Sin | Mid: Syndra | Xạ thủ: Ezreal | Hỗ trợ: Seraphine
+RED Bilibili Gaming | Cấm: Renata Glasc, Cassiopeia, Qiyana, Rumble, Jayce
+Top: Ambessa | Rừng: — | Mid: Orianna | Xạ thủ: Jhin | Hỗ trợ: Nautilus
+
+LƯỢT 20/20: RED Bilibili Gaming — CHỌN
+ĐÃ CHỌN: Pantheon [jng]
+  Căn cứ: Slot S5: ưu tiên chọn quan sát 0.012; không phải xác suất thắng
+
+==========================================================================================
+BLUE Gen.G | Cấm: Nocturne, Vi, Olaf, Jarvan IV, Wukong
+Top: K'Sante | Rừng: Lee Sin | Mid: Syndra | Xạ thủ: Ezreal | Hỗ trợ: Seraphine
+RED Bilibili Gaming | Cấm: Renata Glasc, Cassiopeia, Qiyana, Rumble, Jayce
+Top: Ambessa | Rừng: Pantheon | Mid: Orianna | Xạ thủ: Jhin | Hỗ trợ: Nautilus
+Căn cứ cặp Gen.G: observed_pairs=3, sparse_pairs=7, unobserved_pairs=0, insufficient_anchor_pairs=0
+Căn cứ cặp Bilibili Gaming: observed_pairs=4, sparse_pairs=6, unobserved_pairs=0, insufficient_anchor_pairs=0
+
+===============================================================================================
+📋 BẢNG ĐỘI HÌNH HOÀN THIỆN SAU KHI CẤM/CHỌN (FINAL DRAFT)
+===============================================================================================
+🔷 PHE XANH (Gen.G):
+   • TOP: K'Sante (Kiin)
+   • JNG: Lee Sin (Canyon)
+   • MID: Syndra (Chovy)
+   • BOT: Ezreal (Ruler)
+   • SUP: Seraphine (Duro)
+
+🔴 PHE ĐỎ (Bilibili Gaming):
+   • TOP: Ambessa (Bin)
+   • JNG: Pantheon (Xun)
+   • MID: Orianna (Knight)
+   • BOT: Jhin (Viper)
+   • SUP: Nautilus (ON)
+Radar và thẻ chiến thuật dùng thuộc tính/quy tắc chuyên gia; chưa được xác nhận như điều kiện thắng nhân quả.
+
+────────────────────────────────────── THẺ CHIẾN THUẬT: GEN.G (BLUE) ──────────────────────────────────────
+🏆 Trường phái: [EARLY SNOWBALL & DIVE]
+📊 Radar 5 trục: Early: 0.715 | Scaling: 0.773 | Combat: 0.677 | Pick: 0.763 | Obj: 0.665
+⭐ Chủ lực (Core Carry): Syndra
+⏱️ Điểm rơi sức mạnh: Đầu trận (Phút 1 đến Phút 20 - Trước mốc Baron xuất hiện)
+🐉 Mục tiêu số 1: Sâu Hư Không đợt 1 + Trụ Đầu (First Tower) trước phút 14
+✅ Điều kiện thắng: Tạo chênh lệch >= 2,000 vàng lúc 10 phút, băng trụ 2 cánh liên tục, ép đối thủ vỡ trận trước 25 phút.
+❌ Cần tránh: Bị đối thủ phòng ngự kéo dài trận đấu qua phút 30 khi chất tướng hết thời gian lăn cầu tuyết.
+
+────────────────────────────────────── THẺ CHIẾN THUẬT: BILIBILI GAMING (RED) ──────────────────────────────────────
+🏆 Trường phái: [WOMBOCOMBO & OBJECTIVE CONTROL]
+📊 Radar 5 trục: Early: 0.79 | Scaling: 0.757 | Combat: 0.74 | Pick: 0.86 | Obj: 0.598
+⭐ Chủ lực (Core Carry): Orianna
+⏱️ Điểm rơi sức mạnh: Giữa và Cuối trận (Phút 20 đến Phút 35 - Giai đoạn Rồng 3, 4 và Baron)
+🐉 Mục tiêu số 1: Rồng Nguyên Tố (Thiết lập Linh Hồn Rồng) & Hang Baron
+✅ Điều kiện thắng: Kiểm soát tầm nhìn trước 1 phút tại hang mục tiêu lớn, ép đối thủ vào các góc hẹp của sông và tung Wombocombo 5v5 quét sạch.
+❌ Cần tránh: Để đối thủ chia cắt đội hình đẩy lẻ 1-3-1 hoặc giao tranh khi chưa có đủ chiêu cuối mở combat.
+Phiên có mốc lịch sử: bỏ dự báo từ model lưu sẵn vì chưa bảo đảm model được fit trước mốc này.
+Đã lưu phiên: D:\Chivinh\2026_MonHoc\Nhập môn khoa học dữ liệu\Project\reports\worlds_fearless_bo5\game_1.json

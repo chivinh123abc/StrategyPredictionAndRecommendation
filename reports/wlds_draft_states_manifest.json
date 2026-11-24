@@ -1,0 +1,15 @@
+{
+  "region": "WLDS",
+  "games": 206,
+  "series": 93,
+  "states": 4120,
+  "rejected_games": [],
+  "sha256": "43e5f475e6706631859f649d784c398903013fb2feb39bd8815011d9cdd50b65",
+  "series_policy": "same league/year/split/unordered team pair, game1 then consecutive game numbers within24h; reject bad series",
+  "limitations": [
+    "Series IDs are reconstructed, not verified official event IDs.",
+    "Observed roles/outcomes/future picks are excluded from features.",
+    "This builder assumes hard Fearless for the requested event; validate event rules before other regions.",
+    "Unknown prefixes, skipped bans and invalid Fearless series are excluded."
+  ]
+}

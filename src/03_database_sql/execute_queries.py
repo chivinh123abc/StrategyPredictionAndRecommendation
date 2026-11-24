@@ -9,6 +9,9 @@ Nhiệm vụ: Task 1.4 [Thành viên 1 + 2] - Thực thi 5 câu truy vấn SQL n
 
 import os
 import sys
+import sys
+from pathlib import Path
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 import sqlite3
 import argparse
 import pandas as pd
@@ -101,7 +104,7 @@ class SQLQueryRunner:
         if limit is not None and "LIMIT" not in sql.upper():
             sql = f"{sql.rstrip(';')} LIMIT {limit};"
 
-        conn = sqlite3.connect(self.db_path)
+        conn = __import__('analysis_data', fromlist=['open_clean_connection']).open_clean_connection(self.db_path)
         try:
             df = pd.read_sql(sql, conn)
             return df

@@ -1,0 +1,274 @@
+Đang nạp lịch sử trận đấu và hồ sơ tướng...
+GIẢ LẬP BAN/PICK MỘT VÁN — LỊCH SỬ + CONTENT-BASED
+Bạn: blue; phe chọn trước: red; dữ liệu: WLDS
+SNAPSHOT LỊCH SỬ: patch dataset 16.20, dữ liệu đến 2026-11-09T00:56:00+00:00, cũ 4 ngày so với mốc yêu cầu
+106 trận trong cửa sổ 60 ngày, 94 trận patch đích; không gọi là live meta.
+Lineup Gen.G (latest_observed_lineup_not_live_roster): top=Kiin, jng=Canyon, mid=Chovy, bot=Ruler, sup=Duro
+Lineup Bilibili Gaming (latest_observed_lineup_not_live_roster): top=Bin, jng=Xun, mid=Knight, bot=Viper, sup=ON
+Ưu tiên presence/nhịp draft gần đây; bể tướng, đối đầu và cosine là tín hiệu hỗ trợ. Điểm không phải xác suất.
+Dự đoán hành động kế tiếp (không phải lựa chọn tối ưu): Nocturne, Qiyana, Vi, Cassiopeia, Olaf
+
+==========================================================================================
+BLUE Gen.G | Cấm: —
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Bilibili Gaming | Cấm: —
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 1/20: RED Bilibili Gaming — CẤM
+ĐÃ CẤM: Nocturne
+  Căn cứ: Presence gần đây 86.8%, bị cấm 69.5%; điểm ưu tiên đối thủ 0.385; chênh lựa chọn 0.021
+Dự đoán hành động kế tiếp (không phải lựa chọn tối ưu): Qiyana, Vi, Cassiopeia, Olaf, Jarvan IV
+
+==========================================================================================
+BLUE Gen.G | Cấm: —
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Bilibili Gaming | Cấm: Nocturne
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 2/20: BLUE Gen.G — CẤM
+ĐÃ CẤM: Renata Glasc
+  Căn cứ: Presence gần đây 78.0%, bị cấm 61.8%; điểm ưu tiên đối thủ 0.353; chênh lựa chọn 0.114
+Dự đoán hành động kế tiếp (không phải lựa chọn tối ưu): Qiyana, Vi, Cassiopeia, Olaf, Jarvan IV
+
+==========================================================================================
+BLUE Gen.G | Cấm: Renata Glasc
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Bilibili Gaming | Cấm: Nocturne
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 3/20: RED Bilibili Gaming — CẤM
+ĐÃ CẤM: Vi
+  Căn cứ: Presence gần đây 76.2%, bị cấm 60.1%; điểm ưu tiên đối thủ 0.341; chênh lựa chọn 0.000
+Dự đoán hành động kế tiếp (không phải lựa chọn tối ưu): Qiyana, Cassiopeia, Olaf, Jarvan IV, Yunara
+
+==========================================================================================
+BLUE Gen.G | Cấm: Renata Glasc
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Bilibili Gaming | Cấm: Nocturne, Vi
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 4/20: BLUE Gen.G — CẤM
+ĐÃ CẤM: Cassiopeia
+  Căn cứ: Presence gần đây 66.2%, bị cấm 48.0%; điểm ưu tiên đối thủ 0.324; chênh lựa chọn 0.086
+Dự đoán hành động kế tiếp (không phải lựa chọn tối ưu): Qiyana, Olaf, Jarvan IV, Yunara, Caitlyn
+
+==========================================================================================
+BLUE Gen.G | Cấm: Renata Glasc, Cassiopeia
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Bilibili Gaming | Cấm: Nocturne, Vi
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 5/20: RED Bilibili Gaming — CẤM
+ĐÃ CẤM: Olaf
+  Căn cứ: Presence gần đây 59.9%, bị cấm 40.5%; điểm ưu tiên đối thủ 0.333; chênh lựa chọn 0.079
+Dự đoán hành động kế tiếp (không phải lựa chọn tối ưu): Qiyana, Jarvan IV, Yunara, Rumble, Caitlyn
+
+==========================================================================================
+BLUE Gen.G | Cấm: Renata Glasc, Cassiopeia
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Bilibili Gaming | Cấm: Nocturne, Vi, Olaf
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 6/20: BLUE Gen.G — CẤM
+ĐÃ CẤM: Qiyana
+  Căn cứ: Presence gần đây 57.5%, bị cấm 34.0%; điểm ưu tiên đối thủ 0.315; chênh lựa chọn 0.034
+Dự đoán hành động kế tiếp (không phải lựa chọn tối ưu): Jarvan IV, Rumble, Yunara, Azir, Lucian
+
+==========================================================================================
+BLUE Gen.G | Cấm: Renata Glasc, Cassiopeia, Qiyana
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Bilibili Gaming | Cấm: Nocturne, Vi, Olaf
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 7/20: RED Bilibili Gaming — CHỌN
+ĐÃ CHỌN: Jarvan IV [jng]
+  Căn cứ: Slot F1: ưu tiên chọn quan sát 0.060; không phải xác suất thắng
+Dự đoán hành động kế tiếp (không phải lựa chọn tối ưu): Rumble, Yunara, Lucian, Ryze, Wukong
+
+==========================================================================================
+BLUE Gen.G | Cấm: Renata Glasc, Cassiopeia, Qiyana
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Bilibili Gaming | Cấm: Nocturne, Vi, Olaf
+Top: — | Rừng: Jarvan IV | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 8/20: BLUE Gen.G — CHỌN
+ĐÃ CHỌN: Rumble [top]
+  Căn cứ: Slot S1: ưu tiên chọn quan sát 0.042; không phải xác suất thắng
+Dự đoán hành động kế tiếp (không phải lựa chọn tối ưu): Lucian, Rakan, Galio, Wukong, Yunara
+
+==========================================================================================
+BLUE Gen.G | Cấm: Renata Glasc, Cassiopeia, Qiyana
+Top: Rumble | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Bilibili Gaming | Cấm: Nocturne, Vi, Olaf
+Top: — | Rừng: Jarvan IV | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 9/20: BLUE Gen.G — CHỌN
+ĐÃ CHỌN: Alistar [sup]
+  Căn cứ: Slot S2: ưu tiên chọn quan sát 0.017; không phải xác suất thắng
+Dự đoán hành động kế tiếp (không phải lựa chọn tối ưu): Galio, Lucian, Rakan, Akali, Ryze
+
+==========================================================================================
+BLUE Gen.G | Cấm: Renata Glasc, Cassiopeia, Qiyana
+Top: Rumble | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: Alistar
+RED Bilibili Gaming | Cấm: Nocturne, Vi, Olaf
+Top: — | Rừng: Jarvan IV | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 10/20: RED Bilibili Gaming — CHỌN
+ĐÃ CHỌN: Locke [mid]
+  Căn cứ: Slot F2: ưu tiên chọn quan sát 0.045; không phải xác suất thắng
+Dự đoán hành động kế tiếp (không phải lựa chọn tối ưu): Galio, Rakan, Lulu, Kalista, Jayce
+
+==========================================================================================
+BLUE Gen.G | Cấm: Renata Glasc, Cassiopeia, Qiyana
+Top: Rumble | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: Alistar
+RED Bilibili Gaming | Cấm: Nocturne, Vi, Olaf
+Top: — | Rừng: Jarvan IV | Mid: Locke | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 11/20: RED Bilibili Gaming — CHỌN
+ĐÃ CHỌN: Lulu [sup]
+  Căn cứ: Slot F3: ưu tiên chọn quan sát 0.045; không phải xác suất thắng
+Dự đoán hành động kế tiếp (không phải lựa chọn tối ưu): Galio, Akali, Xin Zhao, Kalista, Ryze
+
+==========================================================================================
+BLUE Gen.G | Cấm: Renata Glasc, Cassiopeia, Qiyana
+Top: Rumble | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: Alistar
+RED Bilibili Gaming | Cấm: Nocturne, Vi, Olaf
+Top: — | Rừng: Jarvan IV | Mid: Locke | Xạ thủ: — | Hỗ trợ: Lulu
+
+LƯỢT 12/20: BLUE Gen.G — CHỌN
+ĐÃ CHỌN: Viktor [mid]
+  Căn cứ: Slot S3: ưu tiên chọn quan sát 0.035; không phải xác suất thắng
+Dự đoán hành động kế tiếp (không phải lựa chọn tối ưu): Caitlyn, Rakan, Akali, Galio, Xin Zhao
+
+==========================================================================================
+BLUE Gen.G | Cấm: Renata Glasc, Cassiopeia, Qiyana
+Top: Rumble | Rừng: — | Mid: Viktor | Xạ thủ: — | Hỗ trợ: Alistar
+RED Bilibili Gaming | Cấm: Nocturne, Vi, Olaf
+Top: — | Rừng: Jarvan IV | Mid: Locke | Xạ thủ: — | Hỗ trợ: Lulu
+
+LƯỢT 13/20: BLUE Gen.G — CẤM
+ĐÃ CẤM: Jayce
+  Căn cứ: Presence gần đây 48.1%, bị cấm 32.7%; điểm ưu tiên đối thủ 0.192; chênh lựa chọn 0.000
+Dự đoán hành động kế tiếp (không phải lựa chọn tối ưu): Caitlyn, Galio, Rakan, Akali, Xin Zhao
+
+==========================================================================================
+BLUE Gen.G | Cấm: Renata Glasc, Cassiopeia, Qiyana, Jayce
+Top: Rumble | Rừng: — | Mid: Viktor | Xạ thủ: — | Hỗ trợ: Alistar
+RED Bilibili Gaming | Cấm: Nocturne, Vi, Olaf
+Top: — | Rừng: Jarvan IV | Mid: Locke | Xạ thủ: — | Hỗ trợ: Lulu
+
+LƯỢT 14/20: RED Bilibili Gaming — CẤM
+ĐÃ CẤM: Wukong
+  Căn cứ: Presence gần đây 36.4%, bị cấm 20.4%; điểm ưu tiên đối thủ 0.198; chênh lựa chọn 0.016
+Dự đoán hành động kế tiếp (không phải lựa chọn tối ưu): Caitlyn, Rakan, Akali, Galio, Sivir
+
+==========================================================================================
+BLUE Gen.G | Cấm: Renata Glasc, Cassiopeia, Qiyana, Jayce
+Top: Rumble | Rừng: — | Mid: Viktor | Xạ thủ: — | Hỗ trợ: Alistar
+RED Bilibili Gaming | Cấm: Nocturne, Vi, Olaf, Wukong
+Top: — | Rừng: Jarvan IV | Mid: Locke | Xạ thủ: — | Hỗ trợ: Lulu
+
+LƯỢT 15/20: BLUE Gen.G — CẤM
+ĐÃ CẤM: Galio
+  Căn cứ: Presence gần đây 36.0%, bị cấm 21.5%; điểm ưu tiên đối thủ 0.206; chênh lựa chọn 0.000
+Dự đoán hành động kế tiếp (không phải lựa chọn tối ưu): Caitlyn, Rakan, Akali, Renekton, Sivir
+
+==========================================================================================
+BLUE Gen.G | Cấm: Renata Glasc, Cassiopeia, Qiyana, Jayce, Galio
+Top: Rumble | Rừng: — | Mid: Viktor | Xạ thủ: — | Hỗ trợ: Alistar
+RED Bilibili Gaming | Cấm: Nocturne, Vi, Olaf, Wukong
+Top: — | Rừng: Jarvan IV | Mid: Locke | Xạ thủ: — | Hỗ trợ: Lulu
+
+LƯỢT 16/20: RED Bilibili Gaming — CẤM
+ĐÃ CẤM: Lucian
+  Căn cứ: Presence gần đây 26.8%, bị cấm 7.9%; điểm ưu tiên đối thủ 0.179; chênh lựa chọn 0.000
+Dự đoán hành động kế tiếp (không phải lựa chọn tối ưu): Kalista, Sivir, Aatrox, Ziggs, Xayah
+
+==========================================================================================
+BLUE Gen.G | Cấm: Renata Glasc, Cassiopeia, Qiyana, Jayce, Galio
+Top: Rumble | Rừng: — | Mid: Viktor | Xạ thủ: — | Hỗ trợ: Alistar
+RED Bilibili Gaming | Cấm: Nocturne, Vi, Olaf, Wukong, Lucian
+Top: — | Rừng: Jarvan IV | Mid: Locke | Xạ thủ: — | Hỗ trợ: Lulu
+
+LƯỢT 17/20: BLUE Gen.G — CHỌN
+ĐÃ CHỌN: Ashe [bot]
+  Căn cứ: Slot S4: ưu tiên chọn quan sát 0.011; không phải xác suất thắng
+Dự đoán hành động kế tiếp (không phải lựa chọn tối ưu): Renekton, Kalista, Jax, Sivir, Aatrox
+
+==========================================================================================
+BLUE Gen.G | Cấm: Renata Glasc, Cassiopeia, Qiyana, Jayce, Galio
+Top: Rumble | Rừng: — | Mid: Viktor | Xạ thủ: Ashe | Hỗ trợ: Alistar
+RED Bilibili Gaming | Cấm: Nocturne, Vi, Olaf, Wukong, Lucian
+Top: — | Rừng: Jarvan IV | Mid: Locke | Xạ thủ: — | Hỗ trợ: Lulu
+
+LƯỢT 18/20: RED Bilibili Gaming — CHỌN
+ĐÃ CHỌN: Yunara [bot]
+  Căn cứ: Slot F4: ưu tiên chọn quan sát 0.021; không phải xác suất thắng
+Dự đoán hành động kế tiếp (không phải lựa chọn tối ưu): Renekton, Jax, Aatrox, Gnar, Mordekaiser
+
+==========================================================================================
+BLUE Gen.G | Cấm: Renata Glasc, Cassiopeia, Qiyana, Jayce, Galio
+Top: Rumble | Rừng: — | Mid: Viktor | Xạ thủ: Ashe | Hỗ trợ: Alistar
+RED Bilibili Gaming | Cấm: Nocturne, Vi, Olaf, Wukong, Lucian
+Top: — | Rừng: Jarvan IV | Mid: Locke | Xạ thủ: Yunara | Hỗ trợ: Lulu
+
+LƯỢT 19/20: RED Bilibili Gaming — CHỌN
+ĐÃ CHỌN: Gnar [top]
+  Căn cứ: Slot F5: ưu tiên chọn quan sát 0.041; không phải xác suất thắng
+Dự đoán hành động kế tiếp (không phải lựa chọn tối ưu): Aatrox, Trundle, Skarner, Maokai, Poppy
+
+==========================================================================================
+BLUE Gen.G | Cấm: Renata Glasc, Cassiopeia, Qiyana, Jayce, Galio
+Top: Rumble | Rừng: — | Mid: Viktor | Xạ thủ: Ashe | Hỗ trợ: Alistar
+RED Bilibili Gaming | Cấm: Nocturne, Vi, Olaf, Wukong, Lucian
+Top: Gnar | Rừng: Jarvan IV | Mid: Locke | Xạ thủ: Yunara | Hỗ trợ: Lulu
+
+LƯỢT 20/20: BLUE Gen.G — CHỌN
+ĐÃ CHỌN: Trundle [jng]
+  Căn cứ: Slot S5: ưu tiên chọn quan sát 0.015; không phải xác suất thắng
+
+==========================================================================================
+BLUE Gen.G | Cấm: Renata Glasc, Cassiopeia, Qiyana, Jayce, Galio
+Top: Rumble | Rừng: Trundle | Mid: Viktor | Xạ thủ: Ashe | Hỗ trợ: Alistar
+RED Bilibili Gaming | Cấm: Nocturne, Vi, Olaf, Wukong, Lucian
+Top: Gnar | Rừng: Jarvan IV | Mid: Locke | Xạ thủ: Yunara | Hỗ trợ: Lulu
+Căn cứ cặp Gen.G: observed_pairs=2, sparse_pairs=6, unobserved_pairs=2, insufficient_anchor_pairs=0
+Căn cứ cặp Bilibili Gaming: observed_pairs=1, sparse_pairs=8, unobserved_pairs=1, insufficient_anchor_pairs=0
+
+===============================================================================================
+📋 BẢNG ĐỘI HÌNH HOÀN THIỆN SAU KHI CẤM/CHỌN (FINAL DRAFT)
+===============================================================================================
+🔷 PHE XANH (Gen.G):
+   • TOP: Rumble (Kiin)
+   • JNG: Trundle (Canyon)
+   • MID: Viktor (Chovy)
+   • BOT: Ashe (Ruler)
+   • SUP: Alistar (Duro)
+
+🔴 PHE ĐỎ (Bilibili Gaming):
+   • TOP: Gnar (Bin)
+   • JNG: Jarvan IV (Xun)
+   • MID: Locke (Knight)
+   • BOT: Yunara (Viper)
+   • SUP: Lulu (ON)
+Radar và thẻ chiến thuật dùng thuộc tính/quy tắc chuyên gia; chưa được xác nhận như điều kiện thắng nhân quả.
+
+────────────────────────────────────── THẺ CHIẾN THUẬT: GEN.G (BLUE) ──────────────────────────────────────
+🏆 Trường phái: [LATE-GAME HYPERCARRY]
+📊 Radar 5 trục: Early: 0.715 | Scaling: 0.777 | Combat: 0.805 | Pick: 0.693 | Obj: 0.812
+⭐ Chủ lực (Core Carry): Viktor
+⏱️ Điểm rơi sức mạnh: Cuối trận (Sau Phút 28 - Khi chủ lực đạt ngưỡng 3-4 trang bị chuẩn)
+🐉 Mục tiêu số 1: Baron Nashor & Rồng Ngàn Tuổi (Elder Dragon)
+✅ Điều kiện thắng: Bảo kê tuyệt đối cho siêu chủ lực farm an toàn; chấp nhận nhường mục tiêu sớm nếu cần; hủy diệt giao tranh cuối trận.
+❌ Cần tránh: Bị đối thủ băng trụ lăn cầu tuyết thua > 2,500 vàng lúc 10 phút dẫn đến vỡ trận sớm.
+
+────────────────────────────────────── THẺ CHIẾN THUẬT: BILIBILI GAMING (RED) ──────────────────────────────────────
+🏆 Trường phái: [WOMBOCOMBO & OBJECTIVE CONTROL]
+📊 Radar 5 trục: Early: 0.652 | Scaling: 0.555 | Combat: 0.673 | Pick: 0.685 | Obj: 0.545
+⭐ Chủ lực (Core Carry): Locke
+⏱️ Điểm rơi sức mạnh: Giữa và Cuối trận (Phút 20 đến Phút 35 - Giai đoạn Rồng 3, 4 và Baron)
+🐉 Mục tiêu số 1: Rồng Nguyên Tố (Thiết lập Linh Hồn Rồng) & Hang Baron
+✅ Điều kiện thắng: Kiểm soát tầm nhìn trước 1 phút tại hang mục tiêu lớn, ép đối thủ vào các góc hẹp của sông và tung Wombocombo 5v5 quét sạch.
+❌ Cần tránh: Để đối thủ chia cắt đội hình đẩy lẻ 1-3-1 hoặc giao tranh khi chưa có đủ chiêu cuối mở combat.
+Phiên có mốc lịch sử: bỏ dự báo từ model lưu sẵn vì chưa bảo đảm model được fit trước mốc này.
+Đã lưu phiên: reports\worlds_fearless_with_forecasts\game_2.json

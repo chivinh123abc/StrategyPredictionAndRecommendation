@@ -1,0 +1,254 @@
+Đang nạp lịch sử trận đấu và hồ sơ tướng...
+GIẢ LẬP BAN/PICK MỘT VÁN — LỊCH SỬ + CONTENT-BASED
+Bạn: blue; phe chọn trước: red; dữ liệu: WLDS
+SNAPSHOT LỊCH SỬ: patch dataset 16.20, dữ liệu đến 2026-11-09T00:56:00+00:00, cũ 4 ngày so với mốc yêu cầu
+106 trận trong cửa sổ 60 ngày, 94 trận patch đích; không gọi là live meta.
+Lineup T1 (latest_observed_lineup_not_live_roster): top=Doran, jng=Oner, mid=Faker, bot=Peyz, sup=Keria
+Lineup Gen.G (latest_observed_lineup_not_live_roster): top=Kiin, jng=Canyon, mid=Chovy, bot=Ruler, sup=Duro
+Ưu tiên presence/nhịp draft gần đây; bể tướng, đối đầu và cosine là tín hiệu hỗ trợ. Điểm không phải xác suất.
+
+==========================================================================================
+BLUE T1 | Cấm: —
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: —
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 1/20: RED Gen.G — CẤM
+ĐÃ CẤM: Karma
+  Căn cứ: Mất pool địch 0.0067; chi phí tự cấm 0.0043; đội mình lấy lượt pick tới trước địch=True; Fearless khóa 30; chấm theo pool ngữ cảnh
+
+==========================================================================================
+BLUE T1 | Cấm: —
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Karma
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 2/20: BLUE T1 — CẤM
+ĐÃ CẤM: Qiyana
+  Căn cứ: Mất pool địch 0.0155; chi phí tự cấm 0.0041; đội mình lấy lượt pick tới trước địch=False; Fearless khóa 30; chấm theo pool ngữ cảnh
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Karma
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 3/20: RED Gen.G — CẤM
+ĐÃ CẤM: Jayce
+  Căn cứ: Mất pool địch 0.0099; chi phí tự cấm 0.0080; đội mình lấy lượt pick tới trước địch=True; Fearless khóa 30; chấm theo pool ngữ cảnh
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Karma, Jayce
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 4/20: BLUE T1 — CẤM
+ĐÃ CẤM: Nocturne
+  Căn cứ: Mất pool địch 0.0213; chi phí tự cấm 0.0103; đội mình lấy lượt pick tới trước địch=False; Fearless khóa 30; chấm theo pool ngữ cảnh
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana, Nocturne
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Karma, Jayce
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 5/20: RED Gen.G — CẤM
+ĐÃ CẤM: Trundle
+  Căn cứ: Mất pool địch 0.0061; chi phí tự cấm 0.0046; đội mình lấy lượt pick tới trước địch=True; Fearless khóa 30; chấm theo pool ngữ cảnh
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana, Nocturne
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Karma, Jayce, Trundle
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 6/20: BLUE T1 — CẤM
+ĐÃ CẤM: Vi
+  Căn cứ: Mất pool địch 0.0227; chi phí tự cấm 0.0102; đội mình lấy lượt pick tới trước địch=False; Fearless khóa 30; chấm theo pool ngữ cảnh
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana, Nocturne, Vi
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Karma, Jayce, Trundle
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 7/20: RED Gen.G — CHỌN
+ĐÃ CHỌN: Seraphine [sup]
+  Căn cứ: Slot F1: ưu tiên chọn quan sát 0.027; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana, Nocturne, Vi
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Karma, Jayce, Trundle
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: Seraphine
+
+LƯỢT 8/20: BLUE T1 — CHỌN
+ĐÃ CHỌN: Ashe [bot]
+  Căn cứ: Slot S1: ưu tiên chọn quan sát 0.087; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana, Nocturne, Vi
+Top: — | Rừng: — | Mid: — | Xạ thủ: Ashe | Hỗ trợ: —
+RED Gen.G | Cấm: Karma, Jayce, Trundle
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: Seraphine
+
+LƯỢT 9/20: BLUE T1 — CHỌN
+ĐÃ CHỌN: Renekton [top]
+  Căn cứ: Slot S2: ưu tiên chọn quan sát 0.007; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana, Nocturne, Vi
+Top: Renekton | Rừng: — | Mid: — | Xạ thủ: Ashe | Hỗ trợ: —
+RED Gen.G | Cấm: Karma, Jayce, Trundle
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: Seraphine
+
+LƯỢT 10/20: RED Gen.G — CHỌN
+ĐÃ CHỌN: Ahri [mid]
+  Căn cứ: Slot F2: ưu tiên chọn quan sát 0.009; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana, Nocturne, Vi
+Top: Renekton | Rừng: — | Mid: — | Xạ thủ: Ashe | Hỗ trợ: —
+RED Gen.G | Cấm: Karma, Jayce, Trundle
+Top: — | Rừng: — | Mid: Ahri | Xạ thủ: — | Hỗ trợ: Seraphine
+
+LƯỢT 11/20: RED Gen.G — CHỌN
+ĐÃ CHỌN: Camille [top]
+  Căn cứ: Slot F3: ưu tiên chọn quan sát 0.008; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana, Nocturne, Vi
+Top: Renekton | Rừng: — | Mid: — | Xạ thủ: Ashe | Hỗ trợ: —
+RED Gen.G | Cấm: Karma, Jayce, Trundle
+Top: Camille | Rừng: — | Mid: Ahri | Xạ thủ: — | Hỗ trợ: Seraphine
+
+LƯỢT 12/20: BLUE T1 — CHỌN
+ĐÃ CHỌN: Rakan [sup]
+  Căn cứ: Slot S3: ưu tiên chọn quan sát 0.009; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana, Nocturne, Vi
+Top: Renekton | Rừng: — | Mid: — | Xạ thủ: Ashe | Hỗ trợ: Rakan
+RED Gen.G | Cấm: Karma, Jayce, Trundle
+Top: Camille | Rừng: — | Mid: Ahri | Xạ thủ: — | Hỗ trợ: Seraphine
+
+LƯỢT 13/20: BLUE T1 — CẤM
+ĐÃ CẤM: Xayah
+  Căn cứ: Mất pool địch 0.0023; chi phí tự cấm 0.0000; đội mình lấy lượt pick tới trước địch=True; Fearless khóa 30; chấm theo pool ngữ cảnh
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana, Nocturne, Vi, Xayah
+Top: Renekton | Rừng: — | Mid: — | Xạ thủ: Ashe | Hỗ trợ: Rakan
+RED Gen.G | Cấm: Karma, Jayce, Trundle
+Top: Camille | Rừng: — | Mid: Ahri | Xạ thủ: — | Hỗ trợ: Seraphine
+
+LƯỢT 14/20: RED Gen.G — CẤM
+ĐÃ CẤM: Taliyah
+  Căn cứ: Mất pool địch 0.0026; chi phí tự cấm 0.0000; đội mình lấy lượt pick tới trước địch=False; Fearless khóa 30; chấm theo pool ngữ cảnh
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana, Nocturne, Vi, Xayah
+Top: Renekton | Rừng: — | Mid: — | Xạ thủ: Ashe | Hỗ trợ: Rakan
+RED Gen.G | Cấm: Karma, Jayce, Trundle, Taliyah
+Top: Camille | Rừng: — | Mid: Ahri | Xạ thủ: — | Hỗ trợ: Seraphine
+
+LƯỢT 15/20: BLUE T1 — CẤM
+ĐÃ CẤM: Kai'Sa
+  Căn cứ: Mất pool địch 0.0028; chi phí tự cấm 0.0000; đội mình lấy lượt pick tới trước địch=True; Fearless khóa 30; chấm theo pool ngữ cảnh
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana, Nocturne, Vi, Xayah, Kai'Sa
+Top: Renekton | Rừng: — | Mid: — | Xạ thủ: Ashe | Hỗ trợ: Rakan
+RED Gen.G | Cấm: Karma, Jayce, Trundle, Taliyah
+Top: Camille | Rừng: — | Mid: Ahri | Xạ thủ: — | Hỗ trợ: Seraphine
+
+LƯỢT 16/20: RED Gen.G — CẤM
+ĐÃ CẤM: Naafiri
+  Căn cứ: Mất pool địch 0.0026; chi phí tự cấm 0.0010; đội mình lấy lượt pick tới trước địch=False; Fearless khóa 30; chấm theo pool ngữ cảnh
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana, Nocturne, Vi, Xayah, Kai'Sa
+Top: Renekton | Rừng: — | Mid: — | Xạ thủ: Ashe | Hỗ trợ: Rakan
+RED Gen.G | Cấm: Karma, Jayce, Trundle, Taliyah, Naafiri
+Top: Camille | Rừng: — | Mid: Ahri | Xạ thủ: — | Hỗ trợ: Seraphine
+
+LƯỢT 17/20: BLUE T1 — CHỌN
+ĐÃ CHỌN: Anivia [mid]
+  Căn cứ: Slot S4: ưu tiên chọn quan sát 0.043; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana, Nocturne, Vi, Xayah, Kai'Sa
+Top: Renekton | Rừng: — | Mid: Anivia | Xạ thủ: Ashe | Hỗ trợ: Rakan
+RED Gen.G | Cấm: Karma, Jayce, Trundle, Taliyah, Naafiri
+Top: Camille | Rừng: — | Mid: Ahri | Xạ thủ: — | Hỗ trợ: Seraphine
+
+LƯỢT 18/20: RED Gen.G — CHỌN
+ĐÃ CHỌN: Miss Fortune [bot]
+  Căn cứ: Slot F4: ưu tiên chọn quan sát 0.020; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana, Nocturne, Vi, Xayah, Kai'Sa
+Top: Renekton | Rừng: — | Mid: Anivia | Xạ thủ: Ashe | Hỗ trợ: Rakan
+RED Gen.G | Cấm: Karma, Jayce, Trundle, Taliyah, Naafiri
+Top: Camille | Rừng: — | Mid: Ahri | Xạ thủ: Miss Fortune | Hỗ trợ: Seraphine
+
+LƯỢT 19/20: RED Gen.G — CHỌN
+ĐÃ CHỌN: Maokai [jng]
+  Căn cứ: Slot F5: ưu tiên chọn quan sát 0.013; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana, Nocturne, Vi, Xayah, Kai'Sa
+Top: Renekton | Rừng: — | Mid: Anivia | Xạ thủ: Ashe | Hỗ trợ: Rakan
+RED Gen.G | Cấm: Karma, Jayce, Trundle, Taliyah, Naafiri
+Top: Camille | Rừng: Maokai | Mid: Ahri | Xạ thủ: Miss Fortune | Hỗ trợ: Seraphine
+
+LƯỢT 20/20: BLUE T1 — CHỌN
+ĐÃ CHỌN: Sejuani [jng]
+  Căn cứ: Slot S5: ưu tiên chọn quan sát 0.010; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana, Nocturne, Vi, Xayah, Kai'Sa
+Top: Renekton | Rừng: Sejuani | Mid: Anivia | Xạ thủ: Ashe | Hỗ trợ: Rakan
+RED Gen.G | Cấm: Karma, Jayce, Trundle, Taliyah, Naafiri
+Top: Camille | Rừng: Maokai | Mid: Ahri | Xạ thủ: Miss Fortune | Hỗ trợ: Seraphine
+Căn cứ cặp T1: observed_pairs=0, sparse_pairs=3, unobserved_pairs=7, insufficient_anchor_pairs=0
+Căn cứ cặp Gen.G: observed_pairs=0, sparse_pairs=6, unobserved_pairs=4, insufficient_anchor_pairs=0
+
+===============================================================================================
+📋 BẢNG ĐỘI HÌNH HOÀN THIỆN SAU KHI CẤM/CHỌN (FINAL DRAFT)
+===============================================================================================
+🔷 PHE XANH (T1):
+   • TOP: Renekton (Doran)
+   • JNG: Sejuani (Oner)
+   • MID: Anivia (Faker)
+   • BOT: Ashe (Peyz)
+   • SUP: Rakan (Keria)
+
+🔴 PHE ĐỎ (Gen.G):
+   • TOP: Camille (Kiin)
+   • JNG: Maokai (Canyon)
+   • MID: Ahri (Chovy)
+   • BOT: Miss Fortune (Ruler)
+   • SUP: Seraphine (Duro)
+Radar và thẻ chiến thuật dùng thuộc tính/quy tắc chuyên gia; chưa được xác nhận như điều kiện thắng nhân quả.
+
+────────────────────────────────────── THẺ CHIẾN THUẬT: T1 (BLUE) ──────────────────────────────────────
+🏆 Trường phái: [EARLY SNOWBALL & DIVE]
+📊 Radar 5 trục: Early: 0.695 | Scaling: 0.74 | Combat: 0.825 | Pick: 0.835 | Obj: 0.695
+⭐ Chủ lực (Core Carry): Anivia
+⏱️ Điểm rơi sức mạnh: Đầu trận (Phút 1 đến Phút 20 - Trước mốc Baron xuất hiện)
+🐉 Mục tiêu số 1: Sâu Hư Không đợt 1 + Trụ Đầu (First Tower) trước phút 14
+✅ Điều kiện thắng: Tạo chênh lệch >= 2,000 vàng lúc 10 phút, băng trụ 2 cánh liên tục, ép đối thủ vỡ trận trước 25 phút.
+❌ Cần tránh: Bị đối thủ phòng ngự kéo dài trận đấu qua phút 30 khi chất tướng hết thời gian lăn cầu tuyết.
+
+────────────────────────────────────── THẺ CHIẾN THUẬT: GEN.G (RED) ──────────────────────────────────────
+🏆 Trường phái: [LATE-GAME HYPERCARRY]
+📊 Radar 5 trục: Early: 0.612 | Scaling: 0.73 | Combat: 0.578 | Pick: 0.647 | Obj: 0.62
+⭐ Chủ lực (Core Carry): Miss Fortune
+⏱️ Điểm rơi sức mạnh: Cuối trận (Sau Phút 28 - Khi chủ lực đạt ngưỡng 3-4 trang bị chuẩn)
+🐉 Mục tiêu số 1: Baron Nashor & Rồng Ngàn Tuổi (Elder Dragon)
+✅ Điều kiện thắng: Bảo kê tuyệt đối cho siêu chủ lực farm an toàn; chấp nhận nhường mục tiêu sớm nếu cần; hủy diệt giao tranh cuối trận.
+❌ Cần tránh: Bị đối thủ băng trụ lăn cầu tuyết thua > 2,500 vàng lúc 10 phút dẫn đến vỡ trận sớm.
+Phiên có mốc lịch sử: bỏ dự báo từ model lưu sẵn vì chưa bảo đảm model được fit trước mốc này.
+Đã lưu phiên: reports\legacy_contextual_comparison\contextual\game_4.json

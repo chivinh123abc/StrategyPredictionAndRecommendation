@@ -1,0 +1,39 @@
+{
+  "protocol": "retrospective_final_draft_slot_retrieval",
+  "data_fingerprint": "55b0797bf1b11e74ac294f68f30cb9137e902347c4d72bdbbc2beeadad234009",
+  "historical_cutoff_exclusive": "2026-07-17T12:04:50+00:00",
+  "historical_games": 2400,
+  "test_games": 600,
+  "historical_ranker": {
+    "queries": 6000,
+    "recall_at_5": 0.1425,
+    "mrr_at_5": 0.060808333333333325,
+    "candidate_coverage": 0.9603333333333334
+  },
+  "popularity_baseline": {
+    "queries": 6000,
+    "recall_at_5": 0.39516666666666667,
+    "mrr_at_5": 0.20476944444444442,
+    "candidate_coverage": 0.9603333333333334
+  },
+  "ci95_group_bootstrap": {
+    "recall_at_5": [
+      0.1339125,
+      0.15083333333333335
+    ],
+    "mrr_at_5": [
+      0.05611972222222222,
+      0.06446326388888889
+    ],
+    "candidate_coverage": [
+      0.9556666666666667,
+      0.965675
+    ]
+  },
+  "limitations": [
+    "Reconstructs a final draft slot with other nine picks visible; not an actual pick-order replay.",
+    "Observed pick is a retrieval label, not the optimal choice.",
+    "No causal winrate improvement is measured. Wilson and bootstrap intervals ignore repeated teams/players.",
+    "Benchmark context excludes bans because this dataset pivot does not retain ban order."
+  ]
+}

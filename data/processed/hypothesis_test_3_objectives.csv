@@ -1,9 +1,5 @@
-﻿Môi Trường,Kịch Bản Mục Tiêu,Tổng Đội (n),Thắng,Thua,Tỷ Lệ Thắng (%)
-Đấu Giải (Pro Play),1. Cả Hai (3 Sâu + Rồng 1),651,447,204,68.66
-Đấu Giải (Pro Play),2. Chỉ 3 Sâu (Bỏ Rồng 1),976,461,515,47.23
-Đấu Giải (Pro Play),3. Chỉ Rồng 1 (Bỏ 3 Sâu),1715,959,756,55.92
-Đấu Giải (Pro Play),4. Mất Cả Hai (0 Sâu + Mất Rồng),1390,499,891,35.9
-Solo Rank (Thách Đấu),1. Cả Hai (3 Sâu + Rồng 1),215,164,51,76.28
-Solo Rank (Thách Đấu),2. Chỉ 3 Sâu (Bỏ Rồng 1),444,243,201,54.73
-Solo Rank (Thách Đấu),3. Chỉ Rồng 1 (Bỏ 3 Sâu),505,291,214,57.62
-Solo Rank (Thách Đấu),4. Mất Cả Hai (0 Sâu + Mất Rồng),854,311,543,36.42
+dragon_before10,at_least_3_grubs_before10,wins,games,winrate,ci95_wilson,statistic_kind,causal_uplift
+0,0,151,463,0.326133909287257,"[0.2850151512499092, 0.3701140217102041]",historical_team_result,
+0,1,146,285,0.512280701754386,"[0.4544727199756881, 0.5697620281403898]",historical_team_result,
+1,0,92,168,0.5476190476190477,"[0.47212934624121194, 0.6209797329635627]",historical_team_result,
+1,1,70,93,0.7526881720430108,"[0.6561515181726164, 0.8291778084644638]",historical_team_result,

@@ -1,0 +1,3328 @@
+{
+  "first_pick_side": "blue",
+  "picks": {
+    "blue": {
+      "bot": "Ezreal",
+      "jng": "Lee Sin",
+      "mid": "Syndra",
+      "sup": "Seraphine",
+      "top": "K'Sante"
+    },
+    "red": {
+      "mid": "Orianna",
+      "sup": "Nautilus",
+      "top": "Ambessa",
+      "bot": "Jhin",
+      "jng": "Pantheon"
+    }
+  },
+  "bans": {
+    "blue": [
+      "Nocturne",
+      "Vi",
+      "Olaf",
+      "Jarvan IV",
+      "Wukong"
+    ],
+    "red": [
+      "Renata Glasc",
+      "Cassiopeia",
+      "Qiyana",
+      "Rumble",
+      "Jayce"
+    ]
+  },
+  "history": [
+    {
+      "turn": 1,
+      "side": "blue",
+      "action": "ban",
+      "champion": "Nocturne",
+      "role": null,
+      "advice": {
+        "score_kind": "patch_aware_ban_priority_points",
+        "denial_loss": 0.023572120293299192,
+        "ban_priority": 0.6180084063574738,
+        "reasons": [
+          "Presence gần đây 86.8%, bị cấm 69.5%; điểm ưu tiên đối thủ 0.375; chênh lựa chọn 0.024"
+        ],
+        "reason": "Presence gần đây 86.8%, bị cấm 69.5%; điểm ưu tiên đối thủ 0.375; chênh lựa chọn 0.024",
+        "meta_scope": {
+          "region": "WLDS",
+          "dataset_patch": "16.20",
+          "data_through": "2026-11-09T00:56:00+00:00",
+          "requested_as_of": "2026-11-13T23:59:59.999999999+00:00",
+          "staleness_days": 4,
+          "history_games": 106,
+          "patch_games": 94,
+          "lookback_days": 60,
+          "half_life_days": 21,
+          "claim": "historical_snapshot_not_live_meta"
+        }
+      }
+    },
+    {
+      "turn": 2,
+      "side": "red",
+      "action": "ban",
+      "champion": "Renata Glasc",
+      "role": null,
+      "advice": {
+        "score_kind": "patch_aware_ban_priority_points",
+        "denial_loss": 0.0667430580454334,
+        "ban_priority": 0.5628510384428724,
+        "reasons": [
+          "Presence gần đây 78.0%, bị cấm 61.8%; điểm ưu tiên đối thủ 0.340; chênh lựa chọn 0.067"
+        ],
+        "reason": "Presence gần đây 78.0%, bị cấm 61.8%; điểm ưu tiên đối thủ 0.340; chênh lựa chọn 0.067",
+        "meta_scope": {
+          "region": "WLDS",
+          "dataset_patch": "16.20",
+          "data_through": "2026-11-09T00:56:00+00:00",
+          "requested_as_of": "2026-11-13T23:59:59.999999999+00:00",
+          "staleness_days": 4,
+          "history_games": 106,
+          "patch_games": 94,
+          "lookback_days": 60,
+          "half_life_days": 21,
+          "claim": "historical_snapshot_not_live_meta"
+        }
+      }
+    },
+    {
+      "turn": 3,
+      "side": "blue",
+      "action": "ban",
+      "champion": "Vi",
+      "role": null,
+      "advice": {
+        "score_kind": "patch_aware_ban_priority_points",
+        "denial_loss": 0.049247203615632285,
+        "ban_priority": 0.5526515725708039,
+        "reasons": [
+          "Presence gần đây 76.2%, bị cấm 60.1%; điểm ưu tiên đối thủ 0.351; chênh lựa chọn 0.049"
+        ],
+        "reason": "Presence gần đây 76.2%, bị cấm 60.1%; điểm ưu tiên đối thủ 0.351; chênh lựa chọn 0.049",
+        "meta_scope": {
+          "region": "WLDS",
+          "dataset_patch": "16.20",
+          "data_through": "2026-11-09T00:56:00+00:00",
+          "requested_as_of": "2026-11-13T23:59:59.999999999+00:00",
+          "staleness_days": 4,
+          "history_games": 106,
+          "patch_games": 94,
+          "lookback_days": 60,
+          "half_life_days": 21,
+          "claim": "historical_snapshot_not_live_meta"
+        }
+      }
+    },
+    {
+      "turn": 4,
+      "side": "red",
+      "action": "ban",
+      "champion": "Cassiopeia",
+      "role": null,
+      "advice": {
+        "score_kind": "patch_aware_ban_priority_points",
+        "denial_loss": 0.05411782596840764,
+        "ban_priority": 0.49178242233908426,
+        "reasons": [
+          "Presence gần đây 66.2%, bị cấm 48.0%; điểm ưu tiên đối thủ 0.345; chênh lựa chọn 0.054"
+        ],
+        "reason": "Presence gần đây 66.2%, bị cấm 48.0%; điểm ưu tiên đối thủ 0.345; chênh lựa chọn 0.054",
+        "meta_scope": {
+          "region": "WLDS",
+          "dataset_patch": "16.20",
+          "data_through": "2026-11-09T00:56:00+00:00",
+          "requested_as_of": "2026-11-13T23:59:59.999999999+00:00",
+          "staleness_days": 4,
+          "history_games": 106,
+          "patch_games": 94,
+          "lookback_days": 60,
+          "half_life_days": 21,
+          "claim": "historical_snapshot_not_live_meta"
+        }
+      }
+    },
+    {
+      "turn": 5,
+      "side": "blue",
+      "action": "ban",
+      "champion": "Olaf",
+      "role": null,
+      "advice": {
+        "score_kind": "patch_aware_ban_priority_points",
+        "denial_loss": 0.07605844386957203,
+        "ban_priority": 0.4472820278164676,
+        "reasons": [
+          "Presence gần đây 59.9%, bị cấm 40.5%; điểm ưu tiên đối thủ 0.306; chênh lựa chọn 0.076"
+        ],
+        "reason": "Presence gần đây 59.9%, bị cấm 40.5%; điểm ưu tiên đối thủ 0.306; chênh lựa chọn 0.076",
+        "meta_scope": {
+          "region": "WLDS",
+          "dataset_patch": "16.20",
+          "data_through": "2026-11-09T00:56:00+00:00",
+          "requested_as_of": "2026-11-13T23:59:59.999999999+00:00",
+          "staleness_days": 4,
+          "history_games": 106,
+          "patch_games": 94,
+          "lookback_days": 60,
+          "half_life_days": 21,
+          "claim": "historical_snapshot_not_live_meta"
+        }
+      }
+    },
+    {
+      "turn": 6,
+      "side": "red",
+      "action": "ban",
+      "champion": "Qiyana",
+      "role": null,
+      "advice": {
+        "score_kind": "patch_aware_ban_priority_points",
+        "denial_loss": 0.08270635813192823,
+        "ban_priority": 0.4520735713980389,
+        "reasons": [
+          "Presence gần đây 57.5%, bị cấm 34.0%; điểm ưu tiên đối thủ 0.378; chênh lựa chọn 0.083"
+        ],
+        "reason": "Presence gần đây 57.5%, bị cấm 34.0%; điểm ưu tiên đối thủ 0.378; chênh lựa chọn 0.083",
+        "meta_scope": {
+          "region": "WLDS",
+          "dataset_patch": "16.20",
+          "data_through": "2026-11-09T00:56:00+00:00",
+          "requested_as_of": "2026-11-13T23:59:59.999999999+00:00",
+          "staleness_days": 4,
+          "history_games": 106,
+          "patch_games": 94,
+          "lookback_days": 60,
+          "half_life_days": 21,
+          "claim": "historical_snapshot_not_live_meta"
+        }
+      }
+    },
+    {
+      "turn": 7,
+      "side": "blue",
+      "action": "pick",
+      "champion": "Ezreal",
+      "role": "bot",
+      "advice": {
+        "score_kind": "patch_aware_draft_priority_points",
+        "ranking_score": 29.8,
+        "score_components": {
+          "meta": {
+            "value": 0.525069856932619,
+            "weight": 1.0
+          },
+          "draft_order": {
+            "value": 0.08587098074870655,
+            "weight": 1.0
+          },
+          "historical": {
+            "value": 0.31970251562417307,
+            "weight": 0.25
+          },
+          "mastery": {
+            "value": 0.1438125404689642,
+            "weight": 0.5
+          },
+          "content": {
+            "value": 0.8651102004208504,
+            "weight": 0.1
+          }
+        },
+        "score_formula": "base_priority_odds_times_geometric_role_pair_lift",
+        "base_priority": 0.2979943006540126,
+        "composition_lift": 1.0,
+        "evidence_status": "observed_candidate",
+        "cosine_similarity": 0.8651102004208504,
+        "games": 31,
+        "historical": {
+          "wins": 15,
+          "games": 31,
+          "winrate": 0.4838709677419355,
+          "ci95_wilson": [
+            0.31970251562417307,
+            0.651596045519712
+          ],
+          "statistic_kind": "historical_team_result",
+          "causal_uplift": null
+        },
+        "matchup": null,
+        "matchup_candidates": [],
+        "composition_evidence": [],
+        "synergies": [],
+        "player_history": {
+          "wins": 2,
+          "games": 2,
+          "winrate": 1.0,
+          "ci95_wilson": [
+            0.34238022750665303,
+            1.0
+          ],
+          "statistic_kind": "historical_team_result",
+          "causal_uplift": null
+        },
+        "reasons": [
+          "Patch dataset 16.20: presence cửa sổ gần đây 52.5%; 28 lượt chọn đúng vị trí trên patch, 31 trận trong cửa sổ gần đây",
+          "Slot F1: ưu tiên chọn quan sát 0.086; không phải xác suất thắng",
+          "Chưa đủ căn cứ đối đầu cùng đường; không gán kèo khắc chế cố định",
+          "Cosine 0.865 từ profile tuyển thủ Ruler; chỉ là hỗ trợ tương đồng"
+        ],
+        "draft_slot": "F1",
+        "meta_scope": {
+          "region": "WLDS",
+          "dataset_patch": "16.20",
+          "data_through": "2026-11-09T00:56:00+00:00",
+          "requested_as_of": "2026-11-13T23:59:59.999999999+00:00",
+          "staleness_days": 4,
+          "history_games": 106,
+          "patch_games": 94,
+          "lookback_days": 60,
+          "half_life_days": 21,
+          "claim": "historical_snapshot_not_live_meta"
+        }
+      }
+    },
+    {
+      "turn": 8,
+      "side": "red",
+      "action": "pick",
+      "champion": "Orianna",
+      "role": "mid",
+      "advice": {
+        "score_kind": "patch_aware_draft_priority_points",
+        "ranking_score": 36.17,
+        "score_components": {
+          "meta": {
+            "value": 0.5047756879699353,
+            "weight": 1.0
+          },
+          "draft_order": {
+            "value": 0.057622371315444974,
+            "weight": 1.0
+          },
+          "historical": {
+            "value": 0.44518497748164865,
+            "weight": 0.25
+          },
+          "matchup": {
+            "value": 0.5,
+            "weight": 0.5
+          },
+          "mastery": {
+            "value": 0.3791667732097049,
+            "weight": 0.5
+          },
+          "content": {
+            "value": 0.9840421515455079,
+            "weight": 0.1
+          }
+        },
+        "score_formula": "base_priority_odds_times_geometric_role_pair_lift",
+        "base_priority": 0.36169609116871515,
+        "composition_lift": 1.0,
+        "evidence_status": "observed_candidate",
+        "cosine_similarity": 0.9840421515455079,
+        "games": 25,
+        "historical": {
+          "wins": 16,
+          "games": 25,
+          "winrate": 0.64,
+          "ci95_wilson": [
+            0.44518497748164865,
+            0.7975211922554178
+          ],
+          "statistic_kind": "historical_team_result",
+          "causal_uplift": null
+        },
+        "matchup": null,
+        "matchup_candidates": [],
+        "composition_evidence": [],
+        "synergies": [],
+        "player_history": {
+          "wins": 6,
+          "games": 6,
+          "winrate": 1.0,
+          "ci95_wilson": [
+            0.6096657120978346,
+            1.0
+          ],
+          "statistic_kind": "historical_team_result",
+          "causal_uplift": null
+        },
+        "reasons": [
+          "Patch dataset 16.20: presence cửa sổ gần đây 50.5%; 23 lượt chọn đúng vị trí trên patch, 25 trận trong cửa sổ gần đây",
+          "Slot S1: ưu tiên chọn quan sát 0.058; không phải xác suất thắng",
+          "Chưa đủ căn cứ đối đầu cùng đường; không gán kèo khắc chế cố định",
+          "Cosine 0.984 từ profile tuyển thủ Knight; chỉ là hỗ trợ tương đồng"
+        ],
+        "draft_slot": "S1",
+        "meta_scope": {
+          "region": "WLDS",
+          "dataset_patch": "16.20",
+          "data_through": "2026-11-09T00:56:00+00:00",
+          "requested_as_of": "2026-11-13T23:59:59.999999999+00:00",
+          "staleness_days": 4,
+          "history_games": 106,
+          "patch_games": 94,
+          "lookback_days": 60,
+          "half_life_days": 21,
+          "claim": "historical_snapshot_not_live_meta"
+        }
+      }
+    },
+    {
+      "turn": 9,
+      "side": "red",
+      "action": "pick",
+      "champion": "Nautilus",
+      "role": "sup",
+      "advice": {
+        "score_kind": "patch_aware_draft_priority_points",
+        "ranking_score": 40.07,
+        "score_components": {
+          "meta": {
+            "value": 0.4238988127170391,
+            "weight": 1.0
+          },
+          "draft_order": {
+            "value": 0.05537459879272821,
+            "weight": 1.0
+          },
+          "historical": {
+            "value": 0.4422923441210239,
+            "weight": 0.25
+          },
+          "matchup": {
+            "value": 0.5,
+            "weight": 0.5
+          },
+          "synergy": {
+            "value": 0.5936819172113289,
+            "weight": 0.25
+          },
+          "composition": {
+            "value": 0.6459135265306909,
+            "weight": 1.0
+          },
+          "mastery": {
+            "value": 0.3790747649419366,
+            "weight": 0.5
+          },
+          "content": {
+            "value": 0.9041194755234452,
+            "weight": 0.1
+          }
+        },
+        "score_formula": "base_priority_odds_times_geometric_role_pair_lift",
+        "base_priority": 0.3522823074628245,
+        "composition_lift": 1.229251649589219,
+        "evidence_status": "observed_candidate",
+        "cosine_similarity": 0.9041194755234452,
+        "games": 27,
+        "historical": {
+          "wins": 17,
+          "games": 27,
+          "winrate": 0.6296296296296297,
+          "ci95_wilson": [
+            0.4422923441210239,
+            0.784674870390344
+          ],
+          "statistic_kind": "historical_team_result",
+          "causal_uplift": null
+        },
+        "matchup": null,
+        "matchup_candidates": [],
+        "composition_evidence": [
+          {
+            "wins": 6,
+            "games": 7,
+            "winrate": 0.8571428571428571,
+            "ci95_wilson": [
+              0.4868721707256811,
+              0.9743203756552565
+            ],
+            "statistic_kind": "historical_team_result",
+            "causal_uplift": null,
+            "role": "sup",
+            "champion": "Nautilus",
+            "ally_role": "mid",
+            "ally": "Orianna",
+            "anchor_games": 25,
+            "co_pick_share": 0.28,
+            "co_pick_share_ci95_wilson": [
+              0.14283853850956563,
+              0.47576605190361576
+            ],
+            "weighted_pair_games": 5.229178677835961,
+            "weighted_anchor_games": 16.359520306588674,
+            "marginal_pick_share": 0.13730566443795372,
+            "smoothed_conditional_pick_share": 0.25046872042528184,
+            "smoothed_lift": 1.8241688822566,
+            "association_reliability": 0.3433657709621815,
+            "effective_lift": 1.229251649589219,
+            "association_score": 0.6459135265306909,
+            "status": "observed_pair",
+            "score_kind": "observed_role_pair_association_not_causal_synergy"
+          }
+        ],
+        "synergies": [
+          {
+            "wins": 6,
+            "games": 7,
+            "winrate": 0.8571428571428571,
+            "ci95_wilson": [
+              0.4868721707256811,
+              0.9743203756552565
+            ],
+            "statistic_kind": "historical_team_result",
+            "causal_uplift": null,
+            "role": "sup",
+            "champion": "Nautilus",
+            "ally_role": "mid",
+            "ally": "Orianna",
+            "anchor_games": 25,
+            "co_pick_share": 0.28,
+            "co_pick_share_ci95_wilson": [
+              0.14283853850956563,
+              0.47576605190361576
+            ],
+            "weighted_pair_games": 5.229178677835961,
+            "weighted_anchor_games": 16.359520306588674,
+            "marginal_pick_share": 0.13730566443795372,
+            "smoothed_conditional_pick_share": 0.25046872042528184,
+            "smoothed_lift": 1.8241688822566,
+            "association_reliability": 0.3433657709621815,
+            "effective_lift": 1.229251649589219,
+            "association_score": 0.6459135265306909,
+            "status": "observed_pair",
+            "score_kind": "observed_role_pair_association_not_causal_synergy"
+          }
+        ],
+        "player_history": {
+          "wins": 6,
+          "games": 6,
+          "winrate": 1.0,
+          "ci95_wilson": [
+            0.6096657120978346,
+            1.0
+          ],
+          "statistic_kind": "historical_team_result",
+          "causal_uplift": null
+        },
+        "reasons": [
+          "Patch dataset 16.20: presence cửa sổ gần đây 42.4%; 25 lượt chọn đúng vị trí trên patch, 27 trận trong cửa sổ gần đây",
+          "Slot S2: ưu tiên chọn quan sát 0.055; không phải xác suất thắng",
+          "Chưa đủ căn cứ đối đầu cùng đường; không gán kèo khắc chế cố định",
+          "Phối hợp lịch sử: Orianna n=7",
+          "Cặp sup/mid với Orianna: 7/25 lần ghép, observed_pair; association=0.6459135265306909; không phải xác suất thắng hoặc chứng minh tối ưu",
+          "Cosine 0.904 từ profile tuyển thủ ON; chỉ là hỗ trợ tương đồng"
+        ],
+        "draft_slot": "S2",
+        "meta_scope": {
+          "region": "WLDS",
+          "dataset_patch": "16.20",
+          "data_through": "2026-11-09T00:56:00+00:00",
+          "requested_as_of": "2026-11-13T23:59:59.999999999+00:00",
+          "staleness_days": 4,
+          "history_games": 106,
+          "patch_games": 94,
+          "lookback_days": 60,
+          "half_life_days": 21,
+          "claim": "historical_snapshot_not_live_meta"
+        }
+      }
+    },
+    {
+      "turn": 10,
+      "side": "blue",
+      "action": "pick",
+      "champion": "Lee Sin",
+      "role": "jng",
+      "advice": {
+        "score_kind": "patch_aware_draft_priority_points",
+        "ranking_score": 36.5,
+        "score_components": {
+          "meta": {
+            "value": 0.5244858296356626,
+            "weight": 1.0
+          },
+          "draft_order": {
+            "value": 0.060505591749094166,
+            "weight": 1.0
+          },
+          "historical": {
+            "value": 0.36142299619873297,
+            "weight": 0.25
+          },
+          "matchup": {
+            "value": 0.5,
+            "weight": 0.5
+          },
+          "synergy": {
+            "value": 0.48518518518518516,
+            "weight": 0.25
+          },
+          "composition": {
+            "value": 0.6157904161998206,
+            "weight": 1.0
+          },
+          "mastery": {
+            "value": 0.11235159869648738,
+            "weight": 0.5
+          },
+          "content": {
+            "value": 0.7323008157287108,
+            "weight": 0.1
+          }
+        },
+        "score_formula": "base_priority_odds_times_geometric_role_pair_lift",
+        "base_priority": 0.3266803743477364,
+        "composition_lift": 1.1845182309011222,
+        "evidence_status": "observed_candidate",
+        "cosine_similarity": 0.7323008157287108,
+        "games": 30,
+        "historical": {
+          "wins": 16,
+          "games": 30,
+          "winrate": 0.5333333333333333,
+          "ci95_wilson": [
+            0.36142299619873297,
+            0.6976761109230025
+          ],
+          "statistic_kind": "historical_team_result",
+          "causal_uplift": null
+        },
+        "matchup": null,
+        "matchup_candidates": [],
+        "composition_evidence": [
+          {
+            "wins": 4,
+            "games": 8,
+            "winrate": 0.5,
+            "ci95_wilson": [
+              0.21521606221387757,
+              0.7847839377861224
+            ],
+            "statistic_kind": "historical_team_result",
+            "causal_uplift": null,
+            "role": "jng",
+            "champion": "Lee Sin",
+            "ally_role": "bot",
+            "ally": "Ezreal",
+            "anchor_games": 31,
+            "co_pick_share": 0.25806451612903225,
+            "co_pick_share_ci95_wilson": [
+              0.13701705906393744,
+              0.43246135809433794
+            ],
+            "weighted_pair_games": 5.600066948455838,
+            "weighted_anchor_games": 19.611753677327698,
+            "marginal_pick_share": 0.149494088475414,
+            "smoothed_conditional_pick_share": 0.23960106890401042,
+            "smoothed_lift": 1.6027461108832777,
+            "association_reliability": 0.3589771099674772,
+            "effective_lift": 1.1845182309011222,
+            "association_score": 0.6157904161998206,
+            "status": "observed_pair",
+            "score_kind": "observed_role_pair_association_not_causal_synergy"
+          }
+        ],
+        "synergies": [
+          {
+            "wins": 4,
+            "games": 8,
+            "winrate": 0.5,
+            "ci95_wilson": [
+              0.21521606221387757,
+              0.7847839377861224
+            ],
+            "statistic_kind": "historical_team_result",
+            "causal_uplift": null,
+            "role": "jng",
+            "champion": "Lee Sin",
+            "ally_role": "bot",
+            "ally": "Ezreal",
+            "anchor_games": 31,
+            "co_pick_share": 0.25806451612903225,
+            "co_pick_share_ci95_wilson": [
+              0.13701705906393744,
+              0.43246135809433794
+            ],
+            "weighted_pair_games": 5.600066948455838,
+            "weighted_anchor_games": 19.611753677327698,
+            "marginal_pick_share": 0.149494088475414,
+            "smoothed_conditional_pick_share": 0.23960106890401042,
+            "smoothed_lift": 1.6027461108832777,
+            "association_reliability": 0.3589771099674772,
+            "effective_lift": 1.1845182309011222,
+            "association_score": 0.6157904161998206,
+            "status": "observed_pair",
+            "score_kind": "observed_role_pair_association_not_causal_synergy"
+          }
+        ],
+        "player_history": {
+          "wins": 1,
+          "games": 1,
+          "winrate": 1.0,
+          "ci95_wilson": [
+            0.20654931437723745,
+            1.0
+          ],
+          "statistic_kind": "historical_team_result",
+          "causal_uplift": null
+        },
+        "reasons": [
+          "Patch dataset 16.20: presence cửa sổ gần đây 52.4%; 29 lượt chọn đúng vị trí trên patch, 30 trận trong cửa sổ gần đây",
+          "Slot F2: ưu tiên chọn quan sát 0.061; không phải xác suất thắng",
+          "Chưa đủ căn cứ đối đầu cùng đường; không gán kèo khắc chế cố định",
+          "Phối hợp lịch sử: Ezreal n=8",
+          "Cặp jng/bot với Ezreal: 8/31 lần ghép, observed_pair; association=0.6157904161998206; không phải xác suất thắng hoặc chứng minh tối ưu",
+          "Cosine 0.732 từ profile tuyển thủ Canyon; chỉ là hỗ trợ tương đồng"
+        ],
+        "draft_slot": "F2",
+        "meta_scope": {
+          "region": "WLDS",
+          "dataset_patch": "16.20",
+          "data_through": "2026-11-09T00:56:00+00:00",
+          "requested_as_of": "2026-11-13T23:59:59.999999999+00:00",
+          "staleness_days": 4,
+          "history_games": 106,
+          "patch_games": 94,
+          "lookback_days": 60,
+          "half_life_days": 21,
+          "claim": "historical_snapshot_not_live_meta"
+        }
+      }
+    },
+    {
+      "turn": 11,
+      "side": "blue",
+      "action": "pick",
+      "champion": "Syndra",
+      "role": "mid",
+      "advice": {
+        "score_kind": "patch_aware_draft_priority_points",
+        "ranking_score": 35.11,
+        "score_components": {
+          "meta": {
+            "value": 0.5624727872877456,
+            "weight": 1.0
+          },
+          "draft_order": {
+            "value": 0.05428731309756356,
+            "weight": 1.0
+          },
+          "historical": {
+            "value": 0.40739457358967,
+            "weight": 0.25
+          },
+          "matchup": {
+            "value": 0.5,
+            "weight": 0.5
+          },
+          "synergy": {
+            "value": 0.4625,
+            "weight": 0.25
+          },
+          "composition": {
+            "value": 0.5523993018328331,
+            "weight": 1.0
+          },
+          "mastery": {
+            "value": 0.07070434847174777,
+            "weight": 0.5
+          },
+          "content": {
+            "value": 0.9450503489980651,
+            "weight": 0.1
+          }
+        },
+        "score_formula": "base_priority_odds_times_geometric_role_pair_lift",
+        "base_priority": 0.33724748692177975,
+        "composition_lift": 1.0634334195406592,
+        "evidence_status": "observed_candidate",
+        "cosine_similarity": 0.9450503489980651,
+        "games": 25,
+        "historical": {
+          "wins": 15,
+          "games": 25,
+          "winrate": 0.6,
+          "ci95_wilson": [
+            0.40739457358967,
+            0.7659669762225203
+          ],
+          "statistic_kind": "historical_team_result",
+          "causal_uplift": null
+        },
+        "matchup": null,
+        "matchup_candidates": [
+          {
+            "wins": 2,
+            "games": 2,
+            "winrate": 1.0,
+            "ci95_wilson": [
+              0.34238022750665303,
+              1.0
+            ],
+            "statistic_kind": "historical_team_result",
+            "causal_uplift": null,
+            "opponent": "Orianna",
+            "role_probability": 1.0
+          }
+        ],
+        "composition_evidence": [
+          {
+            "wins": 1,
+            "games": 3,
+            "winrate": 0.3333333333333333,
+            "ci95_wilson": [
+              0.06149194472039621,
+              0.7923403991979522
+            ],
+            "statistic_kind": "historical_team_result",
+            "causal_uplift": null,
+            "role": "mid",
+            "champion": "Syndra",
+            "ally_role": "bot",
+            "ally": "Ezreal",
+            "anchor_games": 31,
+            "co_pick_share": 0.0967741935483871,
+            "co_pick_share_ci95_wilson": [
+              0.03346464416319736,
+              0.24899938443392836
+            ],
+            "weighted_pair_games": 2.3017160717874807,
+            "weighted_anchor_games": 19.611753677327698,
+            "marginal_pick_share": 0.12105731389947608,
+            "smoothed_conditional_pick_share": 0.11861132066188411,
+            "smoothed_lift": 0.9797947504466927,
+            "association_reliability": 0.6622962588110234,
+            "effective_lift": 0.9865720677416966,
+            "association_score": 0.494897135284163,
+            "status": "sparse_pair",
+            "score_kind": "observed_role_pair_association_not_causal_synergy"
+          },
+          {
+            "wins": 3,
+            "games": 6,
+            "winrate": 0.5,
+            "ci95_wilson": [
+              0.1876163064826506,
+              0.8123836935173494
+            ],
+            "statistic_kind": "historical_team_result",
+            "causal_uplift": null,
+            "role": "mid",
+            "champion": "Syndra",
+            "ally_role": "jng",
+            "ally": "Lee Sin",
+            "anchor_games": 30,
+            "co_pick_share": 0.2,
+            "co_pick_share_ci95_wilson": [
+              0.0950510717728987,
+              0.3730569641314825
+            ],
+            "weighted_pair_games": 4.39868387838808,
+            "weighted_anchor_games": 19.64013402698718,
+            "marginal_pick_share": 0.12105731389947608,
+            "smoothed_conditional_pick_share": 0.18924533243593442,
+            "smoothed_lift": 1.5632705397137798,
+            "association_reliability": 0.30549207938305734,
+            "effective_lift": 1.1462408819380214,
+            "association_score": 0.6098734080126939,
+            "status": "observed_pair",
+            "score_kind": "observed_role_pair_association_not_causal_synergy"
+          }
+        ],
+        "synergies": [
+          {
+            "wins": 1,
+            "games": 3,
+            "winrate": 0.3333333333333333,
+            "ci95_wilson": [
+              0.06149194472039621,
+              0.7923403991979522
+            ],
+            "statistic_kind": "historical_team_result",
+            "causal_uplift": null,
+            "role": "mid",
+            "champion": "Syndra",
+            "ally_role": "bot",
+            "ally": "Ezreal",
+            "anchor_games": 31,
+            "co_pick_share": 0.0967741935483871,
+            "co_pick_share_ci95_wilson": [
+              0.03346464416319736,
+              0.24899938443392836
+            ],
+            "weighted_pair_games": 2.3017160717874807,
+            "weighted_anchor_games": 19.611753677327698,
+            "marginal_pick_share": 0.12105731389947608,
+            "smoothed_conditional_pick_share": 0.11861132066188411,
+            "smoothed_lift": 0.9797947504466927,
+            "association_reliability": 0.6622962588110234,
+            "effective_lift": 0.9865720677416966,
+            "association_score": 0.494897135284163,
+            "status": "sparse_pair",
+            "score_kind": "observed_role_pair_association_not_causal_synergy"
+          },
+          {
+            "wins": 3,
+            "games": 6,
+            "winrate": 0.5,
+            "ci95_wilson": [
+              0.1876163064826506,
+              0.8123836935173494
+            ],
+            "statistic_kind": "historical_team_result",
+            "causal_uplift": null,
+            "role": "mid",
+            "champion": "Syndra",
+            "ally_role": "jng",
+            "ally": "Lee Sin",
+            "anchor_games": 30,
+            "co_pick_share": 0.2,
+            "co_pick_share_ci95_wilson": [
+              0.0950510717728987,
+              0.3730569641314825
+            ],
+            "weighted_pair_games": 4.39868387838808,
+            "weighted_anchor_games": 19.64013402698718,
+            "marginal_pick_share": 0.12105731389947608,
+            "smoothed_conditional_pick_share": 0.18924533243593442,
+            "smoothed_lift": 1.5632705397137798,
+            "association_reliability": 0.30549207938305734,
+            "effective_lift": 1.1462408819380214,
+            "association_score": 0.6098734080126939,
+            "status": "observed_pair",
+            "score_kind": "observed_role_pair_association_not_causal_synergy"
+          }
+        ],
+        "player_history": {
+          "wins": 1,
+          "games": 1,
+          "winrate": 1.0,
+          "ci95_wilson": [
+            0.20654931437723745,
+            1.0
+          ],
+          "statistic_kind": "historical_team_result",
+          "causal_uplift": null
+        },
+        "reasons": [
+          "Patch dataset 16.20: presence cửa sổ gần đây 56.2%; 23 lượt chọn đúng vị trí trên patch, 25 trận trong cửa sổ gần đây",
+          "Slot F3: ưu tiên chọn quan sát 0.054; không phải xác suất thắng",
+          "Vị trí địch còn là giả định: Orianna p(role)=1.00, n=2",
+          "Phối hợp lịch sử: Lee Sin n=6",
+          "Cặp mid/bot với Ezreal: 3/31 lần ghép, sparse_pair; association=0.494897135284163; không phải xác suất thắng hoặc chứng minh tối ưu",
+          "Cặp mid/jng với Lee Sin: 6/30 lần ghép, observed_pair; association=0.6098734080126939; không phải xác suất thắng hoặc chứng minh tối ưu",
+          "Cosine 0.945 từ profile tuyển thủ Chovy; chỉ là hỗ trợ tương đồng"
+        ],
+        "draft_slot": "F3",
+        "meta_scope": {
+          "region": "WLDS",
+          "dataset_patch": "16.20",
+          "data_through": "2026-11-09T00:56:00+00:00",
+          "requested_as_of": "2026-11-13T23:59:59.999999999+00:00",
+          "staleness_days": 4,
+          "history_games": 106,
+          "patch_games": 94,
+          "lookback_days": 60,
+          "half_life_days": 21,
+          "claim": "historical_snapshot_not_live_meta"
+        }
+      }
+    },
+    {
+      "turn": 12,
+      "side": "red",
+      "action": "pick",
+      "champion": "Ambessa",
+      "role": "top",
+      "advice": {
+        "score_kind": "patch_aware_draft_priority_points",
+        "ranking_score": 31.85,
+        "score_components": {
+          "meta": {
+            "value": 0.3415721058040847,
+            "weight": 1.0
+          },
+          "draft_order": {
+            "value": 0.07056935450979315,
+            "weight": 1.0
+          },
+          "historical": {
+            "value": 0.2875585353039122,
+            "weight": 0.25
+          },
+          "matchup": {
+            "value": 0.5,
+            "weight": 0.5
+          },
+          "synergy": {
+            "value": 0.5461538461538462,
+            "weight": 0.25
+          },
+          "composition": {
+            "value": 0.5775470679252848,
+            "weight": 1.0
+          },
+          "mastery": {
+            "value": 0.2331857759177725,
+            "weight": 0.5
+          },
+          "content": {
+            "value": 0.9911138364019583,
+            "weight": 0.1
+          }
+        },
+        "score_formula": "base_priority_odds_times_geometric_role_pair_lift",
+        "base_priority": 0.30174272979927763,
+        "composition_lift": 1.0815902990239632,
+        "evidence_status": "observed_candidate",
+        "cosine_similarity": 0.9911138364019583,
+        "games": 26,
+        "historical": {
+          "wins": 12,
+          "games": 26,
+          "winrate": 0.46153846153846156,
+          "ci95_wilson": [
+            0.2875585353039122,
+            0.6454206125314121
+          ],
+          "statistic_kind": "historical_team_result",
+          "causal_uplift": null
+        },
+        "matchup": null,
+        "matchup_candidates": [],
+        "composition_evidence": [
+          {
+            "wins": 2,
+            "games": 5,
+            "winrate": 0.4,
+            "ci95_wilson": [
+              0.11762077423264783,
+              0.769275718723987
+            ],
+            "statistic_kind": "historical_team_result",
+            "causal_uplift": null,
+            "role": "top",
+            "champion": "Ambessa",
+            "ally_role": "mid",
+            "ally": "Orianna",
+            "anchor_games": 25,
+            "co_pick_share": 0.2,
+            "co_pick_share_ci95_wilson": [
+              0.08860584686802572,
+              0.3913095036954033
+            ],
+            "weighted_pair_games": 3.038567356830411,
+            "weighted_anchor_games": 16.359520306588674,
+            "marginal_pick_share": 0.12195277100520238,
+            "smoothed_conditional_pick_share": 0.16153917132619844,
+            "smoothed_lift": 1.3246043529368212,
+            "association_reliability": 0.23304457258784805,
+            "effective_lift": 1.0677056014515807,
+            "association_score": 0.5698192689277916,
+            "status": "observed_pair",
+            "score_kind": "observed_role_pair_association_not_causal_synergy"
+          },
+          {
+            "wins": 4,
+            "games": 5,
+            "winrate": 0.8,
+            "ci95_wilson": [
+              0.37553462976252533,
+              0.9637758913675698
+            ],
+            "statistic_kind": "historical_team_result",
+            "causal_uplift": null,
+            "role": "top",
+            "champion": "Ambessa",
+            "ally_role": "sup",
+            "ally": "Nautilus",
+            "anchor_games": 27,
+            "co_pick_share": 0.18518518518518517,
+            "co_pick_share_ci95_wilson": [
+              0.08180707142976529,
+              0.3669868361854843
+            ],
+            "weighted_pair_games": 3.600650917475769,
+            "weighted_anchor_games": 18.038851433710313,
+            "marginal_pick_share": 0.12195277100520238,
+            "smoothed_conditional_pick_share": 0.17191070179617376,
+            "smoothed_lift": 1.4096498208215393,
+            "association_reliability": 0.26474107300623495,
+            "effective_lift": 1.0951557048137943,
+            "association_score": 0.585001940381917,
+            "status": "observed_pair",
+            "score_kind": "observed_role_pair_association_not_causal_synergy"
+          }
+        ],
+        "synergies": [
+          {
+            "wins": 2,
+            "games": 5,
+            "winrate": 0.4,
+            "ci95_wilson": [
+              0.11762077423264783,
+              0.769275718723987
+            ],
+            "statistic_kind": "historical_team_result",
+            "causal_uplift": null,
+            "role": "top",
+            "champion": "Ambessa",
+            "ally_role": "mid",
+            "ally": "Orianna",
+            "anchor_games": 25,
+            "co_pick_share": 0.2,
+            "co_pick_share_ci95_wilson": [
+              0.08860584686802572,
+              0.3913095036954033
+            ],
+            "weighted_pair_games": 3.038567356830411,
+            "weighted_anchor_games": 16.359520306588674,
+            "marginal_pick_share": 0.12195277100520238,
+            "smoothed_conditional_pick_share": 0.16153917132619844,
+            "smoothed_lift": 1.3246043529368212,
+            "association_reliability": 0.23304457258784805,
+            "effective_lift": 1.0677056014515807,
+            "association_score": 0.5698192689277916,
+            "status": "observed_pair",
+            "score_kind": "observed_role_pair_association_not_causal_synergy"
+          },
+          {
+            "wins": 4,
+            "games": 5,
+            "winrate": 0.8,
+            "ci95_wilson": [
+              0.37553462976252533,
+              0.9637758913675698
+            ],
+            "statistic_kind": "historical_team_result",
+            "causal_uplift": null,
+            "role": "top",
+            "champion": "Ambessa",
+            "ally_role": "sup",
+            "ally": "Nautilus",
+            "anchor_games": 27,
+            "co_pick_share": 0.18518518518518517,
+            "co_pick_share_ci95_wilson": [
+              0.08180707142976529,
+              0.3669868361854843
+            ],
+            "weighted_pair_games": 3.600650917475769,
+            "weighted_anchor_games": 18.038851433710313,
+            "marginal_pick_share": 0.12195277100520238,
+            "smoothed_conditional_pick_share": 0.17191070179617376,
+            "smoothed_lift": 1.4096498208215393,
+            "association_reliability": 0.26474107300623495,
+            "effective_lift": 1.0951557048137943,
+            "association_score": 0.585001940381917,
+            "status": "observed_pair",
+            "score_kind": "observed_role_pair_association_not_causal_synergy"
+          }
+        ],
+        "player_history": {
+          "wins": 2,
+          "games": 4,
+          "winrate": 0.5,
+          "ci95_wilson": [
+            0.15003898915214947,
+            0.8499610108478506
+          ],
+          "statistic_kind": "historical_team_result",
+          "causal_uplift": null
+        },
+        "reasons": [
+          "Patch dataset 16.20: presence cửa sổ gần đây 34.2%; 23 lượt chọn đúng vị trí trên patch, 26 trận trong cửa sổ gần đây",
+          "Slot S3: ưu tiên chọn quan sát 0.071; không phải xác suất thắng",
+          "Chưa đủ căn cứ đối đầu cùng đường; không gán kèo khắc chế cố định",
+          "Phối hợp lịch sử: Orianna n=5, Nautilus n=5",
+          "Cặp top/mid với Orianna: 5/25 lần ghép, observed_pair; association=0.5698192689277916; không phải xác suất thắng hoặc chứng minh tối ưu",
+          "Cặp top/sup với Nautilus: 5/27 lần ghép, observed_pair; association=0.585001940381917; không phải xác suất thắng hoặc chứng minh tối ưu",
+          "Cosine 0.991 từ profile tuyển thủ Bin; chỉ là hỗ trợ tương đồng"
+        ],
+        "draft_slot": "S3",
+        "meta_scope": {
+          "region": "WLDS",
+          "dataset_patch": "16.20",
+          "data_through": "2026-11-09T00:56:00+00:00",
+          "requested_as_of": "2026-11-13T23:59:59.999999999+00:00",
+          "staleness_days": 4,
+          "history_games": 106,
+          "patch_games": 94,
+          "lookback_days": 60,
+          "half_life_days": 21,
+          "claim": "historical_snapshot_not_live_meta"
+        }
+      }
+    },
+    {
+      "turn": 13,
+      "side": "red",
+      "action": "ban",
+      "champion": "Rumble",
+      "role": null,
+      "advice": {
+        "score_kind": "patch_aware_ban_priority_points",
+        "denial_loss": 0.05392221889950455,
+        "ban_priority": 0.38484834388977424,
+        "reasons": [
+          "Presence gần đây 49.2%, bị cấm 21.9%; điểm ưu tiên đối thủ 0.327; chênh lựa chọn 0.054"
+        ],
+        "reason": "Presence gần đây 49.2%, bị cấm 21.9%; điểm ưu tiên đối thủ 0.327; chênh lựa chọn 0.054",
+        "meta_scope": {
+          "region": "WLDS",
+          "dataset_patch": "16.20",
+          "data_through": "2026-11-09T00:56:00+00:00",
+          "requested_as_of": "2026-11-13T23:59:59.999999999+00:00",
+          "staleness_days": 4,
+          "history_games": 106,
+          "patch_games": 94,
+          "lookback_days": 60,
+          "half_life_days": 21,
+          "claim": "historical_snapshot_not_live_meta"
+        }
+      }
+    },
+    {
+      "turn": 14,
+      "side": "blue",
+      "action": "ban",
+      "champion": "Jarvan IV",
+      "role": null,
+      "advice": {
+        "score_kind": "patch_aware_ban_priority_points",
+        "denial_loss": 0.029796809599930474,
+        "ban_priority": 0.39959685733338784,
+        "reasons": [
+          "Presence gần đây 54.0%, bị cấm 28.6%; điểm ưu tiên đối thủ 0.284; chênh lựa chọn 0.030"
+        ],
+        "reason": "Presence gần đây 54.0%, bị cấm 28.6%; điểm ưu tiên đối thủ 0.284; chênh lựa chọn 0.030",
+        "meta_scope": {
+          "region": "WLDS",
+          "dataset_patch": "16.20",
+          "data_through": "2026-11-09T00:56:00+00:00",
+          "requested_as_of": "2026-11-13T23:59:59.999999999+00:00",
+          "staleness_days": 4,
+          "history_games": 106,
+          "patch_games": 94,
+          "lookback_days": 60,
+          "half_life_days": 21,
+          "claim": "historical_snapshot_not_live_meta"
+        }
+      }
+    },
+    {
+      "turn": 15,
+      "side": "red",
+      "action": "ban",
+      "champion": "Jayce",
+      "role": null,
+      "advice": {
+        "score_kind": "patch_aware_ban_priority_points",
+        "denial_loss": 0.0,
+        "ban_priority": 0.3538430605102282,
+        "reasons": [
+          "Presence gần đây 48.1%, bị cấm 32.7%; điểm ưu tiên đối thủ 0.261; chênh lựa chọn 0.000"
+        ],
+        "reason": "Presence gần đây 48.1%, bị cấm 32.7%; điểm ưu tiên đối thủ 0.261; chênh lựa chọn 0.000",
+        "meta_scope": {
+          "region": "WLDS",
+          "dataset_patch": "16.20",
+          "data_through": "2026-11-09T00:56:00+00:00",
+          "requested_as_of": "2026-11-13T23:59:59.999999999+00:00",
+          "staleness_days": 4,
+          "history_games": 106,
+          "patch_games": 94,
+          "lookback_days": 60,
+          "half_life_days": 21,
+          "claim": "historical_snapshot_not_live_meta"
+        }
+      }
+    },
+    {
+      "turn": 16,
+      "side": "blue",
+      "action": "ban",
+      "champion": "Wukong",
+      "role": null,
+      "advice": {
+        "score_kind": "patch_aware_ban_priority_points",
+        "denial_loss": 0.0,
+        "ban_priority": 0.2744288386278664,
+        "reasons": [
+          "Presence gần đây 36.4%, bị cấm 20.4%; điểm ưu tiên đối thủ 0.224; chênh lựa chọn 0.000"
+        ],
+        "reason": "Presence gần đây 36.4%, bị cấm 20.4%; điểm ưu tiên đối thủ 0.224; chênh lựa chọn 0.000",
+        "meta_scope": {
+          "region": "WLDS",
+          "dataset_patch": "16.20",
+          "data_through": "2026-11-09T00:56:00+00:00",
+          "requested_as_of": "2026-11-13T23:59:59.999999999+00:00",
+          "staleness_days": 4,
+          "history_games": 106,
+          "patch_games": 94,
+          "lookback_days": 60,
+          "half_life_days": 21,
+          "claim": "historical_snapshot_not_live_meta"
+        }
+      }
+    },
+    {
+      "turn": 17,
+      "side": "red",
+      "action": "pick",
+      "champion": "Jhin",
+      "role": "bot",
+      "advice": {
+        "score_kind": "patch_aware_draft_priority_points",
+        "ranking_score": 25.53,
+        "score_components": {
+          "meta": {
+            "value": 0.3351258862481684,
+            "weight": 1.0
+          },
+          "draft_order": {
+            "value": 0.049727648904540504,
+            "weight": 1.0
+          },
+          "historical": {
+            "value": 0.3681137508501646,
+            "weight": 0.25
+          },
+          "matchup": {
+            "value": 0.5025575447570333,
+            "weight": 0.5
+          },
+          "synergy": {
+            "value": 0.37826086956521743,
+            "weight": 0.25
+          },
+          "composition": {
+            "value": 0.5082064356283064,
+            "weight": 1.0
+          },
+          "mastery": {
+            "value": 0.04983114700167491,
+            "weight": 0.5
+          },
+          "content": {
+            "value": 0.8399118063154349,
+            "weight": 0.1
+          }
+        },
+        "score_formula": "base_priority_odds_times_geometric_role_pair_lift",
+        "base_priority": 0.25878686576873666,
+        "composition_lift": 0.9818747308857295,
+        "evidence_status": "observed_candidate",
+        "cosine_similarity": 0.8399118063154349,
+        "games": 23,
+        "historical": {
+          "wins": 13,
+          "games": 23,
+          "winrate": 0.5652173913043478,
+          "ci95_wilson": [
+            0.3681137508501646,
+            0.743653646743258
+          ],
+          "statistic_kind": "historical_team_result",
+          "causal_uplift": null
+        },
+        "matchup": null,
+        "matchup_candidates": [
+          {
+            "wins": 4,
+            "games": 7,
+            "winrate": 0.5714285714285714,
+            "ci95_wilson": [
+              0.2504583645276572,
+              0.8417801447485302
+            ],
+            "statistic_kind": "historical_team_result",
+            "causal_uplift": null,
+            "opponent": "Ezreal",
+            "role_probability": 1.0
+          }
+        ],
+        "composition_evidence": [
+          {
+            "wins": 2,
+            "games": 2,
+            "winrate": 1.0,
+            "ci95_wilson": [
+              0.34238022750665303,
+              1.0
+            ],
+            "statistic_kind": "historical_team_result",
+            "causal_uplift": null,
+            "role": "bot",
+            "champion": "Jhin",
+            "ally_role": "mid",
+            "ally": "Orianna",
+            "anchor_games": 25,
+            "co_pick_share": 0.08,
+            "co_pick_share_ci95_wilson": [
+              0.022220401284847563,
+              0.24966108950395313
+            ],
+            "weighted_pair_games": 1.3011745258876874,
+            "weighted_anchor_games": 16.359520306588674,
+            "marginal_pick_share": 0.10605386431217079,
+            "smoothed_conditional_pick_share": 0.08959621197731261,
+            "smoothed_lift": 0.8448179852606325,
+            "association_reliability": 0.6206304256037445,
+            "effective_lift": 0.9006311903046109,
+            "association_score": 0.4579411042229611,
+            "status": "sparse_pair",
+            "score_kind": "observed_role_pair_association_not_causal_synergy"
+          },
+          {
+            "wins": 1,
+            "games": 5,
+            "winrate": 0.2,
+            "ci95_wilson": [
+              0.03622410863243014,
+              0.6244653702374747
+            ],
+            "statistic_kind": "historical_team_result",
+            "causal_uplift": null,
+            "role": "bot",
+            "champion": "Jhin",
+            "ally_role": "sup",
+            "ally": "Nautilus",
+            "anchor_games": 27,
+            "co_pick_share": 0.18518518518518517,
+            "co_pick_share_ci95_wilson": [
+              0.08180707142976529,
+              0.3669868361854843
+            ],
+            "weighted_pair_games": 2.4141744515308035,
+            "weighted_anchor_games": 18.038851433710313,
+            "marginal_pick_share": 0.10605386431217079,
+            "smoothed_conditional_pick_share": 0.12392494403229949,
+            "smoothed_lift": 1.1685094629604913,
+            "association_reliability": 0.1944691901146201,
+            "effective_lift": 1.030747726909414,
+            "association_score": 0.5388537531974702,
+            "status": "observed_pair",
+            "score_kind": "observed_role_pair_association_not_causal_synergy"
+          },
+          {
+            "wins": 3,
+            "games": 4,
+            "winrate": 0.75,
+            "ci95_wilson": [
+              0.30064184258240184,
+              0.9544127391902995
+            ],
+            "statistic_kind": "historical_team_result",
+            "causal_uplift": null,
+            "role": "bot",
+            "champion": "Jhin",
+            "ally_role": "top",
+            "ally": "Ambessa",
+            "anchor_games": 26,
+            "co_pick_share": 0.15384615384615385,
+            "co_pick_share_ci95_wilson": [
+              0.06150033723578355,
+              0.3353119932821348
+            ],
+            "weighted_pair_games": 2.012393956571825,
+            "weighted_anchor_games": 16.02182930396317,
+            "marginal_pick_share": 0.10605386431217079,
+            "smoothed_conditional_pick_share": 0.11809056787662195,
+            "smoothed_lift": 1.11349613371014,
+            "association_reliability": 0.1675264700647676,
+            "effective_lift": 1.0181730449064723,
+            "association_score": 0.5268503291536434,
+            "status": "sparse_pair",
+            "score_kind": "observed_role_pair_association_not_causal_synergy"
+          }
+        ],
+        "synergies": [
+          {
+            "wins": 2,
+            "games": 2,
+            "winrate": 1.0,
+            "ci95_wilson": [
+              0.34238022750665303,
+              1.0
+            ],
+            "statistic_kind": "historical_team_result",
+            "causal_uplift": null,
+            "role": "bot",
+            "champion": "Jhin",
+            "ally_role": "mid",
+            "ally": "Orianna",
+            "anchor_games": 25,
+            "co_pick_share": 0.08,
+            "co_pick_share_ci95_wilson": [
+              0.022220401284847563,
+              0.24966108950395313
+            ],
+            "weighted_pair_games": 1.3011745258876874,
+            "weighted_anchor_games": 16.359520306588674,
+            "marginal_pick_share": 0.10605386431217079,
+            "smoothed_conditional_pick_share": 0.08959621197731261,
+            "smoothed_lift": 0.8448179852606325,
+            "association_reliability": 0.6206304256037445,
+            "effective_lift": 0.9006311903046109,
+            "association_score": 0.4579411042229611,
+            "status": "sparse_pair",
+            "score_kind": "observed_role_pair_association_not_causal_synergy"
+          },
+          {
+            "wins": 1,
+            "games": 5,
+            "winrate": 0.2,
+            "ci95_wilson": [
+              0.03622410863243014,
+              0.6244653702374747
+            ],
+            "statistic_kind": "historical_team_result",
+            "causal_uplift": null,
+            "role": "bot",
+            "champion": "Jhin",
+            "ally_role": "sup",
+            "ally": "Nautilus",
+            "anchor_games": 27,
+            "co_pick_share": 0.18518518518518517,
+            "co_pick_share_ci95_wilson": [
+              0.08180707142976529,
+              0.3669868361854843
+            ],
+            "weighted_pair_games": 2.4141744515308035,
+            "weighted_anchor_games": 18.038851433710313,
+            "marginal_pick_share": 0.10605386431217079,
+            "smoothed_conditional_pick_share": 0.12392494403229949,
+            "smoothed_lift": 1.1685094629604913,
+            "association_reliability": 0.1944691901146201,
+            "effective_lift": 1.030747726909414,
+            "association_score": 0.5388537531974702,
+            "status": "observed_pair",
+            "score_kind": "observed_role_pair_association_not_causal_synergy"
+          },
+          {
+            "wins": 3,
+            "games": 4,
+            "winrate": 0.75,
+            "ci95_wilson": [
+              0.30064184258240184,
+              0.9544127391902995
+            ],
+            "statistic_kind": "historical_team_result",
+            "causal_uplift": null,
+            "role": "bot",
+            "champion": "Jhin",
+            "ally_role": "top",
+            "ally": "Ambessa",
+            "anchor_games": 26,
+            "co_pick_share": 0.15384615384615385,
+            "co_pick_share_ci95_wilson": [
+              0.06150033723578355,
+              0.3353119932821348
+            ],
+            "weighted_pair_games": 2.012393956571825,
+            "weighted_anchor_games": 16.02182930396317,
+            "marginal_pick_share": 0.10605386431217079,
+            "smoothed_conditional_pick_share": 0.11809056787662195,
+            "smoothed_lift": 1.11349613371014,
+            "association_reliability": 0.1675264700647676,
+            "effective_lift": 1.0181730449064723,
+            "association_score": 0.5268503291536434,
+            "status": "sparse_pair",
+            "score_kind": "observed_role_pair_association_not_causal_synergy"
+          }
+        ],
+        "player_history": {
+          "wins": 1,
+          "games": 1,
+          "winrate": 1.0,
+          "ci95_wilson": [
+            0.20654931437723745,
+            1.0
+          ],
+          "statistic_kind": "historical_team_result",
+          "causal_uplift": null
+        },
+        "reasons": [
+          "Patch dataset 16.20: presence cửa sổ gần đây 33.5%; 20 lượt chọn đúng vị trí trên patch, 23 trận trong cửa sổ gần đây",
+          "Slot S4: ưu tiên chọn quan sát 0.050; không phải xác suất thắng",
+          "Vị trí địch còn là giả định: Ezreal p(role)=1.00, n=7",
+          "Phối hợp lịch sử: Nautilus n=5",
+          "Cặp bot/mid với Orianna: 2/25 lần ghép, sparse_pair; association=0.4579411042229611; không phải xác suất thắng hoặc chứng minh tối ưu",
+          "Cặp bot/sup với Nautilus: 5/27 lần ghép, observed_pair; association=0.5388537531974702; không phải xác suất thắng hoặc chứng minh tối ưu",
+          "Cặp bot/top với Ambessa: 4/26 lần ghép, sparse_pair; association=0.5268503291536434; không phải xác suất thắng hoặc chứng minh tối ưu",
+          "Cosine 0.840 từ profile tuyển thủ Viper; chỉ là hỗ trợ tương đồng"
+        ],
+        "draft_slot": "S4",
+        "meta_scope": {
+          "region": "WLDS",
+          "dataset_patch": "16.20",
+          "data_through": "2026-11-09T00:56:00+00:00",
+          "requested_as_of": "2026-11-13T23:59:59.999999999+00:00",
+          "staleness_days": 4,
+          "history_games": 106,
+          "patch_games": 94,
+          "lookback_days": 60,
+          "half_life_days": 21,
+          "claim": "historical_snapshot_not_live_meta"
+        }
+      }
+    },
+    {
+      "turn": 18,
+      "side": "blue",
+      "action": "pick",
+      "champion": "Seraphine",
+      "role": "sup",
+      "advice": {
+        "score_kind": "patch_aware_draft_priority_points",
+        "ranking_score": 28.19,
+        "score_components": {
+          "meta": {
+            "value": 0.3937150757386092,
+            "weight": 1.0
+          },
+          "draft_order": {
+            "value": 0.012502266803906118,
+            "weight": 1.0
+          },
+          "historical": {
+            "value": 0.43285427668523624,
+            "weight": 0.25
+          },
+          "matchup": {
+            "value": 0.5,
+            "weight": 0.5
+          },
+          "synergy": {
+            "value": 0.5,
+            "weight": 0.25
+          },
+          "composition": {
+            "value": 0.4493310505823839,
+            "weight": 1.0
+          },
+          "mastery": {
+            "value": 0.2871324229642539,
+            "weight": 0.5
+          },
+          "content": {
+            "value": 0.8362219295300511,
+            "weight": 0.1
+          }
+        },
+        "score_formula": "base_priority_odds_times_geometric_role_pair_lift",
+        "base_priority": 0.31017203226359896,
+        "composition_lift": 0.8730355499341331,
+        "evidence_status": "observed_candidate",
+        "cosine_similarity": 0.8362219295300511,
+        "games": 20,
+        "historical": {
+          "wins": 13,
+          "games": 20,
+          "winrate": 0.65,
+          "ci95_wilson": [
+            0.43285427668523624,
+            0.818808175898918
+          ],
+          "statistic_kind": "historical_team_result",
+          "causal_uplift": null
+        },
+        "matchup": null,
+        "matchup_candidates": [
+          {
+            "wins": 3,
+            "games": 3,
+            "winrate": 1.0,
+            "ci95_wilson": [
+              0.4385029682449546,
+              1.0
+            ],
+            "statistic_kind": "historical_team_result",
+            "causal_uplift": null,
+            "opponent": "Nautilus",
+            "role_probability": 1.0
+          }
+        ],
+        "composition_evidence": [
+          {
+            "wins": 1,
+            "games": 2,
+            "winrate": 0.5,
+            "ci95_wilson": [
+              0.09453120573423074,
+              0.9054687942657693
+            ],
+            "statistic_kind": "historical_team_result",
+            "causal_uplift": null,
+            "role": "sup",
+            "champion": "Seraphine",
+            "ally_role": "bot",
+            "ally": "Ezreal",
+            "anchor_games": 31,
+            "co_pick_share": 0.06451612903225806,
+            "co_pick_share_ci95_wilson": [
+              0.017874783521914572,
+              0.20718636736298127
+            ],
+            "weighted_pair_games": 0.8737477556774986,
+            "weighted_anchor_games": 19.611753677327698,
+            "marginal_pick_share": 0.09462798768491978,
+            "smoothed_conditional_pick_share": 0.061463014057158136,
+            "smoothed_lift": 0.6495225731927202,
+            "association_reliability": 0.6622962588110234,
+            "effective_lift": 0.7514184808884012,
+            "association_score": 0.3937639798014659,
+            "status": "sparse_pair",
+            "score_kind": "observed_role_pair_association_not_causal_synergy"
+          },
+          {
+            "wins": 2,
+            "games": 2,
+            "winrate": 1.0,
+            "ci95_wilson": [
+              0.34238022750665303,
+              1.0
+            ],
+            "statistic_kind": "historical_team_result",
+            "causal_uplift": null,
+            "role": "sup",
+            "champion": "Seraphine",
+            "ally_role": "jng",
+            "ally": "Lee Sin",
+            "anchor_games": 30,
+            "co_pick_share": 0.06666666666666667,
+            "co_pick_share_ci95_wilson": [
+              0.018477023791270378,
+              0.2132345836261692
+            ],
+            "weighted_pair_games": 1.4294445939885667,
+            "weighted_anchor_games": 19.64013402698718,
+            "marginal_pick_share": 0.09462798768491978,
+            "smoothed_conditional_pick_share": 0.08015228502930115,
+            "smoothed_lift": 0.8470251454166183,
+            "association_reliability": 0.6626196092468727,
+            "effective_lift": 0.8958239654211131,
+            "association_score": 0.4585888543631938,
+            "status": "sparse_pair",
+            "score_kind": "observed_role_pair_association_not_causal_synergy"
+          },
+          {
+            "wins": 2,
+            "games": 2,
+            "winrate": 1.0,
+            "ci95_wilson": [
+              0.34238022750665303,
+              1.0
+            ],
+            "statistic_kind": "historical_team_result",
+            "causal_uplift": null,
+            "role": "sup",
+            "champion": "Seraphine",
+            "ally_role": "mid",
+            "ally": "Syndra",
+            "anchor_games": 25,
+            "co_pick_share": 0.08,
+            "co_pick_share_ci95_wilson": [
+              0.022220401284847563,
+              0.24966108950395313
+            ],
+            "weighted_pair_games": 1.4979428852816699,
+            "weighted_anchor_games": 15.904186541287807,
+            "marginal_pick_share": 0.09462798768491978,
+            "smoothed_conditional_pick_share": 0.09435628322993674,
+            "smoothed_lift": 0.9971287093635792,
+            "association_reliability": 0.6139620140527734,
+            "effective_lift": 0.9982361583167335,
+            "association_score": 0.49928114532053974,
+            "status": "sparse_pair",
+            "score_kind": "observed_role_pair_association_not_causal_synergy"
+          }
+        ],
+        "synergies": [
+          {
+            "wins": 1,
+            "games": 2,
+            "winrate": 0.5,
+            "ci95_wilson": [
+              0.09453120573423074,
+              0.9054687942657693
+            ],
+            "statistic_kind": "historical_team_result",
+            "causal_uplift": null,
+            "role": "sup",
+            "champion": "Seraphine",
+            "ally_role": "bot",
+            "ally": "Ezreal",
+            "anchor_games": 31,
+            "co_pick_share": 0.06451612903225806,
+            "co_pick_share_ci95_wilson": [
+              0.017874783521914572,
+              0.20718636736298127
+            ],
+            "weighted_pair_games": 0.8737477556774986,
+            "weighted_anchor_games": 19.611753677327698,
+            "marginal_pick_share": 0.09462798768491978,
+            "smoothed_conditional_pick_share": 0.061463014057158136,
+            "smoothed_lift": 0.6495225731927202,
+            "association_reliability": 0.6622962588110234,
+            "effective_lift": 0.7514184808884012,
+            "association_score": 0.3937639798014659,
+            "status": "sparse_pair",
+            "score_kind": "observed_role_pair_association_not_causal_synergy"
+          },
+          {
+            "wins": 2,
+            "games": 2,
+            "winrate": 1.0,
+            "ci95_wilson": [
+              0.34238022750665303,
+              1.0
+            ],
+            "statistic_kind": "historical_team_result",
+            "causal_uplift": null,
+            "role": "sup",
+            "champion": "Seraphine",
+            "ally_role": "jng",
+            "ally": "Lee Sin",
+            "anchor_games": 30,
+            "co_pick_share": 0.06666666666666667,
+            "co_pick_share_ci95_wilson": [
+              0.018477023791270378,
+              0.2132345836261692
+            ],
+            "weighted_pair_games": 1.4294445939885667,
+            "weighted_anchor_games": 19.64013402698718,
+            "marginal_pick_share": 0.09462798768491978,
+            "smoothed_conditional_pick_share": 0.08015228502930115,
+            "smoothed_lift": 0.8470251454166183,
+            "association_reliability": 0.6626196092468727,
+            "effective_lift": 0.8958239654211131,
+            "association_score": 0.4585888543631938,
+            "status": "sparse_pair",
+            "score_kind": "observed_role_pair_association_not_causal_synergy"
+          },
+          {
+            "wins": 2,
+            "games": 2,
+            "winrate": 1.0,
+            "ci95_wilson": [
+              0.34238022750665303,
+              1.0
+            ],
+            "statistic_kind": "historical_team_result",
+            "causal_uplift": null,
+            "role": "sup",
+            "champion": "Seraphine",
+            "ally_role": "mid",
+            "ally": "Syndra",
+            "anchor_games": 25,
+            "co_pick_share": 0.08,
+            "co_pick_share_ci95_wilson": [
+              0.022220401284847563,
+              0.24966108950395313
+            ],
+            "weighted_pair_games": 1.4979428852816699,
+            "weighted_anchor_games": 15.904186541287807,
+            "marginal_pick_share": 0.09462798768491978,
+            "smoothed_conditional_pick_share": 0.09435628322993674,
+            "smoothed_lift": 0.9971287093635792,
+            "association_reliability": 0.6139620140527734,
+            "effective_lift": 0.9982361583167335,
+            "association_score": 0.49928114532053974,
+            "status": "sparse_pair",
+            "score_kind": "observed_role_pair_association_not_causal_synergy"
+          }
+        ],
+        "player_history": {
+          "wins": 3,
+          "games": 3,
+          "winrate": 1.0,
+          "ci95_wilson": [
+            0.4385029682449546,
+            1.0
+          ],
+          "statistic_kind": "historical_team_result",
+          "causal_uplift": null
+        },
+        "reasons": [
+          "Patch dataset 16.20: presence cửa sổ gần đây 39.4%; 17 lượt chọn đúng vị trí trên patch, 20 trận trong cửa sổ gần đây",
+          "Slot F4: ưu tiên chọn quan sát 0.013; không phải xác suất thắng",
+          "Vị trí địch còn là giả định: Nautilus p(role)=1.00, n=3",
+          "Cặp sup/bot với Ezreal: 2/31 lần ghép, sparse_pair; association=0.3937639798014659; không phải xác suất thắng hoặc chứng minh tối ưu",
+          "Cặp sup/jng với Lee Sin: 2/30 lần ghép, sparse_pair; association=0.4585888543631938; không phải xác suất thắng hoặc chứng minh tối ưu",
+          "Cặp sup/mid với Syndra: 2/25 lần ghép, sparse_pair; association=0.49928114532053974; không phải xác suất thắng hoặc chứng minh tối ưu",
+          "Cosine 0.836 từ profile tuyển thủ Duro; chỉ là hỗ trợ tương đồng"
+        ],
+        "draft_slot": "F4",
+        "meta_scope": {
+          "region": "WLDS",
+          "dataset_patch": "16.20",
+          "data_through": "2026-11-09T00:56:00+00:00",
+          "requested_as_of": "2026-11-13T23:59:59.999999999+00:00",
+          "staleness_days": 4,
+          "history_games": 106,
+          "patch_games": 94,
+          "lookback_days": 60,
+          "half_life_days": 21,
+          "claim": "historical_snapshot_not_live_meta"
+        }
+      }
+    },
+    {
+      "turn": 19,
+      "side": "blue",
+      "action": "pick",
+      "champion": "K'Sante",
+      "role": "top",
+      "advice": {
+        "score_kind": "patch_aware_draft_priority_points",
+        "ranking_score": 28.57,
+        "score_components": {
+          "meta": {
+            "value": 0.41057405618302345,
+            "weight": 1.0
+          },
+          "draft_order": {
+            "value": 0.05820748936495763,
+            "weight": 1.0
+          },
+          "historical": {
+            "value": 0.25634635325674215,
+            "weight": 0.25
+          },
+          "matchup": {
+            "value": 0.5,
+            "weight": 0.5
+          },
+          "synergy": {
+            "value": 0.5550724637681159,
+            "weight": 0.25
+          },
+          "composition": {
+            "value": 0.540999323469349,
+            "weight": 1.0
+          },
+          "mastery": {
+            "value": 0.0,
+            "weight": 0.5
+          },
+          "content": {
+            "value": 0.8443079652204543,
+            "weight": 0.1
+          }
+        },
+        "score_formula": "base_priority_odds_times_geometric_role_pair_lift",
+        "base_priority": 0.27946306842395585,
+        "composition_lift": 1.0314524696580085,
+        "evidence_status": "observed_candidate",
+        "cosine_similarity": 0.8443079652204543,
+        "games": 23,
+        "historical": {
+          "wins": 10,
+          "games": 23,
+          "winrate": 0.43478260869565216,
+          "ci95_wilson": [
+            0.25634635325674215,
+            0.6318862491498354
+          ],
+          "statistic_kind": "historical_team_result",
+          "causal_uplift": null
+        },
+        "matchup": null,
+        "matchup_candidates": [
+          {
+            "wins": 0,
+            "games": 3,
+            "winrate": 0.0,
+            "ci95_wilson": [
+              5.551115123125783e-17,
+              0.5614970317550454
+            ],
+            "statistic_kind": "historical_team_result",
+            "causal_uplift": null,
+            "opponent": "Ambessa",
+            "role_probability": 1.0
+          }
+        ],
+        "composition_evidence": [
+          {
+            "wins": 3,
+            "games": 5,
+            "winrate": 0.6,
+            "ci95_wilson": [
+              0.2307242812760128,
+              0.882379225767352
+            ],
+            "statistic_kind": "historical_team_result",
+            "causal_uplift": null,
+            "role": "top",
+            "champion": "K'Sante",
+            "ally_role": "bot",
+            "ally": "Ezreal",
+            "anchor_games": 31,
+            "co_pick_share": 0.16129032258064516,
+            "co_pick_share_ci95_wilson": [
+              0.070926244433653,
+              0.3263435395879326
+            ],
+            "weighted_pair_games": 2.5755316532622774,
+            "weighted_anchor_games": 19.611753677327698,
+            "marginal_pick_share": 0.10724695629875544,
+            "smoothed_conditional_pick_share": 0.12319436585895052,
+            "smoothed_lift": 1.1486980154082018,
+            "association_reliability": 0.2048049914926775,
+            "effective_lift": 1.028798832761196,
+            "association_score": 0.534601887827395,
+            "status": "observed_pair",
+            "score_kind": "observed_role_pair_association_not_causal_synergy"
+          },
+          {
+            "wins": 2,
+            "games": 4,
+            "winrate": 0.5,
+            "ci95_wilson": [
+              0.15003898915214947,
+              0.8499610108478506
+            ],
+            "statistic_kind": "historical_team_result",
+            "causal_uplift": null,
+            "role": "top",
+            "champion": "K'Sante",
+            "ally_role": "jng",
+            "ally": "Lee Sin",
+            "anchor_games": 30,
+            "co_pick_share": 0.13333333333333333,
+            "co_pick_share_ci95_wilson": [
+              0.053096554840547455,
+              0.296813266820363
+            ],
+            "weighted_pair_games": 2.396449318582965,
+            "weighted_anchor_games": 19.64013402698718,
+            "marginal_pick_share": 0.10724695629875544,
+            "smoothed_conditional_pick_share": 0.11703452077551632,
+            "smoothed_lift": 1.0912619324085606,
+            "association_reliability": 0.19331739734462144,
+            "effective_lift": 1.0170266579161658,
+            "association_score": 0.5218198234745879,
+            "status": "sparse_pair",
+            "score_kind": "observed_role_pair_association_not_causal_synergy"
+          },
+          {
+            "wins": 1,
+            "games": 3,
+            "winrate": 0.3333333333333333,
+            "ci95_wilson": [
+              0.06149194472039621,
+              0.7923403991979522
+            ],
+            "statistic_kind": "historical_team_result",
+            "causal_uplift": null,
+            "role": "top",
+            "champion": "K'Sante",
+            "ally_role": "mid",
+            "ally": "Syndra",
+            "anchor_games": 25,
+            "co_pick_share": 0.12,
+            "co_pick_share_ci95_wilson": [
+              0.04166817150440358,
+              0.2995579392092732
+            ],
+            "weighted_pair_games": 2.095684479116301,
+            "weighted_anchor_games": 15.904186541287807,
+            "marginal_pick_share": 0.10724695629875544,
+            "smoothed_conditional_pick_share": 0.12230278055843376,
+            "smoothed_lift": 1.1403846298233178,
+            "association_reliability": 0.17325885796166285,
+            "effective_lift": 1.0230212447351783,
+            "association_score": 0.5327942529270793,
+            "status": "sparse_pair",
+            "score_kind": "observed_role_pair_association_not_causal_synergy"
+          },
+          {
+            "wins": 2,
+            "games": 3,
+            "winrate": 0.6666666666666666,
+            "ci95_wilson": [
+              0.2076596008020477,
+              0.9385080552796037
+            ],
+            "statistic_kind": "historical_team_result",
+            "causal_uplift": null,
+            "role": "top",
+            "champion": "K'Sante",
+            "ally_role": "sup",
+            "ally": "Seraphine",
+            "anchor_games": 20,
+            "co_pick_share": 0.15,
+            "co_pick_share_ci95_wilson": [
+              0.052368745896216595,
+              0.36041886474075696
+            ],
+            "weighted_pair_games": 2.258862295797078,
+            "weighted_anchor_games": 12.431972259167754,
+            "marginal_pick_share": 0.10724695629875544,
+            "smoothed_conditional_pick_share": 0.1485082016104556,
+            "smoothed_lift": 1.3847311544838592,
+            "association_reliability": 0.18426361609196995,
+            "effective_lift": 1.0618141570955195,
+            "association_score": 0.5806655194151495,
+            "status": "sparse_pair",
+            "score_kind": "observed_role_pair_association_not_causal_synergy"
+          }
+        ],
+        "synergies": [
+          {
+            "wins": 3,
+            "games": 5,
+            "winrate": 0.6,
+            "ci95_wilson": [
+              0.2307242812760128,
+              0.882379225767352
+            ],
+            "statistic_kind": "historical_team_result",
+            "causal_uplift": null,
+            "role": "top",
+            "champion": "K'Sante",
+            "ally_role": "bot",
+            "ally": "Ezreal",
+            "anchor_games": 31,
+            "co_pick_share": 0.16129032258064516,
+            "co_pick_share_ci95_wilson": [
+              0.070926244433653,
+              0.3263435395879326
+            ],
+            "weighted_pair_games": 2.5755316532622774,
+            "weighted_anchor_games": 19.611753677327698,
+            "marginal_pick_share": 0.10724695629875544,
+            "smoothed_conditional_pick_share": 0.12319436585895052,
+            "smoothed_lift": 1.1486980154082018,
+            "association_reliability": 0.2048049914926775,
+            "effective_lift": 1.028798832761196,
+            "association_score": 0.534601887827395,
+            "status": "observed_pair",
+            "score_kind": "observed_role_pair_association_not_causal_synergy"
+          },
+          {
+            "wins": 2,
+            "games": 4,
+            "winrate": 0.5,
+            "ci95_wilson": [
+              0.15003898915214947,
+              0.8499610108478506
+            ],
+            "statistic_kind": "historical_team_result",
+            "causal_uplift": null,
+            "role": "top",
+            "champion": "K'Sante",
+            "ally_role": "jng",
+            "ally": "Lee Sin",
+            "anchor_games": 30,
+            "co_pick_share": 0.13333333333333333,
+            "co_pick_share_ci95_wilson": [
+              0.053096554840547455,
+              0.296813266820363
+            ],
+            "weighted_pair_games": 2.396449318582965,
+            "weighted_anchor_games": 19.64013402698718,
+            "marginal_pick_share": 0.10724695629875544,
+            "smoothed_conditional_pick_share": 0.11703452077551632,
+            "smoothed_lift": 1.0912619324085606,
+            "association_reliability": 0.19331739734462144,
+            "effective_lift": 1.0170266579161658,
+            "association_score": 0.5218198234745879,
+            "status": "sparse_pair",
+            "score_kind": "observed_role_pair_association_not_causal_synergy"
+          },
+          {
+            "wins": 1,
+            "games": 3,
+            "winrate": 0.3333333333333333,
+            "ci95_wilson": [
+              0.06149194472039621,
+              0.7923403991979522
+            ],
+            "statistic_kind": "historical_team_result",
+            "causal_uplift": null,
+            "role": "top",
+            "champion": "K'Sante",
+            "ally_role": "mid",
+            "ally": "Syndra",
+            "anchor_games": 25,
+            "co_pick_share": 0.12,
+            "co_pick_share_ci95_wilson": [
+              0.04166817150440358,
+              0.2995579392092732
+            ],
+            "weighted_pair_games": 2.095684479116301,
+            "weighted_anchor_games": 15.904186541287807,
+            "marginal_pick_share": 0.10724695629875544,
+            "smoothed_conditional_pick_share": 0.12230278055843376,
+            "smoothed_lift": 1.1403846298233178,
+            "association_reliability": 0.17325885796166285,
+            "effective_lift": 1.0230212447351783,
+            "association_score": 0.5327942529270793,
+            "status": "sparse_pair",
+            "score_kind": "observed_role_pair_association_not_causal_synergy"
+          },
+          {
+            "wins": 2,
+            "games": 3,
+            "winrate": 0.6666666666666666,
+            "ci95_wilson": [
+              0.2076596008020477,
+              0.9385080552796037
+            ],
+            "statistic_kind": "historical_team_result",
+            "causal_uplift": null,
+            "role": "top",
+            "champion": "K'Sante",
+            "ally_role": "sup",
+            "ally": "Seraphine",
+            "anchor_games": 20,
+            "co_pick_share": 0.15,
+            "co_pick_share_ci95_wilson": [
+              0.052368745896216595,
+              0.36041886474075696
+            ],
+            "weighted_pair_games": 2.258862295797078,
+            "weighted_anchor_games": 12.431972259167754,
+            "marginal_pick_share": 0.10724695629875544,
+            "smoothed_conditional_pick_share": 0.1485082016104556,
+            "smoothed_lift": 1.3847311544838592,
+            "association_reliability": 0.18426361609196995,
+            "effective_lift": 1.0618141570955195,
+            "association_score": 0.5806655194151495,
+            "status": "sparse_pair",
+            "score_kind": "observed_role_pair_association_not_causal_synergy"
+          }
+        ],
+        "player_history": {
+          "wins": 0,
+          "games": 0,
+          "winrate": null,
+          "ci95_wilson": [
+            null,
+            null
+          ],
+          "statistic_kind": "historical_team_result",
+          "causal_uplift": null
+        },
+        "reasons": [
+          "Patch dataset 16.20: presence cửa sổ gần đây 41.1%; 21 lượt chọn đúng vị trí trên patch, 23 trận trong cửa sổ gần đây",
+          "Slot F5: ưu tiên chọn quan sát 0.058; không phải xác suất thắng",
+          "Vị trí địch còn là giả định: Ambessa p(role)=1.00, n=3",
+          "Phối hợp lịch sử: Ezreal n=5",
+          "Cặp top/bot với Ezreal: 5/31 lần ghép, observed_pair; association=0.534601887827395; không phải xác suất thắng hoặc chứng minh tối ưu",
+          "Cặp top/jng với Lee Sin: 4/30 lần ghép, sparse_pair; association=0.5218198234745879; không phải xác suất thắng hoặc chứng minh tối ưu",
+          "Cặp top/mid với Syndra: 3/25 lần ghép, sparse_pair; association=0.5327942529270793; không phải xác suất thắng hoặc chứng minh tối ưu",
+          "Cặp top/sup với Seraphine: 3/20 lần ghép, sparse_pair; association=0.5806655194151495; không phải xác suất thắng hoặc chứng minh tối ưu",
+          "Cosine 0.844 từ profile tuyển thủ Kiin; chỉ là hỗ trợ tương đồng"
+        ],
+        "draft_slot": "F5",
+        "meta_scope": {
+          "region": "WLDS",
+          "dataset_patch": "16.20",
+          "data_through": "2026-11-09T00:56:00+00:00",
+          "requested_as_of": "2026-11-13T23:59:59.999999999+00:00",
+          "staleness_days": 4,
+          "history_games": 106,
+          "patch_games": 94,
+          "lookback_days": 60,
+          "half_life_days": 21,
+          "claim": "historical_snapshot_not_live_meta"
+        }
+      }
+    },
+    {
+      "turn": 20,
+      "side": "red",
+      "action": "pick",
+      "champion": "Pantheon",
+      "role": "jng",
+      "advice": {
+        "score_kind": "patch_aware_draft_priority_points",
+        "ranking_score": 25.31,
+        "score_components": {
+          "meta": {
+            "value": 0.33593646926748616,
+            "weight": 1.0
+          },
+          "draft_order": {
+            "value": 0.01225993822739113,
+            "weight": 1.0
+          },
+          "historical": {
+            "value": 0.29031021505169974,
+            "weight": 0.25
+          },
+          "matchup": {
+            "value": 0.5,
+            "weight": 0.5
+          },
+          "synergy": {
+            "value": 0.5,
+            "weight": 0.25
+          },
+          "composition": {
+            "value": 0.4704709137196039,
+            "weight": 1.0
+          },
+          "mastery": {
+            "value": 0.19220330309835948,
+            "weight": 0.5
+          },
+          "content": {
+            "value": 0.9366967068315791,
+            "weight": 0.1
+          }
+        },
+        "score_formula": "base_priority_odds_times_geometric_role_pair_lift",
+        "base_priority": 0.27376257874726107,
+        "composition_lift": 0.8991438368566825,
+        "evidence_status": "observed_candidate",
+        "cosine_similarity": 0.9366967068315791,
+        "games": 18,
+        "historical": {
+          "wins": 9,
+          "games": 18,
+          "winrate": 0.5,
+          "ci95_wilson": [
+            0.29031021505169974,
+            0.7096897849483003
+          ],
+          "statistic_kind": "historical_team_result",
+          "causal_uplift": null
+        },
+        "matchup": null,
+        "matchup_candidates": [
+          {
+            "wins": 2,
+            "games": 4,
+            "winrate": 0.5,
+            "ci95_wilson": [
+              0.15003898915214947,
+              0.8499610108478506
+            ],
+            "statistic_kind": "historical_team_result",
+            "causal_uplift": null,
+            "opponent": "Lee Sin",
+            "role_probability": 1.0
+          }
+        ],
+        "composition_evidence": [
+          {
+            "wins": 0,
+            "games": 1,
+            "winrate": 0.0,
+            "ci95_wilson": [
+              0.0,
+              0.7934506856227626
+            ],
+            "statistic_kind": "historical_team_result",
+            "causal_uplift": null,
+            "role": "jng",
+            "champion": "Pantheon",
+            "ally_role": "mid",
+            "ally": "Orianna",
+            "anchor_games": 25,
+            "co_pick_share": 0.04,
+            "co_pick_share_ci95_wilson": [
+              0.007096233501987265,
+              0.19544063736193734
+            ],
+            "weighted_pair_games": 0.9339673382838054,
+            "weighted_anchor_games": 16.359520306588674,
+            "marginal_pick_share": 0.09279383505373454,
+            "smoothed_conditional_pick_share": 0.0706350368734047,
+            "smoothed_lift": 0.7612039833519302,
+            "association_reliability": 0.6206304256037445,
+            "effective_lift": 0.8442206046243012,
+            "association_score": 0.4322065987513859,
+            "status": "sparse_pair",
+            "score_kind": "observed_role_pair_association_not_causal_synergy"
+          },
+          {
+            "wins": 0,
+            "games": 1,
+            "winrate": 0.0,
+            "ci95_wilson": [
+              0.0,
+              0.7934506856227626
+            ],
+            "statistic_kind": "historical_team_result",
+            "causal_uplift": null,
+            "role": "jng",
+            "champion": "Pantheon",
+            "ally_role": "sup",
+            "ally": "Nautilus",
+            "anchor_games": 27,
+            "co_pick_share": 0.037037037037037035,
+            "co_pick_share_ci95_wilson": [
+              0.006568145980785103,
+              0.18283465933575843
+            ],
+            "weighted_pair_games": 0.7412668630952888,
+            "weighted_anchor_games": 18.038851433710313,
+            "marginal_pick_share": 0.09279383505373454,
+            "smoothed_conditional_pick_share": 0.05953186839978032,
+            "smoothed_lift": 0.6415498224133849,
+            "association_reliability": 0.643352010204766,
+            "effective_lift": 0.7515905022109056,
+            "association_score": 0.39081958625549773,
+            "status": "sparse_pair",
+            "score_kind": "observed_role_pair_association_not_causal_synergy"
+          },
+          {
+            "wins": 0,
+            "games": 3,
+            "winrate": 0.0,
+            "ci95_wilson": [
+              5.551115123125783e-17,
+              0.5614970317550454
+            ],
+            "statistic_kind": "historical_team_result",
+            "causal_uplift": null,
+            "role": "jng",
+            "champion": "Pantheon",
+            "ally_role": "top",
+            "ally": "Ambessa",
+            "anchor_games": 26,
+            "co_pick_share": 0.11538461538461539,
+            "co_pick_share_ci95_wilson": [
+              0.04003244623610615,
+              0.2897590321171364
+            ],
+            "weighted_pair_games": 2.126461744809103,
+            "weighted_anchor_games": 16.02182930396317,
+            "marginal_pick_share": 0.09279383505373454,
+            "smoothed_conditional_pick_share": 0.11737837719507513,
+            "smoothed_lift": 1.2649372356159685,
+            "association_reliability": 0.17535714782750741,
+            "effective_lift": 1.0420739145906288,
+            "association_score": 0.5584866616720875,
+            "status": "sparse_pair",
+            "score_kind": "observed_role_pair_association_not_causal_synergy"
+          },
+          {
+            "wins": 0,
+            "games": 2,
+            "winrate": 0.0,
+            "ci95_wilson": [
+              0.0,
+              0.6576197724933469
+            ],
+            "statistic_kind": "historical_team_result",
+            "causal_uplift": null,
+            "role": "jng",
+            "champion": "Pantheon",
+            "ally_role": "bot",
+            "ally": "Jhin",
+            "anchor_games": 23,
+            "co_pick_share": 0.08695652173913043,
+            "co_pick_share_ci95_wilson": [
+              0.024180004484220363,
+              0.26795981075743663
+            ],
+            "weighted_pair_games": 1.3486649567711324,
+            "weighted_anchor_games": 13.933073410548305,
+            "marginal_pick_share": 0.09279383505373454,
+            "smoothed_conditional_pick_share": 0.09512373393318904,
+            "smoothed_lift": 1.0251083369720124,
+            "association_reliability": 0.11883908476533685,
+            "effective_lift": 1.0029513541626687,
+            "association_score": 0.506199257717134,
+            "status": "sparse_pair",
+            "score_kind": "observed_role_pair_association_not_causal_synergy"
+          }
+        ],
+        "synergies": [
+          {
+            "wins": 0,
+            "games": 1,
+            "winrate": 0.0,
+            "ci95_wilson": [
+              0.0,
+              0.7934506856227626
+            ],
+            "statistic_kind": "historical_team_result",
+            "causal_uplift": null,
+            "role": "jng",
+            "champion": "Pantheon",
+            "ally_role": "mid",
+            "ally": "Orianna",
+            "anchor_games": 25,
+            "co_pick_share": 0.04,
+            "co_pick_share_ci95_wilson": [
+              0.007096233501987265,
+              0.19544063736193734
+            ],
+            "weighted_pair_games": 0.9339673382838054,
+            "weighted_anchor_games": 16.359520306588674,
+            "marginal_pick_share": 0.09279383505373454,
+            "smoothed_conditional_pick_share": 0.0706350368734047,
+            "smoothed_lift": 0.7612039833519302,
+            "association_reliability": 0.6206304256037445,
+            "effective_lift": 0.8442206046243012,
+            "association_score": 0.4322065987513859,
+            "status": "sparse_pair",
+            "score_kind": "observed_role_pair_association_not_causal_synergy"
+          },
+          {
+            "wins": 0,
+            "games": 1,
+            "winrate": 0.0,
+            "ci95_wilson": [
+              0.0,
+              0.7934506856227626
+            ],
+            "statistic_kind": "historical_team_result",
+            "causal_uplift": null,
+            "role": "jng",
+            "champion": "Pantheon",
+            "ally_role": "sup",
+            "ally": "Nautilus",
+            "anchor_games": 27,
+            "co_pick_share": 0.037037037037037035,
+            "co_pick_share_ci95_wilson": [
+              0.006568145980785103,
+              0.18283465933575843
+            ],
+            "weighted_pair_games": 0.7412668630952888,
+            "weighted_anchor_games": 18.038851433710313,
+            "marginal_pick_share": 0.09279383505373454,
+            "smoothed_conditional_pick_share": 0.05953186839978032,
+            "smoothed_lift": 0.6415498224133849,
+            "association_reliability": 0.643352010204766,
+            "effective_lift": 0.7515905022109056,
+            "association_score": 0.39081958625549773,
+            "status": "sparse_pair",
+            "score_kind": "observed_role_pair_association_not_causal_synergy"
+          },
+          {
+            "wins": 0,
+            "games": 3,
+            "winrate": 0.0,
+            "ci95_wilson": [
+              5.551115123125783e-17,
+              0.5614970317550454
+            ],
+            "statistic_kind": "historical_team_result",
+            "causal_uplift": null,
+            "role": "jng",
+            "champion": "Pantheon",
+            "ally_role": "top",
+            "ally": "Ambessa",
+            "anchor_games": 26,
+            "co_pick_share": 0.11538461538461539,
+            "co_pick_share_ci95_wilson": [
+              0.04003244623610615,
+              0.2897590321171364
+            ],
+            "weighted_pair_games": 2.126461744809103,
+            "weighted_anchor_games": 16.02182930396317,
+            "marginal_pick_share": 0.09279383505373454,
+            "smoothed_conditional_pick_share": 0.11737837719507513,
+            "smoothed_lift": 1.2649372356159685,
+            "association_reliability": 0.17535714782750741,
+            "effective_lift": 1.0420739145906288,
+            "association_score": 0.5584866616720875,
+            "status": "sparse_pair",
+            "score_kind": "observed_role_pair_association_not_causal_synergy"
+          },
+          {
+            "wins": 0,
+            "games": 2,
+            "winrate": 0.0,
+            "ci95_wilson": [
+              0.0,
+              0.6576197724933469
+            ],
+            "statistic_kind": "historical_team_result",
+            "causal_uplift": null,
+            "role": "jng",
+            "champion": "Pantheon",
+            "ally_role": "bot",
+            "ally": "Jhin",
+            "anchor_games": 23,
+            "co_pick_share": 0.08695652173913043,
+            "co_pick_share_ci95_wilson": [
+              0.024180004484220363,
+              0.26795981075743663
+            ],
+            "weighted_pair_games": 1.3486649567711324,
+            "weighted_anchor_games": 13.933073410548305,
+            "marginal_pick_share": 0.09279383505373454,
+            "smoothed_conditional_pick_share": 0.09512373393318904,
+            "smoothed_lift": 1.0251083369720124,
+            "association_reliability": 0.11883908476533685,
+            "effective_lift": 1.0029513541626687,
+            "association_score": 0.506199257717134,
+            "status": "sparse_pair",
+            "score_kind": "observed_role_pair_association_not_causal_synergy"
+          }
+        ],
+        "player_history": {
+          "wins": 2,
+          "games": 3,
+          "winrate": 0.6666666666666666,
+          "ci95_wilson": [
+            0.2076596008020477,
+            0.9385080552796037
+          ],
+          "statistic_kind": "historical_team_result",
+          "causal_uplift": null
+        },
+        "reasons": [
+          "Patch dataset 16.20: presence cửa sổ gần đây 33.6%; 16 lượt chọn đúng vị trí trên patch, 18 trận trong cửa sổ gần đây",
+          "Slot S5: ưu tiên chọn quan sát 0.012; không phải xác suất thắng",
+          "Vị trí địch còn là giả định: Lee Sin p(role)=1.00, n=4",
+          "Cặp jng/mid với Orianna: 1/25 lần ghép, sparse_pair; association=0.4322065987513859; không phải xác suất thắng hoặc chứng minh tối ưu",
+          "Cặp jng/sup với Nautilus: 1/27 lần ghép, sparse_pair; association=0.39081958625549773; không phải xác suất thắng hoặc chứng minh tối ưu",
+          "Cặp jng/top với Ambessa: 3/26 lần ghép, sparse_pair; association=0.5584866616720875; không phải xác suất thắng hoặc chứng minh tối ưu",
+          "Cặp jng/bot với Jhin: 2/23 lần ghép, sparse_pair; association=0.506199257717134; không phải xác suất thắng hoặc chứng minh tối ưu",
+          "Cosine 0.937 từ profile tuyển thủ Xun; chỉ là hỗ trợ tương đồng"
+        ],
+        "draft_slot": "S5",
+        "meta_scope": {
+          "region": "WLDS",
+          "dataset_patch": "16.20",
+          "data_through": "2026-11-09T00:56:00+00:00",
+          "requested_as_of": "2026-11-13T23:59:59.999999999+00:00",
+          "staleness_days": 4,
+          "history_games": 106,
+          "patch_games": 94,
+          "lookback_days": 60,
+          "half_life_days": 21,
+          "claim": "historical_snapshot_not_live_meta"
+        }
+      }
+    }
+  ],
+  "swaps": [],
+  "complete": true,
+  "used_champions": [],
+  "teams": {
+    "blue": "Gen.G",
+    "red": "Bilibili Gaming"
+  },
+  "rosters": {
+    "blue": {
+      "top": "Kiin",
+      "jng": "Canyon",
+      "mid": "Chovy",
+      "bot": "Ruler",
+      "sup": "Duro"
+    },
+    "red": {
+      "top": "Bin",
+      "jng": "Xun",
+      "mid": "Knight",
+      "bot": "Viper",
+      "sup": "ON"
+    }
+  },
+  "region": "WLDS",
+  "policy": {
+    "meta": 1.0,
+    "draft_order": 1.0,
+    "historical": 0.25,
+    "matchup": 0.5,
+    "synergy": 0.25,
+    "composition": 1.0,
+    "mastery": 0.5,
+    "content": 0.1
+  },
+  "candidate_min_games": 5,
+  "evidence_min_games": 5,
+  "objective": "patch_aware_presence_draft_order_role_pair_context",
+  "causal_uplift": null,
+  "composition_summary": {
+    "blue": {
+      "pairs": [
+        {
+          "wins": 2,
+          "games": 4,
+          "winrate": 0.5,
+          "ci95_wilson": [
+            0.15003898915214947,
+            0.8499610108478506
+          ],
+          "statistic_kind": "historical_team_result",
+          "causal_uplift": null,
+          "role": "top",
+          "champion": "K'Sante",
+          "ally_role": "jng",
+          "ally": "Lee Sin",
+          "anchor_games": 30,
+          "co_pick_share": 0.13333333333333333,
+          "co_pick_share_ci95_wilson": [
+            0.053096554840547455,
+            0.296813266820363
+          ],
+          "weighted_pair_games": 2.396449318582965,
+          "weighted_anchor_games": 19.64013402698718,
+          "marginal_pick_share": 0.10724695629875544,
+          "smoothed_conditional_pick_share": 0.11703452077551632,
+          "smoothed_lift": 1.0912619324085606,
+          "association_reliability": 0.19331739734462144,
+          "effective_lift": 1.0170266579161658,
+          "association_score": 0.5218198234745879,
+          "status": "sparse_pair",
+          "score_kind": "observed_role_pair_association_not_causal_synergy"
+        },
+        {
+          "wins": 1,
+          "games": 3,
+          "winrate": 0.3333333333333333,
+          "ci95_wilson": [
+            0.06149194472039621,
+            0.7923403991979522
+          ],
+          "statistic_kind": "historical_team_result",
+          "causal_uplift": null,
+          "role": "top",
+          "champion": "K'Sante",
+          "ally_role": "mid",
+          "ally": "Syndra",
+          "anchor_games": 25,
+          "co_pick_share": 0.12,
+          "co_pick_share_ci95_wilson": [
+            0.04166817150440358,
+            0.2995579392092732
+          ],
+          "weighted_pair_games": 2.095684479116301,
+          "weighted_anchor_games": 15.904186541287807,
+          "marginal_pick_share": 0.10724695629875544,
+          "smoothed_conditional_pick_share": 0.12230278055843376,
+          "smoothed_lift": 1.1403846298233178,
+          "association_reliability": 0.17325885796166285,
+          "effective_lift": 1.0230212447351783,
+          "association_score": 0.5327942529270793,
+          "status": "sparse_pair",
+          "score_kind": "observed_role_pair_association_not_causal_synergy"
+        },
+        {
+          "wins": 3,
+          "games": 5,
+          "winrate": 0.6,
+          "ci95_wilson": [
+            0.2307242812760128,
+            0.882379225767352
+          ],
+          "statistic_kind": "historical_team_result",
+          "causal_uplift": null,
+          "role": "top",
+          "champion": "K'Sante",
+          "ally_role": "bot",
+          "ally": "Ezreal",
+          "anchor_games": 31,
+          "co_pick_share": 0.16129032258064516,
+          "co_pick_share_ci95_wilson": [
+            0.070926244433653,
+            0.3263435395879326
+          ],
+          "weighted_pair_games": 2.5755316532622774,
+          "weighted_anchor_games": 19.611753677327698,
+          "marginal_pick_share": 0.10724695629875544,
+          "smoothed_conditional_pick_share": 0.12319436585895052,
+          "smoothed_lift": 1.1486980154082018,
+          "association_reliability": 0.2048049914926775,
+          "effective_lift": 1.028798832761196,
+          "association_score": 0.534601887827395,
+          "status": "observed_pair",
+          "score_kind": "observed_role_pair_association_not_causal_synergy"
+        },
+        {
+          "wins": 2,
+          "games": 3,
+          "winrate": 0.6666666666666666,
+          "ci95_wilson": [
+            0.2076596008020477,
+            0.9385080552796037
+          ],
+          "statistic_kind": "historical_team_result",
+          "causal_uplift": null,
+          "role": "top",
+          "champion": "K'Sante",
+          "ally_role": "sup",
+          "ally": "Seraphine",
+          "anchor_games": 20,
+          "co_pick_share": 0.15,
+          "co_pick_share_ci95_wilson": [
+            0.052368745896216595,
+            0.36041886474075696
+          ],
+          "weighted_pair_games": 2.258862295797078,
+          "weighted_anchor_games": 12.431972259167754,
+          "marginal_pick_share": 0.10724695629875544,
+          "smoothed_conditional_pick_share": 0.1485082016104556,
+          "smoothed_lift": 1.3847311544838592,
+          "association_reliability": 0.18426361609196995,
+          "effective_lift": 1.0618141570955195,
+          "association_score": 0.5806655194151495,
+          "status": "sparse_pair",
+          "score_kind": "observed_role_pair_association_not_causal_synergy"
+        },
+        {
+          "wins": 3,
+          "games": 6,
+          "winrate": 0.5,
+          "ci95_wilson": [
+            0.1876163064826506,
+            0.8123836935173494
+          ],
+          "statistic_kind": "historical_team_result",
+          "causal_uplift": null,
+          "role": "jng",
+          "champion": "Lee Sin",
+          "ally_role": "mid",
+          "ally": "Syndra",
+          "anchor_games": 25,
+          "co_pick_share": 0.24,
+          "co_pick_share_ci95_wilson": [
+            0.11496313693401444,
+            0.4342968335542908
+          ],
+          "weighted_pair_games": 4.39868387838808,
+          "weighted_anchor_games": 15.904186541287807,
+          "marginal_pick_share": 0.149494088475414,
+          "smoothed_conditional_pick_share": 0.22751630334921233,
+          "smoothed_lift": 1.5219083621933984,
+          "association_reliability": 0.30549207938305734,
+          "effective_lift": 1.136889467669388,
+          "association_score": 0.6034748863236796,
+          "status": "observed_pair",
+          "score_kind": "observed_role_pair_association_not_causal_synergy"
+        },
+        {
+          "wins": 4,
+          "games": 8,
+          "winrate": 0.5,
+          "ci95_wilson": [
+            0.21521606221387757,
+            0.7847839377861224
+          ],
+          "statistic_kind": "historical_team_result",
+          "causal_uplift": null,
+          "role": "jng",
+          "champion": "Lee Sin",
+          "ally_role": "bot",
+          "ally": "Ezreal",
+          "anchor_games": 31,
+          "co_pick_share": 0.25806451612903225,
+          "co_pick_share_ci95_wilson": [
+            0.13701705906393744,
+            0.43246135809433794
+          ],
+          "weighted_pair_games": 5.600066948455838,
+          "weighted_anchor_games": 19.611753677327698,
+          "marginal_pick_share": 0.149494088475414,
+          "smoothed_conditional_pick_share": 0.23960106890401042,
+          "smoothed_lift": 1.6027461108832777,
+          "association_reliability": 0.3589771099674772,
+          "effective_lift": 1.1845182309011222,
+          "association_score": 0.6157904161998206,
+          "status": "observed_pair",
+          "score_kind": "observed_role_pair_association_not_causal_synergy"
+        },
+        {
+          "wins": 2,
+          "games": 2,
+          "winrate": 1.0,
+          "ci95_wilson": [
+            0.34238022750665303,
+            1.0
+          ],
+          "statistic_kind": "historical_team_result",
+          "causal_uplift": null,
+          "role": "jng",
+          "champion": "Lee Sin",
+          "ally_role": "sup",
+          "ally": "Seraphine",
+          "anchor_games": 20,
+          "co_pick_share": 0.1,
+          "co_pick_share_ci95_wilson": [
+            0.027866481213768224,
+            0.3010336452284873
+          ],
+          "weighted_pair_games": 1.4294445939885667,
+          "weighted_anchor_games": 12.431972259167754,
+          "marginal_pick_share": 0.149494088475414,
+          "smoothed_conditional_pick_share": 0.1303668462565763,
+          "smoothed_lift": 0.8720535212201156,
+          "association_reliability": 0.5542077225994657,
+          "effective_lift": 0.9269334379204477,
+          "association_score": 0.46582723802242176,
+          "status": "sparse_pair",
+          "score_kind": "observed_role_pair_association_not_causal_synergy"
+        },
+        {
+          "wins": 1,
+          "games": 3,
+          "winrate": 0.3333333333333333,
+          "ci95_wilson": [
+            0.06149194472039621,
+            0.7923403991979522
+          ],
+          "statistic_kind": "historical_team_result",
+          "causal_uplift": null,
+          "role": "mid",
+          "champion": "Syndra",
+          "ally_role": "bot",
+          "ally": "Ezreal",
+          "anchor_games": 31,
+          "co_pick_share": 0.0967741935483871,
+          "co_pick_share_ci95_wilson": [
+            0.03346464416319736,
+            0.24899938443392836
+          ],
+          "weighted_pair_games": 2.3017160717874807,
+          "weighted_anchor_games": 19.611753677327698,
+          "marginal_pick_share": 0.12105731389947608,
+          "smoothed_conditional_pick_share": 0.11861132066188411,
+          "smoothed_lift": 0.9797947504466927,
+          "association_reliability": 0.6622962588110234,
+          "effective_lift": 0.9865720677416966,
+          "association_score": 0.494897135284163,
+          "status": "sparse_pair",
+          "score_kind": "observed_role_pair_association_not_causal_synergy"
+        },
+        {
+          "wins": 2,
+          "games": 2,
+          "winrate": 1.0,
+          "ci95_wilson": [
+            0.34238022750665303,
+            1.0
+          ],
+          "statistic_kind": "historical_team_result",
+          "causal_uplift": null,
+          "role": "mid",
+          "champion": "Syndra",
+          "ally_role": "sup",
+          "ally": "Seraphine",
+          "anchor_games": 20,
+          "co_pick_share": 0.1,
+          "co_pick_share_ci95_wilson": [
+            0.027866481213768224,
+            0.3010336452284873
+          ],
+          "weighted_pair_games": 1.4979428852816699,
+          "weighted_anchor_games": 12.431972259167754,
+          "marginal_pick_share": 0.12105731389947608,
+          "smoothed_conditional_pick_share": 0.12074355268380306,
+          "smoothed_lift": 0.9974081597751825,
+          "association_reliability": 0.5542077225994657,
+          "effective_lift": 0.9985627512588213,
+          "association_score": 0.4993511991497248,
+          "status": "sparse_pair",
+          "score_kind": "observed_role_pair_association_not_causal_synergy"
+        },
+        {
+          "wins": 1,
+          "games": 2,
+          "winrate": 0.5,
+          "ci95_wilson": [
+            0.09453120573423074,
+            0.9054687942657693
+          ],
+          "statistic_kind": "historical_team_result",
+          "causal_uplift": null,
+          "role": "bot",
+          "champion": "Ezreal",
+          "ally_role": "sup",
+          "ally": "Seraphine",
+          "anchor_games": 20,
+          "co_pick_share": 0.1,
+          "co_pick_share_ci95_wilson": [
+            0.027866481213768224,
+            0.3010336452284873
+          ],
+          "weighted_pair_games": 0.8737477556774986,
+          "weighted_anchor_games": 12.431972259167754,
+          "marginal_pick_share": 0.1492780668078873,
+          "smoothed_conditional_pick_share": 0.10549800955594495,
+          "smoothed_lift": 0.7067214347819436,
+          "association_reliability": 0.5542077225994657,
+          "effective_lift": 0.8249967230481445,
+          "association_score": 0.41408130253677666,
+          "status": "sparse_pair",
+          "score_kind": "observed_role_pair_association_not_causal_synergy"
+        }
+      ],
+      "observed_pairs": 3,
+      "sparse_pairs": 7,
+      "unobserved_pairs": 0,
+      "insufficient_anchor_pairs": 0
+    },
+    "red": {
+      "pairs": [
+        {
+          "wins": 0,
+          "games": 3,
+          "winrate": 0.0,
+          "ci95_wilson": [
+            5.551115123125783e-17,
+            0.5614970317550454
+          ],
+          "statistic_kind": "historical_team_result",
+          "causal_uplift": null,
+          "role": "top",
+          "champion": "Ambessa",
+          "ally_role": "jng",
+          "ally": "Pantheon",
+          "anchor_games": 18,
+          "co_pick_share": 0.16666666666666666,
+          "co_pick_share_ci95_wilson": [
+            0.05836576805861446,
+            0.39222038103915724
+          ],
+          "weighted_pair_games": 2.126461744809103,
+          "weighted_anchor_games": 12.191006185727641,
+          "marginal_pick_share": 0.12195277100520238,
+          "smoothed_conditional_pick_share": 0.15078133126803112,
+          "smoothed_lift": 1.2363911867291555,
+          "association_reliability": 0.17535714782750741,
+          "effective_lift": 1.0379111939955568,
+          "association_score": 0.552851037003703,
+          "status": "sparse_pair",
+          "score_kind": "observed_role_pair_association_not_causal_synergy"
+        },
+        {
+          "wins": 2,
+          "games": 5,
+          "winrate": 0.4,
+          "ci95_wilson": [
+            0.11762077423264783,
+            0.769275718723987
+          ],
+          "statistic_kind": "historical_team_result",
+          "causal_uplift": null,
+          "role": "top",
+          "champion": "Ambessa",
+          "ally_role": "mid",
+          "ally": "Orianna",
+          "anchor_games": 25,
+          "co_pick_share": 0.2,
+          "co_pick_share_ci95_wilson": [
+            0.08860584686802572,
+            0.3913095036954033
+          ],
+          "weighted_pair_games": 3.038567356830411,
+          "weighted_anchor_games": 16.359520306588674,
+          "marginal_pick_share": 0.12195277100520238,
+          "smoothed_conditional_pick_share": 0.16153917132619844,
+          "smoothed_lift": 1.3246043529368212,
+          "association_reliability": 0.23304457258784805,
+          "effective_lift": 1.0677056014515807,
+          "association_score": 0.5698192689277916,
+          "status": "observed_pair",
+          "score_kind": "observed_role_pair_association_not_causal_synergy"
+        },
+        {
+          "wins": 3,
+          "games": 4,
+          "winrate": 0.75,
+          "ci95_wilson": [
+            0.30064184258240184,
+            0.9544127391902995
+          ],
+          "statistic_kind": "historical_team_result",
+          "causal_uplift": null,
+          "role": "top",
+          "champion": "Ambessa",
+          "ally_role": "bot",
+          "ally": "Jhin",
+          "anchor_games": 23,
+          "co_pick_share": 0.17391304347826086,
+          "co_pick_share_ci95_wilson": [
+            0.06978653563062565,
+            0.3713764764022614
+          ],
+          "weighted_pair_games": 2.012393956571825,
+          "weighted_anchor_games": 13.933073410548305,
+          "marginal_pick_share": 0.12195277100520238,
+          "smoothed_conditional_pick_share": 0.13503997631994086,
+          "smoothed_lift": 1.1073137183096904,
+          "association_reliability": 0.1675264700647676,
+          "effective_lift": 1.017223795288937,
+          "association_score": 0.5254622074960363,
+          "status": "sparse_pair",
+          "score_kind": "observed_role_pair_association_not_causal_synergy"
+        },
+        {
+          "wins": 4,
+          "games": 5,
+          "winrate": 0.8,
+          "ci95_wilson": [
+            0.37553462976252533,
+            0.9637758913675698
+          ],
+          "statistic_kind": "historical_team_result",
+          "causal_uplift": null,
+          "role": "top",
+          "champion": "Ambessa",
+          "ally_role": "sup",
+          "ally": "Nautilus",
+          "anchor_games": 27,
+          "co_pick_share": 0.18518518518518517,
+          "co_pick_share_ci95_wilson": [
+            0.08180707142976529,
+            0.3669868361854843
+          ],
+          "weighted_pair_games": 3.600650917475769,
+          "weighted_anchor_games": 18.038851433710313,
+          "marginal_pick_share": 0.12195277100520238,
+          "smoothed_conditional_pick_share": 0.17191070179617376,
+          "smoothed_lift": 1.4096498208215393,
+          "association_reliability": 0.26474107300623495,
+          "effective_lift": 1.0951557048137943,
+          "association_score": 0.585001940381917,
+          "status": "observed_pair",
+          "score_kind": "observed_role_pair_association_not_causal_synergy"
+        },
+        {
+          "wins": 0,
+          "games": 1,
+          "winrate": 0.0,
+          "ci95_wilson": [
+            0.0,
+            0.7934506856227626
+          ],
+          "statistic_kind": "historical_team_result",
+          "causal_uplift": null,
+          "role": "jng",
+          "champion": "Pantheon",
+          "ally_role": "mid",
+          "ally": "Orianna",
+          "anchor_games": 25,
+          "co_pick_share": 0.04,
+          "co_pick_share_ci95_wilson": [
+            0.007096233501987265,
+            0.19544063736193734
+          ],
+          "weighted_pair_games": 0.9339673382838054,
+          "weighted_anchor_games": 16.359520306588674,
+          "marginal_pick_share": 0.09279383505373454,
+          "smoothed_conditional_pick_share": 0.0706350368734047,
+          "smoothed_lift": 0.7612039833519302,
+          "association_reliability": 0.6206304256037445,
+          "effective_lift": 0.8442206046243012,
+          "association_score": 0.4322065987513859,
+          "status": "sparse_pair",
+          "score_kind": "observed_role_pair_association_not_causal_synergy"
+        },
+        {
+          "wins": 0,
+          "games": 2,
+          "winrate": 0.0,
+          "ci95_wilson": [
+            0.0,
+            0.6576197724933469
+          ],
+          "statistic_kind": "historical_team_result",
+          "causal_uplift": null,
+          "role": "jng",
+          "champion": "Pantheon",
+          "ally_role": "bot",
+          "ally": "Jhin",
+          "anchor_games": 23,
+          "co_pick_share": 0.08695652173913043,
+          "co_pick_share_ci95_wilson": [
+            0.024180004484220363,
+            0.26795981075743663
+          ],
+          "weighted_pair_games": 1.3486649567711324,
+          "weighted_anchor_games": 13.933073410548305,
+          "marginal_pick_share": 0.09279383505373454,
+          "smoothed_conditional_pick_share": 0.09512373393318904,
+          "smoothed_lift": 1.0251083369720124,
+          "association_reliability": 0.11883908476533685,
+          "effective_lift": 1.0029513541626687,
+          "association_score": 0.506199257717134,
+          "status": "sparse_pair",
+          "score_kind": "observed_role_pair_association_not_causal_synergy"
+        },
+        {
+          "wins": 0,
+          "games": 1,
+          "winrate": 0.0,
+          "ci95_wilson": [
+            0.0,
+            0.7934506856227626
+          ],
+          "statistic_kind": "historical_team_result",
+          "causal_uplift": null,
+          "role": "jng",
+          "champion": "Pantheon",
+          "ally_role": "sup",
+          "ally": "Nautilus",
+          "anchor_games": 27,
+          "co_pick_share": 0.037037037037037035,
+          "co_pick_share_ci95_wilson": [
+            0.006568145980785103,
+            0.18283465933575843
+          ],
+          "weighted_pair_games": 0.7412668630952888,
+          "weighted_anchor_games": 18.038851433710313,
+          "marginal_pick_share": 0.09279383505373454,
+          "smoothed_conditional_pick_share": 0.05953186839978032,
+          "smoothed_lift": 0.6415498224133849,
+          "association_reliability": 0.643352010204766,
+          "effective_lift": 0.7515905022109056,
+          "association_score": 0.39081958625549773,
+          "status": "sparse_pair",
+          "score_kind": "observed_role_pair_association_not_causal_synergy"
+        },
+        {
+          "wins": 2,
+          "games": 2,
+          "winrate": 1.0,
+          "ci95_wilson": [
+            0.34238022750665303,
+            1.0
+          ],
+          "statistic_kind": "historical_team_result",
+          "causal_uplift": null,
+          "role": "mid",
+          "champion": "Orianna",
+          "ally_role": "bot",
+          "ally": "Jhin",
+          "anchor_games": 23,
+          "co_pick_share": 0.08695652173913043,
+          "co_pick_share_ci95_wilson": [
+            0.024180004484220363,
+            0.26795981075743663
+          ],
+          "weighted_pair_games": 1.3011745258876874,
+          "weighted_anchor_games": 13.933073410548305,
+          "marginal_pick_share": 0.12452316123545647,
+          "smoothed_conditional_pick_share": 0.10639695514910111,
+          "smoothed_lift": 0.8544350632724369,
+          "association_reliability": 0.5821681641776697,
+          "effective_lift": 0.9124849811457934,
+          "association_score": 0.46075221515961545,
+          "status": "sparse_pair",
+          "score_kind": "observed_role_pair_association_not_causal_synergy"
+        },
+        {
+          "wins": 6,
+          "games": 7,
+          "winrate": 0.8571428571428571,
+          "ci95_wilson": [
+            0.4868721707256811,
+            0.9743203756552565
+          ],
+          "statistic_kind": "historical_team_result",
+          "causal_uplift": null,
+          "role": "mid",
+          "champion": "Orianna",
+          "ally_role": "sup",
+          "ally": "Nautilus",
+          "anchor_games": 27,
+          "co_pick_share": 0.25925925925925924,
+          "co_pick_share_ci95_wilson": [
+            0.1317037456190719,
+            0.44678571314553067
+          ],
+          "weighted_pair_games": 5.229178677835961,
+          "weighted_anchor_games": 18.038851433710313,
+          "marginal_pick_share": 0.12452316123545647,
+          "smoothed_conditional_pick_share": 0.23090854151060292,
+          "smoothed_lift": 1.8543421096898276,
+          "association_reliability": 0.3433657709621815,
+          "effective_lift": 1.23619567061214,
+          "association_score": 0.6496565717875118,
+          "status": "observed_pair",
+          "score_kind": "observed_role_pair_association_not_causal_synergy"
+        },
+        {
+          "wins": 1,
+          "games": 5,
+          "winrate": 0.2,
+          "ci95_wilson": [
+            0.03622410863243014,
+            0.6244653702374747
+          ],
+          "statistic_kind": "historical_team_result",
+          "causal_uplift": null,
+          "role": "bot",
+          "champion": "Jhin",
+          "ally_role": "sup",
+          "ally": "Nautilus",
+          "anchor_games": 27,
+          "co_pick_share": 0.18518518518518517,
+          "co_pick_share_ci95_wilson": [
+            0.08180707142976529,
+            0.3669868361854843
+          ],
+          "weighted_pair_games": 2.4141744515308035,
+          "weighted_anchor_games": 18.038851433710313,
+          "marginal_pick_share": 0.10605386431217079,
+          "smoothed_conditional_pick_share": 0.12392494403229949,
+          "smoothed_lift": 1.1685094629604913,
+          "association_reliability": 0.1944691901146201,
+          "effective_lift": 1.030747726909414,
+          "association_score": 0.5388537531974702,
+          "status": "observed_pair",
+          "score_kind": "observed_role_pair_association_not_causal_synergy"
+        }
+      ],
+      "observed_pairs": 4,
+      "sparse_pairs": 6,
+      "unobserved_pairs": 0,
+      "insufficient_anchor_pairs": 0
+    }
+  },
+  "meta_scope": {
+    "region": "WLDS",
+    "dataset_patch": "16.20",
+    "data_through": "2026-11-09T00:56:00+00:00",
+    "requested_as_of": "2026-11-13T23:59:59.999999999+00:00",
+    "staleness_days": 4,
+    "history_games": 106,
+    "patch_games": 94,
+    "lookback_days": 60,
+    "half_life_days": 21,
+    "claim": "historical_snapshot_not_live_meta"
+  },
+  "roster_sources": {
+    "blue": {
+      "players": {
+        "top": "Kiin",
+        "jng": "Canyon",
+        "mid": "Chovy",
+        "bot": "Ruler",
+        "sup": "Duro"
+      },
+      "date": "2026-11-08 00:00:51",
+      "gameid": "LOLTMNT02_487214",
+      "kind": "latest_observed_lineup_not_live_roster"
+    },
+    "red": {
+      "players": {
+        "top": "Bin",
+        "jng": "Xun",
+        "mid": "Knight",
+        "bot": "Viper",
+        "sup": "ON"
+      },
+      "date": "2026-11-09 00:56:00",
+      "gameid": "LOLTMNT02_488304",
+      "kind": "latest_observed_lineup_not_live_roster"
+    }
+  },
+  "ban_policy": {
+    "presence": 0.6,
+    "enemy_priority": 0.25,
+    "gap": 0.15
+  }
+}

@@ -1,3 +1,9 @@
+> **Giả lập cấm/chọn hybrid:** chạy `.\.venv\Scripts\python.exe src/07_recommender/simulate_draft_match.py` tại thư mục gốc để mở menu. Có historical + content-based/cosine, gợi ý theo lượt, chọn tay/why/swap và lưu phiên. [Hướng dẫn](../../docs/GIA_LAP_BAN_PICK.md). Đã kiểm chứng 24 tests và 5 kịch bản; chưa có bằng chứng tối ưu toàn cục/tăng thắng.
+
+> **Content-based Chương 6 đã kiểm chứng:** xem [minh chứng và lệnh chạy](../../docs/CHUONG_6_CONTENT_BASED.md); hỗ trợ `--content-based --seed-champion` và `--content-player`.
+
+> **Integrity v2:** Nội dung dưới đây là thiết kế/lịch sử trước đợt sửa. Hành vi hiện hành, các giới hạn và lệnh chạy được mô tả tại [INTEGRITY_V2.md](../../docs/INTEGRITY_V2.md). Không dùng các tỷ lệ/kết luận cũ làm bằng chứng kết quả hiện tại.
+
 # BÁO CÁO KHOA HỌC: HỆ THỐNG GỢI Ý CẤM/CHỌN THÔNG MINH, NHẬN DIỆN LỖ HỔNG & THẺ ĐIỀU KIỆN THẮNG (TASK 3.5)
 
 ## THÔNG TIN TỔNG QUAN
@@ -107,15 +113,20 @@ Hệ thống sử dụng cơ chế lai ghép 2 tầng:
 
 ---
 
-## 4. PHÂN HỆ 2: GỢI Ý CHỌN TƯỚNG CHUẨN META & TƯƠNG THÍCH (META PICK & SYNERGY)
+## 4. PHÂN HỆ 2: GỢI Ý CHỌN TƯỚNG CHUẨN META, PHÂN TẦNG KHU VỰC & KHẮC CHẾ ĐƯỜNG TỔNG QUÁT (UNIVERSAL COUNTER-PICK & SYNERGY ENGINE)
 
-Hệ thống tính điểm tổng hợp dựa trên 3 trụ cột:
-1. **Điểm Khắc chế Đường (Counter-Pick Score):** Đối chiếu thuộc tính tướng đối đầu (ví dụ: đối thủ cận chiến vs tướng có khả năng chống càn/thả diều).
-2. **Điểm Tương thích Cặp đôi (Duo Synergy Score):** Khai thác các cặp đôi kinh điển (Lucian - Nami 0.95, Orianna - Jarvan IV 0.95, Xayah - Rakan 0.95, Camille - Galio 0.95, Kalista - Renata 0.90).
-3. **Điểm Cân bằng Đội hình (Composition Balance Bonus):** 
-   - Tự động cộng điểm ưu tiên $+0.15$ cho tướng AP nếu đội hình chưa có sát thương phép.
-   - Cộng điểm ưu tiên $+0.12$ cho tướng có Hard CC nếu đội hình thiếu khống chế.
-   - Cộng điểm ưu tiên $+0.10$ cho tướng chống chịu nếu đội hình quá mỏng.
+> Xem tài liệu đặc tả toán học đầy đủ tại: [`docs/CO_CHE_BAN_PICK_COUNTER_VA_PHAN_TANG_KHU_VUC.md`](../../docs/CO_CHE_BAN_PICK_COUNTER_VA_PHAN_TANG_KHU_VUC.md).
+
+Hệ thống hoạt động 100% bằng thuật toán tổng quát trên dữ liệu thực nghiệm (Zero-Hardcode), hỗ trợ 8 chế độ khu vực (`LCK`, `LPL`, `LCP`, `WLDS`/CKTG, `MSI`, `EWC`, `INTERNATIONAL`, `ALL`) và tự động chuyển đổi giữa 2 chế độ:
+1. **Chế độ `BLIND PICK` (Đối thủ CHƯA lộ tướng cùng đường):**
+   - Ưu tiên Điểm Hiệu quả Meta (`0.36 * eff_norm`), Điểm Tương thích Cặp đôi (`0.24 * synergy_score`), Điểm Cân bằng Đội hình (`0.24 * balance_score`) và Điểm Tướng Tủ tuyển thủ (`player_bonus`).
+2. **Chế độ `COUNTER PICK` (Đối thủ ĐÃ lộ tướng cùng đường - Áp dụng trên toàn bộ 5 vị trí & 3,098 cặp đối đầu 1v1):**
+   - **Nhận diện 1-1 tướng cùng đường (`_infer_enemy_lane_assignment`):** Xác định chính xác tướng địch đang đứng ở đường nào.
+   - **Ngưỡng Loại Bỏ Cứng Tổng Quát (Universal Hard Cut-off):** Loại bỏ hoàn toàn mọi ứng viên có tỷ lệ thắng đối đầu $< 47.5\%$ (mẫu $\ge 3$ trận) HOẶC bị đè đường phút 10 ($\text{GD@10} < -110\text{g}$ đối với `Top/Jng/Mid/Bot`, $< -150\text{g}$ đối với `Sup` nếu không có tỷ lệ lật kèo giao tranh $\ge 52.5\%$).
+   - **Khóa Điểm Tướng Tủ (`player_bonus`) khi gặp kèo dưới:** Cắt giảm 85–90% `player_bonus` nếu tướng tủ chưa được kiểm chứng thắng/hòa đường trước tướng đối diện.
+   - **Làm mịn Bayes ($C=10.0$), Độ tin cậy mẫu ($\alpha = \frac{n}{n+8}$) & Lọc độ tinh khiết vị trí (Role Purity Filter):** Ngăn các tướng trái vị trí có mẫu siêu nhỏ (2–5 trận) làm nhiễu gợi ý.
+3. **Điểm Tương thích Cặp đôi (Duo Synergy Score) & Cân bằng Đội hình (Composition Balance Bonus):**
+   - Kết hợp dữ liệu thực chiến từ CSDL (hàng nghìn cặp `Bot-Sup`, `Mid-Jng`, `Top-Jng`) với bù đắp sát thương AP/AD, khống chế cứng (Hard CC) và chống chịu (Tank/Frontline).
 
 ---
 

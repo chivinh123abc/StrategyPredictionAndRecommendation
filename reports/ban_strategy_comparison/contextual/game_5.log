@@ -1,0 +1,254 @@
+Đang nạp lịch sử trận đấu và hồ sơ tướng...
+GIẢ LẬP BAN/PICK MỘT VÁN — LỊCH SỬ + CONTENT-BASED
+Bạn: blue; phe chọn trước: blue; dữ liệu: WLDS
+SNAPSHOT LỊCH SỬ: patch dataset 16.20, dữ liệu đến 2026-11-09T00:56:00+00:00, cũ 4 ngày so với mốc yêu cầu
+106 trận trong cửa sổ 60 ngày, 94 trận patch đích; không gọi là live meta.
+Lineup T1 (latest_observed_lineup_not_live_roster): top=Doran, jng=Oner, mid=Faker, bot=Peyz, sup=Keria
+Lineup Gen.G (latest_observed_lineup_not_live_roster): top=Kiin, jng=Canyon, mid=Chovy, bot=Ruler, sup=Duro
+Ưu tiên presence/nhịp draft gần đây; bể tướng, đối đầu và cosine là tín hiệu hỗ trợ. Điểm không phải xác suất.
+
+==========================================================================================
+BLUE T1 | Cấm: —
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: —
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 1/20: BLUE T1 — CẤM
+ĐÃ CẤM: Qiyana
+  Căn cứ: Mất pool địch 0.0147; chi phí tự cấm 0.0090; đội mình lấy lượt pick tới trước địch=True; Fearless khóa 40; chấm theo pool ngữ cảnh
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: —
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 2/20: RED Gen.G — CẤM
+ĐÃ CẤM: Nocturne
+  Căn cứ: Mất pool địch 0.0232; chi phí tự cấm 0.0094; đội mình lấy lượt pick tới trước địch=False; Fearless khóa 40; chấm theo pool ngữ cảnh
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Nocturne
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 3/20: BLUE T1 — CẤM
+ĐÃ CẤM: Taliyah
+  Căn cứ: Mất pool địch 0.0056; chi phí tự cấm 0.0043; đội mình lấy lượt pick tới trước địch=True; Fearless khóa 40; chấm theo pool ngữ cảnh
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana, Taliyah
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Nocturne
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 4/20: RED Gen.G — CẤM
+ĐÃ CẤM: Vi
+  Căn cứ: Mất pool địch 0.0241; chi phí tự cấm 0.0104; đội mình lấy lượt pick tới trước địch=False; Fearless khóa 40; chấm theo pool ngữ cảnh
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana, Taliyah
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Nocturne, Vi
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 5/20: BLUE T1 — CẤM
+ĐÃ CẤM: Naafiri
+  Căn cứ: Mất pool địch 0.0011; chi phí tự cấm 0.0000; đội mình lấy lượt pick tới trước địch=True; Fearless khóa 40; chấm theo pool ngữ cảnh
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana, Taliyah, Naafiri
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Nocturne, Vi
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 6/20: RED Gen.G — CẤM
+ĐÃ CẤM: Jayce
+  Căn cứ: Mất pool địch 0.0134; chi phí tự cấm 0.0051; đội mình lấy lượt pick tới trước địch=False; Fearless khóa 40; chấm theo pool ngữ cảnh
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana, Taliyah, Naafiri
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Nocturne, Vi, Jayce
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 7/20: BLUE T1 — CHỌN
+ĐÃ CHỌN: Trundle [jng]
+  Căn cứ: Slot F1: ưu tiên chọn quan sát 0.010; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana, Taliyah, Naafiri
+Top: — | Rừng: Trundle | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Nocturne, Vi, Jayce
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 8/20: RED Gen.G — CHỌN
+ĐÃ CHỌN: Xayah [bot]
+  Căn cứ: Slot S1: ưu tiên chọn quan sát 0.041; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana, Taliyah, Naafiri
+Top: — | Rừng: Trundle | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Nocturne, Vi, Jayce
+Top: — | Rừng: — | Mid: — | Xạ thủ: Xayah | Hỗ trợ: —
+
+LƯỢT 9/20: RED Gen.G — CHỌN
+ĐÃ CHỌN: Ornn [top]
+  Căn cứ: Slot S2: ưu tiên chọn quan sát 0.006; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana, Taliyah, Naafiri
+Top: — | Rừng: Trundle | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Nocturne, Vi, Jayce
+Top: Ornn | Rừng: — | Mid: — | Xạ thủ: Xayah | Hỗ trợ: —
+
+LƯỢT 10/20: BLUE T1 — CHỌN
+ĐÃ CHỌN: Kai'Sa [bot]
+  Căn cứ: Slot F2: ưu tiên chọn quan sát 0.020; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana, Taliyah, Naafiri
+Top: — | Rừng: Trundle | Mid: — | Xạ thủ: Kai'Sa | Hỗ trợ: —
+RED Gen.G | Cấm: Nocturne, Vi, Jayce
+Top: Ornn | Rừng: — | Mid: — | Xạ thủ: Xayah | Hỗ trợ: —
+
+LƯỢT 11/20: BLUE T1 — CHỌN
+ĐÃ CHỌN: Karma [sup]
+  Căn cứ: Slot F3: ưu tiên chọn quan sát 0.061; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana, Taliyah, Naafiri
+Top: — | Rừng: Trundle | Mid: — | Xạ thủ: Kai'Sa | Hỗ trợ: Karma
+RED Gen.G | Cấm: Nocturne, Vi, Jayce
+Top: Ornn | Rừng: — | Mid: — | Xạ thủ: Xayah | Hỗ trợ: —
+
+LƯỢT 12/20: RED Gen.G — CHỌN
+ĐÃ CHỌN: Annie [mid]
+  Căn cứ: Slot S3: ưu tiên chọn quan sát 0.005; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana, Taliyah, Naafiri
+Top: — | Rừng: Trundle | Mid: — | Xạ thủ: Kai'Sa | Hỗ trợ: Karma
+RED Gen.G | Cấm: Nocturne, Vi, Jayce
+Top: Ornn | Rừng: — | Mid: Annie | Xạ thủ: Xayah | Hỗ trợ: —
+
+LƯỢT 13/20: RED Gen.G — CẤM
+ĐÃ CẤM: Jax
+  Căn cứ: Mất pool địch 0.0045; chi phí tự cấm 0.0000; đội mình lấy lượt pick tới trước địch=True; Fearless khóa 40; chấm theo pool ngữ cảnh
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana, Taliyah, Naafiri
+Top: — | Rừng: Trundle | Mid: — | Xạ thủ: Kai'Sa | Hỗ trợ: Karma
+RED Gen.G | Cấm: Nocturne, Vi, Jayce, Jax
+Top: Ornn | Rừng: — | Mid: Annie | Xạ thủ: Xayah | Hỗ trợ: —
+
+LƯỢT 14/20: BLUE T1 — CẤM
+ĐÃ CẤM: Rell
+  Căn cứ: Mất pool địch 0.0267; chi phí tự cấm 0.0000; đội mình lấy lượt pick tới trước địch=False; Fearless khóa 40; chấm theo pool ngữ cảnh
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana, Taliyah, Naafiri, Rell
+Top: — | Rừng: Trundle | Mid: — | Xạ thủ: Kai'Sa | Hỗ trợ: Karma
+RED Gen.G | Cấm: Nocturne, Vi, Jayce, Jax
+Top: Ornn | Rừng: — | Mid: Annie | Xạ thủ: Xayah | Hỗ trợ: —
+
+LƯỢT 15/20: RED Gen.G — CẤM
+ĐÃ CẤM: Zaahen
+  Căn cứ: Mất pool địch 0.0243; chi phí tự cấm 0.0000; đội mình lấy lượt pick tới trước địch=True; Fearless khóa 40; chấm theo pool ngữ cảnh
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana, Taliyah, Naafiri, Rell
+Top: — | Rừng: Trundle | Mid: — | Xạ thủ: Kai'Sa | Hỗ trợ: Karma
+RED Gen.G | Cấm: Nocturne, Vi, Jayce, Jax, Zaahen
+Top: Ornn | Rừng: — | Mid: Annie | Xạ thủ: Xayah | Hỗ trợ: —
+
+LƯỢT 16/20: BLUE T1 — CẤM
+ĐÃ CẤM: Cho'Gath
+  Căn cứ: Mất pool địch 0.0227; chi phí tự cấm 0.0000; đội mình lấy lượt pick tới trước địch=False; Fearless khóa 40; chấm theo pool ngữ cảnh
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana, Taliyah, Naafiri, Rell, Cho'Gath
+Top: — | Rừng: Trundle | Mid: — | Xạ thủ: Kai'Sa | Hỗ trợ: Karma
+RED Gen.G | Cấm: Nocturne, Vi, Jayce, Jax, Zaahen
+Top: Ornn | Rừng: — | Mid: Annie | Xạ thủ: Xayah | Hỗ trợ: —
+
+LƯỢT 17/20: RED Gen.G — CHỌN
+ĐÃ CHỌN: Poppy [sup]
+  Căn cứ: Slot S4: ưu tiên chọn quan sát 0.002; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana, Taliyah, Naafiri, Rell, Cho'Gath
+Top: — | Rừng: Trundle | Mid: — | Xạ thủ: Kai'Sa | Hỗ trợ: Karma
+RED Gen.G | Cấm: Nocturne, Vi, Jayce, Jax, Zaahen
+Top: Ornn | Rừng: — | Mid: Annie | Xạ thủ: Xayah | Hỗ trợ: Poppy
+
+LƯỢT 18/20: BLUE T1 — CHỌN
+ĐÃ CHỌN: Ryze [mid]
+  Căn cứ: Slot F4: ưu tiên chọn quan sát 0.027; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana, Taliyah, Naafiri, Rell, Cho'Gath
+Top: — | Rừng: Trundle | Mid: Ryze | Xạ thủ: Kai'Sa | Hỗ trợ: Karma
+RED Gen.G | Cấm: Nocturne, Vi, Jayce, Jax, Zaahen
+Top: Ornn | Rừng: — | Mid: Annie | Xạ thủ: Xayah | Hỗ trợ: Poppy
+
+LƯỢT 19/20: BLUE T1 — CHỌN
+ĐÃ CHỌN: Aurora [top]
+  Căn cứ: Slot F5: ưu tiên chọn quan sát 0.025; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana, Taliyah, Naafiri, Rell, Cho'Gath
+Top: Aurora | Rừng: Trundle | Mid: Ryze | Xạ thủ: Kai'Sa | Hỗ trợ: Karma
+RED Gen.G | Cấm: Nocturne, Vi, Jayce, Jax, Zaahen
+Top: Ornn | Rừng: — | Mid: Annie | Xạ thủ: Xayah | Hỗ trợ: Poppy
+
+LƯỢT 20/20: RED Gen.G — CHỌN
+ĐÃ CHỌN: Nasus [jng]
+  Căn cứ: Slot S5: ưu tiên chọn quan sát 0.000; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana, Taliyah, Naafiri, Rell, Cho'Gath
+Top: Aurora | Rừng: Trundle | Mid: Ryze | Xạ thủ: Kai'Sa | Hỗ trợ: Karma
+RED Gen.G | Cấm: Nocturne, Vi, Jayce, Jax, Zaahen
+Top: Ornn | Rừng: Nasus | Mid: Annie | Xạ thủ: Xayah | Hỗ trợ: Poppy
+Căn cứ cặp T1: observed_pairs=0, sparse_pairs=5, unobserved_pairs=5, insufficient_anchor_pairs=0
+Căn cứ cặp Gen.G: observed_pairs=0, sparse_pairs=3, unobserved_pairs=2, insufficient_anchor_pairs=5
+
+===============================================================================================
+📋 BẢNG ĐỘI HÌNH HOÀN THIỆN SAU KHI CẤM/CHỌN (FINAL DRAFT)
+===============================================================================================
+🔷 PHE XANH (T1):
+   • TOP: Aurora (Doran)
+   • JNG: Trundle (Oner)
+   • MID: Ryze (Faker)
+   • BOT: Kai'Sa (Peyz)
+   • SUP: Karma (Keria)
+
+🔴 PHE ĐỎ (Gen.G):
+   • TOP: Ornn (Kiin)
+   • JNG: Nasus (Canyon)
+   • MID: Annie (Chovy)
+   • BOT: Xayah (Ruler)
+   • SUP: Poppy (Duro)
+Radar và thẻ chiến thuật dùng thuộc tính/quy tắc chuyên gia; chưa được xác nhận như điều kiện thắng nhân quả.
+
+────────────────────────────────────── THẺ CHIẾN THUẬT: T1 (BLUE) ──────────────────────────────────────
+🏆 Trường phái: [LATE-GAME HYPERCARRY]
+📊 Radar 5 trục: Early: 0.66 | Scaling: 0.85 | Combat: 0.7 | Pick: 0.708 | Obj: 0.825
+⭐ Chủ lực (Core Carry): Ryze
+⏱️ Điểm rơi sức mạnh: Cuối trận (Sau Phút 28 - Khi chủ lực đạt ngưỡng 3-4 trang bị chuẩn)
+🐉 Mục tiêu số 1: Baron Nashor & Rồng Ngàn Tuổi (Elder Dragon)
+✅ Điều kiện thắng: Bảo kê tuyệt đối cho siêu chủ lực farm an toàn; chấp nhận nhường mục tiêu sớm nếu cần; hủy diệt giao tranh cuối trận.
+❌ Cần tránh: Bị đối thủ băng trụ lăn cầu tuyết thua > 2,500 vàng lúc 10 phút dẫn đến vỡ trận sớm.
+
+────────────────────────────────────── THẺ CHIẾN THUẬT: GEN.G (RED) ──────────────────────────────────────
+🏆 Trường phái: [PICK & SPLIT-PUSH 1-3-1]
+📊 Radar 5 trục: Early: 0.475 | Scaling: 0.815 | Combat: 0.792 | Pick: 0.698 | Obj: 0.758
+⭐ Chủ lực (Core Carry): Xayah
+⏱️ Điểm rơi sức mạnh: Xuyên suốt trận đấu (Đặc biệt phát huy từ Phút 15 đến Phút 30)
+🐉 Mục tiêu số 1: Trụ 2 cánh bản đồ & Bắt lẻ cô lập mục tiêu đi lẻ
+✅ Điều kiện thắng: Tạo thế đẩy lẻ 1-3-1 hoặc 1-4, buộc đối thủ phải phân tán phòng thủ; rình rập bắt lẻ khi địch di chuyển và ép Baron khi hơn người.
+❌ Cần tránh: Bị đối thủ ép giao tranh 5v5 trực diện bất ngờ khi đội hình chưa kịp gom quân.
+Phiên có mốc lịch sử: bỏ dự báo từ model lưu sẵn vì chưa bảo đảm model được fit trước mốc này.
+Đã lưu phiên: reports\ban_strategy_comparison\contextual\game_5.json

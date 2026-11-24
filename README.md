@@ -1,3 +1,17 @@
+> **Hiện hành24/11: chỉ legacy và contextual.** Lookahead đã gỡ khỏi code/CLI. Hai chế độ đều được chạy kiểm tra đủ5draftT1–Gen.G;57testsPASS. [Phương pháp/lệnhchạy](docs/BAN_LEGACY_VA_CONTEXTUAL.md). Những mô tảsearch phía dưới là lịch sử trước quyết định này.
+
+> **24/11 — sửa tự chọn thiếu căn cứ:** auto dừng chờreview khi địch đã lộ5và pick không có đối đầu đủ mẫu, lưu alternatives/completefalse; không xác nhậncounter. [Phạm viTrundle, kết quả và lệnh chạy](docs/RA_SOAT_LUA_CHON_THEO_DOI_HINH.md). 51testsPASS; dừng phát triển tiếp theo yêu cầu người dùng.
+
+> **Tài liệu dùng viết báo cáo:** [Tổng hợp kiến thức từng chương, phần mở rộng, nơi sử dụng và file kết quả](docs/TONG_HOP_KIEN_THUC_VA_MO_RONG_BAO_CAO.md). Có phân biệt rõ chức năng đã có với mục tiêu tính trước đối thủ/để dành tướng/tối ưu BO5 chưa hiện thực.
+
+> **5ván Worlds Fearless:** chạy `.\.venv\Scripts\python.exe src/07_recommender/simulate_fearless_series.py`. Đã validate100lượt,50picks khác nhau, khóa0/10/20/30/40,38testsPASS. Không gán kết quả game. [Ban/pick đầy đủ](reports/worlds_fearless_bo5/REPORT.md).
+
+> **Draft Worlds và phối hợp toàn đội:** đã thêm association cho mọi cặp role, counts/CI và ma trận10cặp/đội; không gán cứng combo theo tên. 35 tests PASS, 2 phiên Worlds20lượt; audit200lượt Recall@5=36% so với baseline30%, chưa là final test hoặc bằng chứng tăng thắng. [Kết quả và lệnh chạy](docs/WORLDS_ROLE_PAIR_REVIEW.md).
+
+> **Minh chứng Chương 6:** đã bổ sung content-based item/user profiles + cosine; đã kiểm chứng (16 tests, notebook 6 cell mã, CLI/engine PASS). Xem [hướng dẫn](docs/CHUONG_6_CONTENT_BASED.md).
+
+> **Cập nhật 2026-11-23 — Integrity v2:** Dự án vẫn theo lộ trình triển khai. Phần dữ liệu, đánh giá và gợi ý đã được sửa theo [chính sách hiện hành](docs/INTEGRITY_V2.md). Dùng [báo cáo ML mới](src/06_machine_learning/evaluation_report.md) và [benchmark recommender](reports/recommender_evaluation.json); số liệu/đích accuracy trong phần kế hoạch cũ bên dưới không phải kết quả nghiệm thu. Điểm xếp hạng không phải xác suất. Pro chưa có timeline mục tiêu phút 10; rank chưa có event timestamp.
+
 # HỆ THỐNG TRỢ LÝ PHÂN TÍCH CẤM/CHỌN (BAN/PICK AI), DỰ ĐOÁN THẮNG THUA SỚM 2 GIAI ĐOẠN & ĐỐI CHIẾU CHIẾN THUẬT ĐẤU GIẢI (PRO PLAY) VS ĐẤU XẾP HẠNG (SOLO QUEUE) TRONG ESPORTS LIÊN MINH HUYỀN THOẠI
 
 > ⚡ **KÍCH HOẠT MÔI TRƯỜNG ẢO (.venv) TRƯỚC KHI CHẠY:**
@@ -49,8 +63,7 @@ Project/
 │   ├── 07_recommender/                 # Module Trợ lý Cấm/Chọn Ban/Pick AI (Chương 6)
 │   └── api/                            # Backend REST API (FastAPI) kết nối Model AI & CSDL
 │
-├── web/                                # Giao diện Web App tương tác (Giai đoạn 1)
-├── mobile_app/                         # Ứng dụng Android Native (Giai đoạn 2 - Cắm sau)
+├── web/                                # Giao diện Web App tương tác
 ├── notebooks/                          # Jupyter Notebooks tương tác (EDA, thử nghiệm mô hình)
 ├── reports/                            # Báo cáo, slide thuyết trình & biểu đồ xuất bản
 │   ├── figures/                        # Hình ảnh biểu đồ PNG độ phân giải cao 300 DPI
@@ -166,7 +179,7 @@ python -c "import sqlite3; conn = sqlite3.connect('data/database/lol_live_data.d
 
 ## 👥 PHÂN CÔNG VAI TRÒ NHÓM 3 NGƯỜI
 
-* **Thành viên 1 (Data Engineer, Backend API & Web/App Lead):** Phụ trách `src/01_data_pipeline`, `src/02_preprocessing`, `src/03_database_sql` (Chương 2, 5, 5x), đóng gói Backend REST API (FastAPI) và phát triển giao diện Web App tương tác (sau này tích hợp thêm Mobile App).
+* **Thành viên 1 (Data Engineer, Backend API & Web App Lead):** Phụ trách `src/01_data_pipeline`, `src/02_preprocessing`, `src/03_database_sql` (Chương 2, 5, 5x), đóng gói Backend REST API (FastAPI) và phát triển giao diện Web App tương tác.
 * **Thành viên 2 (Data Analyst & Statistician):** Phụ trách `src/04_hypothesis_testing`, `src/05_visualization` (Chương 1, 3 Thống kê A/B & Biểu đồ EDA).
 * **Thành viên 3 (AI / Machine Learning Lead):** Phụ trách `src/06_machine_learning`, `src/07_recommender` (Chương 4, 6 Mô hình ML 2 giai đoạn & Ban/Pick AI).
 
@@ -175,6 +188,5 @@ python -c "import sqlite3; conn = sqlite3.connect('data/database/lol_live_data.d
 ## 📚 TÀI LIỆU THAM KHẢO NỘI BỘ
 * [Kế hoạch thực hiện đồ án 3 người](docs/KE_HOACH_THUC_HIEN_DO_AN_3_NGUOI.md)
 * [Từ điển Danh mục Hàm & Module toàn dự án (Function Catalog)](docs/DANH_MUC_HAM_VA_MODULES.md)
-* [Checklist liên môn Data Science & Android](docs/KE_HOACH_LIEN_MON_DATA_SCIENCE_VA_ANDROID.md)
 * [Danh mục API & Dataset](docs/DANH_MUC_API_VA_DATASET.md)
 * [Nhật ký thay đổi kỹ thuật (Changelog)](AI/CHANGELOG.md)

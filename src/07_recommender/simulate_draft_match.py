@@ -1,43 +1,18 @@
-"""
-Simulate Full Ban/Pick Match (Mô Phỏng Toàn Diện Cấm/Chọn Đấu Giải: Tương Tác Trực Tiếp Bằng Bàn Phím)
-Module 07: Recommender Engine Showcase
-
-Tính năng:
-1. Chế độ Tương Tác Trực Tiếp (Interactive Mode):
-   - Bạn đóng vai trò là Huấn Luyện Viên / Tuyển Thủ T1 (Phe Xanh).
-   - Ở mỗi lượt Cấm / Chọn của T1, hệ thống hiển thị bảng gợi ý [1], [2], [3]... kèm % ưu tiên và lý do dữ liệu.
-   - Bạn chỉ cần gõ số (1, 2, 3...) và bấm ENTER để chốt.
-   - Gen.G (AI) sẽ tự động tính toán phản ứng tối ưu nhất theo chuẩn Giải Đấu 2026.
-2. Tuân thủ chuẩn Riot Esports 4 Giai Đoạn:
-   - Giai đoạn 1: Cấm 1 (6 lượt xen kẽ: T1 -> Gen.G -> T1 -> Gen.G -> T1 -> Gen.G)
-   - Giai đoạn 2: Chọn 1 (6 lượt: T1(1) -> Gen.G(2) -> T1(2) -> Gen.G(1))
-   - Giai đoạn 3: Cấm 2 (4 lượt: Gen.G(1) -> T1(2) -> Gen.G(1))
-   - Giai đoạn 4: Chọn 2 (4 lượt: Gen.G(1) -> T1(2) -> Gen.G(1 - Last Pick))
-3. Phân tích Thẻ Chiến Thuật + Radar 5 Trục + Dự đoán Tỷ lệ Thắng Phút 0.
-
-Học phần: Nhập môn Khoa học Dữ liệu - PTIT (TS. Thái Tuyết Hải)
-"""
-
-import sys
-import os
-import time
-import argparse
-import pickle
+"""Interactive single-game ban/pick with contextual historical + content advice."""
+from dataclasses import dataclass, field
 from pathlib import Path
-from typing import List, Dict, Any, Optional
-import numpy as np
+import argparse
+import json
+import sys
+from itertools import combinations
 
-# Path setup
-PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
-sys.path.insert(0, str(PROJECT_ROOT))
-sys.path.insert(0, str(PROJECT_ROOT / "src" / "06_machine_learning"))
-sys.path.insert(0, str(PROJECT_ROOT / "src" / "07_recommender"))
+PROJECT_ROOT=Path(__file__).resolve().parents[2]
+sys.path[:0]=[str(PROJECT_ROOT),str(PROJECT_ROOT/'src/06_machine_learning'),str(Path(__file__).resolve().parent)]
+from recommender_engine import RecommenderEngine, normalize_region_code
+from draft_advisor import DraftAdvisor, ROLES, role_key, DISPLAY_ROLES
+from draft_meta import MetaPolicy
 
-import cluster_archetypes
-from recommender_engine import RecommenderEngine, safe_load_pickle
-
-DRAFT_MODEL_PATH = PROJECT_ROOT / "models" / "draft_model.pkl"
-
+# Presets are editable demo rosters, not a live roster service.
 TEAM_PRESETS = {
     "T1": {'top': 'Doran', 'jng': 'Oner', 'mid': 'Faker', 'bot': 'Peyz', 'sup': 'Keria'},
     "GEN.G": {'top': 'Kiin', 'jng': 'Canyon', 'mid': 'Chovy', 'bot': 'Ruler', 'sup': 'Lehends'},
@@ -50,774 +25,302 @@ TEAM_PRESETS = {
     "CHALLENGER": {'top': 'Ẩn Danh Top', 'jng': 'Ẩn Danh Rừng', 'mid': 'Ẩn Danh Mid', 'bot': 'Ẩn Danh AD', 'sup': 'Ẩn Danh SP'}
 }
 
-LANE_TO_ROSTER_KEY = {'top': 'top', 'jungle': 'jng', 'mid': 'mid', 'bot': 'bot', 'support': 'sup'}
-LANE_TITLE = {'top': 'Đường Trên', 'jungle': 'Đi Rừng', 'mid': 'Đường Giữa', 'bot': 'Xạ Thủ', 'support': 'Hỗ Trợ'}
+LANE_TITLE={'top':'Top','jng':'Rừng','mid':'Mid','bot':'Xạ thủ','sup':'Hỗ trợ'}
 
 
-def prompt_user_selection(cands: List[Dict[str, Any]], prompt_title: str, all_banned: set, all_picked: set, engine: RecommenderEngine, is_ban_mode: bool = True, enemy_roster: dict = None, my_picks: dict = None, enemy_picks: dict = None, available_lanes: list = None, team_roster: dict = None, ban_phase: int = 1, user_team_name: str = "BẠN") -> Dict[str, Any]:
-    """Hiển thị menu gợi ý và nhận phím bấm (1, 2, 3... hoặc tên tướng bất kỳ) từ người dùng"""
-    print(f"\n💡 BẢNG GỢI Ý CHIẾN THUẬT CHO BẠN ({prompt_title}):")
-    print("─" * 92)
-    for idx, item in enumerate(cands, 1):
-        c_name = item['champion']
-        pct = item.get('priority_pct', item.get('score', 90.0))
-        if isinstance(pct, float) and pct <= 1.0:
-            pct = round(pct * 100, 1)
-        pct = min(99.0, max(50.0, round(float(pct), 1)))
-        reason = item.get('reason', '')
-        if not reason and 'reasons' in item and item['reasons']:
-            reason = item['reasons'][0]
-        badge = item.get('badge', '⭐ TỐI ƯU')
-        lane_str = f" [{item['lane_title']}]" if 'lane_title' in item else ""
-        print(f"  [{idx}] 🎯 {c_name.upper()}{lane_str} ({pct}%) [{badge}]")
-        print(f"      └─ 📊 Lý do: {reason}")
-    print("─" * 92)
+def needs_tactical_review(choice,enemy_picks,allow_statistical_auto=False):
+    """Do not auto-finalize a full-team response without supported enemy evidence."""
+    return bool(not allow_statistical_auto and len(enemy_picks)==5 and
+                choice.get('review_required',False))
 
+
+def draft_schedule(first_side='blue'):
+    if first_side not in ['blue','red']:raise ValueError('Invalid first-pick side')
+    a,b=first_side,('red' if first_side=='blue' else 'blue')
+    return ([(s,'ban') for s in [a,b,a,b,a,b]]+
+            [(s,'pick') for s in [a,b,b,a,a,b]]+
+            [(s,'ban') for s in [b,a,b,a]]+
+            [(s,'pick') for s in [b,a,a,b]])
+
+
+@dataclass
+class DraftState:
+    first_side:str='blue'
+    picks:dict=field(default_factory=lambda:{'blue':{},'red':{}})
+    bans:dict=field(default_factory=lambda:{'blue':[],'red':[]})
+    history:list=field(default_factory=list)
+    swaps:list=field(default_factory=list)
+    used_champions:list=field(default_factory=list)
+
+    @property
+    def schedule(self):return draft_schedule(self.first_side)
+    @property
+    def complete(self):return len(self.history)==len(self.schedule)
+    @property
+    def unavailable(self):return set(self.used_champions+self.bans['blue']+self.bans['red']+list(self.picks['blue'].values())+list(self.picks['red'].values()))
+
+    def apply(self,side,action,champion,role=None):
+        if self.complete or (side,action)!=self.schedule[len(self.history)]:raise ValueError('Sai lượt cấm/chọn')
+        if not champion or champion in self.unavailable:raise ValueError('Tướng đã cấm/chọn hoặc tên không hợp lệ')
+        if action=='pick':
+            role=role_key(role)
+            if role in self.picks[side]:raise ValueError('Vị trí đã có tướng; dùng swap để đổi trước')
+            self.picks[side][role]=champion
+        else:self.bans[side].append(champion)
+        self.history.append({'turn':len(self.history)+1,'side':side,'action':action,'champion':champion,'role':role})
+
+    def swap(self,side,champion,target_role):
+        role=role_key(target_role)
+        current=next((r for r,c in self.picks[side].items() if c==champion),None)
+        if current is None:raise ValueError('Tướng chưa được đội bạn chọn')
+        other=self.picks[side].get(role)
+        if current==role:return
+        self.picks[side][role]=champion
+        if other:self.picks[side][current]=other
+        else:del self.picks[side][current]
+        self.swaps.append({'after_turn':len(self.history),'side':side,'champion':champion,'from':current,'to':role})
+
+    def as_dict(self):
+        return {'first_pick_side':self.first_side,'picks':self.picks,'bans':self.bans,
+                'history':self.history,'swaps':self.swaps,'complete':self.complete,'used_champions':self.used_champions}
+
+
+def roster_for(name):
+    return dict(TEAM_PRESETS.get(name.upper(),{r:f'{name}_{r}' for r in ROLES}))
+
+
+def pick_candidates(advisor,state,side,roster,region,wishlist=None,only_role=None):
+    enemy='red' if side=='blue' else 'blue'
+    roles=[role_key(only_role)] if only_role else ROLES
+    roles=[r for r in roles if r not in state.picks[side]]
+    all_rows=[]
+    for role in roles:
+        slot=('F' if side==state.first_side else 'S')+str(len(state.picks[side])+1)
+        rows=advisor.recommend_picks(role,state.picks[side],state.picks[enemy],state.unavailable,
+                                    roster.get(role),top_k=5,region=region,seeds=wishlist,draft_slot=slot)
+        for row in rows:
+            row={**row,'role':role,'lane_title':LANE_TITLE[role],
+                 'priority_pct':row['ranking_score'],'player':roster.get(role),
+                 'user_preference':row['champion'] in (wishlist or [])}
+            row['alternatives_same_role']=[{k:r[k] for k in ['champion','ranking_score','games','enemy_context_coverage',
+                'mechanical_counter_status','evidence_status']} for r in rows if r['champion']!=row['champion']][:3]
+            all_rows.append(row)
+    # Keep multiple role assignments for a flex champion; UI specifies each role.
+    all_rows.sort(key=lambda r:(not r['user_preference'],r.get('evidence_status')=='sparse_candidate',-r['score'],-r['games'],r['champion'],r['role']))
+    if only_role:return all_rows[:5]
+    result=[]
+    # Give every open role an entry, then fill with highest-ranked remaining pairs.
+    for role in roles:
+        best=next((r for r in all_rows if r['role']==role),None)
+        if best:result.append(best)
+    keys={(r['champion'],r['role']) for r in result}
+    for row in all_rows:
+        if (row['champion'],row['role']) not in keys:
+            result.append(row);keys.add((row['champion'],row['role']))
+        if len(result)>=8:break
+    return sorted(result,key=lambda r:(not r['user_preference'],r.get('evidence_status')=='sparse_candidate',-r['score'],-r['games'],r['champion'],r['role']))
+
+
+def show_board(state,names):
+    print('\n'+'='*90)
+    for side in ['blue','red']:
+        slots=' | '.join(f"{LANE_TITLE[r]}: {state.picks[side].get(r,'—')}" for r in ROLES)
+        print(f"{side.upper()} {names[side]} | Cấm: {', '.join(state.bans[side]) or '—'}")
+        print(slots)
+
+
+def show_candidates(rows,action):
+    for i,row in enumerate(rows,1):
+        role=f" [{row['lane_title']}: {row.get('player')}]" if action=='pick' else ''
+        points=row.get('priority_pct',0)
+        preference=' | ưu tiên do bạn đặt' if row.get('user_preference') else ''
+        print(f" [{i}] {row['champion']}{role} | {points:.2f} điểm{preference}")
+        if action=='pick':
+            print(f"     n={row['games']} trận; {row['reasons'][1]}")
+            if row.get('review_required'):print('     Cần xem lại chiến thuật: chưa có đối đầu đủ mẫu với đội địch đã lộ; không xác nhận counter.')
+            if row.get('cosine_similarity') is not None:print(f"     Cosine={row['cosine_similarity']:.3f} (độ tương đồng)")
+        else:print('     '+row['reason'])
+    if not rows:print(' Chưa đủ lịch sử để gợi ý. Có thể nhập tướng và vị trí trực tiếp hoặc đổi khu vực.')
+
+
+def explain(row):
+    for text in row.get('reasons',[row.get('reason','')]):print('  • '+text)
+    if row.get('contextual_trace'):
+        trace=row['contextual_trace']
+        print(f"  • Contextual: xét {trace['legal_candidates']} ứng viên hợp lệ, không tìm nhánh phản ứng.")
+        for c in trace['candidate_summary'][:3]:
+            print(f"  • {c['champion']}: điểm {c['ban_priority']:.5f}, mất pool địch {c['enemy_pool_loss']:.5f}, tự cấm {c['own_access_cost']:.5f}")
+    for name,part in row.get('score_components',{}).items():
+        if name=='composition':
+            print(f"  • composition: geometric lift {row.get('composition_lift',1):.3f}, số mũ {part['weight']:g}; điều chỉnh odds điểm nền, không cộng vào điểm trung bình")
+        else:print(f"  • {name}: {part['value']:.3f} × trọng số {part['weight']:g}")
+    print('  Điểm là heuristic tham khảo; không phải xác suất hay mức tăng thắng.')
+
+
+def choose_interactively(candidates,refresh,state,side,action,engine,advisor,region,input_fn=input):
+    rows=candidates
+    valid=set(advisor.history.players.champion.unique())|set(engine.pick_recommender.metadata)
     while True:
-        try:
-            guide_str = " (hoặc gõ 'top', 'jng', 'mid', 'bot', 'sp' để xem riêng từng đường)"
-            user_in = input(f"👉 [{user_team_name.upper()}] Nhập số (1-{len(cands)}) hoặc gõ tên tướng bất kỳ{guide_str}: ").strip()
-            if not user_in:
-                chosen = cands[0]
-                print(f"   -> Mặc định chọn [{1}] {chosen['champion'].upper()}")
-                return chosen
-
-            role_alias = {'sp': 'support', 'sup': 'support', 'support': 'support', 'top': 'top', 'mid': 'mid', 'bot': 'bot', 'ad': 'bot', 'adc': 'bot', 'jng': 'jungle', 'jungle': 'jungle', 'rừng': 'jungle'}
-
-            if user_in.lower() in role_alias:
-                filt_lane = role_alias[user_in.lower()]
-                if is_ban_mode:
-                    # Gợi ý cấm theo đường: Kết hợp cả Meta Cấm Phase hiện tại + Tướng tủ tuyển thủ đối phương
-                    filt_p = (enemy_roster or {}).get(LANE_TO_ROSTER_KEY.get(filt_lane, filt_lane), None)
-                    sub_cands = []
-                    seen_c = set()
-
-                    # 1. Trích xuất từ Bảng cấm tổng hợp (chuẩn xác Phase 1 hoặc Phase 2)
-                    all_bans = engine.target_ban_engine.recommend_team_bans(enemy_roster or {}, top_k=40, ban_phase=ban_phase, already_banned=all_banned)
-                    db_l = {'jungle': 'jng', 'support': 'sup'}.get(filt_lane, filt_lane)
-                    for b in all_bans:
-                        c_n = b['champion']
-                        if c_n in all_banned or c_n in all_picked or c_n in seen_c:
-                            continue
-                        c_meta = engine.pick_recommender.metadata.get(c_n, {})
-                        c_picks = engine.pick_recommender.tournament_meta_picks.get((db_l, c_n), {}).get('picks', 0)
-                        p_role_match = (b.get('player_role') == LANE_TO_ROSTER_KEY.get(filt_lane))
-                        if c_meta.get('lane') == filt_lane or c_picks >= 10 or p_role_match:
-                            seen_c.add(c_n)
-                            sub_cands.append({
-                                'champion': c_n,
-                                'priority_pct': b['priority_pct'],
-                                'lane': filt_lane,
-                                'lane_title': LANE_TITLE[filt_lane],
-                                'badge': f"🚫 CẤM {LANE_TITLE[filt_lane].upper()}",
-                                'reason': b['reason']
-                            })
-
-                    # 2. Bổ sung các tướng tủ riêng của tuyển thủ đối phương nếu chưa có
-                    if filt_p:
-                        raw_target_bans = engine.target_ban_engine.recommend_target_bans(filt_p, top_k=8, ban_phase=ban_phase)
-                        for rb in raw_target_bans:
-                            c_n = rb['champion']
-                            if c_n not in all_banned and c_n not in all_picked and c_n not in seen_c:
-                                seen_c.add(c_n)
-                                sub_cands.append({
-                                    'champion': c_n,
-                                    'priority_pct': round(rb['threat_score'] * 100, 1),
-                                    'lane': filt_lane,
-                                    'lane_title': LANE_TITLE[filt_lane],
-                                    'badge': rb.get('badge', f"🚫 CẤM {LANE_TITLE[filt_lane].upper()}"),
-                                    'reason': f"Chặn bài tủ còn lại của {filt_p} ({rb.get('tournament_stats', rb.get('reason', ''))})"
-                                })
-
-                    if sub_cands:
-                        cands = sorted(sub_cands, key=lambda x: x['priority_pct'], reverse=True)[:5]
-                        print(f"\n🔍 BẢNG GỢI Ý CẤM RIÊNG CHO VỊ TRÍ {LANE_TITLE[filt_lane].upper()}{f' (Target vào {filt_p})' if filt_p else ''}:")
-                        print("─" * 92)
-                        for s_idx, sc in enumerate(cands, 1):
-                            print(f"  [{s_idx}] 🎯 {sc['champion'].upper()} ({sc['priority_pct']}%) [{sc['badge']}]")
-                            print(f"      └─ 📊 Lý do: {sc['reason']}")
-                        print("─" * 92)
-                    else:
-                        print(f"ℹ️ Không có tướng cấm đáng chú ý nào ở vị trí {LANE_TITLE[filt_lane]}!")
-                    continue
-                else:
-                    # Gợi ý pick theo đường của phe mình
-                    filt_p = (team_roster or {}).get(LANE_TO_ROSTER_KEY.get(filt_lane, filt_lane), None)
-                    lane_picks = engine.pick_recommender.recommend_picks(
-                        filt_lane,
-                        list((my_picks or {}).values()),
-                        list((enemy_picks or {}).values()),
-                        already_banned=all_banned,
-                        player_name=filt_p,
-                        top_k=6
-                    )
-                    sub_cands = []
-                    for lp in lane_picks:
-                        c_n = lp['champion']
-                        if c_n not in all_banned and c_n not in all_picked:
-                            p_score = min(99.0, max(50.0, round(lp['score'] * 100, 1)))
-                            r_txt = lp['reasons'][0] if lp.get('reasons') else f'Chuẩn Meta {LANE_TITLE[filt_lane]}'
-                            sub_cands.append({
-                                'champion': c_n,
-                                'priority_pct': p_score,
-                                'lane': filt_lane,
-                                'lane_title': LANE_TITLE[filt_lane],
-                                'badge': f'⭐ TOP {LANE_TITLE[filt_lane].upper()}',
-                                'reason': r_txt
-                            })
-                    if sub_cands:
-                        cands = sub_cands[:5]
-                        print(f"\n🔍 BẢNG GỢI Ý RIÊNG CHO VỊ TRÍ {LANE_TITLE[filt_lane].upper()}{f' ({filt_p})' if filt_p else ''}:")
-                        print("─" * 92)
-                        for s_idx, sc in enumerate(cands, 1):
-                            print(f"  [{s_idx}] 🎯 {sc['champion'].upper()} ({sc['priority_pct']}%) [{sc['badge']}]")
-                            print(f"      └─ 📊 Lý do: {sc['reason']}")
-                        print("─" * 92)
-                    continue
-
-            if not is_ban_mode and (user_in.lower().startswith('swap') or user_in.lower().startswith('doi')):
-                # Cú pháp: swap <tướng> <đường> (Ví dụ: swap camille top)
-                swap_tokens = user_in.split()
-                if len(swap_tokens) >= 3:
-                    sw_champ_raw = swap_tokens[1]
-                    sw_lane_raw = swap_tokens[2].lower()
-                    sw_norm = engine.pick_recommender._normalize_champion_name(sw_champ_raw)
-                    inv_roster = {'top': 'top', 'jng': 'jungle', 'mid': 'mid', 'bot': 'bot', 'sup': 'support'}
-                    found_curr_role = None
-                    for r_k, c_n in (my_picks or {}).items():
-                        if c_n.lower() == sw_norm.lower():
-                            found_curr_role = r_k
-                            break
-                    if not found_curr_role:
-                        print(f"⚠️ Không tìm thấy tướng '{sw_norm}' trong danh sách đã pick của đội!")
-                        continue
-                    
-                    role_alias = {'sp': 'support', 'sup': 'support', 'support': 'support', 'top': 'top', 'mid': 'mid', 'bot': 'bot', 'ad': 'bot', 'adc': 'bot', 'jng': 'jungle', 'jungle': 'jungle'}
-                    target_l = role_alias.get(sw_lane_raw, sw_lane_raw)
-                    if target_l not in LANE_TITLE:
-                        print(f"⚠️ Vị trí '{sw_lane_raw}' không hợp lệ (hỗ trợ: top, jng, mid, bot, sup)!")
-                        continue
-                    
-                    target_rk = LANE_TO_ROSTER_KEY[target_l]
-                    curr_lane = inv_roster[found_curr_role]
-                    if target_rk == found_curr_role:
-                        print(f"ℹ️ Tướng '{sw_norm}' hiện đã ở vị trí {LANE_TITLE[target_l]} rồi!")
-                        continue
-                    
-                    if available_lanes and target_l in available_lanes:
-                        available_lanes.remove(target_l)
-                        available_lanes.append(curr_lane)
-                        del my_picks[found_curr_role]
-                        my_picks[target_rk] = sw_norm
-                        print(f"\n🔄 [ĐỔI VỊ TRÍ THÀNH CÔNG] Đã chuyển {sw_norm.upper()} từ {LANE_TITLE[curr_lane]} sang {LANE_TITLE[target_l]}!")
-                        print(f"   Đội hình hiện tại: {', '.join([f'{LANE_TITLE[inv_roster[k]]}: {v.upper()}' for k, v in my_picks.items()])}\n")
-                        continue
-                    elif my_picks and target_rk in my_picks:
-                        other_champ = my_picks[target_rk]
-                        my_picks[target_rk] = sw_norm
-                        my_picks[found_curr_role] = other_champ
-                        print(f"\n🔄 [HOÁN ĐỔI 2 VỊ TRÍ THÀNH CÔNG] Đã đổi {sw_norm.upper()} sang {LANE_TITLE[target_l]} và {other_champ.upper()} sang {LANE_TITLE[curr_lane]}!")
-                        print(f"   Đội hình hiện tại: {', '.join([f'{LANE_TITLE[inv_roster[k]]}: {v.upper()}' for k, v in my_picks.items()])}\n")
-                        continue
-                else:
-                    print("💡 Cú pháp đổi đường: swap <tên_tướng> <đường_mới> (Ví dụ: swap camille top)")
-                    continue
-
-            if user_in.isdigit():
-                idx_val = int(user_in)
-                if 1 <= idx_val <= len(cands):
-                    chosen = cands[idx_val - 1]
-                    print(f"   -> Bạn đã chọn [{idx_val}] {chosen['champion'].upper()}")
-                    return chosen
-                else:
-                    print(f"⚠️ Vui lòng nhập số hợp lệ từ 1 đến {len(cands)}!")
-            else:
-                # Phân tích cú pháp: Hỗ trợ gõ 'Camille sp', 'Camille top', 'Poppy sup', v.v.
-                tokens = user_in.strip().split()
-                role_alias = {'sp': 'support', 'sup': 'support', 'support': 'support', 'top': 'top', 'mid': 'mid', 'bot': 'bot', 'ad': 'bot', 'adc': 'bot', 'jng': 'jungle', 'jungle': 'jungle'}
-                explicit_lane = None
-                
-                # Kiểm tra token cuối có phải vị trí không
-                if len(tokens) >= 2 and tokens[-1].lower() in role_alias:
-                    explicit_lane = role_alias[tokens[-1].lower()]
-                    champ_raw = " ".join(tokens[:-1])
-                elif len(tokens) >= 2 and tokens[0].lower() in role_alias:
-                    explicit_lane = role_alias[tokens[0].lower()]
-                    champ_raw = " ".join(tokens[1:])
-                else:
-                    champ_raw = user_in
-
-                norm_name = engine.pick_recommender._normalize_champion_name(champ_raw)
-                if norm_name in all_banned or norm_name in all_picked:
-                    print(f"⚠️ Tướng '{norm_name}' đã bị cấm hoặc đã được chọn trước đó! Hãy chọn tướng khác.")
-                elif norm_name in engine.pick_recommender.metadata:
-                    print(f"   -> Bạn đã nhập trực tiếp tướng: ⭐ {norm_name.upper()}")
-                    
-                    if is_ban_mode:
-                        # Phân tích dữ liệu tự động cho tướng cấm tự chọn
-                        b_cnt = engine.target_ban_engine.tournament_ban_counts.get(norm_name, 0)
-                        b_rate = round((b_cnt / float(engine.target_ban_engine.max_ban_count)) * 30.1, 1) if engine.target_ban_engine.max_ban_count > 0 else 10.0
-                        
-                        target_player = None
-                        target_role = None
-                        if enemy_roster:
-                            for r_k, p_n in enemy_roster.items():
-                                p_stats = engine.target_ban_engine.player_stats_cache.get(p_n, {}).get(norm_name)
-                                if p_stats:
-                                    target_player = p_n
-                                    target_role = r_k
-                                    break
-                        
-                        if target_player:
-                            dyn_reason = f"Target trực tiếp {target_player} ({target_role.upper()}) & Có {b_cnt} lượt cấm giải ({b_rate}%)"
-                            dyn_pct = min(98.0, 75.0 + (b_cnt / 50.0))
-                        elif b_cnt > 0:
-                            dyn_reason = f"Lựa chọn cấm theo chiến thuật HLV ({b_cnt} lượt cấm giải - {b_rate}%)"
-                            dyn_pct = min(95.0, 70.0 + (b_cnt / 60.0))
-                        else:
-                            dyn_reason = "Lựa chọn cấm chiến thuật trực tiếp của Huấn Luyện Viên"
-                            dyn_pct = 85.0
-
-                        return {
-                            'champion': norm_name,
-                            'priority_pct': round(dyn_pct, 1),
-                            'reason': dyn_reason,
-                            'badge': '🎯 CẤM TỰ CHỌN'
-                        }
-                    else:
-                        # Phân tích vị trí tối ưu từ Dữ liệu Đấu Giải thực tế (Flex Pick Detection)
-                        candidate_lanes = engine.pick_recommender.get_candidate_lanes_for_champion(norm_name, available_lanes)
-                        
-                        target_lane = None
-                        if explicit_lane and explicit_lane in available_lanes:
-                            target_lane = explicit_lane
-                        elif candidate_lanes:
-                            # Nếu tướng có thể chơi nhiều vị trí còn trống và có số trận giải đáng kể ở cả 2 vị trí (>15 trận)
-                            viable_lanes = [cl for cl in candidate_lanes if cl[0] in available_lanes and cl[1] >= 15]
-                            if len(viable_lanes) > 1:
-                                print(f"\n🔄 Tướng Flex đa vị trí: '{norm_name.upper()}' có thể chơi tốt ở nhiều lane.")
-                                print(f"   (💡 Bạn hoàn toàn có thể đổi vị trí tướng này sau bất cứ lúc nào qua lệnh 'swap {norm_name} <đường>' hoặc pick thêm tướng cùng vị trí!)")
-                                for f_idx, (f_l, f_picks) in enumerate(viable_lanes, 1):
-                                    print(f"   [{f_idx}] {LANE_TITLE.get(f_l, f_l)} ({f_picks} trận giải)")
-                                try:
-                                    f_choice = input(f"👉 Chọn vị trí cho {norm_name} (1-{len(viable_lanes)}) [Mặc định 1 - {LANE_TITLE[viable_lanes[0][0]]}]: ").strip()
-                                    if f_choice.isdigit() and 1 <= int(f_choice) <= len(viable_lanes):
-                                        target_lane = viable_lanes[int(f_choice) - 1][0]
-                                    else:
-                                        target_lane = viable_lanes[0][0]
-                                except Exception:
-                                    target_lane = viable_lanes[0][0]
-                            else:
-                                # Tự động chọn lane có số lượt pick giải đấu cao nhất
-                                target_lane = candidate_lanes[0][0]
-                        else:
-                            target_lane = available_lanes[0] if available_lanes else 'mid'
-                        
-                        # Kiểm tra synergy với đồng đội đã chọn
-                        syn_text = ""
-                        for ally_c in (my_picks.values() if my_picks else []):
-                            pair = (norm_name, ally_c)
-                            rev_pair = (ally_c, norm_name)
-                            if pair in engine.pick_recommender.duo_synergies:
-                                syn_text = f"🔥 Cặp bài trùng huỷ diệt với {ally_c} (Synergy {int(engine.pick_recommender.duo_synergies[pair]*100)}%)"
-                                break
-                            elif rev_pair in engine.pick_recommender.duo_synergies:
-                                syn_text = f"🔥 Cặp bài trùng huỷ diệt với {ally_c} (Synergy {int(engine.pick_recommender.duo_synergies[rev_pair]*100)}%)"
-                                break
-                        
-                        picks_at_pos = engine.pick_recommender.tournament_meta_picks.get(({'support': 'sup', 'jungle': 'jng'}.get(target_lane, target_lane), norm_name), {}).get('tour_picks', 0)
-                        pos_desc = f" ({picks_at_pos} trận giải ở {LANE_TITLE.get(target_lane, target_lane)})" if picks_at_pos > 0 else ""
-                        dyn_reason = syn_text if syn_text else f"Lựa chọn chiến thuật trọng tâm cho {LANE_TITLE.get(target_lane, target_lane)}{pos_desc}"
-                        
-                        return {
-                            'champion': norm_name,
-                            'priority_pct': 95.0,
-                            'lane': target_lane,
-                            'lane_title': LANE_TITLE.get(target_lane, target_lane),
-                            'reason': dyn_reason,
-                            'badge': '⭐ CHỌN TỰ DO'
-                        }
-                else:
-                    print(f"⚠️ Không nhận diện được tướng '{user_in}', vui lòng thử lại!")
-        except (EOFError, KeyboardInterrupt):
-            return cands[0]
+        try:raw=input_fn('Chọn số/Enter; tên tướng hoặc "mid Ahri"; role; why 1; swap Ahri top; auto; quit: ').strip()
+        except (EOFError,KeyboardInterrupt):return None,'quit'
+        low=raw.lower()
+        if low in ['quit','exit','q']:return None,'quit'
+        if low=='auto':return (rows[0] if rows else None),'auto'
+        if low in ['help','?']:
+            print('Enter chọn gợi ý đầu; top/jng/mid/bot/sup lọc vị trí; all xem mọi vị trí; why N xem bằng chứng.');continue
+        if low=='all' or low in ['top','jng','jungle','mid','bot','adc','sup','support','sp']:
+            role=None if low=='all' else ('sup' if low=='sp' else role_key(low))
+            rows=refresh(role);show_candidates(rows,action);continue
+        if low.startswith('why '):
+            token=raw.split()[-1]
+            if token.isdigit() and 1<=int(token)<=len(rows):explain(rows[int(token)-1])
+            else:print('Số gợi ý không hợp lệ')
+            continue
+        if low.startswith('swap ') or low.startswith('doi '):
+            if action!='pick':print('Đổi vị trí trong lượt chọn của bạn.');continue
+            try:
+                champ_text,role=raw.split(maxsplit=1)[1].rsplit(maxsplit=1)
+                champ=engine.pick_recommender._normalize_champion_name(champ_text)
+                state.swap(side,champ,'sup' if role=='sp' else role)
+                rows=refresh(None);show_candidates(rows,action)
+            except ValueError as exc:print(str(exc))
+            continue
+        if not raw or raw.isdigit():
+            index=0 if not raw else int(raw)-1
+            if 0<=index<len(rows):return rows[index],'pick'
+            print('Số gợi ý không hợp lệ');continue
+        role=None;champ_text=raw
+        words=raw.split(maxsplit=1)
+        if len(words)==2 and words[0].lower() in ['top','jng','jungle','mid','bot','adc','sup','support','sp']:
+            role='sup' if words[0].lower()=='sp' else role_key(words[0])
+            champ_text=words[1]
+        champ=engine.pick_recommender._normalize_champion_name(champ_text)
+        if champ not in valid:print('Không nhận diện được tướng');continue
+        if champ in state.unavailable:print('Tướng đã cấm/chọn');continue
+        if action=='ban':return {'champion':champ,'score_kind':'user_choice_unscored'},'pick'
+        available=[r for r in ROLES if r not in state.picks[side]]
+        if role is None:
+            base,_,_,_=advisor.history.stats(region)
+            observed=[(base.get((r,champ),(0,0))[1],r) for r in available]
+            if observed and max(observed)[0]>0:role=max(observed)[1]
+        if role not in available:
+            print('Hãy ghi rõ vị trí còn trống, ví dụ "mid Ahri", hoặc swap trước.');continue
+        return {'champion':champ,'role':role,'score_kind':'user_choice_unscored'},'pick'
 
 
-# =========================================================================
-# MÔ PHỎNG CẤM/CHỌN ĐẤU GIẢI CHUYÊN NGHIỆP (TƯƠNG TÁC HOẶC TỰ ĐỘNG)
-# =========================================================================
-def run_pro_tournament_draft_simulation(blue_team_name: str = "T1",
-                                        red_team_name: str = "Gen.G",
-                                        blue_roster: dict = None,
-                                        red_roster: dict = None,
-                                        user_side: str = "blue",
-                                        first_side: str = "blue",
-                                        wishlist: Optional[List[str]] = None,
-                                        interactive: bool = True):
-    engine = RecommenderEngine()
-
-    b_key = blue_team_name.upper()
-    r_key = red_team_name.upper()
-
-    if blue_roster is None:
-        blue_roster = TEAM_PRESETS.get(b_key, {
-            'top': f'{blue_team_name}_Top',
-            'jng': f'{blue_team_name}_Rừng',
-            'mid': f'{blue_team_name}_Mid',
-            'bot': f'{blue_team_name}_AD',
-            'sup': f'{blue_team_name}_SP'
-        })
-    if red_roster is None:
-        red_roster = TEAM_PRESETS.get(r_key, {
-            'top': f'{red_team_name}_Top',
-            'jng': f'{red_team_name}_Rừng',
-            'mid': f'{red_team_name}_Mid',
-            'bot': f'{red_team_name}_AD',
-            'sup': f'{red_team_name}_SP'
-        })
-
-    active_wishlist = []
-    if wishlist:
-        for w in wishlist:
-            norm_name = engine.pick_recommender._normalize_champion_name(w)
-            if norm_name:
-                active_wishlist.append(norm_name)
-
-    t1_side, t1_name, t1_roster, t1_color = "BLUE", blue_team_name, blue_roster, "🔷"
-    t2_side, t2_name, t2_roster, t2_color = "RED", red_team_name, red_roster, "🔴"
-    
-    is_user_t1 = (user_side.lower() == "blue")
-    is_user_t2 = (user_side.lower() == "red")
-    user_team_name = blue_team_name if is_user_t1 else red_team_name
-    user_color = "🔷" if is_user_t1 else "🔴"
-    user_side_label = "PHE XANH (FIRST PICK)" if is_user_t1 else "PHE ĐỎ (LAST PICK COUNTER)"
-
-    print("\n" + "=" * 95)
-    print(f"🏆 [ĐẤU GIẢI CHUYÊN NGHIỆP 2026] CẤM/CHỌN RIOT TOURNAMENT: {blue_team_name.upper()} vs {red_team_name.upper()}")
-    print(f"🎮 BẠN ĐANG ĐIỀU KHIỂN: {user_color} {user_team_name.upper()} ({user_side_label})")
-    if active_wishlist:
-        print(f"🎯 ĐỘI HÌNH / TƯỚNG DỰ KIẾN: {', '.join(active_wishlist).upper()} (Tự động kích hoạt Cấm Dọn Đường)")
-    print("=" * 95)
-    print(f"🔷 PHE XANH ({blue_team_name}): Top: {blue_roster['top']} | Jng: {blue_roster['jng']} | Mid: {blue_roster['mid']} | Bot: {blue_roster['bot']} | Sup: {blue_roster['sup']}")
-    print(f"🔴 PHE ĐỎ   ({red_team_name}): Top: {red_roster['top']} | Jng: {red_roster['jng']} | Mid: {red_roster['mid']} | Bot: {red_roster['bot']} | Sup: {red_roster['sup']}")
-    print("-" * 95)
-
-    all_banned = set()
-    t1_bans, t2_bans = [], []
-    t1_picks, t2_picks = {}, {}
-    t1_available_lanes = ['top', 'jungle', 'mid', 'bot', 'support']
-    t2_available_lanes = ['top', 'jungle', 'mid', 'bot', 'support']
-
-    def get_all_picked():
-        return set(t1_picks.values()).union(set(t2_picks.values()))
-
-    # =========================================================================
-    # GIAI ĐOẠN 1: CẤM 1 (T1_Ban1 -> T2_Ban1 -> T1_Ban2 -> T2_Ban2 -> T1_Ban3 -> T2_Ban3)
-    # =========================================================================
-    print("\n" + "─" * 34 + " GIAI ĐOẠN 1: CẤM 1 (PHASE 1 BANS - 6 LƯỢT XEN KẼ) " + "─" * 34)
-    print(f"🎯 Thứ tự cấm 1: {t1_name} (1) -> {t2_name} (1) -> {t1_name} (2) -> {t2_name} (2) -> {t1_name} (3) -> {t2_name} (3)\n")
-
-    for ban_turn in range(1, 4):
-        # 1. LƯỢT CẤM CỦA T1 (BLUE SIDE)
-        cands_t1 = []
-        if active_wishlist:
-            for w_champ in active_wishlist:
-                enabling = engine.target_ban_engine.recommend_enabling_bans(w_champ, enemy_roster=t2_roster, top_k=4, already_banned=all_banned)
-                if enabling:
-                    cands_t1.extend(enabling)
-
-        team_bans_1 = engine.target_ban_engine.recommend_team_bans(t2_roster, top_k=6, ban_phase=1, already_banned=all_banned)
-        cands_t1.extend(team_bans_1)
-        valid_t1 = [c for c in cands_t1 if c['champion'] not in all_banned and c['champion'] not in active_wishlist]
-        
-        seen_1 = set()
-        dedup_valid_t1 = []
-        for c in valid_t1:
-            if c['champion'] not in seen_1:
-                seen_1.add(c['champion'])
-                dedup_valid_t1.append(c)
-        valid_t1 = sorted(dedup_valid_t1, key=lambda x: x.get('priority_pct', 80.0), reverse=True)[:5]
-
-        if interactive and is_user_t1:
-            print(f"\n👉 LƯỢT CỦA BẠN: {t1_color} [{t1_name.upper()}_BAN {ban_turn}]")
-            chosen_ban_1 = prompt_user_selection(valid_t1, f"Lượt Cấm {ban_turn} của {t1_name}", all_banned, get_all_picked(), engine, is_ban_mode=True, enemy_roster=t2_roster, ban_phase=1, user_team_name=t1_name)
-            p_score_1 = chosen_ban_1.get('priority_pct', 90.0)
-            print(f"🔒 {t1_color} [{t1_name.upper()} ĐÃ CẤM {ban_turn}]: 🚫 {chosen_ban_1['champion'].upper()} ({p_score_1}%) [{chosen_ban_1.get('reason','')}]")
-        else:
-            chosen_ban_1 = valid_t1[0] if valid_t1 else {'champion': 'Orianna', 'priority_pct': 98.0, 'reason': 'Tướng Meta bị cấm số 1 giải đấu'}
-            p_score_1 = chosen_ban_1.get('priority_pct', 90.0)
-            print(f"🤖 {t1_color} [{t1_name.upper()} ĐÃ CẤM {ban_turn}]: 🚫 {chosen_ban_1['champion'].upper()} ({p_score_1}%) [{chosen_ban_1.get('reason','')}]")
-
-        ban_champ_1 = chosen_ban_1['champion']
-        all_banned.add(ban_champ_1)
-        t1_bans.append(ban_champ_1)
-
-        # 2. LƯỢT CẤM CỦA T2 (RED SIDE)
-        cands_t2 = []
-        if is_user_t2 and active_wishlist:
-            for w_champ in active_wishlist:
-                enabling_t2 = engine.target_ban_engine.recommend_enabling_bans(w_champ, enemy_roster=t1_roster, top_k=4, already_banned=all_banned)
-                if enabling_t2:
-                    cands_t2.extend(enabling_t2)
-
-        team_bans_2 = engine.target_ban_engine.recommend_team_bans(t1_roster, top_k=6, ban_phase=1, already_banned=all_banned)
-        cands_t2.extend(team_bans_2)
-        valid_t2 = [c for c in cands_t2 if c['champion'] not in all_banned and c['champion'] not in active_wishlist]
-        
-        seen_2 = set()
-        dedup_valid_t2 = []
-        for c in valid_t2:
-            if c['champion'] not in seen_2:
-                seen_2.add(c['champion'])
-                dedup_valid_t2.append(c)
-        valid_t2 = sorted(dedup_valid_t2, key=lambda x: x.get('priority_pct', 80.0), reverse=True)[:5]
-
-        if interactive and is_user_t2:
-            print(f"\n👉 LƯỢT CỦA BẠN: {t2_color} [{t2_name.upper()}_BAN {ban_turn}]")
-            chosen_ban_2 = prompt_user_selection(valid_t2, f"Lượt Cấm {ban_turn} của {t2_name}", all_banned, get_all_picked(), engine, is_ban_mode=True, enemy_roster=t1_roster, ban_phase=1, user_team_name=t2_name)
-            p_score_2 = chosen_ban_2.get('priority_pct', 90.0)
-            print(f"🔒 {t2_color} [{t2_name.upper()} ĐÃ CẤM {ban_turn}]: 🚫 {chosen_ban_2['champion'].upper()} ({p_score_2}%) [{chosen_ban_2.get('reason','')}]")
-        else:
-            chosen_ban_2 = valid_t2[0] if valid_t2 else {'champion': 'Orianna', 'priority_pct': 98.0, 'reason': 'Tướng Meta bị cấm số 1 giải đấu'}
-            p_score_2 = chosen_ban_2.get('priority_pct', 90.0)
-            print(f"🤖 {t2_color} [{t2_name.upper()} ĐÃ CẤM {ban_turn}]: 🚫 {chosen_ban_2['champion'].upper()} ({p_score_2}%) [{chosen_ban_2.get('reason','')}]")
-
-        ban_champ_2 = chosen_ban_2['champion']
-        all_banned.add(ban_champ_2)
-        t2_bans.append(ban_champ_2)
-
-    # =========================================================================
-    # GIAI ĐOẠN 2: CHỌN 1 (T1(1) -> T2(2) -> T1(2) -> T2(1))
-    # =========================================================================
-    print("\n" + "─" * 38 + " GIAI ĐOẠN 2: CHỌN 1 (PHASE 1 PICKS) " + "─" * 38)
-
-    def assign_champion_to_lane(team_name: str, team_picks: dict, available_lanes: list, champ: str, desired_lane: str, team_roster: dict, engine: RecommenderEngine):
-        roster_k = LANE_TO_ROSTER_KEY.get(desired_lane, desired_lane)
-        
-        # 1. Trường hợp bình thường: Vị trí đó đang còn trống
-        if desired_lane in available_lanes:
-            available_lanes.remove(desired_lane)
-            team_picks[roster_k] = champ
-            return desired_lane
-
-        # 2. Trường hợp Vị trí đó đã có người (ví dụ: Camille đang ở Hỗ Trợ, nhưng bạn pick thêm Nautilus Hỗ Trợ)
-        current_occupant = team_picks.get(roster_k, None)
-        if current_occupant and available_lanes:
-            alt_lanes = engine.pick_recommender.get_candidate_lanes_for_champion(current_occupant, available_lanes)
-            if alt_lanes:
-                best_alt_lane = alt_lanes[0][0]
-                alt_picks = alt_lanes[0][1]
-                alt_roster_k = LANE_TO_ROSTER_KEY[best_alt_lane]
-                
-                # Thực hiện Flex Swap!
-                available_lanes.remove(best_alt_lane)
-                team_picks[alt_roster_k] = current_occupant
-                team_picks[roster_k] = champ
-                
-                print(f"\n🔄 [CHIẾN THUẬT ĐẢO ĐƯỜNG - FLEX SWAP THÀNH CÔNG!]")
-                print(f"   └─ Đẩy {current_occupant.upper()} từ {LANE_TITLE[desired_lane]} sang {LANE_TITLE[best_alt_lane]} cho {team_roster[alt_roster_k]} ({alt_picks} trận giải)")
-                print(f"   └─ Nhường vị trí {LANE_TITLE[desired_lane]} cho tân binh {champ.upper()} ({team_roster[roster_k]})!\n")
-                return desired_lane
-
-        # 3. Fallback: Nếu không swap được, lấy vị trí còn trống đầu tiên
-        fallback_lane = available_lanes.pop(0) if available_lanes else 'mid'
-        fb_k = LANE_TO_ROSTER_KEY.get(fallback_lane, fallback_lane)
-        team_picks[fb_k] = champ
-        return fallback_lane
-
-    def generate_pick_candidates(team_name, roster, picks_dict, available_lanes, enemy_picks_dict, is_t1_pick=False):
-        cands = []
-        # Ưu tiên Wishlist nếu có (áp dụng cho đội do người dùng điều khiển)
-        is_user_team = (team_name == user_team_name)
-        if is_user_team and active_wishlist:
-            for w_champ in active_wishlist:
-                if w_champ not in all_banned and w_champ not in get_all_picked():
-                    w_lane = engine.pick_recommender.metadata.get(w_champ, {}).get('lane', 'bot')
-                    if w_lane in available_lanes:
-                        cands.append({
-                            'champion': w_champ,
-                            'score': 0.99,
-                            'priority_pct': 99.0,
-                            'lane': w_lane,
-                            'lane_title': LANE_TITLE[w_lane],
-                            'badge': '🔥 WISHLIST CHỦ LỰC',
-                            'reason': 'Quân bài trọng tâm theo Đội hình Chiến thuật định sẵn (Wishlist)'
-                        })
-
-        # 1. Gợi ý cho các lane đang còn trống
-        for lane in available_lanes:
-            lane_player = roster.get(LANE_TO_ROSTER_KEY.get(lane, lane), None)
-            lane_cands = engine.pick_recommender.recommend_picks(
-                lane, 
-                list(picks_dict.values()), 
-                list(enemy_picks_dict.values()), 
-                already_banned=all_banned,
-                player_name=lane_player,
-                top_k=6
-            )
-            for lc in lane_cands:
-                if lc['champion'] not in all_banned and lc['champion'] not in get_all_picked():
-                    db_l = {'jungle': 'jng', 'support': 'sup'}.get(lane, lane)
-                    pos_picks = engine.pick_recommender.tournament_meta_picks.get((db_l, lc['champion']), {}).get('picks', 0)
-                    reason_text = lc['reasons'][0] if lc.get('reasons') else 'Chuẩn Meta Đấu Giải 2026'
-                    r_lower = reason_text.lower()
-
-                    if 'cặp bài trùng' in r_lower:
-                        badge_text = '🔥 COMBO SYNERGY'
-                    elif 'khắc chế' in r_lower or 'kèo trên' in r_lower:
-                        badge_text = '⚔️ COUNTER-PICK (META)' if pos_picks >= 40 else '⚔️ COUNTER TÌNH HUỐNG'
-                    elif 'tướng tủ' in r_lower:
-                        badge_text = '🔥 TƯỚNG TỦ TUYỂN THỦ'
-                    elif pos_picks >= 150:
-                        badge_text = '⭐ META TIER S+'
-                    elif pos_picks >= 40:
-                        badge_text = '⭐ META TIER S'
-                    elif pos_picks >= 15:
-                        badge_text = '✨ LỰA CHỌN CHIẾN THUẬT'
-                    else:
-                        badge_text = '📊 POCKET PICK / TÌNH HUỐNG'
-
-                    cands.append({
-                        'champion': lc['champion'],
-                        'score': lc['score'],
-                        'priority_pct': round(lc['score'] * 100, 1),
-                        'lane': lane,
-                        'lane_title': LANE_TITLE[lane],
-                        'badge': badge_text,
-                        'reason': reason_text
-                    })
-
-        # 2. Gợi ý FLEX SWAP nếu có tướng trong đội hình có thể chuyển sang lane trống khác
-        for occupied_role, occ_champ in picks_dict.items():
-            inv_lane = {'top': 'top', 'jng': 'jungle', 'mid': 'mid', 'bot': 'bot', 'sup': 'support'}.get(occupied_role, occupied_role)
-            alt_lanes = engine.pick_recommender.get_candidate_lanes_for_champion(occ_champ, available_lanes)
-            viable_alts = [al for al in alt_lanes if al[0] in available_lanes and al[1] >= 10]
-            if viable_alts:
-                best_alt = viable_alts[0][0]
-                swap_cands = engine.pick_recommender.recommend_picks(
-                    inv_lane,
-                    list(picks_dict.values()),
-                    list(enemy_picks_dict.values()),
-                    already_banned=all_banned,
-                    top_k=2
-                )
-                for sc in swap_cands:
-                    if sc['champion'] not in all_banned and sc['champion'] not in get_all_picked() and sc['champion'] != occ_champ:
-                        cands.append({
-                            'champion': sc['champion'],
-                            'score': sc['score'] + 0.04,
-                            'priority_pct': min(99.0, round((sc['score'] + 0.04) * 100, 1)),
-                            'lane': inv_lane,
-                            'lane_title': LANE_TITLE[inv_lane],
-                            'badge': f"🔄 FLEX SWAP (XOAY {occ_champ.upper()} -> {LANE_TITLE[best_alt].upper()})",
-                            'reason': f"Pick {sc['champion']} {LANE_TITLE[inv_lane]} để đẩy {occ_champ} sang {LANE_TITLE[best_alt]} né kèo counter đối thủ!"
-                        })
-
-        # Sắp xếp và lấy top 5 lựa chọn đa dạng theo vị trí
-        unique_cands = []
-        seen_c = set()
-        
-        # 1. Đảm bảo mỗi lane còn trống có đại diện số 1
-        for lane in available_lanes:
-            lane_items = [c for c in sorted(cands, key=lambda x: x['priority_pct'], reverse=True) if c.get('lane') == lane]
-            if lane_items and lane_items[0]['champion'] not in seen_c:
-                seen_c.add(lane_items[0]['champion'])
-                unique_cands.append(lane_items[0])
-
-        # 2. Bổ sung các lựa chọn có điểm cao nhất còn lại
-        for c in sorted(cands, key=lambda x: x['priority_pct'], reverse=True):
-            if c['champion'] not in seen_c:
-                seen_c.add(c['champion'])
-                unique_cands.append(c)
-
-        return sorted(unique_cands[:7], key=lambda x: x['priority_pct'], reverse=True)
-
-    # 1. T1 Pick 1 (FIRST PICK)
-    cands_p1 = generate_pick_candidates(t1_name, t1_roster, t1_picks, t1_available_lanes, t2_picks, is_t1_pick=True)
-    if interactive and is_user_t1:
-        print(f"\n👉 LƯỢT CỦA BẠN: {t1_color} [{t1_name.upper()} 1 - FIRST PICK]")
-        chosen_p1 = prompt_user_selection(cands_p1, f"Lựa chọn mở đầu (First Pick) cho {t1_name}", all_banned, get_all_picked(), engine, is_ban_mode=False, enemy_roster=t2_roster, my_picks=t1_picks, enemy_picks=t2_picks, available_lanes=t1_available_lanes, team_roster=t1_roster, user_team_name=t1_name)
-        p1_prefix = f"🔒 {t1_color}"
-    else:
-        chosen_p1 = cands_p1[0]
-        p1_prefix = f"🤖 {t1_color}"
-    p1_champ = chosen_p1['champion']
-    p1_desired_lane = chosen_p1.get('lane', engine.pick_recommender.metadata.get(p1_champ, {}).get('lane', 'mid'))
-    p1_actual_lane = assign_champion_to_lane(t1_name, t1_picks, t1_available_lanes, p1_champ, p1_desired_lane, t1_roster, engine)
-    if p1_champ in active_wishlist:
-        active_wishlist.remove(p1_champ)
-    print(f"{p1_prefix} [{t1_name} FIRST PICK]: ⭐ {p1_champ.upper()} ({LANE_TITLE[p1_actual_lane]} - {t1_roster[LANE_TO_ROSTER_KEY[p1_actual_lane]]}) [{chosen_p1.get('reason','')}]")
-
-    # 2. T2 Pick 1 & 2
-    for r_turn in [1, 2]:
-        cands_r = generate_pick_candidates(t2_name, t2_roster, t2_picks, t2_available_lanes, t1_picks, is_t1_pick=False)
-        if interactive and is_user_t2:
-            print(f"\n👉 LƯỢT CỦA BẠN: {t2_color} [{t2_name.upper()} PICK {r_turn}]")
-            chosen_r = prompt_user_selection(cands_r, f"Lượt chọn thứ {r_turn} của {t2_name}", all_banned, get_all_picked(), engine, is_ban_mode=False, enemy_roster=t1_roster, my_picks=t2_picks, enemy_picks=t1_picks, available_lanes=t2_available_lanes, team_roster=t2_roster, user_team_name=t2_name)
-            r_prefix = f"🔒 {t2_color}"
-        else:
-            chosen_r = cands_r[0]
-            r_prefix = f"🤖 {t2_color}"
-        r_champ = chosen_r['champion']
-        r_desired_lane = chosen_r.get('lane', engine.pick_recommender.metadata.get(r_champ, {}).get('lane', 'top'))
-        r_actual_lane = assign_champion_to_lane(t2_name, t2_picks, t2_available_lanes, r_champ, r_desired_lane, t2_roster, engine)
-        if r_champ in active_wishlist:
-            active_wishlist.remove(r_champ)
-        print(f"{r_prefix} [{t2_name} PICK {r_turn}]: ⭐ {r_champ.upper()} ({LANE_TITLE[r_actual_lane]} - {t2_roster[LANE_TO_ROSTER_KEY[r_actual_lane]]}) [{chosen_r.get('reason','')}]")
-
-    # 3. T1 Pick 2 & 3
-    for b_turn in [2, 3]:
-        cands_b = generate_pick_candidates(t1_name, t1_roster, t1_picks, t1_available_lanes, t2_picks, is_t1_pick=True)
-        if interactive and is_user_t1:
-            print(f"\n👉 LƯỢT CỦA BẠN: {t1_color} [{t1_name.upper()} PICK {b_turn}]")
-            chosen_b = prompt_user_selection(cands_b, f"Lượt chọn thứ {b_turn} của {t1_name}", all_banned, get_all_picked(), engine, is_ban_mode=False, enemy_roster=t2_roster, my_picks=t1_picks, enemy_picks=t2_picks, available_lanes=t1_available_lanes, team_roster=t1_roster, user_team_name=t1_name)
-            b_prefix = f"🔒 {t1_color}"
-        else:
-            chosen_b = cands_b[0]
-            b_prefix = f"🤖 {t1_color}"
-        b_champ = chosen_b['champion']
-        b_desired_lane = chosen_b.get('lane', engine.pick_recommender.metadata.get(b_champ, {}).get('lane', 'bot'))
-        b_actual_lane = assign_champion_to_lane(t1_name, t1_picks, t1_available_lanes, b_champ, b_desired_lane, t1_roster, engine)
-        if b_champ in active_wishlist:
-            active_wishlist.remove(b_champ)
-        print(f"{b_prefix} [{t1_name} PICK {b_turn}]: ⭐ {b_champ.upper()} ({LANE_TITLE[b_actual_lane]} - {t1_roster[LANE_TO_ROSTER_KEY[b_actual_lane]]}) [{chosen_b.get('reason','')}]")
-
-    # 4. T2 Pick 3
-    cands_r3 = generate_pick_candidates(t2_name, t2_roster, t2_picks, t2_available_lanes, t1_picks, is_t1_pick=False)
-    if interactive and is_user_t2:
-        print(f"\n👉 LƯỢT CỦA BẠN: {t2_color} [{t2_name.upper()} PICK 3]")
-        chosen_r3 = prompt_user_selection(cands_r3, f"Lượt chọn thứ 3 của {t2_name}", all_banned, get_all_picked(), engine, is_ban_mode=False, enemy_roster=t1_roster, my_picks=t2_picks, enemy_picks=t1_picks, available_lanes=t2_available_lanes, team_roster=t2_roster, user_team_name=t2_name)
-        r3_prefix = f"🔒 {t2_color}"
-    else:
-        chosen_r3 = cands_r3[0]
-        r3_prefix = f"🤖 {t2_color}"
-    r3_champ = chosen_r3['champion']
-    r3_desired_lane = chosen_r3.get('lane', engine.pick_recommender.metadata.get(r3_champ, {}).get('lane', 'mid'))
-    r3_actual_lane = assign_champion_to_lane(t2_name, t2_picks, t2_available_lanes, r3_champ, r3_desired_lane, t2_roster, engine)
-    if r3_champ in active_wishlist:
-        active_wishlist.remove(r3_champ)
-    print(f"{r3_prefix} [{t2_name} PICK 3]: ⭐ {r3_champ.upper()} ({LANE_TITLE[r3_actual_lane]} - {t2_roster[LANE_TO_ROSTER_KEY[r3_actual_lane]]}) [{chosen_r3.get('reason','')}]")
-
-    # =========================================================================
-    # GIAI ĐOẠN 3: CẤM 2 (T2_Ban4 -> T1_Ban4 -> T1_Ban5 -> T2_Ban5)
-    # =========================================================================
-    print("\n" + "─" * 34 + " GIAI ĐOẠN 3: CẤM 2 (PHASE 2 BANS - 4 LƯỢT) " + "─" * 34)
-    print(f"🎯 Thể thức Cấm 2: {t2_name} cấm 4 -> {t1_name} cấm 4 & 5 -> {t2_name} cấm 5\n")
-
-    # 1. T2 Ban 4
-    t1_rem_l1 = LANE_TO_ROSTER_KEY[t1_available_lanes[0]] if t1_available_lanes else 'top'
-    cands_p2_r4 = [c for c in engine.target_ban_engine.recommend_target_bans(t1_roster[t1_rem_l1], top_k=6, ban_phase=2) if c['champion'] not in all_banned and c['champion'] not in get_all_picked()]
-    for c in cands_p2_r4:
-        c['reason'] = f"Chặn bài tủ còn lại của {t1_roster[t1_rem_l1]} ({c.get('tournament_stats','')})"
-        c['priority_pct'] = round(c['threat_score'] * 100, 1)
-
-    if interactive and is_user_t2:
-        print(f"\n👉 LƯỢT CỦA BẠN: {t2_color} [{t2_name.upper()}_BAN 4]")
-        chosen_r4_b = prompt_user_selection(cands_p2_r4[:5], f"Lượt Cấm 4 của {t2_name}", all_banned, get_all_picked(), engine, is_ban_mode=True, enemy_roster=t1_roster, ban_phase=2, user_team_name=t2_name)
-        ban_r4 = chosen_r4_b['champion']
-        print(f"🔒 {t2_color} [{t2_name.upper()} ĐÃ CẤM 4]: 🚫 {ban_r4.upper()} ({chosen_r4_b.get('priority_pct', 90.0)}%) [{chosen_r4_b.get('reason','')}]")
-    else:
-        ban_r4 = cands_p2_r4[0]['champion'] if cands_p2_r4 else 'Poppy'
-        print(f"🤖 {t2_color} [{t2_name.upper()}_BAN 4]: 🚫 {ban_r4.upper()} (Target vào {t1_roster[t1_rem_l1]})")
-    all_banned.add(ban_r4)
-    t2_bans.append(ban_r4)
-
-    # 2. T1 Ban 4 & 5
-    for b_idx, l_idx in [(4, 0), (5, -1)]:
-        t2_rem_l = LANE_TO_ROSTER_KEY[t2_available_lanes[l_idx]] if t2_available_lanes else 'top'
-        cands_p2_b = [c for c in engine.target_ban_engine.recommend_target_bans(t2_roster[t2_rem_l], top_k=6, ban_phase=2) if c['champion'] not in all_banned and c['champion'] not in get_all_picked()]
-        for c in cands_p2_b:
-            c['reason'] = f"Chặn bài tủ còn lại của {t2_roster[t2_rem_l]} ({c.get('tournament_stats','')})"
-            c['priority_pct'] = round(c['threat_score'] * 100, 1)
-
-        if interactive and is_user_t1:
-            print(f"\n👉 LƯỢT CỦA BẠN: {t1_color} [{t1_name.upper()}_BAN {b_idx}]")
-            chosen_b_p2 = prompt_user_selection(cands_p2_b[:5], f"Lượt Cấm {b_idx} của {t1_name}", all_banned, get_all_picked(), engine, is_ban_mode=True, enemy_roster=t2_roster, ban_phase=2, user_team_name=t1_name)
-            ban_b_val = chosen_b_p2['champion']
-            print(f"🔒 {t1_color} [{t1_name.upper()} ĐÃ CẤM {b_idx}]: 🚫 {ban_b_val.upper()} ({chosen_b_p2.get('priority_pct',90.0)}%) [{chosen_b_p2.get('reason','')}]")
-        else:
-            chosen_b_p2 = cands_p2_b[0] if cands_p2_b else {'champion': 'Nautilus', 'priority_pct': 85.0}
-            ban_b_val = chosen_b_p2['champion']
-            print(f"🤖 {t1_color} [{t1_name.upper()} ĐÃ CẤM {b_idx}]: 🚫 {ban_b_val.upper()} (Target vào {t2_roster[t2_rem_l]})")
-        all_banned.add(ban_b_val)
-        t1_bans.append(ban_b_val)
-
-    # 3. T2 Ban 5
-    t1_rem_l2 = LANE_TO_ROSTER_KEY[t1_available_lanes[-1]] if t1_available_lanes else 'top'
-    cands_p2_r5 = [c for c in engine.target_ban_engine.recommend_target_bans(t1_roster[t1_rem_l2], top_k=6, ban_phase=2) if c['champion'] not in all_banned and c['champion'] not in get_all_picked()]
-    for c in cands_p2_r5:
-        c['reason'] = f"Chặn bài tủ còn lại của {t1_roster[t1_rem_l2]} ({c.get('tournament_stats','')})"
-        c['priority_pct'] = round(c['threat_score'] * 100, 1)
-
-    if interactive and is_user_t2:
-        print(f"\n👉 LƯỢT CỦA BẠN: {t2_color} [{t2_name.upper()}_BAN 5]")
-        chosen_r5_b = prompt_user_selection(cands_p2_r5[:5], f"Lượt Cấm 5 của {t2_name}", all_banned, get_all_picked(), engine, is_ban_mode=True, enemy_roster=t1_roster, ban_phase=2, user_team_name=t2_name)
-        ban_r5 = chosen_r5_b['champion']
-        print(f"🔒 {t2_color} [{t2_name.upper()} ĐÃ CẤM 5]: 🚫 {ban_r5.upper()} ({chosen_r5_b.get('priority_pct', 90.0)}%) [{chosen_r5_b.get('reason','')}]")
-    else:
-        ban_r5 = cands_p2_r5[0]['champion'] if cands_p2_r5 else 'Nautilus'
-        print(f"🤖 {t2_color} [{t2_name.upper()}_BAN 5]: 🚫 {ban_r5.upper()} (Target vào {t1_roster[t1_rem_l2]})")
-    all_banned.add(ban_r5)
-    t2_bans.append(ban_r5)
-
-    # =========================================================================
-    # GIAI ĐOẠN 4: CHỌN 2 (T2(1) -> T1(2) -> T2(1 - LAST PICK))
-    # =========================================================================
-    print("\n" + "─" * 38 + " GIAI ĐOẠN 4: CHỌN 2 (PHASE 2 PICKS) " + "─" * 38)
-
-    # 1. T2 Pick 4
-    cands_r4 = generate_pick_candidates(t2_name, t2_roster, t2_picks, t2_available_lanes, t1_picks, is_t1_pick=False)
-    if interactive and is_user_t2:
-        print(f"\n👉 LƯỢT CỦA BẠN: {t2_color} [{t2_name.upper()} PICK 4]")
-        chosen_r4 = prompt_user_selection(cands_r4, f"Lượt chọn thứ 4 của {t2_name}", all_banned, get_all_picked(), engine, is_ban_mode=False, enemy_roster=t1_roster, my_picks=t2_picks, enemy_picks=t1_picks, available_lanes=t2_available_lanes, team_roster=t2_roster, user_team_name=t2_name)
-        r4_prefix = f"🔒 {t2_color}"
-    else:
-        chosen_r4 = cands_r4[0]
-        r4_prefix = f"🤖 {t2_color}"
-    r4_champ = chosen_r4['champion']
-    r4_desired_lane = chosen_r4.get('lane', t2_available_lanes[0])
-    r4_actual_lane = assign_champion_to_lane(t2_name, t2_picks, t2_available_lanes, r4_champ, r4_desired_lane, t2_roster, engine)
-    print(f"{r4_prefix} [{t2_name} PICK 4]: ⭐ {r4_champ.upper()} ({LANE_TITLE[r4_actual_lane]} - {t2_roster[LANE_TO_ROSTER_KEY[r4_actual_lane]]}) [{chosen_r4.get('reason','')}]")
-
-    # 2. T1 Pick 4 & 5
-    for p_idx in [4, 5]:
-        cands_p = generate_pick_candidates(t1_name, t1_roster, t1_picks, t1_available_lanes, t2_picks, is_t1_pick=True)
-        if interactive and is_user_t1:
-            print(f"\n👉 LƯỢT CỦA BẠN: {t1_color} [{t1_name.upper()} PICK {p_idx}]")
-            chosen_p = prompt_user_selection(cands_p, f"Lượt chọn thứ {p_idx} hoàn thiện đội hình {t1_name}", all_banned, get_all_picked(), engine, is_ban_mode=False, enemy_roster=t2_roster, my_picks=t1_picks, enemy_picks=t2_picks, available_lanes=t1_available_lanes, team_roster=t1_roster, user_team_name=t1_name)
-            p_prefix = f"🔒 {t1_color}"
-        else:
-            chosen_p = cands_p[0]
-            p_prefix = f"🤖 {t1_color}"
-        p_champ = chosen_p['champion']
-        p_desired_lane = chosen_p.get('lane', t1_available_lanes[0])
-        p_actual_lane = assign_champion_to_lane(t1_name, t1_picks, t1_available_lanes, p_champ, p_desired_lane, t1_roster, engine)
-        print(f"{p_prefix} [{t1_name} PICK {p_idx}]: ⭐ {p_champ.upper()} ({LANE_TITLE[p_actual_lane]} - {t1_roster[LANE_TO_ROSTER_KEY[p_actual_lane]]}) [{chosen_p.get('reason','')}]")
-
-    # 3. T2 Pick 5 (LAST PICK)
-    cands_r5 = generate_pick_candidates(t2_name, t2_roster, t2_picks, t2_available_lanes, t1_picks, is_t1_pick=False)
-    if interactive and is_user_t2:
-        print(f"\n👉 LƯỢT CỦA BẠN: {t2_color} [{t2_name.upper()} LAST PICK 5 (COUNTER ĐỐI THỦ)]")
-        chosen_r5 = prompt_user_selection(cands_r5, f"Lựa chọn then chốt cuối cùng (Counter Last Pick) cho {t2_name}", all_banned, get_all_picked(), engine, is_ban_mode=False, enemy_roster=t1_roster, my_picks=t2_picks, enemy_picks=t1_picks, available_lanes=t2_available_lanes, team_roster=t2_roster, user_team_name=t2_name)
-        r5_prefix = f"🔒 {t2_color}"
-    else:
-        chosen_r5 = cands_r5[0]
-        r5_prefix = f"🤖 {t2_color}"
-    r5_champ = chosen_r5['champion']
-    r5_desired_lane = chosen_r5.get('lane', t2_available_lanes[0])
-    r5_actual_lane = assign_champion_to_lane(t2_name, t2_picks, t2_available_lanes, r5_champ, r5_desired_lane, t2_roster, engine)
-    print(f"{r5_prefix} [{t2_name} LAST PICK 5]: ⭐ {r5_champ.upper()} ({LANE_TITLE[r5_actual_lane]} - {t2_roster[LANE_TO_ROSTER_KEY[r5_actual_lane]]}) [{chosen_r5.get('reason','')}]")
-
-    blue_picks = t1_picks if first_side.lower() == "blue" else t2_picks
-    red_picks = t2_picks if first_side.lower() == "blue" else t1_picks
-
-    _display_summary_and_win_conditions(blue_team_name, red_team_name, blue_picks, red_picks, blue_roster, red_roster, engine)
+def run_pro_tournament_draft_simulation(blue_team_name='T1',red_team_name='GEN.G',
+                                        blue_roster=None,red_roster=None,user_side='blue',
+                                        first_side='blue',wishlist=None,interactive=True,region='ALL',
+                                        input_fn=input,save_session=None,engine=None,advisor=None,
+                                        meta_policy=None,max_data_age_days=None,used_champions=None,opponent_model_path=None,
+                                        allow_statistical_auto=False,ban_strategy='legacy'):
+    if user_side not in ['blue','red']:raise ValueError('Phe điều khiển phải là blue hoặc red')
+    print('Đang nạp lịch sử trận đấu và hồ sơ tướng...',flush=True)
+    engine=engine or RecommenderEngine()
+    advisor=advisor or DraftAdvisor(db_path=engine.pick_recommender.db_path,meta_policy=meta_policy)
+    state=DraftState(first_side=first_side,used_champions=[engine.pick_recommender._normalize_champion_name(c) for c in used_champions or []])
+    names={'blue':blue_team_name,'red':red_team_name}
+    reg=normalize_region_code(region)
+    snapshot,_,_=advisor.context(reg)
+    scope=snapshot.metadata()
+    predictor=None
+    if opponent_model_path:
+        from opponent_model import OpponentModel,public_simulation_state
+        predictor=OpponentModel.load(opponent_model_path)
+        if predictor.evaluation['region'].upper()!=reg:raise ValueError('Opponent model region does not match this session')
+    if max_data_age_days is not None and scope['staleness_days']>max_data_age_days:
+        raise ValueError(f"Dữ liệu {reg} cũ {scope['staleness_days']} ngày, vượt giới hạn {max_data_age_days}; cần cập nhật dữ liệu.")
+    rosters={};roster_sources={}
+    for side,explicit in [('blue',blue_roster),('red',red_roster)]:
+        observed=snapshot.roster(names[side]) if not explicit else None
+        rosters[side]=explicit or (observed['players'] if observed else roster_for(names[side]))
+        roster_sources[side]=observed or {'kind':'explicit_user_roster' if explicit else 'demo_roster_no_recent_observation'}
+    if ban_strategy not in ['legacy','contextual']:raise ValueError('Invalid ban strategy')
+    ban_planner=None
+    if ban_strategy!='legacy':
+        from ban_planner import BanPlanner
+        ban_planner=BanPlanner(advisor,rosters,names,reg)
+    preferred=[engine.pick_recommender._normalize_champion_name(c) for c in wishlist or []]
+    auto=not interactive
+    manual_review=None
+    print('GIẢ LẬP BAN/PICK MỘT VÁN — LỊCH SỬ + CONTENT-BASED')
+    print(f"Bạn: {user_side}; phe chọn trước: {first_side}; dữ liệu: {reg}")
+    print(f"SNAPSHOT LỊCH SỬ: patch dataset {scope['dataset_patch']}, dữ liệu đến {scope['data_through']}, cũ {scope['staleness_days']} ngày so với mốc yêu cầu")
+    print(f"{scope['history_games']} trận trong cửa sổ {scope['lookback_days']} ngày, {scope['patch_games']} trận patch đích; không gọi là live meta.")
+    for side in ['blue','red']:
+        print(f"Lineup {names[side]} ({roster_sources[side]['kind']}): "+', '.join(f'{r}={p}' for r,p in rosters[side].items()))
+    print('Ưu tiên presence/nhịp draft gần đây; bể tướng, đối đầu và cosine là tín hiệu hỗ trợ. Điểm không phải xác suất.')
+    while not state.complete:
+        side,action=state.schedule[len(state.history)]
+        enemy='red' if side=='blue' else 'blue'
+        forecast=None
+        if predictor:
+            forecast={'state':public_simulation_state(state,names,scope,reg),
+                      'trained_through':predictor.train_through}
+            forecast['predictions']=predictor.rank(forecast['state'])
+            print('Dự đoán hành động kế tiếp (không phải lựa chọn tối ưu): '+', '.join(r['champion'] for r in forecast['predictions']))
+        seeds=preferred if side==user_side else []
+        def refresh(role=None):
+            if action=='pick':return pick_candidates(advisor,state,side,rosters[side],reg,seeds,role)
+            if ban_planner:return ban_planner.recommend(state,side,mode=ban_strategy,protected=seeds,target_role=role)
+            enemy_slot=('F' if enemy==state.first_side else 'S')+str(len(state.picks[enemy])+1)
+            return advisor.recommend_bans(rosters[enemy],state.picks[enemy],state.picks[side],state.unavailable,
+                                           reg,top_k=5,protected=seeds,target_role=role,enemy_next_slot=enemy_slot)
+        rows=refresh()
+        show_board(state,names)
+        print(f"\nLƯỢT {len(state.history)+1}/20: {side.upper()} {names[side]} — {'CẤM' if action=='ban' else 'CHỌN'}")
+        if not auto and side==user_side:
+            show_candidates(rows,action)
+            chosen,mode=choose_interactively(rows,refresh,state,side,action,engine,advisor,reg,input_fn)
+            if mode=='quit':break
+            if mode=='auto':auto=True
+        else:chosen=rows[0] if rows else None
+        if chosen is None:
+            print('Dừng: không có lựa chọn được dữ liệu hỗ trợ. Hãy chạy lại với khu vực rộng hơn hoặc chọn thủ công.');break
+        if action=='pick' and (auto or side!=user_side) and needs_tactical_review(chosen,state.picks[enemy],allow_statistical_auto):
+            manual_review={'turn':len(state.history)+1,'side':side,'role':chosen['role'],
+                           'candidate':chosen['champion'],'reason':'no_supported_enemy_context_with_full_enemy_team',
+                           'alternatives':chosen.get('alternatives_same_role',[]),
+                           'counter_status':'not_established','enemy_revealed':dict(state.picks[enemy])}
+            print('DỪNG TỰ CHỌN: đội địch đã lộ đủ nhưng không có đối đầu đủ mẫu cho ứng viên dẫn đầu. Cần chọn tay/xem lại chiến thuật; không xác nhận counter.')
+            print('Ứng viên điểm cao:',chosen['champion'],'| phương án khác:',', '.join(r['champion'] for r in manual_review['alternatives']))
+            break
+        state.apply(side,action,chosen['champion'],chosen.get('role'))
+        if forecast:state.history[-1]['next_action_forecast']=forecast
+        state.history[-1]['advice']={k:chosen[k] for k in ['score_kind','ranking_score','score_components','score_formula','base_priority','composition_lift','evidence_status','enemy_context_evidence','enemy_context_coverage','mechanical_counter_status','selection_basis','review_required','alternatives_same_role','denial_loss','ban_priority','cosine_similarity','games','historical','matchup','matchup_candidates','composition_evidence','synergies','player_history','reasons','reason','draft_slot','meta_scope','contextual_score','pool_impact','enemy_pool_loss','own_pool_loss','own_access_cost','own_next_pick_before_enemy','fearless_locked_count','contextual_trace','contextual_policy'] if k in chosen}
+        print(f"ĐÃ {'CẤM' if action=='ban' else 'CHỌN'}: {chosen['champion']}"+(f" [{chosen['role']}]" if action=='pick' else ''))
+        if action=='ban' and chosen.get('reason'):print('  Căn cứ: '+chosen['reason'])
+        elif chosen.get('reasons'):print('  Căn cứ: '+chosen['reasons'][1])
+    show_board(state,names)
+    composition_summary={}
+    for side,picks in state.picks.items():
+        pairs=[snapshot.pair_evidence(r1,picks[r1],r2,picks[r2],advisor.policy.min_games)
+               for r1,r2 in combinations(ROLES,2) if r1 in picks and r2 in picks]
+        composition_summary[side]={'pairs':pairs,'observed_pairs':sum(e['status']=='observed_pair' for e in pairs),
+                                   'sparse_pairs':sum(e['status']=='sparse_pair' for e in pairs),
+                                   'unobserved_pairs':sum(e['status']=='unobserved_pair' for e in pairs),
+                                   'insufficient_anchor_pairs':sum(e['status']=='insufficient_anchor_history' for e in pairs)}
+        print(f"Căn cứ cặp {names[side]}: "+', '.join(f"{key}={value}" for key,value in composition_summary[side].items() if key!='pairs'))
+    if state.complete:
+        _display_summary_and_win_conditions(names['blue'],names['red'],state.picks['blue'],state.picks['red'],rosters['blue'],rosters['red'],engine,reg,
+                                           show_prediction=advisor.meta_policy.as_of is None)
+    else:print('Phiên dừng trước khi hoàn thành; chưa tính dự báo đội hình cuối.')
+    result={**state.as_dict(),'teams':names,'rosters':rosters,'region':reg,'policy':advisor.policy.weights,
+            'manual_review':manual_review,'allow_statistical_auto':allow_statistical_auto,
+            'candidate_min_games':advisor.policy.candidate_min_games,'evidence_min_games':advisor.policy.min_games,
+            'objective':'patch_aware_presence_draft_order_role_pair_context','causal_uplift':None,
+            'composition_summary':composition_summary,
+            'ban_strategy':ban_strategy,
+            'meta_scope':scope,'roster_sources':roster_sources,'ban_policy':{'presence':.6,'enemy_priority':.25,'gap':.15}}
+    if save_session:
+        path=Path(save_session)
+        path.parent.mkdir(parents=True,exist_ok=True)
+        path.write_text(json.dumps(result,ensure_ascii=False,indent=2),encoding='utf-8')
+        print('Đã lưu phiên:',path)
+    return result
 
 
-# =========================================================================
-# HELPER: HIỂN THỊ TỔNG KẾT, THẺ CHIẾN THUẬT & DỰ ĐOÁN TỶ LỆ THẮNG
-# =========================================================================
-def _display_summary_and_win_conditions(blue_team_name, red_team_name, blue_picks, red_picks, blue_roster, red_roster, engine):
+def _display_summary_and_win_conditions(blue_team_name, red_team_name, blue_picks, red_picks, blue_roster, red_roster, engine, reg_code='ALL',show_prediction=True):
     blue_final = [blue_picks['top'], blue_picks['jng'], blue_picks['mid'], blue_picks['bot'], blue_picks['sup']]
     red_final = [red_picks['top'], red_picks['jng'], red_picks['mid'], red_picks['bot'], red_picks['sup']]
 
@@ -838,6 +341,7 @@ def _display_summary_and_win_conditions(blue_team_name, red_team_name, blue_pick
     print(f"   • BOT: {red_picks['bot']} ({red_roster['bot']})")
     print(f"   • SUP: {red_picks['sup']} ({red_roster['sup']})")
 
+    print('Radar và thẻ chiến thuật dùng thuộc tính/quy tắc chuyên gia; chưa được xác nhận như điều kiện thắng nhân quả.')
     # 1. Thẻ Điều Kiện Thắng Phe Xanh
     blue_win_res = engine.win_condition_engine.analyze_team_win_condition(blue_final)
     print("\n" + "─" * 38 + f" THẺ CHIẾN THUẬT: {blue_team_name.upper()} (BLUE) " + "─" * 38)
@@ -862,89 +366,72 @@ def _display_summary_and_win_conditions(blue_team_name, red_team_name, blue_pick
     print(f"✅ Điều kiện thắng: {r_card['win_condition']}")
     print(f"❌ Cần tránh: {r_card['critical_lose_condition']}")
 
-    # 3. Dự Đoán Xác Suất Thắng Thua
-    print("\n" + "─" * 35 + " DỰ ĐOÁN XÁC SUẤT THẮNG THUA (PHÚT 0) " + "─" * 35)
-    blue_early = blue_win_res['radar_scores']['Early_Power']
-    red_early = red_win_res['radar_scores']['Early_Power']
-    blue_late = blue_win_res['radar_scores']['Scaling']
-    red_late = red_win_res['radar_scores']['Scaling']
-
-    blue_prob = 0.525 + (blue_early - red_early) * 0.15 + (blue_late - red_late) * 0.10
-    blue_prob = round(float(np.clip(blue_prob, 0.35, 0.68)), 3)
-    red_prob = round(1.0 - blue_prob, 3)
-
-    print(f"🔷 TỶ LỆ THẮNG DỰ BÁO {blue_team_name.upper()} (BLUE): {round(blue_prob * 100, 1)}%")
-    print(f"🔴 TỶ LỆ THẮNG DỰ BÁO {red_team_name.upper()} (RED) : {round(red_prob * 100, 1)}%")
-    print("-" * 95)
-    if blue_prob > red_prob:
-        print(f"🏆 ĐÁNH GIÁ TỔNG QUAN: {blue_team_name} có lợi thế cấm chọn tốt hơn (+{round((blue_prob - red_prob)*100, 1)}%), kiểm soát nhịp độ trận đấu.")
-    else:
-        print(f"🏆 ĐÁNH GIÁ TỔNG QUAN: {red_team_name} có lợi thế tương tác đội hình tốt hơn (+{round((red_prob - blue_prob)*100, 1)}%).")
+    # Model probabilities must come from the validated model, never radar arithmetic.
+    if not show_prediction:
+        print('Phiên có mốc lịch sử: bỏ dự báo từ model lưu sẵn vì chưa bảo đảm model được fit trước mốc này.')
+        return
+    from draft_model import LolDraftPredictionSystem
+    try:
+        prediction=LolDraftPredictionSystem.load_model().predict_draft(blue_picks,red_picks,region=reg_code)
+        print("\nXÁC SUẤT ƯỚC LƯỢNG TỪ MÔ HÌNH (không phải mức tăng thắng do draft):")
+        print(f"Blue: {prediction['blue_win_probability_pct']}% | Red: {prediction['red_win_probability_pct']}%")
+        print(f"Model: {prediction['model_used']}")
+    except (FileNotFoundError,ValueError) as exc:
+        print(f"Chưa có dự báo hợp lệ: {exc}")
 
     print("=" * 95 + "\n")
 
 
-if __name__ == '__main__':
-    parser = argparse.ArgumentParser(description="Full Match Ban/Pick Interactive Simulation (Pro Play 2026)")
-    parser.add_argument('--wishlist', type=str, default="", help="Tướng hoặc đội hình chiến thuật dự kiến (VD: 'Orianna' hoặc 'Zeri,Lulu')")
-    parser.add_argument('--blue-team', type=str, default="", help="Tên Phe Xanh")
-    parser.add_argument('--red-team', type=str, default="", help="Tên Phe Đỏ")
-    parser.add_argument('--user-side', type=str, default="blue", choices=["blue", "red"], help="Phe bạn điều khiển ('blue' hoặc 'red')")
-    parser.add_argument('--auto', action='store_true', help="Chạy chế độ tự động (không chờ phím bấm)")
-    args = parser.parse_args()
+def main():
+    parser=argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--blue-team',default='')
+    parser.add_argument('--red-team',default='')
+    parser.add_argument('--user-side',choices=['blue','red'],default='blue')
+    parser.add_argument('--first-pick',choices=['blue','red'],default='blue')
+    parser.add_argument('--region',default='ALL')
+    parser.add_argument('--wishlist',default='')
+    parser.add_argument('--as-of',help='Mốc dữ liệu YYYY-MM-DD hoặc timestamp; không sử dụng trận sau mốc này')
+    parser.add_argument('--patch',help='Mã patch theo dataset, ví dụ 16.16; không tự suy ra patch không có dữ liệu')
+    parser.add_argument('--lookback-days',type=int,default=60)
+    parser.add_argument('--half-life-days',type=float,default=21)
+    parser.add_argument('--max-data-age-days',type=int,help='Từ chối chạy nếu snapshot quá cũ so với mốc yêu cầu')
+    parser.add_argument('--used-champions',default='',help='Các tướng đã dùng ván trước, không còn được cấm/chọn trong phiên này')
+    parser.add_argument('--opponent-model',type=Path,nargs='?',const=PROJECT_ROOT/'models/opponent_model.pkl',
+                        help='Dự đoán hành động tiếp theo bằng model đã lưu; không thay điểm chiến thuật')
+    parser.add_argument('--allow-statistical-auto',action='store_true',
+                        help='Cho phép demo tự chọn chỉ theo điểm thống kê dù thiếu căn cứ đối đầu toàn đội; không xác nhận counter')
+    parser.add_argument('--ban-strategy',choices=['legacy','contextual'],default='legacy')
+    mode=parser.add_mutually_exclusive_group()
+    mode.add_argument('--auto',action='store_true')
+    mode.add_argument('--interactive',action='store_true')
+    parser.add_argument('--save-session',type=Path)
+    args=parser.parse_args()
+    blue,red,side,region=args.blue_team,args.red_team,args.user_side,args.region
+    try:
+        if not blue and not red and not args.auto:
+            print('1. Bạn vs T1 (Blue) | 2. Bạn vs T1 (Red) | 3. T1 vs GEN.G | 4. BLG vs TES | 5. Tùy chỉnh')
+            choice=input('Chọn kịch bản [1]: ').strip() or '1'
+            if choice=='2':blue,red,side='T1','UNDERDOG','red'
+            elif choice=='3':blue,red='T1','GEN.G'
+            elif choice=='4':blue,red='BLG','TES'
+            elif choice=='5':
+                blue=input('Đội Blue [UNDERDOG]: ').strip() or 'UNDERDOG'
+                red=input('Đội Red [T1]: ').strip() or 'T1'
+                side=input('Bạn điều khiển blue/red [blue]: ').strip() or 'blue'
+            else:blue,red='UNDERDOG','T1'
+            region=input(f'Khu vực ALL/LCK/LPL/LCP/MSI/WLDS [{region}]: ').strip() or region
+        result=run_pro_tournament_draft_simulation(blue or 'T1',red or 'GEN.G',user_side=side,
+                                            first_side=args.first_pick,region=region,
+                                            wishlist=[c.strip() for c in args.wishlist.split(',') if c.strip()],
+                                            interactive=not args.auto,save_session=args.save_session,
+                                            meta_policy=MetaPolicy(args.as_of,args.patch,args.lookback_days,args.half_life_days),
+                                            max_data_age_days=args.max_data_age_days,
+                                            used_champions=[c.strip() for c in args.used_champions.split(',') if c.strip()],
+                                            opponent_model_path=args.opponent_model,
+                                            allow_statistical_auto=args.allow_statistical_auto,ban_strategy=args.ban_strategy)
+        if result.get('manual_review'):parser.exit(3,'Phiên chờ xem lại chiến thuật; chưa tự chốt lựa chọn thiếu căn cứ.\n')
+    except (EOFError,KeyboardInterrupt):print('\nĐã dừng phiên.')
+    except ValueError as exc:parser.exit(2,f'{exc}\n')
 
-    blue_team = args.blue_team
-    red_team = args.red_team
-    user_side = args.user_side
-    wishlist_list = [c.strip() for c in args.wishlist.split(',')] if args.wishlist else None
 
-    # Nếu không truyền tham số qua CLI và không phải chế độ auto -> hiển thị Menu chọn kịch bản
-    if not blue_team and not red_team and not args.auto:
-        print("\n" + "=" * 95)
-        print("🎮 CHỌN TRẬN ĐẤU MÔ PHỎNG CẤM / CHỌN TOURNAMENT DRAFT (LCK/WORLDS 2026):")
-        print("=" * 95)
-        print("  [1] 🌟 ĐỘI VÔ DANH (Bạn - Phe Xanh First Pick) vs T1 (Faker, Oner, Keria, Doran, Peyz)")
-        print("  [2] 🔴 ĐỘI VÔ DANH (Bạn - Phe Đỏ Counter Last Pick) vs T1 (Thách thức Quỷ Vương)")
-        print("  [3] ⚔️ T1 (Bạn - Phe Xanh) vs GEN.G (Chovy, Canyon, Ruler, Kiin, Lehends)")
-        print("  [4] 🇻🇳 GAM Esports (Bạn - Phe Xanh) vs T1 (Kiaya, Levi vs Faker, Oner)")
-        print("  [5] ⚙️ Tùy chỉnh đội tuyển & Phe thi đấu")
-        print("─" * 95)
-        
-        try:
-            choice = input("👉 Nhập số (1-5, Mặc định [1]): ").strip()
-        except EOFError:
-            choice = "1"
-
-        if choice == "2":
-            blue_team = "T1"
-            red_team = "ĐỘI VÔ DANH"
-            user_side = "red"
-        elif choice == "3":
-            blue_team = "T1"
-            red_team = "GEN.G"
-            user_side = "blue"
-        elif choice == "4":
-            blue_team = "GAM"
-            red_team = "T1"
-            user_side = "blue"
-        elif choice == "5":
-            blue_team = input("   Nhập tên Phe Xanh (VD: T1, BLG, ĐỘI VÔ DANH): ").strip() or "ĐỘI VÔ DANH"
-            red_team = input("   Nhập tên Phe Đỏ (VD: T1, GEN.G): ").strip() or "T1"
-            side_in = input("   Bạn điều khiển phe nào? (blue/red, mặc định blue): ").strip().lower()
-            user_side = "red" if side_in == "red" else "blue"
-        else: # Mặc định [1]
-            blue_team = "ĐỘI VÔ DANH"
-            red_team = "T1"
-            user_side = "blue"
-    else:
-        blue_team = blue_team or "T1"
-        red_team = red_team or "Gen.G"
-
-    run_pro_tournament_draft_simulation(
-        blue_team_name=blue_team,
-        red_team_name=red_team,
-        user_side=user_side,
-        first_side="blue",
-        wishlist=wishlist_list,
-        interactive=not args.auto
-    )
+if __name__=='__main__':main()

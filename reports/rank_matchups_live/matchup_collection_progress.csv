@@ -3,8 +3,8 @@ ALL_OBSERVED,420,ALL_OBSERVED,MASTER,bot,81,202,Ezreal,Jhin,27,,,,1,3,insufficie
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,bot,202,81,Jhin,Ezreal,27,,,,1,3,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,bot,81,145,Ezreal,Kaisa,24,,,,1,3,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,bot,145,81,Kaisa,Ezreal,24,,,,1,3,insufficient_patch_evidence,not_loaded
-ALL_OBSERVED,420,ALL_OBSERVED,MASTER,sup,111,117,Nautilus,Lulu,22,,,,1,3,insufficient_patch_evidence,not_loaded
-ALL_OBSERVED,420,ALL_OBSERVED,MASTER,sup,117,111,Lulu,Nautilus,22,,,,1,3,insufficient_patch_evidence,not_loaded
+ALL_OBSERVED,420,ALL_OBSERVED,MASTER,sup,111,117,Nautilus,Lulu,23,,,,1,3,insufficient_patch_evidence,not_loaded
+ALL_OBSERVED,420,ALL_OBSERVED,MASTER,sup,117,111,Lulu,Nautilus,23,,,,1,3,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,sup,111,526,Nautilus,Rell,21,,,,1,3,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,sup,526,111,Rell,Nautilus,21,,,,1,3,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,bot,42,81,Corki,Ezreal,20,,,,1,2,insufficient_patch_evidence,not_loaded
@@ -15,28 +15,30 @@ ALL_OBSERVED,420,ALL_OBSERVED,MASTER,bot,81,804,Ezreal,Yunara,19,,,,1,3,insuffic
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,bot,804,81,Yunara,Ezreal,19,,,,1,3,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,sup,12,111,Alistar,Nautilus,18,,,,1,3,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,sup,111,12,Nautilus,Alistar,18,,,,1,3,insufficient_patch_evidence,not_loaded
+ALL_OBSERVED,420,ALL_OBSERVED,MASTER,bot,202,804,Jhin,Yunara,16,,,,1,3,insufficient_patch_evidence,not_loaded
+ALL_OBSERVED,420,ALL_OBSERVED,MASTER,bot,804,202,Yunara,Jhin,16,,,,1,3,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,bot,145,202,Kaisa,Jhin,15,,,,1,3,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,bot,202,145,Jhin,Kaisa,15,,,,1,3,insufficient_patch_evidence,not_loaded
-ALL_OBSERVED,420,ALL_OBSERVED,MASTER,bot,202,804,Jhin,Yunara,15,,,,1,3,insufficient_patch_evidence,not_loaded
-ALL_OBSERVED,420,ALL_OBSERVED,MASTER,bot,804,202,Yunara,Jhin,15,,,,1,3,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,jng,64,950,LeeSin,Naafiri,15,,,,1,3,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,jng,950,64,Naafiri,LeeSin,15,,,,1,3,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,sup,12,432,Alistar,Bard,15,,,,1,3,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,sup,89,111,Leona,Nautilus,15,,,,1,3,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,sup,111,89,Nautilus,Leona,15,,,,1,3,insufficient_patch_evidence,not_loaded
+ALL_OBSERVED,420,ALL_OBSERVED,MASTER,sup,111,432,Nautilus,Bard,15,,,,1,2,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,sup,432,12,Bard,Alistar,15,,,,1,3,insufficient_patch_evidence,not_loaded
-ALL_OBSERVED,420,ALL_OBSERVED,MASTER,sup,111,432,Nautilus,Bard,14,,,,1,2,insufficient_patch_evidence,not_loaded
-ALL_OBSERVED,420,ALL_OBSERVED,MASTER,sup,432,111,Bard,Nautilus,14,,,,1,2,insufficient_patch_evidence,not_loaded
+ALL_OBSERVED,420,ALL_OBSERVED,MASTER,sup,432,111,Bard,Nautilus,15,,,,1,2,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,jng,64,254,LeeSin,Vi,13,,,,1,3,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,jng,254,64,Vi,LeeSin,13,,,,1,3,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,sup,12,78,Alistar,Poppy,13,,,,1,2,insufficient_patch_evidence,not_loaded
+ALL_OBSERVED,420,ALL_OBSERVED,MASTER,sup,12,89,Alistar,Leona,13,,,,1,3,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,sup,78,12,Poppy,Alistar,13,,,,1,2,insufficient_patch_evidence,not_loaded
-ALL_OBSERVED,420,ALL_OBSERVED,MASTER,sup,12,89,Alistar,Leona,12,,,,1,3,insufficient_patch_evidence,not_loaded
-ALL_OBSERVED,420,ALL_OBSERVED,MASTER,sup,89,12,Leona,Alistar,12,,,,1,3,insufficient_patch_evidence,not_loaded
+ALL_OBSERVED,420,ALL_OBSERVED,MASTER,sup,89,12,Leona,Alistar,13,,,,1,3,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,top,2,126,Olaf,Jayce,12,,,,1,3,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,top,126,2,Jayce,Olaf,12,,,,1,3,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,jng,64,246,LeeSin,Qiyana,11,,,,1,3,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,jng,246,64,Qiyana,LeeSin,11,,,,1,3,insufficient_patch_evidence,not_loaded
+ALL_OBSERVED,420,ALL_OBSERVED,MASTER,top,2,24,Olaf,Jax,11,,,,1,3,insufficient_patch_evidence,not_loaded
+ALL_OBSERVED,420,ALL_OBSERVED,MASTER,top,24,2,Jax,Olaf,11,,,,1,3,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,top,58,164,Renekton,Camille,11,,,,1,2,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,top,164,58,Camille,Renekton,11,,,,1,2,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,bot,42,804,Corki,Yunara,10,,,,1,3,insufficient_patch_evidence,not_loaded
@@ -49,13 +51,13 @@ ALL_OBSERVED,420,ALL_OBSERVED,MASTER,sup,12,497,Alistar,Rakan,10,,,,1,3,insuffic
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,sup,111,267,Nautilus,Nami,10,,,,1,3,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,sup,267,111,Nami,Nautilus,10,,,,1,3,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,sup,497,12,Rakan,Alistar,10,,,,1,3,insufficient_patch_evidence,not_loaded
-ALL_OBSERVED,420,ALL_OBSERVED,MASTER,top,2,24,Olaf,Jax,10,,,,1,3,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,top,2,114,Olaf,Fiora,10,,,,1,3,insufficient_patch_evidence,not_loaded
-ALL_OBSERVED,420,ALL_OBSERVED,MASTER,top,24,2,Jax,Olaf,10,,,,1,3,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,top,114,2,Fiora,Olaf,10,,,,1,3,insufficient_patch_evidence,not_loaded
+ALL_OBSERVED,420,ALL_OBSERVED,MASTER,bot,42,145,Corki,Kaisa,9,,,,1,3,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,bot,42,498,Corki,Xayah,9,,,,1,3,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,bot,81,221,Ezreal,Zeri,9,,,,1,3,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,bot,81,429,Ezreal,Kalista,9,,,,1,2,insufficient_patch_evidence,not_loaded
+ALL_OBSERVED,420,ALL_OBSERVED,MASTER,bot,145,42,Kaisa,Corki,9,,,,1,3,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,bot,202,498,Jhin,Xayah,9,,,,1,2,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,bot,221,81,Zeri,Ezreal,9,,,,1,3,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,bot,429,81,Kalista,Ezreal,9,,,,1,2,insufficient_patch_evidence,not_loaded
@@ -69,7 +71,6 @@ ALL_OBSERVED,420,ALL_OBSERVED,MASTER,sup,111,201,Nautilus,Braum,9,,,,1,2,insuffi
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,sup,201,111,Braum,Nautilus,9,,,,1,2,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,top,58,799,Renekton,Ambessa,9,,,,1,3,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,top,799,58,Ambessa,Renekton,9,,,,1,3,insufficient_patch_evidence,not_loaded
-ALL_OBSERVED,420,ALL_OBSERVED,MASTER,bot,42,145,Corki,Kaisa,8,,,,1,3,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,bot,42,429,Corki,Kalista,8,,,,1,1,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,bot,51,81,Caitlyn,Ezreal,8,,,,1,3,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,bot,81,51,Ezreal,Caitlyn,8,,,,1,3,insufficient_patch_evidence,not_loaded
@@ -77,7 +78,6 @@ ALL_OBSERVED,420,ALL_OBSERVED,MASTER,bot,81,119,Ezreal,Draven,8,,,,1,3,insuffici
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,bot,81,498,Ezreal,Xayah,8,,,,1,2,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,bot,110,202,Varus,Jhin,8,,,,1,3,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,bot,119,81,Draven,Ezreal,8,,,,1,3,insufficient_patch_evidence,not_loaded
-ALL_OBSERVED,420,ALL_OBSERVED,MASTER,bot,145,42,Kaisa,Corki,8,,,,1,3,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,bot,145,498,Kaisa,Xayah,8,,,,1,3,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,bot,202,110,Jhin,Varus,8,,,,1,3,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,bot,202,429,Jhin,Kalista,8,,,,1,2,insufficient_patch_evidence,not_loaded
@@ -105,10 +105,12 @@ ALL_OBSERVED,420,ALL_OBSERVED,MASTER,bot,119,202,Draven,Jhin,7,,,,1,3,insufficie
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,bot,157,81,Yasuo,Ezreal,7,,,,1,3,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,bot,202,119,Jhin,Draven,7,,,,1,3,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,bot,429,51,Kalista,Caitlyn,7,,,,1,2,insufficient_patch_evidence,not_loaded
+ALL_OBSERVED,420,ALL_OBSERVED,MASTER,jng,64,126,LeeSin,Jayce,7,,,,1,3,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,jng,64,163,LeeSin,Taliyah,7,,,,1,3,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,jng,76,234,Nidalee,Viego,7,,,,1,2,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,jng,104,950,Graves,Naafiri,7,,,,1,3,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,jng,120,163,Hecarim,Taliyah,7,,,,1,2,insufficient_patch_evidence,not_loaded
+ALL_OBSERVED,420,ALL_OBSERVED,MASTER,jng,126,64,Jayce,LeeSin,7,,,,1,3,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,jng,126,163,Jayce,Taliyah,7,,,,1,2,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,jng,126,254,Jayce,Vi,7,,,,1,2,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,jng,163,64,Taliyah,LeeSin,7,,,,1,3,insufficient_patch_evidence,not_loaded
@@ -145,10 +147,8 @@ ALL_OBSERVED,420,ALL_OBSERVED,MASTER,bot,804,429,Yunara,Kalista,6,,,,1,2,insuffi
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,bot,804,498,Yunara,Xayah,6,,,,1,2,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,jng,59,76,JarvanIV,Nidalee,6,,,,1,3,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,jng,64,104,LeeSin,Graves,6,,,,1,3,insufficient_patch_evidence,not_loaded
-ALL_OBSERVED,420,ALL_OBSERVED,MASTER,jng,64,126,LeeSin,Jayce,6,,,,1,3,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,jng,76,59,Nidalee,JarvanIV,6,,,,1,3,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,jng,104,64,Graves,LeeSin,6,,,,1,3,insufficient_patch_evidence,not_loaded
-ALL_OBSERVED,420,ALL_OBSERVED,MASTER,jng,126,64,Jayce,LeeSin,6,,,,1,3,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,mid,55,103,Katarina,Ahri,6,,,,1,2,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,mid,103,55,Ahri,Katarina,6,,,,1,2,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,mid,112,134,Viktor,Syndra,6,,,,1,2,insufficient_patch_evidence,not_loaded
@@ -215,12 +215,14 @@ ALL_OBSERVED,420,ALL_OBSERVED,MASTER,jng,5,64,XinZhao,LeeSin,5,,,,1,1,insufficie
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,jng,59,120,JarvanIV,Hecarim,5,,,,1,3,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,jng,59,254,JarvanIV,Vi,5,,,,1,3,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,jng,64,5,LeeSin,XinZhao,5,,,,1,1,insufficient_patch_evidence,not_loaded
+ALL_OBSERVED,420,ALL_OBSERVED,MASTER,jng,64,203,LeeSin,Kindred,5,,,,1,1,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,jng,64,517,LeeSin,Sylas,5,,,,1,2,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,jng,76,203,Nidalee,Kindred,5,,,,1,2,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,jng,76,246,Nidalee,Qiyana,5,,,,1,2,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,jng,120,59,Hecarim,JarvanIV,5,,,,1,3,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,jng,126,246,Jayce,Qiyana,5,,,,1,2,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,jng,126,517,Jayce,Sylas,5,,,,1,3,insufficient_patch_evidence,not_loaded
+ALL_OBSERVED,420,ALL_OBSERVED,MASTER,jng,203,64,Kindred,LeeSin,5,,,,1,1,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,jng,203,76,Kindred,Nidalee,5,,,,1,2,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,jng,246,76,Qiyana,Nidalee,5,,,,1,2,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,jng,246,126,Qiyana,Jayce,5,,,,1,2,insufficient_patch_evidence,not_loaded
@@ -341,7 +343,6 @@ ALL_OBSERVED,420,ALL_OBSERVED,MASTER,jng,62,59,MonkeyKing,JarvanIV,4,,,,1,2,insu
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,jng,64,80,LeeSin,Pantheon,4,,,,1,1,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,jng,64,91,LeeSin,Talon,4,,,,1,3,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,jng,64,143,LeeSin,Zyra,4,,,,1,2,insufficient_patch_evidence,not_loaded
-ALL_OBSERVED,420,ALL_OBSERVED,MASTER,jng,64,203,LeeSin,Kindred,4,,,,1,1,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,jng,64,234,LeeSin,Viego,4,,,,1,3,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,jng,64,421,LeeSin,RekSai,4,,,,1,2,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,jng,72,104,Skarner,Graves,4,,,,1,2,insufficient_patch_evidence,not_loaded
@@ -363,7 +364,6 @@ ALL_OBSERVED,420,ALL_OBSERVED,MASTER,jng,143,76,Zyra,Nidalee,4,,,,1,2,insufficie
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,jng,163,59,Taliyah,JarvanIV,4,,,,1,2,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,jng,163,60,Taliyah,Elise,4,,,,1,2,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,jng,163,107,Taliyah,Rengar,4,,,,1,2,insufficient_patch_evidence,not_loaded
-ALL_OBSERVED,420,ALL_OBSERVED,MASTER,jng,203,64,Kindred,LeeSin,4,,,,1,1,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,jng,234,64,Viego,LeeSin,4,,,,1,3,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,jng,246,60,Qiyana,Elise,4,,,,1,3,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,jng,246,104,Qiyana,Graves,4,,,,1,3,insufficient_patch_evidence,not_loaded
@@ -523,6 +523,7 @@ ALL_OBSERVED,420,ALL_OBSERVED,MASTER,bot,99,202,Lux,Jhin,3,,,,1,2,insufficient_p
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,bot,101,96,Xerath,KogMaw,3,,,,1,1,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,bot,119,30,Draven,Karthus,3,,,,1,2,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,bot,134,69,Syndra,Cassiopeia,3,,,,1,2,insufficient_patch_evidence,not_loaded
+ALL_OBSERVED,420,ALL_OBSERVED,MASTER,bot,134,202,Syndra,Jhin,3,,,,1,2,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,bot,136,30,AurelionSol,Karthus,3,,,,1,1,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,bot,136,145,AurelionSol,Kaisa,3,,,,1,1,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,bot,145,136,Kaisa,AurelionSol,3,,,,1,1,insufficient_patch_evidence,not_loaded
@@ -533,6 +534,7 @@ ALL_OBSERVED,420,ALL_OBSERVED,MASTER,bot,163,236,Taliyah,Lucian,3,,,,1,2,insuffi
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,bot,202,8,Jhin,Vladimir,3,,,,1,2,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,bot,202,22,Jhin,Ashe,3,,,,1,3,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,bot,202,99,Jhin,Lux,3,,,,1,2,insufficient_patch_evidence,not_loaded
+ALL_OBSERVED,420,ALL_OBSERVED,MASTER,bot,202,134,Jhin,Syndra,3,,,,1,2,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,bot,202,163,Jhin,Taliyah,3,,,,1,1,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,bot,202,236,Jhin,Lucian,3,,,,1,3,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,bot,202,800,Jhin,Mel,3,,,,1,2,insufficient_patch_evidence,not_loaded
@@ -564,6 +566,7 @@ ALL_OBSERVED,420,ALL_OBSERVED,MASTER,jng,56,950,Nocturne,Naafiri,3,,,,1,1,insuff
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,jng,59,91,JarvanIV,Talon,3,,,,1,2,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,jng,59,143,JarvanIV,Zyra,3,,,,1,3,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,jng,59,421,JarvanIV,RekSai,3,,,,1,2,insufficient_patch_evidence,not_loaded
+ALL_OBSERVED,420,ALL_OBSERVED,MASTER,jng,59,427,JarvanIV,Ivern,3,,,,1,2,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,jng,60,143,Elise,Zyra,3,,,,1,1,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,jng,62,234,MonkeyKing,Viego,3,,,,1,3,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,jng,64,107,LeeSin,Rengar,3,,,,1,2,insufficient_patch_evidence,not_loaded
@@ -629,6 +632,7 @@ ALL_OBSERVED,420,ALL_OBSERVED,MASTER,jng,421,107,RekSai,Rengar,3,,,,1,2,insuffic
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,jng,421,163,RekSai,Taliyah,3,,,,1,2,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,jng,421,950,RekSai,Naafiri,3,,,,1,2,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,jng,427,5,Ivern,XinZhao,3,,,,1,3,insufficient_patch_evidence,not_loaded
+ALL_OBSERVED,420,ALL_OBSERVED,MASTER,jng,427,59,Ivern,JarvanIV,3,,,,1,2,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,jng,517,91,Sylas,Talon,3,,,,1,3,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,jng,876,31,Lillia,Chogath,3,,,,1,3,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,jng,950,56,Naafiri,Nocturne,3,,,,1,1,insufficient_patch_evidence,not_loaded
@@ -710,6 +714,7 @@ ALL_OBSERVED,420,ALL_OBSERVED,MASTER,mid,245,103,Ekko,Ahri,3,,,,1,3,insufficient
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,mid,245,112,Ekko,Viktor,3,,,,1,1,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,mid,245,127,Ekko,Lissandra,3,,,,1,2,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,mid,245,134,Ekko,Syndra,3,,,,1,2,insufficient_patch_evidence,not_loaded
+ALL_OBSERVED,420,ALL_OBSERVED,MASTER,mid,245,517,Ekko,Sylas,3,,,,1,2,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,mid,268,4,Azir,TwistedFate,3,,,,1,1,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,mid,268,61,Azir,Orianna,3,,,,1,2,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,mid,268,163,Azir,Taliyah,3,,,,1,2,insufficient_patch_evidence,not_loaded
@@ -717,6 +722,7 @@ ALL_OBSERVED,420,ALL_OBSERVED,MASTER,mid,517,20,Sylas,Nunu,3,,,,1,1,insufficient
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,mid,517,84,Sylas,Akali,3,,,,1,3,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,mid,517,103,Sylas,Ahri,3,,,,1,3,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,mid,517,163,Sylas,Taliyah,3,,,,1,3,insufficient_patch_evidence,not_loaded
+ALL_OBSERVED,420,ALL_OBSERVED,MASTER,mid,517,245,Sylas,Ekko,3,,,,1,2,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,mid,711,55,Vex,Katarina,3,,,,1,2,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,mid,711,157,Vex,Yasuo,3,,,,1,2,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,mid,777,7,Yone,Leblanc,3,,,,1,2,insufficient_patch_evidence,not_loaded
@@ -960,7 +966,6 @@ ALL_OBSERVED,420,ALL_OBSERVED,MASTER,bot,119,429,Draven,Kalista,2,,,,1,1,insuffi
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,bot,134,99,Syndra,Lux,2,,,,1,2,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,bot,134,119,Syndra,Draven,2,,,,1,2,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,bot,134,145,Syndra,Kaisa,2,,,,1,2,insufficient_patch_evidence,not_loaded
-ALL_OBSERVED,420,ALL_OBSERVED,MASTER,bot,134,202,Syndra,Jhin,2,,,,1,2,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,bot,134,221,Syndra,Zeri,2,,,,1,1,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,bot,136,15,AurelionSol,Sivir,2,,,,1,1,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,bot,136,81,AurelionSol,Ezreal,2,,,,1,1,insufficient_patch_evidence,not_loaded
@@ -984,7 +989,6 @@ ALL_OBSERVED,420,ALL_OBSERVED,MASTER,bot,163,429,Taliyah,Kalista,2,,,,1,1,insuff
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,bot,163,517,Taliyah,Sylas,2,,,,1,1,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,bot,202,45,Jhin,Veigar,2,,,,1,2,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,bot,202,112,Jhin,Viktor,2,,,,1,2,insufficient_patch_evidence,not_loaded
-ALL_OBSERVED,420,ALL_OBSERVED,MASTER,bot,202,134,Jhin,Syndra,2,,,,1,2,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,bot,202,147,Jhin,Seraphine,2,,,,1,2,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,bot,202,157,Jhin,Yasuo,2,,,,1,2,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,bot,202,360,Jhin,Samira,2,,,,1,2,insufficient_patch_evidence,not_loaded
@@ -1058,7 +1062,6 @@ ALL_OBSERVED,420,ALL_OBSERVED,MASTER,jng,56,163,Nocturne,Taliyah,2,,,,1,1,insuff
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,jng,59,72,JarvanIV,Skarner,2,,,,1,2,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,jng,59,122,JarvanIV,Darius,2,,,,1,2,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,jng,59,141,JarvanIV,Kayn,2,,,,1,1,insufficient_patch_evidence,not_loaded
-ALL_OBSERVED,420,ALL_OBSERVED,MASTER,jng,59,427,JarvanIV,Ivern,2,,,,1,2,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,jng,59,517,JarvanIV,Sylas,2,,,,1,2,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,jng,59,904,JarvanIV,Zaahen,2,,,,1,2,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,jng,59,950,JarvanIV,Naafiri,2,,,,1,1,insufficient_patch_evidence,not_loaded
@@ -1187,7 +1190,6 @@ ALL_OBSERVED,420,ALL_OBSERVED,MASTER,jng,266,64,Aatrox,LeeSin,2,,,,1,2,insuffici
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,jng,421,62,RekSai,MonkeyKing,2,,,,1,1,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,jng,421,104,RekSai,Graves,2,,,,1,1,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,jng,421,234,RekSai,Viego,2,,,,1,1,insufficient_patch_evidence,not_loaded
-ALL_OBSERVED,420,ALL_OBSERVED,MASTER,jng,427,59,Ivern,JarvanIV,2,,,,1,2,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,jng,427,76,Ivern,Nidalee,2,,,,1,1,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,jng,427,120,Ivern,Hecarim,2,,,,1,1,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,jng,517,59,Sylas,JarvanIV,2,,,,1,2,insufficient_patch_evidence,not_loaded
@@ -1280,6 +1282,7 @@ ALL_OBSERVED,420,ALL_OBSERVED,MASTER,mid,69,238,Cassiopeia,Zed,2,,,,1,2,insuffic
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,mid,69,245,Cassiopeia,Ekko,2,,,,1,2,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,mid,79,4,Gragas,TwistedFate,2,,,,1,1,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,mid,80,61,Pantheon,Orianna,2,,,,1,1,insufficient_patch_evidence,not_loaded
+ALL_OBSERVED,420,ALL_OBSERVED,MASTER,mid,80,268,Pantheon,Azir,2,,,,1,2,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,mid,80,893,Pantheon,Aurora,2,,,,1,1,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,mid,81,777,Ezreal,Yone,2,,,,1,2,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,mid,84,2,Akali,Olaf,2,,,,1,2,insufficient_patch_evidence,not_loaded
@@ -1375,11 +1378,11 @@ ALL_OBSERVED,420,ALL_OBSERVED,MASTER,mid,245,163,Ekko,Taliyah,2,,,,1,2,insuffici
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,mid,245,238,Ekko,Zed,2,,,,1,2,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,mid,245,246,Ekko,Qiyana,2,,,,1,2,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,mid,245,268,Ekko,Azir,2,,,,1,1,insufficient_patch_evidence,not_loaded
-ALL_OBSERVED,420,ALL_OBSERVED,MASTER,mid,245,517,Ekko,Sylas,2,,,,1,2,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,mid,246,4,Qiyana,TwistedFate,2,,,,1,2,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,mid,246,157,Qiyana,Yasuo,2,,,,1,2,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,mid,246,245,Qiyana,Ekko,2,,,,1,2,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,mid,268,55,Azir,Katarina,2,,,,1,1,insufficient_patch_evidence,not_loaded
+ALL_OBSERVED,420,ALL_OBSERVED,MASTER,mid,268,80,Azir,Pantheon,2,,,,1,2,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,mid,268,84,Azir,Akali,2,,,,1,1,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,mid,268,101,Azir,Xerath,2,,,,1,2,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,mid,268,105,Azir,Fizz,2,,,,1,2,insufficient_patch_evidence,not_loaded
@@ -1388,7 +1391,6 @@ ALL_OBSERVED,420,ALL_OBSERVED,MASTER,mid,268,245,Azir,Ekko,2,,,,1,1,insufficient
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,mid,517,134,Sylas,Syndra,2,,,,1,2,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,mid,517,142,Sylas,Zoe,2,,,,1,1,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,mid,517,157,Sylas,Yasuo,2,,,,1,2,insufficient_patch_evidence,not_loaded
-ALL_OBSERVED,420,ALL_OBSERVED,MASTER,mid,517,245,Sylas,Ekko,2,,,,1,2,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,mid,517,805,Sylas,Locke,2,,,,1,2,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,mid,711,84,Vex,Akali,2,,,,1,1,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,mid,711,103,Vex,Ahri,2,,,,1,1,insufficient_patch_evidence,not_loaded
@@ -1609,6 +1611,7 @@ ALL_OBSERVED,420,ALL_OBSERVED,MASTER,top,23,777,Tryndamere,Yone,2,,,,1,1,insuffi
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,top,24,23,Jax,Tryndamere,2,,,,1,1,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,top,24,36,Jax,DrMundo,2,,,,1,1,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,top,24,39,Jax,Irelia,2,,,,1,2,insufficient_patch_evidence,not_loaded
+ALL_OBSERVED,420,ALL_OBSERVED,MASTER,top,24,84,Jax,Akali,2,,,,1,1,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,top,24,240,Jax,Kled,2,,,,1,2,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,top,24,517,Jax,Sylas,2,,,,1,2,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,top,24,777,Jax,Yone,2,,,,1,2,insufficient_patch_evidence,not_loaded
@@ -1660,6 +1663,7 @@ ALL_OBSERVED,420,ALL_OBSERVED,MASTER,top,80,777,Pantheon,Yone,2,,,,1,2,insuffici
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,top,82,2,Mordekaiser,Olaf,2,,,,1,2,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,top,82,126,Mordekaiser,Jayce,2,,,,1,2,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,top,82,164,Mordekaiser,Camille,2,,,,1,1,insufficient_patch_evidence,not_loaded
+ALL_OBSERVED,420,ALL_OBSERVED,MASTER,top,84,24,Akali,Jax,2,,,,1,1,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,top,84,27,Akali,Singed,2,,,,1,2,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,top,84,85,Akali,Kennen,2,,,,1,2,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,top,84,126,Akali,Jayce,2,,,,1,2,insufficient_patch_evidence,not_loaded
@@ -1701,6 +1705,7 @@ ALL_OBSERVED,420,ALL_OBSERVED,MASTER,top,126,266,Jayce,Aatrox,2,,,,1,1,insuffici
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,top,142,240,Zoe,Kled,2,,,,1,1,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,top,150,10,Gnar,Kayle,2,,,,1,1,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,top,150,516,Gnar,Ornn,2,,,,1,2,insufficient_patch_evidence,not_loaded
+ALL_OBSERVED,420,ALL_OBSERVED,MASTER,top,157,904,Yasuo,Zaahen,2,,,,1,2,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,top,164,10,Camille,Kayle,2,,,,1,2,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,top,164,54,Camille,Malphite,2,,,,1,2,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,top,164,82,Camille,Mordekaiser,2,,,,1,1,insufficient_patch_evidence,not_loaded
@@ -1737,6 +1742,7 @@ ALL_OBSERVED,420,ALL_OBSERVED,MASTER,top,897,904,KSante,Zaahen,2,,,,1,1,insuffic
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,top,904,2,Zaahen,Olaf,2,,,,1,1,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,top,904,31,Zaahen,Chogath,2,,,,1,1,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,top,904,78,Zaahen,Poppy,2,,,,1,1,insufficient_patch_evidence,not_loaded
+ALL_OBSERVED,420,ALL_OBSERVED,MASTER,top,904,157,Zaahen,Yasuo,2,,,,1,2,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,top,904,777,Zaahen,Yone,2,,,,1,2,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,top,904,897,Zaahen,KSante,2,,,,1,1,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,bot,2,81,Olaf,Ezreal,1,,,,1,1,insufficient_patch_evidence,not_loaded
@@ -2014,6 +2020,7 @@ ALL_OBSERVED,420,ALL_OBSERVED,MASTER,bot,136,99,AurelionSol,Lux,1,,,,1,1,insuffi
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,bot,136,119,AurelionSol,Draven,1,,,,1,1,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,bot,136,134,AurelionSol,Syndra,1,,,,1,1,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,bot,136,245,AurelionSol,Ekko,1,,,,1,1,insufficient_patch_evidence,not_loaded
+ALL_OBSERVED,420,ALL_OBSERVED,MASTER,bot,136,777,AurelionSol,Yone,1,,,,1,1,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,bot,136,895,AurelionSol,Nilah,1,,,,1,1,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,bot,142,81,Zoe,Ezreal,1,,,,1,1,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,bot,142,103,Zoe,Ahri,1,,,,1,1,insufficient_patch_evidence,not_loaded
@@ -2188,6 +2195,7 @@ ALL_OBSERVED,420,ALL_OBSERVED,MASTER,bot,777,42,Yone,Corki,1,,,,1,1,insufficient
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,bot,777,69,Yone,Cassiopeia,1,,,,1,1,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,bot,777,81,Yone,Ezreal,1,,,,1,1,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,bot,777,119,Yone,Draven,1,,,,1,1,insufficient_patch_evidence,not_loaded
+ALL_OBSERVED,420,ALL_OBSERVED,MASTER,bot,777,136,Yone,AurelionSol,1,,,,1,1,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,bot,777,145,Yone,Kaisa,1,,,,1,1,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,bot,777,157,Yone,Yasuo,1,,,,1,1,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,bot,777,235,Yone,Senna,1,,,,1,1,insufficient_patch_evidence,not_loaded
@@ -2850,6 +2858,7 @@ ALL_OBSERVED,420,ALL_OBSERVED,MASTER,jng,254,234,Vi,Viego,1,,,,1,1,insufficient_
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,jng,254,238,Vi,Zed,1,,,,1,1,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,jng,254,427,Vi,Ivern,1,,,,1,1,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,jng,254,517,Vi,Sylas,1,,,,1,1,insufficient_patch_evidence,not_loaded
+ALL_OBSERVED,420,ALL_OBSERVED,MASTER,jng,254,799,Vi,Ambessa,1,,,,1,1,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,jng,266,143,Aatrox,Zyra,1,,,,1,1,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,jng,266,517,Aatrox,Sylas,1,,,,1,1,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,jng,421,5,RekSai,XinZhao,1,,,,1,1,insufficient_patch_evidence,not_loaded
@@ -2907,6 +2916,7 @@ ALL_OBSERVED,420,ALL_OBSERVED,MASTER,jng,799,141,Ambessa,Kayn,1,,,,1,1,insuffici
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,jng,799,203,Ambessa,Kindred,1,,,,1,1,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,jng,799,234,Ambessa,Viego,1,,,,1,1,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,jng,799,246,Ambessa,Qiyana,1,,,,1,1,insufficient_patch_evidence,not_loaded
+ALL_OBSERVED,420,ALL_OBSERVED,MASTER,jng,799,254,Ambessa,Vi,1,,,,1,1,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,jng,799,805,Ambessa,Locke,1,,,,1,1,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,jng,799,876,Ambessa,Lillia,1,,,,1,1,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,jng,805,35,Locke,Shaco,1,,,,1,1,insufficient_patch_evidence,not_loaded
@@ -3256,7 +3266,6 @@ ALL_OBSERVED,420,ALL_OBSERVED,MASTER,mid,80,90,Pantheon,Malzahar,1,,,,1,1,insuff
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,mid,80,112,Pantheon,Viktor,1,,,,1,1,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,mid,80,157,Pantheon,Yasuo,1,,,,1,1,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,mid,80,163,Pantheon,Taliyah,1,,,,1,1,insufficient_patch_evidence,not_loaded
-ALL_OBSERVED,420,ALL_OBSERVED,MASTER,mid,80,268,Pantheon,Azir,1,,,,1,1,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,mid,80,517,Pantheon,Sylas,1,,,,1,1,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,mid,80,711,Pantheon,Vex,1,,,,1,1,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,mid,80,777,Pantheon,Yone,1,,,,1,1,insufficient_patch_evidence,not_loaded
@@ -3266,6 +3275,7 @@ ALL_OBSERVED,420,ALL_OBSERVED,MASTER,mid,81,55,Ezreal,Katarina,1,,,,1,1,insuffic
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,mid,81,63,Ezreal,Brand,1,,,,1,1,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,mid,81,84,Ezreal,Akali,1,,,,1,1,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,mid,81,103,Ezreal,Ahri,1,,,,1,1,insufficient_patch_evidence,not_loaded
+ALL_OBSERVED,420,ALL_OBSERVED,MASTER,mid,81,142,Ezreal,Zoe,1,,,,1,1,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,mid,81,166,Ezreal,Akshan,1,,,,1,1,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,mid,81,236,Ezreal,Lucian,1,,,,1,1,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,mid,81,245,Ezreal,Ekko,1,,,,1,1,insufficient_patch_evidence,not_loaded
@@ -3391,6 +3401,7 @@ ALL_OBSERVED,420,ALL_OBSERVED,MASTER,mid,126,3,Jayce,Galio,1,,,,1,1,insufficient
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,mid,126,69,Jayce,Cassiopeia,1,,,,1,1,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,mid,126,75,Jayce,Nasus,1,,,,1,1,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,mid,126,115,Jayce,Ziggs,1,,,,1,1,insufficient_patch_evidence,not_loaded
+ALL_OBSERVED,420,ALL_OBSERVED,MASTER,mid,126,142,Jayce,Zoe,1,,,,1,1,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,mid,126,236,Jayce,Lucian,1,,,,1,1,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,mid,126,805,Jayce,Locke,1,,,,1,1,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,mid,126,893,Jayce,Aurora,1,,,,1,1,insufficient_patch_evidence,not_loaded
@@ -3448,8 +3459,10 @@ ALL_OBSERVED,420,ALL_OBSERVED,MASTER,mid,142,41,Zoe,Gangplank,1,,,,1,1,insuffici
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,mid,142,45,Zoe,Veigar,1,,,,1,1,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,mid,142,61,Zoe,Orianna,1,,,,1,1,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,mid,142,79,Zoe,Gragas,1,,,,1,1,insufficient_patch_evidence,not_loaded
+ALL_OBSERVED,420,ALL_OBSERVED,MASTER,mid,142,81,Zoe,Ezreal,1,,,,1,1,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,mid,142,84,Zoe,Akali,1,,,,1,1,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,mid,142,103,Zoe,Ahri,1,,,,1,1,insufficient_patch_evidence,not_loaded
+ALL_OBSERVED,420,ALL_OBSERVED,MASTER,mid,142,126,Zoe,Jayce,1,,,,1,1,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,mid,142,134,Zoe,Syndra,1,,,,1,1,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,mid,142,236,Zoe,Lucian,1,,,,1,1,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,mid,142,238,Zoe,Zed,1,,,,1,1,insufficient_patch_evidence,not_loaded
@@ -3565,7 +3578,6 @@ ALL_OBSERVED,420,ALL_OBSERVED,MASTER,mid,268,7,Azir,Leblanc,1,,,,1,1,insufficien
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,mid,268,10,Azir,Kayle,1,,,,1,1,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,mid,268,34,Azir,Anivia,1,,,,1,1,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,mid,268,42,Azir,Corki,1,,,,1,1,insufficient_patch_evidence,not_loaded
-ALL_OBSERVED,420,ALL_OBSERVED,MASTER,mid,268,80,Azir,Pantheon,1,,,,1,1,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,mid,268,99,Azir,Lux,1,,,,1,1,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,mid,268,122,Azir,Darius,1,,,,1,1,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,mid,268,127,Azir,Lissandra,1,,,,1,1,insufficient_patch_evidence,not_loaded
@@ -3989,6 +4001,7 @@ ALL_OBSERVED,420,ALL_OBSERVED,MASTER,sup,111,99,Nautilus,Lux,1,,,,1,1,insufficie
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,sup,111,107,Nautilus,Rengar,1,,,,1,1,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,sup,111,113,Nautilus,Sejuani,1,,,,1,1,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,sup,111,136,Nautilus,AurelionSol,1,,,,1,1,insufficient_patch_evidence,not_loaded
+ALL_OBSERVED,420,ALL_OBSERVED,MASTER,sup,111,143,Nautilus,Zyra,1,,,,1,1,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,sup,111,246,Nautilus,Qiyana,1,,,,1,1,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,sup,111,888,Nautilus,Renata,1,,,,1,1,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,sup,113,111,Sejuani,Nautilus,1,,,,1,1,insufficient_patch_evidence,not_loaded
@@ -4017,6 +4030,7 @@ ALL_OBSERVED,420,ALL_OBSERVED,MASTER,sup,142,412,Zoe,Thresh,1,,,,1,1,insufficien
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,sup,143,12,Zyra,Alistar,1,,,,1,1,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,sup,143,22,Zyra,Ashe,1,,,,1,1,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,sup,143,60,Zyra,Elise,1,,,,1,1,insufficient_patch_evidence,not_loaded
+ALL_OBSERVED,420,ALL_OBSERVED,MASTER,sup,143,111,Zyra,Nautilus,1,,,,1,1,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,sup,143,555,Zyra,Pyke,1,,,,1,1,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,sup,147,3,Seraphine,Galio,1,,,,1,1,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,sup,147,25,Seraphine,Morgana,1,,,,1,1,insufficient_patch_evidence,not_loaded
@@ -4361,7 +4375,6 @@ ALL_OBSERVED,420,ALL_OBSERVED,MASTER,top,24,61,Jax,Orianna,1,,,,1,1,insufficient
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,top,24,72,Jax,Skarner,1,,,,1,1,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,top,24,77,Jax,Udyr,1,,,,1,1,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,top,24,79,Jax,Gragas,1,,,,1,1,insufficient_patch_evidence,not_loaded
-ALL_OBSERVED,420,ALL_OBSERVED,MASTER,top,24,84,Jax,Akali,1,,,,1,1,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,top,24,86,Jax,Garen,1,,,,1,1,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,top,24,106,Jax,Volibear,1,,,,1,1,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,top,24,107,Jax,Rengar,1,,,,1,1,insufficient_patch_evidence,not_loaded
@@ -4407,6 +4420,7 @@ ALL_OBSERVED,420,ALL_OBSERVED,MASTER,top,34,85,Anivia,Kennen,1,,,,1,1,insufficie
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,top,34,98,Anivia,Shen,1,,,,1,1,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,top,34,112,Anivia,Viktor,1,,,,1,1,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,top,34,122,Anivia,Darius,1,,,,1,1,insufficient_patch_evidence,not_loaded
+ALL_OBSERVED,420,ALL_OBSERVED,MASTER,top,34,134,Anivia,Syndra,1,,,,1,1,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,top,34,893,Anivia,Aurora,1,,,,1,1,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,top,36,10,DrMundo,Kayle,1,,,,1,1,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,top,36,14,DrMundo,Sion,1,,,,1,1,insufficient_patch_evidence,not_loaded
@@ -4640,7 +4654,6 @@ ALL_OBSERVED,420,ALL_OBSERVED,MASTER,top,84,2,Akali,Olaf,1,,,,1,1,insufficient_p
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,top,84,7,Akali,Leblanc,1,,,,1,1,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,top,84,14,Akali,Sion,1,,,,1,1,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,top,84,17,Akali,Teemo,1,,,,1,1,insufficient_patch_evidence,not_loaded
-ALL_OBSERVED,420,ALL_OBSERVED,MASTER,top,84,24,Akali,Jax,1,,,,1,1,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,top,84,54,Akali,Malphite,1,,,,1,1,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,top,84,57,Akali,Maokai,1,,,,1,1,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,top,84,58,Akali,Renekton,1,,,,1,1,insufficient_patch_evidence,not_loaded
@@ -4818,6 +4831,7 @@ ALL_OBSERVED,420,ALL_OBSERVED,MASTER,top,133,85,Quinn,Kennen,1,,,,1,1,insufficie
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,top,133,164,Quinn,Camille,1,,,,1,1,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,top,133,221,Quinn,Zeri,1,,,,1,1,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,top,133,887,Quinn,Gwen,1,,,,1,1,insufficient_patch_evidence,not_loaded
+ALL_OBSERVED,420,ALL_OBSERVED,MASTER,top,134,34,Syndra,Anivia,1,,,,1,1,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,top,134,54,Syndra,Malphite,1,,,,1,1,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,top,134,126,Syndra,Jayce,1,,,,1,1,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,top,136,39,AurelionSol,Irelia,1,,,,1,1,insufficient_patch_evidence,not_loaded
@@ -4873,7 +4887,6 @@ ALL_OBSERVED,420,ALL_OBSERVED,MASTER,top,157,238,Yasuo,Zed,1,,,,1,1,insufficient
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,top,157,266,Yasuo,Aatrox,1,,,,1,1,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,top,157,777,Yasuo,Yone,1,,,,1,1,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,top,157,897,Yasuo,KSante,1,,,,1,1,insufficient_patch_evidence,not_loaded
-ALL_OBSERVED,420,ALL_OBSERVED,MASTER,top,157,904,Yasuo,Zaahen,1,,,,1,1,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,top,161,4,Velkoz,TwistedFate,1,,,,1,1,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,top,161,60,Velkoz,Elise,1,,,,1,1,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,top,161,98,Velkoz,Shen,1,,,,1,1,insufficient_patch_evidence,not_loaded
@@ -5081,7 +5094,6 @@ ALL_OBSERVED,420,ALL_OBSERVED,MASTER,top,904,84,Zaahen,Akali,1,,,,1,1,insufficie
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,top,904,86,Zaahen,Garen,1,,,,1,1,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,top,904,106,Zaahen,Volibear,1,,,,1,1,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,top,904,150,Zaahen,Gnar,1,,,,1,1,insufficient_patch_evidence,not_loaded
-ALL_OBSERVED,420,ALL_OBSERVED,MASTER,top,904,157,Zaahen,Yasuo,1,,,,1,1,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,top,904,420,Zaahen,Illaoi,1,,,,1,1,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,top,904,799,Zaahen,Ambessa,1,,,,1,1,insufficient_patch_evidence,not_loaded
 ALL_OBSERVED,420,ALL_OBSERVED,MASTER,top,910,92,Hwei,Riven,1,,,,1,1,insufficient_patch_evidence,not_loaded

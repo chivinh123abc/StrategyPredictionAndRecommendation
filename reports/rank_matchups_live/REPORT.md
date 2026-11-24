@@ -1,7 +1,7 @@
 # Dữ liệu đối đầu cập nhật tăng dần
 
-Đã có 931 trận với observations; 6588 cặp có hướng, 134 cặp đạt n>=5.
-Hàng đợi: {'accepted': 931, 'pending': 1, 'rejected': 42, 'accepted_observations': 9310, 'seeds': 33681}. Không có mốc dừng tổng ở1.000trận; mỗi phiên có cap tài nguyên và có thể tiếp tục.
+Đã có 935 trận với observations; 6604 cặp có hướng, 138 cặp đạt n>=5.
+Hàng đợi: {'accepted': 935, 'pending': 4, 'rejected': 42, 'accepted_observations': 9350, 'seeds': 33681}. Không có mốc dừng tổng ở1.000trận; mỗi phiên có cap tài nguyên và có thể tiếp tục.
 all_matchups.csv chứa cả kèo ít mẫu; ba bảng xếp riêng theo winrate thắng trận/GD15, không trì hoãn cập nhật đến khi đủ1000.
 Các bảng xếp chỉ hiện kèo qua ngưỡng n; rỗng nghĩa chưa đủ mẫu, không gán kết quả giả.
 

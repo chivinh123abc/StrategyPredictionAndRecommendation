@@ -230,3 +230,17 @@
 {"session_id": "20261124T145308395894Z", "stop_reason": "idle", "processed_this_session": 12, "fresh_snapshots": 13, "http_attempts": 60, "request_budget": 600, "counts": {"accepted": 930, "rejected": 42, "accepted_observations": 9300, "seeds": 33639}}
 {"session_id": "20261124T150702881338Z", "stop_reason": "idle", "processed_this_session": 0, "fresh_snapshots": 0, "http_attempts": 10, "request_budget": 600, "counts": {"accepted": 930, "rejected": 42, "accepted_observations": 9300, "seeds": 33681}}
 {"processed_this_session": 1, "http_attempts": 7, "accepted": 931, "pending": 1, "rejected": 42, "accepted_observations": 9310, "seeds": 33681}
+{"processed_this_session": 5, "http_attempts": 26, "accepted": 935, "pending": 4, "rejected": 42, "accepted_observations": 9350, "seeds": 33681}
+{"processed_this_session": 10, "http_attempts": 46, "accepted": 940, "pending": 2, "rejected": 42, "accepted_observations": 9400, "seeds": 33681}
+{"processed_this_session": 15, "http_attempts": 59, "accepted": 945, "pending": 3, "rejected": 42, "accepted_observations": 9450, "seeds": 33681}
+{"processed_this_session": 20, "http_attempts": 105, "accepted": 950, "pending": 11, "rejected": 42, "accepted_observations": 9500, "seeds": 33681}
+{"session_id": "20261124T151328294979Z", "stop_reason": "session_time_limit", "processed_this_session": 20, "fresh_snapshots": 31, "http_attempts": 105, "request_budget": 600, "counts": {"accepted": 950, "pending": 11, "rejected": 42, "accepted_observations": 9500, "seeds": 33681}}
+{"processed_this_session": 1, "http_attempts": 11, "accepted": 951, "pending": 10, "rejected": 42, "accepted_observations": 9510, "seeds": 33713}
+{"processed_this_session": 5, "http_attempts": 20, "accepted": 955, "pending": 10, "rejected": 42, "accepted_observations": 9550, "seeds": 33713}
+{"processed_this_session": 10, "http_attempts": 30, "accepted": 960, "pending": 5, "rejected": 42, "accepted_observations": 9600, "seeds": 33713}
+{"processed_this_session": 15, "http_attempts": 40, "accepted": 965, "rejected": 42, "accepted_observations": 9650, "seeds": 33713}
+{"processed_this_session": 20, "http_attempts": 67, "accepted": 970, "pending": 3, "rejected": 42, "accepted_observations": 9700, "seeds": 33714}
+{"session_id": "20261124T153227756207Z", "stop_reason": "session_time_limit", "processed_this_session": 20, "fresh_snapshots": 10, "http_attempts": 67, "request_budget": 600, "counts": {"accepted": 970, "pending": 3, "rejected": 42, "accepted_observations": 9700, "seeds": 33714}}
+{"processed_this_session": 1, "http_attempts": 11, "accepted": 971, "pending": 2, "rejected": 42, "accepted_observations": 9710, "seeds": 33737}
+{"processed_this_session": 5, "http_attempts": 23, "accepted": 974, "pending": 1, "rejected": 43, "accepted_observations": 9740, "seeds": 33739}
+{"session_id": "20261124T155354153250Z", "stop_reason": "idle", "processed_this_session": 6, "fresh_snapshots": 3, "http_attempts": 29, "request_budget": 600, "counts": {"accepted": 975, "rejected": 43, "accepted_observations": 9750, "seeds": 33739}}

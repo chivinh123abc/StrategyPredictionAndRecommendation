@@ -1,83 +1,101 @@
+## Dừng collector Rank nền & đóng băng số liệu báo cáo — 2026-11-24
+
+- [x] Dừng `update_rank_evidence.py --watch` (PID `29828`, `7992`) và xác nhận không còn tiến trình chạy nền.
+- [x] Đóng băng số liệu `ranked_evidence.db` ở mốc **975 trận / 9,750 dòng / 5,236 cặp gộp / 148 cặp `n >= 5`** và xuất lại `BAO_CAO_CUOI_KY_PTIT.docx` + cập nhật `BAO_CAO_CUOI_KY.md` khớp 100%.
+
+## Xuất Báo cáo cuối kỳ Word (.docx) kèm biểu đồ & phân tích mạch giá trị — 2026-11-24
+
+- [x] Viết `scratch/build_final_report_docx.py` và xuất [reports/final_report/BAO_CAO_CUOI_KY_PTIT.docx](../reports/final_report/BAO_CAO_CUOI_KY_PTIT.docx) (4,725.6 KB, 13 biểu đồ/ảnh minh chứng, 15 bảng/khung phân tích mạch giá trị).
+- [x] Kiểm chứng đọc lại file `.docx` bằng `python-docx` PASS; đồng bộ `reports/README.md` và `AI/`. Không thay đổi phương pháp/code/DB/model, không retrain/commit/push.
+
+## Biên soạn Báo cáo cuối kỳ — 2026-11-24
+
+- [x] Viết [reports/final_report/BAO_CAO_CUOI_KY.md](../reports/final_report/BAO_CAO_CUOI_KY.md) bám sát Chương 1–6, tách bạch `MH`/`UD` và `MR`/`NV`, trích đúng số liệu đã xác minh và giải trình rõ giới hạn của `draft_model` / `content_based`.
+- [x] Cập nhật trạng thái trong `reports/README.md` và đồng bộ `AI/`; kiểm tra toàn bộ liên kết nội bộ PASS. Không thay đổi phương pháp/code/DB/model, không retrain/commit/push.
+
+## Dọn sạch & chuẩn hóa tài liệu, dừng web server nền — 2026-11-24
+
+- [x] Dừng tiến trình `uvicorn` nền trên `127.0.0.1:8000` (PID `28952`, `46456`) và xác nhận cổng `8000` không còn lắng nghe.
+- [x] Xóa các đoạn lặp tiêu đề NV-24 và sửa lỗi dính chữ trong 6 file `AI/` và mục 28–30 của `docs/TONG_HOP_KIEN_THUC_VA_MO_RONG_BAO_CAO.md`.
+- [x] Thu gọn `README.md` thành bảng trạng thái hiện hành và lập mục lục `reports/README.md`.
+- [x] Không phát sinh thay đổi kiến thức/phương pháp/chức năng; các mục hiện hành giữ nguyên, không retrain/commit/push.
+
 ## Inspector whole-panel collapse — 2026-11-24
 
-- [x] Thu gọn toànbodyInspector→headernhỏ/timelinegần,mởrộngphụchồi;build/EdgePASS.
-
-## Inspector whole-panel collapse — 2026-11-24
-
-- [x] Thu gọn toànbodyInspector→headernhỏ/timelinegần,mởrộngphụchồi;build/EdgePASS.
+- [x] Thu gọn toàn bộ body Inspector → chỉ giữ header nhỏ, kéo gần timeline, mở rộng phục hồi nguyên trạng; build và Edge test PASS.
 
 ## Inspector click-toggle — 2026-11-24
 
-- [x] Inspectorẩn/defaultclickonly/deselectclose/reopen/reset,reloadvà7Edge/buildPASS.
+- [x] Inspector ẩn mặc định, click-only mở/tắt, close giữ selection / deselect ẩn nút mở, reset/reload; build và 7 Edge workflow PASS.
 
 ## Sidebar responsive fit — 2026-11-24
 
-- [x] Responsive3cộttừ900px,cùnghàng/cùngchiềucao;7desktopwidth+mobile/buildPASS.
+- [x] Responsive 3 cột từ `900px`, cùng hàng và cùng chiều cao; kiểm tra 7 độ rộng desktop + mobile `390px` và build PASS.
 
 ## Hai khu hai bên — 2026-11-24
 
-- [x] Desktop3cộtGợiý|Độihình|Chọntaycùnghàng;setuptrên/inspectordưới,giữroledọc.
-- [x]Build/Edgelayout/mobilePASS;NV24docssynced,khônglogic/DBchange.
+- [x] Desktop 3 cột: Gợi ý | Đội hình | Chọn tay cùng hàng; setup trên đầu, inspector dưới, giữ role dọc.
+- [x] Build và Edge layout/mobile PASS; đồng bộ tài liệu NV-24, không đổi logic/DB.
 
 ## Điều chỉnh bảng đội hình — 2026-11-24
 
-- [x] Khôi phục2bảngcăngiữa/5roledọc/ảnh47px,giữyêucầuphầnxungquanh.
-- [x] BuildTS/Vite vàEdgekiểmlayout/mobilePASS;khôngđổilogic,nênkhôngretrain/Pythontest.
-- [x] Sổ30/NV24,UIguide,AIstate/tasks/changelog/architecture đồngbộ;khôngcommit/push.
+- [x] Khôi phục 2 bảng căn giữa, 5 role dọc, ảnh `47px`, giữ yêu cầu phần xung quanh.
+- [x] Build TS/Vite và Edge kiểm layout/mobile PASS; không đổi logic nên không retrain/chạy lại Python test.
+- [x] Đồng bộ sổ mục 30 (NV-24), hướng dẫn UI, AI state/tasks/changelog/architecture; không commit/push.
 
 ## UI compact / lane review — 2026-11-24
 
-- [x] Setupđầu/trái-gợiý-phải-manual/inspector dưới,rolepreviewauto+commit,nativedrag/swap cùngđội,keyboardfallback.
-- [x] Tái hiệnGalio0n/Ambessa4địch,reviewngaylanerevealed;Wilsonlowerboundcho cùngrole,Renekton2/2khôngnhậnvượttrội.
-- [x] CLIseriesbắtbuộcfirst-picks,bỏautoluânphiên,allBlue/allRedhợplệ;UIselecttừngván.
-- [x]178tests,5Edge,build,BO5allBlue/50unique,hash/privacy/docs/sổ30/ADR043PASS.
-- [ ] Chấtlượngchiếnthuậtđộclập và việc đưaGD/XP/CSvàoscorechưađượcchứngminh;khôngđánhgiáregressionnhưwinuplift.
+- [x] Setup trên đầu, gợi ý trái / manual phải, inspector dưới; auto-role preview + commit, native drag/swap cùng đội, keyboard fallback.
+- [x] Tái hiện case Galio `n=0` vs Ambessa (địch 4 tướng), review ngay khi lane đã lộ; Wilson lower bound cho cùng role, Renekton `2/2` không nhận vượt trội.
+- [x] CLI series bắt buộc `--first-picks`, bỏ auto luân phiên, hỗ trợ all-Blue/all-Red hợp lệ; UI chọn từng ván.
+- [x] 178 tests, 5 Edge workflow, build, BO5 all-Blue (50 unique picks), hash/privacy/docs/sổ mục 30/ADR-043 PASS.
+- [ ] Chất lượng chiến thuật độc lập và việc đưa GD/XP/CS vào score chưa được chứng minh; không đánh giá regression như win uplift.
 
-## Giữ cặp bot và chọn trước từngván — 2026-11-24
+## Giữ cặp bot và chọn trước từng ván — 2026-11-24
 
-- [x] Tái hiện10lượtcaseNautilus/Jayce→2ADbans→Yunara,côngkhain5/6/1.
-- [x] Guardtheolịch/fulllegalpartner/n5/association,giữscoregốc,rolefilter/manual,review/testoverride;API/CLI/JSON/why/UIđồngbộ.
-- [x] FirstSelectionuserchọnBlue/Redmỗiván,khôngUIautoluânphiên;CLI--first-picks/repeat/validation/reportnguồnruleđúngphạmvi.
-- [x]170tests,build,3Edge,mirrorcase,continuedprefixvàBO5red-red-blue-blue-red100actions/50uniquePASS;hash/privacy/docs/sổ29/ADR042.
-- [ ] Chứngminhcặptốiưu/tăngthắng/đánhgiáchiếnthuậtđộclậpvẫnchưađạt;khôngnằmtrongkếtluậnregressionnày.
+- [x] Tái hiện 10 lượt case Nautilus/Jayce → 2 AD bans → Yunara, công khai số mẫu `n=5/6/1`.
+- [x] Guard theo lịch, full legal partner (`n >= 5`, `lift >= 1`), giữ score gốc, role filter/manual, review/test override; API/CLI/JSON/why/UI đồng bộ.
+- [x] First Selection user chọn Blue/Red mỗi ván, không auto luân phiên trên UI; CLI `--first-picks` cho lặp side, validation và báo cáo nguồn luật đúng phạm vi.
+- [x] 170 tests, build, 3 Edge workflow, mirror case, continued prefix và BO5 `red,red,blue,blue,red` (100 actions / 50 unique) PASS; hash/privacy/docs/sổ mục 29/ADR-042.
+- [ ] Chứng minh cặp tối ưu, tăng thắng và đánh giá chiến thuật độc lập vẫn chưa đạt; không nằm trong kết luận regression này.
 
-## Hai panel/contextual v2 — 2026-11-24
+## Hai panel / contextual v2 — 2026-11-24
 
-- [x] Gợi ý và chọn tay đồnghiện, xácnhậnriêng; browser kiểm manualkhôngẩngợiý.
-- [x] Fixedcapacityutility sửa pooln<3, tínhđơnđiệu và baselinecùngpool80states.
-- [x] Pinngày/mãsnapshot, configvisible/export, mismatch409 và guardcache; conflictvẫnexport/newsession.
-- [x]159tests,build,2Edgeworkflow/mobile, Prohash/outputs/privacy/documentationPASS; khôngtrain/commit/push.
-- [ ] Chứng minh tăngchấtlượngchiếnthuậtđộclập vẫnchưađạt; phépsohiệntạikhôngtăngRecall5banlịchsử.
+- [x] Gợi ý và chọn tay đồng hiện, nút xác nhận riêng; browser kiểm tra manual không ẩn gợi ý.
+- [x] Fixed-capacity utility sửa pool `n < 3`, tính đơn điệu và baseline cùng pool trên 80 states.
+- [x] Pin ngày và mã `snapshot_id`, hiện cấu hình/export, mismatch trả `409` và guard cache; khi conflict vẫn export/tạo phiên mới được.
+- [x] 159 tests, build, 2 Edge workflow/mobile, Pro hash/outputs/privacy/documentation PASS; không train/commit/push.
+- [ ] Chứng minh tăng chất lượng chiến thuật độc lập vẫn chưa đạt; phép so hiện tại không tăng Recall@5 ban lịch sử.
 
 ## UI local TS/API — 2026-11-24
 
-- [x] React/TypeScript một trang, FastAPI mỏng, reuse engine/default current.
-- [x] Chọn tay/gợi ý, turn numbering, flex/undo/archive, auto có review/test override.
-- [x] Chuỗi5ván Fearless/localStorage/export; Rank chỉ là evidence của Pro UI.
-- [x] Build,154unit tests, browserEdge workflow một ván→ván2 và mobile, export/hash/privacy.
-- [x] Hướng dẫn chạy, sổ27/NV-21, AI/ADR040/constitution1.3.0 đồng bộ; không commit/push.
-- [ ] Rank recommender UI riêng và prospective đánh giá chất lượng: còn phụ thuộc dữ liệu, không thuộc nghiệm thu UI Pro đầu tiên.
+- [x] React/TypeScript một trang, FastAPI mỏng, tái sử dụng engine và mặc định `current`.
+- [x] Chọn tay/gợi ý, đánh số lượt, flex/undo/archive, auto có review/test override.
+- [x] Chuỗi 5 ván Fearless, `localStorage`, export JSON; Rank chỉ là bảng bằng chứng trong Pro UI.
+- [x] Build, 154 unit tests, browser Edge workflow một ván → ván 2 và mobile, export/hash/privacy.
+- [x] Hướng dẫn chạy, sổ mục 27 (NV-21), AI/ADR-040/constitution `1.3.0` đồng bộ; không commit/push.
+- [ ] Rank recommender UI riêng và đánh giá prospective chất lượng: còn phụ thuộc dữ liệu, không thuộc nghiệm thu UI Pro đầu tiên.
 
 ## Rà điểm / so sánh đơn giản / BO5 — 2026-11-24
 
-- [x] Rà8thànhphần, trọng số/côngthức/chương/MR vàbảnggiữ-bỏ trong TINH_GIAN_DIEM_RECOMMENDER.
-- [x] Một côngthức simple3tínhiệu cófallback/missingrõ; selectorcurrent/simple, defaultcurrentkhôngđổi, khôngthêmframework/model.
-- [x] CùngfrozenProhistory/eligible(role,champion)pool vàrules;200val/320test ×3;hashpool/split/ablation8thànhphần đãxuất.
-- [x] Simple testRecall5=.425 thấp hơncurrent=.49375:giữmặcđịnh, khôngtuneđểépmetric.
-- [x] BO5T1–Gen.G5draft/100actions/50pickunique,bancontextual/picksimple,mỗiBan/Picksốvàlýdo/missingđãghi;44fallback/5sparsecónhãn,khôngwinnerfake.
-- [x] 146unit tests+integrationpairedpool/split/freeze/điểmtừJSON/legality/DBhashPASS; sổ26MR-23/NV-20,docs/AIđồngbộ.
+- [x] Rà 8 thành phần, trọng số/công thức/chương/MR và bảng giữ-bỏ trong `docs/TINH_GIAN_DIEM_RECOMMENDER.md`.
+- [x] Công thức `simple` 3 tín hiệu có fallback/missing rõ; selector `current`/`simple`, default `current` không đổi, không thêm framework/model.
+- [x] Cùng frozen Pro history, eligible `(role, champion)` pool và rules; 200 val / 320 test × 3; xuất pool hash, split và ablation 8 thành phần.
+- [x] `simple` test Recall@5 = `0.425` thấp hơn `current` = `0.49375`: giữ mặc định, không tune để ép metric.
+- [x] BO5 T1–Gen.G 5 draft / 100 actions / 50 pick unique, ban contextual / pick simple, ghi đủ số Ban/Pick, lý do và missing; 44 fallback / 5 sparse có nhãn, không giả winner.
+- [x] 146 unit tests + integration PASS; sổ mục 26 (MR-23/NV-20), docs/AI đồng bộ.
 
-Khôngđánhdấuđãnângchấtlượngchiếnthuật/đãtinhgiảnmặcđịnh; so sánh dùngProauditcũ vàpickretrieval, khôngfinaltestđộclậpmới.
+Không đánh dấu đã nâng chất lượng chiến thuật hay đã tinh giản mặc định; so sánh dùng Pro audit cũ và pick retrieval, không phải final test độc lập mới.
 
 ## Rà soát phạm vi vừa sức và rút quota — 2026-11-24
 
-- [x] Đối chiếu nhóm chức năng/Chương0–6, chỉ rõ core/phụ/nghiên cứu và phần runtime vẫn còn MR trong docs/PHAM_VI_DO_AN_VUA_SUC.
-- [x] Thêm giới hạn phát triển vào AI_RULES/KNOWLEDGE_RULES vàconstitution1.2.0; khôngbắtbuộcWeb/APIđầyđủ hoặc theođuổiquymôU.GG.
-- [x] Bỏdefault2.000, metadata None/summaryv3/referencechưanạp, khônggiảmtiêuchuẩncohort hoặc đổiđiểmPro.
-- [x] 139fulltests/70ranksubset/integration418gamesPASS, Proexportchỉđổiquota metadata; noDB/modelchange.
-- [x] NạplạiwatchkhôngquotaPID29828/worker7992,cùngkho/checkpoint,manifest/logđãlưu; sổ25/NV-19 vàdocsđồngbộ.
-- [ ] Chưa cóU.GGreference matchedfilter đểxácnhậnngangsốmẫu/độphủ; khôngphảiđiềukiệnnghiệmthuđồán.
-- [ ] Nếu thực sự rút công thức xếp hạng hiện tại cần một thay đổi riêng có baseline; chưaclaimđãđơngiảnhóathuậttoán. Prototype/evaluator cũ giữtruyvết, khôngxóafile.
+- [x] Đối chiếu nhóm chức năng với Chương 0–6, chỉ rõ phần cốt lõi / phụ / nghiên cứu và phần runtime vẫn còn MR trong `docs/PHAM_VI_DO_AN_VUA_SUC.md`.
+- [x] Thêm giới hạn phát triển vào `AI_RULES`, `KNOWLEDGE_RULES` và constitution `1.2.0`; không bắt buộc Web/API đầy đủ hoặc theo đuổi quy mô U.GG.
+- [x] Bỏ default 2,000, metadata `None`, summary v3, `ugg_reference_status=not_loaded`; không giảm tiêu chuẩn cohort hoặc đổi điểm Pro.
+- [x] 139 full tests / 70 rank subset / integration 418 games PASS, Pro export chỉ đổi quota metadata; không đổi DB/model.
+- [x] Nạp lại watch không quota PID 29828 / worker 7992, cùng kho và checkpoint, manifest/log đã lưu; sổ mục 25 (NV-19) và docs đồng bộ.
+- [ ] Chưa có U.GG reference cùng bộ lọc để xác nhận ngang số mẫu/độ phủ; không phải điều kiện nghiệm thu đồ án.
+- [ ] Nếu thực sự rút công thức xếp hạng hiện tại cần một thay đổi riêng có baseline; chưa tuyên bố đã đơn giản hóa thuật toán. Prototype/evaluator cũ giữ để truy vết, không xóa file.
 
 ## Pro matchup + source explanations + contextual experiment — 2026-11-24
 

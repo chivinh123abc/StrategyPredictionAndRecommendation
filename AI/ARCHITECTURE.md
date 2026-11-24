@@ -1,56 +1,52 @@
 ## Inspector whole-panel collapse — 2026-11-24
 
-Inspectorlocalcollapsedstateconditionalbodymount;headerremainssmall,aria-expanded/controls.NoAPI/selection/modelchange.NV24presentationonly.
-
-## Inspector whole-panel collapse — 2026-11-24
-
-Inspectorlocalcollapsedstateconditionalbodymount;headerremainssmall,aria-expanded/controls.NoAPI/selection/modelchange.NV24presentationonly.
+Inspector dùng local `collapsed` state và conditional body mount; header giữ nhỏ gọn, có `aria-expanded` / `aria-controls`. Không đổi API, selection hay model. Chỉ là NV-24 presentation.
 
 ## Inspector click-toggle — 2026-11-24
 
-ReactselectionstateandinspectorOpenareseparate:closepreserveschoice,deselectclearschoice,acceptresetsboth.Nullinitialselectionmeansmanualconfirmrequiresactualclick.Autoengineunchanged.NV24,backend/schemaunchanged.
+React `selected` state và `inspectorOpen` tách biệt: nút Đóng giữ lựa chọn, bỏ chọn (deselect) xóa lựa chọn, accept reset cả hai. `selected=null` mặc định nên manual confirm yêu cầu bấm chọn thực sự. Auto engine, backend và schema không đổi (NV-24).
 
 ## Sidebar responsive fit — 2026-11-24
 
-CSS-only responsive900px,grid1/2.7/1/minwidth0/margin0/stretch. Backendunchanged;NV24evidencereports/ui_sidebars_fit.
+CSS-only responsive từ `900px`: grid `1fr / 2.7fr / 1fr`, `min-width: 0`, `margin: 0`, `align-items: stretch`. Backend không đổi; minh chứng NV-24 tại `reports/ui_sidebars_fit/`.
 
 ## Three-column choice placement — 2026-11-24
 
-CSS-only>=1200pxworkspacecolumns300px/flex/300px,gridarea recommend|teams|manual;setup/turnabove,explain/timelinebelow.Verticalcenterboardanddragunchanged.Responsivehẹpgiữlayoutdễđọc.Khôngscientificmethod/APIchange,NV24,noADRnew. Evidence reports/ui_flanking_choices.
+CSS-only `>= 1200px`: workspace 3 cột `300px / flex / 300px`, grid areas `recommend | teams | manual`; setup/turn ở trên, explain/timeline ở dưới. Bảng giữa xếp role dọc và drag không đổi. Màn hình hẹp giữ layout dễ đọc. Không đổi phương pháp khoa học/API (NV-24, không thêm ADR mới). Minh chứng: `reports/ui_flanking_choices/`.
 
 ## UI placement correction — 2026-11-24
 
-CSS-only: teams-gridmax1000pxjustify-selfcenter;role-slotsverticalblock,portrait47px. SurroundingCSSGridsetupabove/parallelchoices/explanationbelowunchanged. NoAPI/schema/scoremethodchanges;NV24samefeature,noADRscientificnew. Browserlayoutverifiedreports/ui_centered_board. Source/backendsameasADR043.
+CSS-only: `.teams-grid` `max-width: 1000px`, `justify-self: center`; `.role-slots` xếp dọc, portrait `47px`. CSS Grid xung quanh (setup trên, hai khu chọn song song, giải thích dưới) giữ nguyên. Không đổi API/schema/score (NV-24, cùng tính năng, không ADR khoa học mới). Minh chứng browser layout tại `reports/ui_centered_board/`. Source/backend giữ nguyên như ADR-043.
 
 ## Compact UI and assigned lane policy — 2026-11-24
 
-draft_safety.pyrole_preferences/infer_free_rolebasedonsnapshotrole_counts,annotate_lane_supportdirectcurrentrole(enemy_evidence),LANE_REVIEW_VERSIONassigned_lane_review_v2. Pickfactorycontextualannotates andsortsWilsonlowerboundwhenrequestroleorallopenexposed;blinddoesnotgetfreeadvantage;rawcurrentunchanged.Gatesreview n<5. APIrole_preferences/View/manualnullroleinference,identityaddsmanual/laneversions. ReactCSSGridsetupabove/teamcards/parallelchoices/inspectorbelow;nativedataTransferrestrictedside,serverexisting.swapvalidatesandsaves. CLIexplicitfirstpicksmultigame,noalternatingfallback. Noframework/DB/modelchange.
+`draft_safety.py`: `role_preferences` / `infer_free_role` dựa trên `snapshot.role_counts`, `annotate_lane_support` kiểm trực tiếp role hiện tại (`enemy_evidence`), `LANE_REVIEW_VERSION = assigned_lane_review_v2`. Pick factory contextual gắn nhãn và sắp xếp theo Wilson lower bound khi lọc cùng role hoặc khi mọi role trống đã lộ đối thủ; blind không được ưu tiên miễn phí; raw current score không đổi. Gate yêu cầu review khi `n < 5`. API trả `role_preferences`, hỗ trợ suy role khi manual `role=null`, identity bổ sung version `manual_role_policy` và `lane_review_policy`. React CSS Grid: setup trên đầu, bảng đội hình, hai khu chọn song song, inspector dưới; native `dataTransfer` chỉ cho phép cùng phe, server `state.swap` validate và lưu. CLI nhiều ván bắt buộc truyền danh sách `first_picks`, bỏ alternating fallback. Không thêm framework, không đổi DB/model.
 
 ## Schedule constraint for bot partners / per-game first selection — 2026-11-24
 
-Newsmallmodulepair_reservation.py:enemy_bans_before_next_pick+reserve_pairs,táicachepair_evidenceperanchor,vớipoollegalbot/supđầyđủtừadvisorcurrent. Pickfactorycontextualcollectfullbot/sup→annotatepriority/evidence→sortwishlist/supportedtier/pairpriority/score→UIrolefilter/top5. Legacydefaultpickfactorykhôngbậtguard. BanPlannerunchanged. Needs_reviewthêmthiếupair;simhistory/APIwhitelist/explainlưumetadata. Khôngchuyểnscorerthànhprobability/modelopponent/search. APIidentity/configcópair_safetyversion.
+Thêm module nhỏ `pair_reservation.py` (`enemy_bans_before_next_pick`, `reserve_pairs`), tái sử dụng cache `pair_evidence` theo anchor với pool legal bot/sup đầy đủ từ advisor current. Pick factory contextual thu toàn bộ bot/sup → gắn `priority_tier`/evidence → sắp theo wishlist / lớp đủ mẫu / pair priority / score → áp UI role filter / top 5. Legacy default pick factory không bật guard. `BanPlanner` không đổi. `needs_tactical_review` thêm điều kiện thiếu cặp; history/API whitelist/explain lưu metadata. Không chuyển điểm sang xác suất, không thêm opponent model hay search. API identity/config thêm `pair_safety` version.
 
-Game.first_sidegiữmapcolorindependent,run_seriesnhậnfirst_picks,first_selection_orderkiểmđủnsidevalues;UIexplicitselectortrướckhiSangván,noforcedalternation. Bo5metadata lưuuser_configured/list;nguồnFearlesskhôngchứngnhậnFirstSelection. Noadditionalservice/framework/database. MR24/NV23,sổ29/ADR042.
+`Game.first_side` giữ độc lập với màu map; `run_series` nhận `first_picks`, `first_selection_order` kiểm đủ `n` giá trị side; UI yêu cầu chọn rõ trước khi Sang ván, không tự luân phiên. Metadata BO5 lưu `user_configured` và danh sách; nguồn Fearless không dùng để xác nhận luật First Selection. Không thêm service/framework/database. Sổ mục 29 (MR-24/NV-23), ADR-042.
 
 ## Contextual v2 / two panels / snapshot binding — 2026-11-24
 
-Khôngservice/frameworkmới. BanPlanner.pool_value sum(max(score,0) topk)/k thay mean availabletopk; backuptrốngutility0, observationsvẫnmissing. API make_viewcopySession/pindateUTC, fingerprintsourcePro/scope/rosters/teams/scoring/thresholds/version; mismatch409. source_fingerprint LRU1 bindlifetimesource, actualhashkiểmmỗiview; DBđổiđòirestartcache. UIrecommendations/manual-choicehai panelđồnghiện, confirmriêng, configurationstrip/export; sessionfingerprintkhônghashmoves vì cùngconfigdùngquacácván. Thaysettingtrướclượtđầu xoáIDđểkhởitạocấuhìnhmới; testoverridekhôngđổiID/score. Đây làNV-22 +MR-13revision, khôngglobalBO5/lookahead. docsUI/BAN vàsổ28.
+Không thêm service/framework mới. `BanPlanner.pool_value` dùng `sum(max(score, 0) top k) / k` thay cho trung bình các ứng viên hiện có; backup trống có utility `0`, còn số đo thực tế vẫn giữ `missing`. API `make_view` sao chép Session, chốt ngày UTC khi `as_of` trống, tính fingerprint trên Pro DB / scope / rosters / teams / scoring / ngưỡng / version; lệch trả `409`. `source_fingerprint` LRU(1) gắn với vòng đời server, đối chiếu hash thật mỗi view; DB thay đổi yêu cầu restart cache. UI tách 2 panel đồng hiện (gợi ý và chọn tay) có nút confirm riêng, thanh cấu hình và export; session fingerprint không hash danh sách moves vì cùng cấu hình dùng xuyên các ván. Đổi settings trước lượt đầu sẽ xóa `snapshot_id` để khởi tạo cấu hình mới; test override không đổi ID/score. Đây là NV-22 + sửa MR-13, không phải global BO5/lookahead. Tài liệu UI/BAN và sổ mục 28.
 
 ## Local UI adapter — 2026-11-24 (ADR-040)
 
-Browser React/TS → same-origin `/api` FastAPI → existing DraftState + DraftAdvisor + BanPlanner → readonly clean Pro/Rank evidence. Vite compile sang `web/dist`; uvicorn127.0.0.1 phục vụ bundle, chỉ mount thư mục dist sau API routes. Không thêm backend service/DB phiên hoặc học lại model. API stateless kiểm toàn bộ history/swaps; derive previous-game locks, không nhận board/score do browser gửi. Một RLock bảo vệ cache shared; advisor LRU4 theo region/as_of. Input/output typed; whitelist advice loại contextual trace lớn/identifiers. LocalStorage v1 input ở browser, export theo thao tác người dùng. UI kiến trúc NV-21 ngoài môn, không thêm MR khoa học. Hướng dẫn và giới hạn: docs/UI_REACT_TYPESCRIPT.md.
+Browser React/TS → same-origin `/api` FastAPI → tái sử dụng `DraftState` + `DraftAdvisor` + `BanPlanner` → đọc clean Pro/Rank evidence (read-only). Vite compile sang `web/dist`; `uvicorn 127.0.0.1` phục vụ bundle, chỉ mount thư mục `dist` sau các API routes. Không thêm backend service, DB phiên hay huấn luyện lại model. API stateless kiểm toàn bộ history/swaps; tự suy previous-game locks, không nhận board/score do browser gửi. Một `RLock` bảo vệ cache dùng chung; advisor LRU(4) theo `(region, as_of)`. Input/output có kiểu rõ; whitelist advice loại bỏ contextual trace lớn và định danh cá nhân. `localStorage` v1 chỉ lưu input ở browser, export theo thao tác người dùng. Kiến trúc UI là NV-21 ngoài môn, không thêm MR khoa học. Hướng dẫn và giới hạn: `docs/UI_REACT_TYPESCRIPT.md`.
 
 ## Pick scoring comparison within existing advisor — 2026-11-24
 
-MộtselectorAdvisorPolicy.scoring:currentdefault hoặc explicit simple; recommend_picks giữnguyêncandidatefactory/history/meta snapshot rồi simplebranch returntrướccôngthức pairlift/currentbonus. _simple_rows meanfrequency/cosine/WRcùngrolefallback; _attach_explanations chungkhôngđổiscore. Các cấu trúcMetaSnapshot cũ vẫnđượcxâydựng,dùngchoflex/ban/postdraftsummary, nênkhôngclaimtoànbộMRđãbịgỡ. BanPlanner khôngđổi; điểmđầuvàopickkhác cóthểđổibandenial.
+Thêm bộ chọn `AdvisorPolicy.scoring`: mặc định `current` hoặc chỉ định `simple`. `recommend_picks` giữ nguyên candidate factory, history và meta snapshot; nhánh `simple` trả về trước công thức pair lift và các bonus của `current`. `_simple_rows` tính trung bình frequency / cosine / WR cùng role (có fallback); `_attach_explanations` dùng chung và không làm đổi điểm. Các cấu trúc `MetaSnapshot` cũ vẫn được xây dựng để phục vụ flex, ban và tổng kết sau draft, nên không tuyên bố toàn bộ MR đã bị gỡ. `BanPlanner` không đổi; tuy nhiên điểm đầu vào pick khác nhau có thể làm đổi điểm ban denial.
 
-compare_pick_scoring reuseactualstates/chronoSeries/holdout/metrics/seriesbootstrap/diagnostic_score; samepoolperrole/hash,8ablationmetrics. KhôngRanktrongscore/eval, khôngtune. Simulator/series CLI--pick-scoring current|simple lưu đủgiảithíchvàthànhphần, report100actions50pickreasons. Defaultgiữcurrentvìsimplegiảmtestretrieval;146tests+integrationPASS. DocTINH_GIAN_DIEM_RECOMMENDER,sổMR-23NV-20. Khôngframework/model/schema mới.
+`compare_pick_scoring.py` tái sử dụng actual states, chronological series split, holdout, metrics, series bootstrap và `diagnostic_score`; cùng pool theo role (có hash), kèm 8 ablation metrics. Không đưa Rank vào score/eval, không tune. Simulator/series CLI thêm `--pick-scoring current|simple`, lưu đủ giải thích và thành phần; báo cáo đủ 100 actions và lý do của 50 picks. Giữ mặc định `current` vì `simple` làm giảm truy hồi trên tập test; 146 tests + integration PASS. Tài liệu `docs/TINH_GIAN_DIEM_RECOMMENDER.md`, sổ mục 26 (MR-23/NV-20). Không thêm framework/model/schema mới.
 
 ## Phạm vi course-sized và quota metadata — 2026-11-24
 
-Khôngthêmmodule/framework/thuậttoán. Giữdòngchảydữliệusạch→SQL/Pandas/EDA→ML/CB→demodraftcógiảithích; nghiêncứugiữngoàiluồngbắtbuộc. API/Webfullstack khôngbắtbuộc, thưmụcđóchưatồntạivẫnlàplanned. CácMRruntimehiệncócònphảigọiđúngMR, chưađổicôngthức/banpolicy. ScopegovernanceAIrules/constitution1.2.0/docPHAM_VI_DO_AN_VUA_SUC.
+Không thêm module/framework/thuật toán mới. Giữ dòng chảy dữ liệu sạch → SQL/Pandas/EDA → ML/CB → demo draft có giải thích; các nhánh nghiên cứu giữ ngoài luồng bắt buộc. API/Web fullstack không bắt buộc. Các MR runtime hiện có vẫn giữ nhãn đúng MR, chưa đổi công thức hay ban policy. Quy chuẩn phạm vi: `AI_RULES.md`, constitution `1.2.0`, `docs/PHAM_VI_DO_AN_VUA_SUC.md`.
 
-Ranktables/CLI defaulttargetNone; reportv3 bỏquotasốcốđịnh, cácfieldcũnullgiữcompat, referenceU.GGchưanạp/parityFalse. WatchnạplạicùngDBvàcheckpoint,argskhông2.000;pidfamily/loglưumanifest. KhôngschemaSQLite/modelchange; NV-19sổ25.
+Rank tables/CLI đặt mặc định `target=None`; report v3 bỏ quota số cố định, các trường cũ để `null` để giữ tương thích, `ugg_reference_status=not_loaded`, `parity=False`. Watch nạp lại cùng DB và checkpoint, bỏ tham số 2,000; PID family và log lưu trong manifest. Không đổi schema SQLite hay model; sổ mục 25 (NV-19).
 
 ## Matchup evidence decoration và isolated source experiment — 2026-11-24
 

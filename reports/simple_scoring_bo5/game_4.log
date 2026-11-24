@@ -1,0 +1,254 @@
+Đang nạp lịch sử trận đấu và hồ sơ tướng...
+GIẢ LẬP BAN/PICK MỘT VÁN — LỊCH SỬ + CONTENT-BASED
+Bạn: blue; phe chọn trước: red; dữ liệu: WLDS
+SNAPSHOT LỊCH SỬ: patch dataset 16.20, dữ liệu đến 2026-11-14T23:18:11+00:00, cũ 10 ngày so với mốc yêu cầu
+110 trận trong cửa sổ 60 ngày, 98 trận patch đích; không gọi là live meta.
+Lineup T1 (latest_observed_lineup_not_live_roster): top=Doran, jng=Oner, mid=Faker, bot=Peyz, sup=Keria
+Lineup Gen.G (latest_observed_lineup_not_live_roster): top=Kiin, jng=Canyon, mid=Chovy, bot=Ruler, sup=Duro
+Ưu tiên presence/nhịp draft gần đây; bể tướng, đối đầu và cosine là tín hiệu hỗ trợ. Điểm không phải xác suất.
+
+==========================================================================================
+BLUE T1 | Cấm: —
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: —
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 1/20: RED Gen.G — CẤM
+ĐÃ CẤM: Lee Sin
+  Căn cứ: Mất pool địch 0.0172; chi phí tự cấm 0.0115; đội mình lấy lượt pick tới trước địch=True; Fearless khóa 30; chấm theo pool ngữ cảnh
+
+==========================================================================================
+BLUE T1 | Cấm: —
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Lee Sin
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 2/20: BLUE T1 — CẤM
+ĐÃ CẤM: Rumble
+  Căn cứ: Mất pool địch 0.0245; chi phí tự cấm 0.0131; đội mình lấy lượt pick tới trước địch=False; Fearless khóa 30; chấm theo pool ngữ cảnh
+
+==========================================================================================
+BLUE T1 | Cấm: Rumble
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Lee Sin
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 3/20: RED Gen.G — CẤM
+ĐÃ CẤM: Jayce
+  Căn cứ: Mất pool địch 0.0253; chi phí tự cấm 0.0180; đội mình lấy lượt pick tới trước địch=True; Fearless khóa 30; chấm theo pool ngữ cảnh
+
+==========================================================================================
+BLUE T1 | Cấm: Rumble
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Lee Sin, Jayce
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 4/20: BLUE T1 — CẤM
+ĐÃ CẤM: Qiyana
+  Căn cứ: Mất pool địch 0.0177; chi phí tự cấm 0.0078; đội mình lấy lượt pick tới trước địch=False; Fearless khóa 30; chấm theo pool ngữ cảnh
+
+==========================================================================================
+BLUE T1 | Cấm: Rumble, Qiyana
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Lee Sin, Jayce
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 5/20: RED Gen.G — CẤM
+ĐÃ CẤM: Wukong
+  Căn cứ: Mất pool địch 0.0150; chi phí tự cấm 0.0099; đội mình lấy lượt pick tới trước địch=True; Fearless khóa 30; chấm theo pool ngữ cảnh
+
+==========================================================================================
+BLUE T1 | Cấm: Rumble, Qiyana
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Lee Sin, Jayce, Wukong
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 6/20: BLUE T1 — CẤM
+ĐÃ CẤM: Pantheon
+  Căn cứ: Mất pool địch 0.0209; chi phí tự cấm 0.0110; đội mình lấy lượt pick tới trước địch=False; Fearless khóa 30; chấm theo pool ngữ cảnh
+
+==========================================================================================
+BLUE T1 | Cấm: Rumble, Qiyana, Pantheon
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Lee Sin, Jayce, Wukong
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 7/20: RED Gen.G — CHỌN
+ĐÃ CHỌN: Lucian [bot]
+  Căn cứ: Điểm đơn giản = trung bình 2 tín hiệu: pick_frequency=0.625; content=0.955; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Rumble, Qiyana, Pantheon
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Lee Sin, Jayce, Wukong
+Top: — | Rừng: — | Mid: — | Xạ thủ: Lucian | Hỗ trợ: —
+
+LƯỢT 8/20: BLUE T1 — CHỌN
+ĐÃ CHỌN: Ahri [mid]
+  Căn cứ: Điểm đơn giản = trung bình 3 tín hiệu: pick_frequency=0.385; content=0.915; matchup=0.700; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Rumble, Qiyana, Pantheon
+Top: — | Rừng: — | Mid: Ahri | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Lee Sin, Jayce, Wukong
+Top: — | Rừng: — | Mid: — | Xạ thủ: Lucian | Hỗ trợ: —
+
+LƯỢT 9/20: BLUE T1 — CHỌN
+ĐÃ CHỌN: Renekton [top]
+  Căn cứ: Điểm đơn giản = trung bình 3 tín hiệu: pick_frequency=0.429; content=0.798; matchup=0.667; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Rumble, Qiyana, Pantheon
+Top: Renekton | Rừng: — | Mid: Ahri | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Lee Sin, Jayce, Wukong
+Top: — | Rừng: — | Mid: — | Xạ thủ: Lucian | Hỗ trợ: —
+
+LƯỢT 10/20: RED Gen.G — CHỌN
+ĐÃ CHỌN: Twisted Fate [mid]
+  Căn cứ: Điểm đơn giản = trung bình 3 tín hiệu: pick_frequency=0.192; content=0.921; matchup=0.800; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Rumble, Qiyana, Pantheon
+Top: Renekton | Rừng: — | Mid: Ahri | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Lee Sin, Jayce, Wukong
+Top: — | Rừng: — | Mid: Twisted Fate | Xạ thủ: Lucian | Hỗ trợ: —
+
+LƯỢT 11/20: RED Gen.G — CHỌN
+ĐÃ CHỌN: Leona [sup]
+  Căn cứ: Điểm đơn giản = trung bình 3 tín hiệu: pick_frequency=0.333; content=0.907; matchup=0.667; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Rumble, Qiyana, Pantheon
+Top: Renekton | Rừng: — | Mid: Ahri | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Lee Sin, Jayce, Wukong
+Top: — | Rừng: — | Mid: Twisted Fate | Xạ thủ: Lucian | Hỗ trợ: Leona
+
+LƯỢT 12/20: BLUE T1 — CHỌN
+ĐÃ CHỌN: Rakan [sup]
+  Căn cứ: Điểm đơn giản = trung bình 3 tín hiệu: pick_frequency=0.593; content=0.979; matchup=0.312; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Rumble, Qiyana, Pantheon
+Top: Renekton | Rừng: — | Mid: Ahri | Xạ thủ: — | Hỗ trợ: Rakan
+RED Gen.G | Cấm: Lee Sin, Jayce, Wukong
+Top: — | Rừng: — | Mid: Twisted Fate | Xạ thủ: Lucian | Hỗ trợ: Leona
+
+LƯỢT 13/20: BLUE T1 — CẤM
+ĐÃ CẤM: Naafiri
+  Căn cứ: Mất pool địch 0.0223; chi phí tự cấm 0.0145; đội mình lấy lượt pick tới trước địch=True; Fearless khóa 30; chấm theo pool ngữ cảnh
+
+==========================================================================================
+BLUE T1 | Cấm: Rumble, Qiyana, Pantheon, Naafiri
+Top: Renekton | Rừng: — | Mid: Ahri | Xạ thủ: — | Hỗ trợ: Rakan
+RED Gen.G | Cấm: Lee Sin, Jayce, Wukong
+Top: — | Rừng: — | Mid: Twisted Fate | Xạ thủ: Lucian | Hỗ trợ: Leona
+
+LƯỢT 14/20: RED Gen.G — CẤM
+ĐÃ CẤM: Xin Zhao
+  Căn cứ: Mất pool địch 0.0210; chi phí tự cấm 0.0105; đội mình lấy lượt pick tới trước địch=False; Fearless khóa 30; chấm theo pool ngữ cảnh
+
+==========================================================================================
+BLUE T1 | Cấm: Rumble, Qiyana, Pantheon, Naafiri
+Top: Renekton | Rừng: — | Mid: Ahri | Xạ thủ: — | Hỗ trợ: Rakan
+RED Gen.G | Cấm: Lee Sin, Jayce, Wukong, Xin Zhao
+Top: — | Rừng: — | Mid: Twisted Fate | Xạ thủ: Lucian | Hỗ trợ: Leona
+
+LƯỢT 15/20: BLUE T1 — CẤM
+ĐÃ CẤM: Maokai
+  Căn cứ: Mất pool địch 0.0119; chi phí tự cấm 0.0004; đội mình lấy lượt pick tới trước địch=True; Fearless khóa 30; chấm theo pool ngữ cảnh
+
+==========================================================================================
+BLUE T1 | Cấm: Rumble, Qiyana, Pantheon, Naafiri, Maokai
+Top: Renekton | Rừng: — | Mid: Ahri | Xạ thủ: — | Hỗ trợ: Rakan
+RED Gen.G | Cấm: Lee Sin, Jayce, Wukong, Xin Zhao
+Top: — | Rừng: — | Mid: Twisted Fate | Xạ thủ: Lucian | Hỗ trợ: Leona
+
+LƯỢT 16/20: RED Gen.G — CẤM
+ĐÃ CẤM: Sejuani
+  Căn cứ: Mất pool địch 0.0585; chi phí tự cấm 0.0244; đội mình lấy lượt pick tới trước địch=False; Fearless khóa 30; chấm theo pool ngữ cảnh
+
+==========================================================================================
+BLUE T1 | Cấm: Rumble, Qiyana, Pantheon, Naafiri, Maokai
+Top: Renekton | Rừng: — | Mid: Ahri | Xạ thủ: — | Hỗ trợ: Rakan
+RED Gen.G | Cấm: Lee Sin, Jayce, Wukong, Xin Zhao, Sejuani
+Top: — | Rừng: — | Mid: Twisted Fate | Xạ thủ: Lucian | Hỗ trợ: Leona
+
+LƯỢT 17/20: BLUE T1 — CHỌN
+ĐÃ CHỌN: Kai'Sa [bot]
+  Căn cứ: Điểm đơn giản = trung bình 3 tín hiệu: pick_frequency=0.375; content=0.944; matchup=0.500; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Rumble, Qiyana, Pantheon, Naafiri, Maokai
+Top: Renekton | Rừng: — | Mid: Ahri | Xạ thủ: Kai'Sa | Hỗ trợ: Rakan
+RED Gen.G | Cấm: Lee Sin, Jayce, Wukong, Xin Zhao, Sejuani
+Top: — | Rừng: — | Mid: Twisted Fate | Xạ thủ: Lucian | Hỗ trợ: Leona
+
+LƯỢT 18/20: RED Gen.G — CHỌN
+ĐÃ CHỌN: Jax [top]
+  Căn cứ: Điểm đơn giản = trung bình 3 tín hiệu: pick_frequency=0.321; content=0.858; matchup=0.444; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Rumble, Qiyana, Pantheon, Naafiri, Maokai
+Top: Renekton | Rừng: — | Mid: Ahri | Xạ thủ: Kai'Sa | Hỗ trợ: Rakan
+RED Gen.G | Cấm: Lee Sin, Jayce, Wukong, Xin Zhao, Sejuani
+Top: Jax | Rừng: — | Mid: Twisted Fate | Xạ thủ: Lucian | Hỗ trợ: Leona
+
+LƯỢT 19/20: RED Gen.G — CHỌN
+ĐÃ CHỌN: Aatrox [jng]
+  Căn cứ: Điểm đơn giản = trung bình 2 tín hiệu: pick_frequency=0.032; matchup=0.000; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Rumble, Qiyana, Pantheon, Naafiri, Maokai
+Top: Renekton | Rừng: — | Mid: Ahri | Xạ thủ: Kai'Sa | Hỗ trợ: Rakan
+RED Gen.G | Cấm: Lee Sin, Jayce, Wukong, Xin Zhao, Sejuani
+Top: Jax | Rừng: Aatrox | Mid: Twisted Fate | Xạ thủ: Lucian | Hỗ trợ: Leona
+
+LƯỢT 20/20: BLUE T1 — CHỌN
+ĐÃ CHỌN: Lillia [jng]
+  Căn cứ: Điểm đơn giản = trung bình 2 tín hiệu: pick_frequency=0.032; matchup=0.000; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Rumble, Qiyana, Pantheon, Naafiri, Maokai
+Top: Renekton | Rừng: Lillia | Mid: Ahri | Xạ thủ: Kai'Sa | Hỗ trợ: Rakan
+RED Gen.G | Cấm: Lee Sin, Jayce, Wukong, Xin Zhao, Sejuani
+Top: Jax | Rừng: Aatrox | Mid: Twisted Fate | Xạ thủ: Lucian | Hỗ trợ: Leona
+Căn cứ cặp T1: observed_pairs=0, sparse_pairs=4, unobserved_pairs=5, insufficient_anchor_pairs=1
+Căn cứ cặp Gen.G: observed_pairs=0, sparse_pairs=2, unobserved_pairs=7, insufficient_anchor_pairs=1
+
+===============================================================================================
+📋 BẢNG ĐỘI HÌNH HOÀN THIỆN SAU KHI CẤM/CHỌN (FINAL DRAFT)
+===============================================================================================
+🔷 PHE XANH (T1):
+   • TOP: Renekton (Doran)
+   • JNG: Lillia (Oner)
+   • MID: Ahri (Faker)
+   • BOT: Kai'Sa (Peyz)
+   • SUP: Rakan (Keria)
+
+🔴 PHE ĐỎ (Gen.G):
+   • TOP: Jax (Kiin)
+   • JNG: Aatrox (Canyon)
+   • MID: Twisted Fate (Chovy)
+   • BOT: Lucian (Ruler)
+   • SUP: Leona (Duro)
+Radar và thẻ chiến thuật dùng thuộc tính/quy tắc chuyên gia; chưa được xác nhận như điều kiện thắng nhân quả.
+
+────────────────────────────────────── THẺ CHIẾN THUẬT: T1 (BLUE) ──────────────────────────────────────
+🏆 Trường phái: [EARLY SNOWBALL & DIVE]
+📊 Radar 5 trục: Early: 0.697 | Scaling: 0.758 | Combat: 0.735 | Pick: 0.807 | Obj: 0.72
+⭐ Chủ lực (Core Carry): Kai'Sa
+⏱️ Điểm rơi sức mạnh: Đầu trận (Phút 1 đến Phút 20 - Trước mốc Baron xuất hiện)
+🐉 Mục tiêu số 1: Sâu Hư Không đợt 1 + Trụ Đầu (First Tower) trước phút 14
+✅ Điều kiện thắng: Tạo chênh lệch >= 2,000 vàng lúc 10 phút, băng trụ 2 cánh liên tục, ép đối thủ vỡ trận trước 25 phút.
+❌ Cần tránh: Bị đối thủ phòng ngự kéo dài trận đấu qua phút 30 khi chất tướng hết thời gian lăn cầu tuyết.
+
+────────────────────────────────────── THẺ CHIẾN THUẬT: GEN.G (RED) ──────────────────────────────────────
+🏆 Trường phái: [WOMBOCOMBO & OBJECTIVE CONTROL]
+📊 Radar 5 trục: Early: 0.672 | Scaling: 0.702 | Combat: 0.615 | Pick: 0.815 | Obj: 0.675
+⭐ Chủ lực (Core Carry): Twisted Fate
+⏱️ Điểm rơi sức mạnh: Giữa và Cuối trận (Phút 20 đến Phút 35 - Giai đoạn Rồng 3, 4 và Baron)
+🐉 Mục tiêu số 1: Rồng Nguyên Tố (Thiết lập Linh Hồn Rồng) & Hang Baron
+✅ Điều kiện thắng: Kiểm soát tầm nhìn trước 1 phút tại hang mục tiêu lớn, ép đối thủ vào các góc hẹp của sông và tung Wombocombo 5v5 quét sạch.
+❌ Cần tránh: Để đối thủ chia cắt đội hình đẩy lẻ 1-3-1 hoặc giao tranh khi chưa có đủ chiêu cuối mở combat.
+Phiên có mốc lịch sử: bỏ dự báo từ model lưu sẵn vì chưa bảo đảm model được fit trước mốc này.
+Đã lưu phiên: reports\simple_scoring_bo5\game_4.json

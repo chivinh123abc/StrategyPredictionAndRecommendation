@@ -1,0 +1,27 @@
+﻿{
+    "pid":  29828,
+    "worker_pids":  [
+                        7992
+                    ],
+    "started_at_utc":  "2026-11-24T08:05:27.1116601Z",
+    "status_at_launch":  "running",
+    "previous_pid":  23100,
+    "restart_reason":  "user_removed_fixed_sample_quota",
+    "fixed_sample_quota":  null,
+    "ugg_reference_status":  "not_loaded",
+    "platforms":  [
+                      "kr",
+                      "euw1",
+                      "na1"
+                  ],
+    "arguments":  [
+                      "-u",
+                      "src/01_data_pipeline/update_rank_evidence.py",
+                      "--platforms",
+                      "kr,euw1,na1",
+                      "--watch"
+                  ],
+    "stdout":  "reports/rank_matchups_live/collector_watch_no_quota.log",
+    "stderr":  "reports/rank_matchups_live/collector_watch_no_quota_errors.log",
+    "stop_command":  "Stop-Process -Id 29828,7992"
+}

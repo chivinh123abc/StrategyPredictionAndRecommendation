@@ -1,0 +1,105 @@
+{
+  "protocol": "fixed_capacity_arithmetic_correction_same_state_v1",
+  "cutoff": "2026-10-26T18:03:08.999999999+00:00",
+  "history_games": 2930,
+  "scope": {
+    "region": "WLDS",
+    "dataset_patch": "16.20",
+    "data_through": "2026-10-26T17:12:02+00:00",
+    "requested_as_of": "2026-10-26T18:03:08.999999999+00:00",
+    "staleness_days": 0,
+    "history_games": 58,
+    "patch_games": 46,
+    "lookback_days": 60,
+    "half_life_days": 21.0,
+    "claim": "historical_snapshot_not_live_meta"
+  },
+  "series_ids": {
+    "history": [
+      "WLDS:LOLTMNT02_479621",
+      "WLDS:LOLTMNT02_478715",
+      "WLDS:LOLTMNT02_479982",
+      "WLDS:LOLTMNT02_480078",
+      "WLDS:LOLTMNT02_481268",
+      "WLDS:LOLTMNT02_480507",
+      "WLDS:LOLTMNT02_482269",
+      "WLDS:LOLTMNT02_483314",
+      "WLDS:LOLTMNT02_483342",
+      "WLDS:LOLTMNT02_482292",
+      "WLDS:LOLTMNT02_482304",
+      "WLDS:LOLTMNT02_482313",
+      "WLDS:LOLTMNT02_482325",
+      "WLDS:LOLTMNT02_482335",
+      "WLDS:LOLTMNT02_482539",
+      "WLDS:LOLTMNT02_482559",
+      "WLDS:LOLTMNT02_482570",
+      "WLDS:LOLTMNT02_483571",
+      "WLDS:LOLTMNT02_482587",
+      "WLDS:LOLTMNT02_482599",
+      "WLDS:LOLTMNT02_482606",
+      "WLDS:LOLTMNT02_482620",
+      "WLDS:LOLTMNT02_483687",
+      "WLDS:LOLTMNT02_482761",
+      "WLDS:LOLTMNT02_483708",
+      "WLDS:LOLTMNT02_482793",
+      "WLDS:LOLTMNT02_483824"
+    ],
+    "validation": [
+      "WLDS:LOLTMNT02_483840",
+      "WLDS:LOLTMNT02_483861",
+      "WLDS:LOLTMNT02_482911",
+      "WLDS:LOLTMNT02_486159",
+      "WLDS:LOLTMNT02_486183",
+      "WLDS:LOLTMNT02_486299",
+      "WLDS:LOLTMNT02_486325",
+      "WLDS:LOLTMNT02_485366",
+      "WLDS:LOLTMNT02_486479"
+    ],
+    "test": [
+      "WLDS:LOLTMNT02_486541",
+      "WLDS:LOLTMNT02_485482",
+      "WLDS:LOLTMNT02_486564",
+      "WLDS:LOLTMNT02_485703",
+      "WLDS:LOLTMNT02_488030",
+      "WLDS:LOLTMNT02_487095",
+      "WLDS:LOLTMNT02_488135",
+      "WLDS:LOLTMNT02_487213",
+      "WLDS:LOLTMNT02_488293",
+      "WLDS:LOLTMNT02_487405"
+    ]
+  },
+  "manifest_sha256": "43e5f475e6706631859f649d784c398903013fb2feb39bd8815011d9cdd50b65",
+  "results": {
+    "validation": {
+      "queries": 40,
+      "top1_changed": 1,
+      "top5_changed": 3,
+      "queries_with_short_role_pool": 2,
+      "old_removal_increases": 10,
+      "new_removal_increases": 0,
+      "old_recall5": 0.675,
+      "new_recall5": 0.675
+    },
+    "test": {
+      "queries": 40,
+      "top1_changed": 7,
+      "top5_changed": 8,
+      "queries_with_short_role_pool": 6,
+      "old_removal_increases": 21,
+      "new_removal_increases": 0,
+      "old_recall5": 0.525,
+      "new_recall5": 0.525
+    }
+  },
+  "pick_scoring": "current",
+  "selection": "40 evenly spaced chronological ban queries per split, fixed before measurement",
+  "changed_formula": "sum(nonnegative top-k utility)/k; vacant slot utility zero",
+  "limitations": [
+    "Reused audit data, not independent final evaluation.",
+    "Recall retrieves observed bans; no tactical ground truth or win uplift.",
+    "Already revealed roles inferred with existing method; no final roles or query outcome.",
+    "No parameter fit or weight tuning; actual game resources and Rank are not score inputs.",
+    "Promotion is a monotonicity bug fix, not a claim of improved strategic accuracy."
+  ],
+  "database_sha256": "20e3d9739b271283f35a1ba33f345e3593bafe4e31212906d35939d91b2f740c"
+}

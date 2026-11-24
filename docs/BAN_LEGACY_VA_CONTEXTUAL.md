@@ -13,17 +13,19 @@
 
 - Nơi dùng: `BanPlanner.contextual/recommend` và `ContextualBanPolicy` trong `src/07_recommender/ban_planner.py`.
 - Dùng bảng chọn của từng role/tuyển thủ ở cả hai đội; lọc tướng đã khóa bởi Fearless, đã ban/pick và lựa chọn được bảo vệ.
-- Giá trị pool mỗi role là trung bình điểm tối đa3ứng viên đầu, ưu tiên lớp có đủ mẫu trước lớp ít mẫu. Tính loss khi loại từng ứng viên ban, theo cả pool địch và pool mình.
+- **Contextual v2 (24/11):** giá trị pool mỗi role = tổng utility không âm của tối đa3ứng viên đầu **chia cố định cho3**, ưu tiên lớp đủ mẫu trước lớp ít mẫu. Vị trí backup không còn lựa chọn có utility0; đây là quy ước chấm pool, không điền0 vào dữ liệu thiếu. Bản cũ chia theo số ứng viên còn lại nên bỏ bớt một backup có thể làm giá trị pool tăng. Bản v2 đảm bảo mất lựa chọn không làm pool tốt lên chỉ vì đổi mẫu số. Tính loss cho cả pool địch và pool mình; công thức/weights khác giữ nguyên.
 - Chi phí tự cấm = loss pool mình ×1 nếu mình lấy lượt pick tiếp trước địch, ×0.5 nếu lấy sau. Thứ tự lấy tướng đọc từ lịch draft, độc lập màuBlue/Red.
 - `contextual_score = (sum(enemy_role_loss) - own_cost_weight*sum(own_role_loss)*access_factor)/5`. Mặc định own_cost_weight1; trọng số chung do nhóm thiết kế, chưa tune bằng benchmark chiến thuật độc lập.
 - Xếp hạng một bước, **không dự đoán hoặc duyệt nhánh phản ứng**. Không có bonus ép các ván phải ban khác nhau, không có case theo tên tướng.
 - Đầu ra ban: `pool_impact` ghi role/backup/số lựa chọn/value trước-sau; `contextual_trace` ghi trạng thái đã lộ, danh sách ứng viên/điểm và latency. Không còn `search_trace`, branches hoặc sensitivity của cây tìm kiếm trong kết quả mới.
 
+**So sánh bản cũ/v2:** [80 trạng thái ban cùng dữ liệu](../reports/contextual_ui_revision/REPORT.md), [comparison.json](../reports/contextual_ui_revision/comparison.json). 40validation/40test chia series/thời gian và cố định history trước validation; cùng pool hợp lệ, không tune trọng số. Probe mất lựa chọn mà tăng pool:31→0. Recall@5 ban lịch sử vẫn67.5%validation/52.5%test ở cả hai bản. Đây là sửa tính nhất quán của heuristic; chưa chứng minh tăng chất lượng chiến thuật hoặc thắng trận. Bản cũ ở báo cáo lịch sử giữ nguyên, không tự so khác snapshot rồi nhận cải thiện.
+
 ## Chạy và đọc kết quả
 
 ```powershell
-.\.venv\Scripts\python.exe src/07_recommender/simulate_fearless_series.py --blue-team T1 --red-team Gen.G --region WLDS --as-of 2026-11-13 --patch 16.20 --games 5 --allow-statistical-auto --ban-strategy legacy --output-dir reports/legacy_contextual_comparison/legacy
-.\.venv\Scripts\python.exe src/07_recommender/simulate_fearless_series.py --blue-team T1 --red-team Gen.G --region WLDS --as-of 2026-11-13 --patch 16.20 --games 5 --allow-statistical-auto --ban-strategy contextual --output-dir reports/legacy_contextual_comparison/contextual
+.\.venv\Scripts\python.exe src/07_recommender/simulate_fearless_series.py --blue-team T1 --red-team Gen.G --region WLDS --as-of 2026-11-13 --patch 16.20 --games 5 --first-picks blue,red,blue,red,blue --allow-statistical-auto --ban-strategy legacy --output-dir reports/legacy_contextual_comparison/legacy
+.\.venv\Scripts\python.exe src/07_recommender/simulate_fearless_series.py --blue-team T1 --red-team Gen.G --region WLDS --as-of 2026-11-13 --patch 16.20 --games 5 --first-picks blue,red,blue,red,blue --allow-statistical-auto --ban-strategy contextual --output-dir reports/legacy_contextual_comparison/contextual
 .\.venv\Scripts\python.exe src/07_recommender/compare_ban_strategies.py
 ```
 
@@ -41,3 +43,7 @@ Các file `series.json`, `game_1.json`…`game_5.json` và log nằm cạnh repo
 Nền MH/UD: Chương1 thống kê/xác suất; Chương5x lọc/groupby; điểm chọn vẫn có content-based Chương6 và thống kê trận trước. MR: hai công thức xếp hạng/pool loss/self-denial do nhóm thiết kế, không phải công thức nguyên bản trong slide. NV: CLI, khóa Fearless, trace và báo cáo.
 
 Điểm ban khác nhau hoặc ban bớt lặp không chứng minh chiến thuật mạnh hơn. Contextual chưa có evaluator cơ chế counter, chưa tự tìm nhiều nhánh flex và chưa tối ưu để dành tướng cảBO5. Phần đối thủ-model đã có từ trước được giữ độc lập, không được contextual gọi để chấm ban. Không fit lại model hoặc sửa DB trong đợt bỏ lookahead này.
+
+## Rà soát pick contextual, chưa sửa policy — 24/11
+
+Đãaudit50pick/248alternativecùngroletrênđúngstate:38pickthiếuđốiđầuđủmẫukhiđịchđãlộ,5blind,7cóítmẫuđủngưỡng. Ván5cóPoppy2/Aurora2/Nasus1trận. [Reviewtừnglượt](../reports/contextual_pick_review/REVIEW.md), [tổnghợp](../reports/contextual_pick_review/summary.json). Bỏcompositionđổitop1ở14lượt,meta13:chỉlàđộnhạychứkhônggroundtruthchọnsai. Chưasửađiểm/flexhoặcđánhgiánhiềuseriestrongbướcnày.

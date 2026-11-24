@@ -1,0 +1,30 @@
+{
+  "version": "draft-modes-v2-snapshot-cohort",
+  "snapshot_collection": {
+    "tier_floor_from": "pro.rank_tier_floor",
+    "max_match_age_hours": 24,
+    "max_snapshot_spread_minutes": 15,
+    "required_participants": 10,
+    "cohort_kind": "all_ten_high_snapshot_near_match_proxy",
+    "historical_rank_verified": false,
+    "threshold_status": "configurable_engineering_defaults_not_optimized"
+  },
+  "rank": {
+    "purpose": "Ranked draft assistance with separate tier, platform, queue and patch strata",
+    "runtime_status": "planned",
+    "unverified_tier_stratum": "unknown",
+    "professional_data_pooled_by_default": false
+  },
+  "pro": {
+    "purpose": "Professional draft; professional history is primary, high-ranked evidence is supplementary",
+    "runtime_status": "existing_legacy_contextual_pro_history_only",
+    "rank_signal_enabled": false,
+    "rank_tier_floor": "MASTER",
+    "rank_tier_floor_status": "configurable_working_default_not_empirically_optimized",
+    "rank_queue": "RANKED_SOLO_5x5",
+    "all_ten_participants_required": true,
+    "require_documented_rank_at_match": true,
+    "current_snapshot_is_historical_rank": false,
+    "challenger_seed_is_all_participants_high": false
+  }
+}

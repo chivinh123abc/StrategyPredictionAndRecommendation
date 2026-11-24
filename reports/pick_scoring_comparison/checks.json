@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "unit_tests": 146,
+  "paired_queries": 520,
+  "query_records": 1560,
+  "same_candidate_role_pools": true,
+  "series_split_disjoint": true,
+  "history_frozen": true,
+  "current_default_preserved": true,
+  "observed_test_decline": true,
+  "bo5_actions": 100,
+  "bo5_unique_picks": 50,
+  "bo5_counts": {
+    "ban": 50,
+    "pick": 50,
+    "missing_matchup": 44,
+    "sparse_candidate": 5,
+    "historical_wr_fallback": 44
+  },
+  "formula_reconstruction": "PASS",
+  "fearless_legality": "PASS",
+  "no_fabricated_match_results": true,
+  "db_unchanged": true,
+  "db_sha256": "20e3d9739b271283f35a1ba33f345e3593bafe4e31212906d35939d91b2f740c",
+  "source_sha256": {
+    "draft_advisor.py": "ee73376b8c0479843f992aadaedc4b1acd6e7a1867b3a5cf671befcd621a2353",
+    "compare_pick_scoring.py": "1136b9945d26c5fa349ce0a2de3ea1e601d63b108734483839eadd90ddc50277",
+    "simulate_draft_match.py": "9df621742255e21c5bfb45af5efdda602ec68ccc2890a052a58cb5a22648d321",
+    "simulate_fearless_series.py": "4c61fdc389d426d4f39bf5f4940205538c448a412322890b50adb6273af048c0"
+  }
+}

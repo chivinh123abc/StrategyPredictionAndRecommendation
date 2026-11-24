@@ -9,8 +9,10 @@ from itertools import combinations
 PROJECT_ROOT=Path(__file__).resolve().parents[2]
 sys.path[:0]=[str(PROJECT_ROOT),str(PROJECT_ROOT/'src/06_machine_learning'),str(Path(__file__).resolve().parent)]
 from recommender_engine import RecommenderEngine, normalize_region_code
-from draft_advisor import DraftAdvisor, ROLES, role_key, DISPLAY_ROLES
+from draft_advisor import DraftAdvisor, AdvisorPolicy, ROLES, role_key, DISPLAY_ROLES
 from draft_meta import MetaPolicy
+from pair_reservation import reserve_pairs,PAIR_SAFETY_VERSION
+from draft_safety import annotate_lane_support,lane_support_priority,LANE_REVIEW_VERSION
 
 # Presets are editable demo rosters, not a live roster service.
 TEAM_PRESETS = {
@@ -30,8 +32,9 @@ LANE_TITLE={'top':'Top','jng':'Rừng','mid':'Mid','bot':'Xạ thủ','sup':'H�
 
 def needs_tactical_review(choice,enemy_picks,allow_statistical_auto=False):
     """Do not auto-finalize a full-team response without supported enemy evidence."""
-    return bool(not allow_statistical_auto and len(enemy_picks)==5 and
-                choice.get('review_required',False))
+    return bool(not allow_statistical_auto and (choice.get('lane_review',{}).get('requires_review',False) or
+                choice.get('pair_reservation',{}).get('requires_review',False) or
+                len(enemy_picks)==5 and choice.get('review_required',False)))
 
 
 def draft_schedule(first_side='blue'):
@@ -89,15 +92,17 @@ def roster_for(name):
     return dict(TEAM_PRESETS.get(name.upper(),{r:f'{name}_{r}' for r in ROLES}))
 
 
-def pick_candidates(advisor,state,side,roster,region,wishlist=None,only_role=None):
+def pick_candidates(advisor,state,side,roster,region,wishlist=None,only_role=None,pair_safety=False):
     enemy='red' if side=='blue' else 'blue'
-    roles=[role_key(only_role)] if only_role else ROLES
+    requested_role=role_key(only_role) if only_role else None
+    roles=ROLES if pair_safety else [requested_role] if requested_role else ROLES
     roles=[r for r in roles if r not in state.picks[side]]
     all_rows=[]
     for role in roles:
         slot=('F' if side==state.first_side else 'S')+str(len(state.picks[side])+1)
         rows=advisor.recommend_picks(role,state.picks[side],state.picks[enemy],state.unavailable,
-                                    roster.get(role),top_k=5,region=region,seeds=wishlist,draft_slot=slot)
+                                    roster.get(role),top_k=10000 if pair_safety and role in ['bot','sup'] else 5,
+                                    region=region,seeds=wishlist,draft_slot=slot)
         for row in rows:
             row={**row,'role':role,'lane_title':LANE_TITLE[role],
                  'priority_pct':row['ranking_score'],'player':roster.get(role),
@@ -106,8 +111,18 @@ def pick_candidates(advisor,state,side,roster,region,wishlist=None,only_role=Non
                 'mechanical_counter_status','evidence_status']} for r in rows if r['champion']!=row['champion']][:3]
             all_rows.append(row)
     # Keep multiple role assignments for a flex champion; UI specifies each role.
-    all_rows.sort(key=lambda r:(not r['user_preference'],r.get('evidence_status')=='sparse_candidate',-r['score'],-r['games'],r['champion'],r['role']))
-    if only_role:return all_rows[:5]
+    if pair_safety:
+        all_rows=reserve_pairs(all_rows,advisor,state,side,region)
+        all_rows=annotate_lane_support(all_rows,advisor.context(region)[0],state.picks[enemy],advisor.policy.min_games)
+    # Compare lane sample support when choosing within a requested role, or
+    # when every open role has an exposed opponent. A blind role is not treated
+    # as automatically better than responding to a revealed lane.
+    lane_order=bool(requested_role) or all(role in state.picks[enemy] for role in roles)
+    def ordering(r):return (not r['user_preference'],r.get('evidence_status')=='sparse_candidate',
+                           r.get('pair_reservation',{}).get('priority_tier',1),lane_support_priority(r,lane_order),
+                           -r['score'],-r['games'],r['champion'],r['role'])
+    all_rows.sort(key=ordering)
+    if requested_role:return [r for r in all_rows if r['role']==requested_role][:5]
     result=[]
     # Give every open role an entry, then fill with highest-ranked remaining pairs.
     for role in roles:
@@ -118,7 +133,7 @@ def pick_candidates(advisor,state,side,roster,region,wishlist=None,only_role=Non
         if (row['champion'],row['role']) not in keys:
             result.append(row);keys.add((row['champion'],row['role']))
         if len(result)>=8:break
-    return sorted(result,key=lambda r:(not r['user_preference'],r.get('evidence_status')=='sparse_candidate',-r['score'],-r['games'],r['champion'],r['role']))
+    return sorted(result,key=ordering)
 
 
 def show_board(state,names):
@@ -139,12 +154,16 @@ def show_candidates(rows,action):
             print(f"     n={row['games']} trận; {row['reasons'][1]}")
             if row.get('review_required'):print('     Cần xem lại chiến thuật: chưa có đối đầu đủ mẫu với đội địch đã lộ; không xác nhận counter.')
             if row.get('cosine_similarity') is not None:print(f"     Cosine={row['cosine_similarity']:.3f} (độ tương đồng)")
+            from matchup_evidence import format_evidence
+            for line in format_evidence(row.get('matchup_source_comparison',[])):print('     '+line)
         else:print('     '+row['reason'])
     if not rows:print(' Chưa đủ lịch sử để gợi ý. Có thể nhập tướng và vị trí trực tiếp hoặc đổi khu vực.')
 
 
 def explain(row):
     for text in row.get('reasons',[row.get('reason','')]):print('  • '+text)
+    from matchup_evidence import format_evidence
+    for line in format_evidence(row.get('matchup_source_comparison',[])):print('  '+line)
     if row.get('contextual_trace'):
         trace=row['contextual_trace']
         print(f"  • Contextual: xét {trace['legal_candidates']} ứng viên hợp lệ, không tìm nhánh phản ứng.")
@@ -213,11 +232,12 @@ def run_pro_tournament_draft_simulation(blue_team_name='T1',red_team_name='GEN.G
                                         first_side='blue',wishlist=None,interactive=True,region='ALL',
                                         input_fn=input,save_session=None,engine=None,advisor=None,
                                         meta_policy=None,max_data_age_days=None,used_champions=None,opponent_model_path=None,
-                                        allow_statistical_auto=False,ban_strategy='legacy'):
+                                        allow_statistical_auto=False,ban_strategy='legacy',pick_scoring='current'):
     if user_side not in ['blue','red']:raise ValueError('Phe điều khiển phải là blue hoặc red')
     print('Đang nạp lịch sử trận đấu và hồ sơ tướng...',flush=True)
     engine=engine or RecommenderEngine()
-    advisor=advisor or DraftAdvisor(db_path=engine.pick_recommender.db_path,meta_policy=meta_policy)
+    advisor=advisor or DraftAdvisor(db_path=engine.pick_recommender.db_path,meta_policy=meta_policy,
+        policy=AdvisorPolicy(scoring=pick_scoring))
     state=DraftState(first_side=first_side,used_champions=[engine.pick_recommender._normalize_champion_name(c) for c in used_champions or []])
     names={'blue':blue_team_name,'red':red_team_name}
     reg=normalize_region_code(region)
@@ -261,7 +281,7 @@ def run_pro_tournament_draft_simulation(blue_team_name='T1',red_team_name='GEN.G
             print('Dự đoán hành động kế tiếp (không phải lựa chọn tối ưu): '+', '.join(r['champion'] for r in forecast['predictions']))
         seeds=preferred if side==user_side else []
         def refresh(role=None):
-            if action=='pick':return pick_candidates(advisor,state,side,rosters[side],reg,seeds,role)
+            if action=='pick':return pick_candidates(advisor,state,side,rosters[side],reg,seeds,role,pair_safety=ban_strategy=='contextual')
             if ban_planner:return ban_planner.recommend(state,side,mode=ban_strategy,protected=seeds,target_role=role)
             enemy_slot=('F' if enemy==state.first_side else 'S')+str(len(state.picks[enemy])+1)
             return advisor.recommend_bans(rosters[enemy],state.picks[enemy],state.picks[side],state.unavailable,
@@ -279,15 +299,19 @@ def run_pro_tournament_draft_simulation(blue_team_name='T1',red_team_name='GEN.G
             print('Dừng: không có lựa chọn được dữ liệu hỗ trợ. Hãy chạy lại với khu vực rộng hơn hoặc chọn thủ công.');break
         if action=='pick' and (auto or side!=user_side) and needs_tactical_review(chosen,state.picks[enemy],allow_statistical_auto):
             manual_review={'turn':len(state.history)+1,'side':side,'role':chosen['role'],
-                           'candidate':chosen['champion'],'reason':'no_supported_enemy_context_with_full_enemy_team',
+                           'candidate':chosen['champion'],'reason':'insufficient_assigned_lane_support' if chosen.get('lane_review',{}).get('requires_review') else 'insufficient_pair_support' if chosen.get('pair_reservation',{}).get('requires_review') else 'no_supported_enemy_context_with_full_enemy_team',
+                           'lane_review':chosen.get('lane_review'),
+                           'pair_reservation':chosen.get('pair_reservation'),
                            'alternatives':chosen.get('alternatives_same_role',[]),
                            'counter_status':'not_established','enemy_revealed':dict(state.picks[enemy])}
-            print('DỪNG TỰ CHỌN: đội địch đã lộ đủ nhưng không có đối đầu đủ mẫu cho ứng viên dẫn đầu. Cần chọn tay/xem lại chiến thuật; không xác nhận counter.')
+            print('DỪNG TỰ CHỌN: ứng viên thiếu bằng chứng đối đầu hoặc ghép cặp. Cần chọn tay/xem lại; không xác nhận counter hay phối hợp tối ưu.')
             print('Ứng viên điểm cao:',chosen['champion'],'| phương án khác:',', '.join(r['champion'] for r in manual_review['alternatives']))
             break
         state.apply(side,action,chosen['champion'],chosen.get('role'))
         if forecast:state.history[-1]['next_action_forecast']=forecast
-        state.history[-1]['advice']={k:chosen[k] for k in ['score_kind','ranking_score','score_components','score_formula','base_priority','composition_lift','evidence_status','enemy_context_evidence','enemy_context_coverage','mechanical_counter_status','selection_basis','review_required','alternatives_same_role','denial_loss','ban_priority','cosine_similarity','games','historical','matchup','matchup_candidates','composition_evidence','synergies','player_history','reasons','reason','draft_slot','meta_scope','contextual_score','pool_impact','enemy_pool_loss','own_pool_loss','own_access_cost','own_next_pick_before_enemy','fearless_locked_count','contextual_trace','contextual_policy'] if k in chosen}
+        state.history[-1]['advice']={k:chosen[k] for k in ['score_kind','ranking_score','score_components','score_formula','base_priority','composition_lift','evidence_status','enemy_context_evidence','enemy_context_coverage','mechanical_counter_status','selection_basis','review_required','alternatives_same_role','denial_loss','ban_priority','cosine_similarity','games','historical','matchup','matchup_candidates','matchup_scope','same_role_supported_mass','matchup_source_comparison','composition_evidence','synergies','player_history','reasons','reason','draft_slot','meta_scope','contextual_score','pool_impact','enemy_pool_loss','own_pool_loss','own_access_cost','own_next_pick_before_enemy','fearless_locked_count','contextual_trace','contextual_policy'] if k in chosen}
+        if 'pair_reservation' in chosen:state.history[-1]['advice']['pair_reservation']=chosen['pair_reservation']
+        if 'lane_review' in chosen:state.history[-1]['advice']['lane_review']=chosen['lane_review']
         print(f"ĐÃ {'CẤM' if action=='ban' else 'CHỌN'}: {chosen['champion']}"+(f" [{chosen['role']}]" if action=='pick' else ''))
         if action=='ban' and chosen.get('reason'):print('  Căn cứ: '+chosen['reason'])
         elif chosen.get('reasons'):print('  Căn cứ: '+chosen['reasons'][1])
@@ -305,10 +329,13 @@ def run_pro_tournament_draft_simulation(blue_team_name='T1',red_team_name='GEN.G
         _display_summary_and_win_conditions(names['blue'],names['red'],state.picks['blue'],state.picks['red'],rosters['blue'],rosters['red'],engine,reg,
                                            show_prediction=advisor.meta_policy.as_of is None)
     else:print('Phiên dừng trước khi hoàn thành; chưa tính dự báo đội hình cuối.')
-    result={**state.as_dict(),'teams':names,'rosters':rosters,'region':reg,'policy':advisor.policy.weights,
+    result={**state.as_dict(),'teams':names,'rosters':rosters,'region':reg,'policy':advisor.policy.effective_weights,
+            'pick_scoring':advisor.policy.scoring,
+            'pair_safety':PAIR_SAFETY_VERSION if ban_strategy=='contextual' else None,
+            'lane_review_policy':LANE_REVIEW_VERSION if ban_strategy=='contextual' else None,
             'manual_review':manual_review,'allow_statistical_auto':allow_statistical_auto,
             'candidate_min_games':advisor.policy.candidate_min_games,'evidence_min_games':advisor.policy.min_games,
-            'objective':'patch_aware_presence_draft_order_role_pair_context','causal_uplift':None,
+            'objective':'simple_history_content_same_role_matchup' if advisor.policy.scoring=='simple' else 'patch_aware_presence_draft_order_role_pair_context','causal_uplift':None,
             'composition_summary':composition_summary,
             'ban_strategy':ban_strategy,
             'meta_scope':scope,'roster_sources':roster_sources,'ban_policy':{'presence':.6,'enemy_priority':.25,'gap':.15}}
@@ -401,6 +428,7 @@ def main():
     parser.add_argument('--allow-statistical-auto',action='store_true',
                         help='Cho phép demo tự chọn chỉ theo điểm thống kê dù thiếu căn cứ đối đầu toàn đội; không xác nhận counter')
     parser.add_argument('--ban-strategy',choices=['legacy','contextual'],default='legacy')
+    parser.add_argument('--pick-scoring',choices=['current','simple'],default='current',help='Explicit comparison formula; default preserves the current ranking.')
     mode=parser.add_mutually_exclusive_group()
     mode.add_argument('--auto',action='store_true')
     mode.add_argument('--interactive',action='store_true')
@@ -428,7 +456,7 @@ def main():
                                             max_data_age_days=args.max_data_age_days,
                                             used_champions=[c.strip() for c in args.used_champions.split(',') if c.strip()],
                                             opponent_model_path=args.opponent_model,
-                                            allow_statistical_auto=args.allow_statistical_auto,ban_strategy=args.ban_strategy)
+                                            allow_statistical_auto=args.allow_statistical_auto,ban_strategy=args.ban_strategy,pick_scoring=args.pick_scoring)
         if result.get('manual_review'):parser.exit(3,'Phiên chờ xem lại chiến thuật; chưa tự chốt lựa chọn thiếu căn cứ.\n')
     except (EOFError,KeyboardInterrupt):print('\nĐã dừng phiên.')
     except ValueError as exc:parser.exit(2,f'{exc}\n')

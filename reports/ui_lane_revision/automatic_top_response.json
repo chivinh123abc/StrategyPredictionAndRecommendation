@@ -1,0 +1,2459 @@
+{
+  "session": {
+    "settings": {
+      "region": "WLDS",
+      "blue_team": "T1",
+      "red_team": "Gen.G",
+      "ban_strategy": "contextual",
+      "as_of": "2026-11-24",
+      "allow_statistical_auto": false
+    },
+    "completed": [],
+    "current": {
+      "first_side": "blue",
+      "history": [
+        {
+          "side": "blue",
+          "action": "ban",
+          "champion": "Qiyana",
+          "role": null
+        },
+        {
+          "side": "red",
+          "action": "ban",
+          "champion": "Nocturne",
+          "role": null
+        },
+        {
+          "side": "blue",
+          "action": "ban",
+          "champion": "Olaf",
+          "role": null
+        },
+        {
+          "side": "red",
+          "action": "ban",
+          "champion": "Vi",
+          "role": null
+        },
+        {
+          "side": "blue",
+          "action": "ban",
+          "champion": "Ezreal",
+          "role": null
+        },
+        {
+          "side": "red",
+          "action": "ban",
+          "champion": "Lee Sin",
+          "role": null
+        },
+        {
+          "side": "blue",
+          "action": "pick",
+          "champion": "Cassiopeia",
+          "role": "mid"
+        },
+        {
+          "side": "red",
+          "action": "pick",
+          "champion": "Renata Glasc",
+          "role": "sup"
+        },
+        {
+          "side": "red",
+          "action": "pick",
+          "champion": "Kalista",
+          "role": "bot"
+        },
+        {
+          "side": "blue",
+          "action": "pick",
+          "champion": "Nautilus",
+          "role": "sup"
+        },
+        {
+          "side": "blue",
+          "action": "pick",
+          "champion": "Jhin",
+          "role": "bot"
+        },
+        {
+          "side": "red",
+          "action": "pick",
+          "champion": "Orianna",
+          "role": "mid"
+        },
+        {
+          "side": "red",
+          "action": "ban",
+          "champion": "Jayce",
+          "role": null
+        },
+        {
+          "side": "blue",
+          "action": "ban",
+          "champion": "Jarvan IV",
+          "role": null
+        },
+        {
+          "side": "red",
+          "action": "ban",
+          "champion": "Rumble",
+          "role": null
+        },
+        {
+          "side": "blue",
+          "action": "ban",
+          "champion": "Pantheon",
+          "role": null
+        },
+        {
+          "side": "red",
+          "action": "pick",
+          "champion": "Ambessa",
+          "role": "top"
+        },
+        {
+          "side": "blue",
+          "action": "pick",
+          "champion": "Wukong",
+          "role": "jng"
+        },
+        {
+          "side": "blue",
+          "action": "pick",
+          "champion": "Gnar",
+          "role": "top"
+        }
+      ],
+      "swaps": []
+    },
+    "snapshot_id": "fa8f6935c4d0d98efe9aa3bacdd7b9022a61b7e66ada546456a8e66f00528c49"
+  },
+  "games": [
+    {
+      "first_pick_side": "blue",
+      "picks": {
+        "blue": {
+          "mid": "Cassiopeia",
+          "sup": "Nautilus",
+          "bot": "Jhin",
+          "jng": "Wukong",
+          "top": "Gnar"
+        },
+        "red": {
+          "sup": "Renata Glasc",
+          "bot": "Kalista",
+          "mid": "Orianna",
+          "top": "Ambessa"
+        }
+      },
+      "bans": {
+        "blue": [
+          "Qiyana",
+          "Olaf",
+          "Ezreal",
+          "Jarvan IV",
+          "Pantheon"
+        ],
+        "red": [
+          "Nocturne",
+          "Vi",
+          "Lee Sin",
+          "Jayce",
+          "Rumble"
+        ]
+      },
+      "history": [
+        {
+          "turn": 1,
+          "side": "blue",
+          "action": "ban",
+          "champion": "Qiyana",
+          "role": null
+        },
+        {
+          "turn": 2,
+          "side": "red",
+          "action": "ban",
+          "champion": "Nocturne",
+          "role": null
+        },
+        {
+          "turn": 3,
+          "side": "blue",
+          "action": "ban",
+          "champion": "Olaf",
+          "role": null
+        },
+        {
+          "turn": 4,
+          "side": "red",
+          "action": "ban",
+          "champion": "Vi",
+          "role": null
+        },
+        {
+          "turn": 5,
+          "side": "blue",
+          "action": "ban",
+          "champion": "Ezreal",
+          "role": null
+        },
+        {
+          "turn": 6,
+          "side": "red",
+          "action": "ban",
+          "champion": "Lee Sin",
+          "role": null
+        },
+        {
+          "turn": 7,
+          "side": "blue",
+          "action": "pick",
+          "champion": "Cassiopeia",
+          "role": "mid"
+        },
+        {
+          "turn": 8,
+          "side": "red",
+          "action": "pick",
+          "champion": "Renata Glasc",
+          "role": "sup"
+        },
+        {
+          "turn": 9,
+          "side": "red",
+          "action": "pick",
+          "champion": "Kalista",
+          "role": "bot"
+        },
+        {
+          "turn": 10,
+          "side": "blue",
+          "action": "pick",
+          "champion": "Nautilus",
+          "role": "sup"
+        },
+        {
+          "turn": 11,
+          "side": "blue",
+          "action": "pick",
+          "champion": "Jhin",
+          "role": "bot"
+        },
+        {
+          "turn": 12,
+          "side": "red",
+          "action": "pick",
+          "champion": "Orianna",
+          "role": "mid"
+        },
+        {
+          "turn": 13,
+          "side": "red",
+          "action": "ban",
+          "champion": "Jayce",
+          "role": null
+        },
+        {
+          "turn": 14,
+          "side": "blue",
+          "action": "ban",
+          "champion": "Jarvan IV",
+          "role": null
+        },
+        {
+          "turn": 15,
+          "side": "red",
+          "action": "ban",
+          "champion": "Rumble",
+          "role": null
+        },
+        {
+          "turn": 16,
+          "side": "blue",
+          "action": "ban",
+          "champion": "Pantheon",
+          "role": null
+        },
+        {
+          "turn": 17,
+          "side": "red",
+          "action": "pick",
+          "champion": "Ambessa",
+          "role": "top"
+        },
+        {
+          "turn": 18,
+          "side": "blue",
+          "action": "pick",
+          "champion": "Wukong",
+          "role": "jng"
+        },
+        {
+          "turn": 19,
+          "side": "blue",
+          "action": "pick",
+          "champion": "Gnar",
+          "role": "top"
+        }
+      ],
+      "swaps": [],
+      "complete": false,
+      "used_champions": []
+    }
+  ],
+  "game_number": 1,
+  "turn": {
+    "turn": 20,
+    "side": "red",
+    "action": "pick",
+    "number": 5
+  },
+  "schedule": [
+    {
+      "turn": 1,
+      "side": "blue",
+      "action": "ban",
+      "number": 1
+    },
+    {
+      "turn": 2,
+      "side": "red",
+      "action": "ban",
+      "number": 1
+    },
+    {
+      "turn": 3,
+      "side": "blue",
+      "action": "ban",
+      "number": 2
+    },
+    {
+      "turn": 4,
+      "side": "red",
+      "action": "ban",
+      "number": 2
+    },
+    {
+      "turn": 5,
+      "side": "blue",
+      "action": "ban",
+      "number": 3
+    },
+    {
+      "turn": 6,
+      "side": "red",
+      "action": "ban",
+      "number": 3
+    },
+    {
+      "turn": 7,
+      "side": "blue",
+      "action": "pick",
+      "number": 1
+    },
+    {
+      "turn": 8,
+      "side": "red",
+      "action": "pick",
+      "number": 1
+    },
+    {
+      "turn": 9,
+      "side": "red",
+      "action": "pick",
+      "number": 2
+    },
+    {
+      "turn": 10,
+      "side": "blue",
+      "action": "pick",
+      "number": 2
+    },
+    {
+      "turn": 11,
+      "side": "blue",
+      "action": "pick",
+      "number": 3
+    },
+    {
+      "turn": 12,
+      "side": "red",
+      "action": "pick",
+      "number": 3
+    },
+    {
+      "turn": 13,
+      "side": "red",
+      "action": "ban",
+      "number": 4
+    },
+    {
+      "turn": 14,
+      "side": "blue",
+      "action": "ban",
+      "number": 4
+    },
+    {
+      "turn": 15,
+      "side": "red",
+      "action": "ban",
+      "number": 5
+    },
+    {
+      "turn": 16,
+      "side": "blue",
+      "action": "ban",
+      "number": 5
+    },
+    {
+      "turn": 17,
+      "side": "red",
+      "action": "pick",
+      "number": 4
+    },
+    {
+      "turn": 18,
+      "side": "blue",
+      "action": "pick",
+      "number": 4
+    },
+    {
+      "turn": 19,
+      "side": "blue",
+      "action": "pick",
+      "number": 5
+    },
+    {
+      "turn": 20,
+      "side": "red",
+      "action": "pick",
+      "number": 5
+    }
+  ],
+  "recommendations": [
+    {
+      "champion": "Xin Zhao",
+      "ranking_score": 18.33,
+      "score_kind": "patch_aware_draft_priority_points",
+      "games": 7,
+      "historical": {
+        "wins": 5,
+        "games": 7,
+        "winrate": 0.7142857142857143,
+        "ci95_wilson": [
+          0.35893445183261935,
+          0.9177810759959433
+        ],
+        "statistic_kind": "historical_team_result",
+        "causal_uplift": null
+      },
+      "reasons": [
+        "Đối thủ cùng vị trí đã lộ: Wukong (jng); kèo này có 1 mẫu Pro, dưới 5. Không tự chốt dựa vào điểm tổng.",
+        "Patch dataset 16.20: presence cửa sổ gần đây 14.3%; 7 lượt chọn đúng vị trí trên patch, 7 trận trong cửa sổ gần đây",
+        "Slot S5: ưu tiên chọn quan sát 0.005; không phải xác suất thắng",
+        "Vị trí địch còn là giả định: Wukong p(role)=1.00, n=1",
+        "Đã xét cả đội địch được lộ; coverage đối đầu đủ mẫu 0%. Chưa có evaluator cơ chế kỹ năng; không xác nhận đây là counter hoặc lựa chọn tối ưu.",
+        "Cặp jng/sup với Renata Glasc: 2/20 lần ghép, sparse_pair; association=0.6917871684507698; không phải xác suất thắng hoặc chứng minh tối ưu",
+        "Cặp jng/bot với Kalista: 2/19 lần ghép, sparse_pair; association=0.6934099074275688; không phải xác suất thắng hoặc chứng minh tối ưu",
+        "Cặp jng/mid với Orianna: 2/26 lần ghép, sparse_pair; association=0.6573611257267261; không phải xác suất thắng hoặc chứng minh tối ưu",
+        "Cặp jng/top với Ambessa: 0/27 lần ghép, unobserved_pair; association=0.29264232620361386; không phải xác suất thắng hoặc chứng minh tối ưu",
+        "Cosine 0.911 từ profile tuyển thủ Canyon; chỉ là hỗ trợ tương đồng"
+      ],
+      "cosine_similarity": 0.9111796346039758,
+      "score_components": {
+        "meta": {
+          "value": 0.14310824292620986,
+          "weight": 1.0
+        },
+        "draft_order": {
+          "value": 0.005192573087411918,
+          "weight": 1.0
+        },
+        "historical": {
+          "value": 0.35893445183261935,
+          "weight": 0.25
+        },
+        "matchup": {
+          "value": 0.5,
+          "weight": 0.5
+        },
+        "synergy": {
+          "value": 0.5,
+          "weight": 0.25
+        },
+        "composition": {
+          "value": 0.574378127107028,
+          "weight": 1.0
+        },
+        "mastery": {
+          "value": 0.0,
+          "weight": 0.5
+        },
+        "content": {
+          "value": 0.9111796346039758,
+          "weight": 0.1
+        }
+      },
+      "enemy_context_coverage": 0.0,
+      "mechanical_counter_status": "not_evaluated",
+      "selection_basis": "statistical_priority_not_validated_counter",
+      "review_required": true,
+      "evidence_status": "observed_candidate",
+      "matchup_source_comparison": [
+        {
+          "role": "jng",
+          "champion": "Xin Zhao",
+          "opponent": "Wukong",
+          "enemy_role_probability": 1.0,
+          "pro": {
+            "platform": "ALL_OBSERVED",
+            "queue": "PRO",
+            "patch": "ALL_OBSERVED",
+            "tier_floor": "PRO",
+            "role": "jng",
+            "champion_id": 5,
+            "opponent_id": 62,
+            "champion": "Xin Zhao",
+            "opponent": "Wukong",
+            "games": 1,
+            "wins": 1,
+            "winrate": 1.0,
+            "win_ci95_low": 0.20654931437723745,
+            "win_ci95_high": 1.0,
+            "champion_players": 1,
+            "opponent_players": 1,
+            "unique_players": 2,
+            "evidence_status": "insufficient_samples",
+            "patch_count": 1,
+            "patches": "[\"16.20\"]",
+            "platform_count": 1,
+            "platforms": "[\"WLDS\"]",
+            "target_games": null,
+            "games_remaining": null,
+            "target_reached": null,
+            "supported_patch_count": 0,
+            "gd15_patch_direction": "insufficient_patch_evidence",
+            "patch_gd15_details": "{}",
+            "gold_diff_10_n": 1,
+            "gold_diff_10_mean": -120.0,
+            "gold_diff_10_median": -120.0,
+            "gold_diff_10_sd": null,
+            "gold_diff_10_mean_ci95_low": null,
+            "gold_diff_10_mean_ci95_high": null,
+            "xp_diff_10_n": 1,
+            "xp_diff_10_mean": 122.0,
+            "xp_diff_10_median": 122.0,
+            "xp_diff_10_sd": null,
+            "xp_diff_10_mean_ci95_low": null,
+            "xp_diff_10_mean_ci95_high": null,
+            "cs_diff_10_n": 1,
+            "cs_diff_10_mean": -2.0,
+            "cs_diff_10_median": -2.0,
+            "cs_diff_10_sd": null,
+            "cs_diff_10_mean_ci95_low": null,
+            "cs_diff_10_mean_ci95_high": null,
+            "gold_diff_15_n": 1,
+            "gold_diff_15_mean": -696.0,
+            "gold_diff_15_median": -696.0,
+            "gold_diff_15_sd": null,
+            "gold_diff_15_mean_ci95_low": null,
+            "gold_diff_15_mean_ci95_high": null,
+            "xp_diff_15_n": 1,
+            "xp_diff_15_mean": 205.0,
+            "xp_diff_15_median": 205.0,
+            "xp_diff_15_sd": null,
+            "xp_diff_15_mean_ci95_low": null,
+            "xp_diff_15_mean_ci95_high": null,
+            "cs_diff_15_n": 1,
+            "cs_diff_15_mean": -3.0,
+            "cs_diff_15_median": -3.0,
+            "cs_diff_15_sd": null,
+            "cs_diff_15_mean_ci95_low": null,
+            "cs_diff_15_mean_ci95_high": null,
+            "early_status": "insufficient_samples",
+            "ci95_wilson": [
+              0.20654931437723745,
+              1.0
+            ]
+          },
+          "rank": {
+            "wins": 0,
+            "games": 0,
+            "winrate": null,
+            "ci95_wilson": [
+              null,
+              null
+            ],
+            "statistic_kind": "historical_team_result",
+            "causal_uplift": null,
+            "evidence_status": "missing",
+            "early_status": "missing",
+            "gold_diff_10_n": 0,
+            "gold_diff_10_mean": null,
+            "gold_diff_10_mean_ci95_low": null,
+            "gold_diff_10_mean_ci95_high": null,
+            "xp_diff_10_n": 0,
+            "xp_diff_10_mean": null,
+            "xp_diff_10_mean_ci95_low": null,
+            "xp_diff_10_mean_ci95_high": null,
+            "cs_diff_10_n": 0,
+            "cs_diff_10_mean": null,
+            "cs_diff_10_mean_ci95_low": null,
+            "cs_diff_10_mean_ci95_high": null,
+            "gold_diff_15_n": 0,
+            "gold_diff_15_mean": null,
+            "gold_diff_15_mean_ci95_low": null,
+            "gold_diff_15_mean_ci95_high": null,
+            "xp_diff_15_n": 0,
+            "xp_diff_15_mean": null,
+            "xp_diff_15_mean_ci95_low": null,
+            "xp_diff_15_mean_ci95_high": null,
+            "cs_diff_15_n": 0,
+            "cs_diff_15_mean": null,
+            "cs_diff_15_mean_ci95_low": null,
+            "cs_diff_15_mean_ci95_high": null,
+            "patches": "[]",
+            "platforms": "[]"
+          },
+          "comparison": {
+            "sample_status": "insufficient_samples",
+            "gd15_comparison": "insufficient_measurements",
+            "winrate_direction_conflict": false,
+            "mechanical_counter_confirmed": false
+          },
+          "pro_scope": "current advisor historical window/region, unweighted descriptive observations",
+          "rank_scope": "all observed patches/servers available before requested as_of",
+          "rank_frozen_at": "2026-11-24T10:36:28.113235+00:00",
+          "unknown_rank_games_excluded": 0,
+          "affects_main_score": false
+        }
+      ],
+      "role": "jng",
+      "priority_pct": 18.33,
+      "pair_reservation": {
+        "version": "bot_reservation_v1",
+        "enemy_bans_before_next_own_pick": 0,
+        "opponent_bot_revealed": true,
+        "priority_tier": 1,
+        "requires_review": false,
+        "interpretation": "observed_co_pick_support_not_mechanical_synergy",
+        "status": "completed_supported",
+        "pair_evidence": {
+          "wins": 9,
+          "games": 19,
+          "winrate": 0.47368421052631576,
+          "ci95_wilson": [
+            0.2732980516117956,
+            0.6829219075488682
+          ],
+          "statistic_kind": "historical_team_result",
+          "causal_uplift": null,
+          "role": "bot",
+          "champion": "Kalista",
+          "ally_role": "sup",
+          "ally": "Renata Glasc",
+          "anchor_games": 20,
+          "co_pick_share": 0.95,
+          "co_pick_share_ci95_wilson": [
+            0.763868806553258,
+            0.9911185511992047
+          ],
+          "weighted_pair_games": 9.579871466620627,
+          "weighted_anchor_games": 9.729677010387023,
+          "marginal_pick_share": 0.08258729086813232,
+          "smoothed_conditional_pick_share": 0.5274158502353419,
+          "smoothed_lift": 6.386162382750516,
+          "association_reliability": 0.48927141748362346,
+          "effective_lift": 2.477313077795804,
+          "association_score": 0.8646116957385911,
+          "status": "observed_pair",
+          "score_kind": "observed_role_pair_association_not_causal_synergy"
+        }
+      },
+      "lane_review": {
+        "wins": 1,
+        "games": 1,
+        "winrate": 1.0,
+        "ci95_wilson": [
+          0.20654931437723745,
+          1.0
+        ],
+        "statistic_kind": "historical_team_result",
+        "causal_uplift": null,
+        "enemy_role": "jng",
+        "opponent": "Wukong",
+        "interpretation": "observed_whole_game_result_not_mechanical_counter",
+        "role": "jng",
+        "requires_review": true,
+        "status": "insufficient_lane",
+        "ranking_confidence_bound": 0.20654931437723745,
+        "ranking_basis": "same_lane_full_game_winrate_wilson_lower_bound_not_lane_win_probability",
+        "version": "assigned_lane_review_v2",
+        "assignment_source": "current_draft_role_not_inferred_counter",
+        "reason": "Đối thủ cùng vị trí đã lộ: Wukong (jng); kèo này có 1 mẫu Pro, dưới 5. Không tự chốt dựa vào điểm tổng."
+      }
+    },
+    {
+      "champion": "Skarner",
+      "ranking_score": 17.61,
+      "score_kind": "patch_aware_draft_priority_points",
+      "games": 8,
+      "historical": {
+        "wins": 4,
+        "games": 8,
+        "winrate": 0.5,
+        "ci95_wilson": [
+          0.21521606221387757,
+          0.7847839377861224
+        ],
+        "statistic_kind": "historical_team_result",
+        "causal_uplift": null
+      },
+      "reasons": [
+        "Đối thủ cùng vị trí đã lộ: Wukong (jng); kèo này có 1 mẫu Pro, dưới 5. Không tự chốt dựa vào điểm tổng.",
+        "Patch dataset 16.20: presence cửa sổ gần đây 16.9%; 5 lượt chọn đúng vị trí trên patch, 8 trận trong cửa sổ gần đây",
+        "Slot S5: ưu tiên chọn quan sát 0.012; không phải xác suất thắng",
+        "Vị trí địch còn là giả định: Wukong p(role)=1.00, n=1",
+        "Đã xét cả đội địch được lộ; coverage đối đầu đủ mẫu 0%. Chưa có evaluator cơ chế kỹ năng; không xác nhận đây là counter hoặc lựa chọn tối ưu.",
+        "Cặp jng/sup với Renata Glasc: 1/20 lần ghép, sparse_pair; association=0.4333680294443007; không phải xác suất thắng hoặc chứng minh tối ưu",
+        "Cặp jng/bot với Kalista: 1/19 lần ghép, sparse_pair; association=0.4352406008422708; không phải xác suất thắng hoặc chứng minh tối ưu",
+        "Cặp jng/mid với Orianna: 1/26 lần ghép, sparse_pair; association=0.5295705423323505; không phải xác suất thắng hoặc chứng minh tối ưu",
+        "Cặp jng/top với Ambessa: 1/27 lần ghép, sparse_pair; association=0.5323964000124809; không phải xác suất thắng hoặc chứng minh tối ưu",
+        "Cosine 0.528 từ profile tuyển thủ Canyon; chỉ là hỗ trợ tương đồng"
+      ],
+      "cosine_similarity": 0.5281544248725519,
+      "score_components": {
+        "meta": {
+          "value": 0.16947188877496766,
+          "weight": 1.0
+        },
+        "draft_order": {
+          "value": 0.012299501010333405,
+          "weight": 1.0
+        },
+        "historical": {
+          "value": 0.21521606221387757,
+          "weight": 0.25
+        },
+        "matchup": {
+          "value": 0.5,
+          "weight": 0.5
+        },
+        "synergy": {
+          "value": 0.5,
+          "weight": 0.25
+        },
+        "composition": {
+          "value": 0.4869998682292327,
+          "weight": 1.0
+        },
+        "mastery": {
+          "value": 0.0,
+          "weight": 0.5
+        },
+        "content": {
+          "value": 0.5281544248725519,
+          "weight": 0.1
+        }
+      },
+      "enemy_context_coverage": 0.0,
+      "mechanical_counter_status": "not_evaluated",
+      "selection_basis": "statistical_priority_not_validated_counter",
+      "review_required": true,
+      "evidence_status": "observed_candidate",
+      "matchup_source_comparison": [
+        {
+          "role": "jng",
+          "champion": "Skarner",
+          "opponent": "Wukong",
+          "enemy_role_probability": 1.0,
+          "pro": {
+            "platform": "ALL_OBSERVED",
+            "queue": "PRO",
+            "patch": "ALL_OBSERVED",
+            "tier_floor": "PRO",
+            "role": "jng",
+            "champion_id": 72,
+            "opponent_id": 62,
+            "champion": "Skarner",
+            "opponent": "Wukong",
+            "games": 1,
+            "wins": 1,
+            "winrate": 1.0,
+            "win_ci95_low": 0.20654931437723745,
+            "win_ci95_high": 1.0,
+            "champion_players": 1,
+            "opponent_players": 1,
+            "unique_players": 2,
+            "evidence_status": "insufficient_samples",
+            "patch_count": 1,
+            "patches": "[\"16.20\"]",
+            "platform_count": 1,
+            "platforms": "[\"WLDS\"]",
+            "target_games": null,
+            "games_remaining": null,
+            "target_reached": null,
+            "supported_patch_count": 0,
+            "gd15_patch_direction": "insufficient_patch_evidence",
+            "patch_gd15_details": "{}",
+            "gold_diff_10_n": 1,
+            "gold_diff_10_mean": 83.0,
+            "gold_diff_10_median": 83.0,
+            "gold_diff_10_sd": null,
+            "gold_diff_10_mean_ci95_low": null,
+            "gold_diff_10_mean_ci95_high": null,
+            "xp_diff_10_n": 1,
+            "xp_diff_10_mean": -199.0,
+            "xp_diff_10_median": -199.0,
+            "xp_diff_10_sd": null,
+            "xp_diff_10_mean_ci95_low": null,
+            "xp_diff_10_mean_ci95_high": null,
+            "cs_diff_10_n": 1,
+            "cs_diff_10_mean": -7.0,
+            "cs_diff_10_median": -7.0,
+            "cs_diff_10_sd": null,
+            "cs_diff_10_mean_ci95_low": null,
+            "cs_diff_10_mean_ci95_high": null,
+            "gold_diff_15_n": 1,
+            "gold_diff_15_mean": 15.0,
+            "gold_diff_15_median": 15.0,
+            "gold_diff_15_sd": null,
+            "gold_diff_15_mean_ci95_low": null,
+            "gold_diff_15_mean_ci95_high": null,
+            "xp_diff_15_n": 1,
+            "xp_diff_15_mean": -274.0,
+            "xp_diff_15_median": -274.0,
+            "xp_diff_15_sd": null,
+            "xp_diff_15_mean_ci95_low": null,
+            "xp_diff_15_mean_ci95_high": null,
+            "cs_diff_15_n": 1,
+            "cs_diff_15_mean": -13.0,
+            "cs_diff_15_median": -13.0,
+            "cs_diff_15_sd": null,
+            "cs_diff_15_mean_ci95_low": null,
+            "cs_diff_15_mean_ci95_high": null,
+            "early_status": "insufficient_samples",
+            "ci95_wilson": [
+              0.20654931437723745,
+              1.0
+            ]
+          },
+          "rank": {
+            "wins": 0,
+            "games": 0,
+            "winrate": null,
+            "ci95_wilson": [
+              null,
+              null
+            ],
+            "statistic_kind": "historical_team_result",
+            "causal_uplift": null,
+            "evidence_status": "missing",
+            "early_status": "missing",
+            "gold_diff_10_n": 0,
+            "gold_diff_10_mean": null,
+            "gold_diff_10_mean_ci95_low": null,
+            "gold_diff_10_mean_ci95_high": null,
+            "xp_diff_10_n": 0,
+            "xp_diff_10_mean": null,
+            "xp_diff_10_mean_ci95_low": null,
+            "xp_diff_10_mean_ci95_high": null,
+            "cs_diff_10_n": 0,
+            "cs_diff_10_mean": null,
+            "cs_diff_10_mean_ci95_low": null,
+            "cs_diff_10_mean_ci95_high": null,
+            "gold_diff_15_n": 0,
+            "gold_diff_15_mean": null,
+            "gold_diff_15_mean_ci95_low": null,
+            "gold_diff_15_mean_ci95_high": null,
+            "xp_diff_15_n": 0,
+            "xp_diff_15_mean": null,
+            "xp_diff_15_mean_ci95_low": null,
+            "xp_diff_15_mean_ci95_high": null,
+            "cs_diff_15_n": 0,
+            "cs_diff_15_mean": null,
+            "cs_diff_15_mean_ci95_low": null,
+            "cs_diff_15_mean_ci95_high": null,
+            "patches": "[]",
+            "platforms": "[]"
+          },
+          "comparison": {
+            "sample_status": "insufficient_samples",
+            "gd15_comparison": "insufficient_measurements",
+            "winrate_direction_conflict": false,
+            "mechanical_counter_confirmed": false
+          },
+          "pro_scope": "current advisor historical window/region, unweighted descriptive observations",
+          "rank_scope": "all observed patches/servers available before requested as_of",
+          "rank_frozen_at": "2026-11-24T10:36:28.113235+00:00",
+          "unknown_rank_games_excluded": 0,
+          "affects_main_score": false
+        }
+      ],
+      "role": "jng",
+      "priority_pct": 17.61,
+      "pair_reservation": {
+        "version": "bot_reservation_v1",
+        "enemy_bans_before_next_own_pick": 0,
+        "opponent_bot_revealed": true,
+        "priority_tier": 1,
+        "requires_review": false,
+        "interpretation": "observed_co_pick_support_not_mechanical_synergy",
+        "status": "completed_supported",
+        "pair_evidence": {
+          "wins": 9,
+          "games": 19,
+          "winrate": 0.47368421052631576,
+          "ci95_wilson": [
+            0.2732980516117956,
+            0.6829219075488682
+          ],
+          "statistic_kind": "historical_team_result",
+          "causal_uplift": null,
+          "role": "bot",
+          "champion": "Kalista",
+          "ally_role": "sup",
+          "ally": "Renata Glasc",
+          "anchor_games": 20,
+          "co_pick_share": 0.95,
+          "co_pick_share_ci95_wilson": [
+            0.763868806553258,
+            0.9911185511992047
+          ],
+          "weighted_pair_games": 9.579871466620627,
+          "weighted_anchor_games": 9.729677010387023,
+          "marginal_pick_share": 0.08258729086813232,
+          "smoothed_conditional_pick_share": 0.5274158502353419,
+          "smoothed_lift": 6.386162382750516,
+          "association_reliability": 0.48927141748362346,
+          "effective_lift": 2.477313077795804,
+          "association_score": 0.8646116957385911,
+          "status": "observed_pair",
+          "score_kind": "observed_role_pair_association_not_causal_synergy"
+        }
+      },
+      "lane_review": {
+        "wins": 1,
+        "games": 1,
+        "winrate": 1.0,
+        "ci95_wilson": [
+          0.20654931437723745,
+          1.0
+        ],
+        "statistic_kind": "historical_team_result",
+        "causal_uplift": null,
+        "enemy_role": "jng",
+        "opponent": "Wukong",
+        "interpretation": "observed_whole_game_result_not_mechanical_counter",
+        "role": "jng",
+        "requires_review": true,
+        "status": "insufficient_lane",
+        "ranking_confidence_bound": 0.20654931437723745,
+        "ranking_basis": "same_lane_full_game_winrate_wilson_lower_bound_not_lane_win_probability",
+        "version": "assigned_lane_review_v2",
+        "assignment_source": "current_draft_role_not_inferred_counter",
+        "reason": "Đối thủ cùng vị trí đã lộ: Wukong (jng); kèo này có 1 mẫu Pro, dưới 5. Không tự chốt dựa vào điểm tổng."
+      }
+    },
+    {
+      "champion": "Naafiri",
+      "ranking_score": 16.99,
+      "score_kind": "patch_aware_draft_priority_points",
+      "games": 10,
+      "historical": {
+        "wins": 5,
+        "games": 10,
+        "winrate": 0.5,
+        "ci95_wilson": [
+          0.236593090512564,
+          0.7634069094874361
+        ],
+        "statistic_kind": "historical_team_result",
+        "causal_uplift": null
+      },
+      "reasons": [
+        "Đối thủ cùng vị trí đã lộ: Wukong (jng); kèo này có 1 mẫu Pro, dưới 5. Không tự chốt dựa vào điểm tổng.",
+        "Patch dataset 16.20: presence cửa sổ gần đây 15.4%; 9 lượt chọn đúng vị trí trên patch, 10 trận trong cửa sổ gần đây",
+        "Slot S5: ưu tiên chọn quan sát 0.007; không phải xác suất thắng",
+        "Vị trí địch còn là giả định: Wukong p(role)=1.00, n=1",
+        "Đã xét cả đội địch được lộ; coverage đối đầu đủ mẫu 0%. Chưa có evaluator cơ chế kỹ năng; không xác nhận đây là counter hoặc lựa chọn tối ưu.",
+        "Cặp jng/sup với Renata Glasc: 0/20 lần ghép, unobserved_pair; association=0.33636423283395167; không phải xác suất thắng hoặc chứng minh tối ưu",
+        "Cặp jng/bot với Kalista: 0/19 lần ghép, unobserved_pair; association=0.3380677299860646; không phải xác suất thắng hoặc chứng minh tối ưu",
+        "Cặp jng/mid với Orianna: 2/26 lần ghép, sparse_pair; association=0.5839124664894132; không phải xác suất thắng hoặc chứng minh tối ưu",
+        "Cặp jng/top với Ambessa: 1/27 lần ghép, sparse_pair; association=0.5083529601954405; không phải xác suất thắng hoặc chứng minh tối ưu",
+        "Cosine 0.910 từ profile tuyển thủ Canyon; chỉ là hỗ trợ tương đồng"
+      ],
+      "cosine_similarity": 0.9097457803965878,
+      "score_components": {
+        "meta": {
+          "value": 0.1537607315391573,
+          "weight": 1.0
+        },
+        "draft_order": {
+          "value": 0.007277103121937328,
+          "weight": 1.0
+        },
+        "historical": {
+          "value": 0.236593090512564,
+          "weight": 0.25
+        },
+        "matchup": {
+          "value": 0.5,
+          "weight": 0.5
+        },
+        "synergy": {
+          "value": 0.5,
+          "weight": 0.25
+        },
+        "composition": {
+          "value": 0.4511776569485803,
+          "weight": 1.0
+        },
+        "mastery": {
+          "value": 0.0,
+          "weight": 0.5
+        },
+        "content": {
+          "value": 0.9097457803965878,
+          "weight": 0.1
+        }
+      },
+      "enemy_context_coverage": 0.0,
+      "mechanical_counter_status": "not_evaluated",
+      "selection_basis": "statistical_priority_not_validated_counter",
+      "review_required": true,
+      "evidence_status": "observed_candidate",
+      "matchup_source_comparison": [
+        {
+          "role": "jng",
+          "champion": "Naafiri",
+          "opponent": "Wukong",
+          "enemy_role_probability": 1.0,
+          "pro": {
+            "platform": "ALL_OBSERVED",
+            "queue": "PRO",
+            "patch": "ALL_OBSERVED",
+            "tier_floor": "PRO",
+            "role": "jng",
+            "champion_id": 950,
+            "opponent_id": 62,
+            "champion": "Naafiri",
+            "opponent": "Wukong",
+            "games": 1,
+            "wins": 0,
+            "winrate": 0.0,
+            "win_ci95_low": 0.0,
+            "win_ci95_high": 0.7934506856227626,
+            "champion_players": 1,
+            "opponent_players": 1,
+            "unique_players": 2,
+            "evidence_status": "insufficient_samples",
+            "patch_count": 1,
+            "patches": "[\"16.20\"]",
+            "platform_count": 1,
+            "platforms": "[\"WLDS\"]",
+            "target_games": null,
+            "games_remaining": null,
+            "target_reached": null,
+            "supported_patch_count": 0,
+            "gd15_patch_direction": "insufficient_patch_evidence",
+            "patch_gd15_details": "{}",
+            "gold_diff_10_n": 1,
+            "gold_diff_10_mean": -50.0,
+            "gold_diff_10_median": -50.0,
+            "gold_diff_10_sd": null,
+            "gold_diff_10_mean_ci95_low": null,
+            "gold_diff_10_mean_ci95_high": null,
+            "xp_diff_10_n": 1,
+            "xp_diff_10_mean": -501.0,
+            "xp_diff_10_median": -501.0,
+            "xp_diff_10_sd": null,
+            "xp_diff_10_mean_ci95_low": null,
+            "xp_diff_10_mean_ci95_high": null,
+            "cs_diff_10_n": 1,
+            "cs_diff_10_mean": -6.0,
+            "cs_diff_10_median": -6.0,
+            "cs_diff_10_sd": null,
+            "cs_diff_10_mean_ci95_low": null,
+            "cs_diff_10_mean_ci95_high": null,
+            "gold_diff_15_n": 1,
+            "gold_diff_15_mean": 403.0,
+            "gold_diff_15_median": 403.0,
+            "gold_diff_15_sd": null,
+            "gold_diff_15_mean_ci95_low": null,
+            "gold_diff_15_mean_ci95_high": null,
+            "xp_diff_15_n": 1,
+            "xp_diff_15_mean": -259.0,
+            "xp_diff_15_median": -259.0,
+            "xp_diff_15_sd": null,
+            "xp_diff_15_mean_ci95_low": null,
+            "xp_diff_15_mean_ci95_high": null,
+            "cs_diff_15_n": 1,
+            "cs_diff_15_mean": -3.0,
+            "cs_diff_15_median": -3.0,
+            "cs_diff_15_sd": null,
+            "cs_diff_15_mean_ci95_low": null,
+            "cs_diff_15_mean_ci95_high": null,
+            "early_status": "insufficient_samples",
+            "ci95_wilson": [
+              0.0,
+              0.7934506856227626
+            ]
+          },
+          "rank": {
+            "platform": "ALL_OBSERVED",
+            "queue": 420,
+            "patch": "ALL_OBSERVED",
+            "tier_floor": "MASTER",
+            "role": "jng",
+            "champion_id": 950,
+            "opponent_id": 62,
+            "champion": "Naafiri",
+            "opponent": "Wukong",
+            "games": 1,
+            "wins": 1,
+            "winrate": 1.0,
+            "win_ci95_low": 0.20654931437723745,
+            "win_ci95_high": 1.0,
+            "champion_players": 1,
+            "opponent_players": 1,
+            "unique_players": 2,
+            "evidence_status": "insufficient_samples",
+            "patch_count": 1,
+            "patches": "[\"16.23\"]",
+            "platform_count": 1,
+            "platforms": "[\"EUW1\"]",
+            "target_games": null,
+            "games_remaining": null,
+            "target_reached": null,
+            "supported_patch_count": 0,
+            "gd15_patch_direction": "insufficient_patch_evidence",
+            "patch_gd15_details": "{}",
+            "gold_diff_10_n": 1,
+            "gold_diff_10_mean": 232.0,
+            "gold_diff_10_median": 232.0,
+            "gold_diff_10_sd": null,
+            "gold_diff_10_mean_ci95_low": null,
+            "gold_diff_10_mean_ci95_high": null,
+            "xp_diff_10_n": 1,
+            "xp_diff_10_mean": 597.0,
+            "xp_diff_10_median": 597.0,
+            "xp_diff_10_sd": null,
+            "xp_diff_10_mean_ci95_low": null,
+            "xp_diff_10_mean_ci95_high": null,
+            "cs_diff_10_n": 1,
+            "cs_diff_10_mean": 9.0,
+            "cs_diff_10_median": 9.0,
+            "cs_diff_10_sd": null,
+            "cs_diff_10_mean_ci95_low": null,
+            "cs_diff_10_mean_ci95_high": null,
+            "gold_diff_15_n": 1,
+            "gold_diff_15_mean": 777.0,
+            "gold_diff_15_median": 777.0,
+            "gold_diff_15_sd": null,
+            "gold_diff_15_mean_ci95_low": null,
+            "gold_diff_15_mean_ci95_high": null,
+            "xp_diff_15_n": 1,
+            "xp_diff_15_mean": 1017.0,
+            "xp_diff_15_median": 1017.0,
+            "xp_diff_15_sd": null,
+            "xp_diff_15_mean_ci95_low": null,
+            "xp_diff_15_mean_ci95_high": null,
+            "cs_diff_15_n": 1,
+            "cs_diff_15_mean": 9.0,
+            "cs_diff_15_median": 9.0,
+            "cs_diff_15_sd": null,
+            "cs_diff_15_mean_ci95_low": null,
+            "cs_diff_15_mean_ci95_high": null,
+            "early_status": "insufficient_samples",
+            "ci95_wilson": [
+              0.20654931437723745,
+              1.0
+            ]
+          },
+          "comparison": {
+            "sample_status": "insufficient_samples",
+            "gd15_comparison": "insufficient_measurements",
+            "winrate_direction_conflict": false,
+            "mechanical_counter_confirmed": false
+          },
+          "pro_scope": "current advisor historical window/region, unweighted descriptive observations",
+          "rank_scope": "all observed patches/servers available before requested as_of",
+          "rank_frozen_at": "2026-11-24T10:36:28.113235+00:00",
+          "unknown_rank_games_excluded": 0,
+          "affects_main_score": false
+        }
+      ],
+      "role": "jng",
+      "priority_pct": 16.99,
+      "pair_reservation": {
+        "version": "bot_reservation_v1",
+        "enemy_bans_before_next_own_pick": 0,
+        "opponent_bot_revealed": true,
+        "priority_tier": 1,
+        "requires_review": false,
+        "interpretation": "observed_co_pick_support_not_mechanical_synergy",
+        "status": "completed_supported",
+        "pair_evidence": {
+          "wins": 9,
+          "games": 19,
+          "winrate": 0.47368421052631576,
+          "ci95_wilson": [
+            0.2732980516117956,
+            0.6829219075488682
+          ],
+          "statistic_kind": "historical_team_result",
+          "causal_uplift": null,
+          "role": "bot",
+          "champion": "Kalista",
+          "ally_role": "sup",
+          "ally": "Renata Glasc",
+          "anchor_games": 20,
+          "co_pick_share": 0.95,
+          "co_pick_share_ci95_wilson": [
+            0.763868806553258,
+            0.9911185511992047
+          ],
+          "weighted_pair_games": 9.579871466620627,
+          "weighted_anchor_games": 9.729677010387023,
+          "marginal_pick_share": 0.08258729086813232,
+          "smoothed_conditional_pick_share": 0.5274158502353419,
+          "smoothed_lift": 6.386162382750516,
+          "association_reliability": 0.48927141748362346,
+          "effective_lift": 2.477313077795804,
+          "association_score": 0.8646116957385911,
+          "status": "observed_pair",
+          "score_kind": "observed_role_pair_association_not_causal_synergy"
+        }
+      },
+      "lane_review": {
+        "wins": 0,
+        "games": 1,
+        "winrate": 0.0,
+        "ci95_wilson": [
+          0.0,
+          0.7934506856227626
+        ],
+        "statistic_kind": "historical_team_result",
+        "causal_uplift": null,
+        "enemy_role": "jng",
+        "opponent": "Wukong",
+        "interpretation": "observed_whole_game_result_not_mechanical_counter",
+        "role": "jng",
+        "requires_review": true,
+        "status": "insufficient_lane",
+        "ranking_confidence_bound": 0.0,
+        "ranking_basis": "same_lane_full_game_winrate_wilson_lower_bound_not_lane_win_probability",
+        "version": "assigned_lane_review_v2",
+        "assignment_source": "current_draft_role_not_inferred_counter",
+        "reason": "Đối thủ cùng vị trí đã lộ: Wukong (jng); kèo này có 1 mẫu Pro, dưới 5. Không tự chốt dựa vào điểm tổng."
+      }
+    },
+    {
+      "champion": "Trundle",
+      "ranking_score": 18.53,
+      "score_kind": "patch_aware_draft_priority_points",
+      "games": 12,
+      "historical": {
+        "wins": 8,
+        "games": 12,
+        "winrate": 0.6666666666666666,
+        "ci95_wilson": [
+          0.39062208887279953,
+          0.8618799089087867
+        ],
+        "statistic_kind": "historical_team_result",
+        "causal_uplift": null
+      },
+      "reasons": [
+        "Đối thủ cùng vị trí đã lộ: Wukong (jng); kèo này có 0 mẫu Pro, dưới 5. Không tự chốt dựa vào điểm tổng.",
+        "Patch dataset 16.20: presence cửa sổ gần đây 20.3%; 10 lượt chọn đúng vị trí trên patch, 12 trận trong cửa sổ gần đây",
+        "Slot S5: ưu tiên chọn quan sát 0.015; không phải xác suất thắng",
+        "Vị trí địch còn là giả định: Wukong p(role)=1.00, n=0",
+        "Đã xét cả đội địch được lộ; coverage đối đầu đủ mẫu 0%. Chưa có evaluator cơ chế kỹ năng; không xác nhận đây là counter hoặc lựa chọn tối ưu.",
+        "Cặp jng/sup với Renata Glasc: 0/20 lần ghép, unobserved_pair; association=0.33636423283395167; không phải xác suất thắng hoặc chứng minh tối ưu",
+        "Cặp jng/bot với Kalista: 0/19 lần ghép, unobserved_pair; association=0.33806772998606466; không phải xác suất thắng hoặc chứng minh tối ưu",
+        "Cặp jng/mid với Orianna: 1/26 lần ghép, sparse_pair; association=0.46505507391317624; không phải xác suất thắng hoặc chứng minh tối ưu",
+        "Cặp jng/top với Ambessa: 2/27 lần ghép, sparse_pair; association=0.4559901847977914; không phải xác suất thắng hoặc chứng minh tối ưu",
+        "Cosine 0.930 từ profile tuyển thủ Canyon; chỉ là hỗ trợ tương đồng"
+      ],
+      "cosine_similarity": 0.9298202271290328,
+      "score_components": {
+        "meta": {
+          "value": 0.20291910522145046,
+          "weight": 1.0
+        },
+        "draft_order": {
+          "value": 0.015018897169218382,
+          "weight": 1.0
+        },
+        "historical": {
+          "value": 0.39062208887279953,
+          "weight": 0.25
+        },
+        "matchup": {
+          "value": 0.5,
+          "weight": 0.5
+        },
+        "synergy": {
+          "value": 0.5,
+          "weight": 0.25
+        },
+        "composition": {
+          "value": 0.40443931464759236,
+          "weight": 1.0
+        },
+        "mastery": {
+          "value": 0.0,
+          "weight": 0.5
+        },
+        "content": {
+          "value": 0.9298202271290328,
+          "weight": 0.1
+        }
+      },
+      "enemy_context_coverage": 0.0,
+      "mechanical_counter_status": "not_evaluated",
+      "selection_basis": "statistical_priority_not_validated_counter",
+      "review_required": true,
+      "evidence_status": "observed_candidate",
+      "matchup_source_comparison": [
+        {
+          "role": "jng",
+          "champion": "Trundle",
+          "opponent": "Wukong",
+          "enemy_role_probability": 1.0,
+          "pro": {
+            "wins": 0,
+            "games": 0,
+            "winrate": null,
+            "ci95_wilson": [
+              null,
+              null
+            ],
+            "statistic_kind": "historical_team_result",
+            "causal_uplift": null,
+            "evidence_status": "missing",
+            "early_status": "missing",
+            "gold_diff_10_n": 0,
+            "gold_diff_10_mean": null,
+            "gold_diff_10_mean_ci95_low": null,
+            "gold_diff_10_mean_ci95_high": null,
+            "xp_diff_10_n": 0,
+            "xp_diff_10_mean": null,
+            "xp_diff_10_mean_ci95_low": null,
+            "xp_diff_10_mean_ci95_high": null,
+            "cs_diff_10_n": 0,
+            "cs_diff_10_mean": null,
+            "cs_diff_10_mean_ci95_low": null,
+            "cs_diff_10_mean_ci95_high": null,
+            "gold_diff_15_n": 0,
+            "gold_diff_15_mean": null,
+            "gold_diff_15_mean_ci95_low": null,
+            "gold_diff_15_mean_ci95_high": null,
+            "xp_diff_15_n": 0,
+            "xp_diff_15_mean": null,
+            "xp_diff_15_mean_ci95_low": null,
+            "xp_diff_15_mean_ci95_high": null,
+            "cs_diff_15_n": 0,
+            "cs_diff_15_mean": null,
+            "cs_diff_15_mean_ci95_low": null,
+            "cs_diff_15_mean_ci95_high": null,
+            "patches": "[]",
+            "platforms": "[]"
+          },
+          "rank": {
+            "wins": 0,
+            "games": 0,
+            "winrate": null,
+            "ci95_wilson": [
+              null,
+              null
+            ],
+            "statistic_kind": "historical_team_result",
+            "causal_uplift": null,
+            "evidence_status": "missing",
+            "early_status": "missing",
+            "gold_diff_10_n": 0,
+            "gold_diff_10_mean": null,
+            "gold_diff_10_mean_ci95_low": null,
+            "gold_diff_10_mean_ci95_high": null,
+            "xp_diff_10_n": 0,
+            "xp_diff_10_mean": null,
+            "xp_diff_10_mean_ci95_low": null,
+            "xp_diff_10_mean_ci95_high": null,
+            "cs_diff_10_n": 0,
+            "cs_diff_10_mean": null,
+            "cs_diff_10_mean_ci95_low": null,
+            "cs_diff_10_mean_ci95_high": null,
+            "gold_diff_15_n": 0,
+            "gold_diff_15_mean": null,
+            "gold_diff_15_mean_ci95_low": null,
+            "gold_diff_15_mean_ci95_high": null,
+            "xp_diff_15_n": 0,
+            "xp_diff_15_mean": null,
+            "xp_diff_15_mean_ci95_low": null,
+            "xp_diff_15_mean_ci95_high": null,
+            "cs_diff_15_n": 0,
+            "cs_diff_15_mean": null,
+            "cs_diff_15_mean_ci95_low": null,
+            "cs_diff_15_mean_ci95_high": null,
+            "patches": "[]",
+            "platforms": "[]"
+          },
+          "comparison": {
+            "sample_status": "insufficient_samples",
+            "gd15_comparison": "insufficient_measurements",
+            "winrate_direction_conflict": false,
+            "mechanical_counter_confirmed": false
+          },
+          "pro_scope": "current advisor historical window/region, unweighted descriptive observations",
+          "rank_scope": "all observed patches/servers available before requested as_of",
+          "rank_frozen_at": "2026-11-24T10:36:28.113235+00:00",
+          "unknown_rank_games_excluded": 0,
+          "affects_main_score": false
+        }
+      ],
+      "role": "jng",
+      "priority_pct": 18.53,
+      "pair_reservation": {
+        "version": "bot_reservation_v1",
+        "enemy_bans_before_next_own_pick": 0,
+        "opponent_bot_revealed": true,
+        "priority_tier": 1,
+        "requires_review": false,
+        "interpretation": "observed_co_pick_support_not_mechanical_synergy",
+        "status": "completed_supported",
+        "pair_evidence": {
+          "wins": 9,
+          "games": 19,
+          "winrate": 0.47368421052631576,
+          "ci95_wilson": [
+            0.2732980516117956,
+            0.6829219075488682
+          ],
+          "statistic_kind": "historical_team_result",
+          "causal_uplift": null,
+          "role": "bot",
+          "champion": "Kalista",
+          "ally_role": "sup",
+          "ally": "Renata Glasc",
+          "anchor_games": 20,
+          "co_pick_share": 0.95,
+          "co_pick_share_ci95_wilson": [
+            0.763868806553258,
+            0.9911185511992047
+          ],
+          "weighted_pair_games": 9.579871466620627,
+          "weighted_anchor_games": 9.729677010387023,
+          "marginal_pick_share": 0.08258729086813232,
+          "smoothed_conditional_pick_share": 0.5274158502353419,
+          "smoothed_lift": 6.386162382750516,
+          "association_reliability": 0.48927141748362346,
+          "effective_lift": 2.477313077795804,
+          "association_score": 0.8646116957385911,
+          "status": "observed_pair",
+          "score_kind": "observed_role_pair_association_not_causal_synergy"
+        }
+      },
+      "lane_review": {
+        "wins": 0,
+        "games": 0,
+        "winrate": null,
+        "ci95_wilson": [
+          null,
+          null
+        ],
+        "statistic_kind": "historical_team_result",
+        "causal_uplift": null,
+        "enemy_role": "jng",
+        "opponent": "Wukong",
+        "interpretation": "observed_whole_game_result_not_mechanical_counter",
+        "role": "jng",
+        "requires_review": true,
+        "status": "insufficient_lane",
+        "ranking_confidence_bound": null,
+        "ranking_basis": "same_lane_full_game_winrate_wilson_lower_bound_not_lane_win_probability",
+        "version": "assigned_lane_review_v2",
+        "assignment_source": "current_draft_role_not_inferred_counter",
+        "reason": "Đối thủ cùng vị trí đã lộ: Wukong (jng); kèo này có 0 mẫu Pro, dưới 5. Không tự chốt dựa vào điểm tổng."
+      }
+    },
+    {
+      "champion": "Maokai",
+      "ranking_score": 14.65,
+      "score_kind": "patch_aware_draft_priority_points",
+      "games": 7,
+      "historical": {
+        "wins": 1,
+        "games": 7,
+        "winrate": 0.14285714285714285,
+        "ci95_wilson": [
+          0.02567962434474355,
+          0.5131278292743189
+        ],
+        "statistic_kind": "historical_team_result",
+        "causal_uplift": null
+      },
+      "reasons": [
+        "Đối thủ cùng vị trí đã lộ: Wukong (jng); kèo này có 0 mẫu Pro, dưới 5. Không tự chốt dựa vào điểm tổng.",
+        "Patch dataset 16.20: presence cửa sổ gần đây 12.2%; 4 lượt chọn đúng vị trí trên patch, 7 trận trong cửa sổ gần đây",
+        "Slot S5: ưu tiên chọn quan sát 0.003; không phải xác suất thắng",
+        "Vị trí địch còn là giả định: Wukong p(role)=1.00, n=0",
+        "Đã xét cả đội địch được lộ; coverage đối đầu đủ mẫu 0%. Chưa có evaluator cơ chế kỹ năng; không xác nhận đây là counter hoặc lựa chọn tối ưu.",
+        "Cặp jng/sup với Renata Glasc: 1/20 lần ghép, sparse_pair; association=0.6459142611926754; không phải xác suất thắng hoặc chứng minh tối ưu",
+        "Cặp jng/bot với Kalista: 1/19 lần ghép, sparse_pair; association=0.6476555083031093; không phải xác suất thắng hoặc chứng minh tối ưu",
+        "Cặp jng/mid với Orianna: 0/26 lần ghép, unobserved_pair; association=0.2902989974283275; không phải xác suất thắng hoặc chứng minh tối ưu",
+        "Cặp jng/top với Ambessa: 2/27 lần ghép, sparse_pair; association=0.6858407254128202; không phải xác suất thắng hoặc chứng minh tối ưu",
+        "Cosine 0.718 từ profile tuyển thủ Canyon; chỉ là hỗ trợ tương đồng"
+      ],
+      "cosine_similarity": 0.7180322750132854,
+      "score_components": {
+        "meta": {
+          "value": 0.12235622211870192,
+          "weight": 1.0
+        },
+        "draft_order": {
+          "value": 0.0033419178866705666,
+          "weight": 1.0
+        },
+        "historical": {
+          "value": 0.02567962434474355,
+          "weight": 0.25
+        },
+        "matchup": {
+          "value": 0.5,
+          "weight": 0.5
+        },
+        "synergy": {
+          "value": 0.5,
+          "weight": 0.25
+        },
+        "composition": {
+          "value": 0.5598395146195511,
+          "weight": 1.0
+        },
+        "mastery": {
+          "value": 0.0,
+          "weight": 0.5
+        },
+        "content": {
+          "value": 0.7180322750132854,
+          "weight": 0.1
+        }
+      },
+      "enemy_context_coverage": 0.0,
+      "mechanical_counter_status": "not_evaluated",
+      "selection_basis": "statistical_priority_not_validated_counter",
+      "review_required": true,
+      "evidence_status": "observed_candidate",
+      "matchup_source_comparison": [
+        {
+          "role": "jng",
+          "champion": "Maokai",
+          "opponent": "Wukong",
+          "enemy_role_probability": 1.0,
+          "pro": {
+            "wins": 0,
+            "games": 0,
+            "winrate": null,
+            "ci95_wilson": [
+              null,
+              null
+            ],
+            "statistic_kind": "historical_team_result",
+            "causal_uplift": null,
+            "evidence_status": "missing",
+            "early_status": "missing",
+            "gold_diff_10_n": 0,
+            "gold_diff_10_mean": null,
+            "gold_diff_10_mean_ci95_low": null,
+            "gold_diff_10_mean_ci95_high": null,
+            "xp_diff_10_n": 0,
+            "xp_diff_10_mean": null,
+            "xp_diff_10_mean_ci95_low": null,
+            "xp_diff_10_mean_ci95_high": null,
+            "cs_diff_10_n": 0,
+            "cs_diff_10_mean": null,
+            "cs_diff_10_mean_ci95_low": null,
+            "cs_diff_10_mean_ci95_high": null,
+            "gold_diff_15_n": 0,
+            "gold_diff_15_mean": null,
+            "gold_diff_15_mean_ci95_low": null,
+            "gold_diff_15_mean_ci95_high": null,
+            "xp_diff_15_n": 0,
+            "xp_diff_15_mean": null,
+            "xp_diff_15_mean_ci95_low": null,
+            "xp_diff_15_mean_ci95_high": null,
+            "cs_diff_15_n": 0,
+            "cs_diff_15_mean": null,
+            "cs_diff_15_mean_ci95_low": null,
+            "cs_diff_15_mean_ci95_high": null,
+            "patches": "[]",
+            "platforms": "[]"
+          },
+          "rank": {
+            "wins": 0,
+            "games": 0,
+            "winrate": null,
+            "ci95_wilson": [
+              null,
+              null
+            ],
+            "statistic_kind": "historical_team_result",
+            "causal_uplift": null,
+            "evidence_status": "missing",
+            "early_status": "missing",
+            "gold_diff_10_n": 0,
+            "gold_diff_10_mean": null,
+            "gold_diff_10_mean_ci95_low": null,
+            "gold_diff_10_mean_ci95_high": null,
+            "xp_diff_10_n": 0,
+            "xp_diff_10_mean": null,
+            "xp_diff_10_mean_ci95_low": null,
+            "xp_diff_10_mean_ci95_high": null,
+            "cs_diff_10_n": 0,
+            "cs_diff_10_mean": null,
+            "cs_diff_10_mean_ci95_low": null,
+            "cs_diff_10_mean_ci95_high": null,
+            "gold_diff_15_n": 0,
+            "gold_diff_15_mean": null,
+            "gold_diff_15_mean_ci95_low": null,
+            "gold_diff_15_mean_ci95_high": null,
+            "xp_diff_15_n": 0,
+            "xp_diff_15_mean": null,
+            "xp_diff_15_mean_ci95_low": null,
+            "xp_diff_15_mean_ci95_high": null,
+            "cs_diff_15_n": 0,
+            "cs_diff_15_mean": null,
+            "cs_diff_15_mean_ci95_low": null,
+            "cs_diff_15_mean_ci95_high": null,
+            "patches": "[]",
+            "platforms": "[]"
+          },
+          "comparison": {
+            "sample_status": "insufficient_samples",
+            "gd15_comparison": "insufficient_measurements",
+            "winrate_direction_conflict": false,
+            "mechanical_counter_confirmed": false
+          },
+          "pro_scope": "current advisor historical window/region, unweighted descriptive observations",
+          "rank_scope": "all observed patches/servers available before requested as_of",
+          "rank_frozen_at": "2026-11-24T10:36:28.113235+00:00",
+          "unknown_rank_games_excluded": 0,
+          "affects_main_score": false
+        }
+      ],
+      "role": "jng",
+      "priority_pct": 14.65,
+      "pair_reservation": {
+        "version": "bot_reservation_v1",
+        "enemy_bans_before_next_own_pick": 0,
+        "opponent_bot_revealed": true,
+        "priority_tier": 1,
+        "requires_review": false,
+        "interpretation": "observed_co_pick_support_not_mechanical_synergy",
+        "status": "completed_supported",
+        "pair_evidence": {
+          "wins": 9,
+          "games": 19,
+          "winrate": 0.47368421052631576,
+          "ci95_wilson": [
+            0.2732980516117956,
+            0.6829219075488682
+          ],
+          "statistic_kind": "historical_team_result",
+          "causal_uplift": null,
+          "role": "bot",
+          "champion": "Kalista",
+          "ally_role": "sup",
+          "ally": "Renata Glasc",
+          "anchor_games": 20,
+          "co_pick_share": 0.95,
+          "co_pick_share_ci95_wilson": [
+            0.763868806553258,
+            0.9911185511992047
+          ],
+          "weighted_pair_games": 9.579871466620627,
+          "weighted_anchor_games": 9.729677010387023,
+          "marginal_pick_share": 0.08258729086813232,
+          "smoothed_conditional_pick_share": 0.5274158502353419,
+          "smoothed_lift": 6.386162382750516,
+          "association_reliability": 0.48927141748362346,
+          "effective_lift": 2.477313077795804,
+          "association_score": 0.8646116957385911,
+          "status": "observed_pair",
+          "score_kind": "observed_role_pair_association_not_causal_synergy"
+        }
+      },
+      "lane_review": {
+        "wins": 0,
+        "games": 0,
+        "winrate": null,
+        "ci95_wilson": [
+          null,
+          null
+        ],
+        "statistic_kind": "historical_team_result",
+        "causal_uplift": null,
+        "enemy_role": "jng",
+        "opponent": "Wukong",
+        "interpretation": "observed_whole_game_result_not_mechanical_counter",
+        "role": "jng",
+        "requires_review": true,
+        "status": "insufficient_lane",
+        "ranking_confidence_bound": null,
+        "ranking_basis": "same_lane_full_game_winrate_wilson_lower_bound_not_lane_win_probability",
+        "version": "assigned_lane_review_v2",
+        "assignment_source": "current_draft_role_not_inferred_counter",
+        "reason": "Đối thủ cùng vị trí đã lộ: Wukong (jng); kèo này có 0 mẫu Pro, dưới 5. Không tự chốt dựa vào điểm tổng."
+      }
+    }
+  ],
+  "scope": {
+    "region": "WLDS",
+    "dataset_patch": "16.20",
+    "data_through": "2026-11-14T23:18:11+00:00",
+    "requested_as_of": "2026-11-24T23:59:59.999999999+00:00",
+    "staleness_days": 10,
+    "history_games": 110,
+    "patch_games": 98,
+    "lookback_days": 60,
+    "half_life_days": 21.0,
+    "claim": "historical_snapshot_not_live_meta"
+  },
+  "rosters": {
+    "blue": {
+      "top": "Doran",
+      "jng": "Oner",
+      "mid": "Faker",
+      "bot": "Peyz",
+      "sup": "Keria"
+    },
+    "red": {
+      "top": "Kiin",
+      "jng": "Canyon",
+      "mid": "Chovy",
+      "bot": "Ruler",
+      "sup": "Duro"
+    }
+  },
+  "only_role": null,
+  "role_preferences": {
+    "Aphelios": [
+      {
+        "role": "bot",
+        "games": 4
+      }
+    ],
+    "Ashe": [
+      {
+        "role": "bot",
+        "games": 17
+      }
+    ],
+    "Caitlyn": [
+      {
+        "role": "bot",
+        "games": 8
+      }
+    ],
+    "Cassiopeia": [
+      {
+        "role": "mid",
+        "games": 17
+      },
+      {
+        "role": "bot",
+        "games": 1
+      }
+    ],
+    "Corki": [
+      {
+        "role": "bot",
+        "games": 10
+      },
+      {
+        "role": "mid",
+        "games": 1
+      }
+    ],
+    "Draven": [
+      {
+        "role": "bot",
+        "games": 1
+      }
+    ],
+    "Ezreal": [
+      {
+        "role": "bot",
+        "games": 32
+      }
+    ],
+    "Jhin": [
+      {
+        "role": "bot",
+        "games": 24
+      }
+    ],
+    "Jinx": [
+      {
+        "role": "bot",
+        "games": 3
+      }
+    ],
+    "Kai'Sa": [
+      {
+        "role": "bot",
+        "games": 12
+      }
+    ],
+    "Kalista": [
+      {
+        "role": "bot",
+        "games": 19
+      }
+    ],
+    "Lucian": [
+      {
+        "role": "bot",
+        "games": 20
+      }
+    ],
+    "Mel": [
+      {
+        "role": "mid",
+        "games": 1
+      },
+      {
+        "role": "bot",
+        "games": 1
+      }
+    ],
+    "Miss Fortune": [
+      {
+        "role": "bot",
+        "games": 6
+      }
+    ],
+    "Sivir": [
+      {
+        "role": "bot",
+        "games": 6
+      }
+    ],
+    "Taliyah": [
+      {
+        "role": "mid",
+        "games": 10
+      },
+      {
+        "role": "bot",
+        "games": 1
+      }
+    ],
+    "Tristana": [
+      {
+        "role": "bot",
+        "games": 7
+      },
+      {
+        "role": "top",
+        "games": 1
+      },
+      {
+        "role": "mid",
+        "games": 1
+      }
+    ],
+    "Twitch": [
+      {
+        "role": "bot",
+        "games": 1
+      }
+    ],
+    "Varus": [
+      {
+        "role": "bot",
+        "games": 2
+      }
+    ],
+    "Xayah": [
+      {
+        "role": "bot",
+        "games": 13
+      }
+    ],
+    "Yunara": [
+      {
+        "role": "bot",
+        "games": 22
+      }
+    ],
+    "Zeri": [
+      {
+        "role": "bot",
+        "games": 4
+      }
+    ],
+    "Ziggs": [
+      {
+        "role": "bot",
+        "games": 6
+      }
+    ],
+    "Aatrox": [
+      {
+        "role": "top",
+        "games": 3
+      },
+      {
+        "role": "jng",
+        "games": 1
+      }
+    ],
+    "Cho'Gath": [
+      {
+        "role": "jng",
+        "games": 6
+      }
+    ],
+    "Jarvan IV": [
+      {
+        "role": "jng",
+        "games": 28
+      }
+    ],
+    "Jayce": [
+      {
+        "role": "top",
+        "games": 14
+      },
+      {
+        "role": "jng",
+        "games": 3
+      }
+    ],
+    "Lee Sin": [
+      {
+        "role": "jng",
+        "games": 31
+      }
+    ],
+    "Lillia": [
+      {
+        "role": "jng",
+        "games": 1
+      }
+    ],
+    "Malphite": [
+      {
+        "role": "jng",
+        "games": 1
+      }
+    ],
+    "Maokai": [
+      {
+        "role": "jng",
+        "games": 7
+      }
+    ],
+    "Naafiri": [
+      {
+        "role": "jng",
+        "games": 10
+      }
+    ],
+    "Nasus": [
+      {
+        "role": "jng",
+        "games": 1
+      }
+    ],
+    "Nocturne": [
+      {
+        "role": "jng",
+        "games": 18
+      }
+    ],
+    "Pantheon": [
+      {
+        "role": "jng",
+        "games": 19
+      }
+    ],
+    "Qiyana": [
+      {
+        "role": "jng",
+        "games": 25
+      }
+    ],
+    "Sejuani": [
+      {
+        "role": "jng",
+        "games": 6
+      }
+    ],
+    "Skarner": [
+      {
+        "role": "jng",
+        "games": 8
+      }
+    ],
+    "Trundle": [
+      {
+        "role": "jng",
+        "games": 12
+      },
+      {
+        "role": "top",
+        "games": 1
+      }
+    ],
+    "Vi": [
+      {
+        "role": "jng",
+        "games": 20
+      }
+    ],
+    "Wukong": [
+      {
+        "role": "jng",
+        "games": 16
+      }
+    ],
+    "Xin Zhao": [
+      {
+        "role": "jng",
+        "games": 7
+      }
+    ],
+    "Ahri": [
+      {
+        "role": "mid",
+        "games": 10
+      }
+    ],
+    "Akali": [
+      {
+        "role": "mid",
+        "games": 16
+      }
+    ],
+    "Anivia": [
+      {
+        "role": "mid",
+        "games": 8
+      }
+    ],
+    "Annie": [
+      {
+        "role": "mid",
+        "games": 9
+      }
+    ],
+    "Aurora": [
+      {
+        "role": "mid",
+        "games": 5
+      },
+      {
+        "role": "top",
+        "games": 3
+      }
+    ],
+    "Diana": [
+      {
+        "role": "mid",
+        "games": 1
+      }
+    ],
+    "Galio": [
+      {
+        "role": "mid",
+        "games": 10
+      },
+      {
+        "role": "top",
+        "games": 6
+      }
+    ],
+    "Hwei": [
+      {
+        "role": "mid",
+        "games": 1
+      }
+    ],
+    "K'Sante": [
+      {
+        "role": "top",
+        "games": 24
+      },
+      {
+        "role": "mid",
+        "games": 1
+      }
+    ],
+    "Kog'Maw": [
+      {
+        "role": "mid",
+        "games": 3
+      }
+    ],
+    "LeBlanc": [
+      {
+        "role": "mid",
+        "games": 5
+      }
+    ],
+    "Lissandra": [
+      {
+        "role": "mid",
+        "games": 2
+      }
+    ],
+    "Locke": [
+      {
+        "role": "mid",
+        "games": 15
+      }
+    ],
+    "Orianna": [
+      {
+        "role": "mid",
+        "games": 26
+      }
+    ],
+    "Rumble": [
+      {
+        "role": "top",
+        "games": 28
+      },
+      {
+        "role": "mid",
+        "games": 1
+      }
+    ],
+    "Ryze": [
+      {
+        "role": "mid",
+        "games": 11
+      }
+    ],
+    "Swain": [
+      {
+        "role": "mid",
+        "games": 1
+      }
+    ],
+    "Sylas": [
+      {
+        "role": "mid",
+        "games": 7
+      }
+    ],
+    "Syndra": [
+      {
+        "role": "mid",
+        "games": 26
+      }
+    ],
+    "Twisted Fate": [
+      {
+        "role": "mid",
+        "games": 5
+      },
+      {
+        "role": "top",
+        "games": 1
+      }
+    ],
+    "Viktor": [
+      {
+        "role": "mid",
+        "games": 23
+      }
+    ],
+    "Yone": [
+      {
+        "role": "mid",
+        "games": 4
+      },
+      {
+        "role": "top",
+        "games": 1
+      }
+    ],
+    "Alistar": [
+      {
+        "role": "sup",
+        "games": 27
+      }
+    ],
+    "Bard": [
+      {
+        "role": "sup",
+        "games": 3
+      }
+    ],
+    "Braum": [
+      {
+        "role": "sup",
+        "games": 1
+      }
+    ],
+    "Camille": [
+      {
+        "role": "top",
+        "games": 12
+      },
+      {
+        "role": "sup",
+        "games": 3
+      }
+    ],
+    "Elise": [
+      {
+        "role": "sup",
+        "games": 1
+      }
+    ],
+    "Karma": [
+      {
+        "role": "sup",
+        "games": 18
+      }
+    ],
+    "Leona": [
+      {
+        "role": "sup",
+        "games": 9
+      }
+    ],
+    "Lulu": [
+      {
+        "role": "sup",
+        "games": 26
+      }
+    ],
+    "Lux": [
+      {
+        "role": "sup",
+        "games": 1
+      }
+    ],
+    "Milio": [
+      {
+        "role": "sup",
+        "games": 17
+      }
+    ],
+    "Nami": [
+      {
+        "role": "sup",
+        "games": 5
+      }
+    ],
+    "Nautilus": [
+      {
+        "role": "sup",
+        "games": 27
+      }
+    ],
+    "Neeko": [
+      {
+        "role": "sup",
+        "games": 4
+      }
+    ],
+    "Poppy": [
+      {
+        "role": "sup",
+        "games": 2
+      }
+    ],
+    "Pyke": [
+      {
+        "role": "sup",
+        "games": 2
+      }
+    ],
+    "Rakan": [
+      {
+        "role": "sup",
+        "games": 16
+      }
+    ],
+    "Rell": [
+      {
+        "role": "sup",
+        "games": 6
+      }
+    ],
+    "Renata Glasc": [
+      {
+        "role": "sup",
+        "games": 20
+      }
+    ],
+    "Seraphine": [
+      {
+        "role": "sup",
+        "games": 20
+      }
+    ],
+    "Shen": [
+      {
+        "role": "top",
+        "games": 4
+      },
+      {
+        "role": "sup",
+        "games": 3
+      }
+    ],
+    "Tahm Kench": [
+      {
+        "role": "sup",
+        "games": 1
+      }
+    ],
+    "Thresh": [
+      {
+        "role": "sup",
+        "games": 3
+      }
+    ],
+    "Vel'Koz": [
+      {
+        "role": "sup",
+        "games": 1
+      }
+    ],
+    "Yuumi": [
+      {
+        "role": "sup",
+        "games": 4
+      }
+    ],
+    "Ambessa": [
+      {
+        "role": "top",
+        "games": 27
+      }
+    ],
+    "Dr. Mundo": [
+      {
+        "role": "top",
+        "games": 1
+      }
+    ],
+    "Gangplank": [
+      {
+        "role": "top",
+        "games": 1
+      }
+    ],
+    "Gnar": [
+      {
+        "role": "top",
+        "games": 17
+      }
+    ],
+    "Gwen": [
+      {
+        "role": "top",
+        "games": 3
+      }
+    ],
+    "Irelia": [
+      {
+        "role": "top",
+        "games": 1
+      }
+    ],
+    "Jax": [
+      {
+        "role": "top",
+        "games": 9
+      }
+    ],
+    "Kennen": [
+      {
+        "role": "top",
+        "games": 3
+      }
+    ],
+    "Kled": [
+      {
+        "role": "top",
+        "games": 4
+      }
+    ],
+    "Olaf": [
+      {
+        "role": "top",
+        "games": 21
+      }
+    ],
+    "Ornn": [
+      {
+        "role": "top",
+        "games": 9
+      }
+    ],
+    "Renekton": [
+      {
+        "role": "top",
+        "games": 12
+      }
+    ],
+    "Sion": [
+      {
+        "role": "top",
+        "games": 2
+      }
+    ],
+    "Vayne": [
+      {
+        "role": "top",
+        "games": 3
+      }
+    ],
+    "Volibear": [
+      {
+        "role": "top",
+        "games": 1
+      }
+    ],
+    "Yorick": [
+      {
+        "role": "top",
+        "games": 3
+      }
+    ],
+    "Zaahen": [
+      {
+        "role": "top",
+        "games": 5
+      }
+    ]
+  },
+  "configuration": {
+    "pick_scoring": "current",
+    "ban_strategy": "contextual",
+    "contextual_version": "fixed_capacity_v2",
+    "snapshot_id": "fa8f6935c4d0d98efe9aa3bacdd7b9022a61b7e66ada546456a8e66f00528c49",
+    "pair_safety": "bot_reservation_v1",
+    "lane_review_policy": "assigned_lane_review_v2",
+    "manual_role_policy": "observed_free_role_v1"
+  },
+  "candidate_min_games": 1,
+  "evidence_min_games": 5,
+  "series_complete": false,
+  "score_notice": "Điểm ưu tiên thống kê, không phải xác suất thắng hoặc counter đã xác nhận."
+}

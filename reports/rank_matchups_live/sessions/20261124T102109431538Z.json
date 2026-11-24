@@ -1,0 +1,14 @@
+{
+  "session_id": "20261124T102109431538Z",
+  "stop_reason": "idle",
+  "processed_this_session": 25,
+  "fresh_snapshots": 1,
+  "http_attempts": 90,
+  "request_budget": 600,
+  "counts": {
+    "accepted": 785,
+    "rejected": 39,
+    "accepted_observations": 7850,
+    "seeds": 33352
+  }
+}

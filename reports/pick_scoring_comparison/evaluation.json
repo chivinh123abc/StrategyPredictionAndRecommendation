@@ -1,0 +1,379 @@
+{
+  "protocol": "same_pool_frozen_series_pick_formula_comparison_v1",
+  "region": "WLDS",
+  "patch": "16.20",
+  "cutoff": "2026-10-26T18:03:08.999999999+00:00",
+  "series_ids": {
+    "history": [
+      "WLDS:LOLTMNT02_479621",
+      "WLDS:LOLTMNT02_478715",
+      "WLDS:LOLTMNT02_479982",
+      "WLDS:LOLTMNT02_480078",
+      "WLDS:LOLTMNT02_481268",
+      "WLDS:LOLTMNT02_480507",
+      "WLDS:LOLTMNT02_482269",
+      "WLDS:LOLTMNT02_483314",
+      "WLDS:LOLTMNT02_483342",
+      "WLDS:LOLTMNT02_482292",
+      "WLDS:LOLTMNT02_482304",
+      "WLDS:LOLTMNT02_482313",
+      "WLDS:LOLTMNT02_482325",
+      "WLDS:LOLTMNT02_482335",
+      "WLDS:LOLTMNT02_482539",
+      "WLDS:LOLTMNT02_482559",
+      "WLDS:LOLTMNT02_482570",
+      "WLDS:LOLTMNT02_483571",
+      "WLDS:LOLTMNT02_482587",
+      "WLDS:LOLTMNT02_482599",
+      "WLDS:LOLTMNT02_482606",
+      "WLDS:LOLTMNT02_482620",
+      "WLDS:LOLTMNT02_483687",
+      "WLDS:LOLTMNT02_482761",
+      "WLDS:LOLTMNT02_483708",
+      "WLDS:LOLTMNT02_482793",
+      "WLDS:LOLTMNT02_483824"
+    ],
+    "validation": [
+      "WLDS:LOLTMNT02_483840",
+      "WLDS:LOLTMNT02_483861",
+      "WLDS:LOLTMNT02_482911",
+      "WLDS:LOLTMNT02_486159",
+      "WLDS:LOLTMNT02_486183",
+      "WLDS:LOLTMNT02_486299",
+      "WLDS:LOLTMNT02_486325",
+      "WLDS:LOLTMNT02_485366",
+      "WLDS:LOLTMNT02_486479"
+    ],
+    "test": [
+      "WLDS:LOLTMNT02_486541",
+      "WLDS:LOLTMNT02_485482",
+      "WLDS:LOLTMNT02_486564",
+      "WLDS:LOLTMNT02_485703",
+      "WLDS:LOLTMNT02_488030",
+      "WLDS:LOLTMNT02_487095",
+      "WLDS:LOLTMNT02_488135",
+      "WLDS:LOLTMNT02_487213",
+      "WLDS:LOLTMNT02_488293",
+      "WLDS:LOLTMNT02_487405"
+    ]
+  },
+  "states_manifest": {
+    "region": "WLDS",
+    "games": 206,
+    "series": 93,
+    "states": 4120,
+    "rejected_games": [],
+    "sha256": "43e5f475e6706631859f649d784c398903013fb2feb39bd8815011d9cdd50b65",
+    "series_policy": "same league/year/split/unordered team pair, game1 then consecutive game numbers within24h; reject bad series",
+    "limitations": [
+      "Series IDs are reconstructed, not verified official event IDs.",
+      "Observed roles/outcomes/future picks are excluded from features.",
+      "This builder assumes hard Fearless for the requested event; validate event rules before other regions.",
+      "Unknown prefixes, skipped bans and invalid Fearless series are excluded."
+    ]
+  },
+  "query_limit_per_split": 0,
+  "history_games": 2930,
+  "meta_scope": {
+    "region": "WLDS",
+    "dataset_patch": "16.20",
+    "data_through": "2026-10-26T17:12:02+00:00",
+    "requested_as_of": "2026-10-26T18:03:08.999999999+00:00",
+    "staleness_days": 0,
+    "history_games": 58,
+    "patch_games": 46,
+    "lookback_days": 60,
+    "half_life_days": 21.0,
+    "claim": "historical_snapshot_not_live_meta"
+  },
+  "default_before": "current",
+  "default_after": "current",
+  "automatic_promotion": false,
+  "simple_formula": "mean(available frequency, cosine, same-role WR); explicit overall-WR fallback",
+  "results": {
+    "validation": {
+      "metrics": {
+        "current": {
+          "queries": 200,
+          "recall_at_1": 0.14,
+          "recall_at_5": 0.515,
+          "mrr_at_5": 0.2728333333333333,
+          "candidate_coverage": 0.765,
+          "queries_with_supported_rank_candidate": 0,
+          "queries_with_revealed_enemy": 180
+        },
+        "simple": {
+          "queries": 200,
+          "recall_at_1": 0.125,
+          "recall_at_5": 0.425,
+          "mrr_at_5": 0.22558333333333333,
+          "candidate_coverage": 0.765,
+          "queries_with_supported_rank_candidate": 0,
+          "queries_with_revealed_enemy": 180
+        },
+        "recent_presence": {
+          "queries": 200,
+          "recall_at_1": 0.09,
+          "recall_at_5": 0.42,
+          "mrr_at_5": 0.2048333333333333,
+          "candidate_coverage": 0.765,
+          "queries_with_supported_rank_candidate": 0,
+          "queries_with_revealed_enemy": 180
+        }
+      },
+      "delta_recall5_simple_minus_current": {
+        "series": 9,
+        "delta": -0.09,
+        "ci95": [
+          -0.17002083333333334,
+          -0.021052631578947368
+        ],
+        "kind": "paired_reconstructed_series_bootstrap_1000_seed42"
+      },
+      "top5_changes": 193,
+      "same_candidate_role_pools_verified": true,
+      "examples": [
+        {
+          "gameid": "LOLTMNT02_483840",
+          "turn": 7,
+          "current_top5": [
+            "Cassiopeia",
+            "Olaf",
+            "Lee Sin",
+            "Ezreal",
+            "Syndra"
+          ],
+          "simple_top5": [
+            "Syndra",
+            "Rumble",
+            "Jarvan IV",
+            "Lee Sin",
+            "Alistar"
+          ]
+        },
+        {
+          "gameid": "LOLTMNT02_483840",
+          "turn": 8,
+          "current_top5": [
+            "Akali",
+            "Orianna",
+            "Olaf",
+            "Cassiopeia",
+            "Jhin"
+          ],
+          "simple_top5": [
+            "Ambessa",
+            "Syndra",
+            "Lulu",
+            "Olaf",
+            "Viktor"
+          ]
+        },
+        {
+          "gameid": "LOLTMNT02_483840",
+          "turn": 9,
+          "current_top5": [
+            "Seraphine",
+            "Nautilus",
+            "Jhin",
+            "Ezreal",
+            "Jarvan IV"
+          ],
+          "simple_top5": [
+            "Ambessa",
+            "Lulu",
+            "Olaf",
+            "Jarvan IV",
+            "Seraphine"
+          ]
+        },
+        {
+          "gameid": "LOLTMNT02_483840",
+          "turn": 10,
+          "current_top5": [
+            "Cassiopeia",
+            "Olaf",
+            "Syndra",
+            "Ezreal",
+            "Rumble"
+          ],
+          "simple_top5": [
+            "Syndra",
+            "Viktor",
+            "Ambessa",
+            "Cassiopeia",
+            "Lulu"
+          ]
+        },
+        {
+          "gameid": "LOLTMNT02_483840",
+          "turn": 11,
+          "current_top5": [
+            "Cassiopeia",
+            "Syndra",
+            "Nautilus",
+            "Ezreal",
+            "Jhin"
+          ],
+          "simple_top5": [
+            "Syndra",
+            "Viktor",
+            "Cassiopeia",
+            "Lulu",
+            "Alistar"
+          ]
+        }
+      ]
+    },
+    "test": {
+      "metrics": {
+        "current": {
+          "queries": 320,
+          "recall_at_1": 0.19375,
+          "recall_at_5": 0.49375,
+          "mrr_at_5": 0.3026041666666667,
+          "candidate_coverage": 0.76875,
+          "queries_with_supported_rank_candidate": 0,
+          "queries_with_revealed_enemy": 288
+        },
+        "simple": {
+          "queries": 320,
+          "recall_at_1": 0.134375,
+          "recall_at_5": 0.425,
+          "mrr_at_5": 0.23338541666666662,
+          "candidate_coverage": 0.76875,
+          "queries_with_supported_rank_candidate": 0,
+          "queries_with_revealed_enemy": 288
+        },
+        "recent_presence": {
+          "queries": 320,
+          "recall_at_1": 0.159375,
+          "recall_at_5": 0.45,
+          "mrr_at_5": 0.25536458333333334,
+          "candidate_coverage": 0.76875,
+          "queries_with_supported_rank_candidate": 0,
+          "queries_with_revealed_enemy": 288
+        }
+      },
+      "delta_recall5_simple_minus_current": {
+        "series": 10,
+        "delta": -0.06875,
+        "ci95": [
+          -0.1103448275862069,
+          -0.03234768907563026
+        ],
+        "kind": "paired_reconstructed_series_bootstrap_1000_seed42"
+      },
+      "top5_changes": 306,
+      "same_candidate_role_pools_verified": true,
+      "examples": [
+        {
+          "gameid": "LOLTMNT02_486541",
+          "turn": 7,
+          "current_top5": [
+            "Ezreal",
+            "Cassiopeia",
+            "Olaf",
+            "Syndra",
+            "Lee Sin"
+          ],
+          "simple_top5": [
+            "Lulu",
+            "Rumble",
+            "Ambessa",
+            "Ezreal",
+            "K'Sante"
+          ]
+        },
+        {
+          "gameid": "LOLTMNT02_486541",
+          "turn": 8,
+          "current_top5": [
+            "Ezreal",
+            "Lee Sin",
+            "Olaf",
+            "Syndra",
+            "Rumble"
+          ],
+          "simple_top5": [
+            "Syndra",
+            "Viktor",
+            "Ambessa",
+            "Lee Sin",
+            "Lulu"
+          ]
+        },
+        {
+          "gameid": "LOLTMNT02_486541",
+          "turn": 9,
+          "current_top5": [
+            "Seraphine",
+            "Olaf",
+            "Lee Sin",
+            "Orianna",
+            "Syndra"
+          ],
+          "simple_top5": [
+            "Syndra",
+            "Viktor",
+            "Ambessa",
+            "Lee Sin",
+            "Lulu"
+          ]
+        },
+        {
+          "gameid": "LOLTMNT02_486541",
+          "turn": 10,
+          "current_top5": [
+            "Ezreal",
+            "Olaf",
+            "Lee Sin",
+            "Jayce",
+            "Lulu"
+          ],
+          "simple_top5": [
+            "Lulu",
+            "Ezreal",
+            "Ambessa",
+            "Olaf",
+            "Karma"
+          ]
+        },
+        {
+          "gameid": "LOLTMNT02_486541",
+          "turn": 11,
+          "current_top5": [
+            "Olaf",
+            "Lee Sin",
+            "Jayce",
+            "Lulu",
+            "Rumble"
+          ],
+          "simple_top5": [
+            "Lulu",
+            "Ambessa",
+            "Olaf",
+            "Karma",
+            "Lee Sin"
+          ]
+        }
+      ]
+    }
+  },
+  "limitations": [
+    "Reused Pro audit data: development comparison, not a fresh independent final test.",
+    "Recall/MRR retrieve observed picks, not tactical quality/counter/win improvement.",
+    "No weight tuning or test-driven formula changes; no Rank or postgame query resources used.",
+    "Different missing-profile patterns change the count of averaged signals in simple.",
+    "Simple scores same-role matchups only; synergy/team interactions remain descriptive.",
+    "Reconstructed series IDs and existing flexible-role inference remain shared extensions.",
+    "Bootstrap CI is conditional on this small sample; [0,0] does not prove equivalence."
+  ],
+  "observed_test_decline": true,
+  "decision": "Keep current default; simple is an explicit demo/comparison option. Independent tactical-quality evidence is unavailable.",
+  "db_sha256": "20e3d9739b271283f35a1ba33f345e3593bafe4e31212906d35939d91b2f740c",
+  "source_sha256": {
+    "compare_pick_scoring.py": "1136b9945d26c5fa349ce0a2de3ea1e601d63b108734483839eadd90ddc50277",
+    "draft_advisor.py": "ee73376b8c0479843f992aadaedc4b1acd6e7a1867b3a5cf671befcd621a2353"
+  }
+}

@@ -1,0 +1,18 @@
+﻿{
+    "pid":  12636,
+    "worker_pids":  [
+                        2268
+                    ],
+    "url":  "http://127.0.0.1:8000",
+    "started_at_utc":  "2026-11-24T09:15:20.7267783Z",
+    "arguments":  [
+                      "-m",
+                      "uvicorn",
+                      "src.api.app:app",
+                      "--host",
+                      "127.0.0.1",
+                      "--port",
+                      "8000"
+                  ],
+    "stop_command":  "Stop-Process -Id 12636,2268"
+}

@@ -1,3 +1,7 @@
+## Local draft UI API — NV-21,24/11/2026
+
+`src/api/app.py`: GET `/api/health`, `/api/catalog`; POST `/api/draft/view`, `/api/draft/action`, `/api/draft/swap`, `/api/draft/explain`. Local default127.0.0.1:8000, OpenAPI `/docs`. Validate inputs/replay, reuse engine, không tải Riot hay ghi SQL mỗi request. Static `web/dist` thôi. [Hướng dẫn](UI_REACT_TYPESCRIPT.md); nguồn kỹ thuật [React](https://react.dev/learn), [TypeScript](https://www.typescriptlang.org/docs/), [Vite](https://vite.dev/guide/), [FastAPI](https://fastapi.tiangolo.com/tutorial/first-steps/), [Playwright](https://playwright.dev/docs/intro). Rank trên UI chỉ là evidence.
+
 # DANH MỤC CÁC CỔNG API MỞ, BỘ DỮ LIỆU CHUẨN & TÀI NGUYÊN KỸ THUẬT
 **Môn học: Nhập môn Khoa học Dữ liệu (Introduction to Data Science) - PTIT**
 
@@ -43,3 +47,6 @@ Tài liệu này tổng hợp toàn bộ các đường link API chính thức, 
 * **Endpoint API chính:** `https://lol.fandom.com/api.php`
 * **Tài liệu hướng dẫn Cargo API:** [https://lol.fandom.com/wiki/Help:Cargo_API](https://lol.fandom.com/wiki/Help:Cargo_API)
 * **Bảng dữ liệu trọng tâm:** `ScoreboardGames`, `ScoreboardPlayers`.
+## Nguồn Rank tăng dần hiện hành — 24/11/2026
+
+Riot League-v4 C/GM/M + Match-v5recentID/detail/timeline +10participantSolo/Duosnapshots -> private `data/database/ranked_evidence.db` và `data/raw/rank_lake/`. Không gộp Pro/historical-tier giả. [Hướng dẫn](CONTINUOUS_RANK_EVIDENCE.md), [bảng hiện hành](../reports/rank_matchups_live/REPORT.md), sổ mục22/MR-20/NV-16. Match queue/cursor/cache/qualification/session lưu SQLite; `--watch` khônglifetimecap1.000, vẫnrate/budgetmỗiphiên. Canonical `lol_live_data.db` khôngđổi. Dataset/trạngthái cũ trong tài liệu này giữ như lịch sử/phạm vi cũ, không dùng số seed thay số trận thật.

@@ -1,5 +1,11 @@
 # AI WORKING RULES & PROJECT PROTOCOL
 
+## Phạm vi vừa sức môn học — yêu cầu24/11/2026
+
+Ưu tiên nội dung Chương1–6 và một số mở rộng giải thích được. Xem [phạm vi hiện hành](../docs/PHAM_VI_DO_AN_VUA_SUC.md). Giữ một luồng dữ liệu/demo rõ ràng, tái sử dụng module có sẵn; không tự thêm framework/model/chiến lược/nhánh nghiên cứu hoặc dựng lại lookahead/globalBO5. Legacy/contextual và thao tác draft/Fearless hiện có được giữ, không nhận là tối ưu toàn cục. Prototype/evaluator nghiên cứu giữ để truy vết, không coi tất cả là hạng mục phải phát triển thành sản phẩm.
+
+Mở rộng mới phải gắn nhu cầu cụ thể, có cách giải thích đơn giản và output/kiểm chứng trong sổ kiến thức; ưu tiên cách trong môn hoặc phương án đã có. Không thêm kiến thức để làm dự án có vẻ nâng cao. Quy định này không yêu cầu xin phép lại cho việc đã được giao. Thay công thức/ranking đang dùng cần baseline; sửa mục tiêu thu dữ liệu không được âm thầm đổi điểm Pro.
+
 Tài liệu này là quy chuẩn bắt buộc đối với tất cả các AI session khi làm việc trên dự án.
 
 **Quy định kiến thức bắt buộc:** đọc và áp dụng [KNOWLEDGE_RULES.md](KNOWLEDGE_RULES.md). Khi thêm/sửa/bỏ phương pháp, chức năng, dữ liệu đánh giá hoặc đầu ra, phải cập nhật [sổ kiến thức báo cáo](../docs/TONG_HOP_KIEN_THUC_VA_MO_RONG_BAO_CAO.md) trong cùng đợt thay đổi: chương/nguồn, nơi dùng, công dụng, output, trạng thái và minh chứng. Đây là một phần điều kiện hoàn thành, không phải ghi chú tùy chọn.

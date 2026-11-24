@@ -1,4 +1,18 @@
-> **Hiện hành24/11: chỉ legacy và contextual.** Lookahead đã gỡ khỏi code/CLI. Hai chế độ đều được chạy kiểm tra đủ5draftT1–Gen.G;57testsPASS. [Phương pháp/lệnhchạy](docs/BAN_LEGACY_VA_CONTEXTUAL.md). Những mô tảsearch phía dưới là lịch sử trước quyết định này.
+> **UI mới gọn và kiểm kèo đã lộ:** thiết lập trên đầu; gợiý trái/chọntay phải; giải thích dưới. Chọn tay tự xếp đường phổ biến nhất còn trống, kéo thả đổi đường. Galio0mẫuvsAmbessa không autochốt; cùngrolexétWilsonlowerbound,Renekton2/2đượchiệnđúngn/CIvàlêntop2trongcaseđãaudit. CLI nhiềuván bắtbuộc`--first-picks`,choBluehoặcRedcả5. [Hướngdẫn](docs/UI_COMPACT_VA_KIEM_KEO_DA_LO.md),[minhchứng178tests/5Edge](reports/ui_lane_revision/REPORT.md). Tảilạihttp://127.0.0.1:8000/Phiênmớinếucần.
+
+> **Giữ cặp bot + chọn trước từngván:** contextualpickđãkiểmtrapartnerpooltrướcbansđểtránhcaseNautilus→điTop→mấthếtADCđủmẫu. Scorecurrentgiữnguyên,lýdoưu tiênriêng;khôngnhậncặptốiưu. UIchọnBlue/Redđitrướcmỗiván,khôngtựluânphiên;CLI`--first-picks red,red,blue,blue,red`. [Phươngpháp](docs/GIU_CAP_BOT_VA_FIRST_SELECTION.md), [regression/BO5/minhchứng](reports/pair_reservation_revision/REPORT.md).170tests/3EdgePASS. Tảilại http://127.0.0.1:8000 vàPhiênmới nếu fingerprintcũkhôngkhớp.
+
+> **UI hiện hành — hai khu riêng/contextual v2:** Gợiý và Chọntay đồnghiện, confirmriêng. ThanhcấuhìnhhiệnBan/Pick/ngày/mãsnapshot; đổi nguồn/config khônglặnglẽtrộnkếtquả. Contextual sửa utilitypoolítbackup;80banstates cùngpool giảm31probe bất nhất→0 nhưngRecall5banlịchsửkhôngtăng, chưaclaimchiếnthuậttốthơn.159tests/2EdgePASS. [Báocáo](reports/contextual_ui_revision/REPORT.md), [cáchdùng](docs/UI_REACT_TYPESCRIPT.md). Chạy `.\start_ui.ps1`, mở http://127.0.0.1:8000.
+
+> **UI React + TypeScript đã chạy (24/11):** `.\start_ui.ps1` rồi mở **http://127.0.0.1:8000**. [Cài đặt và cách dùng](docs/UI_REACT_TYPESCRIPT.md), [ảnh và kiểm tra](reports/ui_demo/REPORT.md). Ban/pick tay hoặc gợi ý, flex, undo, lịch sử, Fearless tối đa5ván, Pro/Rank riêng, lưu phiên và xuất JSON.154Python tests và browserEdgePASS. Bản này phục vụ Pro draft, Rank là bằng chứng; chưa có UI Rank riêng hoặc tối ưu toànBO5.
+
+> **Thử tinh giản điểm pick24/11:** [rà8thành phần và công thức đơn giản](docs/TINH_GIAN_DIEM_RECOMMENDER.md), [so sánh520lượt chọn](reports/pick_scoring_comparison/REPORT.md), [BO5T1–Gen.G đủ100lượt ban/pick và lý do](reports/simple_scoring_bo5/REPORT.md). Simple giảm Recall@5 test từ49.375% xuống42.5%, nên default vẫncurrent; explicit `--pick-scoring simple` chỉ để demo/so sánh.146tests vàintegrationPASS. Kiến thức/phần giữ-bỏ/output ởsổmục26.
+
+> **Phạm vi hiện hành24/11:** đồ án vừa sức Chương1–6 và một số mở rộng giải thích được. [Phạm vi cốt lõi/phần phụ và đánh giá hiện trạng](docs/PHAM_VI_DO_AN_VUA_SUC.md). Giữ demo legacy/contextual/Fearless; không bắt buộc nghiên cứu toànBO5 hoặc Web/API đầy đủ. Đã bỏ quota mặc định2.000trận/kèo; U.GG reference chưa nạp, không nhận đã ngang số mẫu.139testsPASS ởmốctrước; collector khôngquota, PID/log hiện hành ở reports/rank_matchups_live/collector_process.json.
+
+> **Mốc trước — bằng chứng Pro/Rank:** đã xuất thống kê từ3.000trận Pro, thêm bảng hai nguồn ở gợi ý/`why N`, không thay điểm chính. [Cách chạy và giới hạn](docs/PRO_RANK_MATCHUP_EVIDENCE.md), [ví dụ](reports/pro_rank_explanations/REPORT.md), [thử nghiệm](reports/contextual_rank_experiment/REPORT.md).138testsPASS tại mốc đó; thử nghiệm thăm dò chưa cải thiện, đánh giá độc lập chờ dữ liệu giải sau freeze.
+
+> **Hiện hành24/11: chỉ legacy và contextual.** Lookahead đã gỡ khỏi code/CLI. Hai chế độ đều được chạy kiểm tra đủ5draftT1–Gen.G;57testsPASS ở mốc cũ. [Phương pháp/lệnhchạy](docs/BAN_LEGACY_VA_CONTEXTUAL.md). Những mô tảsearch phía dưới là lịch sử trước quyết định này.
 
 > **24/11 — sửa tự chọn thiếu căn cứ:** auto dừng chờreview khi địch đã lộ5và pick không có đối đầu đủ mẫu, lưu alternatives/completefalse; không xác nhậncounter. [Phạm viTrundle, kết quả và lệnh chạy](docs/RA_SOAT_LUA_CHON_THEO_DOI_HINH.md). 51testsPASS; dừng phát triển tiếp theo yêu cầu người dùng.
 
@@ -186,6 +200,15 @@ python -c "import sqlite3; conn = sqlite3.connect('data/database/lol_live_data.d
 ---
 
 ## 📚 TÀI LIỆU THAM KHẢO NỘI BỘ
+
+Kho Rank tăng dần hiện hành: [hướng dẫn collector/resume/watch](docs/CONTINUOUS_RANK_EVIDENCE.md), [thống kê đối đầu mới nhất](reports/rank_matchups_live/REPORT.md). Dữ liệu ghi vào `data/database/ranked_evidence.db`, không có trần tổng1.000trận; n/CI và sparse status được cập nhật theo dữ liệu thật. Không thay đổi mô hình hoặc điểm draft giải.
+
+```powershell
+.\.venv\Scripts\python.exe src/01_data_pipeline/update_rank_evidence.py --watch --platforms kr --max-requests 600 --max-minutes 15
+```
+
+Lệnh chạy trong tiến trình hiện tại cho đến khi dừng hoặc lỗi API terminal, mỗi phiên có ngân sách/rate limit và lưu hàng đợi. Bỏ `--watch` để chạy một phiên; dùng `--export-only` để xuất bảng offline. Chi tiết trạng thái/nghiệmthu/giới hạn ở hướng dẫn, sổ kiến thức mục22.
+
 * [Kế hoạch thực hiện đồ án 3 người](docs/KE_HOACH_THUC_HIEN_DO_AN_3_NGUOI.md)
 * [Từ điển Danh mục Hàm & Module toàn dự án (Function Catalog)](docs/DANH_MUC_HAM_VA_MODULES.md)
 * [Danh mục API & Dataset](docs/DANH_MUC_API_VA_DATASET.md)

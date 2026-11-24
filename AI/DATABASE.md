@@ -1,3 +1,71 @@
+## Role preferences and lane-review JSON — 2026-11-24
+
+SQL/schema/Prohashunchanged. Viewrole_preferences={champion:[{role,games}]}descendingobservedProcountinscope. Actionrole:nullonmanualpick→infernextobservedfreerole;persistactualassignedroleinMove. Swapsexistingrecordafter_turn,historyorderunchanged. Rowlane_review={role,opponent,games,winrate,ci95_wilson,status,requires_review,ranking_confidence_bound,ranking_basis,assignment_source,version,reason};blindgamesnull,unobservedknownkèongames0/metricsnull,noimputation. APIconfig/fingerprintnewlane_review_policy/manual_role_policy. Outputsreports/ui_lane_revision,publicnoplayerIDs/APIkeys.
+
+## Pair reservation and first-selection JSON — 2026-11-24
+
+NoSQLschema/sourcechange. Pickrow/advice thêm pair_reservation={version,status,priority_tier,enemy_bans_before_next_own_pick,opponent_bot_revealed,requires_review,reason,pair_evidenceorsupported_partners/count/worst_case_partners_remaining}. n/WR/Wilson/effectiveliftlấytừProscope;khôngfakepairtỉlệ/missing,khôngnạpRankvàoscore. Firstselectiongame.first_sideđãcó,UIexplicitmỗiván;seriesfirst_picks/first_selection_policy/user_rule_sourcemớiđểtáilậplịchthực. APIconfiguration/fingerprintthêmpair_safety,guardtraceđượclưutronghistory/why/exportmetadata. Reports/pair_reservation_revision,bo5/seriesJSON0-10-20-30-40locks;Prohash20e3d973...unchanged,noprivateplayerIDs/key.
+
+## Session snapshot and contextual output v2 — 2026-11-24
+
+SQL/schema/ProDBSHA20e3d973...khôngđổi. Session thêmoptional snapshot_id64hex; API tựđiềnngàyas_ofthiếuvàIDresponse, khôngghiSQL. View thêmconfiguration={pick_scoring,ban_strategy,contextual_version,snapshot_id}; exportlưucấuhình/IDscopeđểđốichiếu. Source/configkhôngkhớp409, sourceDBđổiđòirestart; fingerprintkhônglàbackupDB/code. Banpool_impactthêm before_slots/after_slots, contextual_policy.version=fixed_capacity_v2. Missingmetricvẫnnull; số0làutilitycủaslotkhôngcóbackup, khôngGD/XP/CSsuytạo. Reports80querycomparison vàexport/screenshot/tests ởreports/contextual_ui_revision; khôngplayerID/APIkey.
+
+## UI JSON contracts, không đổi DB — 2026-11-24
+
+Canonical SQLite readonly/schema/hash không đổi20e3d973...; không nhập thêm Rank vào Pro. Request Session={settings,completed<=4,current}; Game={first_side,history<=20,swaps}; swap={side,champion,to,after_turn}; input extra fields bị từ chối, server derive picks/bans/locks. View trả session,states,turn numbered,schedule,recommendations,scope,rosters,thresholds và series_complete. Browser `draft-lab-session-v1`={version:1,session} chỉ lưu inputs, được replay/validate khi load. Export `draft-lab-bo5.json`={version,session,scope,boards,interpretation}; test export thật ở reports/ui_demo/export.json. Không server-side persistence mới. Public advice whitelist không PUUUID/APIkey; floatNaN/Inf thànhnull, không giả số0. API chỉ phục vụ static web/dist, không mở projectroot/DB/.env. Đây là NV-21 output contract, không thêm kiến thức thống kê.
+
+## Scoring selector and demo report fields, no DB change — 2026-11-24
+
+KhôngđổiSQLitetables/schema hoặcmodeldata. Advisorrowsimple cóscore_components tốiđa frequency/content/matchup, nguồnfallback vàmatchup_scope same_role_only; shapehistoricalevidencevẫnCounts/Wilson. SessionJSONthêmpick_scoringvàeffectivepolicyweights, lưu scope/supportedmass/sourcecomparisonđểkhôngmấtmetadata. SeriesJSONgiữmodefive_drafts_no_game_results, khôngwinner/scorematchgiả. Comparatorqueries lưurole-poolSHA256mỗiquey và3formula,cùngDBhash20e3d973...; ProSQLitereadonlygiữnguyên. Outputsreports/pick_scoring_comparison vàsimple_scoring_bo5,khôngnạpRankvàocanonicalDB.
+
+## Report schema v3: quota null, SQL không đổi — 2026-11-24
+
+DB/schema/khóa/cohort/measurements khôngđổi. rank-matchup-tables-v3 giữtarget_games/games_remaining/target_reached nhưngdefaultnull, progressreference_status=not_loaded; summarytargetnull/parityFalse/collection_goal actualcoverage. Oldmanualtarget làcompatibilityrepro, khôngU.GGdata. ProCSVxuấtlạinhưngn/mean/CIkhôngđổi. Rank418completegamesởmốcreload;watchtiếptụctăng. KhôngsửacanonicalDB, khôngfakecount/CI. collector_process.json giờghiworker_pids+stop_commandchoPythonfamily,khôngxemPIDcũ23100làtiếntrìnhhiệnhành.
+
+## Pro/Rank explanation outputs, không đổi schema — 2026-11-24
+
+CanonicalProSQLite vàrank-lake-v1 khôngđổi, mainDBhash20e3d973... giữnguyên. matchup_evidence chỉđọc Proclean vàRankWALtransaction. RankqueryJOINobservations/jobs lấyupdated_at đểchốtavailability=maxqualification,ingestion, đóngconnection sauđọc. Proobservations/aggregateCSV riêng reports/pro_matchups, publickhôngpersonIDs. PrivatefrozenRank records ở data/raw/contextual_evidence_experiments/{timestamp}/freeze.json; publiceval/diagnostic chỉcounts/query/champion/report, khôngPUUID. KhôngnạpxuôiRankvàoPro hoặc sửaSQL. Reportschemaexplainer mới ở trường matchup_source_comparison củaadvisoryrow; score/bảngmodels khôngđổi.
+
+## Bổ sung export pooled — 2026-11-24
+
+Snapshots.record_json có thể thêm source_kind=league_list_membership, source_ref tới raw league_lists. Seeds vẫn trỏ current list; snapshot từng PUUID được suy xuất từ chính membership của người đó, tier/queue/observed_at và raw response được giữ. Metadata bootstrap_rank_lists:platform:tier refresh15min, khác bootstrap seed-only6h cũ. Batchtransaction cho seeds/snapshots, không đổi bảng/cột hoặc làm mất snapshot qualification đã đóng.
+
+Schema rank-lake-v1 không đổi. metadata thêm key scheduler:last_platform cho round-robin server. Observations vẫn giữ patch/platform gốc; ALL_OBSERVED chỉ nằm ở bảng CSV tổng hợp, không sửa raw/DB để mất nguồn. Report schema v2 thêm pooled counts/target progress, pooled_*.csv và matchup_collection_progress.csv. Chi tiết docs/POOLED_MATCHUPS_UGG_STYLE.md, MR-21/NV-17.
+
+## ranked_evidence.db — kho mới thật, không mutate canonical — 2026-11-24
+
+Schema rank-lake-v1 tại data/database/ranked_evidence.db (private/gitignored), khôngđổi lol_live_data.db. metadata(key,value) giữschema_version/cohort_policy/bootstraptime; seeds PK(platform,puuid) lưu tier/source/observed_at/last_polled/page_start; jobs PKmatch_id lưu platform/routing/status/detail_path/timeline_path/detail_fetched_at/classification_json/evidence_json/available_at/updated_at/next_attempt. evidence_json cất10snapshot/time/source vàclassification đểresumeaccepted-chưatimelinequa ngày. snapshots PK(platform,puuid) lưu latestrecord/time; rawarchivegiữpayloadcũ. observations PK(match_id,team_id,role), FKjobs, scope/champion_id/opponent_id/privatePUUID/opponentPUUID/row_json; đủ10rowsmộttransaction. sessions PKsession_id lưu start/end/status/http_attempts/detail_json. Indexjobs_status,seeds_poll,observations_matchup; WAL+OSwriterlock, schema/policyfingerprintguard vàtừchốicanonicaldestination.
+
+Import10accepted cũidempotent; mới78qualified ->tổng88completegames880rows382người. 11.012seed/5pending/7rejected là trạngtháimốcnghiệmthu, khôngphải11kmatch. Rawdata/raw/rank_lake/matches vàsnapshots/{hashedPUUID}/{timestamp}.json, nocredentials/header. Newpublic reports/rank_matchups_live all_matchups/best_full_game_matchups/unfavorable_full_game_matchups/early_gold_advantages/observations.csv +summary/REPORT/checks/tests/sessions; khôngPUUID. Scopeplatform/queue/patch/tierfloor/role/champID/opponentID, n/wins/Wilson/người +6metricn/mean/median/SD/tCI, giữsparse. Sourceactualframe gần10/15 chỉmôtả. Nghiệmthu600+2HTTPrequest,63tests+integrity/FK/rebuild/mirror/privacy/idempotence/canonicalhashPASS. --watchtăngcorpusnhiềuphiênkhôngtrần1.000, khônggộpRankProhoặchistoricalclaim; hai phiênhiệnđãkếtthúc.
+
+## Campaign và coverage sidecars — 2026-11-24
+
+KhôngschemaSQLite mới. Mỗi newrun thêmprivate seed_selection.json(seedindex/PUUID/tierselection) đểtruyvết seedregistry, raw/snapshot khácgiữmục20. Publiccampaignmanifest ở reports/rank_snapshot_collection/campaigns/{id}.json chứaactualbudget/attempts/seedcount/runs, khôngPUUID.
+
+reports/rank_coverage: games.csv khóa match_id, chọnlầnaccepted sớmnhất, available_at=maxsnapshot/detailfetch; observations.csv khóa(match_id,team_id,role), có champion_id/opponent_id/tier/scope/time vàmeasurements cóthật, khôngPUUID. patch/role/champion_role/lane_matchup_coverageCSVscope(platform,queue,patch,tierfloor), sốtrận/ngườikhácnhau/deficit; pairlàcóhướng. Rejected chỉ thêmIDs/labels vàouniverse đểtạo0, khôngsamples. summary/readiness/checks JSON/REPORT/tests.logcósourcehash,policykind,splitIDvàmetricsNull. Tổng10trận100rows72người,115champrole/2156pair,0support. Privateevidence chỉtrongmemoryđếmngười, khôngmergeDB hoặcđầuvàomodel. Đồnghồavailabilityphảitrướctargetquery; prototyperanker/baselinereportschưatồntại.
+
+## Tier snapshot sidecar v1 — 2026-11-24
+
+KhôngđổiSQLite/schema/model. data/raw/riot_rank_snapshots/{runid}/private: detail/timeline/provenance, snapshots/{sha256puuid}.json(rawAPI +observed_at/platform), rank_snapshots.json(puuid/platform/queue/kind=snapshot/tier/division/league_points/observed_at/source_ref/status),manifest. Rawchứacá nhân vẫnprivate/gitignored, hashfilenamekhônglàanonymization.
+
+Public reports/rank_snapshot_collection/{runid}/summary/matches/accepted_match_ids/checks.json/REPORT.md/tests.log khôngPUUID/names; participant_idchỉ1..10trongtrận. accepted_observations.csv thêm tier_at_observation/rank_observed_at/cohort/historical_rank_verifiedFalse vàoCOLUMNS hiệncó, signedgold/XP/CS10/15 chỉmôtả. acceptedIDscònphụthuộctimelineđểcóobservations;missingkhôngfill0. latest.jsonpointer. Live5trận49snapshots/2accepted/3quá24h/0missing/20observations; DB/rawkhôngđổiquachecks. Khôngmergecohortmớivàocachehistorical92trận hoặccanonicalDB.
+
+## Rank cohort evidence/audit sidecar — 2026-11-24
+
+Không migrationSQLite/raw. Config src/config/draft_modes.json; private evidence JSON list puuid/platform/queue/tier/kind/observed_at/source_ref + valid_from/valid_until nếu historical_interval. Snapshot không thành interval, không tự suy historicaltier; interval có source cũng chỉ contract-validated chưa xác thực độc lập. Audit reports/rank_cohort_audit/{summary,matches,checks}.json/REPORT.md/tests.log chỉ xuất match ID/nhãn/counts/reasons và hash, không PUUID/playername.92trận đều seed-only/0all10historical-high, không rank thấp. Evalcohortaudit tại reports/rank_transfer_evaluation/cohort_audit dừng0eligible, metric JSON trước giữ nguyên. Lệnh tái lập cũ cần --allow-seed-only-research; raw cache/mẫu cũ không sửa/xóa. Snapshot collector mới chưa triển khai, không invent bảng hoặc output.
+
+## Rank study schema v2 và contract — 2026-11-24
+
+Không đổi SQLite hoặc snapshot canonical. Raw92trận/catalog/manifest riêng data/raw/riot_matchups_study, gitignored;411participant chỉ báo số đếm, không xuất định danh. Observation CSV mới thêm ended_at (maxstart+duration/gameEndTimestamp) và chuẩn tên official ID/alias; schema rank-matchups-v2-ended-catalog, output reports/rank_pro_study_data. Smoke5trận v1 không ghi đè.
+
+Eval từ raw độc lập vớiCSV đọcpatchdạngfloat, giữ patchstring16.20; lọc đúngKR/patch/trước freeze/đãkếtthúc,83trận. Pro cũng loại trận chưa kết thúc trước freeze. Outputs reports/rank_transfer_evaluation gồm contract/names/splits/querytraces/evaluation/checks, không nạp vào DB hoặc model. Contract audit CS Pro30.000dòng và đủdiff10/15 không mismatch; timestamps Rank cóoffset104–407ms, CS10/15 chỉ mô tả. Xem docs/RANK_TRANSFER_PROTOCOL.md và sổ MR-16/NV-12.
+
+## Sidecar đối đầu Rank, không đổi schema SQLite — 2026-11-24
+
+`ranked_matchups.py` không gọi init_db crawler cũ; dữ liệu mới chưa nạp vào matches_10min hoặc snapshot canonical. Raw/provenance/manifest ở `data/raw/riot_matchups/` chứa định danh Riot, gitignored. CSV phân tích `reports/rank_pro_matchups/rank_observations.csv` khóa (match_id,team_id,role), mỗi trận10dòng có hướng, không PUUID/playername. Lưu ngày trận/patch/queue/platform/result/signed gold-xp-cs10/15 và frame_ms thật; CS Rank cộng lính+quái. Pro observations chỉ dùng phép đo complete; missing không điền0.
+
+Aggregate khóa platform/queue/patch/role/champion/opponent, ghi n/mean/SD và team-result winrate/Wilson; bảng ghép hai miền cùngpatch không cộng counts. before/nearest và ngưỡng1000ms phải đọc cùngsummary; nearest có thể sau mốc nên không dùng cho dự báo đúng10phút. Kiểm hash DB trước/sau pipeline PASS tại reports/rank_pro_matchups/checks.json. Không thay đổi ba bảng raw/index.
+
 ## 24/11 — Chỉ legacy/contextual
 
 Không thay đổi dữ liệu/schema/index hoặc model khi bỏ lookahead. Chỉ gỡ code/CLI search, giữ snapshot sạch chung; kết quả so2chếđộở reports/legacy_contextual_comparison. Report3chếđộ/searchtrướclàartifactlịchsử, khôngdùnglàmtrạngtháihiệnhành.

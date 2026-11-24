@@ -41,11 +41,13 @@ def markdown_report(report):
            'Đây là 5 phiên draft liên tiếp, không mô phỏng trận chiến hoặc gán tỉ số thắng/thua. Không dùng kết quả giả để ép BO5 đi đủ5ván.',
            '',f"Luật: [Fearless của Riot]({RULE_SOURCE}). Tướng đã pick bởi bất kỳ đội nào bị khóa cho cả hai đội đến hết series; ban thường chỉ có hiệu lực trong ván đó. Ván5 không reset pool.",
            '',f"Snapshot: `{report['meta_scope']}`.",
-           '',f"Lịch thử nghiệm: giữ {teams['blue']} ở Blue và {teams['red']} ở Red; bên pick trước luân phiên Blue/Red. Đây là lịch chỉ định cho demo, không phải mô phỏng quyền First Selection dựa vào thắng/thua.",
+           '',f"Lịch thử nghiệm: giữ {teams['blue']} ở Blue và {teams['red']} ở Red; đội chọn trước từng ván: {', '.join(g['first_pick_side'] for g in report['games'])}. Quyền chọn trước độc lập màu đội, theo cấu hình người dùng; không suy từ thắng/thua. Nguồn luật Fearless bên trên không xác nhận một luật First Selection mới.",
            '',f"Cho phép test chọn số1 khi thiếu tin cậy: {report.get('allow_statistical_auto',False)}. Không nâng nhãn counter hoặc độ tin cậy khi bật chế độ này.",
            '',f"Chiến lược ban: {report.get('ban_strategy','legacy')}. Chỉ legacy/contextual; không tìm nhánh phản ứng hoặc tối ưu toàn BO5.",
            '',f"Ứng viên: ít nhất {report['candidate_min_games']} lần quan sát đúng role; ngưỡng bằng chứng {report['evidence_min_games']} trận. Ưu tiên ứng viên đủ mẫu trước; chỉ xét lớp ít mẫu khi không còn ứng viên đủ mẫu ở role đang xét. Khi so giữa các role mở cũng ưu tiên lớp đủ mẫu; người dùng wishlist vẫn là lựa chọn chủ đích riêng. Đây là pool gợi ý có dữ liệu, chưa là danh mục tướng hợp lệ chính thức của sự kiện.",
-           '', 'Association dương được shrink thêm theo số mẫu cặp; association âm theo số quan sát đồng đội. Không cho một cặp một-mẫu tạo bonus lift lớn như cặp có nhiều mẫu.']
+           '',f"Cách tính điểm pick: {report.get('pick_scoring','current')}.",
+           '', ('Simple: trung bình tần suất chọn, cosine nếu có và WR đối đầu cùng role; thiếu matchup dùng WR lịch sử có nhãn. Không dùng synergy/lift/odds để chấm điểm. Thống kê cặp ở dưới chỉ để tham khảo.' if report.get('pick_scoring')=='simple' else
+           'Association dương được shrink thêm theo số mẫu cặp; association âm theo số quan sát đồng đội. Không cho một cặp một-mẫu tạo bonus lift lớn như cặp có nhiều mẫu.')]
     for n,g in enumerate(report['games'],1):
         lines+=['',f"## Ván {n} — {g['teams'][g['first_pick_side']]} chọn trước",'',
                 f"Fearless khóa {len(g['used_champions'])} tướng từ các ván trước.",'',
@@ -69,6 +71,16 @@ def markdown_report(report):
         sparse=[f"{g['teams'][h['side']]} {h['champion']} ({h['advice']['games']} trận)" for h in g['history']
                 if h['action']=='pick' and h['advice'].get('evidence_status')=='sparse_candidate']
         lines+=['','Lựa chọn ít mẫu: '+('; '.join(sparse) if sparse else 'không có dưới ngưỡng5trận')+'.']
+        lines+=['','### Căn cứ từng lượt pick','',
+            '| Lượt | Đội | Pick | Điểm | Thành phần | Đối đầu / thiếu bằng chứng |','|---:|---|---|---:|---|---|']
+        for h in g['history']:
+            if h['action']!='pick':continue
+            advice=h['advice']
+            components='; '.join(f"{k}={v['value']:.3f}" for k,v in advice.get('score_components',{}).items())
+            pairs='; '.join(f"{e['opponent']} n={e['games']}" for e in advice.get('matchup_candidates',[])) or 'Chưa lộ/không suy được cùng role'
+            if advice.get('review_required'):pairs+='; thiếu hỗ trợ, test chọn số1'
+            if advice.get('matchup_scope')=='same_role_only':pairs+='; chưa chấm tương tác khác role'
+            lines.append(f"| {h['turn']} | {g['teams'][h['side']]} | {h['champion']} | {advice['ranking_score']} | {components} | {pairs} |")
         for side in ['blue','red']:
             c=g['composition_summary'][side]
             lines.append(f"Cặp {g['teams'][side]}: đủ mẫu {c['observed_pairs']}, ít mẫu {c['sparse_pairs']}, chưa thấy {c['unobserved_pairs']}, thiếu anchor {c['insufficient_anchor_pairs']}.")
@@ -84,23 +96,35 @@ def markdown_report(report):
     return '\n'.join(lines)+'\n'
 
 
+def first_selection_order(games,first_picks=None):
+    if games not in range(1,6):raise ValueError('Choose 1..5 draft games')
+    if first_picks is None and games>1:
+        raise ValueError('Chọn rõ đội đi trước từng ván bằng --first-picks, ví dụ blue,blue,blue,blue,blue. Không tự luân phiên.')
+    if first_picks is not None and (len(first_picks)!=games or any(s not in ['blue','red'] for s in first_picks)):
+        raise ValueError('Choose one blue/red first-selection team for every game')
+    return list(first_picks) if first_picks is not None else ['blue']
+
+
 def run_series(blue='Gen.G',red='Bilibili Gaming',region='WLDS',as_of='2026-11-13',patch='16.20',
                games=5,candidate_min_games=1,output_dir=ROOT/'reports/worlds_fearless_bo5',opponent_model_path=None,
-               allow_statistical_auto=False,ban_strategy='legacy'):
-    if games not in range(1,6):raise ValueError('Choose 1..5 draft games')
+               allow_statistical_auto=False,ban_strategy='legacy',pick_scoring='current',first_picks=None):
+    order=first_selection_order(games,first_picks)
     out=Path(output_dir);out.mkdir(parents=True,exist_ok=True)
-    advisor=DraftAdvisor(policy=AdvisorPolicy(candidate_min_games=candidate_min_games),
+    advisor=DraftAdvisor(policy=AdvisorPolicy(candidate_min_games=candidate_min_games,scoring=pick_scoring),
                          meta_policy=MetaPolicy(as_of=as_of,patch=patch))
     engine=RecommenderEngine();snapshot,_,_=advisor.context(region)
     report={'mode':'five_drafts_no_game_results','rule_source':RULE_SOURCE,'region':region,
             'allow_statistical_auto':allow_statistical_auto,
             'ban_strategy':ban_strategy,
+            'pick_scoring':pick_scoring,
             'meta_scope':snapshot.metadata(),'candidate_min_games':candidate_min_games,
             'evidence_min_games':advisor.policy.min_games,'games':[],'complete':False,
-            'schedule':'Fixed Blue/Red teams; alternating first pick; no winner-driven side selection'}
+            'schedule':'Fixed Blue/Red teams; explicitly configured first selection independent of map side',
+            'first_selection_policy':'user_configured' if first_picks is not None else 'single_game_default_blue',
+            'first_picks':order,'first_selection_rule_source':'user session configuration; Fearless reference above does not establish this rule'}
     used=[]
     for n in range(1,games+1):
-        first='blue' if n%2 else 'red'
+        first=order[n-1]
         with redirect_stdout(StringIO()) as log:
             game=run_pro_tournament_draft_simulation(blue,red,interactive=False,region=region,
                   first_side=first,advisor=advisor,engine=engine,used_champions=used,
@@ -136,5 +160,9 @@ if __name__=='__main__':
     parser.add_argument('--opponent-model',type=Path,nargs='?',const=ROOT/'models/opponent_model.pkl')
     parser.add_argument('--allow-statistical-auto',action='store_true',help='Test: chốt gợi ý số1 dù thiếu tin cậy; giữ nguyên nhãn bằng chứng')
     parser.add_argument('--ban-strategy',choices=['legacy','contextual'],default='legacy')
+    parser.add_argument('--pick-scoring',choices=['current','simple'],default='current')
+    parser.add_argument('--first-picks',help='Comma-separated blue/red for each game, independent of map side')
     args=parser.parse_args()
-    run_series(args.blue_team,args.red_team,args.region,args.as_of,args.patch,args.games,args.candidate_min_games,args.output_dir,args.opponent_model,args.allow_statistical_auto,args.ban_strategy)
+    if args.games>1 and not args.first_picks:parser.error('Cần --first-picks cho từng ván; có thể blue,blue,blue,blue,blue hoặc red,red,red,red,red.')
+    run_series(args.blue_team,args.red_team,args.region,args.as_of,args.patch,args.games,args.candidate_min_games,args.output_dir,args.opponent_model,args.allow_statistical_auto,args.ban_strategy,args.pick_scoring,
+               [s.strip().lower() for s in args.first_picks.split(',')] if args.first_picks else None)

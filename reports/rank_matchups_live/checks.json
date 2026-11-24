@@ -1,0 +1,99 @@
+{
+  "status": "PASS",
+  "unit_tests_passed": 70,
+  "db_integrity": "ok",
+  "foreign_keys": "PASS",
+  "accepted_games_with_complete_observations": 418,
+  "participant_rows": 4180,
+  "unique_players": 1626,
+  "verified_new_qualifications": 408,
+  "matchup_rows": 3340,
+  "ranked_matchup_rows": 32,
+  "counts": {
+    "accepted": 418,
+    "pending": 5,
+    "rejected": 21,
+    "accepted_observations": 4180,
+    "seeds": 33082
+  },
+  "sessions": [
+    {
+      "session_id": "20261124T063723199769Z",
+      "stop_reason": "request_budget_exhausted",
+      "http_attempts": 600
+    },
+    {
+      "session_id": "20261124T065152611238Z",
+      "stop_reason": "request_budget_exhausted",
+      "http_attempts": 2
+    },
+    {
+      "session_id": "20261124T070342542951Z",
+      "stop_reason": "session_time_limit",
+      "http_attempts": 153
+    },
+    {
+      "session_id": "20261124T070907960834Z",
+      "stop_reason": "request_budget_exhausted",
+      "http_attempts": 80
+    },
+    {
+      "session_id": "20261124T071246567364Z",
+      "stop_reason": "session_time_limit",
+      "http_attempts": 101
+    },
+    {
+      "session_id": "20261124T071708161046Z",
+      "stop_reason": "idle",
+      "http_attempts": 34
+    },
+    {
+      "session_id": "20261124T071917227771Z",
+      "stop_reason": "idle",
+      "http_attempts": 114
+    },
+    {
+      "session_id": "20261124T072338502197Z",
+      "stop_reason": "idle",
+      "http_attempts": 3
+    },
+    {
+      "session_id": "20261124T072454587915Z",
+      "stop_reason": "session_time_limit",
+      "http_attempts": 571
+    },
+    {
+      "session_id": "20261124T074107381421Z",
+      "stop_reason": "idle",
+      "http_attempts": 56
+    },
+    {
+      "session_id": "20261124T074428735454Z",
+      "stop_reason": "idle",
+      "http_attempts": 38
+    },
+    {
+      "session_id": "20261124T074701634721Z",
+      "stop_reason": "session_time_limit",
+      "http_attempts": 486
+    }
+  ],
+  "bulk_memberships_verified": 2364,
+  "pooled_counts_and_progress": "PASS",
+  "pooled_matchup_rows": 2806,
+  "fixed_sample_quota": null,
+  "ugg_reference_status": "not_loaded",
+  "duplicate_import_added": 0,
+  "all_complete_games_have_ten_unique_roles": true,
+  "signed_mirrors": "PASS",
+  "snapshot_reconstruction": "PASS",
+  "no_puuid_in_public_exports": true,
+  "canonical_db_unchanged": true,
+  "canonical_db_sha256": "20e3d9739b271283f35a1ba33f345e3593bafe4e31212906d35939d91b2f740c",
+  "verification_source_sha256": {
+    "rank_lake.py": "3325973a9bef362e337db9e05c5b0facda4d9f832f5b4ee798a2fd0ccc5401f4",
+    "update_rank_evidence.py": "34659dce30366b8245b30e12632c69e9113425693202ee930d06df7a63d07d05",
+    "rank_matchup_tables.py": "df18644bc33744acf51bd2614fe93b759dfd43d3eed990562c01efd69077cf70",
+    "ranked_matchups.py": "4c12141ef0703027b60975d0014ea62b61222b080ccf7eba9e43440a4c6a59ba"
+  }
+}

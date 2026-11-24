@@ -1,0 +1,19 @@
+{
+  "games": 3000,
+  "input_games": 3000,
+  "rows": 30000,
+  "catalog_version": "16.20.1",
+  "generated_at": "2026-11-24T08:03:53.711569+00:00",
+  "db_sha256": "20e3d9739b271283f35a1ba33f345e3593bafe4e31212906d35939d91b2f740c",
+  "metric_valid_counts": {
+    "gold_diff_10": 24370,
+    "xp_diff_10": 24370,
+    "cs_diff_10": 24370,
+    "gold_diff_15": 24380,
+    "xp_diff_15": 24380,
+    "cs_diff_15": 24380
+  },
+  "pooled_matchups": 3098,
+  "pooled_matchups_n5": 1170,
+  "semantics": "same-role observed resource differences; no inferred lane values or causal counter claim"
+}

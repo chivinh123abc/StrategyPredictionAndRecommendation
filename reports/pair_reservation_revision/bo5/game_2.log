@@ -1,0 +1,254 @@
+Đang nạp lịch sử trận đấu và hồ sơ tướng...
+GIẢ LẬP BAN/PICK MỘT VÁN — LỊCH SỬ + CONTENT-BASED
+Bạn: blue; phe chọn trước: red; dữ liệu: WLDS
+SNAPSHOT LỊCH SỬ: patch dataset 16.20, dữ liệu đến 2026-11-14T23:18:11+00:00, cũ 10 ngày so với mốc yêu cầu
+110 trận trong cửa sổ 60 ngày, 98 trận patch đích; không gọi là live meta.
+Lineup T1 (latest_observed_lineup_not_live_roster): top=Doran, jng=Oner, mid=Faker, bot=Peyz, sup=Keria
+Lineup Gen.G (latest_observed_lineup_not_live_roster): top=Kiin, jng=Canyon, mid=Chovy, bot=Ruler, sup=Duro
+Ưu tiên presence/nhịp draft gần đây; bể tướng, đối đầu và cosine là tín hiệu hỗ trợ. Điểm không phải xác suất.
+
+==========================================================================================
+BLUE T1 | Cấm: —
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: —
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 1/20: RED Gen.G — CẤM
+ĐÃ CẤM: Jarvan IV
+  Căn cứ: Mất pool địch 0.0071; chi phí tự cấm 0.0044; đội mình lấy lượt pick tới trước địch=True; Fearless khóa 10; chấm theo pool ngữ cảnh
+
+==========================================================================================
+BLUE T1 | Cấm: —
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Jarvan IV
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 2/20: BLUE T1 — CẤM
+ĐÃ CẤM: Ezreal
+  Căn cứ: Mất pool địch 0.0100; chi phí tự cấm 0.0035; đội mình lấy lượt pick tới trước địch=False; Fearless khóa 10; chấm theo pool ngữ cảnh
+
+==========================================================================================
+BLUE T1 | Cấm: Ezreal
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Jarvan IV
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 3/20: RED Gen.G — CẤM
+ĐÃ CẤM: Jayce
+  Căn cứ: Mất pool địch 0.0050; chi phí tự cấm 0.0028; đội mình lấy lượt pick tới trước địch=True; Fearless khóa 10; chấm theo pool ngữ cảnh
+
+==========================================================================================
+BLUE T1 | Cấm: Ezreal
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Jarvan IV, Jayce
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 4/20: BLUE T1 — CẤM
+ĐÃ CẤM: Qiyana
+  Căn cứ: Mất pool địch 0.0099; chi phí tự cấm 0.0037; đội mình lấy lượt pick tới trước địch=False; Fearless khóa 10; chấm theo pool ngữ cảnh
+
+==========================================================================================
+BLUE T1 | Cấm: Ezreal, Qiyana
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Jarvan IV, Jayce
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 5/20: RED Gen.G — CẤM
+ĐÃ CẤM: Locke
+  Căn cứ: Mất pool địch 0.0020; chi phí tự cấm 0.0004; đội mình lấy lượt pick tới trước địch=True; Fearless khóa 10; chấm theo pool ngữ cảnh
+
+==========================================================================================
+BLUE T1 | Cấm: Ezreal, Qiyana
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Jarvan IV, Jayce, Locke
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 6/20: BLUE T1 — CẤM
+ĐÃ CẤM: Lee Sin
+  Căn cứ: Mất pool địch 0.0108; chi phí tự cấm 0.0047; đội mình lấy lượt pick tới trước địch=False; Fearless khóa 10; chấm theo pool ngữ cảnh
+
+==========================================================================================
+BLUE T1 | Cấm: Ezreal, Qiyana, Lee Sin
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Jarvan IV, Jayce, Locke
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 7/20: RED Gen.G — CHỌN
+ĐÃ CHỌN: Renata Glasc [sup]
+  Căn cứ: Slot F1: ưu tiên chọn quan sát 0.021; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Ezreal, Qiyana, Lee Sin
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Jarvan IV, Jayce, Locke
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: Renata Glasc
+
+LƯỢT 8/20: BLUE T1 — CHỌN
+ĐÃ CHỌN: Orianna [mid]
+  Căn cứ: Slot S1: ưu tiên chọn quan sát 0.056; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Ezreal, Qiyana, Lee Sin
+Top: — | Rừng: — | Mid: Orianna | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Jarvan IV, Jayce, Locke
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: Renata Glasc
+
+LƯỢT 9/20: BLUE T1 — CHỌN
+ĐÃ CHỌN: Nautilus [sup]
+  Căn cứ: Slot S2: ưu tiên chọn quan sát 0.053; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Ezreal, Qiyana, Lee Sin
+Top: — | Rừng: — | Mid: Orianna | Xạ thủ: — | Hỗ trợ: Nautilus
+RED Gen.G | Cấm: Jarvan IV, Jayce, Locke
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: Renata Glasc
+
+LƯỢT 10/20: RED Gen.G — CHỌN
+ĐÃ CHỌN: Kalista [bot]
+  Căn cứ: Slot F2: ưu tiên chọn quan sát 0.037; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Ezreal, Qiyana, Lee Sin
+Top: — | Rừng: — | Mid: Orianna | Xạ thủ: — | Hỗ trợ: Nautilus
+RED Gen.G | Cấm: Jarvan IV, Jayce, Locke
+Top: — | Rừng: — | Mid: — | Xạ thủ: Kalista | Hỗ trợ: Renata Glasc
+
+LƯỢT 11/20: RED Gen.G — CHỌN
+ĐÃ CHỌN: Akali [mid]
+  Căn cứ: Slot F3: ưu tiên chọn quan sát 0.032; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Ezreal, Qiyana, Lee Sin
+Top: — | Rừng: — | Mid: Orianna | Xạ thủ: — | Hỗ trợ: Nautilus
+RED Gen.G | Cấm: Jarvan IV, Jayce, Locke
+Top: — | Rừng: — | Mid: Akali | Xạ thủ: Kalista | Hỗ trợ: Renata Glasc
+
+LƯỢT 12/20: BLUE T1 — CHỌN
+ĐÃ CHỌN: Kai'Sa [bot]
+  Căn cứ: Patch dataset 16.20: presence cửa sổ gần đây 20.4%; 12 lượt chọn đúng vị trí trên patch, 12 trận trong cửa sổ gần đây
+
+==========================================================================================
+BLUE T1 | Cấm: Ezreal, Qiyana, Lee Sin
+Top: — | Rừng: — | Mid: Orianna | Xạ thủ: Kai'Sa | Hỗ trợ: Nautilus
+RED Gen.G | Cấm: Jarvan IV, Jayce, Locke
+Top: — | Rừng: — | Mid: Akali | Xạ thủ: Kalista | Hỗ trợ: Renata Glasc
+
+LƯỢT 13/20: BLUE T1 — CẤM
+ĐÃ CẤM: Pantheon
+  Căn cứ: Mất pool địch 0.0066; chi phí tự cấm 0.0009; đội mình lấy lượt pick tới trước địch=True; Fearless khóa 10; chấm theo pool ngữ cảnh
+
+==========================================================================================
+BLUE T1 | Cấm: Ezreal, Qiyana, Lee Sin, Pantheon
+Top: — | Rừng: — | Mid: Orianna | Xạ thủ: Kai'Sa | Hỗ trợ: Nautilus
+RED Gen.G | Cấm: Jarvan IV, Jayce, Locke
+Top: — | Rừng: — | Mid: Akali | Xạ thủ: Kalista | Hỗ trợ: Renata Glasc
+
+LƯỢT 14/20: RED Gen.G — CẤM
+ĐÃ CẤM: Trundle
+  Căn cứ: Mất pool địch 0.0046; chi phí tự cấm 0.0003; đội mình lấy lượt pick tới trước địch=False; Fearless khóa 10; chấm theo pool ngữ cảnh
+
+==========================================================================================
+BLUE T1 | Cấm: Ezreal, Qiyana, Lee Sin, Pantheon
+Top: — | Rừng: — | Mid: Orianna | Xạ thủ: Kai'Sa | Hỗ trợ: Nautilus
+RED Gen.G | Cấm: Jarvan IV, Jayce, Locke, Trundle
+Top: — | Rừng: — | Mid: Akali | Xạ thủ: Kalista | Hỗ trợ: Renata Glasc
+
+LƯỢT 15/20: BLUE T1 — CẤM
+ĐÃ CẤM: Xin Zhao
+  Căn cứ: Mất pool địch 0.0027; chi phí tự cấm 0.0010; đội mình lấy lượt pick tới trước địch=True; Fearless khóa 10; chấm theo pool ngữ cảnh
+
+==========================================================================================
+BLUE T1 | Cấm: Ezreal, Qiyana, Lee Sin, Pantheon, Xin Zhao
+Top: — | Rừng: — | Mid: Orianna | Xạ thủ: Kai'Sa | Hỗ trợ: Nautilus
+RED Gen.G | Cấm: Jarvan IV, Jayce, Locke, Trundle
+Top: — | Rừng: — | Mid: Akali | Xạ thủ: Kalista | Hỗ trợ: Renata Glasc
+
+LƯỢT 16/20: RED Gen.G — CẤM
+ĐÃ CẤM: Naafiri
+  Căn cứ: Mất pool địch 0.0055; chi phí tự cấm 0.0000; đội mình lấy lượt pick tới trước địch=False; Fearless khóa 10; chấm theo pool ngữ cảnh
+
+==========================================================================================
+BLUE T1 | Cấm: Ezreal, Qiyana, Lee Sin, Pantheon, Xin Zhao
+Top: — | Rừng: — | Mid: Orianna | Xạ thủ: Kai'Sa | Hỗ trợ: Nautilus
+RED Gen.G | Cấm: Jarvan IV, Jayce, Locke, Trundle, Naafiri
+Top: — | Rừng: — | Mid: Akali | Xạ thủ: Kalista | Hỗ trợ: Renata Glasc
+
+LƯỢT 17/20: BLUE T1 — CHỌN
+ĐÃ CHỌN: Ambessa [top]
+  Căn cứ: Slot S4: ưu tiên chọn quan sát 0.042; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Ezreal, Qiyana, Lee Sin, Pantheon, Xin Zhao
+Top: Ambessa | Rừng: — | Mid: Orianna | Xạ thủ: Kai'Sa | Hỗ trợ: Nautilus
+RED Gen.G | Cấm: Jarvan IV, Jayce, Locke, Trundle, Naafiri
+Top: — | Rừng: — | Mid: Akali | Xạ thủ: Kalista | Hỗ trợ: Renata Glasc
+
+LƯỢT 18/20: RED Gen.G — CHỌN
+ĐÃ CHỌN: Wukong [jng]
+  Căn cứ: Slot F4: ưu tiên chọn quan sát 0.018; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Ezreal, Qiyana, Lee Sin, Pantheon, Xin Zhao
+Top: Ambessa | Rừng: — | Mid: Orianna | Xạ thủ: Kai'Sa | Hỗ trợ: Nautilus
+RED Gen.G | Cấm: Jarvan IV, Jayce, Locke, Trundle, Naafiri
+Top: — | Rừng: Wukong | Mid: Akali | Xạ thủ: Kalista | Hỗ trợ: Renata Glasc
+
+LƯỢT 19/20: RED Gen.G — CHỌN
+ĐÃ CHỌN: K'Sante [top]
+  Căn cứ: Slot F5: ưu tiên chọn quan sát 0.056; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Ezreal, Qiyana, Lee Sin, Pantheon, Xin Zhao
+Top: Ambessa | Rừng: — | Mid: Orianna | Xạ thủ: Kai'Sa | Hỗ trợ: Nautilus
+RED Gen.G | Cấm: Jarvan IV, Jayce, Locke, Trundle, Naafiri
+Top: K'Sante | Rừng: Wukong | Mid: Akali | Xạ thủ: Kalista | Hỗ trợ: Renata Glasc
+
+LƯỢT 20/20: BLUE T1 — CHỌN
+ĐÃ CHỌN: Skarner [jng]
+  Căn cứ: Slot S5: ưu tiên chọn quan sát 0.012; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Ezreal, Qiyana, Lee Sin, Pantheon, Xin Zhao
+Top: Ambessa | Rừng: Skarner | Mid: Orianna | Xạ thủ: Kai'Sa | Hỗ trợ: Nautilus
+RED Gen.G | Cấm: Jarvan IV, Jayce, Locke, Trundle, Naafiri
+Top: K'Sante | Rừng: Wukong | Mid: Akali | Xạ thủ: Kalista | Hỗ trợ: Renata Glasc
+Căn cứ cặp T1: observed_pairs=4, sparse_pairs=4, unobserved_pairs=2, insufficient_anchor_pairs=0
+Căn cứ cặp Gen.G: observed_pairs=1, sparse_pairs=8, unobserved_pairs=1, insufficient_anchor_pairs=0
+
+===============================================================================================
+📋 BẢNG ĐỘI HÌNH HOÀN THIỆN SAU KHI CẤM/CHỌN (FINAL DRAFT)
+===============================================================================================
+🔷 PHE XANH (T1):
+   • TOP: Ambessa (Doran)
+   • JNG: Skarner (Oner)
+   • MID: Orianna (Faker)
+   • BOT: Kai'Sa (Peyz)
+   • SUP: Nautilus (Keria)
+
+🔴 PHE ĐỎ (Gen.G):
+   • TOP: K'Sante (Kiin)
+   • JNG: Wukong (Canyon)
+   • MID: Akali (Chovy)
+   • BOT: Kalista (Ruler)
+   • SUP: Renata Glasc (Duro)
+Radar và thẻ chiến thuật dùng thuộc tính/quy tắc chuyên gia; chưa được xác nhận như điều kiện thắng nhân quả.
+
+────────────────────────────────────── THẺ CHIẾN THUẬT: T1 (BLUE) ──────────────────────────────────────
+🏆 Trường phái: [PICK & SPLIT-PUSH 1-3-1]
+📊 Radar 5 trục: Early: 0.677 | Scaling: 0.84 | Combat: 0.812 | Pick: 0.845 | Obj: 0.713
+⭐ Chủ lực (Core Carry): Orianna
+⏱️ Điểm rơi sức mạnh: Xuyên suốt trận đấu (Đặc biệt phát huy từ Phút 15 đến Phút 30)
+🐉 Mục tiêu số 1: Trụ 2 cánh bản đồ & Bắt lẻ cô lập mục tiêu đi lẻ
+✅ Điều kiện thắng: Tạo thế đẩy lẻ 1-3-1 hoặc 1-4, buộc đối thủ phải phân tán phòng thủ; rình rập bắt lẻ khi địch di chuyển và ép Baron khi hơn người.
+❌ Cần tránh: Bị đối thủ ép giao tranh 5v5 trực diện bất ngờ khi đội hình chưa kịp gom quân.
+
+────────────────────────────────────── THẺ CHIẾN THUẬT: GEN.G (RED) ──────────────────────────────────────
+🏆 Trường phái: [WOMBOCOMBO & OBJECTIVE CONTROL]
+📊 Radar 5 trục: Early: 0.677 | Scaling: 0.69 | Combat: 0.723 | Pick: 0.807 | Obj: 0.687
+⭐ Chủ lực (Core Carry): Akali
+⏱️ Điểm rơi sức mạnh: Giữa và Cuối trận (Phút 20 đến Phút 35 - Giai đoạn Rồng 3, 4 và Baron)
+🐉 Mục tiêu số 1: Rồng Nguyên Tố (Thiết lập Linh Hồn Rồng) & Hang Baron
+✅ Điều kiện thắng: Kiểm soát tầm nhìn trước 1 phút tại hang mục tiêu lớn, ép đối thủ vào các góc hẹp của sông và tung Wombocombo 5v5 quét sạch.
+❌ Cần tránh: Để đối thủ chia cắt đội hình đẩy lẻ 1-3-1 hoặc giao tranh khi chưa có đủ chiêu cuối mở combat.
+Phiên có mốc lịch sử: bỏ dự báo từ model lưu sẵn vì chưa bảo đảm model được fit trước mốc này.
+Đã lưu phiên: reports\pair_reservation_revision\bo5\game_2.json

@@ -1,3 +1,166 @@
+## Inspector whole-panel collapse — 2026-11-24
+
+- [x] Thu gọn toànbodyInspector→headernhỏ/timelinegần,mởrộngphụchồi;build/EdgePASS.
+
+## Inspector whole-panel collapse — 2026-11-24
+
+- [x] Thu gọn toànbodyInspector→headernhỏ/timelinegần,mởrộngphụchồi;build/EdgePASS.
+
+## Inspector click-toggle — 2026-11-24
+
+- [x] Inspectorẩn/defaultclickonly/deselectclose/reopen/reset,reloadvà7Edge/buildPASS.
+
+## Sidebar responsive fit — 2026-11-24
+
+- [x] Responsive3cộttừ900px,cùnghàng/cùngchiềucao;7desktopwidth+mobile/buildPASS.
+
+## Hai khu hai bên — 2026-11-24
+
+- [x] Desktop3cộtGợiý|Độihình|Chọntaycùnghàng;setuptrên/inspectordưới,giữroledọc.
+- [x]Build/Edgelayout/mobilePASS;NV24docssynced,khônglogic/DBchange.
+
+## Điều chỉnh bảng đội hình — 2026-11-24
+
+- [x] Khôi phục2bảngcăngiữa/5roledọc/ảnh47px,giữyêucầuphầnxungquanh.
+- [x] BuildTS/Vite vàEdgekiểmlayout/mobilePASS;khôngđổilogic,nênkhôngretrain/Pythontest.
+- [x] Sổ30/NV24,UIguide,AIstate/tasks/changelog/architecture đồngbộ;khôngcommit/push.
+
+## UI compact / lane review — 2026-11-24
+
+- [x] Setupđầu/trái-gợiý-phải-manual/inspector dưới,rolepreviewauto+commit,nativedrag/swap cùngđội,keyboardfallback.
+- [x] Tái hiệnGalio0n/Ambessa4địch,reviewngaylanerevealed;Wilsonlowerboundcho cùngrole,Renekton2/2khôngnhậnvượttrội.
+- [x] CLIseriesbắtbuộcfirst-picks,bỏautoluânphiên,allBlue/allRedhợplệ;UIselecttừngván.
+- [x]178tests,5Edge,build,BO5allBlue/50unique,hash/privacy/docs/sổ30/ADR043PASS.
+- [ ] Chấtlượngchiếnthuậtđộclập và việc đưaGD/XP/CSvàoscorechưađượcchứngminh;khôngđánhgiáregressionnhưwinuplift.
+
+## Giữ cặp bot và chọn trước từngván — 2026-11-24
+
+- [x] Tái hiện10lượtcaseNautilus/Jayce→2ADbans→Yunara,côngkhain5/6/1.
+- [x] Guardtheolịch/fulllegalpartner/n5/association,giữscoregốc,rolefilter/manual,review/testoverride;API/CLI/JSON/why/UIđồngbộ.
+- [x] FirstSelectionuserchọnBlue/Redmỗiván,khôngUIautoluânphiên;CLI--first-picks/repeat/validation/reportnguồnruleđúngphạmvi.
+- [x]170tests,build,3Edge,mirrorcase,continuedprefixvàBO5red-red-blue-blue-red100actions/50uniquePASS;hash/privacy/docs/sổ29/ADR042.
+- [ ] Chứngminhcặptốiưu/tăngthắng/đánhgiáchiếnthuậtđộclậpvẫnchưađạt;khôngnằmtrongkếtluậnregressionnày.
+
+## Hai panel/contextual v2 — 2026-11-24
+
+- [x] Gợi ý và chọn tay đồnghiện, xácnhậnriêng; browser kiểm manualkhôngẩngợiý.
+- [x] Fixedcapacityutility sửa pooln<3, tínhđơnđiệu và baselinecùngpool80states.
+- [x] Pinngày/mãsnapshot, configvisible/export, mismatch409 và guardcache; conflictvẫnexport/newsession.
+- [x]159tests,build,2Edgeworkflow/mobile, Prohash/outputs/privacy/documentationPASS; khôngtrain/commit/push.
+- [ ] Chứng minh tăngchấtlượngchiếnthuậtđộclập vẫnchưađạt; phépsohiệntạikhôngtăngRecall5banlịchsử.
+
+## UI local TS/API — 2026-11-24
+
+- [x] React/TypeScript một trang, FastAPI mỏng, reuse engine/default current.
+- [x] Chọn tay/gợi ý, turn numbering, flex/undo/archive, auto có review/test override.
+- [x] Chuỗi5ván Fearless/localStorage/export; Rank chỉ là evidence của Pro UI.
+- [x] Build,154unit tests, browserEdge workflow một ván→ván2 và mobile, export/hash/privacy.
+- [x] Hướng dẫn chạy, sổ27/NV-21, AI/ADR040/constitution1.3.0 đồng bộ; không commit/push.
+- [ ] Rank recommender UI riêng và prospective đánh giá chất lượng: còn phụ thuộc dữ liệu, không thuộc nghiệm thu UI Pro đầu tiên.
+
+## Rà điểm / so sánh đơn giản / BO5 — 2026-11-24
+
+- [x] Rà8thànhphần, trọng số/côngthức/chương/MR vàbảnggiữ-bỏ trong TINH_GIAN_DIEM_RECOMMENDER.
+- [x] Một côngthức simple3tínhiệu cófallback/missingrõ; selectorcurrent/simple, defaultcurrentkhôngđổi, khôngthêmframework/model.
+- [x] CùngfrozenProhistory/eligible(role,champion)pool vàrules;200val/320test ×3;hashpool/split/ablation8thànhphần đãxuất.
+- [x] Simple testRecall5=.425 thấp hơncurrent=.49375:giữmặcđịnh, khôngtuneđểépmetric.
+- [x] BO5T1–Gen.G5draft/100actions/50pickunique,bancontextual/picksimple,mỗiBan/Picksốvàlýdo/missingđãghi;44fallback/5sparsecónhãn,khôngwinnerfake.
+- [x] 146unit tests+integrationpairedpool/split/freeze/điểmtừJSON/legality/DBhashPASS; sổ26MR-23/NV-20,docs/AIđồngbộ.
+
+Khôngđánhdấuđãnângchấtlượngchiếnthuật/đãtinhgiảnmặcđịnh; so sánh dùngProauditcũ vàpickretrieval, khôngfinaltestđộclậpmới.
+
+## Rà soát phạm vi vừa sức và rút quota — 2026-11-24
+
+- [x] Đối chiếu nhóm chức năng/Chương0–6, chỉ rõ core/phụ/nghiên cứu và phần runtime vẫn còn MR trong docs/PHAM_VI_DO_AN_VUA_SUC.
+- [x] Thêm giới hạn phát triển vào AI_RULES/KNOWLEDGE_RULES vàconstitution1.2.0; khôngbắtbuộcWeb/APIđầyđủ hoặc theođuổiquymôU.GG.
+- [x] Bỏdefault2.000, metadata None/summaryv3/referencechưanạp, khônggiảmtiêuchuẩncohort hoặc đổiđiểmPro.
+- [x] 139fulltests/70ranksubset/integration418gamesPASS, Proexportchỉđổiquota metadata; noDB/modelchange.
+- [x] NạplạiwatchkhôngquotaPID29828/worker7992,cùngkho/checkpoint,manifest/logđãlưu; sổ25/NV-19 vàdocsđồngbộ.
+- [ ] Chưa cóU.GGreference matchedfilter đểxácnhậnngangsốmẫu/độphủ; khôngphảiđiềukiệnnghiệmthuđồán.
+- [ ] Nếu thực sự rút công thức xếp hạng hiện tại cần một thay đổi riêng có baseline; chưaclaimđãđơngiảnhóathuậttoán. Prototype/evaluator cũ giữtruyvết, khôngxóafile.
+
+## Pro matchup + source explanations + contextual experiment — 2026-11-24
+
+- [x] Thống kê3.000trận Pro từ luồng sạch, đủrole/signed/missing/identity/độ dài trận; exportall/pooled/WRcao-thấp/GD15, khôngghiDB.
+- [x] Giải thích từng gợi ý vàwhy: Pro/Rank riêng, n, metric10/15,CI, thiếu mẫu/trái chiều, flexroleprobability và provenance.
+- [x] Score/thứ tự bản chính không đổi; test bật/tắt giải thích đạt.
+- [x] FreezeRank riêng và contextual matchup source experiment, cùngpool/history/control; hybrid cố định, không bật main.
+- [x] Diagnostic30val/30test từ261Rankfrozen: chưa cải thiệnRecall5/MRR5; công khaifutureRank/reusedPro, khôngdùng đểpromote.
+- [x] 138unit tests + integration6stored-diff/mirror/roles/privacy/console/hashPASS; sổMR-22/NV-18 vàdocs/AI cậpnhật.
+- [ ] Chưa có5validation+5testProseries độc lập saufreeze24/11:readyFalse/metricsNull, chờ dữliệu mới để kiểm chứng; prospective_queries.json chưa tồn tại.
+- [ ] Chưa có bằng chứng nâng chất lượng để thay điểmPro chính; không gán counter/tăngthắng/BO5optimality từ retrieval.
+
+## Bảng gộp và thu theo hướng U.GG — 2026-11-24
+
+- [x] Integration cuốiPASS:150trận/725người/1.170pooledpairs/389rawbulkmemberships;69tests, nguồn/duplicate/CIprogress/DBProhash đạt. ĐãkhởiwatchPID23100 lúc14:17VN24/11, PID/log/cáchdừngtrongcollector_process.json; khôngnghĩađạt2.000/kèo.
+
+- [x] Gộp patch/server thực có, giữ scope queue/tier/role và bảng riêng để kiểmtra; khônggán counter bấtbiến.
+- [x] Bảng pooled wholegameWR/GD15 riêng, nguồn/dấuGD15; tiến độ mục tiêu2.000 mỗi kèo quan sát, không chặn thu/khôngbịamẫu.
+- [x] Luân phiên server/cursor, live đủobservations KR/EUW/NA.
+- [x] Bulkcurrentrank từ từngmembership League-v4lists archive, batchtransaction/refresh15min; individualfallback vàall10guard giữnguyên.
+- [x] 69unit testsPASS, thêm6testtổngquát; xem checks.json cho integration mốc cuối và sessions/*.json cho thu thật.
+- [x] Truyvết sổMR-21/NV-17/docs/AI; policyMaster+ khôngnới, khôngtrain/commit/push/đổiProscore.
+- [ ] Chưa đạt mục tiêu2.000/kèo; tiếp tục qua --watch. Không phải thu xong khi code chạy được.
+- [ ] Chưa chứngminh transferRank→Pro hoặc counterbềnqua patch; đánhgiá riêng sau.
+
+## Kho tăngdần/thốngkê ngay, không trần1.000 — 2026-11-24
+
+- [x] SQLiteevidence mới/persistentqueue/seedC-GM-M/paginationrecent100IDs/BFSparticipants, checkpoint/importraw10/idempotence, lock/rate/budget/watch.
+- [x] Snapshotcache15mingiữtimegốc/afterend, qualificationresumequangày/atomic10roles/rawcheckpoint, khôngnớifloor24h/15minđểépdata.
+- [x] Bảngrawsparse + winratecao/thấp vàGD15riêng, n/người/Wilson/mean-median-SD-tCI, cậpnhậtngaykhôngchờ1.000.
+- [x] Live600+2HTTPrequest,88completegames/880rows/382người;714pairs,8n5.63tests+integrationPASS, canonicalDB/modelkhôngđổi.
+- [x] Sổmục22/MR-20/NV-16, docsCONTINUOUS_RANK_EVIDENCE vàAI/indexđồngbộ; hai phiênđãdừng, watchlàlệnhtựchạytiếpcócheckpointkhôngtrầntổng.
+- [ ] Recommender/UI/benchmarkindependent/Prosignal vẫnchưa triểnkhai; datasetstatskhôngxácnhậncounternhânquảhoặctốiưuBO5.
+
+## Thu theođợt/coverage và điều kiện Rank — 2026-11-24
+
+- [x]3batch/15seed/15candidate mới,179/200HTTPattempt gồmretry; giữngưỡng, tránhIDlặp, không thu vôhạn/nềntựđộng.
+- [x] Gộp10accepted/100dòng/72người, CSVcoverage patch/role/championrole/lanepair kèm n/người/deficit/0evidenceuniverse.
+- [x] Readiness/timeplan6/2/2,0historyavailabletrướcvalidation và0championrole n5; chặn việc nhận là đủ mẫu, metricsNull.
+- [x]49tests + integrationPASS, docs/AI/sổ mục21/MR-19/NV-15 cậpnhật, DBrawkhôngđổi.
+- [ ] Điều kiện chưađạt: recommenderRank/inputngữcảnh/pool, evaluation/baseline/CI vàUI cònchờdữliệuđủvàđợtởthờigiansau; khônghạthresholdhoặcdùngfuturetierđểépbenchmark. Prosignal/Rankruntime chưa bật.
+
+## Collector snapshots đủ10người — 2026-11-24
+
+- [x] Collector mới kiểm từng participant qua League-v4, lưu snapshot/tier/queue/server/time/raw riêngrun, báo nhận/loại/thiếu, typedHTTPstatus/terminal stop vàcache trongrun.
+- [x] Live5trận KR/49người: cả5all10Master+ atobservation,2accepted/3quá24h/0missing,20observations.40tests + offline evidence/replay/privacy/DB checksPASS.
+- [x] Snapshot-proxy tách historical gate, config recency/spread, docs/sổ mục20/MR-18/NV-14 và AI đồng bộ.
+- [ ] RuntimeRank/benchmarkcohortmới/tíchhợpRankvàoGiải/finaltest vẫn chưa triển khai; không nâng currenttier thành historicalrank.
+
+## Hai chế độ và tiêu chuẩn Rank cao — 2026-11-24
+
+- [x] Thiết kế Rank/Giải riêng, config có ngưỡng làm việc Master+ chỉnh được, phân biệt legacy/contextual là chiến lược hiện có.
+- [x] Admission audit: all10historical/unknown/snapshot/seed/below/conflict; private evidence và cutoff, không hồi tố current rank.
+- [x] Audit92trận ->92seed-only,0đủ chứng cứ lịch sử;29tests + default evaluator exit2 và metric cũ giữ nguyên.
+- [x] Output reports/rank_cohort_audit, sổ mục19/MR-17/NV-13, docs/HAI_CHE_DO_VA_TIEU_CHUAN_RANK_CAO và AI docs đồng bộ.
+- [ ] Runtime/giao diện Rank, collector snapshot từng participant, cohort đạt chuẩn và final test mới vẫn chưa triển khai. Không bật Rank signal cho Giải.
+
+## Kiểm chứng nguồn Rank/Pro — 2026-11-24
+
+- [x] Chuẩn hóa theo catalog chính thức, audit CS/role/time; không fuzzy alias hoặc suy role.
+- [x] Thu92trận lịch sử từ20seed,83trận16.20 trước freeze; raw/output riêng.
+- [x] So Pro-only/Rank-only/hybrid offline, tách27/9/10series và giữ cùng pool/điểm khác;19unit tests + integration PASS.
+- [x] Ghi kết quả không cải thiện: test Recall5=.49375 cả3, chỉ13/320query có bằng chứng Rank đủ mẫu. Giữ runtime contextual hiện tại.
+- [x] Sổ mục18/MR-16/NV-12, protocol, AI docs và outputs reports/rank_transfer_evaluation đồng bộ.
+- [ ] Chưa có final test bằng dữ liệu giải mới độc lập; còn thiếu độ phủ/kiểm soát selection-skill bias. Chưa tích hợp hybrid, chưa chứng minh counter/ban tốt/tăng thắng.
+
+## Đối đầu Rank riêng với Pro — 2026-11-24
+
+- [x] Thêm pipeline Riot sidecar, role/timestamp nghiêm ngặt và bảng thống kê Rank/Pro riêng; không cộng vào contextual.
+- [x] Tải thật5trận KR16.23,50dòng; so phạm vi Worlds206trận/2060dòng, không có patch chung.
+- [x]10unit tests và integration signed mirror/offset/missing/cutoff/DB hash PASS;110link sổ PASS. Minh chứng `reports/rank_pro_matchups/checks.json`.
+- [x] Cập nhật sổ mục17/MR-15/NV-11 và hướng dẫn `docs/RIOT_RANK_MATCHUPS.md`. nearest±1000ms chỉ mô tả; before mặc định không sau mốc.
+- [ ] Dự kiến sau: dữ liệu đủ/scope phù hợp và benchmark Pro-only/Rank-only/hybrid độc lập trước khi cân nhắc trọng số; chưa triển khai, chưa có output benchmark. Chưa chuẩn hóa hết alias/phân tầng rank.
+
+## Rà soát50pick contextual, chưa sửa điểm chọn — 2026-11-24
+
+VERIFIED AUDIT: user đã đồng ý bước1 trước, nên chỉ tái dựng50state của5draftcontextual và so248alternativecùngrole hợp lệ; khôngthêmsearch/flexhoặcsửapolicy. audit_draft_choices.py bổsungcompositionevidence/playerhistory/slot/sourcehash/scoregap vàdiagnosticablation; review_contextual_picks.py kiểmtra state/pool/score vàxuấtREVIEW/summary. 50score/top1táilậpkhớpphiênđãlưu, đây khônglàqualitylabel. 38/50pickcóđịchlộnhưngthiếumẫuđốidầu;5blind;7cóítmẫuđủngưỡng.3candidateítmẫuván5:Poppy2,Aurora2,Nasus1.100cặpphốihợp:8đủmẫu,59ítmẫu,32chưathấy,1thiếuanchor. Ablationbỏmetađổitop1ở13lượt,composition14,content1,mastery3,matchup3; khôngsuytướngthaythếtốthơnhoặcđếmsốpicksaibằngtổngnày.
+
+Artifacts reports/contextual_pick_audit.json/md, reports/contextual_pick_review/REVIEW.md vàsummary.json. Sourcehash/state/248legalalternatives/savedscorechecksPASS, khôngthayđổiquyếtđịnhđãlưu/model/DB/train. PhươngphápkiểmđộnhạyMRmớighiởsổmục16; nềnChương1/5x, phầnablationngoàimônvớipolicychẩnđoántựthiếtkế. Phạmvihiệnhànhvẫnlegacy/contextual; bướcflex/đa-serieschưalàmtronglượtnày.
+
+- [x] Bước1: audit50pickcontextual,248alternativevàđộnhạythànhphần, giữ nguyênpolicy.
+- [ ] Chưa triểnkhai: xửlýflexownvàđánhgiánhiềuseries; cần dựa audit trước khi sửa điểm/dữ liệu.
+
 ## Hiện hành: chỉ legacy và contextual — 2026-11-24
 
 Theo yêu cầu người dùng, đã BỎ lookahead khỏi mã ban và CLI; không chỉ ẩn menu. BanPlanner chỉ còn one-stepcontextual, ContextualBanPolicy(top3pool/owncost). Gỡ response_distribution/evaluate_root/rollout/leaf/predictor dependency và --ban-response-model; --ban-strategy chỉ legacy|contextual, legacygiữmặcđịnh. Contextual dùng pool_impact/contextual_trace, không xuất search_trace/branches/sensitivity. OpponentModelcũ giữ độc lập, không được contextual dùng đểban; không mởrộngchứcnăngkhác.

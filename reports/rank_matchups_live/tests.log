@@ -1,0 +1,96 @@
+Checked candidate 1/1; unique participant snapshots 10
+{"run_id": "20260528T212640000000Z", "collection_status": "complete", "candidate_games": 1, "accepted_games": 1, "rejected_games": 0, "missing_games": 0, "unique_participants_checked": 10}
+{"schema": "rank-snapshot-coverage-v1", "accepted_unique_games": 1, "participant_observations": 10, "unique_players": 10, "duplicate_accepted_games_removed": 0, "observed_target_champion_roles": 10, "supported_champion_roles": 0, "observed_universe_directed_lane_pairs": 10, "supported_lane_pairs": 0, "zero_evidence_champion_roles": 0, "zero_evidence_lane_pairs": 0, "readiness": false, "historical_rank_verified": false, "pro_rank_signal_enabled": false, "universe_semantics": "Champions observed at that role in fetched candidate matches; rejected candidates add names only, no sample counts. Not all valid game champions."}
+Batch 1/3; HTTP attempts used 3/200
+Batch 2/3; HTTP attempts used 3/200
+{"campaign_id": "20261124T080252367940Z", "batches_completed": 2, "http_attempts": 3, "accepted_games": 1}
+Checked candidate 1/1; unique participant snapshots 10
+{"run_id": "20260528T212640000000Z", "collection_status": "complete", "candidate_games": 1, "accepted_games": 1, "rejected_games": 0, "missing_games": 0, "unique_participants_checked": 10}
+Checked candidate 1/1; unique participant snapshots 10
+{"run_id": "20260528T212740000000Z", "collection_status": "complete", "candidate_games": 1, "accepted_games": 1, "rejected_games": 0, "missing_games": 0, "unique_participants_checked": 10}
+{"schema": "rank-snapshot-coverage-v1", "accepted_unique_games": 0, "participant_observations": 0, "unique_players": 0, "duplicate_accepted_games_removed": 0, "observed_target_champion_roles": 0, "supported_champion_roles": 0, "observed_universe_directed_lane_pairs": 0, "supported_lane_pairs": 0, "zero_evidence_champion_roles": 0, "zero_evidence_lane_pairs": 0, "readiness": false, "historical_rank_verified": false, "pro_rank_signal_enabled": false, "universe_semantics": "Champions observed at that role in fetched candidate matches; rejected candidates add names only, no sample counts. Not all valid game champions."}
+{"run_id": "20260528T212640000000Z", "collection_status": "complete", "candidate_games": 0, "accepted_games": 0, "rejected_games": 0, "missing_games": 0, "unique_participants_checked": 0}
+Checked candidate 1/1; unique participant snapshots 10
+{"run_id": "20260528T212640000000Z", "collection_status": "complete", "candidate_games": 1, "accepted_games": 1, "rejected_games": 0, "missing_games": 0, "unique_participants_checked": 10}
+{"policy_version": "draft-modes-v2-snapshot-cohort", "tier_floor": "MASTER", "tier_floor_status": "configurable_working_default_not_empirically_optimized", "knowledge_cutoff": "2026-05-29T20:26:40+00:00", "games": 1, "cohort_status_counts": {"historical_rank_unknown": 1}, "rank_mode_data_admissible_games": 1, "pro_high_rank_data_admissible_games": 0, "rank_mode_runtime": "planned", "pro_rank_signal_enabled": false, "note": "Unknown historical tier is not low rank. Supplied historical intervals are not independently authenticated.", "policy_sha256": "f335c9df506b83cf7b1bf988858bf3e590866c70196bce4d4bec09157c209cdf"}
+Checked candidate 1/1; unique participant snapshots 10
+{"run_id": "20260528T212640000000Z", "collection_status": "complete", "candidate_games": 1, "accepted_games": 0, "rejected_games": 0, "missing_games": 1, "unique_participants_checked": 10}
+Checked candidate 1/1; unique participant snapshots 1
+{"run_id": "20260528T212640000000Z", "collection_status": "api_stopped", "candidate_games": 1, "accepted_games": 0, "rejected_games": 0, "missing_games": 1, "unique_participants_checked": 1}
+Checked candidate 1/1; unique participant snapshots 10
+{"run_id": "20260528T212640000000Z", "collection_status": "complete", "candidate_games": 1, "accepted_games": 1, "rejected_games": 0, "missing_games": 0, "unique_participants_checked": 10}
+test_build_exports_counts_without_private_ids_and_json_scalar_types (test_rank_coverage.RankCoverageTests.test_build_exports_counts_without_private_ids_and_json_scalar_types) ... ok
+test_campaign_stops_on_partial_batch_and_advances_seed_slice (test_rank_coverage.RankCoverageTests.test_campaign_stops_on_partial_batch_and_advances_seed_slice) ... ok
+test_chronological_split_preserves_games_and_requires_available_evidence (test_rank_coverage.RankCoverageTests.test_chronological_split_preserves_games_and_requires_available_evidence) ... ok
+test_duplicate_runs_count_same_game_and_players_once (test_rank_coverage.RankCoverageTests.test_duplicate_runs_count_same_game_and_players_once) ... ok
+test_empty_collection_exports_headers_and_blocks_readiness (test_rank_coverage.RankCoverageTests.test_empty_collection_exports_headers_and_blocks_readiness) ... ok
+test_http_budget_counts_retry_and_stops_before_next_request (test_rank_coverage.RankCoverageTests.test_http_budget_counts_retry_and_stops_before_next_request) ... ok
+test_seen_explicit_id_is_not_refetched_or_replaced_by_discovery (test_rank_coverage.RankCoverageTests.test_seen_explicit_id_is_not_refetched_or_replaced_by_discovery) ... ok
+test_tied_start_times_stay_in_one_partition (test_rank_coverage.RankCoverageTests.test_tied_start_times_stay_in_one_partition) ... ok
+test_unobserved_candidate_names_have_zero_evidence (test_rank_coverage.RankCoverageTests.test_unobserved_candidate_names_have_zero_evidence) ... ok
+test_all_ten_documented_high_required (test_rank_eligibility.RankEligibilityTests.test_all_ten_documented_high_required) ... ok
+test_audit_dedup_private_export_and_read_only (test_rank_eligibility.RankEligibilityTests.test_audit_dedup_private_export_and_read_only) ... ok
+test_conflicting_historical_intervals_rejected (test_rank_eligibility.RankEligibilityTests.test_conflicting_historical_intervals_rejected) ... ok
+test_lower_tier_is_distinct_from_unknown (test_rank_eligibility.RankEligibilityTests.test_lower_tier_is_distinct_from_unknown) ... ok
+test_malformed_match_not_admitted_in_either_mode (test_rank_eligibility.RankEligibilityTests.test_malformed_match_not_admitted_in_either_mode) ... ok
+test_missing_source_invalid_interval_or_naive_time_rejected (test_rank_eligibility.RankEligibilityTests.test_missing_source_invalid_interval_or_naive_time_rejected) ... ok
+test_policy_refuses_unsafe_assumptions (test_rank_eligibility.RankEligibilityTests.test_policy_refuses_unsafe_assumptions) ... ok
+test_seed_only_is_unknown_not_low (test_rank_eligibility.RankEligibilityTests.test_seed_only_is_unknown_not_low) ... ok
+test_snapshots_never_become_historical_rank (test_rank_eligibility.RankEligibilityTests.test_snapshots_never_become_historical_rank) ... ok
+test_wrong_queue_server_future_observation_rejected (test_rank_eligibility.RankEligibilityTests.test_wrong_queue_server_future_observation_rejected) ... ok
+test_cache_refetches_for_newer_match_end (test_rank_lake.RankLakeTests.test_cache_refetches_for_newer_match_end) ... ok
+test_canonical_database_destination_refused (test_rank_lake.RankLakeTests.test_canonical_database_destination_refused) ... ok
+test_default_export_has_no_fixed_quota_or_invented_ugg_parity (test_rank_lake.RankLakeTests.test_default_export_has_no_fixed_quota_or_invented_ugg_parity) ... ok
+test_empty_export_has_readable_headers (test_rank_lake.RankLakeTests.test_empty_export_has_readable_headers) ... ok
+test_exclusive_writer_lock_and_release (test_rank_lake.RankLakeTests.test_exclusive_writer_lock_and_release) ... ok
+test_export_keeps_sparse_rows_without_private_ids (test_rank_lake.RankLakeTests.test_export_keeps_sparse_rows_without_private_ids) ... ok
+test_league_cache_before_new_match_end_still_fetches_individual_rank (test_rank_lake.RankLakeTests.test_league_cache_before_new_match_end_still_fetches_individual_rank) ... ok
+test_league_list_membership_is_archived_and_reused_with_original_time (test_rank_lake.RankLakeTests.test_league_list_membership_is_archived_and_reused_with_original_time) ... ok
+test_platform_rotation_discovers_other_region_before_draining_backlog (test_rank_lake.RankLakeTests.test_platform_rotation_discovers_other_region_before_draining_backlog) ... ok
+test_policy_mixing_refused (test_rank_lake.RankLakeTests.test_policy_mixing_refused) ... ok
+test_pooled_reversal_and_duplicate_counts (test_rank_lake.RankLakeTests.test_pooled_reversal_and_duplicate_counts) ... ok
+test_pooled_single_patch_does_not_claim_stability (test_rank_lake.RankLakeTests.test_pooled_single_patch_does_not_claim_stability) ... ok
+test_queue_identity_and_atomic_ingestion (test_rank_lake.RankLakeTests.test_queue_identity_and_atomic_ingestion) ... ok
+test_raw_detail_survives_crash_before_sql_checkpoint (test_rank_lake.RankLakeTests.test_raw_detail_survives_crash_before_sql_checkpoint) ... ok
+test_repeated_processing_cannot_duplicate_observations (test_rank_lake.RankLakeTests.test_repeated_processing_cannot_duplicate_observations) ... ok
+test_seed_pagination_and_duplicate_ids (test_rank_lake.RankLakeTests.test_seed_pagination_and_duplicate_ids) ... ok
+test_session_deadline_checked_before_http (test_rank_lake.RankLakeTests.test_session_deadline_checked_before_http) ... ok
+test_tier_cache_preserves_actual_observation_timestamp (test_rank_lake.RankLakeTests.test_tier_cache_preserves_actual_observation_timestamp) ... ok
+test_timeline_interruption_resumes_even_after_recency_window (test_rank_lake.RankLakeTests.test_timeline_interruption_resumes_even_after_recency_window) ... ok
+test_winrate_and_gold_rankings_are_separate (test_rank_lake.RankLakeTests.test_winrate_and_gold_rankings_are_separate) ... ok
+test_wrong_league_queue_is_not_rank_evidence (test_rank_lake.RankLakeTests.test_wrong_league_queue_is_not_rank_evidence) ... ok
+test_404_is_missing_and_checks_remaining_participants (test_rank_snapshots.RankSnapshotTests.test_404_is_missing_and_checks_remaining_participants) ... ok
+test_absent_rank_is_missing_not_low (test_rank_snapshots.RankSnapshotTests.test_absent_rank_is_missing_not_low) ... ok
+test_accepts_ten_current_master_but_never_historical (test_rank_snapshots.RankSnapshotTests.test_accepts_ten_current_master_but_never_historical) ... ok
+test_auth_failure_stops_after_first_rank_request_and_reports_missing (test_rank_snapshots.RankSnapshotTests.test_auth_failure_stops_after_first_rank_request_and_reports_missing) ... ok
+test_flex_unranked_duplicate_and_bad_payload_not_valid_solo (test_rank_snapshots.RankSnapshotTests.test_flex_unranked_duplicate_and_bad_payload_not_valid_solo) ... ok
+test_old_match_rejected_even_with_ten_high_snapshots (test_rank_snapshots.RankSnapshotTests.test_old_match_rejected_even_with_ten_high_snapshots) ... ok
+test_one_below_floor_rejected (test_rank_snapshots.RankSnapshotTests.test_one_below_floor_rejected) ... ok
+test_run_persists_all_ten_and_exports_no_identity (test_rank_snapshots.RankSnapshotTests.test_run_persists_all_ten_and_exports_no_identity) ... ok
+test_snapshot_before_match_end_rejected (test_rank_snapshots.RankSnapshotTests.test_snapshot_before_match_end_rejected) ... ok
+test_spread_future_and_wrong_scope_rejected (test_rank_snapshots.RankSnapshotTests.test_spread_future_and_wrong_scope_rejected) ... ok
+test_zero_lp_is_preserved (test_rank_snapshots.RankSnapshotTests.test_zero_lp_is_preserved) ... ok
+test_collection_limits_each_seed_and_passes_historical_range (test_rank_transfer.RankTransferTests.test_collection_limits_each_seed_and_passes_historical_range) ... ok
+test_hybrid_averages_supported_pair_residuals (test_rank_transfer.RankTransferTests.test_hybrid_averages_supported_pair_residuals) ... ok
+test_hybrid_missing_rank_preserves_control_exactly (test_rank_transfer.RankTransferTests.test_hybrid_missing_rank_preserves_control_exactly) ... ok
+test_metrics_and_bootstrap_pair_identity (test_rank_transfer.RankTransferTests.test_metrics_and_bootstrap_pair_identity) ... ok
+test_official_alias_collision_rejected (test_rank_transfer.RankTransferTests.test_official_alias_collision_rejected) ... ok
+test_official_aliases_ids_and_unknown_rejection (test_rank_transfer.RankTransferTests.test_official_aliases_ids_and_unknown_rejection) ... ok
+test_rank_residual_requires_samples_and_has_correct_sign (test_rank_transfer.RankTransferTests.test_rank_residual_requires_samples_and_has_correct_sign) ... ok
+test_series_disjoint_chronology_and_overlap_rejection (test_rank_transfer.RankTransferTests.test_series_disjoint_chronology_and_overlap_rejection) ... ok
+test_temporal_scope_uses_end_time_patch_platform (test_rank_transfer.RankTransferTests.test_temporal_scope_uses_end_time_patch_platform) ... ok
+test_ambiguous_roles_rejected (test_ranked_matchups.RankedMatchupsTests.test_ambiguous_roles_rejected) ... ok
+test_cache_dedup_rejection_and_summary (test_ranked_matchups.RankedMatchupsTests.test_cache_dedup_rejection_and_summary) ... ok
+test_client_auth_no_retry_and_no_leak (test_ranked_matchups.RankedMatchupsTests.test_client_auth_no_retry_and_no_leak) ... ok
+test_client_rate_limit_and_bounded_retry (test_ranked_matchups.RankedMatchupsTests.test_client_rate_limit_and_bounded_retry) ... ok
+test_frame_tolerance_and_descriptive_only_nearest (test_ranked_matchups.RankedMatchupsTests.test_frame_tolerance_and_descriptive_only_nearest) ... ok
+test_identity_queue_result_guards (test_ranked_matchups.RankedMatchupsTests.test_identity_queue_result_guards) ... ok
+test_missing_measurements_never_zero_or_future (test_ranked_matchups.RankedMatchupsTests.test_missing_measurements_never_zero_or_future) ... ok
+test_pro_strict_roles_and_actual_measurements (test_ranked_matchups.RankedMatchupsTests.test_pro_strict_roles_and_actual_measurements) ... ok
+test_short_game_no_15_backfill (test_ranked_matchups.RankedMatchupsTests.test_short_game_no_15_backfill) ... ok
+test_signed_mirrors_ids_and_no_future_frame (test_ranked_matchups.RankedMatchupsTests.test_signed_mirrors_ids_and_no_future_frame) ... ok
+
+----------------------------------------------------------------------
+Ran 70 tests in 2.373s
+
+OK

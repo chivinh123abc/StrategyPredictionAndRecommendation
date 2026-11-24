@@ -1,3 +1,71 @@
+## ADR-043 — Compact UI, observed free-role placement and exposed-lane review (2026-11-24)
+
+Acceptedtheouser3yêucầuvàRenektonfollowup. UIsetupabove/choicesparallel/inspectorbelow,nativeDragDropcùngđội/menuaccessible,noframeworknew. Manualfree_role=countsinProscope/descending/skipoccupied/knownobservedonly,serverrecomputes. ContextualguardMR12reviewdirectassignedopponentalreadyrevealedn<5withoutwaiting5enemies. Same-role/allopenexposedrankbyexistingWilsonlowerboundbeforeunchangedscore,pairguard/wishlist/supportedtierprecedencepreserved;GDnotadded. Đây làpolicytựthiếtkếkhôngclaimcoursealgorithm/optimalcounter. Renekton2/2nlow,CIoverlap;Gnar6nfirst/Renektonsecond/Galio0lastsameprefix. CLIfirstselectionexplicitmulti-games,nolegacyalternatingfallback.178tests/5Edge/build/allBlueBO5PASS,sourceunchanged,knowledge30/NV24,outputsreports/ui_lane_revision;independentqualitynotproven.
+
+## ADR-042 — Bot partner preservation and per-game First Selection (2026-11-24)
+
+AcceptedtheouserbáoweaklinkBluepick vàluậtphiênRed/Bluefirstindependent. Reusecounts/lift/threshold/schedule,addpair_reservationconstraintMR24khôngcâysearch/newmodel. Fulllegalbot/supscan,n>=5/lift>=1,positivepartnercount<=enemybanbudgetbeforeownnextpick→securecompletiontier;scorecurrentunchanged,wishlist/adequateevidence/rolefilter/manualpreserved. Sparsepairsreview,testoverrideexplicit. Guardchỉkhiđịchđãlộbot/sup;khôngkhẳngđịnhmechanicalsynergy/optimalpair/winuplift. Banv2khôngđổi.
+
+UIchọnfirstSideeachgame,noforcedalternation;CLIexplicitlistnphầntử,omitgiữlegacydemorepro.Labelnguồnrulengườidùngđộc lậplinkFearless,khôngclaimofficialleagueadoption. APIconfiguration/fingerprintthêmpair_safety;report/explainkhônggiấupolicytier.170tests/3Edge/build/mirrorcase/5draftlegalityPASS;sổ29 vàdocsGIU_CAP_BOT_VA_FIRST_SELECTION,outputsreports/pair_reservation_revision;khôngtrain/DBchange/commit/push.
+
+## ADR-041 — Two simultaneous choice panels; fixed-capacity contextual utility (2026-11-24)
+
+Accepted theo user. ChỉsửaMR-13poolutility v2 cốđịnhmẫu3 đểmấtbackupkhônglàmtăngpool, giữnguyênowncost/accessweights/currentpick. Khôngthêmchiếnlượcthứba/họcmodel/épbanđadạng. Baseline80statescùngpoolcho31monotonicityprobes→0,Recall5khôngtăng; promote làsửaquyướcutilitybất nhất, khôngclaimstrategyaccuracy. HaiUIpanel/nútriêng vàpindate/fingerprint làNV-22, hỗtrợsochínhxác snapshot/config. CacheDBchanged409đòirestart; snapshotconflict vẫnexport/newsession. KhôngsnapshotDBhistorical/codearchive.159tests/build/2EdgePASS; sổ28 vàreports/contextual_ui_revision. KhôngđổiProML/Rankcollector.
+
+## ADR-040 — Small local React/TypeScript UI over existing Python engine (2026-11-24)
+
+**Accepted theo user** hỏi TS và chốt triển khai. Chọn React+TypeScript/Vite và FastAPI adapter, CSS thuần; reuse engine thay vì port công thức sang JS. Một server local phục vụ API+bundle; browser giữ inputs, API validate/replay và derive Fearless. Không thêm models, new scoring, lookahead, cloud hoặc full production platform. UI đầu là Pro; Rank bảng evidence riêng, không giả recommender Rank đã xong. Giữ current vì simple giảm retrieval. NV-21 kỹ thuật ngoài môn được ghi ở sổ27 và hướng dẫn; constitution1.3.0 chuyển trạng thái API/Web planned→implemented local demo.154unit tests và Edge workflowPASS, không phải chứng minh chiến thuật tốt hơn. Cache snapshot cần restart khi nguồn đổi; không globalBO5 optimization.
+
+## ADR-039 — Simple pick as a measured option, preserve default (2026-11-24)
+
+Useryêucầutrial3tínhiệudễgiảithích thay8thànhphần, chỉthaybảnchínhsaukhiđánhgiá. Simplecốđịnhfrequency/cosine/same-roleWR/explicitfallback,meanavailable,equalweights; khôngtunedgridtừtest. Giữpool/cutoff/rules/flexđểfaircompare, khôngthêmbanstrategy hoặcglobalBO5planner.
+
+520querysamepool choSimpleR5test.425vsCurrent.49375,CIΔ[-.11034,-.03235],nêngiữcurrentdefault. Datareusedaudits khôngfreshfinaltest vàpickretrievalkhôngtacticaloptimality. KhôngđượctuyênbốmọiMRđềucầnhoặclựachọnSimpletốtngangbaseline. Ablationlàdiagnostic, khôngdùngđểra8varianttìmthắngtest. BO5minhhoạsimplevẫnđủ5draftvớitesttop1overridecónhãnmissing,khônggiảwinners. ReproCLI/docs/outputsởMR-23/NV-20.
+
+## ADR-038 — Phạm vi vừa sức, không chạy theo quota U.GG (2026-11-24)
+
+User rút mốc2.000 và muốn Chương1–6 với một số mở rộng vừa sức. Mặc định khôngquota, báo n/nguồn/CI thực vàU.GGreferencechưa có; khôngđánhdấuparityhoặctựhạcohortMaster+. Chỉhọc cáchhiểnthịkhôngđồngnghĩalấyđượcdataset/thuậttoánU.GG. GiữCLIlegacyoptionđểrepro, khôngthêmadapterkhinguồnchưađọcđược.
+
+Giữ corevàdemo hiệncó, prototype/transfer/search/globaloptimizer làphụ; khôngmọiranhgiớiđềxuấtđềuphảitrởthànhsảnphẩm. KhôngbắtbuộcFastAPI/Reactfullstack. Ràsoát vàrulesđãghi docs/PHAM_VI_DO_AN_VUA_SUC,AIrules,constitution1.2.0,sổ25/NV-19. Việcđơngiảnhóacôngthứcruntimechưalàm, cầnbaseline, khôngđổitronglúcsửametadataquota; khôngxoáhistory.
+
+## ADR-037 — Tách bằng chứng khỏi điểm, thử Rank có freeze và cổng thời gian (2026-11-24)
+
+Theo yêu cầu3phần: xuất Pro earlyresources thật và hiển thị hai nguồn riêng ngay, không đợi chứngminhquality mới cho xem thốngkê. Bảng giải thích không đổi mainranking. Rankgộp patch/server theo yêu cầu nhưng availabilityphải trướcas_of, canonicalnames/IDs, đủcohortnguồn và snapshotproxylabel. Prototypechỉđổi matchupsource same-role, fixedhybrid50/50 đểisolatedcomparison, khôngđổi banpolicy hoặc đưa tài nguyênquerytươnglai vào features.
+
+Rank24/11 thu sauPro14/11: benchmarkcũ chỉdiagnostic cófuture/reusedflags, khôngđượcpromote. Freezeđộc lập,5+5seriesmới saufreeze vàkhôngoverlap cho prospective; chưacódata thìnullmetrics/readyFalse, khônggán“independenttest” cho dữliệu đãtừngaudit. Retrievalgatekhôngtựbậtruntime hoặc chứngminhcounter/tăngthắng. Xem docs/PRO_RANK_MATCHUP_EVIDENCE.md và MR-22/NV-18; khôngretrain/schemaDBchange.
+
+## ADR-036 — Gộp patch có truy vết, mục tiêu mỗi kèo (2026-11-24)
+
+Thêm bảng gộp các patch/server đã thu theo yêu cầu. Giữ bảng scope riêng, nguồn và flag meanGD15 trái dấu; không nhận counter bất biến hoặc sao chép thuật toán U.GG. Mục tiêu2.000/kèo là tiến độ, không ngừng thu hoặc chứng nhận chất lượng. Vẫn10Master+ snapshot, không tự hạ xuống Emerald+. Round-robin server có cursor trong metadata để tăng phạm vi; không đổi schemaDB hay Proscore. Xem docs/POOLED_MATCHUPS_UGG_STYLE.md và MR-21/NV-17.
+
+## ADR-035 — Kho tăngdần khôngtrầntổng và descriptive matchup tables (2026-11-24)
+
+User muốn thu nhiều nhất/cậpnhật dữliệu nhưpublicU.GG, khôngmốc1.000rồimớilàm. TạoSQLiteevidence mới, khôngschema-mutatecanonicalPro; seedC/GM/M vàBFS,pagingIDsrecent24h, dedupPK/cursor/TTLgiữtimestamp/qualiresume/filelock. Tăngcorpus qua phiêncóbudget/rate/deadline; --watchchạynhiềuphiênnhưngkhôngnéquota hoặcserviceẩn. Giữ10Master+/24h/15min, khôngnhậnhistoricaltier/mẫutrùng. Thốngkêngaymọin vàgiữsparse, xếpriêngwholegameWRvàGD15n5vớiCIs; khôngcopyU.GGalgorithmhoặcbịa countercausal. NISTtCI làMR vớiindependence/outlier/smalln/multiplecomparisonlimits. 600+2requests88completegames/63testsPASS; khôngRankranker/Prosignal/UI/MLfit. RawDBprivate/reportkhôngPUUID; source/outputs MR-20/NV-16 lưu sổ vàdoc.
+
+## ADR-034 — Thu hữu hạn, báođộphủ và không lách snapshotavailability (2026-11-24)
+
+User giao thuđađợt/coverage, xâyRankkhiđủmẫu vàevaluate trướcUI. Chọn3đợt5seed/200HTTPattemptgồmretry, khôngcron/unboundedcollection, giữMaster+/24h/15min. Đếm lại10accepted/72người sau8mới; khôngđếmtrậtlặp/ngườilặp nhưđộclập, rejectedchỉbổsunguniverse tên đểbáo0. Readiness5games/3players/2championsperrole và5/2/2partition làengineeringpolicy chưa poweranalysis; dữliệuthiếuphảighi thiếu, khônggiảrecommendermetrics. Temporalhistorycầnrankcohort/detailđãbiết trướcvalidationstart, khôngchỉgamestartcũ; hiện0historyqualify. Vìvậy đúngđiềukiệnuser, recommender/eval/UIchưađược triểnkhai, protocol vàbaselines chỉplanned. GiữPro/historicalgate, khôngnớiđểépmetric. XemMR-19/NV-15.
+
+## ADR-033 — Chụp rank đủ10người, công khai snapshot proxy (2026-11-24)
+
+User giao collector cá nhân vàreport nhận/loại/thiếu. Dùng currentSolo/DuotierquacAPI cho10PUUID thật; snapshotnốitiếp cóobserved_at, không inferMMR hoặchistoricaltier. Master+theoconfig, engineeringdefaults24hafterend/15minspread, khôngnớiđểépkếtquả. Cachechỉtrongrun, raw/privateidentitytáchpublicreport; typedAPIerrorđểauth/rate/networkdừng,404thiếu tiếp tục. Snapshotall10highnhưngtrậnquácũ vẫnbáoallhighatobservationnhưngloạikhỏinhómnearproxy; real5trậncó2nhận/3quácũ,0thiếu. Historicalgatevẫnkhôngnhậnsnapshot, khôngtíchhợpProsignal/Rankruntime. Cầnbenchmarkriêng/nguồnđộclậpsau; khôngnhậncollector làrankrecommenderđãxong. MR-18/NV-14 truyvếttrongsổ.
+
+## ADR-032 — Rank/Giải riêng và không gọi seed-only là high elo toàn trận (2026-11-24)
+
+User xác định2chế độ Rank và Giải; đồng ý chốt thiết kế và tiêu chuẩn dữ liệu Rank cao cho Giải. Config Master+ là working default chỉnh được, không ngưỡng tối ưu. Định nghĩa cả trận high historical yêu cầu10người đủ rank evidence đúngthờigian/queue/server; unknown không là below. Seed/chỉsnapshotcurrent không hồi tố, interval cần nguồn thật và available trước cutoff, toolkhôngxácthựcđộc lập source. Chặn evaluator default khi không đạt, explicitflag chỉ tái lập seed-only cũ. Không cố gọi currentrankAPI rồi nhận làhistorical;92trận hiệnchưađủchứngcứ, không có kếtluậnrankthấp. Runtime Rank cònplanned; Giải giữPro/legacy/contextual, không bật hybrid. Thiết kếluậtdraftRankriêng, không đồng nhấtmodevớistrategy.
+
+## ADR-031 — Thử nguồn matchup, không bật hybrid khi chưa có bằng chứng (2026-11-24)
+
+User giao cả4bước chuẩn hóa/thu thêm/evaluate/conditional integration. Dùng official pinned catalog, lấy mẫu lịch sử trước holdout thay vì rank hiện tại16.23; giữ patch/server và ended_at cutoff. Phép thử chỉ thay matchup, cùng pool/công thức/prior/threshold, hybrid residual50/50 ở Rank n5 và Pro fallback khi thiếu. Không pooling domains hoặc giảm điểm Pro do missing Rank. Split chronological series60/20/20 và freeze trước val; không tune test. Pro dataset cũ đã dùng nên chỉ thăm dò, không gọi final test mới. Kết quả test không tăng R5, coverageRank13/320query; CI[0,0] không chứng minh equivalence. Do đó không tích hợp runtime, không hạ ngưỡng/tune để ép kết quả. Cần tập giải mới độc lập và coverage/benefit rõ trước khi cân nhắc. Kiến thức MR-16/NV-12, protocol/report lưu để viết báo cáo.
+
+## ADR-030 — Rank là miền tham khảo riêng (2026-11-24)
+
+User đồng ý bước thu thập/đối chiếu sau khi nêu khác biệt rank và giải. Pipeline sidecar không pooling counts/winrate hoặc cộng điểm contextual. Reject role thiếu/trùng, dùng timestamp thật và signed differences. before không sau mốc trong1000ms; nearest±1000ms chỉ mô tả vì frame Riot hơi sau mốc, không nối vào Snowball. Ngưỡng là policy kỹ thuật tự thiết kế, chưa tối ưu. Seed hiện tại không xác nhận rank lịch sử của10người.5trận KR16.23 chưa có patch chung Worlds nên chưa kết luận chuyển miền. Benchmark Pro-only/Rank-only/hybrid còn dự kiến, chưa có output; phải đánh giá độc lập trước khi cân nhắc trọng số. Xem sổ MR-15/NV-11 và docs/RIOT_RANK_MATCHUPS.md.
+
+## ADR-029 — Audit pick trước khi sửa chiến lược (2026-11-24)
+
+Userđồngýbắtđầubước1. Dựnglạiđúngstate/pool/cutoffcủa50pickcontextual,scoretáilậpkhớp,loạipickcũkhỏitop5alternativevàkiểm248alternativehợplệ. Bỏtừngthànhphầnđiểmchỉđểchẩnđoánđộnhạy,khôngthaypolicy/PICKhoặctuneweight. Khôngdùngtop1cũlàgroundtruthquality,khôngsuyđồngchọnthànhsynergy/counter. Reviewkhôngdùngrole/futurepickđịchchưalộvàsẽrejectswaphistorychưađượcreplaythayvìngầmsai. Sourcehash/state/savedscorechecks làminhchứng,khôngcầnretrainchoaudit. Báocáo hiệnchỉra thiếuđốidầu/phốihợpítmẫu/backoffcuốiFearless;chưatựsửaflexhoặcmởsearch.
+
 ## ADR-028 — Loại lookahead, chỉ duy trì legacy và contextual (2026-11-24)
 
 User yêu cầu bỏlookahead vàchỉquantâmlegacy/contextual. Gỡ mã tìmnhánh/opponent response tíchhợpban, flags vàcomparator3mode; khônggiữruntimelookahead dormant. BanPlanner giữcontextualone-step vàContextualBanPolicy; traceđổi contextual_trace. Legacydefaultkhôngđổi, contextualchủđộngbật. Kếtquảcũlookahead chỉlàlịchsửcóngày/nhãn; khôngxóaDB/model/artifactđãtạo. Opponentpredictorprototypeđộc lập giữnguyênnhưngngoàifocus, khôngđượccontextualgọi. So2series mới đúng5draft vàsamepick/banvớimốctrước,57testsPASS; oldlookahead CLIreject. Mappingchínhtrongsổmục15/NV-09 vàdocs/BAN_LEGACY_VA_CONTEXTUAL.md.

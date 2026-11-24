@@ -1,0 +1,40 @@
+{
+  "schema": "rank-matchup-tables-v3",
+  "generated_at": "2026-11-24T15:18:00.077151+00:00",
+  "pooled_matchup_rows": 5090,
+  "target_games_per_matchup": null,
+  "pooled_matchups_at_target": null,
+  "collection_goal": "observed_matchup_coverage_without_fixed_sample_quota",
+  "ugg_reference_status": "not_loaded",
+  "ugg_coverage_parity_verified": false,
+  "pooled_scope": "all observed patches and platforms; queue/tier_floor/role kept separate",
+  "evidence_db": "ranked_evidence.db",
+  "dataset_sha256": "9ccec92747c982ac5c4dee2a685718a284d549b2544a139bcde471bb14c07fbd",
+  "counts": {
+    "accepted": 931,
+    "pending": 1,
+    "rejected": 42,
+    "accepted_observations": 9310,
+    "seeds": 33681
+  },
+  "games_with_observations": 931,
+  "matchup_rows": 6588,
+  "supported_matchups": 134,
+  "supported_gd15_matchups": 134,
+  "min_games_for_ranked_tables": 5,
+  "all_sparse_rows_visible": true,
+  "historical_rank_verified": false,
+  "live_draft_signal_enabled": false,
+  "counter_interpretation": "observed_match_result_and_resource_difference_not_causal_counter",
+  "mean_ci_method": "Student_t_95_assuming_independent_matches; repeated players weaken this assumption",
+  "win_ci_method": "Wilson95; not calibrated model probability",
+  "public_inspiration": "https://u.gg/lol/champions/leesin/counter",
+  "limitations": [
+    "Same-role gold/XP/CS include jungle/support/roams/team and player effects.",
+    "Jungle is not a literal laning duel; support/bot context needs separate analysis.",
+    "Snapshots are near-match proxies, not historical tiers. Rank and Pro are not pooled.",
+    "No adjustment for champion base strength, skill, side or selection bias is claimed.",
+    "Low n remains low reliability even if mean gold or raw winrate is extreme.",
+    "Matchup ranking is descriptive; no win uplift, mechanical counter or BO5 optimality claim."
+  ]
+}

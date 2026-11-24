@@ -1,0 +1,82 @@
+{
+  "schema": "rank-matchups-v1",
+  "rank_games": 5,
+  "rank_rows": 50,
+  "pro_games": 206,
+  "pro_rows": 2060,
+  "rank_patches": [
+    "16.23"
+  ],
+  "pro_patches": [
+    "15.17",
+    "15.20",
+    "16.17",
+    "16.20"
+  ],
+  "same_patch_directed_pairs": 0,
+  "rejected": [],
+  "rank_metric_coverage": {
+    "gold_diff_10": 50,
+    "xp_diff_10": 50,
+    "cs_diff_10": 50,
+    "gold_diff_15": 50,
+    "xp_diff_15": 50,
+    "cs_diff_15": 50
+  },
+  "pro_metric_coverage": {
+    "gold_diff_10": 1940,
+    "xp_diff_10": 1940,
+    "cs_diff_10": 1940,
+    "gold_diff_15": 1940,
+    "xp_diff_15": 1940,
+    "cs_diff_15": 1940
+  },
+  "scope": {
+    "pro_league": "WLDS",
+    "as_of": null,
+    "patch": null
+  },
+  "observed_dates": {
+    "rank": {
+      "first": "2026-11-22T14:26:49.917000+00:00",
+      "last": "2026-11-22T17:14:06.700000+00:00"
+    },
+    "pro": {
+      "first": "2025-09-25 09:14:03",
+      "last": "2026-11-14 23:18:11"
+    }
+  },
+  "raw_sha256": {
+    "KR_8469699954.match.json": "f7b8f91a11d93663fc520a3c5002f374cc0a1f915f32de8d7809f83c3c699f67",
+    "KR_8469788362.match.json": "042d519350fc8bc91f47ed4384a697c1b4a6dfbde40e28b35a45d883c78ced1f",
+    "KR_8469846953.match.json": "120a1a78c776333828829dd720c062dd397b5e260f40dbb5f9fd70c59eff4ce6",
+    "KR_8469909438.match.json": "a28edf2cba24d94f12e803381a54c1532d110341f5a4c25554eae2310f81ac4b",
+    "KR_8469965352.match.json": "e3f295d1fc3f1b863231015e57e8642d5ad3780832abe0f3665a0d6464617330",
+    "KR_8469699954.timeline.json": "68da9055fdd642bec956898c793e77aaff262a6fdb63f75c89c341f0a836792d",
+    "KR_8469788362.timeline.json": "edaf6576af52c306a6609bc52854bc0992b6d6e0b3c5332b405aed0103e4f03a",
+    "KR_8469846953.timeline.json": "cf404b9eef89c41bdf596541e5860256d1f306644a4fd3b246f7206be919dee7",
+    "KR_8469909438.timeline.json": "2c53fc2844fbac73014d159d23b9df64643dc21639d590f15b9aa38bf0eabddb",
+    "KR_8469965352.timeline.json": "634f250a3cbfb939e90189e4fcdc4a8d9ac745ced12ecb516d5de53ab97cb72a"
+  },
+  "contextual_uses_rank_signal": false,
+  "rank_at_match": "unknown",
+  "frame_policy": "nearest",
+  "frame_tolerance_ms": 1000,
+  "rank_frame_offsets_ms": {
+    "10": [
+      128,
+      132,
+      178,
+      196,
+      206
+    ],
+    "15": [
+      242,
+      243,
+      248,
+      251,
+      254
+    ]
+  },
+  "role_policy": "reported post-game teamPosition; reject missing/duplicate roles"
+}

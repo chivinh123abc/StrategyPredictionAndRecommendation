@@ -1,0 +1,1469 @@
+{
+  "catalog_version": "16.20.1",
+  "pro_names": [
+    {
+      "field": "champion",
+      "raw": "Aatrox",
+      "canonical": "Aatrox",
+      "changed": false
+    },
+    {
+      "field": "champion",
+      "raw": "Ahri",
+      "canonical": "Ahri",
+      "changed": false
+    },
+    {
+      "field": "champion",
+      "raw": "Akali",
+      "canonical": "Akali",
+      "changed": false
+    },
+    {
+      "field": "champion",
+      "raw": "Alistar",
+      "canonical": "Alistar",
+      "changed": false
+    },
+    {
+      "field": "champion",
+      "raw": "Ambessa",
+      "canonical": "Ambessa",
+      "changed": false
+    },
+    {
+      "field": "champion",
+      "raw": "Anivia",
+      "canonical": "Anivia",
+      "changed": false
+    },
+    {
+      "field": "champion",
+      "raw": "Annie",
+      "canonical": "Annie",
+      "changed": false
+    },
+    {
+      "field": "champion",
+      "raw": "Aphelios",
+      "canonical": "Aphelios",
+      "changed": false
+    },
+    {
+      "field": "champion",
+      "raw": "Ashe",
+      "canonical": "Ashe",
+      "changed": false
+    },
+    {
+      "field": "champion",
+      "raw": "Aurora",
+      "canonical": "Aurora",
+      "changed": false
+    },
+    {
+      "field": "champion",
+      "raw": "Azir",
+      "canonical": "Azir",
+      "changed": false
+    },
+    {
+      "field": "champion",
+      "raw": "Bard",
+      "canonical": "Bard",
+      "changed": false
+    },
+    {
+      "field": "champion",
+      "raw": "Blitzcrank",
+      "canonical": "Blitzcrank",
+      "changed": false
+    },
+    {
+      "field": "champion",
+      "raw": "Braum",
+      "canonical": "Braum",
+      "changed": false
+    },
+    {
+      "field": "champion",
+      "raw": "Caitlyn",
+      "canonical": "Caitlyn",
+      "changed": false
+    },
+    {
+      "field": "champion",
+      "raw": "Camille",
+      "canonical": "Camille",
+      "changed": false
+    },
+    {
+      "field": "champion",
+      "raw": "Cassiopeia",
+      "canonical": "Cassiopeia",
+      "changed": false
+    },
+    {
+      "field": "champion",
+      "raw": "Cho'Gath",
+      "canonical": "Cho'Gath",
+      "changed": false
+    },
+    {
+      "field": "champion",
+      "raw": "Corki",
+      "canonical": "Corki",
+      "changed": false
+    },
+    {
+      "field": "champion",
+      "raw": "Diana",
+      "canonical": "Diana",
+      "changed": false
+    },
+    {
+      "field": "champion",
+      "raw": "Dr. Mundo",
+      "canonical": "Dr. Mundo",
+      "changed": false
+    },
+    {
+      "field": "champion",
+      "raw": "Draven",
+      "canonical": "Draven",
+      "changed": false
+    },
+    {
+      "field": "champion",
+      "raw": "Elise",
+      "canonical": "Elise",
+      "changed": false
+    },
+    {
+      "field": "champion",
+      "raw": "Ezreal",
+      "canonical": "Ezreal",
+      "changed": false
+    },
+    {
+      "field": "champion",
+      "raw": "Galio",
+      "canonical": "Galio",
+      "changed": false
+    },
+    {
+      "field": "champion",
+      "raw": "Gangplank",
+      "canonical": "Gangplank",
+      "changed": false
+    },
+    {
+      "field": "champion",
+      "raw": "Gnar",
+      "canonical": "Gnar",
+      "changed": false
+    },
+    {
+      "field": "champion",
+      "raw": "Gragas",
+      "canonical": "Gragas",
+      "changed": false
+    },
+    {
+      "field": "champion",
+      "raw": "Gwen",
+      "canonical": "Gwen",
+      "changed": false
+    },
+    {
+      "field": "champion",
+      "raw": "Hwei",
+      "canonical": "Hwei",
+      "changed": false
+    },
+    {
+      "field": "champion",
+      "raw": "Irelia",
+      "canonical": "Irelia",
+      "changed": false
+    },
+    {
+      "field": "champion",
+      "raw": "Ivern",
+      "canonical": "Ivern",
+      "changed": false
+    },
+    {
+      "field": "champion",
+      "raw": "Jarvan IV",
+      "canonical": "Jarvan IV",
+      "changed": false
+    },
+    {
+      "field": "champion",
+      "raw": "Jax",
+      "canonical": "Jax",
+      "changed": false
+    },
+    {
+      "field": "champion",
+      "raw": "Jayce",
+      "canonical": "Jayce",
+      "changed": false
+    },
+    {
+      "field": "champion",
+      "raw": "Jhin",
+      "canonical": "Jhin",
+      "changed": false
+    },
+    {
+      "field": "champion",
+      "raw": "Jinx",
+      "canonical": "Jinx",
+      "changed": false
+    },
+    {
+      "field": "champion",
+      "raw": "K'Sante",
+      "canonical": "K'Sante",
+      "changed": false
+    },
+    {
+      "field": "champion",
+      "raw": "Kai'Sa",
+      "canonical": "Kai'Sa",
+      "changed": false
+    },
+    {
+      "field": "champion",
+      "raw": "Kalista",
+      "canonical": "Kalista",
+      "changed": false
+    },
+    {
+      "field": "champion",
+      "raw": "Karma",
+      "canonical": "Karma",
+      "changed": false
+    },
+    {
+      "field": "champion",
+      "raw": "Kassadin",
+      "canonical": "Kassadin",
+      "changed": false
+    },
+    {
+      "field": "champion",
+      "raw": "Kennen",
+      "canonical": "Kennen",
+      "changed": false
+    },
+    {
+      "field": "champion",
+      "raw": "Kled",
+      "canonical": "Kled",
+      "changed": false
+    },
+    {
+      "field": "champion",
+      "raw": "Kog'Maw",
+      "canonical": "Kog'Maw",
+      "changed": false
+    },
+    {
+      "field": "champion",
+      "raw": "LeBlanc",
+      "canonical": "LeBlanc",
+      "changed": false
+    },
+    {
+      "field": "champion",
+      "raw": "Lee Sin",
+      "canonical": "Lee Sin",
+      "changed": false
+    },
+    {
+      "field": "champion",
+      "raw": "Leona",
+      "canonical": "Leona",
+      "changed": false
+    },
+    {
+      "field": "champion",
+      "raw": "Lillia",
+      "canonical": "Lillia",
+      "changed": false
+    },
+    {
+      "field": "champion",
+      "raw": "Lissandra",
+      "canonical": "Lissandra",
+      "changed": false
+    },
+    {
+      "field": "champion",
+      "raw": "Locke",
+      "canonical": "Locke",
+      "changed": false
+    },
+    {
+      "field": "champion",
+      "raw": "Lucian",
+      "canonical": "Lucian",
+      "changed": false
+    },
+    {
+      "field": "champion",
+      "raw": "Lulu",
+      "canonical": "Lulu",
+      "changed": false
+    },
+    {
+      "field": "champion",
+      "raw": "Lux",
+      "canonical": "Lux",
+      "changed": false
+    },
+    {
+      "field": "champion",
+      "raw": "Malphite",
+      "canonical": "Malphite",
+      "changed": false
+    },
+    {
+      "field": "champion",
+      "raw": "Maokai",
+      "canonical": "Maokai",
+      "changed": false
+    },
+    {
+      "field": "champion",
+      "raw": "Mel",
+      "canonical": "Mel",
+      "changed": false
+    },
+    {
+      "field": "champion",
+      "raw": "Milio",
+      "canonical": "Milio",
+      "changed": false
+    },
+    {
+      "field": "champion",
+      "raw": "Miss Fortune",
+      "canonical": "Miss Fortune",
+      "changed": false
+    },
+    {
+      "field": "champion",
+      "raw": "Mordekaiser",
+      "canonical": "Mordekaiser",
+      "changed": false
+    },
+    {
+      "field": "champion",
+      "raw": "Morgana",
+      "canonical": "Morgana",
+      "changed": false
+    },
+    {
+      "field": "champion",
+      "raw": "Naafiri",
+      "canonical": "Naafiri",
+      "changed": false
+    },
+    {
+      "field": "champion",
+      "raw": "Nami",
+      "canonical": "Nami",
+      "changed": false
+    },
+    {
+      "field": "champion",
+      "raw": "Nasus",
+      "canonical": "Nasus",
+      "changed": false
+    },
+    {
+      "field": "champion",
+      "raw": "Nautilus",
+      "canonical": "Nautilus",
+      "changed": false
+    },
+    {
+      "field": "champion",
+      "raw": "Neeko",
+      "canonical": "Neeko",
+      "changed": false
+    },
+    {
+      "field": "champion",
+      "raw": "Nidalee",
+      "canonical": "Nidalee",
+      "changed": false
+    },
+    {
+      "field": "champion",
+      "raw": "Nocturne",
+      "canonical": "Nocturne",
+      "changed": false
+    },
+    {
+      "field": "champion",
+      "raw": "Olaf",
+      "canonical": "Olaf",
+      "changed": false
+    },
+    {
+      "field": "champion",
+      "raw": "Orianna",
+      "canonical": "Orianna",
+      "changed": false
+    },
+    {
+      "field": "champion",
+      "raw": "Ornn",
+      "canonical": "Ornn",
+      "changed": false
+    },
+    {
+      "field": "champion",
+      "raw": "Pantheon",
+      "canonical": "Pantheon",
+      "changed": false
+    },
+    {
+      "field": "champion",
+      "raw": "Poppy",
+      "canonical": "Poppy",
+      "changed": false
+    },
+    {
+      "field": "champion",
+      "raw": "Pyke",
+      "canonical": "Pyke",
+      "changed": false
+    },
+    {
+      "field": "champion",
+      "raw": "Qiyana",
+      "canonical": "Qiyana",
+      "changed": false
+    },
+    {
+      "field": "champion",
+      "raw": "Rakan",
+      "canonical": "Rakan",
+      "changed": false
+    },
+    {
+      "field": "champion",
+      "raw": "Rek'Sai",
+      "canonical": "Rek'Sai",
+      "changed": false
+    },
+    {
+      "field": "champion",
+      "raw": "Rell",
+      "canonical": "Rell",
+      "changed": false
+    },
+    {
+      "field": "champion",
+      "raw": "Renata Glasc",
+      "canonical": "Renata Glasc",
+      "changed": false
+    },
+    {
+      "field": "champion",
+      "raw": "Renekton",
+      "canonical": "Renekton",
+      "changed": false
+    },
+    {
+      "field": "champion",
+      "raw": "Rumble",
+      "canonical": "Rumble",
+      "changed": false
+    },
+    {
+      "field": "champion",
+      "raw": "Ryze",
+      "canonical": "Ryze",
+      "changed": false
+    },
+    {
+      "field": "champion",
+      "raw": "Sejuani",
+      "canonical": "Sejuani",
+      "changed": false
+    },
+    {
+      "field": "champion",
+      "raw": "Senna",
+      "canonical": "Senna",
+      "changed": false
+    },
+    {
+      "field": "champion",
+      "raw": "Seraphine",
+      "canonical": "Seraphine",
+      "changed": false
+    },
+    {
+      "field": "champion",
+      "raw": "Shen",
+      "canonical": "Shen",
+      "changed": false
+    },
+    {
+      "field": "champion",
+      "raw": "Sion",
+      "canonical": "Sion",
+      "changed": false
+    },
+    {
+      "field": "champion",
+      "raw": "Sivir",
+      "canonical": "Sivir",
+      "changed": false
+    },
+    {
+      "field": "champion",
+      "raw": "Skarner",
+      "canonical": "Skarner",
+      "changed": false
+    },
+    {
+      "field": "champion",
+      "raw": "Smolder",
+      "canonical": "Smolder",
+      "changed": false
+    },
+    {
+      "field": "champion",
+      "raw": "Soraka",
+      "canonical": "Soraka",
+      "changed": false
+    },
+    {
+      "field": "champion",
+      "raw": "Swain",
+      "canonical": "Swain",
+      "changed": false
+    },
+    {
+      "field": "champion",
+      "raw": "Sylas",
+      "canonical": "Sylas",
+      "changed": false
+    },
+    {
+      "field": "champion",
+      "raw": "Syndra",
+      "canonical": "Syndra",
+      "changed": false
+    },
+    {
+      "field": "champion",
+      "raw": "Tahm Kench",
+      "canonical": "Tahm Kench",
+      "changed": false
+    },
+    {
+      "field": "champion",
+      "raw": "Taliyah",
+      "canonical": "Taliyah",
+      "changed": false
+    },
+    {
+      "field": "champion",
+      "raw": "Taric",
+      "canonical": "Taric",
+      "changed": false
+    },
+    {
+      "field": "champion",
+      "raw": "Thresh",
+      "canonical": "Thresh",
+      "changed": false
+    },
+    {
+      "field": "champion",
+      "raw": "Tristana",
+      "canonical": "Tristana",
+      "changed": false
+    },
+    {
+      "field": "champion",
+      "raw": "Trundle",
+      "canonical": "Trundle",
+      "changed": false
+    },
+    {
+      "field": "champion",
+      "raw": "Twisted Fate",
+      "canonical": "Twisted Fate",
+      "changed": false
+    },
+    {
+      "field": "champion",
+      "raw": "Twitch",
+      "canonical": "Twitch",
+      "changed": false
+    },
+    {
+      "field": "champion",
+      "raw": "Varus",
+      "canonical": "Varus",
+      "changed": false
+    },
+    {
+      "field": "champion",
+      "raw": "Vayne",
+      "canonical": "Vayne",
+      "changed": false
+    },
+    {
+      "field": "champion",
+      "raw": "Vel'Koz",
+      "canonical": "Vel'Koz",
+      "changed": false
+    },
+    {
+      "field": "champion",
+      "raw": "Vi",
+      "canonical": "Vi",
+      "changed": false
+    },
+    {
+      "field": "champion",
+      "raw": "Viego",
+      "canonical": "Viego",
+      "changed": false
+    },
+    {
+      "field": "champion",
+      "raw": "Viktor",
+      "canonical": "Viktor",
+      "changed": false
+    },
+    {
+      "field": "champion",
+      "raw": "Volibear",
+      "canonical": "Volibear",
+      "changed": false
+    },
+    {
+      "field": "champion",
+      "raw": "Wukong",
+      "canonical": "Wukong",
+      "changed": false
+    },
+    {
+      "field": "champion",
+      "raw": "Xayah",
+      "canonical": "Xayah",
+      "changed": false
+    },
+    {
+      "field": "champion",
+      "raw": "Xin Zhao",
+      "canonical": "Xin Zhao",
+      "changed": false
+    },
+    {
+      "field": "champion",
+      "raw": "Yone",
+      "canonical": "Yone",
+      "changed": false
+    },
+    {
+      "field": "champion",
+      "raw": "Yorick",
+      "canonical": "Yorick",
+      "changed": false
+    },
+    {
+      "field": "champion",
+      "raw": "Yunara",
+      "canonical": "Yunara",
+      "changed": false
+    },
+    {
+      "field": "champion",
+      "raw": "Yuumi",
+      "canonical": "Yuumi",
+      "changed": false
+    },
+    {
+      "field": "champion",
+      "raw": "Zaahen",
+      "canonical": "Zaahen",
+      "changed": false
+    },
+    {
+      "field": "champion",
+      "raw": "Zed",
+      "canonical": "Zed",
+      "changed": false
+    },
+    {
+      "field": "champion",
+      "raw": "Zeri",
+      "canonical": "Zeri",
+      "changed": false
+    },
+    {
+      "field": "champion",
+      "raw": "Ziggs",
+      "canonical": "Ziggs",
+      "changed": false
+    },
+    {
+      "field": "champion",
+      "raw": "Zoe",
+      "canonical": "Zoe",
+      "changed": false
+    },
+    {
+      "field": "champion",
+      "raw": "Zyra",
+      "canonical": "Zyra",
+      "changed": false
+    },
+    {
+      "field": "opponent",
+      "raw": "Aatrox",
+      "canonical": "Aatrox",
+      "changed": false
+    },
+    {
+      "field": "opponent",
+      "raw": "Ahri",
+      "canonical": "Ahri",
+      "changed": false
+    },
+    {
+      "field": "opponent",
+      "raw": "Akali",
+      "canonical": "Akali",
+      "changed": false
+    },
+    {
+      "field": "opponent",
+      "raw": "Alistar",
+      "canonical": "Alistar",
+      "changed": false
+    },
+    {
+      "field": "opponent",
+      "raw": "Ambessa",
+      "canonical": "Ambessa",
+      "changed": false
+    },
+    {
+      "field": "opponent",
+      "raw": "Anivia",
+      "canonical": "Anivia",
+      "changed": false
+    },
+    {
+      "field": "opponent",
+      "raw": "Annie",
+      "canonical": "Annie",
+      "changed": false
+    },
+    {
+      "field": "opponent",
+      "raw": "Aphelios",
+      "canonical": "Aphelios",
+      "changed": false
+    },
+    {
+      "field": "opponent",
+      "raw": "Ashe",
+      "canonical": "Ashe",
+      "changed": false
+    },
+    {
+      "field": "opponent",
+      "raw": "Aurora",
+      "canonical": "Aurora",
+      "changed": false
+    },
+    {
+      "field": "opponent",
+      "raw": "Azir",
+      "canonical": "Azir",
+      "changed": false
+    },
+    {
+      "field": "opponent",
+      "raw": "Bard",
+      "canonical": "Bard",
+      "changed": false
+    },
+    {
+      "field": "opponent",
+      "raw": "Blitzcrank",
+      "canonical": "Blitzcrank",
+      "changed": false
+    },
+    {
+      "field": "opponent",
+      "raw": "Braum",
+      "canonical": "Braum",
+      "changed": false
+    },
+    {
+      "field": "opponent",
+      "raw": "Caitlyn",
+      "canonical": "Caitlyn",
+      "changed": false
+    },
+    {
+      "field": "opponent",
+      "raw": "Camille",
+      "canonical": "Camille",
+      "changed": false
+    },
+    {
+      "field": "opponent",
+      "raw": "Cassiopeia",
+      "canonical": "Cassiopeia",
+      "changed": false
+    },
+    {
+      "field": "opponent",
+      "raw": "Cho'Gath",
+      "canonical": "Cho'Gath",
+      "changed": false
+    },
+    {
+      "field": "opponent",
+      "raw": "Corki",
+      "canonical": "Corki",
+      "changed": false
+    },
+    {
+      "field": "opponent",
+      "raw": "Diana",
+      "canonical": "Diana",
+      "changed": false
+    },
+    {
+      "field": "opponent",
+      "raw": "Dr. Mundo",
+      "canonical": "Dr. Mundo",
+      "changed": false
+    },
+    {
+      "field": "opponent",
+      "raw": "Draven",
+      "canonical": "Draven",
+      "changed": false
+    },
+    {
+      "field": "opponent",
+      "raw": "Elise",
+      "canonical": "Elise",
+      "changed": false
+    },
+    {
+      "field": "opponent",
+      "raw": "Ezreal",
+      "canonical": "Ezreal",
+      "changed": false
+    },
+    {
+      "field": "opponent",
+      "raw": "Galio",
+      "canonical": "Galio",
+      "changed": false
+    },
+    {
+      "field": "opponent",
+      "raw": "Gangplank",
+      "canonical": "Gangplank",
+      "changed": false
+    },
+    {
+      "field": "opponent",
+      "raw": "Gnar",
+      "canonical": "Gnar",
+      "changed": false
+    },
+    {
+      "field": "opponent",
+      "raw": "Gragas",
+      "canonical": "Gragas",
+      "changed": false
+    },
+    {
+      "field": "opponent",
+      "raw": "Gwen",
+      "canonical": "Gwen",
+      "changed": false
+    },
+    {
+      "field": "opponent",
+      "raw": "Hwei",
+      "canonical": "Hwei",
+      "changed": false
+    },
+    {
+      "field": "opponent",
+      "raw": "Irelia",
+      "canonical": "Irelia",
+      "changed": false
+    },
+    {
+      "field": "opponent",
+      "raw": "Ivern",
+      "canonical": "Ivern",
+      "changed": false
+    },
+    {
+      "field": "opponent",
+      "raw": "Jarvan IV",
+      "canonical": "Jarvan IV",
+      "changed": false
+    },
+    {
+      "field": "opponent",
+      "raw": "Jax",
+      "canonical": "Jax",
+      "changed": false
+    },
+    {
+      "field": "opponent",
+      "raw": "Jayce",
+      "canonical": "Jayce",
+      "changed": false
+    },
+    {
+      "field": "opponent",
+      "raw": "Jhin",
+      "canonical": "Jhin",
+      "changed": false
+    },
+    {
+      "field": "opponent",
+      "raw": "Jinx",
+      "canonical": "Jinx",
+      "changed": false
+    },
+    {
+      "field": "opponent",
+      "raw": "K'Sante",
+      "canonical": "K'Sante",
+      "changed": false
+    },
+    {
+      "field": "opponent",
+      "raw": "Kai'Sa",
+      "canonical": "Kai'Sa",
+      "changed": false
+    },
+    {
+      "field": "opponent",
+      "raw": "Kalista",
+      "canonical": "Kalista",
+      "changed": false
+    },
+    {
+      "field": "opponent",
+      "raw": "Karma",
+      "canonical": "Karma",
+      "changed": false
+    },
+    {
+      "field": "opponent",
+      "raw": "Kassadin",
+      "canonical": "Kassadin",
+      "changed": false
+    },
+    {
+      "field": "opponent",
+      "raw": "Kennen",
+      "canonical": "Kennen",
+      "changed": false
+    },
+    {
+      "field": "opponent",
+      "raw": "Kled",
+      "canonical": "Kled",
+      "changed": false
+    },
+    {
+      "field": "opponent",
+      "raw": "Kog'Maw",
+      "canonical": "Kog'Maw",
+      "changed": false
+    },
+    {
+      "field": "opponent",
+      "raw": "LeBlanc",
+      "canonical": "LeBlanc",
+      "changed": false
+    },
+    {
+      "field": "opponent",
+      "raw": "Lee Sin",
+      "canonical": "Lee Sin",
+      "changed": false
+    },
+    {
+      "field": "opponent",
+      "raw": "Leona",
+      "canonical": "Leona",
+      "changed": false
+    },
+    {
+      "field": "opponent",
+      "raw": "Lillia",
+      "canonical": "Lillia",
+      "changed": false
+    },
+    {
+      "field": "opponent",
+      "raw": "Lissandra",
+      "canonical": "Lissandra",
+      "changed": false
+    },
+    {
+      "field": "opponent",
+      "raw": "Locke",
+      "canonical": "Locke",
+      "changed": false
+    },
+    {
+      "field": "opponent",
+      "raw": "Lucian",
+      "canonical": "Lucian",
+      "changed": false
+    },
+    {
+      "field": "opponent",
+      "raw": "Lulu",
+      "canonical": "Lulu",
+      "changed": false
+    },
+    {
+      "field": "opponent",
+      "raw": "Lux",
+      "canonical": "Lux",
+      "changed": false
+    },
+    {
+      "field": "opponent",
+      "raw": "Malphite",
+      "canonical": "Malphite",
+      "changed": false
+    },
+    {
+      "field": "opponent",
+      "raw": "Maokai",
+      "canonical": "Maokai",
+      "changed": false
+    },
+    {
+      "field": "opponent",
+      "raw": "Mel",
+      "canonical": "Mel",
+      "changed": false
+    },
+    {
+      "field": "opponent",
+      "raw": "Milio",
+      "canonical": "Milio",
+      "changed": false
+    },
+    {
+      "field": "opponent",
+      "raw": "Miss Fortune",
+      "canonical": "Miss Fortune",
+      "changed": false
+    },
+    {
+      "field": "opponent",
+      "raw": "Mordekaiser",
+      "canonical": "Mordekaiser",
+      "changed": false
+    },
+    {
+      "field": "opponent",
+      "raw": "Morgana",
+      "canonical": "Morgana",
+      "changed": false
+    },
+    {
+      "field": "opponent",
+      "raw": "Naafiri",
+      "canonical": "Naafiri",
+      "changed": false
+    },
+    {
+      "field": "opponent",
+      "raw": "Nami",
+      "canonical": "Nami",
+      "changed": false
+    },
+    {
+      "field": "opponent",
+      "raw": "Nasus",
+      "canonical": "Nasus",
+      "changed": false
+    },
+    {
+      "field": "opponent",
+      "raw": "Nautilus",
+      "canonical": "Nautilus",
+      "changed": false
+    },
+    {
+      "field": "opponent",
+      "raw": "Neeko",
+      "canonical": "Neeko",
+      "changed": false
+    },
+    {
+      "field": "opponent",
+      "raw": "Nidalee",
+      "canonical": "Nidalee",
+      "changed": false
+    },
+    {
+      "field": "opponent",
+      "raw": "Nocturne",
+      "canonical": "Nocturne",
+      "changed": false
+    },
+    {
+      "field": "opponent",
+      "raw": "Olaf",
+      "canonical": "Olaf",
+      "changed": false
+    },
+    {
+      "field": "opponent",
+      "raw": "Orianna",
+      "canonical": "Orianna",
+      "changed": false
+    },
+    {
+      "field": "opponent",
+      "raw": "Ornn",
+      "canonical": "Ornn",
+      "changed": false
+    },
+    {
+      "field": "opponent",
+      "raw": "Pantheon",
+      "canonical": "Pantheon",
+      "changed": false
+    },
+    {
+      "field": "opponent",
+      "raw": "Poppy",
+      "canonical": "Poppy",
+      "changed": false
+    },
+    {
+      "field": "opponent",
+      "raw": "Pyke",
+      "canonical": "Pyke",
+      "changed": false
+    },
+    {
+      "field": "opponent",
+      "raw": "Qiyana",
+      "canonical": "Qiyana",
+      "changed": false
+    },
+    {
+      "field": "opponent",
+      "raw": "Rakan",
+      "canonical": "Rakan",
+      "changed": false
+    },
+    {
+      "field": "opponent",
+      "raw": "Rek'Sai",
+      "canonical": "Rek'Sai",
+      "changed": false
+    },
+    {
+      "field": "opponent",
+      "raw": "Rell",
+      "canonical": "Rell",
+      "changed": false
+    },
+    {
+      "field": "opponent",
+      "raw": "Renata Glasc",
+      "canonical": "Renata Glasc",
+      "changed": false
+    },
+    {
+      "field": "opponent",
+      "raw": "Renekton",
+      "canonical": "Renekton",
+      "changed": false
+    },
+    {
+      "field": "opponent",
+      "raw": "Rumble",
+      "canonical": "Rumble",
+      "changed": false
+    },
+    {
+      "field": "opponent",
+      "raw": "Ryze",
+      "canonical": "Ryze",
+      "changed": false
+    },
+    {
+      "field": "opponent",
+      "raw": "Sejuani",
+      "canonical": "Sejuani",
+      "changed": false
+    },
+    {
+      "field": "opponent",
+      "raw": "Senna",
+      "canonical": "Senna",
+      "changed": false
+    },
+    {
+      "field": "opponent",
+      "raw": "Seraphine",
+      "canonical": "Seraphine",
+      "changed": false
+    },
+    {
+      "field": "opponent",
+      "raw": "Shen",
+      "canonical": "Shen",
+      "changed": false
+    },
+    {
+      "field": "opponent",
+      "raw": "Sion",
+      "canonical": "Sion",
+      "changed": false
+    },
+    {
+      "field": "opponent",
+      "raw": "Sivir",
+      "canonical": "Sivir",
+      "changed": false
+    },
+    {
+      "field": "opponent",
+      "raw": "Skarner",
+      "canonical": "Skarner",
+      "changed": false
+    },
+    {
+      "field": "opponent",
+      "raw": "Smolder",
+      "canonical": "Smolder",
+      "changed": false
+    },
+    {
+      "field": "opponent",
+      "raw": "Soraka",
+      "canonical": "Soraka",
+      "changed": false
+    },
+    {
+      "field": "opponent",
+      "raw": "Swain",
+      "canonical": "Swain",
+      "changed": false
+    },
+    {
+      "field": "opponent",
+      "raw": "Sylas",
+      "canonical": "Sylas",
+      "changed": false
+    },
+    {
+      "field": "opponent",
+      "raw": "Syndra",
+      "canonical": "Syndra",
+      "changed": false
+    },
+    {
+      "field": "opponent",
+      "raw": "Tahm Kench",
+      "canonical": "Tahm Kench",
+      "changed": false
+    },
+    {
+      "field": "opponent",
+      "raw": "Taliyah",
+      "canonical": "Taliyah",
+      "changed": false
+    },
+    {
+      "field": "opponent",
+      "raw": "Taric",
+      "canonical": "Taric",
+      "changed": false
+    },
+    {
+      "field": "opponent",
+      "raw": "Thresh",
+      "canonical": "Thresh",
+      "changed": false
+    },
+    {
+      "field": "opponent",
+      "raw": "Tristana",
+      "canonical": "Tristana",
+      "changed": false
+    },
+    {
+      "field": "opponent",
+      "raw": "Trundle",
+      "canonical": "Trundle",
+      "changed": false
+    },
+    {
+      "field": "opponent",
+      "raw": "Twisted Fate",
+      "canonical": "Twisted Fate",
+      "changed": false
+    },
+    {
+      "field": "opponent",
+      "raw": "Twitch",
+      "canonical": "Twitch",
+      "changed": false
+    },
+    {
+      "field": "opponent",
+      "raw": "Varus",
+      "canonical": "Varus",
+      "changed": false
+    },
+    {
+      "field": "opponent",
+      "raw": "Vayne",
+      "canonical": "Vayne",
+      "changed": false
+    },
+    {
+      "field": "opponent",
+      "raw": "Vel'Koz",
+      "canonical": "Vel'Koz",
+      "changed": false
+    },
+    {
+      "field": "opponent",
+      "raw": "Vi",
+      "canonical": "Vi",
+      "changed": false
+    },
+    {
+      "field": "opponent",
+      "raw": "Viego",
+      "canonical": "Viego",
+      "changed": false
+    },
+    {
+      "field": "opponent",
+      "raw": "Viktor",
+      "canonical": "Viktor",
+      "changed": false
+    },
+    {
+      "field": "opponent",
+      "raw": "Volibear",
+      "canonical": "Volibear",
+      "changed": false
+    },
+    {
+      "field": "opponent",
+      "raw": "Wukong",
+      "canonical": "Wukong",
+      "changed": false
+    },
+    {
+      "field": "opponent",
+      "raw": "Xayah",
+      "canonical": "Xayah",
+      "changed": false
+    },
+    {
+      "field": "opponent",
+      "raw": "Xin Zhao",
+      "canonical": "Xin Zhao",
+      "changed": false
+    },
+    {
+      "field": "opponent",
+      "raw": "Yone",
+      "canonical": "Yone",
+      "changed": false
+    },
+    {
+      "field": "opponent",
+      "raw": "Yorick",
+      "canonical": "Yorick",
+      "changed": false
+    },
+    {
+      "field": "opponent",
+      "raw": "Yunara",
+      "canonical": "Yunara",
+      "changed": false
+    },
+    {
+      "field": "opponent",
+      "raw": "Yuumi",
+      "canonical": "Yuumi",
+      "changed": false
+    },
+    {
+      "field": "opponent",
+      "raw": "Zaahen",
+      "canonical": "Zaahen",
+      "changed": false
+    },
+    {
+      "field": "opponent",
+      "raw": "Zed",
+      "canonical": "Zed",
+      "changed": false
+    },
+    {
+      "field": "opponent",
+      "raw": "Zeri",
+      "canonical": "Zeri",
+      "changed": false
+    },
+    {
+      "field": "opponent",
+      "raw": "Ziggs",
+      "canonical": "Ziggs",
+      "changed": false
+    },
+    {
+      "field": "opponent",
+      "raw": "Zoe",
+      "canonical": "Zoe",
+      "changed": false
+    },
+    {
+      "field": "opponent",
+      "raw": "Zyra",
+      "canonical": "Zyra",
+      "changed": false
+    }
+  ]
+}

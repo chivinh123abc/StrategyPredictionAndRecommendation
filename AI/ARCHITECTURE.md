@@ -1,3 +1,99 @@
+## Inspector whole-panel collapse — 2026-11-24
+
+Inspectorlocalcollapsedstateconditionalbodymount;headerremainssmall,aria-expanded/controls.NoAPI/selection/modelchange.NV24presentationonly.
+
+## Inspector whole-panel collapse — 2026-11-24
+
+Inspectorlocalcollapsedstateconditionalbodymount;headerremainssmall,aria-expanded/controls.NoAPI/selection/modelchange.NV24presentationonly.
+
+## Inspector click-toggle — 2026-11-24
+
+ReactselectionstateandinspectorOpenareseparate:closepreserveschoice,deselectclearschoice,acceptresetsboth.Nullinitialselectionmeansmanualconfirmrequiresactualclick.Autoengineunchanged.NV24,backend/schemaunchanged.
+
+## Sidebar responsive fit — 2026-11-24
+
+CSS-only responsive900px,grid1/2.7/1/minwidth0/margin0/stretch. Backendunchanged;NV24evidencereports/ui_sidebars_fit.
+
+## Three-column choice placement — 2026-11-24
+
+CSS-only>=1200pxworkspacecolumns300px/flex/300px,gridarea recommend|teams|manual;setup/turnabove,explain/timelinebelow.Verticalcenterboardanddragunchanged.Responsivehẹpgiữlayoutdễđọc.Khôngscientificmethod/APIchange,NV24,noADRnew. Evidence reports/ui_flanking_choices.
+
+## UI placement correction — 2026-11-24
+
+CSS-only: teams-gridmax1000pxjustify-selfcenter;role-slotsverticalblock,portrait47px. SurroundingCSSGridsetupabove/parallelchoices/explanationbelowunchanged. NoAPI/schema/scoremethodchanges;NV24samefeature,noADRscientificnew. Browserlayoutverifiedreports/ui_centered_board. Source/backendsameasADR043.
+
+## Compact UI and assigned lane policy — 2026-11-24
+
+draft_safety.pyrole_preferences/infer_free_rolebasedonsnapshotrole_counts,annotate_lane_supportdirectcurrentrole(enemy_evidence),LANE_REVIEW_VERSIONassigned_lane_review_v2. Pickfactorycontextualannotates andsortsWilsonlowerboundwhenrequestroleorallopenexposed;blinddoesnotgetfreeadvantage;rawcurrentunchanged.Gatesreview n<5. APIrole_preferences/View/manualnullroleinference,identityaddsmanual/laneversions. ReactCSSGridsetupabove/teamcards/parallelchoices/inspectorbelow;nativedataTransferrestrictedside,serverexisting.swapvalidatesandsaves. CLIexplicitfirstpicksmultigame,noalternatingfallback. Noframework/DB/modelchange.
+
+## Schedule constraint for bot partners / per-game first selection — 2026-11-24
+
+Newsmallmodulepair_reservation.py:enemy_bans_before_next_pick+reserve_pairs,táicachepair_evidenceperanchor,vớipoollegalbot/supđầyđủtừadvisorcurrent. Pickfactorycontextualcollectfullbot/sup→annotatepriority/evidence→sortwishlist/supportedtier/pairpriority/score→UIrolefilter/top5. Legacydefaultpickfactorykhôngbậtguard. BanPlannerunchanged. Needs_reviewthêmthiếupair;simhistory/APIwhitelist/explainlưumetadata. Khôngchuyểnscorerthànhprobability/modelopponent/search. APIidentity/configcópair_safetyversion.
+
+Game.first_sidegiữmapcolorindependent,run_seriesnhậnfirst_picks,first_selection_orderkiểmđủnsidevalues;UIexplicitselectortrướckhiSangván,noforcedalternation. Bo5metadata lưuuser_configured/list;nguồnFearlesskhôngchứngnhậnFirstSelection. Noadditionalservice/framework/database. MR24/NV23,sổ29/ADR042.
+
+## Contextual v2 / two panels / snapshot binding — 2026-11-24
+
+Khôngservice/frameworkmới. BanPlanner.pool_value sum(max(score,0) topk)/k thay mean availabletopk; backuptrốngutility0, observationsvẫnmissing. API make_viewcopySession/pindateUTC, fingerprintsourcePro/scope/rosters/teams/scoring/thresholds/version; mismatch409. source_fingerprint LRU1 bindlifetimesource, actualhashkiểmmỗiview; DBđổiđòirestartcache. UIrecommendations/manual-choicehai panelđồnghiện, confirmriêng, configurationstrip/export; sessionfingerprintkhônghashmoves vì cùngconfigdùngquacácván. Thaysettingtrướclượtđầu xoáIDđểkhởitạocấuhìnhmới; testoverridekhôngđổiID/score. Đây làNV-22 +MR-13revision, khôngglobalBO5/lookahead. docsUI/BAN vàsổ28.
+
+## Local UI adapter — 2026-11-24 (ADR-040)
+
+Browser React/TS → same-origin `/api` FastAPI → existing DraftState + DraftAdvisor + BanPlanner → readonly clean Pro/Rank evidence. Vite compile sang `web/dist`; uvicorn127.0.0.1 phục vụ bundle, chỉ mount thư mục dist sau API routes. Không thêm backend service/DB phiên hoặc học lại model. API stateless kiểm toàn bộ history/swaps; derive previous-game locks, không nhận board/score do browser gửi. Một RLock bảo vệ cache shared; advisor LRU4 theo region/as_of. Input/output typed; whitelist advice loại contextual trace lớn/identifiers. LocalStorage v1 input ở browser, export theo thao tác người dùng. UI kiến trúc NV-21 ngoài môn, không thêm MR khoa học. Hướng dẫn và giới hạn: docs/UI_REACT_TYPESCRIPT.md.
+
+## Pick scoring comparison within existing advisor — 2026-11-24
+
+MộtselectorAdvisorPolicy.scoring:currentdefault hoặc explicit simple; recommend_picks giữnguyêncandidatefactory/history/meta snapshot rồi simplebranch returntrướccôngthức pairlift/currentbonus. _simple_rows meanfrequency/cosine/WRcùngrolefallback; _attach_explanations chungkhôngđổiscore. Các cấu trúcMetaSnapshot cũ vẫnđượcxâydựng,dùngchoflex/ban/postdraftsummary, nênkhôngclaimtoànbộMRđãbịgỡ. BanPlanner khôngđổi; điểmđầuvàopickkhác cóthểđổibandenial.
+
+compare_pick_scoring reuseactualstates/chronoSeries/holdout/metrics/seriesbootstrap/diagnostic_score; samepoolperrole/hash,8ablationmetrics. KhôngRanktrongscore/eval, khôngtune. Simulator/series CLI--pick-scoring current|simple lưu đủgiảithíchvàthànhphần, report100actions50pickreasons. Defaultgiữcurrentvìsimplegiảmtestretrieval;146tests+integrationPASS. DocTINH_GIAN_DIEM_RECOMMENDER,sổMR-23NV-20. Khôngframework/model/schema mới.
+
+## Phạm vi course-sized và quota metadata — 2026-11-24
+
+Khôngthêmmodule/framework/thuậttoán. Giữdòngchảydữliệusạch→SQL/Pandas/EDA→ML/CB→demodraftcógiảithích; nghiêncứugiữngoàiluồngbắtbuộc. API/Webfullstack khôngbắtbuộc, thưmụcđóchưatồntạivẫnlàplanned. CácMRruntimehiệncócònphảigọiđúngMR, chưađổicôngthức/banpolicy. ScopegovernanceAIrules/constitution1.2.0/docPHAM_VI_DO_AN_VUA_SUC.
+
+Ranktables/CLI defaulttargetNone; reportv3 bỏquotasốcốđịnh, cácfieldcũnullgiữcompat, referenceU.GGchưanạp/parityFalse. WatchnạplạicùngDBvàcheckpoint,argskhông2.000;pidfamily/loglưumanifest. KhôngschemaSQLite/modelchange; NV-19sổ25.
+
+## Matchup evidence decoration và isolated source experiment — 2026-11-24
+
+matchup_evidence.py: cleanPro -> strictsame-rolejoin -> metricdiff -> descriptiveSourceView; rankSQLite coherentreadonlytransaction -> ingestion-awareavailability -> officialidentity -> SourceView. MatchupExplanations cachedtheoadvisor/context, DraftAdvisor attachsauorder/score; simulatorrenderbảng/why, serializedchoicegiữJSON. Pro scopehistorywindow/region, Rankgộpactualsources trướcas_of, khôngpool2domain. Khôngđổibanplanner/weights/model. export_pro tạo reports/pro_matchups; ví dụ reports/pro_rank_explanations.
+
+evaluate_contextual_evidence: privatefreeze -> prospective5+5seriesafterfreeze or explicitretrospectivediagnostic -> sharedTransferAdvisor/replay/pool -> metrics/CI/temporalflag/readiness. LaneRankEvidence chỉsame-rolehistoricalwins, fixedhybridresidual.0futureProseries thì resultNull/readyFalse; diagnostic khôngpromote. Freeze261Rank/30+30queries,138tests+integrationPASS; docPRO_RANK_MATCHUP_EVIDENCE/sổMR-22/NV-18. KhôngruntimeRanksignalactivation.
+
+## Bảng gộp và luân phiên server — 2026-11-24
+
+Bootstrap mới archive League-v4 Solo/Duo lists rồi batch-upsert seeds/snapshots theo membership thật; refresh15min, source_kind league_list_membership. Cache vẫn TTL15min/snapshot>=end, thiếu/cũ/matchmới dùng individual entries. Không coi seed là chứng cứ của cả trận; classify từng người/all10 không đổi. Raw league_lists/platform/tier/timestamp.json và observed_at gốc để kiểm chứng, không hồi tố rank.
+
+rank_matchup_tables.aggregate nhận pooled/target_games, tính lại từ observations khử trùng, giữ queue/tier/role; ALL_OBSERVED gộp patch/server thực có. export_tables thêm pooled WR cao/thấp/GD15 và progress2.000/kèo, report schema v2, provenance/dấu GD15 giữa patch. update_rank_evidence.next_job lưu metadata scheduler:last_platform, luân phiên discovery/pending giữa server để backlog một nơi không chặn nơi khác. Không đổi schema SQLite, policy Master+/24h/15min, mô hình hoặc Pro score. Doc POOLED_MATCHUPS_UGG_STYLE, sổ MR-21/NV-17; mục tiêu2.000 không là reliability gate.
+
+## RankLake updater -> SQLite evidence -> live descriptive tables — 2026-11-24
+
+rank_lake.py quảnlý private data/database/ranked_evidence.db (khôngcanonical), seed/jobs/snapshot/qualification/rawpath/observations/session. update_rank_evidence.py bootstrapC/GM/M -> recentpagedIDs/queue -> detailageguard -> cachedornew10tiers -> qualificationcheckpoint -> timeline -> atomic10observations; BFSnewhighparticipants. Persistcursor/queue, PK/FK, TTL15minđúngtimestamp, lockmộtwriter vàpolicyfingerprint. Mỗiphiêncaprequest/time, --watchrepeatkhônglifetimecap1.000, khôngcài service. rank_matchup_tables.aggregate/export_tables đọcSQLite-> allraw/sparse và3rankedtables táchwholegameWR/GD15, scopegiữriêng, Wilson/tmeanCI/statusn; checkpoint5jobs/~60s/final, atomicJSON/CSV. KhônggọiML hoặcadvisor; Statskhônglàrecommender/countermechanical. Import10mẫucũidempotent, rawarchive data/raw/rank_lake, reports/rank_matchups_live. Nghiệmthu600+2requests/88games/63tests; docCONTINUOUS_RANK_EVIDENCE, sổMR-20/NV-16.
+
+## Bounded campaigns -> coverage -> conditional Rank readiness — 2026-11-24
+
+collect_rank_batches.py gọi collect_rank_snapshots.collect_run tuần tự với cùng RiotClientbudget/rate state; seedoffset/registry, seenaccepted/rejectedIDs, publiccampaignmanifest. rank_coverage.py đọc từngrun/privateevidence -> reclassify -> chọnaccepted sớmnhất/match -> scope/role/champID observations -> distinct-player count/zerouniverse/deficit CSV -> targetscope mới nhất -> temporalplan và readiness. available_at max10snapshot/detailfetch, history phảiend vàavailabletrướcval, không dùngactualmatchdateđểláchfutureselection. Chưađủn5/3người/2champmỗirole thì chưatriểnkhaiRankrecommender/evaluator/UI. RuntimePro khôngimportmodules này; khônggộp vàoSQLite. Artifacts reports/rank_coverage vàcampaigns, doc RANK_BATCHES_COVERAGE_AND_EVALUATION/sổMR-19/NV-15.
+
+## Snapshot collector độc lập — 2026-11-24
+
+collect_rank_snapshots.py: Challenger seed/Match-v5detail -> League-v4entries/bypuuid cho10người -> parse_snapshot -> perrun private cache -> classify_match(policy floor/age/spread) -> publicsummary/matches/report/acceptedIDs vàacceptedobservations cótimeline. DùngRiotClient retry/rate guard vàtypedRiotError; không importvàoadvisor/ML. Cachekey(platform,puuid) trongrun, khôngreusefreshnessqua các run. Configv2snapshot_collection24h/15min. Cohortsnapshotkhôngthayhistoricalgate trongrank_eligibility/evaluate_rank_transfer; không tạo runtimeRank. Outputs reports/rank_snapshot_collection/{runid}, private data/raw/riot_rank_snapshots/{runid}. Xem sổMR-18/NV-14 vàdocs/COLLECTOR_RANK_SNAPSHOTS.md.
+
+## Hai chế độ và cohort gate — 2026-11-24
+
+Config src/config/draft_modes.json tách Rank (planned runtime) và Pro (legacy/contextual hiện có, Rank signalFalse). rank_eligibility.py đọc raw/manifest/private evidence -> kiểm cấu trúc/tiertemporalprovenance -> audit counts/labels không PUUID. evaluate_rank_transfer gọi audit đúng freeze trước RankEvidence/replay, chỉ nhận eligible IDs; thiếu thì exit2, không overwrite metrics. --allow-seed-only-research là explicit reproduction path, không thay classification thành high verified. Không import gate vào live advisor hoặc dựng runtime Rank ngầm; thiết kế luồng Rank phải riêng luật queue, không reuse nguyên20action/Fearless của giải. Xem sổ mục19/MR-17/NV-13 và docs/HAI_CHE_DO_VA_TIEU_CHUAN_RANK_CAO.md.
+
+## Pipeline nghiên cứu Rank transfer — 2026-11-24
+
+`rank_data_contract.py` tải catalog Data Dragon công khai (không token) và chuẩn ID/alias; collector thêm date range/per-seed/ended_at/interval, cache mới riot_matchups_study. `evaluate_rank_transfer.py` nạp raw và Pro sạch -> chuẩn toàn bộ tên -> draft_states -> split series theo thời gian -> freeze trước validation -> RankEvidence đếm cross-role đối thủ trước cutoff/đúngpatch -> TransferAdvisor subclass chỉ override evaluate_enemy_context -> replay3mode cùng pool -> metrics/bootstrap/contract/splits/trace. Hybrid50/50 residual chỉ khi Rank n>=5, thiếu thì Pro nguyên vẹn. Gold/XP/CS không dùng làm draft inputs. Đây là luồng offline riêng, runtime advisor/ban/simulator không import. Outputs reports/rank_transfer_evaluation, không model hoặc DB mới. Xem MR-16/NV-12 và docs/RANK_TRANSFER_PROTOCOL.md.
+
+## Module Rank/Pro độc lập — 2026-11-24
+
+`src/01_data_pipeline/ranked_matchups.py`: Riot GET -> cache/provenance local `data/raw/riot_matchups/` -> strict roles/timestamps -> Rank observations. `load_clean_tables` read-only -> Pro observations. Aggregate riêng từng miền/patch -> ghép cùngpatch không pooling -> `reports/rank_pro_matchups/`. Advisor/ML không import module này. before mặc định không sau mốc; nearest±1000ms chỉ thống kê mô tả, không dùng cho dự báo đúng mốc. Không migration SQLite hoặc gọi init_db crawler cũ. Hướng dẫn `docs/RIOT_RANK_MATCHUPS.md`, sổ MR-15/NV-11.
+
+## Rà soát50pick contextual, chưa sửa điểm chọn — 2026-11-24
+
+VERIFIED AUDIT: user đã đồng ý bước1 trước, nên chỉ tái dựng50state của5draftcontextual và so248alternativecùngrole hợp lệ; khôngthêmsearch/flexhoặcsửapolicy. audit_draft_choices.py bổsungcompositionevidence/playerhistory/slot/sourcehash/scoregap vàdiagnosticablation; review_contextual_picks.py kiểmtra state/pool/score vàxuấtREVIEW/summary. 50score/top1táilậpkhớpphiênđãlưu, đây khônglàqualitylabel. 38/50pickcóđịchlộnhưngthiếumẫuđốidầu;5blind;7cóítmẫuđủngưỡng.3candidateítmẫuván5:Poppy2,Aurora2,Nasus1.100cặpphốihợp:8đủmẫu,59ítmẫu,32chưathấy,1thiếuanchor. Ablationbỏmetađổitop1ở13lượt,composition14,content1,mastery3,matchup3; khôngsuytướngthaythếtốthơnhoặcđếmsốpicksaibằngtổngnày.
+
+Artifacts reports/contextual_pick_audit.json/md, reports/contextual_pick_review/REVIEW.md vàsummary.json. Sourcehash/state/248legalalternatives/savedscorechecksPASS, khôngthayđổiquyếtđịnhđãlưu/model/DB/train. PhươngphápkiểmđộnhạyMRmớighiởsổmục16; nềnChương1/5x, phầnablationngoàimônvớipolicychẩnđoántựthiếtkế. Phạmvihiệnhànhvẫnlegacy/contextual; bướcflex/đa-serieschưalàmtronglượtnày.
+
 ## Hiện hành: chỉ legacy và contextual — 2026-11-24
 
 Theo yêu cầu người dùng, đã BỎ lookahead khỏi mã ban và CLI; không chỉ ẩn menu. BanPlanner chỉ còn one-stepcontextual, ContextualBanPolicy(top3pool/owncost). Gỡ response_distribution/evaluate_root/rollout/leaf/predictor dependency và --ban-response-model; --ban-strategy chỉ legacy|contextual, legacygiữmặcđịnh. Contextual dùng pool_impact/contextual_trace, không xuất search_trace/branches/sensitivity. OpponentModelcũ giữ độc lập, không được contextual dùng đểban; không mởrộngchứcnăngkhác.

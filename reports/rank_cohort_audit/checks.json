@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "unit_tests_passed": 29,
+  "real_games": 92,
+  "challenger_seed_only_games": 92,
+  "documented_historical_high_all_ten_games": 0,
+  "unknown_is_not_low_rank": true,
+  "rank_runtime": "planned",
+  "default_evaluator_exit": 2,
+  "previous_metrics_json_unchanged": true,
+  "previous_metrics_json_sha256": "1cb16a3cd1e261f2cfb0be818ca92af2893afa78999bd5c09862b000b42a4814",
+  "raw_unchanged": true,
+  "canonical_db_unchanged": true,
+  "db_sha256": "20e3d9739b271283f35a1ba33f345e3593bafe4e31212906d35939d91b2f740c",
+  "source_sha256": {
+    "draft_modes.json": "773281ad700b0db620ebcbac0f659a48f46de2c9fd11a57aeb849e18e0596177",
+    "rank_eligibility.py": "cc2b13cafdab22fcab99e63a4b58067364f17b0f65a118f97b719ad25d1fce54",
+    "evaluate_rank_transfer.py": "3bbf603dc814091d5e1ac25c7068a235f1080c73390270472409353906585b28"
+  }
+}

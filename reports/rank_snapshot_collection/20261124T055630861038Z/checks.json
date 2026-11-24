@@ -1,0 +1,32 @@
+{
+  "status": "PASS",
+  "unit_tests_passed": 40,
+  "real_candidate_games": 5,
+  "real_unique_participants_checked": 49,
+  "accepted_games": 2,
+  "rejected_games": 3,
+  "missing_games": 0,
+  "all_ten_high_snapshot_games": 5,
+  "rejected_only_due_to_age": true,
+  "raw_api_responses_match_normalized_snapshots": true,
+  "offline_classification_replay_matches_report": true,
+  "snapshot_not_admitted_as_historical_rank": true,
+  "accepted_observations": 20,
+  "metric_coverage": {
+    "gold_diff_10": 20,
+    "xp_diff_10": 20,
+    "cs_diff_10": 20,
+    "gold_diff_15": 20,
+    "xp_diff_15": 20,
+    "cs_diff_15": 20
+  },
+  "no_puuid_in_public_exports": true,
+  "raw_unchanged": true,
+  "db_unchanged": true,
+  "db_sha256": "20e3d9739b271283f35a1ba33f345e3593bafe4e31212906d35939d91b2f740c",
+  "verification_source_sha256": {
+    "collect_rank_snapshots.py": "4d6bfa35fd7770329be9bc9e8fbb43af65d27ebf5382d115ecb32b0209c4aa6f",
+    "ranked_matchups.py": "8d02280518f6cc3eebd9df99346b363a42056ce12f1f1e905ef8c11c39686784",
+    "draft_modes.json": "f335c9df506b83cf7b1bf988858bf3e590866c70196bce4d4bec09157c209cdf"
+  }
+}

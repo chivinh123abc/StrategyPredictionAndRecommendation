@@ -1,0 +1,3410 @@
+[
+  {
+    "gameid": "LOLTMNT02_483840",
+    "series_id": "WLDS:LOLTMNT02_483840",
+    "date": "2026-10-26T18:03:09+00:00",
+    "turn": 7,
+    "mode": "pro_only",
+    "observed_pick": "Lee Sin",
+    "rank": 3,
+    "top5": [
+      "Cassiopeia",
+      "Olaf",
+      "Lee Sin",
+      "Ezreal",
+      "Syndra"
+    ],
+    "enemy_count": 0,
+    "rank_supported_candidates": 0,
+    "partition": "validation"
+  },
+  {
+    "gameid": "LOLTMNT02_483840",
+    "series_id": "WLDS:LOLTMNT02_483840",
+    "date": "2026-10-26T18:03:09+00:00",
+    "turn": 7,
+    "mode": "rank_only",
+    "observed_pick": "Lee Sin",
+    "rank": 3,
+    "top5": [
+      "Cassiopeia",
+      "Olaf",
+      "Lee Sin",
+      "Ezreal",
+      "Syndra"
+    ],
+    "enemy_count": 0,
+    "rank_supported_candidates": 0,
+    "partition": "validation"
+  },
+  {
+    "gameid": "LOLTMNT02_483840",
+    "series_id": "WLDS:LOLTMNT02_483840",
+    "date": "2026-10-26T18:03:09+00:00",
+    "turn": 7,
+    "mode": "hybrid",
+    "observed_pick": "Lee Sin",
+    "rank": 3,
+    "top5": [
+      "Cassiopeia",
+      "Olaf",
+      "Lee Sin",
+      "Ezreal",
+      "Syndra"
+    ],
+    "enemy_count": 0,
+    "rank_supported_candidates": 0,
+    "partition": "validation"
+  },
+  {
+    "gameid": "LOLTMNT02_483840",
+    "series_id": "WLDS:LOLTMNT02_483840",
+    "date": "2026-10-26T18:03:09+00:00",
+    "turn": 8,
+    "mode": "pro_only",
+    "observed_pick": "Orianna",
+    "rank": 2,
+    "top5": [
+      "Akali",
+      "Orianna",
+      "Olaf",
+      "Cassiopeia",
+      "Jhin"
+    ],
+    "enemy_count": 1,
+    "rank_supported_candidates": 2,
+    "partition": "validation"
+  },
+  {
+    "gameid": "LOLTMNT02_483840",
+    "series_id": "WLDS:LOLTMNT02_483840",
+    "date": "2026-10-26T18:03:09+00:00",
+    "turn": 8,
+    "mode": "rank_only",
+    "observed_pick": "Orianna",
+    "rank": 2,
+    "top5": [
+      "Akali",
+      "Orianna",
+      "Olaf",
+      "Cassiopeia",
+      "Jhin"
+    ],
+    "enemy_count": 1,
+    "rank_supported_candidates": 2,
+    "partition": "validation"
+  },
+  {
+    "gameid": "LOLTMNT02_483840",
+    "series_id": "WLDS:LOLTMNT02_483840",
+    "date": "2026-10-26T18:03:09+00:00",
+    "turn": 8,
+    "mode": "hybrid",
+    "observed_pick": "Orianna",
+    "rank": 2,
+    "top5": [
+      "Akali",
+      "Orianna",
+      "Olaf",
+      "Cassiopeia",
+      "Jhin"
+    ],
+    "enemy_count": 1,
+    "rank_supported_candidates": 2,
+    "partition": "validation"
+  },
+  {
+    "gameid": "LOLTMNT02_483840",
+    "series_id": "WLDS:LOLTMNT02_483840",
+    "date": "2026-10-26T18:03:09+00:00",
+    "turn": 9,
+    "mode": "pro_only",
+    "observed_pick": "Jarvan IV",
+    "rank": 5,
+    "top5": [
+      "Seraphine",
+      "Nautilus",
+      "Jhin",
+      "Ezreal",
+      "Jarvan IV"
+    ],
+    "enemy_count": 1,
+    "rank_supported_candidates": 2,
+    "partition": "validation"
+  },
+  {
+    "gameid": "LOLTMNT02_483840",
+    "series_id": "WLDS:LOLTMNT02_483840",
+    "date": "2026-10-26T18:03:09+00:00",
+    "turn": 9,
+    "mode": "rank_only",
+    "observed_pick": "Jarvan IV",
+    "rank": 5,
+    "top5": [
+      "Seraphine",
+      "Nautilus",
+      "Jhin",
+      "Ezreal",
+      "Jarvan IV"
+    ],
+    "enemy_count": 1,
+    "rank_supported_candidates": 2,
+    "partition": "validation"
+  },
+  {
+    "gameid": "LOLTMNT02_483840",
+    "series_id": "WLDS:LOLTMNT02_483840",
+    "date": "2026-10-26T18:03:09+00:00",
+    "turn": 9,
+    "mode": "hybrid",
+    "observed_pick": "Jarvan IV",
+    "rank": 5,
+    "top5": [
+      "Seraphine",
+      "Nautilus",
+      "Jhin",
+      "Ezreal",
+      "Jarvan IV"
+    ],
+    "enemy_count": 1,
+    "rank_supported_candidates": 2,
+    "partition": "validation"
+  },
+  {
+    "gameid": "LOLTMNT02_483840",
+    "series_id": "WLDS:LOLTMNT02_483840",
+    "date": "2026-10-26T18:03:09+00:00",
+    "turn": 10,
+    "mode": "pro_only",
+    "observed_pick": "Rumble",
+    "rank": 5,
+    "top5": [
+      "Cassiopeia",
+      "Olaf",
+      "Syndra",
+      "Ezreal",
+      "Rumble"
+    ],
+    "enemy_count": 2,
+    "rank_supported_candidates": 0,
+    "partition": "validation"
+  },
+  {
+    "gameid": "LOLTMNT02_483840",
+    "series_id": "WLDS:LOLTMNT02_483840",
+    "date": "2026-10-26T18:03:09+00:00",
+    "turn": 10,
+    "mode": "rank_only",
+    "observed_pick": "Rumble",
+    "rank": 5,
+    "top5": [
+      "Cassiopeia",
+      "Olaf",
+      "Syndra",
+      "Ezreal",
+      "Rumble"
+    ],
+    "enemy_count": 2,
+    "rank_supported_candidates": 0,
+    "partition": "validation"
+  },
+  {
+    "gameid": "LOLTMNT02_483840",
+    "series_id": "WLDS:LOLTMNT02_483840",
+    "date": "2026-10-26T18:03:09+00:00",
+    "turn": 10,
+    "mode": "hybrid",
+    "observed_pick": "Rumble",
+    "rank": 5,
+    "top5": [
+      "Cassiopeia",
+      "Olaf",
+      "Syndra",
+      "Ezreal",
+      "Rumble"
+    ],
+    "enemy_count": 2,
+    "rank_supported_candidates": 0,
+    "partition": "validation"
+  },
+  {
+    "gameid": "LOLTMNT02_483840",
+    "series_id": "WLDS:LOLTMNT02_483840",
+    "date": "2026-10-26T18:03:09+00:00",
+    "turn": 11,
+    "mode": "pro_only",
+    "observed_pick": "Jhin",
+    "rank": 5,
+    "top5": [
+      "Cassiopeia",
+      "Syndra",
+      "Nautilus",
+      "Ezreal",
+      "Jhin"
+    ],
+    "enemy_count": 2,
+    "rank_supported_candidates": 0,
+    "partition": "validation"
+  },
+  {
+    "gameid": "LOLTMNT02_483840",
+    "series_id": "WLDS:LOLTMNT02_483840",
+    "date": "2026-10-26T18:03:09+00:00",
+    "turn": 11,
+    "mode": "rank_only",
+    "observed_pick": "Jhin",
+    "rank": 5,
+    "top5": [
+      "Cassiopeia",
+      "Syndra",
+      "Nautilus",
+      "Ezreal",
+      "Jhin"
+    ],
+    "enemy_count": 2,
+    "rank_supported_candidates": 0,
+    "partition": "validation"
+  },
+  {
+    "gameid": "LOLTMNT02_483840",
+    "series_id": "WLDS:LOLTMNT02_483840",
+    "date": "2026-10-26T18:03:09+00:00",
+    "turn": 11,
+    "mode": "hybrid",
+    "observed_pick": "Jhin",
+    "rank": 5,
+    "top5": [
+      "Cassiopeia",
+      "Syndra",
+      "Nautilus",
+      "Ezreal",
+      "Jhin"
+    ],
+    "enemy_count": 2,
+    "rank_supported_candidates": 0,
+    "partition": "validation"
+  },
+  {
+    "gameid": "LOLTMNT02_483840",
+    "series_id": "WLDS:LOLTMNT02_483840",
+    "date": "2026-10-26T18:03:09+00:00",
+    "turn": 12,
+    "mode": "pro_only",
+    "observed_pick": "Ambessa",
+    "rank": 6,
+    "top5": [
+      "Seraphine",
+      "Ezreal",
+      "Olaf",
+      "K'Sante",
+      "Nautilus"
+    ],
+    "enemy_count": 3,
+    "rank_supported_candidates": 1,
+    "partition": "validation"
+  },
+  {
+    "gameid": "LOLTMNT02_483840",
+    "series_id": "WLDS:LOLTMNT02_483840",
+    "date": "2026-10-26T18:03:09+00:00",
+    "turn": 12,
+    "mode": "rank_only",
+    "observed_pick": "Ambessa",
+    "rank": 6,
+    "top5": [
+      "Seraphine",
+      "Ezreal",
+      "Olaf",
+      "K'Sante",
+      "Nautilus"
+    ],
+    "enemy_count": 3,
+    "rank_supported_candidates": 1,
+    "partition": "validation"
+  },
+  {
+    "gameid": "LOLTMNT02_483840",
+    "series_id": "WLDS:LOLTMNT02_483840",
+    "date": "2026-10-26T18:03:09+00:00",
+    "turn": 12,
+    "mode": "hybrid",
+    "observed_pick": "Ambessa",
+    "rank": 6,
+    "top5": [
+      "Seraphine",
+      "Ezreal",
+      "Olaf",
+      "K'Sante",
+      "Nautilus"
+    ],
+    "enemy_count": 3,
+    "rank_supported_candidates": 1,
+    "partition": "validation"
+  },
+  {
+    "gameid": "LOLTMNT02_483840",
+    "series_id": "WLDS:LOLTMNT02_483840",
+    "date": "2026-10-26T18:03:09+00:00",
+    "turn": 17,
+    "mode": "pro_only",
+    "observed_pick": "Nautilus",
+    "rank": 2,
+    "top5": [
+      "Seraphine",
+      "Nautilus",
+      "Ashe",
+      "Kalista",
+      "Alistar"
+    ],
+    "enemy_count": 3,
+    "rank_supported_candidates": 0,
+    "partition": "validation"
+  },
+  {
+    "gameid": "LOLTMNT02_483840",
+    "series_id": "WLDS:LOLTMNT02_483840",
+    "date": "2026-10-26T18:03:09+00:00",
+    "turn": 17,
+    "mode": "rank_only",
+    "observed_pick": "Nautilus",
+    "rank": 2,
+    "top5": [
+      "Seraphine",
+      "Nautilus",
+      "Ashe",
+      "Kalista",
+      "Alistar"
+    ],
+    "enemy_count": 3,
+    "rank_supported_candidates": 0,
+    "partition": "validation"
+  },
+  {
+    "gameid": "LOLTMNT02_483840",
+    "series_id": "WLDS:LOLTMNT02_483840",
+    "date": "2026-10-26T18:03:09+00:00",
+    "turn": 17,
+    "mode": "hybrid",
+    "observed_pick": "Nautilus",
+    "rank": 2,
+    "top5": [
+      "Seraphine",
+      "Nautilus",
+      "Ashe",
+      "Kalista",
+      "Alistar"
+    ],
+    "enemy_count": 3,
+    "rank_supported_candidates": 0,
+    "partition": "validation"
+  },
+  {
+    "gameid": "LOLTMNT02_483840",
+    "series_id": "WLDS:LOLTMNT02_483840",
+    "date": "2026-10-26T18:03:09+00:00",
+    "turn": 18,
+    "mode": "pro_only",
+    "observed_pick": "Alistar",
+    "rank": 1,
+    "top5": [
+      "Alistar",
+      "Seraphine",
+      "Viktor",
+      "Akali",
+      "Rakan"
+    ],
+    "enemy_count": 4,
+    "rank_supported_candidates": 1,
+    "partition": "validation"
+  },
+  {
+    "gameid": "LOLTMNT02_483840",
+    "series_id": "WLDS:LOLTMNT02_483840",
+    "date": "2026-10-26T18:03:09+00:00",
+    "turn": 18,
+    "mode": "rank_only",
+    "observed_pick": "Alistar",
+    "rank": 1,
+    "top5": [
+      "Alistar",
+      "Seraphine",
+      "Viktor",
+      "Akali",
+      "Rakan"
+    ],
+    "enemy_count": 4,
+    "rank_supported_candidates": 1,
+    "partition": "validation"
+  },
+  {
+    "gameid": "LOLTMNT02_483840",
+    "series_id": "WLDS:LOLTMNT02_483840",
+    "date": "2026-10-26T18:03:09+00:00",
+    "turn": 18,
+    "mode": "hybrid",
+    "observed_pick": "Alistar",
+    "rank": 1,
+    "top5": [
+      "Alistar",
+      "Seraphine",
+      "Viktor",
+      "Akali",
+      "Rakan"
+    ],
+    "enemy_count": 4,
+    "rank_supported_candidates": 1,
+    "partition": "validation"
+  },
+  {
+    "gameid": "LOLTMNT02_483840",
+    "series_id": "WLDS:LOLTMNT02_483840",
+    "date": "2026-10-26T18:03:09+00:00",
+    "turn": 19,
+    "mode": "pro_only",
+    "observed_pick": "Viktor",
+    "rank": 1,
+    "top5": [
+      "Viktor",
+      "Akali",
+      "Ryze",
+      "Ahri",
+      "Anivia"
+    ],
+    "enemy_count": 4,
+    "rank_supported_candidates": 0,
+    "partition": "validation"
+  },
+  {
+    "gameid": "LOLTMNT02_483840",
+    "series_id": "WLDS:LOLTMNT02_483840",
+    "date": "2026-10-26T18:03:09+00:00",
+    "turn": 19,
+    "mode": "rank_only",
+    "observed_pick": "Viktor",
+    "rank": 1,
+    "top5": [
+      "Viktor",
+      "Akali",
+      "Ryze",
+      "Ahri",
+      "Anivia"
+    ],
+    "enemy_count": 4,
+    "rank_supported_candidates": 0,
+    "partition": "validation"
+  },
+  {
+    "gameid": "LOLTMNT02_483840",
+    "series_id": "WLDS:LOLTMNT02_483840",
+    "date": "2026-10-26T18:03:09+00:00",
+    "turn": 19,
+    "mode": "hybrid",
+    "observed_pick": "Viktor",
+    "rank": 1,
+    "top5": [
+      "Viktor",
+      "Akali",
+      "Ryze",
+      "Ahri",
+      "Anivia"
+    ],
+    "enemy_count": 4,
+    "rank_supported_candidates": 0,
+    "partition": "validation"
+  },
+  {
+    "gameid": "LOLTMNT02_483840",
+    "series_id": "WLDS:LOLTMNT02_483840",
+    "date": "2026-10-26T18:03:09+00:00",
+    "turn": 20,
+    "mode": "pro_only",
+    "observed_pick": "Kai'Sa",
+    "rank": 6,
+    "top5": [
+      "Ashe",
+      "Kalista",
+      "Lucian",
+      "Yunara",
+      "Xayah"
+    ],
+    "enemy_count": 5,
+    "rank_supported_candidates": 0,
+    "partition": "validation"
+  },
+  {
+    "gameid": "LOLTMNT02_483840",
+    "series_id": "WLDS:LOLTMNT02_483840",
+    "date": "2026-10-26T18:03:09+00:00",
+    "turn": 20,
+    "mode": "rank_only",
+    "observed_pick": "Kai'Sa",
+    "rank": 6,
+    "top5": [
+      "Ashe",
+      "Kalista",
+      "Lucian",
+      "Yunara",
+      "Xayah"
+    ],
+    "enemy_count": 5,
+    "rank_supported_candidates": 0,
+    "partition": "validation"
+  },
+  {
+    "gameid": "LOLTMNT02_483840",
+    "series_id": "WLDS:LOLTMNT02_483840",
+    "date": "2026-10-26T18:03:09+00:00",
+    "turn": 20,
+    "mode": "hybrid",
+    "observed_pick": "Kai'Sa",
+    "rank": 6,
+    "top5": [
+      "Ashe",
+      "Kalista",
+      "Lucian",
+      "Yunara",
+      "Xayah"
+    ],
+    "enemy_count": 5,
+    "rank_supported_candidates": 0,
+    "partition": "validation"
+  },
+  {
+    "gameid": "LOLTMNT02_483861",
+    "series_id": "WLDS:LOLTMNT02_483861",
+    "date": "2026-10-26T19:03:14+00:00",
+    "turn": 7,
+    "mode": "pro_only",
+    "observed_pick": "Lee Sin",
+    "rank": 2,
+    "top5": [
+      "Ezreal",
+      "Lee Sin",
+      "Rumble",
+      "Olaf",
+      "Nautilus"
+    ],
+    "enemy_count": 0,
+    "rank_supported_candidates": 0,
+    "partition": "validation"
+  },
+  {
+    "gameid": "LOLTMNT02_483861",
+    "series_id": "WLDS:LOLTMNT02_483861",
+    "date": "2026-10-26T19:03:14+00:00",
+    "turn": 7,
+    "mode": "rank_only",
+    "observed_pick": "Lee Sin",
+    "rank": 2,
+    "top5": [
+      "Ezreal",
+      "Lee Sin",
+      "Rumble",
+      "Olaf",
+      "Nautilus"
+    ],
+    "enemy_count": 0,
+    "rank_supported_candidates": 0,
+    "partition": "validation"
+  },
+  {
+    "gameid": "LOLTMNT02_483861",
+    "series_id": "WLDS:LOLTMNT02_483861",
+    "date": "2026-10-26T19:03:14+00:00",
+    "turn": 7,
+    "mode": "hybrid",
+    "observed_pick": "Lee Sin",
+    "rank": 2,
+    "top5": [
+      "Ezreal",
+      "Lee Sin",
+      "Rumble",
+      "Olaf",
+      "Nautilus"
+    ],
+    "enemy_count": 0,
+    "rank_supported_candidates": 0,
+    "partition": "validation"
+  },
+  {
+    "gameid": "LOLTMNT02_483861",
+    "series_id": "WLDS:LOLTMNT02_483861",
+    "date": "2026-10-26T19:03:14+00:00",
+    "turn": 8,
+    "mode": "pro_only",
+    "observed_pick": "Kalista",
+    "rank": 6,
+    "top5": [
+      "Renata Glasc",
+      "K'Sante",
+      "Orianna",
+      "Olaf",
+      "Ezreal"
+    ],
+    "enemy_count": 1,
+    "rank_supported_candidates": 2,
+    "partition": "validation"
+  },
+  {
+    "gameid": "LOLTMNT02_483861",
+    "series_id": "WLDS:LOLTMNT02_483861",
+    "date": "2026-10-26T19:03:14+00:00",
+    "turn": 8,
+    "mode": "rank_only",
+    "observed_pick": "Kalista",
+    "rank": 6,
+    "top5": [
+      "Renata Glasc",
+      "K'Sante",
+      "Orianna",
+      "Olaf",
+      "Ezreal"
+    ],
+    "enemy_count": 1,
+    "rank_supported_candidates": 2,
+    "partition": "validation"
+  },
+  {
+    "gameid": "LOLTMNT02_483861",
+    "series_id": "WLDS:LOLTMNT02_483861",
+    "date": "2026-10-26T19:03:14+00:00",
+    "turn": 8,
+    "mode": "hybrid",
+    "observed_pick": "Kalista",
+    "rank": 6,
+    "top5": [
+      "Renata Glasc",
+      "K'Sante",
+      "Orianna",
+      "Olaf",
+      "Ezreal"
+    ],
+    "enemy_count": 1,
+    "rank_supported_candidates": 2,
+    "partition": "validation"
+  },
+  {
+    "gameid": "LOLTMNT02_483861",
+    "series_id": "WLDS:LOLTMNT02_483861",
+    "date": "2026-10-26T19:03:14+00:00",
+    "turn": 9,
+    "mode": "pro_only",
+    "observed_pick": "Renata Glasc",
+    "rank": 1,
+    "top5": [
+      "Renata Glasc",
+      "Orianna",
+      "Olaf",
+      "K'Sante",
+      "Jarvan IV"
+    ],
+    "enemy_count": 1,
+    "rank_supported_candidates": 2,
+    "partition": "validation"
+  },
+  {
+    "gameid": "LOLTMNT02_483861",
+    "series_id": "WLDS:LOLTMNT02_483861",
+    "date": "2026-10-26T19:03:14+00:00",
+    "turn": 9,
+    "mode": "rank_only",
+    "observed_pick": "Renata Glasc",
+    "rank": 1,
+    "top5": [
+      "Renata Glasc",
+      "Orianna",
+      "Olaf",
+      "K'Sante",
+      "Jarvan IV"
+    ],
+    "enemy_count": 1,
+    "rank_supported_candidates": 2,
+    "partition": "validation"
+  },
+  {
+    "gameid": "LOLTMNT02_483861",
+    "series_id": "WLDS:LOLTMNT02_483861",
+    "date": "2026-10-26T19:03:14+00:00",
+    "turn": 9,
+    "mode": "hybrid",
+    "observed_pick": "Renata Glasc",
+    "rank": 1,
+    "top5": [
+      "Renata Glasc",
+      "Orianna",
+      "Olaf",
+      "K'Sante",
+      "Jarvan IV"
+    ],
+    "enemy_count": 1,
+    "rank_supported_candidates": 2,
+    "partition": "validation"
+  },
+  {
+    "gameid": "LOLTMNT02_483861",
+    "series_id": "WLDS:LOLTMNT02_483861",
+    "date": "2026-10-26T19:03:14+00:00",
+    "turn": 10,
+    "mode": "pro_only",
+    "observed_pick": "Caitlyn",
+    "rank": null,
+    "top5": [
+      "Ezreal",
+      "Rumble",
+      "Nautilus",
+      "Olaf",
+      "Locke"
+    ],
+    "enemy_count": 2,
+    "rank_supported_candidates": 0,
+    "partition": "validation"
+  },
+  {
+    "gameid": "LOLTMNT02_483861",
+    "series_id": "WLDS:LOLTMNT02_483861",
+    "date": "2026-10-26T19:03:14+00:00",
+    "turn": 10,
+    "mode": "rank_only",
+    "observed_pick": "Caitlyn",
+    "rank": null,
+    "top5": [
+      "Ezreal",
+      "Rumble",
+      "Nautilus",
+      "Olaf",
+      "Locke"
+    ],
+    "enemy_count": 2,
+    "rank_supported_candidates": 0,
+    "partition": "validation"
+  },
+  {
+    "gameid": "LOLTMNT02_483861",
+    "series_id": "WLDS:LOLTMNT02_483861",
+    "date": "2026-10-26T19:03:14+00:00",
+    "turn": 10,
+    "mode": "hybrid",
+    "observed_pick": "Caitlyn",
+    "rank": null,
+    "top5": [
+      "Ezreal",
+      "Rumble",
+      "Nautilus",
+      "Olaf",
+      "Locke"
+    ],
+    "enemy_count": 2,
+    "rank_supported_candidates": 0,
+    "partition": "validation"
+  },
+  {
+    "gameid": "LOLTMNT02_483861",
+    "series_id": "WLDS:LOLTMNT02_483861",
+    "date": "2026-10-26T19:03:14+00:00",
+    "turn": 11,
+    "mode": "pro_only",
+    "observed_pick": "Elise",
+    "rank": null,
+    "top5": [
+      "Nautilus",
+      "Rumble",
+      "Olaf",
+      "Locke",
+      "Alistar"
+    ],
+    "enemy_count": 2,
+    "rank_supported_candidates": 0,
+    "partition": "validation"
+  },
+  {
+    "gameid": "LOLTMNT02_483861",
+    "series_id": "WLDS:LOLTMNT02_483861",
+    "date": "2026-10-26T19:03:14+00:00",
+    "turn": 11,
+    "mode": "rank_only",
+    "observed_pick": "Elise",
+    "rank": null,
+    "top5": [
+      "Nautilus",
+      "Rumble",
+      "Olaf",
+      "Locke",
+      "Alistar"
+    ],
+    "enemy_count": 2,
+    "rank_supported_candidates": 0,
+    "partition": "validation"
+  },
+  {
+    "gameid": "LOLTMNT02_483861",
+    "series_id": "WLDS:LOLTMNT02_483861",
+    "date": "2026-10-26T19:03:14+00:00",
+    "turn": 11,
+    "mode": "hybrid",
+    "observed_pick": "Elise",
+    "rank": null,
+    "top5": [
+      "Nautilus",
+      "Rumble",
+      "Olaf",
+      "Locke",
+      "Alistar"
+    ],
+    "enemy_count": 2,
+    "rank_supported_candidates": 0,
+    "partition": "validation"
+  },
+  {
+    "gameid": "LOLTMNT02_483861",
+    "series_id": "WLDS:LOLTMNT02_483861",
+    "date": "2026-10-26T19:03:14+00:00",
+    "turn": 12,
+    "mode": "pro_only",
+    "observed_pick": "Orianna",
+    "rank": 3,
+    "top5": [
+      "Olaf",
+      "K'Sante",
+      "Orianna",
+      "Jarvan IV",
+      "Rumble"
+    ],
+    "enemy_count": 3,
+    "rank_supported_candidates": 0,
+    "partition": "validation"
+  },
+  {
+    "gameid": "LOLTMNT02_483861",
+    "series_id": "WLDS:LOLTMNT02_483861",
+    "date": "2026-10-26T19:03:14+00:00",
+    "turn": 12,
+    "mode": "rank_only",
+    "observed_pick": "Orianna",
+    "rank": 3,
+    "top5": [
+      "Olaf",
+      "K'Sante",
+      "Orianna",
+      "Jarvan IV",
+      "Rumble"
+    ],
+    "enemy_count": 3,
+    "rank_supported_candidates": 0,
+    "partition": "validation"
+  },
+  {
+    "gameid": "LOLTMNT02_483861",
+    "series_id": "WLDS:LOLTMNT02_483861",
+    "date": "2026-10-26T19:03:14+00:00",
+    "turn": 12,
+    "mode": "hybrid",
+    "observed_pick": "Orianna",
+    "rank": 3,
+    "top5": [
+      "Olaf",
+      "K'Sante",
+      "Orianna",
+      "Jarvan IV",
+      "Rumble"
+    ],
+    "enemy_count": 3,
+    "rank_supported_candidates": 0,
+    "partition": "validation"
+  },
+  {
+    "gameid": "LOLTMNT02_483861",
+    "series_id": "WLDS:LOLTMNT02_483861",
+    "date": "2026-10-26T19:03:14+00:00",
+    "turn": 17,
+    "mode": "pro_only",
+    "observed_pick": "Wukong",
+    "rank": 8,
+    "top5": [
+      "K'Sante",
+      "Olaf",
+      "Pantheon",
+      "Ambessa",
+      "Jax"
+    ],
+    "enemy_count": 3,
+    "rank_supported_candidates": 0,
+    "partition": "validation"
+  },
+  {
+    "gameid": "LOLTMNT02_483861",
+    "series_id": "WLDS:LOLTMNT02_483861",
+    "date": "2026-10-26T19:03:14+00:00",
+    "turn": 17,
+    "mode": "rank_only",
+    "observed_pick": "Wukong",
+    "rank": 8,
+    "top5": [
+      "K'Sante",
+      "Olaf",
+      "Pantheon",
+      "Ambessa",
+      "Jax"
+    ],
+    "enemy_count": 3,
+    "rank_supported_candidates": 0,
+    "partition": "validation"
+  },
+  {
+    "gameid": "LOLTMNT02_483861",
+    "series_id": "WLDS:LOLTMNT02_483861",
+    "date": "2026-10-26T19:03:14+00:00",
+    "turn": 17,
+    "mode": "hybrid",
+    "observed_pick": "Wukong",
+    "rank": 8,
+    "top5": [
+      "K'Sante",
+      "Olaf",
+      "Pantheon",
+      "Ambessa",
+      "Jax"
+    ],
+    "enemy_count": 3,
+    "rank_supported_candidates": 0,
+    "partition": "validation"
+  },
+  {
+    "gameid": "LOLTMNT02_483861",
+    "series_id": "WLDS:LOLTMNT02_483861",
+    "date": "2026-10-26T19:03:14+00:00",
+    "turn": 18,
+    "mode": "pro_only",
+    "observed_pick": "Akali",
+    "rank": null,
+    "top5": [
+      "Ezreal",
+      "Nautilus",
+      "Alistar",
+      "Jhin",
+      "Seraphine"
+    ],
+    "enemy_count": 4,
+    "rank_supported_candidates": 0,
+    "partition": "validation"
+  },
+  {
+    "gameid": "LOLTMNT02_483861",
+    "series_id": "WLDS:LOLTMNT02_483861",
+    "date": "2026-10-26T19:03:14+00:00",
+    "turn": 18,
+    "mode": "rank_only",
+    "observed_pick": "Akali",
+    "rank": null,
+    "top5": [
+      "Ezreal",
+      "Nautilus",
+      "Alistar",
+      "Jhin",
+      "Seraphine"
+    ],
+    "enemy_count": 4,
+    "rank_supported_candidates": 0,
+    "partition": "validation"
+  },
+  {
+    "gameid": "LOLTMNT02_483861",
+    "series_id": "WLDS:LOLTMNT02_483861",
+    "date": "2026-10-26T19:03:14+00:00",
+    "turn": 18,
+    "mode": "hybrid",
+    "observed_pick": "Akali",
+    "rank": null,
+    "top5": [
+      "Ezreal",
+      "Nautilus",
+      "Alistar",
+      "Jhin",
+      "Seraphine"
+    ],
+    "enemy_count": 4,
+    "rank_supported_candidates": 0,
+    "partition": "validation"
+  },
+  {
+    "gameid": "LOLTMNT02_483861",
+    "series_id": "WLDS:LOLTMNT02_483861",
+    "date": "2026-10-26T19:03:14+00:00",
+    "turn": 19,
+    "mode": "pro_only",
+    "observed_pick": "Shen",
+    "rank": null,
+    "top5": [
+      "Nautilus",
+      "Alistar",
+      "Seraphine",
+      "Lulu",
+      "Karma"
+    ],
+    "enemy_count": 4,
+    "rank_supported_candidates": 0,
+    "partition": "validation"
+  },
+  {
+    "gameid": "LOLTMNT02_483861",
+    "series_id": "WLDS:LOLTMNT02_483861",
+    "date": "2026-10-26T19:03:14+00:00",
+    "turn": 19,
+    "mode": "rank_only",
+    "observed_pick": "Shen",
+    "rank": null,
+    "top5": [
+      "Nautilus",
+      "Alistar",
+      "Seraphine",
+      "Lulu",
+      "Karma"
+    ],
+    "enemy_count": 4,
+    "rank_supported_candidates": 0,
+    "partition": "validation"
+  },
+  {
+    "gameid": "LOLTMNT02_483861",
+    "series_id": "WLDS:LOLTMNT02_483861",
+    "date": "2026-10-26T19:03:14+00:00",
+    "turn": 19,
+    "mode": "hybrid",
+    "observed_pick": "Shen",
+    "rank": null,
+    "top5": [
+      "Nautilus",
+      "Alistar",
+      "Seraphine",
+      "Lulu",
+      "Karma"
+    ],
+    "enemy_count": 4,
+    "rank_supported_candidates": 0,
+    "partition": "validation"
+  },
+  {
+    "gameid": "LOLTMNT02_483861",
+    "series_id": "WLDS:LOLTMNT02_483861",
+    "date": "2026-10-26T19:03:14+00:00",
+    "turn": 20,
+    "mode": "pro_only",
+    "observed_pick": "Gnar",
+    "rank": 8,
+    "top5": [
+      "K'Sante",
+      "Olaf",
+      "Ambessa",
+      "Galio",
+      "Renekton"
+    ],
+    "enemy_count": 5,
+    "rank_supported_candidates": 0,
+    "partition": "validation"
+  },
+  {
+    "gameid": "LOLTMNT02_483861",
+    "series_id": "WLDS:LOLTMNT02_483861",
+    "date": "2026-10-26T19:03:14+00:00",
+    "turn": 20,
+    "mode": "rank_only",
+    "observed_pick": "Gnar",
+    "rank": 8,
+    "top5": [
+      "K'Sante",
+      "Olaf",
+      "Ambessa",
+      "Galio",
+      "Renekton"
+    ],
+    "enemy_count": 5,
+    "rank_supported_candidates": 0,
+    "partition": "validation"
+  },
+  {
+    "gameid": "LOLTMNT02_483861",
+    "series_id": "WLDS:LOLTMNT02_483861",
+    "date": "2026-10-26T19:03:14+00:00",
+    "turn": 20,
+    "mode": "hybrid",
+    "observed_pick": "Gnar",
+    "rank": 8,
+    "top5": [
+      "K'Sante",
+      "Olaf",
+      "Ambessa",
+      "Galio",
+      "Renekton"
+    ],
+    "enemy_count": 5,
+    "rank_supported_candidates": 0,
+    "partition": "validation"
+  },
+  {
+    "gameid": "LOLTMNT02_482893",
+    "series_id": "WLDS:LOLTMNT02_483861",
+    "date": "2026-10-26T20:01:50+00:00",
+    "turn": 7,
+    "mode": "pro_only",
+    "observed_pick": "Vi",
+    "rank": 1,
+    "top5": [
+      "Vi",
+      "Ezreal",
+      "Rumble",
+      "Nautilus",
+      "Locke"
+    ],
+    "enemy_count": 0,
+    "rank_supported_candidates": 0,
+    "partition": "validation"
+  },
+  {
+    "gameid": "LOLTMNT02_482893",
+    "series_id": "WLDS:LOLTMNT02_483861",
+    "date": "2026-10-26T20:01:50+00:00",
+    "turn": 7,
+    "mode": "rank_only",
+    "observed_pick": "Vi",
+    "rank": 1,
+    "top5": [
+      "Vi",
+      "Ezreal",
+      "Rumble",
+      "Nautilus",
+      "Locke"
+    ],
+    "enemy_count": 0,
+    "rank_supported_candidates": 0,
+    "partition": "validation"
+  },
+  {
+    "gameid": "LOLTMNT02_482893",
+    "series_id": "WLDS:LOLTMNT02_483861",
+    "date": "2026-10-26T20:01:50+00:00",
+    "turn": 7,
+    "mode": "hybrid",
+    "observed_pick": "Vi",
+    "rank": 1,
+    "top5": [
+      "Vi",
+      "Ezreal",
+      "Rumble",
+      "Nautilus",
+      "Locke"
+    ],
+    "enemy_count": 0,
+    "rank_supported_candidates": 0,
+    "partition": "validation"
+  },
+  {
+    "gameid": "LOLTMNT02_482893",
+    "series_id": "WLDS:LOLTMNT02_483861",
+    "date": "2026-10-26T20:01:50+00:00",
+    "turn": 8,
+    "mode": "pro_only",
+    "observed_pick": "Ashe",
+    "rank": 19,
+    "top5": [
+      "K'Sante",
+      "Ezreal",
+      "Rumble",
+      "Jarvan IV",
+      "Pantheon"
+    ],
+    "enemy_count": 1,
+    "rank_supported_candidates": 0,
+    "partition": "validation"
+  },
+  {
+    "gameid": "LOLTMNT02_482893",
+    "series_id": "WLDS:LOLTMNT02_483861",
+    "date": "2026-10-26T20:01:50+00:00",
+    "turn": 8,
+    "mode": "rank_only",
+    "observed_pick": "Ashe",
+    "rank": 19,
+    "top5": [
+      "K'Sante",
+      "Ezreal",
+      "Rumble",
+      "Jarvan IV",
+      "Pantheon"
+    ],
+    "enemy_count": 1,
+    "rank_supported_candidates": 0,
+    "partition": "validation"
+  },
+  {
+    "gameid": "LOLTMNT02_482893",
+    "series_id": "WLDS:LOLTMNT02_483861",
+    "date": "2026-10-26T20:01:50+00:00",
+    "turn": 8,
+    "mode": "hybrid",
+    "observed_pick": "Ashe",
+    "rank": 19,
+    "top5": [
+      "K'Sante",
+      "Ezreal",
+      "Rumble",
+      "Jarvan IV",
+      "Pantheon"
+    ],
+    "enemy_count": 1,
+    "rank_supported_candidates": 0,
+    "partition": "validation"
+  },
+  {
+    "gameid": "LOLTMNT02_482893",
+    "series_id": "WLDS:LOLTMNT02_483861",
+    "date": "2026-10-26T20:01:50+00:00",
+    "turn": 9,
+    "mode": "pro_only",
+    "observed_pick": "Seraphine",
+    "rank": 1,
+    "top5": [
+      "Seraphine",
+      "K'Sante",
+      "Pantheon",
+      "Jarvan IV",
+      "Rumble"
+    ],
+    "enemy_count": 1,
+    "rank_supported_candidates": 0,
+    "partition": "validation"
+  },
+  {
+    "gameid": "LOLTMNT02_482893",
+    "series_id": "WLDS:LOLTMNT02_483861",
+    "date": "2026-10-26T20:01:50+00:00",
+    "turn": 9,
+    "mode": "rank_only",
+    "observed_pick": "Seraphine",
+    "rank": 1,
+    "top5": [
+      "Seraphine",
+      "K'Sante",
+      "Pantheon",
+      "Jarvan IV",
+      "Rumble"
+    ],
+    "enemy_count": 1,
+    "rank_supported_candidates": 0,
+    "partition": "validation"
+  },
+  {
+    "gameid": "LOLTMNT02_482893",
+    "series_id": "WLDS:LOLTMNT02_483861",
+    "date": "2026-10-26T20:01:50+00:00",
+    "turn": 9,
+    "mode": "hybrid",
+    "observed_pick": "Seraphine",
+    "rank": 1,
+    "top5": [
+      "Seraphine",
+      "K'Sante",
+      "Pantheon",
+      "Jarvan IV",
+      "Rumble"
+    ],
+    "enemy_count": 1,
+    "rank_supported_candidates": 0,
+    "partition": "validation"
+  },
+  {
+    "gameid": "LOLTMNT02_482893",
+    "series_id": "WLDS:LOLTMNT02_483861",
+    "date": "2026-10-26T20:01:50+00:00",
+    "turn": 10,
+    "mode": "pro_only",
+    "observed_pick": "Locke",
+    "rank": 5,
+    "top5": [
+      "Ezreal",
+      "Nautilus",
+      "Rumble",
+      "Jhin",
+      "Locke"
+    ],
+    "enemy_count": 2,
+    "rank_supported_candidates": 0,
+    "partition": "validation"
+  },
+  {
+    "gameid": "LOLTMNT02_482893",
+    "series_id": "WLDS:LOLTMNT02_483861",
+    "date": "2026-10-26T20:01:50+00:00",
+    "turn": 10,
+    "mode": "rank_only",
+    "observed_pick": "Locke",
+    "rank": 5,
+    "top5": [
+      "Ezreal",
+      "Nautilus",
+      "Rumble",
+      "Jhin",
+      "Locke"
+    ],
+    "enemy_count": 2,
+    "rank_supported_candidates": 0,
+    "partition": "validation"
+  },
+  {
+    "gameid": "LOLTMNT02_482893",
+    "series_id": "WLDS:LOLTMNT02_483861",
+    "date": "2026-10-26T20:01:50+00:00",
+    "turn": 10,
+    "mode": "hybrid",
+    "observed_pick": "Locke",
+    "rank": 5,
+    "top5": [
+      "Ezreal",
+      "Nautilus",
+      "Rumble",
+      "Jhin",
+      "Locke"
+    ],
+    "enemy_count": 2,
+    "rank_supported_candidates": 0,
+    "partition": "validation"
+  },
+  {
+    "gameid": "LOLTMNT02_482893",
+    "series_id": "WLDS:LOLTMNT02_483861",
+    "date": "2026-10-26T20:01:50+00:00",
+    "turn": 11,
+    "mode": "pro_only",
+    "observed_pick": "Nautilus",
+    "rank": 2,
+    "top5": [
+      "Ezreal",
+      "Nautilus",
+      "Rumble",
+      "Jhin",
+      "Alistar"
+    ],
+    "enemy_count": 2,
+    "rank_supported_candidates": 0,
+    "partition": "validation"
+  },
+  {
+    "gameid": "LOLTMNT02_482893",
+    "series_id": "WLDS:LOLTMNT02_483861",
+    "date": "2026-10-26T20:01:50+00:00",
+    "turn": 11,
+    "mode": "rank_only",
+    "observed_pick": "Nautilus",
+    "rank": 2,
+    "top5": [
+      "Ezreal",
+      "Nautilus",
+      "Rumble",
+      "Jhin",
+      "Alistar"
+    ],
+    "enemy_count": 2,
+    "rank_supported_candidates": 0,
+    "partition": "validation"
+  },
+  {
+    "gameid": "LOLTMNT02_482893",
+    "series_id": "WLDS:LOLTMNT02_483861",
+    "date": "2026-10-26T20:01:50+00:00",
+    "turn": 11,
+    "mode": "hybrid",
+    "observed_pick": "Nautilus",
+    "rank": 2,
+    "top5": [
+      "Ezreal",
+      "Nautilus",
+      "Rumble",
+      "Jhin",
+      "Alistar"
+    ],
+    "enemy_count": 2,
+    "rank_supported_candidates": 0,
+    "partition": "validation"
+  },
+  {
+    "gameid": "LOLTMNT02_482893",
+    "series_id": "WLDS:LOLTMNT02_483861",
+    "date": "2026-10-26T20:01:50+00:00",
+    "turn": 12,
+    "mode": "pro_only",
+    "observed_pick": "Galio",
+    "rank": 5,
+    "top5": [
+      "K'Sante",
+      "Jarvan IV",
+      "Pantheon",
+      "Rumble",
+      "Galio"
+    ],
+    "enemy_count": 3,
+    "rank_supported_candidates": 0,
+    "partition": "validation"
+  },
+  {
+    "gameid": "LOLTMNT02_482893",
+    "series_id": "WLDS:LOLTMNT02_483861",
+    "date": "2026-10-26T20:01:50+00:00",
+    "turn": 12,
+    "mode": "rank_only",
+    "observed_pick": "Galio",
+    "rank": 5,
+    "top5": [
+      "K'Sante",
+      "Jarvan IV",
+      "Pantheon",
+      "Rumble",
+      "Galio"
+    ],
+    "enemy_count": 3,
+    "rank_supported_candidates": 0,
+    "partition": "validation"
+  },
+  {
+    "gameid": "LOLTMNT02_482893",
+    "series_id": "WLDS:LOLTMNT02_483861",
+    "date": "2026-10-26T20:01:50+00:00",
+    "turn": 12,
+    "mode": "hybrid",
+    "observed_pick": "Galio",
+    "rank": 5,
+    "top5": [
+      "K'Sante",
+      "Jarvan IV",
+      "Pantheon",
+      "Rumble",
+      "Galio"
+    ],
+    "enemy_count": 3,
+    "rank_supported_candidates": 0,
+    "partition": "validation"
+  },
+  {
+    "gameid": "LOLTMNT02_482893",
+    "series_id": "WLDS:LOLTMNT02_483861",
+    "date": "2026-10-26T20:01:50+00:00",
+    "turn": 17,
+    "mode": "pro_only",
+    "observed_pick": "Trundle",
+    "rank": 4,
+    "top5": [
+      "Pantheon",
+      "Viktor",
+      "Ahri",
+      "Trundle",
+      "Maokai"
+    ],
+    "enemy_count": 3,
+    "rank_supported_candidates": 0,
+    "partition": "validation"
+  },
+  {
+    "gameid": "LOLTMNT02_482893",
+    "series_id": "WLDS:LOLTMNT02_483861",
+    "date": "2026-10-26T20:01:50+00:00",
+    "turn": 17,
+    "mode": "rank_only",
+    "observed_pick": "Trundle",
+    "rank": 4,
+    "top5": [
+      "Pantheon",
+      "Viktor",
+      "Ahri",
+      "Trundle",
+      "Maokai"
+    ],
+    "enemy_count": 3,
+    "rank_supported_candidates": 0,
+    "partition": "validation"
+  },
+  {
+    "gameid": "LOLTMNT02_482893",
+    "series_id": "WLDS:LOLTMNT02_483861",
+    "date": "2026-10-26T20:01:50+00:00",
+    "turn": 17,
+    "mode": "hybrid",
+    "observed_pick": "Trundle",
+    "rank": 4,
+    "top5": [
+      "Pantheon",
+      "Viktor",
+      "Ahri",
+      "Trundle",
+      "Maokai"
+    ],
+    "enemy_count": 3,
+    "rank_supported_candidates": 0,
+    "partition": "validation"
+  },
+  {
+    "gameid": "LOLTMNT02_482893",
+    "series_id": "WLDS:LOLTMNT02_483861",
+    "date": "2026-10-26T20:01:50+00:00",
+    "turn": 18,
+    "mode": "pro_only",
+    "observed_pick": "Miss Fortune",
+    "rank": null,
+    "top5": [
+      "Ezreal",
+      "Ambessa",
+      "Kai'Sa",
+      "Yunara",
+      "Lucian"
+    ],
+    "enemy_count": 4,
+    "rank_supported_candidates": 0,
+    "partition": "validation"
+  },
+  {
+    "gameid": "LOLTMNT02_482893",
+    "series_id": "WLDS:LOLTMNT02_483861",
+    "date": "2026-10-26T20:01:50+00:00",
+    "turn": 18,
+    "mode": "rank_only",
+    "observed_pick": "Miss Fortune",
+    "rank": null,
+    "top5": [
+      "Ezreal",
+      "Ambessa",
+      "Kai'Sa",
+      "Yunara",
+      "Lucian"
+    ],
+    "enemy_count": 4,
+    "rank_supported_candidates": 0,
+    "partition": "validation"
+  },
+  {
+    "gameid": "LOLTMNT02_482893",
+    "series_id": "WLDS:LOLTMNT02_483861",
+    "date": "2026-10-26T20:01:50+00:00",
+    "turn": 18,
+    "mode": "hybrid",
+    "observed_pick": "Miss Fortune",
+    "rank": null,
+    "top5": [
+      "Ezreal",
+      "Ambessa",
+      "Kai'Sa",
+      "Yunara",
+      "Lucian"
+    ],
+    "enemy_count": 4,
+    "rank_supported_candidates": 0,
+    "partition": "validation"
+  },
+  {
+    "gameid": "LOLTMNT02_482893",
+    "series_id": "WLDS:LOLTMNT02_483861",
+    "date": "2026-10-26T20:01:50+00:00",
+    "turn": 19,
+    "mode": "pro_only",
+    "observed_pick": "Jax",
+    "rank": 2,
+    "top5": [
+      "Ambessa",
+      "Jax",
+      "Camille",
+      "Renekton"
+    ],
+    "enemy_count": 4,
+    "rank_supported_candidates": 0,
+    "partition": "validation"
+  },
+  {
+    "gameid": "LOLTMNT02_482893",
+    "series_id": "WLDS:LOLTMNT02_483861",
+    "date": "2026-10-26T20:01:50+00:00",
+    "turn": 19,
+    "mode": "rank_only",
+    "observed_pick": "Jax",
+    "rank": 2,
+    "top5": [
+      "Ambessa",
+      "Jax",
+      "Camille",
+      "Renekton"
+    ],
+    "enemy_count": 4,
+    "rank_supported_candidates": 0,
+    "partition": "validation"
+  },
+  {
+    "gameid": "LOLTMNT02_482893",
+    "series_id": "WLDS:LOLTMNT02_483861",
+    "date": "2026-10-26T20:01:50+00:00",
+    "turn": 19,
+    "mode": "hybrid",
+    "observed_pick": "Jax",
+    "rank": 2,
+    "top5": [
+      "Ambessa",
+      "Jax",
+      "Camille",
+      "Renekton"
+    ],
+    "enemy_count": 4,
+    "rank_supported_candidates": 0,
+    "partition": "validation"
+  },
+  {
+    "gameid": "LOLTMNT02_482893",
+    "series_id": "WLDS:LOLTMNT02_483861",
+    "date": "2026-10-26T20:01:50+00:00",
+    "turn": 20,
+    "mode": "pro_only",
+    "observed_pick": "Kennen",
+    "rank": null,
+    "top5": [
+      "Ahri",
+      "Viktor",
+      "Ryze",
+      "Anivia"
+    ],
+    "enemy_count": 5,
+    "rank_supported_candidates": 0,
+    "partition": "validation"
+  },
+  {
+    "gameid": "LOLTMNT02_482893",
+    "series_id": "WLDS:LOLTMNT02_483861",
+    "date": "2026-10-26T20:01:50+00:00",
+    "turn": 20,
+    "mode": "rank_only",
+    "observed_pick": "Kennen",
+    "rank": null,
+    "top5": [
+      "Ahri",
+      "Viktor",
+      "Ryze",
+      "Anivia"
+    ],
+    "enemy_count": 5,
+    "rank_supported_candidates": 0,
+    "partition": "validation"
+  },
+  {
+    "gameid": "LOLTMNT02_482893",
+    "series_id": "WLDS:LOLTMNT02_483861",
+    "date": "2026-10-26T20:01:50+00:00",
+    "turn": 20,
+    "mode": "hybrid",
+    "observed_pick": "Kennen",
+    "rank": null,
+    "top5": [
+      "Ahri",
+      "Viktor",
+      "Ryze",
+      "Anivia"
+    ],
+    "enemy_count": 5,
+    "rank_supported_candidates": 0,
+    "partition": "validation"
+  },
+  {
+    "gameid": "LOLTMNT02_486541",
+    "series_id": "WLDS:LOLTMNT02_486541",
+    "date": "2026-10-31T17:09:59+00:00",
+    "turn": 7,
+    "mode": "pro_only",
+    "observed_pick": "Cassiopeia",
+    "rank": 2,
+    "top5": [
+      "Ezreal",
+      "Cassiopeia",
+      "Olaf",
+      "Syndra",
+      "Lee Sin"
+    ],
+    "enemy_count": 0,
+    "rank_supported_candidates": 0,
+    "partition": "test"
+  },
+  {
+    "gameid": "LOLTMNT02_486541",
+    "series_id": "WLDS:LOLTMNT02_486541",
+    "date": "2026-10-31T17:09:59+00:00",
+    "turn": 7,
+    "mode": "rank_only",
+    "observed_pick": "Cassiopeia",
+    "rank": 2,
+    "top5": [
+      "Ezreal",
+      "Cassiopeia",
+      "Olaf",
+      "Syndra",
+      "Lee Sin"
+    ],
+    "enemy_count": 0,
+    "rank_supported_candidates": 0,
+    "partition": "test"
+  },
+  {
+    "gameid": "LOLTMNT02_486541",
+    "series_id": "WLDS:LOLTMNT02_486541",
+    "date": "2026-10-31T17:09:59+00:00",
+    "turn": 7,
+    "mode": "hybrid",
+    "observed_pick": "Cassiopeia",
+    "rank": 2,
+    "top5": [
+      "Ezreal",
+      "Cassiopeia",
+      "Olaf",
+      "Syndra",
+      "Lee Sin"
+    ],
+    "enemy_count": 0,
+    "rank_supported_candidates": 0,
+    "partition": "test"
+  },
+  {
+    "gameid": "LOLTMNT02_486541",
+    "series_id": "WLDS:LOLTMNT02_486541",
+    "date": "2026-10-31T17:09:59+00:00",
+    "turn": 8,
+    "mode": "pro_only",
+    "observed_pick": "Ashe",
+    "rank": 22,
+    "top5": [
+      "Ezreal",
+      "Lee Sin",
+      "Olaf",
+      "Syndra",
+      "Rumble"
+    ],
+    "enemy_count": 1,
+    "rank_supported_candidates": 0,
+    "partition": "test"
+  },
+  {
+    "gameid": "LOLTMNT02_486541",
+    "series_id": "WLDS:LOLTMNT02_486541",
+    "date": "2026-10-31T17:09:59+00:00",
+    "turn": 8,
+    "mode": "rank_only",
+    "observed_pick": "Ashe",
+    "rank": 22,
+    "top5": [
+      "Ezreal",
+      "Lee Sin",
+      "Olaf",
+      "Syndra",
+      "Rumble"
+    ],
+    "enemy_count": 1,
+    "rank_supported_candidates": 0,
+    "partition": "test"
+  },
+  {
+    "gameid": "LOLTMNT02_486541",
+    "series_id": "WLDS:LOLTMNT02_486541",
+    "date": "2026-10-31T17:09:59+00:00",
+    "turn": 8,
+    "mode": "hybrid",
+    "observed_pick": "Ashe",
+    "rank": 22,
+    "top5": [
+      "Ezreal",
+      "Lee Sin",
+      "Olaf",
+      "Syndra",
+      "Rumble"
+    ],
+    "enemy_count": 1,
+    "rank_supported_candidates": 0,
+    "partition": "test"
+  },
+  {
+    "gameid": "LOLTMNT02_486541",
+    "series_id": "WLDS:LOLTMNT02_486541",
+    "date": "2026-10-31T17:09:59+00:00",
+    "turn": 9,
+    "mode": "pro_only",
+    "observed_pick": "Seraphine",
+    "rank": 1,
+    "top5": [
+      "Seraphine",
+      "Olaf",
+      "Lee Sin",
+      "Orianna",
+      "Syndra"
+    ],
+    "enemy_count": 1,
+    "rank_supported_candidates": 0,
+    "partition": "test"
+  },
+  {
+    "gameid": "LOLTMNT02_486541",
+    "series_id": "WLDS:LOLTMNT02_486541",
+    "date": "2026-10-31T17:09:59+00:00",
+    "turn": 9,
+    "mode": "rank_only",
+    "observed_pick": "Seraphine",
+    "rank": 1,
+    "top5": [
+      "Seraphine",
+      "Olaf",
+      "Lee Sin",
+      "Orianna",
+      "Syndra"
+    ],
+    "enemy_count": 1,
+    "rank_supported_candidates": 0,
+    "partition": "test"
+  },
+  {
+    "gameid": "LOLTMNT02_486541",
+    "series_id": "WLDS:LOLTMNT02_486541",
+    "date": "2026-10-31T17:09:59+00:00",
+    "turn": 9,
+    "mode": "hybrid",
+    "observed_pick": "Seraphine",
+    "rank": 1,
+    "top5": [
+      "Seraphine",
+      "Olaf",
+      "Lee Sin",
+      "Orianna",
+      "Syndra"
+    ],
+    "enemy_count": 1,
+    "rank_supported_candidates": 0,
+    "partition": "test"
+  },
+  {
+    "gameid": "LOLTMNT02_486541",
+    "series_id": "WLDS:LOLTMNT02_486541",
+    "date": "2026-10-31T17:09:59+00:00",
+    "turn": 10,
+    "mode": "pro_only",
+    "observed_pick": "Zeri",
+    "rank": null,
+    "top5": [
+      "Ezreal",
+      "Olaf",
+      "Lee Sin",
+      "Jayce",
+      "Lulu"
+    ],
+    "enemy_count": 2,
+    "rank_supported_candidates": 0,
+    "partition": "test"
+  },
+  {
+    "gameid": "LOLTMNT02_486541",
+    "series_id": "WLDS:LOLTMNT02_486541",
+    "date": "2026-10-31T17:09:59+00:00",
+    "turn": 10,
+    "mode": "rank_only",
+    "observed_pick": "Zeri",
+    "rank": null,
+    "top5": [
+      "Ezreal",
+      "Olaf",
+      "Lee Sin",
+      "Jayce",
+      "Lulu"
+    ],
+    "enemy_count": 2,
+    "rank_supported_candidates": 0,
+    "partition": "test"
+  },
+  {
+    "gameid": "LOLTMNT02_486541",
+    "series_id": "WLDS:LOLTMNT02_486541",
+    "date": "2026-10-31T17:09:59+00:00",
+    "turn": 10,
+    "mode": "hybrid",
+    "observed_pick": "Zeri",
+    "rank": null,
+    "top5": [
+      "Ezreal",
+      "Olaf",
+      "Lee Sin",
+      "Jayce",
+      "Lulu"
+    ],
+    "enemy_count": 2,
+    "rank_supported_candidates": 0,
+    "partition": "test"
+  },
+  {
+    "gameid": "LOLTMNT02_486541",
+    "series_id": "WLDS:LOLTMNT02_486541",
+    "date": "2026-10-31T17:09:59+00:00",
+    "turn": 11,
+    "mode": "pro_only",
+    "observed_pick": "Yuumi",
+    "rank": null,
+    "top5": [
+      "Olaf",
+      "Lee Sin",
+      "Jayce",
+      "Lulu",
+      "Rumble"
+    ],
+    "enemy_count": 2,
+    "rank_supported_candidates": 0,
+    "partition": "test"
+  },
+  {
+    "gameid": "LOLTMNT02_486541",
+    "series_id": "WLDS:LOLTMNT02_486541",
+    "date": "2026-10-31T17:09:59+00:00",
+    "turn": 11,
+    "mode": "rank_only",
+    "observed_pick": "Yuumi",
+    "rank": null,
+    "top5": [
+      "Olaf",
+      "Lee Sin",
+      "Jayce",
+      "Lulu",
+      "Rumble"
+    ],
+    "enemy_count": 2,
+    "rank_supported_candidates": 0,
+    "partition": "test"
+  },
+  {
+    "gameid": "LOLTMNT02_486541",
+    "series_id": "WLDS:LOLTMNT02_486541",
+    "date": "2026-10-31T17:09:59+00:00",
+    "turn": 11,
+    "mode": "hybrid",
+    "observed_pick": "Yuumi",
+    "rank": null,
+    "top5": [
+      "Olaf",
+      "Lee Sin",
+      "Jayce",
+      "Lulu",
+      "Rumble"
+    ],
+    "enemy_count": 2,
+    "rank_supported_candidates": 0,
+    "partition": "test"
+  },
+  {
+    "gameid": "LOLTMNT02_486541",
+    "series_id": "WLDS:LOLTMNT02_486541",
+    "date": "2026-10-31T17:09:59+00:00",
+    "turn": 12,
+    "mode": "pro_only",
+    "observed_pick": "Syndra",
+    "rank": 3,
+    "top5": [
+      "Olaf",
+      "Lee Sin",
+      "Syndra",
+      "Orianna",
+      "Akali"
+    ],
+    "enemy_count": 3,
+    "rank_supported_candidates": 0,
+    "partition": "test"
+  },
+  {
+    "gameid": "LOLTMNT02_486541",
+    "series_id": "WLDS:LOLTMNT02_486541",
+    "date": "2026-10-31T17:09:59+00:00",
+    "turn": 12,
+    "mode": "rank_only",
+    "observed_pick": "Syndra",
+    "rank": 3,
+    "top5": [
+      "Olaf",
+      "Lee Sin",
+      "Syndra",
+      "Orianna",
+      "Akali"
+    ],
+    "enemy_count": 3,
+    "rank_supported_candidates": 0,
+    "partition": "test"
+  },
+  {
+    "gameid": "LOLTMNT02_486541",
+    "series_id": "WLDS:LOLTMNT02_486541",
+    "date": "2026-10-31T17:09:59+00:00",
+    "turn": 12,
+    "mode": "hybrid",
+    "observed_pick": "Syndra",
+    "rank": 3,
+    "top5": [
+      "Olaf",
+      "Lee Sin",
+      "Syndra",
+      "Orianna",
+      "Akali"
+    ],
+    "enemy_count": 3,
+    "rank_supported_candidates": 0,
+    "partition": "test"
+  },
+  {
+    "gameid": "LOLTMNT02_486541",
+    "series_id": "WLDS:LOLTMNT02_486541",
+    "date": "2026-10-31T17:09:59+00:00",
+    "turn": 17,
+    "mode": "pro_only",
+    "observed_pick": "Wukong",
+    "rank": 6,
+    "top5": [
+      "Galio",
+      "K'Sante",
+      "Jayce",
+      "Ambessa",
+      "Pantheon"
+    ],
+    "enemy_count": 3,
+    "rank_supported_candidates": 0,
+    "partition": "test"
+  },
+  {
+    "gameid": "LOLTMNT02_486541",
+    "series_id": "WLDS:LOLTMNT02_486541",
+    "date": "2026-10-31T17:09:59+00:00",
+    "turn": 17,
+    "mode": "rank_only",
+    "observed_pick": "Wukong",
+    "rank": 6,
+    "top5": [
+      "Galio",
+      "K'Sante",
+      "Jayce",
+      "Ambessa",
+      "Pantheon"
+    ],
+    "enemy_count": 3,
+    "rank_supported_candidates": 0,
+    "partition": "test"
+  },
+  {
+    "gameid": "LOLTMNT02_486541",
+    "series_id": "WLDS:LOLTMNT02_486541",
+    "date": "2026-10-31T17:09:59+00:00",
+    "turn": 17,
+    "mode": "hybrid",
+    "observed_pick": "Wukong",
+    "rank": 6,
+    "top5": [
+      "Galio",
+      "K'Sante",
+      "Jayce",
+      "Ambessa",
+      "Pantheon"
+    ],
+    "enemy_count": 3,
+    "rank_supported_candidates": 0,
+    "partition": "test"
+  },
+  {
+    "gameid": "LOLTMNT02_486541",
+    "series_id": "WLDS:LOLTMNT02_486541",
+    "date": "2026-10-31T17:09:59+00:00",
+    "turn": 18,
+    "mode": "pro_only",
+    "observed_pick": "Camille",
+    "rank": 9,
+    "top5": [
+      "Jayce",
+      "K'Sante",
+      "Galio",
+      "Gnar",
+      "Renekton"
+    ],
+    "enemy_count": 4,
+    "rank_supported_candidates": 0,
+    "partition": "test"
+  },
+  {
+    "gameid": "LOLTMNT02_486541",
+    "series_id": "WLDS:LOLTMNT02_486541",
+    "date": "2026-10-31T17:09:59+00:00",
+    "turn": 18,
+    "mode": "rank_only",
+    "observed_pick": "Camille",
+    "rank": 9,
+    "top5": [
+      "Jayce",
+      "K'Sante",
+      "Galio",
+      "Gnar",
+      "Renekton"
+    ],
+    "enemy_count": 4,
+    "rank_supported_candidates": 0,
+    "partition": "test"
+  },
+  {
+    "gameid": "LOLTMNT02_486541",
+    "series_id": "WLDS:LOLTMNT02_486541",
+    "date": "2026-10-31T17:09:59+00:00",
+    "turn": 18,
+    "mode": "hybrid",
+    "observed_pick": "Camille",
+    "rank": 9,
+    "top5": [
+      "Jayce",
+      "K'Sante",
+      "Galio",
+      "Gnar",
+      "Renekton"
+    ],
+    "enemy_count": 4,
+    "rank_supported_candidates": 0,
+    "partition": "test"
+  },
+  {
+    "gameid": "LOLTMNT02_486541",
+    "series_id": "WLDS:LOLTMNT02_486541",
+    "date": "2026-10-31T17:09:59+00:00",
+    "turn": 19,
+    "mode": "pro_only",
+    "observed_pick": "Sejuani",
+    "rank": null,
+    "top5": [
+      "Trundle",
+      "Pantheon",
+      "Maokai",
+      "Naafiri"
+    ],
+    "enemy_count": 4,
+    "rank_supported_candidates": 0,
+    "partition": "test"
+  },
+  {
+    "gameid": "LOLTMNT02_486541",
+    "series_id": "WLDS:LOLTMNT02_486541",
+    "date": "2026-10-31T17:09:59+00:00",
+    "turn": 19,
+    "mode": "rank_only",
+    "observed_pick": "Sejuani",
+    "rank": null,
+    "top5": [
+      "Trundle",
+      "Pantheon",
+      "Maokai",
+      "Naafiri"
+    ],
+    "enemy_count": 4,
+    "rank_supported_candidates": 0,
+    "partition": "test"
+  },
+  {
+    "gameid": "LOLTMNT02_486541",
+    "series_id": "WLDS:LOLTMNT02_486541",
+    "date": "2026-10-31T17:09:59+00:00",
+    "turn": 19,
+    "mode": "hybrid",
+    "observed_pick": "Sejuani",
+    "rank": null,
+    "top5": [
+      "Trundle",
+      "Pantheon",
+      "Maokai",
+      "Naafiri"
+    ],
+    "enemy_count": 4,
+    "rank_supported_candidates": 0,
+    "partition": "test"
+  },
+  {
+    "gameid": "LOLTMNT02_486541",
+    "series_id": "WLDS:LOLTMNT02_486541",
+    "date": "2026-10-31T17:09:59+00:00",
+    "turn": 20,
+    "mode": "pro_only",
+    "observed_pick": "Renekton",
+    "rank": 5,
+    "top5": [
+      "Galio",
+      "K'Sante",
+      "Jayce",
+      "Ambessa",
+      "Renekton"
+    ],
+    "enemy_count": 5,
+    "rank_supported_candidates": 1,
+    "partition": "test"
+  },
+  {
+    "gameid": "LOLTMNT02_486541",
+    "series_id": "WLDS:LOLTMNT02_486541",
+    "date": "2026-10-31T17:09:59+00:00",
+    "turn": 20,
+    "mode": "rank_only",
+    "observed_pick": "Renekton",
+    "rank": 5,
+    "top5": [
+      "Galio",
+      "K'Sante",
+      "Jayce",
+      "Ambessa",
+      "Renekton"
+    ],
+    "enemy_count": 5,
+    "rank_supported_candidates": 1,
+    "partition": "test"
+  },
+  {
+    "gameid": "LOLTMNT02_486541",
+    "series_id": "WLDS:LOLTMNT02_486541",
+    "date": "2026-10-31T17:09:59+00:00",
+    "turn": 20,
+    "mode": "hybrid",
+    "observed_pick": "Renekton",
+    "rank": 5,
+    "top5": [
+      "Galio",
+      "K'Sante",
+      "Jayce",
+      "Ambessa",
+      "Renekton"
+    ],
+    "enemy_count": 5,
+    "rank_supported_candidates": 1,
+    "partition": "test"
+  },
+  {
+    "gameid": "LOLTMNT02_485476",
+    "series_id": "WLDS:LOLTMNT02_486541",
+    "date": "2026-10-31T18:08:54+00:00",
+    "turn": 7,
+    "mode": "pro_only",
+    "observed_pick": "Lee Sin",
+    "rank": 3,
+    "top5": [
+      "Ezreal",
+      "Olaf",
+      "Lee Sin",
+      "Lulu",
+      "Rumble"
+    ],
+    "enemy_count": 0,
+    "rank_supported_candidates": 0,
+    "partition": "test"
+  },
+  {
+    "gameid": "LOLTMNT02_485476",
+    "series_id": "WLDS:LOLTMNT02_486541",
+    "date": "2026-10-31T18:08:54+00:00",
+    "turn": 7,
+    "mode": "rank_only",
+    "observed_pick": "Lee Sin",
+    "rank": 3,
+    "top5": [
+      "Ezreal",
+      "Olaf",
+      "Lee Sin",
+      "Lulu",
+      "Rumble"
+    ],
+    "enemy_count": 0,
+    "rank_supported_candidates": 0,
+    "partition": "test"
+  },
+  {
+    "gameid": "LOLTMNT02_485476",
+    "series_id": "WLDS:LOLTMNT02_486541",
+    "date": "2026-10-31T18:08:54+00:00",
+    "turn": 7,
+    "mode": "hybrid",
+    "observed_pick": "Lee Sin",
+    "rank": 3,
+    "top5": [
+      "Ezreal",
+      "Olaf",
+      "Lee Sin",
+      "Lulu",
+      "Rumble"
+    ],
+    "enemy_count": 0,
+    "rank_supported_candidates": 0,
+    "partition": "test"
+  },
+  {
+    "gameid": "LOLTMNT02_485476",
+    "series_id": "WLDS:LOLTMNT02_486541",
+    "date": "2026-10-31T18:08:54+00:00",
+    "turn": 8,
+    "mode": "pro_only",
+    "observed_pick": "Pantheon",
+    "rank": 25,
+    "top5": [
+      "Olaf",
+      "Ezreal",
+      "Rumble",
+      "Orianna",
+      "K'Sante"
+    ],
+    "enemy_count": 1,
+    "rank_supported_candidates": 1,
+    "partition": "test"
+  },
+  {
+    "gameid": "LOLTMNT02_485476",
+    "series_id": "WLDS:LOLTMNT02_486541",
+    "date": "2026-10-31T18:08:54+00:00",
+    "turn": 8,
+    "mode": "rank_only",
+    "observed_pick": "Pantheon",
+    "rank": 26,
+    "top5": [
+      "Ezreal",
+      "Olaf",
+      "Rumble",
+      "Orianna",
+      "K'Sante"
+    ],
+    "enemy_count": 1,
+    "rank_supported_candidates": 1,
+    "partition": "test"
+  },
+  {
+    "gameid": "LOLTMNT02_485476",
+    "series_id": "WLDS:LOLTMNT02_486541",
+    "date": "2026-10-31T18:08:54+00:00",
+    "turn": 8,
+    "mode": "hybrid",
+    "observed_pick": "Pantheon",
+    "rank": 25,
+    "top5": [
+      "Olaf",
+      "Ezreal",
+      "Rumble",
+      "Orianna",
+      "K'Sante"
+    ],
+    "enemy_count": 1,
+    "rank_supported_candidates": 1,
+    "partition": "test"
+  },
+  {
+    "gameid": "LOLTMNT02_485476",
+    "series_id": "WLDS:LOLTMNT02_486541",
+    "date": "2026-10-31T18:08:54+00:00",
+    "turn": 9,
+    "mode": "pro_only",
+    "observed_pick": "Lulu",
+    "rank": 8,
+    "top5": [
+      "Olaf",
+      "Ezreal",
+      "Rumble",
+      "Orianna",
+      "Akali"
+    ],
+    "enemy_count": 1,
+    "rank_supported_candidates": 0,
+    "partition": "test"
+  },
+  {
+    "gameid": "LOLTMNT02_485476",
+    "series_id": "WLDS:LOLTMNT02_486541",
+    "date": "2026-10-31T18:08:54+00:00",
+    "turn": 9,
+    "mode": "rank_only",
+    "observed_pick": "Lulu",
+    "rank": 8,
+    "top5": [
+      "Olaf",
+      "Ezreal",
+      "Rumble",
+      "Orianna",
+      "Akali"
+    ],
+    "enemy_count": 1,
+    "rank_supported_candidates": 0,
+    "partition": "test"
+  },
+  {
+    "gameid": "LOLTMNT02_485476",
+    "series_id": "WLDS:LOLTMNT02_486541",
+    "date": "2026-10-31T18:08:54+00:00",
+    "turn": 9,
+    "mode": "hybrid",
+    "observed_pick": "Lulu",
+    "rank": 8,
+    "top5": [
+      "Olaf",
+      "Ezreal",
+      "Rumble",
+      "Orianna",
+      "Akali"
+    ],
+    "enemy_count": 1,
+    "rank_supported_candidates": 0,
+    "partition": "test"
+  },
+  {
+    "gameid": "LOLTMNT02_485476",
+    "series_id": "WLDS:LOLTMNT02_486541",
+    "date": "2026-10-31T18:08:54+00:00",
+    "turn": 10,
+    "mode": "pro_only",
+    "observed_pick": "Ezreal",
+    "rank": 1,
+    "top5": [
+      "Ezreal",
+      "Olaf",
+      "Rumble",
+      "Jayce",
+      "Jhin"
+    ],
+    "enemy_count": 2,
+    "rank_supported_candidates": 0,
+    "partition": "test"
+  },
+  {
+    "gameid": "LOLTMNT02_485476",
+    "series_id": "WLDS:LOLTMNT02_486541",
+    "date": "2026-10-31T18:08:54+00:00",
+    "turn": 10,
+    "mode": "rank_only",
+    "observed_pick": "Ezreal",
+    "rank": 1,
+    "top5": [
+      "Ezreal",
+      "Olaf",
+      "Rumble",
+      "Jayce",
+      "Jhin"
+    ],
+    "enemy_count": 2,
+    "rank_supported_candidates": 0,
+    "partition": "test"
+  },
+  {
+    "gameid": "LOLTMNT02_485476",
+    "series_id": "WLDS:LOLTMNT02_486541",
+    "date": "2026-10-31T18:08:54+00:00",
+    "turn": 10,
+    "mode": "hybrid",
+    "observed_pick": "Ezreal",
+    "rank": 1,
+    "top5": [
+      "Ezreal",
+      "Olaf",
+      "Rumble",
+      "Jayce",
+      "Jhin"
+    ],
+    "enemy_count": 2,
+    "rank_supported_candidates": 0,
+    "partition": "test"
+  },
+  {
+    "gameid": "LOLTMNT02_485476",
+    "series_id": "WLDS:LOLTMNT02_486541",
+    "date": "2026-10-31T18:08:54+00:00",
+    "turn": 11,
+    "mode": "pro_only",
+    "observed_pick": "Karma",
+    "rank": 1,
+    "top5": [
+      "Karma",
+      "K'Sante",
+      "Olaf",
+      "Jayce",
+      "Orianna"
+    ],
+    "enemy_count": 2,
+    "rank_supported_candidates": 0,
+    "partition": "test"
+  },
+  {
+    "gameid": "LOLTMNT02_485476",
+    "series_id": "WLDS:LOLTMNT02_486541",
+    "date": "2026-10-31T18:08:54+00:00",
+    "turn": 11,
+    "mode": "rank_only",
+    "observed_pick": "Karma",
+    "rank": 1,
+    "top5": [
+      "Karma",
+      "K'Sante",
+      "Olaf",
+      "Jayce",
+      "Orianna"
+    ],
+    "enemy_count": 2,
+    "rank_supported_candidates": 0,
+    "partition": "test"
+  },
+  {
+    "gameid": "LOLTMNT02_485476",
+    "series_id": "WLDS:LOLTMNT02_486541",
+    "date": "2026-10-31T18:08:54+00:00",
+    "turn": 11,
+    "mode": "hybrid",
+    "observed_pick": "Karma",
+    "rank": 1,
+    "top5": [
+      "Karma",
+      "K'Sante",
+      "Olaf",
+      "Jayce",
+      "Orianna"
+    ],
+    "enemy_count": 2,
+    "rank_supported_candidates": 0,
+    "partition": "test"
+  },
+  {
+    "gameid": "LOLTMNT02_485476",
+    "series_id": "WLDS:LOLTMNT02_486541",
+    "date": "2026-10-31T18:08:54+00:00",
+    "turn": 12,
+    "mode": "pro_only",
+    "observed_pick": "Sivir",
+    "rank": null,
+    "top5": [
+      "Olaf",
+      "Akali",
+      "Yunara",
+      "Galio",
+      "Rumble"
+    ],
+    "enemy_count": 3,
+    "rank_supported_candidates": 3,
+    "partition": "test"
+  },
+  {
+    "gameid": "LOLTMNT02_485476",
+    "series_id": "WLDS:LOLTMNT02_486541",
+    "date": "2026-10-31T18:08:54+00:00",
+    "turn": 12,
+    "mode": "rank_only",
+    "observed_pick": "Sivir",
+    "rank": null,
+    "top5": [
+      "Olaf",
+      "Akali",
+      "Yunara",
+      "Galio",
+      "Rumble"
+    ],
+    "enemy_count": 3,
+    "rank_supported_candidates": 3,
+    "partition": "test"
+  },
+  {
+    "gameid": "LOLTMNT02_485476",
+    "series_id": "WLDS:LOLTMNT02_486541",
+    "date": "2026-10-31T18:08:54+00:00",
+    "turn": 12,
+    "mode": "hybrid",
+    "observed_pick": "Sivir",
+    "rank": null,
+    "top5": [
+      "Olaf",
+      "Akali",
+      "Yunara",
+      "Galio",
+      "Rumble"
+    ],
+    "enemy_count": 3,
+    "rank_supported_candidates": 3,
+    "partition": "test"
+  },
+  {
+    "gameid": "LOLTMNT02_485476",
+    "series_id": "WLDS:LOLTMNT02_486541",
+    "date": "2026-10-31T18:08:54+00:00",
+    "turn": 17,
+    "mode": "pro_only",
+    "observed_pick": "Rumble",
+    "rank": 3,
+    "top5": [
+      "Olaf",
+      "Akali",
+      "Rumble",
+      "K'Sante",
+      "Ambessa"
+    ],
+    "enemy_count": 3,
+    "rank_supported_candidates": 0,
+    "partition": "test"
+  },
+  {
+    "gameid": "LOLTMNT02_485476",
+    "series_id": "WLDS:LOLTMNT02_486541",
+    "date": "2026-10-31T18:08:54+00:00",
+    "turn": 17,
+    "mode": "rank_only",
+    "observed_pick": "Rumble",
+    "rank": 3,
+    "top5": [
+      "Olaf",
+      "Akali",
+      "Rumble",
+      "K'Sante",
+      "Ambessa"
+    ],
+    "enemy_count": 3,
+    "rank_supported_candidates": 0,
+    "partition": "test"
+  },
+  {
+    "gameid": "LOLTMNT02_485476",
+    "series_id": "WLDS:LOLTMNT02_486541",
+    "date": "2026-10-31T18:08:54+00:00",
+    "turn": 17,
+    "mode": "hybrid",
+    "observed_pick": "Rumble",
+    "rank": 3,
+    "top5": [
+      "Olaf",
+      "Akali",
+      "Rumble",
+      "K'Sante",
+      "Ambessa"
+    ],
+    "enemy_count": 3,
+    "rank_supported_candidates": 0,
+    "partition": "test"
+  },
+  {
+    "gameid": "LOLTMNT02_485476",
+    "series_id": "WLDS:LOLTMNT02_486541",
+    "date": "2026-10-31T18:08:54+00:00",
+    "turn": 18,
+    "mode": "pro_only",
+    "observed_pick": "Anivia",
+    "rank": 6,
+    "top5": [
+      "Olaf",
+      "K'Sante",
+      "Locke",
+      "Akali",
+      "Gnar"
+    ],
+    "enemy_count": 4,
+    "rank_supported_candidates": 0,
+    "partition": "test"
+  },
+  {
+    "gameid": "LOLTMNT02_485476",
+    "series_id": "WLDS:LOLTMNT02_486541",
+    "date": "2026-10-31T18:08:54+00:00",
+    "turn": 18,
+    "mode": "rank_only",
+    "observed_pick": "Anivia",
+    "rank": 6,
+    "top5": [
+      "Olaf",
+      "K'Sante",
+      "Locke",
+      "Akali",
+      "Gnar"
+    ],
+    "enemy_count": 4,
+    "rank_supported_candidates": 0,
+    "partition": "test"
+  },
+  {
+    "gameid": "LOLTMNT02_485476",
+    "series_id": "WLDS:LOLTMNT02_486541",
+    "date": "2026-10-31T18:08:54+00:00",
+    "turn": 18,
+    "mode": "hybrid",
+    "observed_pick": "Anivia",
+    "rank": 6,
+    "top5": [
+      "Olaf",
+      "K'Sante",
+      "Locke",
+      "Akali",
+      "Gnar"
+    ],
+    "enemy_count": 4,
+    "rank_supported_candidates": 0,
+    "partition": "test"
+  },
+  {
+    "gameid": "LOLTMNT02_485476",
+    "series_id": "WLDS:LOLTMNT02_486541",
+    "date": "2026-10-31T18:08:54+00:00",
+    "turn": 19,
+    "mode": "pro_only",
+    "observed_pick": "Ornn",
+    "rank": null,
+    "top5": [
+      "Olaf",
+      "K'Sante",
+      "Gnar",
+      "Ambessa",
+      "Jax"
+    ],
+    "enemy_count": 4,
+    "rank_supported_candidates": 0,
+    "partition": "test"
+  },
+  {
+    "gameid": "LOLTMNT02_485476",
+    "series_id": "WLDS:LOLTMNT02_486541",
+    "date": "2026-10-31T18:08:54+00:00",
+    "turn": 19,
+    "mode": "rank_only",
+    "observed_pick": "Ornn",
+    "rank": null,
+    "top5": [
+      "Olaf",
+      "K'Sante",
+      "Gnar",
+      "Ambessa",
+      "Jax"
+    ],
+    "enemy_count": 4,
+    "rank_supported_candidates": 0,
+    "partition": "test"
+  },
+  {
+    "gameid": "LOLTMNT02_485476",
+    "series_id": "WLDS:LOLTMNT02_486541",
+    "date": "2026-10-31T18:08:54+00:00",
+    "turn": 19,
+    "mode": "hybrid",
+    "observed_pick": "Ornn",
+    "rank": null,
+    "top5": [
+      "Olaf",
+      "K'Sante",
+      "Gnar",
+      "Ambessa",
+      "Jax"
+    ],
+    "enemy_count": 4,
+    "rank_supported_candidates": 0,
+    "partition": "test"
+  },
+  {
+    "gameid": "LOLTMNT02_485476",
+    "series_id": "WLDS:LOLTMNT02_486541",
+    "date": "2026-10-31T18:08:54+00:00",
+    "turn": 20,
+    "mode": "pro_only",
+    "observed_pick": "Viktor",
+    "rank": 2,
+    "top5": [
+      "Akali",
+      "Viktor",
+      "Locke",
+      "Ahri"
+    ],
+    "enemy_count": 5,
+    "rank_supported_candidates": 0,
+    "partition": "test"
+  },
+  {
+    "gameid": "LOLTMNT02_485476",
+    "series_id": "WLDS:LOLTMNT02_486541",
+    "date": "2026-10-31T18:08:54+00:00",
+    "turn": 20,
+    "mode": "rank_only",
+    "observed_pick": "Viktor",
+    "rank": 2,
+    "top5": [
+      "Akali",
+      "Viktor",
+      "Locke",
+      "Ahri"
+    ],
+    "enemy_count": 5,
+    "rank_supported_candidates": 0,
+    "partition": "test"
+  },
+  {
+    "gameid": "LOLTMNT02_485476",
+    "series_id": "WLDS:LOLTMNT02_486541",
+    "date": "2026-10-31T18:08:54+00:00",
+    "turn": 20,
+    "mode": "hybrid",
+    "observed_pick": "Viktor",
+    "rank": 2,
+    "top5": [
+      "Akali",
+      "Viktor",
+      "Locke",
+      "Ahri"
+    ],
+    "enemy_count": 5,
+    "rank_supported_candidates": 0,
+    "partition": "test"
+  },
+  {
+    "gameid": "LOLTMNT02_485482",
+    "series_id": "WLDS:LOLTMNT02_485482",
+    "date": "2026-10-31T18:59:46+00:00",
+    "turn": 7,
+    "mode": "pro_only",
+    "observed_pick": "Syndra",
+    "rank": 4,
+    "top5": [
+      "Vi",
+      "Ezreal",
+      "Cassiopeia",
+      "Syndra",
+      "K'Sante"
+    ],
+    "enemy_count": 0,
+    "rank_supported_candidates": 0,
+    "partition": "test"
+  },
+  {
+    "gameid": "LOLTMNT02_485482",
+    "series_id": "WLDS:LOLTMNT02_485482",
+    "date": "2026-10-31T18:59:46+00:00",
+    "turn": 7,
+    "mode": "rank_only",
+    "observed_pick": "Syndra",
+    "rank": 4,
+    "top5": [
+      "Vi",
+      "Ezreal",
+      "Cassiopeia",
+      "Syndra",
+      "K'Sante"
+    ],
+    "enemy_count": 0,
+    "rank_supported_candidates": 0,
+    "partition": "test"
+  },
+  {
+    "gameid": "LOLTMNT02_485482",
+    "series_id": "WLDS:LOLTMNT02_485482",
+    "date": "2026-10-31T18:59:46+00:00",
+    "turn": 7,
+    "mode": "hybrid",
+    "observed_pick": "Syndra",
+    "rank": 4,
+    "top5": [
+      "Vi",
+      "Ezreal",
+      "Cassiopeia",
+      "Syndra",
+      "K'Sante"
+    ],
+    "enemy_count": 0,
+    "rank_supported_candidates": 0,
+    "partition": "test"
+  },
+  {
+    "gameid": "LOLTMNT02_485482",
+    "series_id": "WLDS:LOLTMNT02_485482",
+    "date": "2026-10-31T18:59:46+00:00",
+    "turn": 8,
+    "mode": "pro_only",
+    "observed_pick": "Cassiopeia",
+    "rank": 4,
+    "top5": [
+      "Vi",
+      "K'Sante",
+      "Orianna",
+      "Cassiopeia",
+      "Ezreal"
+    ],
+    "enemy_count": 1,
+    "rank_supported_candidates": 0,
+    "partition": "test"
+  },
+  {
+    "gameid": "LOLTMNT02_485482",
+    "series_id": "WLDS:LOLTMNT02_485482",
+    "date": "2026-10-31T18:59:46+00:00",
+    "turn": 8,
+    "mode": "rank_only",
+    "observed_pick": "Cassiopeia",
+    "rank": 4,
+    "top5": [
+      "Vi",
+      "K'Sante",
+      "Orianna",
+      "Cassiopeia",
+      "Ezreal"
+    ],
+    "enemy_count": 1,
+    "rank_supported_candidates": 0,
+    "partition": "test"
+  },
+  {
+    "gameid": "LOLTMNT02_485482",
+    "series_id": "WLDS:LOLTMNT02_485482",
+    "date": "2026-10-31T18:59:46+00:00",
+    "turn": 8,
+    "mode": "hybrid",
+    "observed_pick": "Cassiopeia",
+    "rank": 4,
+    "top5": [
+      "Vi",
+      "K'Sante",
+      "Orianna",
+      "Cassiopeia",
+      "Ezreal"
+    ],
+    "enemy_count": 1,
+    "rank_supported_candidates": 0,
+    "partition": "test"
+  },
+  {
+    "gameid": "LOLTMNT02_485482",
+    "series_id": "WLDS:LOLTMNT02_485482",
+    "date": "2026-10-31T18:59:46+00:00",
+    "turn": 9,
+    "mode": "pro_only",
+    "observed_pick": "Vi",
+    "rank": 1,
+    "top5": [
+      "Vi",
+      "Jayce",
+      "Lee Sin",
+      "Ezreal",
+      "Kalista"
+    ],
+    "enemy_count": 1,
+    "rank_supported_candidates": 0,
+    "partition": "test"
+  },
+  {
+    "gameid": "LOLTMNT02_485482",
+    "series_id": "WLDS:LOLTMNT02_485482",
+    "date": "2026-10-31T18:59:46+00:00",
+    "turn": 9,
+    "mode": "rank_only",
+    "observed_pick": "Vi",
+    "rank": 1,
+    "top5": [
+      "Vi",
+      "Jayce",
+      "Lee Sin",
+      "Ezreal",
+      "Kalista"
+    ],
+    "enemy_count": 1,
+    "rank_supported_candidates": 0,
+    "partition": "test"
+  },
+  {
+    "gameid": "LOLTMNT02_485482",
+    "series_id": "WLDS:LOLTMNT02_485482",
+    "date": "2026-10-31T18:59:46+00:00",
+    "turn": 9,
+    "mode": "hybrid",
+    "observed_pick": "Vi",
+    "rank": 1,
+    "top5": [
+      "Vi",
+      "Jayce",
+      "Lee Sin",
+      "Ezreal",
+      "Kalista"
+    ],
+    "enemy_count": 1,
+    "rank_supported_candidates": 0,
+    "partition": "test"
+  },
+  {
+    "gameid": "LOLTMNT02_485482",
+    "series_id": "WLDS:LOLTMNT02_485482",
+    "date": "2026-10-31T18:59:46+00:00",
+    "turn": 10,
+    "mode": "pro_only",
+    "observed_pick": "Ezreal",
+    "rank": 2,
+    "top5": [
+      "Galio",
+      "Ezreal",
+      "K'Sante",
+      "Lulu",
+      "Lee Sin"
+    ],
+    "enemy_count": 2,
+    "rank_supported_candidates": 1,
+    "partition": "test"
+  },
+  {
+    "gameid": "LOLTMNT02_485482",
+    "series_id": "WLDS:LOLTMNT02_485482",
+    "date": "2026-10-31T18:59:46+00:00",
+    "turn": 10,
+    "mode": "rank_only",
+    "observed_pick": "Ezreal",
+    "rank": 2,
+    "top5": [
+      "Galio",
+      "Ezreal",
+      "K'Sante",
+      "Lulu",
+      "Lee Sin"
+    ],
+    "enemy_count": 2,
+    "rank_supported_candidates": 1,
+    "partition": "test"
+  },
+  {
+    "gameid": "LOLTMNT02_485482",
+    "series_id": "WLDS:LOLTMNT02_485482",
+    "date": "2026-10-31T18:59:46+00:00",
+    "turn": 10,
+    "mode": "hybrid",
+    "observed_pick": "Ezreal",
+    "rank": 2,
+    "top5": [
+      "Galio",
+      "Ezreal",
+      "K'Sante",
+      "Lulu",
+      "Lee Sin"
+    ],
+    "enemy_count": 2,
+    "rank_supported_candidates": 1,
+    "partition": "test"
+  },
+  {
+    "gameid": "LOLTMNT02_485482",
+    "series_id": "WLDS:LOLTMNT02_485482",
+    "date": "2026-10-31T18:59:46+00:00",
+    "turn": 11,
+    "mode": "pro_only",
+    "observed_pick": "Pantheon",
+    "rank": 18,
+    "top5": [
+      "K'Sante",
+      "Lee Sin",
+      "Lulu",
+      "Galio",
+      "Nautilus"
+    ],
+    "enemy_count": 2,
+    "rank_supported_candidates": 1,
+    "partition": "test"
+  },
+  {
+    "gameid": "LOLTMNT02_485482",
+    "series_id": "WLDS:LOLTMNT02_485482",
+    "date": "2026-10-31T18:59:46+00:00",
+    "turn": 11,
+    "mode": "rank_only",
+    "observed_pick": "Pantheon",
+    "rank": 18,
+    "top5": [
+      "K'Sante",
+      "Lee Sin",
+      "Lulu",
+      "Galio",
+      "Nautilus"
+    ],
+    "enemy_count": 2,
+    "rank_supported_candidates": 1,
+    "partition": "test"
+  },
+  {
+    "gameid": "LOLTMNT02_485482",
+    "series_id": "WLDS:LOLTMNT02_485482",
+    "date": "2026-10-31T18:59:46+00:00",
+    "turn": 11,
+    "mode": "hybrid",
+    "observed_pick": "Pantheon",
+    "rank": 18,
+    "top5": [
+      "K'Sante",
+      "Lee Sin",
+      "Lulu",
+      "Galio",
+      "Nautilus"
+    ],
+    "enemy_count": 2,
+    "rank_supported_candidates": 1,
+    "partition": "test"
+  },
+  {
+    "gameid": "LOLTMNT02_485482",
+    "series_id": "WLDS:LOLTMNT02_485482",
+    "date": "2026-10-31T18:59:46+00:00",
+    "turn": 12,
+    "mode": "pro_only",
+    "observed_pick": "Kai'Sa",
+    "rank": 20,
+    "top5": [
+      "Jayce",
+      "K'Sante",
+      "Kalista",
+      "Seraphine",
+      "Lulu"
+    ],
+    "enemy_count": 3,
+    "rank_supported_candidates": 3,
+    "partition": "test"
+  },
+  {
+    "gameid": "LOLTMNT02_485482",
+    "series_id": "WLDS:LOLTMNT02_485482",
+    "date": "2026-10-31T18:59:46+00:00",
+    "turn": 12,
+    "mode": "rank_only",
+    "observed_pick": "Kai'Sa",
+    "rank": 20,
+    "top5": [
+      "Jayce",
+      "K'Sante",
+      "Kalista",
+      "Seraphine",
+      "Lulu"
+    ],
+    "enemy_count": 3,
+    "rank_supported_candidates": 3,
+    "partition": "test"
+  },
+  {
+    "gameid": "LOLTMNT02_485482",
+    "series_id": "WLDS:LOLTMNT02_485482",
+    "date": "2026-10-31T18:59:46+00:00",
+    "turn": 12,
+    "mode": "hybrid",
+    "observed_pick": "Kai'Sa",
+    "rank": 20,
+    "top5": [
+      "Jayce",
+      "K'Sante",
+      "Kalista",
+      "Seraphine",
+      "Lulu"
+    ],
+    "enemy_count": 3,
+    "rank_supported_candidates": 3,
+    "partition": "test"
+  },
+  {
+    "gameid": "LOLTMNT02_485482",
+    "series_id": "WLDS:LOLTMNT02_485482",
+    "date": "2026-10-31T18:59:46+00:00",
+    "turn": 17,
+    "mode": "pro_only",
+    "observed_pick": "Nautilus",
+    "rank": 1,
+    "top5": [
+      "Nautilus",
+      "Rumble",
+      "Seraphine",
+      "Lulu",
+      "Rakan"
+    ],
+    "enemy_count": 3,
+    "rank_supported_candidates": 0,
+    "partition": "test"
+  },
+  {
+    "gameid": "LOLTMNT02_485482",
+    "series_id": "WLDS:LOLTMNT02_485482",
+    "date": "2026-10-31T18:59:46+00:00",
+    "turn": 17,
+    "mode": "rank_only",
+    "observed_pick": "Nautilus",
+    "rank": 1,
+    "top5": [
+      "Nautilus",
+      "Rumble",
+      "Seraphine",
+      "Lulu",
+      "Rakan"
+    ],
+    "enemy_count": 3,
+    "rank_supported_candidates": 0,
+    "partition": "test"
+  },
+  {
+    "gameid": "LOLTMNT02_485482",
+    "series_id": "WLDS:LOLTMNT02_485482",
+    "date": "2026-10-31T18:59:46+00:00",
+    "turn": 17,
+    "mode": "hybrid",
+    "observed_pick": "Nautilus",
+    "rank": 1,
+    "top5": [
+      "Nautilus",
+      "Rumble",
+      "Seraphine",
+      "Lulu",
+      "Rakan"
+    ],
+    "enemy_count": 3,
+    "rank_supported_candidates": 0,
+    "partition": "test"
+  },
+  {
+    "gameid": "LOLTMNT02_485482",
+    "series_id": "WLDS:LOLTMNT02_485482",
+    "date": "2026-10-31T18:59:46+00:00",
+    "turn": 18,
+    "mode": "pro_only",
+    "observed_pick": "Alistar",
+    "rank": 4,
+    "top5": [
+      "Lulu",
+      "Galio",
+      "Rumble",
+      "Alistar",
+      "Seraphine"
+    ],
+    "enemy_count": 4,
+    "rank_supported_candidates": 2,
+    "partition": "test"
+  },
+  {
+    "gameid": "LOLTMNT02_485482",
+    "series_id": "WLDS:LOLTMNT02_485482",
+    "date": "2026-10-31T18:59:46+00:00",
+    "turn": 18,
+    "mode": "rank_only",
+    "observed_pick": "Alistar",
+    "rank": 4,
+    "top5": [
+      "Lulu",
+      "Galio",
+      "Rumble",
+      "Alistar",
+      "Seraphine"
+    ],
+    "enemy_count": 4,
+    "rank_supported_candidates": 2,
+    "partition": "test"
+  },
+  {
+    "gameid": "LOLTMNT02_485482",
+    "series_id": "WLDS:LOLTMNT02_485482",
+    "date": "2026-10-31T18:59:46+00:00",
+    "turn": 18,
+    "mode": "hybrid",
+    "observed_pick": "Alistar",
+    "rank": 4,
+    "top5": [
+      "Lulu",
+      "Galio",
+      "Rumble",
+      "Alistar",
+      "Seraphine"
+    ],
+    "enemy_count": 4,
+    "rank_supported_candidates": 2,
+    "partition": "test"
+  },
+  {
+    "gameid": "LOLTMNT02_485482",
+    "series_id": "WLDS:LOLTMNT02_485482",
+    "date": "2026-10-31T18:59:46+00:00",
+    "turn": 19,
+    "mode": "pro_only",
+    "observed_pick": "Rumble",
+    "rank": 1,
+    "top5": [
+      "Rumble",
+      "Galio",
+      "Renekton",
+      "Gnar",
+      "Camille"
+    ],
+    "enemy_count": 4,
+    "rank_supported_candidates": 0,
+    "partition": "test"
+  },
+  {
+    "gameid": "LOLTMNT02_485482",
+    "series_id": "WLDS:LOLTMNT02_485482",
+    "date": "2026-10-31T18:59:46+00:00",
+    "turn": 19,
+    "mode": "rank_only",
+    "observed_pick": "Rumble",
+    "rank": 1,
+    "top5": [
+      "Rumble",
+      "Galio",
+      "Renekton",
+      "Gnar",
+      "Camille"
+    ],
+    "enemy_count": 4,
+    "rank_supported_candidates": 0,
+    "partition": "test"
+  },
+  {
+    "gameid": "LOLTMNT02_485482",
+    "series_id": "WLDS:LOLTMNT02_485482",
+    "date": "2026-10-31T18:59:46+00:00",
+    "turn": 19,
+    "mode": "hybrid",
+    "observed_pick": "Rumble",
+    "rank": 1,
+    "top5": [
+      "Rumble",
+      "Galio",
+      "Renekton",
+      "Gnar",
+      "Camille"
+    ],
+    "enemy_count": 4,
+    "rank_supported_candidates": 0,
+    "partition": "test"
+  },
+  {
+    "gameid": "LOLTMNT02_485482",
+    "series_id": "WLDS:LOLTMNT02_485482",
+    "date": "2026-10-31T18:59:46+00:00",
+    "turn": 20,
+    "mode": "pro_only",
+    "observed_pick": "Aurora",
+    "rank": null,
+    "top5": [
+      "Galio",
+      "Gnar",
+      "Renekton",
+      "Jax",
+      "Camille"
+    ],
+    "enemy_count": 5,
+    "rank_supported_candidates": 0,
+    "partition": "test"
+  },
+  {
+    "gameid": "LOLTMNT02_485482",
+    "series_id": "WLDS:LOLTMNT02_485482",
+    "date": "2026-10-31T18:59:46+00:00",
+    "turn": 20,
+    "mode": "rank_only",
+    "observed_pick": "Aurora",
+    "rank": null,
+    "top5": [
+      "Galio",
+      "Gnar",
+      "Renekton",
+      "Jax",
+      "Camille"
+    ],
+    "enemy_count": 5,
+    "rank_supported_candidates": 0,
+    "partition": "test"
+  },
+  {
+    "gameid": "LOLTMNT02_485482",
+    "series_id": "WLDS:LOLTMNT02_485482",
+    "date": "2026-10-31T18:59:46+00:00",
+    "turn": 20,
+    "mode": "hybrid",
+    "observed_pick": "Aurora",
+    "rank": null,
+    "top5": [
+      "Galio",
+      "Gnar",
+      "Renekton",
+      "Jax",
+      "Camille"
+    ],
+    "enemy_count": 5,
+    "rank_supported_candidates": 0,
+    "partition": "test"
+  }
+]

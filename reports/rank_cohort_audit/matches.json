@@ -1,0 +1,1658 @@
+[
+  {
+    "match_id": "KR_8402410050",
+    "platform": "KR",
+    "rank_cohort_status": "challenger_seed_only",
+    "rank_mode_data_admissible": true,
+    "pro_high_rank_data_admissible": false,
+    "historical_participant_counts": {
+      "unknown": 10
+    },
+    "snapshot_participant_counts": {
+      "unknown": 10
+    },
+    "seed_selection_confirmed": true,
+    "invalid_evidence_records": 0,
+    "reasons": [
+      "not_all_ten_documented_high_at_match"
+    ]
+  },
+  {
+    "match_id": "KR_8402495453",
+    "platform": "KR",
+    "rank_cohort_status": "challenger_seed_only",
+    "rank_mode_data_admissible": true,
+    "pro_high_rank_data_admissible": false,
+    "historical_participant_counts": {
+      "unknown": 10
+    },
+    "snapshot_participant_counts": {
+      "unknown": 10
+    },
+    "seed_selection_confirmed": true,
+    "invalid_evidence_records": 0,
+    "reasons": [
+      "not_all_ten_documented_high_at_match"
+    ]
+  },
+  {
+    "match_id": "KR_8402656502",
+    "platform": "KR",
+    "rank_cohort_status": "challenger_seed_only",
+    "rank_mode_data_admissible": true,
+    "pro_high_rank_data_admissible": false,
+    "historical_participant_counts": {
+      "unknown": 10
+    },
+    "snapshot_participant_counts": {
+      "unknown": 10
+    },
+    "seed_selection_confirmed": true,
+    "invalid_evidence_records": 0,
+    "reasons": [
+      "not_all_ten_documented_high_at_match"
+    ]
+  },
+  {
+    "match_id": "KR_8402712741",
+    "platform": "KR",
+    "rank_cohort_status": "challenger_seed_only",
+    "rank_mode_data_admissible": true,
+    "pro_high_rank_data_admissible": false,
+    "historical_participant_counts": {
+      "unknown": 10
+    },
+    "snapshot_participant_counts": {
+      "unknown": 10
+    },
+    "seed_selection_confirmed": true,
+    "invalid_evidence_records": 0,
+    "reasons": [
+      "not_all_ten_documented_high_at_match"
+    ]
+  },
+  {
+    "match_id": "KR_8402795262",
+    "platform": "KR",
+    "rank_cohort_status": "challenger_seed_only",
+    "rank_mode_data_admissible": true,
+    "pro_high_rank_data_admissible": false,
+    "historical_participant_counts": {
+      "unknown": 10
+    },
+    "snapshot_participant_counts": {
+      "unknown": 10
+    },
+    "seed_selection_confirmed": true,
+    "invalid_evidence_records": 0,
+    "reasons": [
+      "not_all_ten_documented_high_at_match"
+    ]
+  },
+  {
+    "match_id": "KR_8403329091",
+    "platform": "KR",
+    "rank_cohort_status": "challenger_seed_only",
+    "rank_mode_data_admissible": true,
+    "pro_high_rank_data_admissible": false,
+    "historical_participant_counts": {
+      "unknown": 10
+    },
+    "snapshot_participant_counts": {
+      "unknown": 10
+    },
+    "seed_selection_confirmed": true,
+    "invalid_evidence_records": 0,
+    "reasons": [
+      "not_all_ten_documented_high_at_match"
+    ]
+  },
+  {
+    "match_id": "KR_8405161936",
+    "platform": "KR",
+    "rank_cohort_status": "challenger_seed_only",
+    "rank_mode_data_admissible": true,
+    "pro_high_rank_data_admissible": false,
+    "historical_participant_counts": {
+      "unknown": 10
+    },
+    "snapshot_participant_counts": {
+      "unknown": 10
+    },
+    "seed_selection_confirmed": true,
+    "invalid_evidence_records": 0,
+    "reasons": [
+      "not_all_ten_documented_high_at_match"
+    ]
+  },
+  {
+    "match_id": "KR_8405976709",
+    "platform": "KR",
+    "rank_cohort_status": "challenger_seed_only",
+    "rank_mode_data_admissible": true,
+    "pro_high_rank_data_admissible": false,
+    "historical_participant_counts": {
+      "unknown": 10
+    },
+    "snapshot_participant_counts": {
+      "unknown": 10
+    },
+    "seed_selection_confirmed": true,
+    "invalid_evidence_records": 0,
+    "reasons": [
+      "not_all_ten_documented_high_at_match"
+    ]
+  },
+  {
+    "match_id": "KR_8409052957",
+    "platform": "KR",
+    "rank_cohort_status": "challenger_seed_only",
+    "rank_mode_data_admissible": true,
+    "pro_high_rank_data_admissible": false,
+    "historical_participant_counts": {
+      "unknown": 10
+    },
+    "snapshot_participant_counts": {
+      "unknown": 10
+    },
+    "seed_selection_confirmed": true,
+    "invalid_evidence_records": 0,
+    "reasons": [
+      "not_all_ten_documented_high_at_match"
+    ]
+  },
+  {
+    "match_id": "KR_8411760879",
+    "platform": "KR",
+    "rank_cohort_status": "challenger_seed_only",
+    "rank_mode_data_admissible": true,
+    "pro_high_rank_data_admissible": false,
+    "historical_participant_counts": {
+      "unknown": 10
+    },
+    "snapshot_participant_counts": {
+      "unknown": 10
+    },
+    "seed_selection_confirmed": true,
+    "invalid_evidence_records": 0,
+    "reasons": [
+      "not_all_ten_documented_high_at_match"
+    ]
+  },
+  {
+    "match_id": "KR_8411774059",
+    "platform": "KR",
+    "rank_cohort_status": "challenger_seed_only",
+    "rank_mode_data_admissible": true,
+    "pro_high_rank_data_admissible": false,
+    "historical_participant_counts": {
+      "unknown": 10
+    },
+    "snapshot_participant_counts": {
+      "unknown": 10
+    },
+    "seed_selection_confirmed": true,
+    "invalid_evidence_records": 0,
+    "reasons": [
+      "not_all_ten_documented_high_at_match"
+    ]
+  },
+  {
+    "match_id": "KR_8411834384",
+    "platform": "KR",
+    "rank_cohort_status": "challenger_seed_only",
+    "rank_mode_data_admissible": true,
+    "pro_high_rank_data_admissible": false,
+    "historical_participant_counts": {
+      "unknown": 10
+    },
+    "snapshot_participant_counts": {
+      "unknown": 10
+    },
+    "seed_selection_confirmed": true,
+    "invalid_evidence_records": 0,
+    "reasons": [
+      "not_all_ten_documented_high_at_match"
+    ]
+  },
+  {
+    "match_id": "KR_8412145048",
+    "platform": "KR",
+    "rank_cohort_status": "challenger_seed_only",
+    "rank_mode_data_admissible": true,
+    "pro_high_rank_data_admissible": false,
+    "historical_participant_counts": {
+      "unknown": 10
+    },
+    "snapshot_participant_counts": {
+      "unknown": 10
+    },
+    "seed_selection_confirmed": true,
+    "invalid_evidence_records": 0,
+    "reasons": [
+      "not_all_ten_documented_high_at_match"
+    ]
+  },
+  {
+    "match_id": "KR_8412188068",
+    "platform": "KR",
+    "rank_cohort_status": "challenger_seed_only",
+    "rank_mode_data_admissible": true,
+    "pro_high_rank_data_admissible": false,
+    "historical_participant_counts": {
+      "unknown": 10
+    },
+    "snapshot_participant_counts": {
+      "unknown": 10
+    },
+    "seed_selection_confirmed": true,
+    "invalid_evidence_records": 0,
+    "reasons": [
+      "not_all_ten_documented_high_at_match"
+    ]
+  },
+  {
+    "match_id": "KR_8412240490",
+    "platform": "KR",
+    "rank_cohort_status": "challenger_seed_only",
+    "rank_mode_data_admissible": true,
+    "pro_high_rank_data_admissible": false,
+    "historical_participant_counts": {
+      "unknown": 10
+    },
+    "snapshot_participant_counts": {
+      "unknown": 10
+    },
+    "seed_selection_confirmed": true,
+    "invalid_evidence_records": 0,
+    "reasons": [
+      "not_all_ten_documented_high_at_match"
+    ]
+  },
+  {
+    "match_id": "KR_8412594616",
+    "platform": "KR",
+    "rank_cohort_status": "challenger_seed_only",
+    "rank_mode_data_admissible": true,
+    "pro_high_rank_data_admissible": false,
+    "historical_participant_counts": {
+      "unknown": 10
+    },
+    "snapshot_participant_counts": {
+      "unknown": 10
+    },
+    "seed_selection_confirmed": true,
+    "invalid_evidence_records": 0,
+    "reasons": [
+      "not_all_ten_documented_high_at_match"
+    ]
+  },
+  {
+    "match_id": "KR_8412651303",
+    "platform": "KR",
+    "rank_cohort_status": "challenger_seed_only",
+    "rank_mode_data_admissible": true,
+    "pro_high_rank_data_admissible": false,
+    "historical_participant_counts": {
+      "unknown": 10
+    },
+    "snapshot_participant_counts": {
+      "unknown": 10
+    },
+    "seed_selection_confirmed": true,
+    "invalid_evidence_records": 0,
+    "reasons": [
+      "not_all_ten_documented_high_at_match"
+    ]
+  },
+  {
+    "match_id": "KR_8413098362",
+    "platform": "KR",
+    "rank_cohort_status": "challenger_seed_only",
+    "rank_mode_data_admissible": true,
+    "pro_high_rank_data_admissible": false,
+    "historical_participant_counts": {
+      "unknown": 10
+    },
+    "snapshot_participant_counts": {
+      "unknown": 10
+    },
+    "seed_selection_confirmed": true,
+    "invalid_evidence_records": 0,
+    "reasons": [
+      "not_all_ten_documented_high_at_match"
+    ]
+  },
+  {
+    "match_id": "KR_8413155934",
+    "platform": "KR",
+    "rank_cohort_status": "challenger_seed_only",
+    "rank_mode_data_admissible": true,
+    "pro_high_rank_data_admissible": false,
+    "historical_participant_counts": {
+      "unknown": 10
+    },
+    "snapshot_participant_counts": {
+      "unknown": 10
+    },
+    "seed_selection_confirmed": true,
+    "invalid_evidence_records": 0,
+    "reasons": [
+      "not_all_ten_documented_high_at_match"
+    ]
+  },
+  {
+    "match_id": "KR_8413302998",
+    "platform": "KR",
+    "rank_cohort_status": "challenger_seed_only",
+    "rank_mode_data_admissible": true,
+    "pro_high_rank_data_admissible": false,
+    "historical_participant_counts": {
+      "unknown": 10
+    },
+    "snapshot_participant_counts": {
+      "unknown": 10
+    },
+    "seed_selection_confirmed": true,
+    "invalid_evidence_records": 0,
+    "reasons": [
+      "not_all_ten_documented_high_at_match"
+    ]
+  },
+  {
+    "match_id": "KR_8413526591",
+    "platform": "KR",
+    "rank_cohort_status": "challenger_seed_only",
+    "rank_mode_data_admissible": true,
+    "pro_high_rank_data_admissible": false,
+    "historical_participant_counts": {
+      "unknown": 10
+    },
+    "snapshot_participant_counts": {
+      "unknown": 10
+    },
+    "seed_selection_confirmed": true,
+    "invalid_evidence_records": 0,
+    "reasons": [
+      "not_all_ten_documented_high_at_match"
+    ]
+  },
+  {
+    "match_id": "KR_8414150844",
+    "platform": "KR",
+    "rank_cohort_status": "challenger_seed_only",
+    "rank_mode_data_admissible": true,
+    "pro_high_rank_data_admissible": false,
+    "historical_participant_counts": {
+      "unknown": 10
+    },
+    "snapshot_participant_counts": {
+      "unknown": 10
+    },
+    "seed_selection_confirmed": true,
+    "invalid_evidence_records": 0,
+    "reasons": [
+      "not_all_ten_documented_high_at_match"
+    ]
+  },
+  {
+    "match_id": "KR_8414275036",
+    "platform": "KR",
+    "rank_cohort_status": "challenger_seed_only",
+    "rank_mode_data_admissible": true,
+    "pro_high_rank_data_admissible": false,
+    "historical_participant_counts": {
+      "unknown": 10
+    },
+    "snapshot_participant_counts": {
+      "unknown": 10
+    },
+    "seed_selection_confirmed": true,
+    "invalid_evidence_records": 0,
+    "reasons": [
+      "not_all_ten_documented_high_at_match"
+    ]
+  },
+  {
+    "match_id": "KR_8414848645",
+    "platform": "KR",
+    "rank_cohort_status": "challenger_seed_only",
+    "rank_mode_data_admissible": true,
+    "pro_high_rank_data_admissible": false,
+    "historical_participant_counts": {
+      "unknown": 10
+    },
+    "snapshot_participant_counts": {
+      "unknown": 10
+    },
+    "seed_selection_confirmed": true,
+    "invalid_evidence_records": 0,
+    "reasons": [
+      "not_all_ten_documented_high_at_match"
+    ]
+  },
+  {
+    "match_id": "KR_8414892552",
+    "platform": "KR",
+    "rank_cohort_status": "challenger_seed_only",
+    "rank_mode_data_admissible": true,
+    "pro_high_rank_data_admissible": false,
+    "historical_participant_counts": {
+      "unknown": 10
+    },
+    "snapshot_participant_counts": {
+      "unknown": 10
+    },
+    "seed_selection_confirmed": true,
+    "invalid_evidence_records": 0,
+    "reasons": [
+      "not_all_ten_documented_high_at_match"
+    ]
+  },
+  {
+    "match_id": "KR_8414933291",
+    "platform": "KR",
+    "rank_cohort_status": "challenger_seed_only",
+    "rank_mode_data_admissible": true,
+    "pro_high_rank_data_admissible": false,
+    "historical_participant_counts": {
+      "unknown": 10
+    },
+    "snapshot_participant_counts": {
+      "unknown": 10
+    },
+    "seed_selection_confirmed": true,
+    "invalid_evidence_records": 0,
+    "reasons": [
+      "not_all_ten_documented_high_at_match"
+    ]
+  },
+  {
+    "match_id": "KR_8414940667",
+    "platform": "KR",
+    "rank_cohort_status": "challenger_seed_only",
+    "rank_mode_data_admissible": true,
+    "pro_high_rank_data_admissible": false,
+    "historical_participant_counts": {
+      "unknown": 10
+    },
+    "snapshot_participant_counts": {
+      "unknown": 10
+    },
+    "seed_selection_confirmed": true,
+    "invalid_evidence_records": 0,
+    "reasons": [
+      "not_all_ten_documented_high_at_match"
+    ]
+  },
+  {
+    "match_id": "KR_8414963801",
+    "platform": "KR",
+    "rank_cohort_status": "challenger_seed_only",
+    "rank_mode_data_admissible": true,
+    "pro_high_rank_data_admissible": false,
+    "historical_participant_counts": {
+      "unknown": 10
+    },
+    "snapshot_participant_counts": {
+      "unknown": 10
+    },
+    "seed_selection_confirmed": true,
+    "invalid_evidence_records": 0,
+    "reasons": [
+      "not_all_ten_documented_high_at_match"
+    ]
+  },
+  {
+    "match_id": "KR_8414977450",
+    "platform": "KR",
+    "rank_cohort_status": "challenger_seed_only",
+    "rank_mode_data_admissible": true,
+    "pro_high_rank_data_admissible": false,
+    "historical_participant_counts": {
+      "unknown": 10
+    },
+    "snapshot_participant_counts": {
+      "unknown": 10
+    },
+    "seed_selection_confirmed": true,
+    "invalid_evidence_records": 0,
+    "reasons": [
+      "not_all_ten_documented_high_at_match"
+    ]
+  },
+  {
+    "match_id": "KR_8415001529",
+    "platform": "KR",
+    "rank_cohort_status": "challenger_seed_only",
+    "rank_mode_data_admissible": true,
+    "pro_high_rank_data_admissible": false,
+    "historical_participant_counts": {
+      "unknown": 10
+    },
+    "snapshot_participant_counts": {
+      "unknown": 10
+    },
+    "seed_selection_confirmed": true,
+    "invalid_evidence_records": 0,
+    "reasons": [
+      "not_all_ten_documented_high_at_match"
+    ]
+  },
+  {
+    "match_id": "KR_8415085978",
+    "platform": "KR",
+    "rank_cohort_status": "challenger_seed_only",
+    "rank_mode_data_admissible": true,
+    "pro_high_rank_data_admissible": false,
+    "historical_participant_counts": {
+      "unknown": 10
+    },
+    "snapshot_participant_counts": {
+      "unknown": 10
+    },
+    "seed_selection_confirmed": true,
+    "invalid_evidence_records": 0,
+    "reasons": [
+      "not_all_ten_documented_high_at_match"
+    ]
+  },
+  {
+    "match_id": "KR_8415103735",
+    "platform": "KR",
+    "rank_cohort_status": "challenger_seed_only",
+    "rank_mode_data_admissible": true,
+    "pro_high_rank_data_admissible": false,
+    "historical_participant_counts": {
+      "unknown": 10
+    },
+    "snapshot_participant_counts": {
+      "unknown": 10
+    },
+    "seed_selection_confirmed": true,
+    "invalid_evidence_records": 0,
+    "reasons": [
+      "not_all_ten_documented_high_at_match"
+    ]
+  },
+  {
+    "match_id": "KR_8415500633",
+    "platform": "KR",
+    "rank_cohort_status": "challenger_seed_only",
+    "rank_mode_data_admissible": true,
+    "pro_high_rank_data_admissible": false,
+    "historical_participant_counts": {
+      "unknown": 10
+    },
+    "snapshot_participant_counts": {
+      "unknown": 10
+    },
+    "seed_selection_confirmed": true,
+    "invalid_evidence_records": 0,
+    "reasons": [
+      "not_all_ten_documented_high_at_match"
+    ]
+  },
+  {
+    "match_id": "KR_8415875182",
+    "platform": "KR",
+    "rank_cohort_status": "challenger_seed_only",
+    "rank_mode_data_admissible": true,
+    "pro_high_rank_data_admissible": false,
+    "historical_participant_counts": {
+      "unknown": 10
+    },
+    "snapshot_participant_counts": {
+      "unknown": 10
+    },
+    "seed_selection_confirmed": true,
+    "invalid_evidence_records": 0,
+    "reasons": [
+      "not_all_ten_documented_high_at_match"
+    ]
+  },
+  {
+    "match_id": "KR_8415956593",
+    "platform": "KR",
+    "rank_cohort_status": "challenger_seed_only",
+    "rank_mode_data_admissible": true,
+    "pro_high_rank_data_admissible": false,
+    "historical_participant_counts": {
+      "unknown": 10
+    },
+    "snapshot_participant_counts": {
+      "unknown": 10
+    },
+    "seed_selection_confirmed": true,
+    "invalid_evidence_records": 0,
+    "reasons": [
+      "not_all_ten_documented_high_at_match"
+    ]
+  },
+  {
+    "match_id": "KR_8416040050",
+    "platform": "KR",
+    "rank_cohort_status": "challenger_seed_only",
+    "rank_mode_data_admissible": true,
+    "pro_high_rank_data_admissible": false,
+    "historical_participant_counts": {
+      "unknown": 10
+    },
+    "snapshot_participant_counts": {
+      "unknown": 10
+    },
+    "seed_selection_confirmed": true,
+    "invalid_evidence_records": 0,
+    "reasons": [
+      "not_all_ten_documented_high_at_match"
+    ]
+  },
+  {
+    "match_id": "KR_8416106340",
+    "platform": "KR",
+    "rank_cohort_status": "challenger_seed_only",
+    "rank_mode_data_admissible": true,
+    "pro_high_rank_data_admissible": false,
+    "historical_participant_counts": {
+      "unknown": 10
+    },
+    "snapshot_participant_counts": {
+      "unknown": 10
+    },
+    "seed_selection_confirmed": true,
+    "invalid_evidence_records": 0,
+    "reasons": [
+      "not_all_ten_documented_high_at_match"
+    ]
+  },
+  {
+    "match_id": "KR_8416277050",
+    "platform": "KR",
+    "rank_cohort_status": "challenger_seed_only",
+    "rank_mode_data_admissible": true,
+    "pro_high_rank_data_admissible": false,
+    "historical_participant_counts": {
+      "unknown": 10
+    },
+    "snapshot_participant_counts": {
+      "unknown": 10
+    },
+    "seed_selection_confirmed": true,
+    "invalid_evidence_records": 0,
+    "reasons": [
+      "not_all_ten_documented_high_at_match"
+    ]
+  },
+  {
+    "match_id": "KR_8416487317",
+    "platform": "KR",
+    "rank_cohort_status": "challenger_seed_only",
+    "rank_mode_data_admissible": true,
+    "pro_high_rank_data_admissible": false,
+    "historical_participant_counts": {
+      "unknown": 10
+    },
+    "snapshot_participant_counts": {
+      "unknown": 10
+    },
+    "seed_selection_confirmed": true,
+    "invalid_evidence_records": 0,
+    "reasons": [
+      "not_all_ten_documented_high_at_match"
+    ]
+  },
+  {
+    "match_id": "KR_8416883173",
+    "platform": "KR",
+    "rank_cohort_status": "challenger_seed_only",
+    "rank_mode_data_admissible": true,
+    "pro_high_rank_data_admissible": false,
+    "historical_participant_counts": {
+      "unknown": 10
+    },
+    "snapshot_participant_counts": {
+      "unknown": 10
+    },
+    "seed_selection_confirmed": true,
+    "invalid_evidence_records": 0,
+    "reasons": [
+      "not_all_ten_documented_high_at_match"
+    ]
+  },
+  {
+    "match_id": "KR_8417238085",
+    "platform": "KR",
+    "rank_cohort_status": "challenger_seed_only",
+    "rank_mode_data_admissible": true,
+    "pro_high_rank_data_admissible": false,
+    "historical_participant_counts": {
+      "unknown": 10
+    },
+    "snapshot_participant_counts": {
+      "unknown": 10
+    },
+    "seed_selection_confirmed": true,
+    "invalid_evidence_records": 0,
+    "reasons": [
+      "not_all_ten_documented_high_at_match"
+    ]
+  },
+  {
+    "match_id": "KR_8417273918",
+    "platform": "KR",
+    "rank_cohort_status": "challenger_seed_only",
+    "rank_mode_data_admissible": true,
+    "pro_high_rank_data_admissible": false,
+    "historical_participant_counts": {
+      "unknown": 10
+    },
+    "snapshot_participant_counts": {
+      "unknown": 10
+    },
+    "seed_selection_confirmed": true,
+    "invalid_evidence_records": 0,
+    "reasons": [
+      "not_all_ten_documented_high_at_match"
+    ]
+  },
+  {
+    "match_id": "KR_8417340093",
+    "platform": "KR",
+    "rank_cohort_status": "challenger_seed_only",
+    "rank_mode_data_admissible": true,
+    "pro_high_rank_data_admissible": false,
+    "historical_participant_counts": {
+      "unknown": 10
+    },
+    "snapshot_participant_counts": {
+      "unknown": 10
+    },
+    "seed_selection_confirmed": true,
+    "invalid_evidence_records": 0,
+    "reasons": [
+      "not_all_ten_documented_high_at_match"
+    ]
+  },
+  {
+    "match_id": "KR_8417361517",
+    "platform": "KR",
+    "rank_cohort_status": "challenger_seed_only",
+    "rank_mode_data_admissible": true,
+    "pro_high_rank_data_admissible": false,
+    "historical_participant_counts": {
+      "unknown": 10
+    },
+    "snapshot_participant_counts": {
+      "unknown": 10
+    },
+    "seed_selection_confirmed": true,
+    "invalid_evidence_records": 0,
+    "reasons": [
+      "not_all_ten_documented_high_at_match"
+    ]
+  },
+  {
+    "match_id": "KR_8417402754",
+    "platform": "KR",
+    "rank_cohort_status": "challenger_seed_only",
+    "rank_mode_data_admissible": true,
+    "pro_high_rank_data_admissible": false,
+    "historical_participant_counts": {
+      "unknown": 10
+    },
+    "snapshot_participant_counts": {
+      "unknown": 10
+    },
+    "seed_selection_confirmed": true,
+    "invalid_evidence_records": 0,
+    "reasons": [
+      "not_all_ten_documented_high_at_match"
+    ]
+  },
+  {
+    "match_id": "KR_8417462255",
+    "platform": "KR",
+    "rank_cohort_status": "challenger_seed_only",
+    "rank_mode_data_admissible": true,
+    "pro_high_rank_data_admissible": false,
+    "historical_participant_counts": {
+      "unknown": 10
+    },
+    "snapshot_participant_counts": {
+      "unknown": 10
+    },
+    "seed_selection_confirmed": true,
+    "invalid_evidence_records": 0,
+    "reasons": [
+      "not_all_ten_documented_high_at_match"
+    ]
+  },
+  {
+    "match_id": "KR_8417712393",
+    "platform": "KR",
+    "rank_cohort_status": "challenger_seed_only",
+    "rank_mode_data_admissible": true,
+    "pro_high_rank_data_admissible": false,
+    "historical_participant_counts": {
+      "unknown": 10
+    },
+    "snapshot_participant_counts": {
+      "unknown": 10
+    },
+    "seed_selection_confirmed": true,
+    "invalid_evidence_records": 0,
+    "reasons": [
+      "not_all_ten_documented_high_at_match"
+    ]
+  },
+  {
+    "match_id": "KR_8417750204",
+    "platform": "KR",
+    "rank_cohort_status": "challenger_seed_only",
+    "rank_mode_data_admissible": true,
+    "pro_high_rank_data_admissible": false,
+    "historical_participant_counts": {
+      "unknown": 10
+    },
+    "snapshot_participant_counts": {
+      "unknown": 10
+    },
+    "seed_selection_confirmed": true,
+    "invalid_evidence_records": 0,
+    "reasons": [
+      "not_all_ten_documented_high_at_match"
+    ]
+  },
+  {
+    "match_id": "KR_8417785019",
+    "platform": "KR",
+    "rank_cohort_status": "challenger_seed_only",
+    "rank_mode_data_admissible": true,
+    "pro_high_rank_data_admissible": false,
+    "historical_participant_counts": {
+      "unknown": 10
+    },
+    "snapshot_participant_counts": {
+      "unknown": 10
+    },
+    "seed_selection_confirmed": true,
+    "invalid_evidence_records": 0,
+    "reasons": [
+      "not_all_ten_documented_high_at_match"
+    ]
+  },
+  {
+    "match_id": "KR_8417806434",
+    "platform": "KR",
+    "rank_cohort_status": "challenger_seed_only",
+    "rank_mode_data_admissible": true,
+    "pro_high_rank_data_admissible": false,
+    "historical_participant_counts": {
+      "unknown": 10
+    },
+    "snapshot_participant_counts": {
+      "unknown": 10
+    },
+    "seed_selection_confirmed": true,
+    "invalid_evidence_records": 0,
+    "reasons": [
+      "not_all_ten_documented_high_at_match"
+    ]
+  },
+  {
+    "match_id": "KR_8417839410",
+    "platform": "KR",
+    "rank_cohort_status": "challenger_seed_only",
+    "rank_mode_data_admissible": true,
+    "pro_high_rank_data_admissible": false,
+    "historical_participant_counts": {
+      "unknown": 10
+    },
+    "snapshot_participant_counts": {
+      "unknown": 10
+    },
+    "seed_selection_confirmed": true,
+    "invalid_evidence_records": 0,
+    "reasons": [
+      "not_all_ten_documented_high_at_match"
+    ]
+  },
+  {
+    "match_id": "KR_8417894035",
+    "platform": "KR",
+    "rank_cohort_status": "challenger_seed_only",
+    "rank_mode_data_admissible": true,
+    "pro_high_rank_data_admissible": false,
+    "historical_participant_counts": {
+      "unknown": 10
+    },
+    "snapshot_participant_counts": {
+      "unknown": 10
+    },
+    "seed_selection_confirmed": true,
+    "invalid_evidence_records": 0,
+    "reasons": [
+      "not_all_ten_documented_high_at_match"
+    ]
+  },
+  {
+    "match_id": "KR_8417993166",
+    "platform": "KR",
+    "rank_cohort_status": "challenger_seed_only",
+    "rank_mode_data_admissible": true,
+    "pro_high_rank_data_admissible": false,
+    "historical_participant_counts": {
+      "unknown": 10
+    },
+    "snapshot_participant_counts": {
+      "unknown": 10
+    },
+    "seed_selection_confirmed": true,
+    "invalid_evidence_records": 0,
+    "reasons": [
+      "not_all_ten_documented_high_at_match"
+    ]
+  },
+  {
+    "match_id": "KR_8418190234",
+    "platform": "KR",
+    "rank_cohort_status": "challenger_seed_only",
+    "rank_mode_data_admissible": true,
+    "pro_high_rank_data_admissible": false,
+    "historical_participant_counts": {
+      "unknown": 10
+    },
+    "snapshot_participant_counts": {
+      "unknown": 10
+    },
+    "seed_selection_confirmed": true,
+    "invalid_evidence_records": 0,
+    "reasons": [
+      "not_all_ten_documented_high_at_match"
+    ]
+  },
+  {
+    "match_id": "KR_8418256623",
+    "platform": "KR",
+    "rank_cohort_status": "challenger_seed_only",
+    "rank_mode_data_admissible": true,
+    "pro_high_rank_data_admissible": false,
+    "historical_participant_counts": {
+      "unknown": 10
+    },
+    "snapshot_participant_counts": {
+      "unknown": 10
+    },
+    "seed_selection_confirmed": true,
+    "invalid_evidence_records": 0,
+    "reasons": [
+      "not_all_ten_documented_high_at_match"
+    ]
+  },
+  {
+    "match_id": "KR_8418382792",
+    "platform": "KR",
+    "rank_cohort_status": "challenger_seed_only",
+    "rank_mode_data_admissible": true,
+    "pro_high_rank_data_admissible": false,
+    "historical_participant_counts": {
+      "unknown": 10
+    },
+    "snapshot_participant_counts": {
+      "unknown": 10
+    },
+    "seed_selection_confirmed": true,
+    "invalid_evidence_records": 0,
+    "reasons": [
+      "not_all_ten_documented_high_at_match"
+    ]
+  },
+  {
+    "match_id": "KR_8418428189",
+    "platform": "KR",
+    "rank_cohort_status": "challenger_seed_only",
+    "rank_mode_data_admissible": true,
+    "pro_high_rank_data_admissible": false,
+    "historical_participant_counts": {
+      "unknown": 10
+    },
+    "snapshot_participant_counts": {
+      "unknown": 10
+    },
+    "seed_selection_confirmed": true,
+    "invalid_evidence_records": 0,
+    "reasons": [
+      "not_all_ten_documented_high_at_match"
+    ]
+  },
+  {
+    "match_id": "KR_8418491868",
+    "platform": "KR",
+    "rank_cohort_status": "challenger_seed_only",
+    "rank_mode_data_admissible": true,
+    "pro_high_rank_data_admissible": false,
+    "historical_participant_counts": {
+      "unknown": 10
+    },
+    "snapshot_participant_counts": {
+      "unknown": 10
+    },
+    "seed_selection_confirmed": true,
+    "invalid_evidence_records": 0,
+    "reasons": [
+      "not_all_ten_documented_high_at_match"
+    ]
+  },
+  {
+    "match_id": "KR_8418772795",
+    "platform": "KR",
+    "rank_cohort_status": "challenger_seed_only",
+    "rank_mode_data_admissible": true,
+    "pro_high_rank_data_admissible": false,
+    "historical_participant_counts": {
+      "unknown": 10
+    },
+    "snapshot_participant_counts": {
+      "unknown": 10
+    },
+    "seed_selection_confirmed": true,
+    "invalid_evidence_records": 0,
+    "reasons": [
+      "not_all_ten_documented_high_at_match"
+    ]
+  },
+  {
+    "match_id": "KR_8418790932",
+    "platform": "KR",
+    "rank_cohort_status": "challenger_seed_only",
+    "rank_mode_data_admissible": true,
+    "pro_high_rank_data_admissible": false,
+    "historical_participant_counts": {
+      "unknown": 10
+    },
+    "snapshot_participant_counts": {
+      "unknown": 10
+    },
+    "seed_selection_confirmed": true,
+    "invalid_evidence_records": 0,
+    "reasons": [
+      "not_all_ten_documented_high_at_match"
+    ]
+  },
+  {
+    "match_id": "KR_8418842187",
+    "platform": "KR",
+    "rank_cohort_status": "challenger_seed_only",
+    "rank_mode_data_admissible": true,
+    "pro_high_rank_data_admissible": false,
+    "historical_participant_counts": {
+      "unknown": 10
+    },
+    "snapshot_participant_counts": {
+      "unknown": 10
+    },
+    "seed_selection_confirmed": true,
+    "invalid_evidence_records": 0,
+    "reasons": [
+      "not_all_ten_documented_high_at_match"
+    ]
+  },
+  {
+    "match_id": "KR_8418861503",
+    "platform": "KR",
+    "rank_cohort_status": "challenger_seed_only",
+    "rank_mode_data_admissible": true,
+    "pro_high_rank_data_admissible": false,
+    "historical_participant_counts": {
+      "unknown": 10
+    },
+    "snapshot_participant_counts": {
+      "unknown": 10
+    },
+    "seed_selection_confirmed": true,
+    "invalid_evidence_records": 0,
+    "reasons": [
+      "not_all_ten_documented_high_at_match"
+    ]
+  },
+  {
+    "match_id": "KR_8418891274",
+    "platform": "KR",
+    "rank_cohort_status": "challenger_seed_only",
+    "rank_mode_data_admissible": true,
+    "pro_high_rank_data_admissible": false,
+    "historical_participant_counts": {
+      "unknown": 10
+    },
+    "snapshot_participant_counts": {
+      "unknown": 10
+    },
+    "seed_selection_confirmed": true,
+    "invalid_evidence_records": 0,
+    "reasons": [
+      "not_all_ten_documented_high_at_match"
+    ]
+  },
+  {
+    "match_id": "KR_8418897929",
+    "platform": "KR",
+    "rank_cohort_status": "challenger_seed_only",
+    "rank_mode_data_admissible": true,
+    "pro_high_rank_data_admissible": false,
+    "historical_participant_counts": {
+      "unknown": 10
+    },
+    "snapshot_participant_counts": {
+      "unknown": 10
+    },
+    "seed_selection_confirmed": true,
+    "invalid_evidence_records": 0,
+    "reasons": [
+      "not_all_ten_documented_high_at_match"
+    ]
+  },
+  {
+    "match_id": "KR_8418955698",
+    "platform": "KR",
+    "rank_cohort_status": "challenger_seed_only",
+    "rank_mode_data_admissible": true,
+    "pro_high_rank_data_admissible": false,
+    "historical_participant_counts": {
+      "unknown": 10
+    },
+    "snapshot_participant_counts": {
+      "unknown": 10
+    },
+    "seed_selection_confirmed": true,
+    "invalid_evidence_records": 0,
+    "reasons": [
+      "not_all_ten_documented_high_at_match"
+    ]
+  },
+  {
+    "match_id": "KR_8418956192",
+    "platform": "KR",
+    "rank_cohort_status": "challenger_seed_only",
+    "rank_mode_data_admissible": true,
+    "pro_high_rank_data_admissible": false,
+    "historical_participant_counts": {
+      "unknown": 10
+    },
+    "snapshot_participant_counts": {
+      "unknown": 10
+    },
+    "seed_selection_confirmed": true,
+    "invalid_evidence_records": 0,
+    "reasons": [
+      "not_all_ten_documented_high_at_match"
+    ]
+  },
+  {
+    "match_id": "KR_8418988586",
+    "platform": "KR",
+    "rank_cohort_status": "challenger_seed_only",
+    "rank_mode_data_admissible": true,
+    "pro_high_rank_data_admissible": false,
+    "historical_participant_counts": {
+      "unknown": 10
+    },
+    "snapshot_participant_counts": {
+      "unknown": 10
+    },
+    "seed_selection_confirmed": true,
+    "invalid_evidence_records": 0,
+    "reasons": [
+      "not_all_ten_documented_high_at_match"
+    ]
+  },
+  {
+    "match_id": "KR_8418996612",
+    "platform": "KR",
+    "rank_cohort_status": "challenger_seed_only",
+    "rank_mode_data_admissible": true,
+    "pro_high_rank_data_admissible": false,
+    "historical_participant_counts": {
+      "unknown": 10
+    },
+    "snapshot_participant_counts": {
+      "unknown": 10
+    },
+    "seed_selection_confirmed": true,
+    "invalid_evidence_records": 0,
+    "reasons": [
+      "not_all_ten_documented_high_at_match"
+    ]
+  },
+  {
+    "match_id": "KR_8419022740",
+    "platform": "KR",
+    "rank_cohort_status": "challenger_seed_only",
+    "rank_mode_data_admissible": true,
+    "pro_high_rank_data_admissible": false,
+    "historical_participant_counts": {
+      "unknown": 10
+    },
+    "snapshot_participant_counts": {
+      "unknown": 10
+    },
+    "seed_selection_confirmed": true,
+    "invalid_evidence_records": 0,
+    "reasons": [
+      "not_all_ten_documented_high_at_match"
+    ]
+  },
+  {
+    "match_id": "KR_8419038497",
+    "platform": "KR",
+    "rank_cohort_status": "challenger_seed_only",
+    "rank_mode_data_admissible": true,
+    "pro_high_rank_data_admissible": false,
+    "historical_participant_counts": {
+      "unknown": 10
+    },
+    "snapshot_participant_counts": {
+      "unknown": 10
+    },
+    "seed_selection_confirmed": true,
+    "invalid_evidence_records": 0,
+    "reasons": [
+      "not_all_ten_documented_high_at_match"
+    ]
+  },
+  {
+    "match_id": "KR_8419096056",
+    "platform": "KR",
+    "rank_cohort_status": "challenger_seed_only",
+    "rank_mode_data_admissible": true,
+    "pro_high_rank_data_admissible": false,
+    "historical_participant_counts": {
+      "unknown": 10
+    },
+    "snapshot_participant_counts": {
+      "unknown": 10
+    },
+    "seed_selection_confirmed": true,
+    "invalid_evidence_records": 0,
+    "reasons": [
+      "not_all_ten_documented_high_at_match"
+    ]
+  },
+  {
+    "match_id": "KR_8419099742",
+    "platform": "KR",
+    "rank_cohort_status": "challenger_seed_only",
+    "rank_mode_data_admissible": true,
+    "pro_high_rank_data_admissible": false,
+    "historical_participant_counts": {
+      "unknown": 10
+    },
+    "snapshot_participant_counts": {
+      "unknown": 10
+    },
+    "seed_selection_confirmed": true,
+    "invalid_evidence_records": 0,
+    "reasons": [
+      "not_all_ten_documented_high_at_match"
+    ]
+  },
+  {
+    "match_id": "KR_8419126633",
+    "platform": "KR",
+    "rank_cohort_status": "challenger_seed_only",
+    "rank_mode_data_admissible": true,
+    "pro_high_rank_data_admissible": false,
+    "historical_participant_counts": {
+      "unknown": 10
+    },
+    "snapshot_participant_counts": {
+      "unknown": 10
+    },
+    "seed_selection_confirmed": true,
+    "invalid_evidence_records": 0,
+    "reasons": [
+      "not_all_ten_documented_high_at_match"
+    ]
+  },
+  {
+    "match_id": "KR_8419128811",
+    "platform": "KR",
+    "rank_cohort_status": "challenger_seed_only",
+    "rank_mode_data_admissible": true,
+    "pro_high_rank_data_admissible": false,
+    "historical_participant_counts": {
+      "unknown": 10
+    },
+    "snapshot_participant_counts": {
+      "unknown": 10
+    },
+    "seed_selection_confirmed": true,
+    "invalid_evidence_records": 0,
+    "reasons": [
+      "not_all_ten_documented_high_at_match"
+    ]
+  },
+  {
+    "match_id": "KR_8419239615",
+    "platform": "KR",
+    "rank_cohort_status": "challenger_seed_only",
+    "rank_mode_data_admissible": true,
+    "pro_high_rank_data_admissible": false,
+    "historical_participant_counts": {
+      "unknown": 10
+    },
+    "snapshot_participant_counts": {
+      "unknown": 10
+    },
+    "seed_selection_confirmed": true,
+    "invalid_evidence_records": 0,
+    "reasons": [
+      "not_all_ten_documented_high_at_match"
+    ]
+  },
+  {
+    "match_id": "KR_8419285983",
+    "platform": "KR",
+    "rank_cohort_status": "challenger_seed_only",
+    "rank_mode_data_admissible": true,
+    "pro_high_rank_data_admissible": false,
+    "historical_participant_counts": {
+      "unknown": 10
+    },
+    "snapshot_participant_counts": {
+      "unknown": 10
+    },
+    "seed_selection_confirmed": true,
+    "invalid_evidence_records": 0,
+    "reasons": [
+      "not_all_ten_documented_high_at_match"
+    ]
+  },
+  {
+    "match_id": "KR_8419362524",
+    "platform": "KR",
+    "rank_cohort_status": "challenger_seed_only",
+    "rank_mode_data_admissible": true,
+    "pro_high_rank_data_admissible": false,
+    "historical_participant_counts": {
+      "unknown": 10
+    },
+    "snapshot_participant_counts": {
+      "unknown": 10
+    },
+    "seed_selection_confirmed": true,
+    "invalid_evidence_records": 0,
+    "reasons": [
+      "not_all_ten_documented_high_at_match"
+    ]
+  },
+  {
+    "match_id": "KR_8419370694",
+    "platform": "KR",
+    "rank_cohort_status": "challenger_seed_only",
+    "rank_mode_data_admissible": true,
+    "pro_high_rank_data_admissible": false,
+    "historical_participant_counts": {
+      "unknown": 10
+    },
+    "snapshot_participant_counts": {
+      "unknown": 10
+    },
+    "seed_selection_confirmed": true,
+    "invalid_evidence_records": 0,
+    "reasons": [
+      "not_all_ten_documented_high_at_match"
+    ]
+  },
+  {
+    "match_id": "KR_8419416841",
+    "platform": "KR",
+    "rank_cohort_status": "challenger_seed_only",
+    "rank_mode_data_admissible": true,
+    "pro_high_rank_data_admissible": false,
+    "historical_participant_counts": {
+      "unknown": 10
+    },
+    "snapshot_participant_counts": {
+      "unknown": 10
+    },
+    "seed_selection_confirmed": true,
+    "invalid_evidence_records": 0,
+    "reasons": [
+      "not_all_ten_documented_high_at_match"
+    ]
+  },
+  {
+    "match_id": "KR_8419421555",
+    "platform": "KR",
+    "rank_cohort_status": "challenger_seed_only",
+    "rank_mode_data_admissible": true,
+    "pro_high_rank_data_admissible": false,
+    "historical_participant_counts": {
+      "unknown": 10
+    },
+    "snapshot_participant_counts": {
+      "unknown": 10
+    },
+    "seed_selection_confirmed": true,
+    "invalid_evidence_records": 0,
+    "reasons": [
+      "not_all_ten_documented_high_at_match"
+    ]
+  },
+  {
+    "match_id": "KR_8419462969",
+    "platform": "KR",
+    "rank_cohort_status": "challenger_seed_only",
+    "rank_mode_data_admissible": true,
+    "pro_high_rank_data_admissible": false,
+    "historical_participant_counts": {
+      "unknown": 10
+    },
+    "snapshot_participant_counts": {
+      "unknown": 10
+    },
+    "seed_selection_confirmed": true,
+    "invalid_evidence_records": 0,
+    "reasons": [
+      "not_all_ten_documented_high_at_match"
+    ]
+  },
+  {
+    "match_id": "KR_8419463469",
+    "platform": "KR",
+    "rank_cohort_status": "challenger_seed_only",
+    "rank_mode_data_admissible": true,
+    "pro_high_rank_data_admissible": false,
+    "historical_participant_counts": {
+      "unknown": 10
+    },
+    "snapshot_participant_counts": {
+      "unknown": 10
+    },
+    "seed_selection_confirmed": true,
+    "invalid_evidence_records": 0,
+    "reasons": [
+      "not_all_ten_documented_high_at_match"
+    ]
+  },
+  {
+    "match_id": "KR_8419501041",
+    "platform": "KR",
+    "rank_cohort_status": "challenger_seed_only",
+    "rank_mode_data_admissible": true,
+    "pro_high_rank_data_admissible": false,
+    "historical_participant_counts": {
+      "unknown": 10
+    },
+    "snapshot_participant_counts": {
+      "unknown": 10
+    },
+    "seed_selection_confirmed": true,
+    "invalid_evidence_records": 0,
+    "reasons": [
+      "not_all_ten_documented_high_at_match"
+    ]
+  },
+  {
+    "match_id": "KR_8419510165",
+    "platform": "KR",
+    "rank_cohort_status": "challenger_seed_only",
+    "rank_mode_data_admissible": true,
+    "pro_high_rank_data_admissible": false,
+    "historical_participant_counts": {
+      "unknown": 10
+    },
+    "snapshot_participant_counts": {
+      "unknown": 10
+    },
+    "seed_selection_confirmed": true,
+    "invalid_evidence_records": 0,
+    "reasons": [
+      "not_all_ten_documented_high_at_match"
+    ]
+  },
+  {
+    "match_id": "KR_8419513980",
+    "platform": "KR",
+    "rank_cohort_status": "challenger_seed_only",
+    "rank_mode_data_admissible": true,
+    "pro_high_rank_data_admissible": false,
+    "historical_participant_counts": {
+      "unknown": 10
+    },
+    "snapshot_participant_counts": {
+      "unknown": 10
+    },
+    "seed_selection_confirmed": true,
+    "invalid_evidence_records": 0,
+    "reasons": [
+      "not_all_ten_documented_high_at_match"
+    ]
+  },
+  {
+    "match_id": "KR_8419523152",
+    "platform": "KR",
+    "rank_cohort_status": "challenger_seed_only",
+    "rank_mode_data_admissible": true,
+    "pro_high_rank_data_admissible": false,
+    "historical_participant_counts": {
+      "unknown": 10
+    },
+    "snapshot_participant_counts": {
+      "unknown": 10
+    },
+    "seed_selection_confirmed": true,
+    "invalid_evidence_records": 0,
+    "reasons": [
+      "not_all_ten_documented_high_at_match"
+    ]
+  },
+  {
+    "match_id": "KR_8419530279",
+    "platform": "KR",
+    "rank_cohort_status": "challenger_seed_only",
+    "rank_mode_data_admissible": true,
+    "pro_high_rank_data_admissible": false,
+    "historical_participant_counts": {
+      "unknown": 10
+    },
+    "snapshot_participant_counts": {
+      "unknown": 10
+    },
+    "seed_selection_confirmed": true,
+    "invalid_evidence_records": 0,
+    "reasons": [
+      "not_all_ten_documented_high_at_match"
+    ]
+  },
+  {
+    "match_id": "KR_8419539737",
+    "platform": "KR",
+    "rank_cohort_status": "challenger_seed_only",
+    "rank_mode_data_admissible": true,
+    "pro_high_rank_data_admissible": false,
+    "historical_participant_counts": {
+      "unknown": 10
+    },
+    "snapshot_participant_counts": {
+      "unknown": 10
+    },
+    "seed_selection_confirmed": true,
+    "invalid_evidence_records": 0,
+    "reasons": [
+      "not_all_ten_documented_high_at_match"
+    ]
+  },
+  {
+    "match_id": "KR_8419550352",
+    "platform": "KR",
+    "rank_cohort_status": "challenger_seed_only",
+    "rank_mode_data_admissible": true,
+    "pro_high_rank_data_admissible": false,
+    "historical_participant_counts": {
+      "unknown": 10
+    },
+    "snapshot_participant_counts": {
+      "unknown": 10
+    },
+    "seed_selection_confirmed": true,
+    "invalid_evidence_records": 0,
+    "reasons": [
+      "not_all_ten_documented_high_at_match"
+    ]
+  },
+  {
+    "match_id": "KR_8419564321",
+    "platform": "KR",
+    "rank_cohort_status": "challenger_seed_only",
+    "rank_mode_data_admissible": true,
+    "pro_high_rank_data_admissible": false,
+    "historical_participant_counts": {
+      "unknown": 10
+    },
+    "snapshot_participant_counts": {
+      "unknown": 10
+    },
+    "seed_selection_confirmed": true,
+    "invalid_evidence_records": 0,
+    "reasons": [
+      "not_all_ten_documented_high_at_match"
+    ]
+  },
+  {
+    "match_id": "KR_8419594652",
+    "platform": "KR",
+    "rank_cohort_status": "challenger_seed_only",
+    "rank_mode_data_admissible": true,
+    "pro_high_rank_data_admissible": false,
+    "historical_participant_counts": {
+      "unknown": 10
+    },
+    "snapshot_participant_counts": {
+      "unknown": 10
+    },
+    "seed_selection_confirmed": true,
+    "invalid_evidence_records": 0,
+    "reasons": [
+      "not_all_ten_documented_high_at_match"
+    ]
+  },
+  {
+    "match_id": "KR_8419598161",
+    "platform": "KR",
+    "rank_cohort_status": "challenger_seed_only",
+    "rank_mode_data_admissible": true,
+    "pro_high_rank_data_admissible": false,
+    "historical_participant_counts": {
+      "unknown": 10
+    },
+    "snapshot_participant_counts": {
+      "unknown": 10
+    },
+    "seed_selection_confirmed": true,
+    "invalid_evidence_records": 0,
+    "reasons": [
+      "not_all_ten_documented_high_at_match"
+    ]
+  }
+]

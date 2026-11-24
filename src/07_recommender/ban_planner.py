@@ -56,8 +56,11 @@ class BanPlanner:
         return result
 
     def pool_value(self,rows):
+        # A missing backup is zero *utility*, not a missing observed statistic.
+        # Keep the denominator fixed: removing an option must never improve a
+        # pool merely because its remaining scores have a higher mean.
         selected=rows[:self.policy.pool_top_k]
-        return float(np.mean([r['score'] for r in selected])) if selected else 0.
+        return float(sum(max(0.,r['score']) for r in selected)/self.policy.pool_top_k)
 
     def access_before_enemy(self,state,side):
         # Derive acquisition order from actual schedule, including phase2 and
@@ -82,8 +85,8 @@ class BanPlanner:
                 for role,values in pool.items():
                     after=[r for r in values if r['champion']!=champ]
                     loss=max(0.,self.pool_value(values)-self.pool_value(after))
-                    # A cheap backup becoming the only remaining choice is
-                    # visible through the top-k mean and role count, not tier tables.
+                    # Fixed-capacity utility accounts for losing backups even
+                    # when fewer than k supported options remain.
                     if tag=='enemy':
                         enemy_loss+=loss
                         if len(after)<len(values):scarcity+=1/max(1,len(values))
@@ -91,7 +94,9 @@ class BanPlanner:
                     if len(after)<len(values):
                         components[f'{tag}:{role}']={'before_options':len(values),'after_options':len(after),
                             'before_top':[r['champion'] for r in values[:3]],'after_top':[r['champion'] for r in after[:3]],
-                            'before_value':self.pool_value(values),'after_value':self.pool_value(after),'loss':loss}
+                            'before_value':self.pool_value(values),'after_value':self.pool_value(after),'loss':loss,
+                            'before_slots':min(len(values),self.policy.pool_top_k),
+                            'after_slots':min(len(after),self.policy.pool_top_k)}
             # Being first to acquire a shared high-priority champion makes its
             # self-denial more expensive. If second, enemy acquisition is likelier.
             own_access_cost=own_loss*(1. if first_access else .5)
@@ -123,7 +128,7 @@ class BanPlanner:
                     f"Fearless khóa {item['fearless_locked_count']}; chấm theo pool ngữ cảnh")
             item.update(score_kind='contextual_ban_priority_not_probability',ban_priority=float(score),
                         priority_pct=round(score*100,3),probability=None,denial_loss=item['enemy_pool_loss'],
-                        contextual_policy=asdict(self.policy),meta_scope=self.snapshot.metadata(),
+                        contextual_policy={**asdict(self.policy),'version':'fixed_capacity_v2'},meta_scope=self.snapshot.metadata(),
                         target_roles=[k.split(':')[1]for k in item['pool_impact']if k.startswith('enemy:')],
                         reason=reason,reasons=[reason],badge='CẤM THEO NGỮ CẢNH')
             ranked.append(item)

@@ -1,0 +1,254 @@
+Đang nạp lịch sử trận đấu và hồ sơ tướng...
+GIẢ LẬP BAN/PICK MỘT VÁN — LỊCH SỬ + CONTENT-BASED
+Bạn: blue; phe chọn trước: blue; dữ liệu: WLDS
+SNAPSHOT LỊCH SỬ: patch dataset 16.20, dữ liệu đến 2026-11-14T23:18:11+00:00, cũ 10 ngày so với mốc yêu cầu
+110 trận trong cửa sổ 60 ngày, 98 trận patch đích; không gọi là live meta.
+Lineup T1 (latest_observed_lineup_not_live_roster): top=Doran, jng=Oner, mid=Faker, bot=Peyz, sup=Keria
+Lineup Gen.G (latest_observed_lineup_not_live_roster): top=Kiin, jng=Canyon, mid=Chovy, bot=Ruler, sup=Duro
+Ưu tiên presence/nhịp draft gần đây; bể tướng, đối đầu và cosine là tín hiệu hỗ trợ. Điểm không phải xác suất.
+
+==========================================================================================
+BLUE T1 | Cấm: —
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: —
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 1/20: BLUE T1 — CẤM
+ĐÃ CẤM: Qiyana
+  Căn cứ: Mất pool địch 0.0042; chi phí tự cấm 0.0000; đội mình lấy lượt pick tới trước địch=True; Fearless khóa 20; chấm theo pool ngữ cảnh
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: —
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 2/20: RED Gen.G — CẤM
+ĐÃ CẤM: Nocturne
+  Căn cứ: Mất pool địch 0.0089; chi phí tự cấm 0.0038; đội mình lấy lượt pick tới trước địch=False; Fearless khóa 20; chấm theo pool ngữ cảnh
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Nocturne
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 3/20: BLUE T1 — CẤM
+ĐÃ CẤM: Ashe
+  Căn cứ: Mất pool địch 0.0040; chi phí tự cấm 0.0000; đội mình lấy lượt pick tới trước địch=True; Fearless khóa 20; chấm theo pool ngữ cảnh
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana, Ashe
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Nocturne
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 4/20: RED Gen.G — CẤM
+ĐÃ CẤM: Vi
+  Căn cứ: Mất pool địch 0.0147; chi phí tự cấm 0.0044; đội mình lấy lượt pick tới trước địch=False; Fearless khóa 20; chấm theo pool ngữ cảnh
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana, Ashe
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Nocturne, Vi
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 5/20: BLUE T1 — CẤM
+ĐÃ CẤM: Pantheon
+  Căn cứ: Mất pool địch 0.0076; chi phí tự cấm 0.0048; đội mình lấy lượt pick tới trước địch=True; Fearless khóa 20; chấm theo pool ngữ cảnh
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana, Ashe, Pantheon
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Nocturne, Vi
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 6/20: RED Gen.G — CẤM
+ĐÃ CẤM: Lee Sin
+  Căn cứ: Mất pool địch 0.0168; chi phí tự cấm 0.0070; đội mình lấy lượt pick tới trước địch=False; Fearless khóa 20; chấm theo pool ngữ cảnh
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana, Ashe, Pantheon
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Nocturne, Vi, Lee Sin
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 7/20: BLUE T1 — CHỌN
+ĐÃ CHỌN: Jarvan IV [jng]
+  Căn cứ: Slot F1: ưu tiên chọn quan sát 0.058; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana, Ashe, Pantheon
+Top: — | Rừng: Jarvan IV | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Nocturne, Vi, Lee Sin
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 8/20: RED Gen.G — CHỌN
+ĐÃ CHỌN: Seraphine [sup]
+  Căn cứ: Slot S1: ưu tiên chọn quan sát 0.025; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana, Ashe, Pantheon
+Top: — | Rừng: Jarvan IV | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Nocturne, Vi, Lee Sin
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: Seraphine
+
+LƯỢT 9/20: RED Gen.G — CHỌN
+ĐÃ CHỌN: Akali [mid]
+  Căn cứ: Slot S2: ưu tiên chọn quan sát 0.013; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana, Ashe, Pantheon
+Top: — | Rừng: Jarvan IV | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Nocturne, Vi, Lee Sin
+Top: — | Rừng: — | Mid: Akali | Xạ thủ: — | Hỗ trợ: Seraphine
+
+LƯỢT 10/20: BLUE T1 — CHỌN
+ĐÃ CHỌN: Rumble [top]
+  Căn cứ: Slot F2: ưu tiên chọn quan sát 0.033; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana, Ashe, Pantheon
+Top: Rumble | Rừng: Jarvan IV | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Nocturne, Vi, Lee Sin
+Top: — | Rừng: — | Mid: Akali | Xạ thủ: — | Hỗ trợ: Seraphine
+
+LƯỢT 11/20: BLUE T1 — CHỌN
+ĐÃ CHỌN: Viktor [mid]
+  Căn cứ: Patch dataset 16.20: presence cửa sổ gần đây 32.6%; 20 lượt chọn đúng vị trí trên patch, 23 trận trong cửa sổ gần đây
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana, Ashe, Pantheon
+Top: Rumble | Rừng: Jarvan IV | Mid: Viktor | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Nocturne, Vi, Lee Sin
+Top: — | Rừng: — | Mid: Akali | Xạ thủ: — | Hỗ trợ: Seraphine
+
+LƯỢT 12/20: RED Gen.G — CHỌN
+ĐÃ CHỌN: Jayce [top]
+  Căn cứ: Patch dataset 16.20: presence cửa sổ gần đây 49.9%; 12 lượt chọn đúng vị trí trên patch, 14 trận trong cửa sổ gần đây
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana, Ashe, Pantheon
+Top: Rumble | Rừng: Jarvan IV | Mid: Viktor | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Nocturne, Vi, Lee Sin
+Top: Jayce | Rừng: — | Mid: Akali | Xạ thủ: — | Hỗ trợ: Seraphine
+
+LƯỢT 13/20: RED Gen.G — CẤM
+ĐÃ CẤM: Karma
+  Căn cứ: Mất pool địch 0.0042; chi phí tự cấm 0.0000; đội mình lấy lượt pick tới trước địch=True; Fearless khóa 20; chấm theo pool ngữ cảnh
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana, Ashe, Pantheon
+Top: Rumble | Rừng: Jarvan IV | Mid: Viktor | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Nocturne, Vi, Lee Sin, Karma
+Top: Jayce | Rừng: — | Mid: Akali | Xạ thủ: — | Hỗ trợ: Seraphine
+
+LƯỢT 14/20: BLUE T1 — CẤM
+ĐÃ CẤM: Skarner
+  Căn cứ: Mất pool địch 0.0034; chi phí tự cấm 0.0000; đội mình lấy lượt pick tới trước địch=False; Fearless khóa 20; chấm theo pool ngữ cảnh
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana, Ashe, Pantheon, Skarner
+Top: Rumble | Rừng: Jarvan IV | Mid: Viktor | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Nocturne, Vi, Lee Sin, Karma
+Top: Jayce | Rừng: — | Mid: Akali | Xạ thủ: — | Hỗ trợ: Seraphine
+
+LƯỢT 15/20: RED Gen.G — CẤM
+ĐÃ CẤM: Rakan
+  Căn cứ: Mất pool địch 0.0042; chi phí tự cấm 0.0000; đội mình lấy lượt pick tới trước địch=True; Fearless khóa 20; chấm theo pool ngữ cảnh
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana, Ashe, Pantheon, Skarner
+Top: Rumble | Rừng: Jarvan IV | Mid: Viktor | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Nocturne, Vi, Lee Sin, Karma, Rakan
+Top: Jayce | Rừng: — | Mid: Akali | Xạ thủ: — | Hỗ trợ: Seraphine
+
+LƯỢT 16/20: BLUE T1 — CẤM
+ĐÃ CẤM: Maokai
+  Căn cứ: Mất pool địch 0.0092; chi phí tự cấm 0.0000; đội mình lấy lượt pick tới trước địch=False; Fearless khóa 20; chấm theo pool ngữ cảnh
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana, Ashe, Pantheon, Skarner, Maokai
+Top: Rumble | Rừng: Jarvan IV | Mid: Viktor | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Nocturne, Vi, Lee Sin, Karma, Rakan
+Top: Jayce | Rừng: — | Mid: Akali | Xạ thủ: — | Hỗ trợ: Seraphine
+
+LƯỢT 17/20: RED Gen.G — CHỌN
+ĐÃ CHỌN: Xayah [bot]
+  Căn cứ: Slot S4: ưu tiên chọn quan sát 0.009; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana, Ashe, Pantheon, Skarner, Maokai
+Top: Rumble | Rừng: Jarvan IV | Mid: Viktor | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Nocturne, Vi, Lee Sin, Karma, Rakan
+Top: Jayce | Rừng: — | Mid: Akali | Xạ thủ: Xayah | Hỗ trợ: Seraphine
+
+LƯỢT 18/20: BLUE T1 — CHỌN
+ĐÃ CHỌN: Lucian [bot]
+  Căn cứ: Patch dataset 16.20: presence cửa sổ gần đây 25.0%; 18 lượt chọn đúng vị trí trên patch, 20 trận trong cửa sổ gần đây
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana, Ashe, Pantheon, Skarner, Maokai
+Top: Rumble | Rừng: Jarvan IV | Mid: Viktor | Xạ thủ: Lucian | Hỗ trợ: —
+RED Gen.G | Cấm: Nocturne, Vi, Lee Sin, Karma, Rakan
+Top: Jayce | Rừng: — | Mid: Akali | Xạ thủ: Xayah | Hỗ trợ: Seraphine
+
+LƯỢT 19/20: BLUE T1 — CHỌN
+ĐÃ CHỌN: Milio [sup]
+  Căn cứ: Patch dataset 16.20: presence cửa sổ gần đây 15.0%; 15 lượt chọn đúng vị trí trên patch, 17 trận trong cửa sổ gần đây
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana, Ashe, Pantheon, Skarner, Maokai
+Top: Rumble | Rừng: Jarvan IV | Mid: Viktor | Xạ thủ: Lucian | Hỗ trợ: Milio
+RED Gen.G | Cấm: Nocturne, Vi, Lee Sin, Karma, Rakan
+Top: Jayce | Rừng: — | Mid: Akali | Xạ thủ: Xayah | Hỗ trợ: Seraphine
+
+LƯỢT 20/20: RED Gen.G — CHỌN
+ĐÃ CHỌN: Sejuani [jng]
+  Căn cứ: Cặp bot có 0 mẫu; chưa đạt cả ngưỡng n≥5 và association≥1. Không xác nhận cặp yếu hay tối ưu.
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana, Ashe, Pantheon, Skarner, Maokai
+Top: Rumble | Rừng: Jarvan IV | Mid: Viktor | Xạ thủ: Lucian | Hỗ trợ: Milio
+RED Gen.G | Cấm: Nocturne, Vi, Lee Sin, Karma, Rakan
+Top: Jayce | Rừng: Sejuani | Mid: Akali | Xạ thủ: Xayah | Hỗ trợ: Seraphine
+Căn cứ cặp T1: observed_pairs=6, sparse_pairs=4, unobserved_pairs=0, insufficient_anchor_pairs=0
+Căn cứ cặp Gen.G: observed_pairs=0, sparse_pairs=5, unobserved_pairs=5, insufficient_anchor_pairs=0
+
+===============================================================================================
+📋 BẢNG ĐỘI HÌNH HOÀN THIỆN SAU KHI CẤM/CHỌN (FINAL DRAFT)
+===============================================================================================
+🔷 PHE XANH (T1):
+   • TOP: Rumble (Doran)
+   • JNG: Jarvan IV (Oner)
+   • MID: Viktor (Faker)
+   • BOT: Lucian (Peyz)
+   • SUP: Milio (Keria)
+
+🔴 PHE ĐỎ (Gen.G):
+   • TOP: Jayce (Kiin)
+   • JNG: Sejuani (Canyon)
+   • MID: Akali (Chovy)
+   • BOT: Xayah (Ruler)
+   • SUP: Seraphine (Duro)
+Radar và thẻ chiến thuật dùng thuộc tính/quy tắc chuyên gia; chưa được xác nhận như điều kiện thắng nhân quả.
+
+────────────────────────────────────── THẺ CHIẾN THUẬT: T1 (BLUE) ──────────────────────────────────────
+🏆 Trường phái: [LATE-GAME HYPERCARRY]
+📊 Radar 5 trục: Early: 0.755 | Scaling: 0.74 | Combat: 0.825 | Pick: 0.655 | Obj: 0.693
+⭐ Chủ lực (Core Carry): Viktor
+⏱️ Điểm rơi sức mạnh: Cuối trận (Sau Phút 28 - Khi chủ lực đạt ngưỡng 3-4 trang bị chuẩn)
+🐉 Mục tiêu số 1: Baron Nashor & Rồng Ngàn Tuổi (Elder Dragon)
+✅ Điều kiện thắng: Bảo kê tuyệt đối cho siêu chủ lực farm an toàn; chấp nhận nhường mục tiêu sớm nếu cần; hủy diệt giao tranh cuối trận.
+❌ Cần tránh: Bị đối thủ băng trụ lăn cầu tuyết thua > 2,500 vàng lúc 10 phút dẫn đến vỡ trận sớm.
+
+────────────────────────────────────── THẺ CHIẾN THUẬT: GEN.G (RED) ──────────────────────────────────────
+🏆 Trường phái: [LATE-GAME HYPERCARRY]
+📊 Radar 5 trục: Early: 0.682 | Scaling: 0.78 | Combat: 0.647 | Pick: 0.758 | Obj: 0.667
+⭐ Chủ lực (Core Carry): Xayah
+⏱️ Điểm rơi sức mạnh: Cuối trận (Sau Phút 28 - Khi chủ lực đạt ngưỡng 3-4 trang bị chuẩn)
+🐉 Mục tiêu số 1: Baron Nashor & Rồng Ngàn Tuổi (Elder Dragon)
+✅ Điều kiện thắng: Bảo kê tuyệt đối cho siêu chủ lực farm an toàn; chấp nhận nhường mục tiêu sớm nếu cần; hủy diệt giao tranh cuối trận.
+❌ Cần tránh: Bị đối thủ băng trụ lăn cầu tuyết thua > 2,500 vàng lúc 10 phút dẫn đến vỡ trận sớm.
+Phiên có mốc lịch sử: bỏ dự báo từ model lưu sẵn vì chưa bảo đảm model được fit trước mốc này.
+Đã lưu phiên: reports\ui_lane_revision\bo5_blue_first\game_3.json

@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "unit_tests_passed": 10,
+  "real_rank_games": 5,
+  "real_rank_rows": 50,
+  "pro_games": 206,
+  "pro_rows": 2060,
+  "rank_negative_gold10_rows": 25,
+  "mirror_signed_and_unique_roles": "PASS",
+  "nearest_all_six_metrics_coverage": 50,
+  "before_all_metrics_unavailable": true,
+  "note": "Real frames are slightly after target; before correctly leaves missing, never uses minute9.",
+  "as_of_excludes_future_rank_and_pro": "PASS",
+  "same_patch_comparison_rows": 0,
+  "db_sha256_before": "20e3d9739b271283f35a1ba33f345e3593bafe4e31212906d35939d91b2f740c",
+  "db_sha256_after": "20e3d9739b271283f35a1ba33f345e3593bafe4e31212906d35939d91b2f740c",
+  "canonical_db_unchanged": true,
+  "seed_players_used": 1,
+  "no_rank_signal_in_advisor": true,
+  "source_sha256": "314d1afc3f5eff07d2860cb311fbba6bed665775ddb014675bebbd94d5e0174a"
+}

@@ -1,0 +1,254 @@
+Đang nạp lịch sử trận đấu và hồ sơ tướng...
+GIẢ LẬP BAN/PICK MỘT VÁN — LỊCH SỬ + CONTENT-BASED
+Bạn: blue; phe chọn trước: red; dữ liệu: WLDS
+SNAPSHOT LỊCH SỬ: patch dataset 16.20, dữ liệu đến 2026-11-14T23:18:11+00:00, cũ 10 ngày so với mốc yêu cầu
+110 trận trong cửa sổ 60 ngày, 98 trận patch đích; không gọi là live meta.
+Lineup T1 (latest_observed_lineup_not_live_roster): top=Doran, jng=Oner, mid=Faker, bot=Peyz, sup=Keria
+Lineup Gen.G (latest_observed_lineup_not_live_roster): top=Kiin, jng=Canyon, mid=Chovy, bot=Ruler, sup=Duro
+Ưu tiên presence/nhịp draft gần đây; bể tướng, đối đầu và cosine là tín hiệu hỗ trợ. Điểm không phải xác suất.
+
+==========================================================================================
+BLUE T1 | Cấm: —
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: —
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 1/20: RED Gen.G — CẤM
+ĐÃ CẤM: Lee Sin
+  Căn cứ: Mất pool địch 0.0149; chi phí tự cấm 0.0103; đội mình lấy lượt pick tới trước địch=True; Fearless khóa 10; chấm theo pool ngữ cảnh
+
+==========================================================================================
+BLUE T1 | Cấm: —
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Lee Sin
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 2/20: BLUE T1 — CẤM
+ĐÃ CẤM: Qiyana
+  Căn cứ: Mất pool địch 0.0110; chi phí tự cấm 0.0030; đội mình lấy lượt pick tới trước địch=False; Fearless khóa 10; chấm theo pool ngữ cảnh
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Lee Sin
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 3/20: RED Gen.G — CẤM
+ĐÃ CẤM: Wukong
+  Căn cứ: Mất pool địch 0.0065; chi phí tự cấm 0.0039; đội mình lấy lượt pick tới trước địch=True; Fearless khóa 10; chấm theo pool ngữ cảnh
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Lee Sin, Wukong
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 4/20: BLUE T1 — CẤM
+ĐÃ CẤM: Viktor
+  Căn cứ: Mất pool địch 0.0153; chi phí tự cấm 0.0075; đội mình lấy lượt pick tới trước địch=False; Fearless khóa 10; chấm theo pool ngữ cảnh
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana, Viktor
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Lee Sin, Wukong
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 5/20: RED Gen.G — CẤM
+ĐÃ CẤM: Nocturne
+  Căn cứ: Mất pool địch 0.0123; chi phí tự cấm 0.0079; đội mình lấy lượt pick tới trước địch=True; Fearless khóa 10; chấm theo pool ngữ cảnh
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana, Viktor
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Lee Sin, Wukong, Nocturne
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 6/20: BLUE T1 — CẤM
+ĐÃ CẤM: Pantheon
+  Căn cứ: Mất pool địch 0.0144; chi phí tự cấm 0.0063; đội mình lấy lượt pick tới trước địch=False; Fearless khóa 10; chấm theo pool ngữ cảnh
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana, Viktor, Pantheon
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Lee Sin, Wukong, Nocturne
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 7/20: RED Gen.G — CHỌN
+ĐÃ CHỌN: Ambessa [top]
+  Căn cứ: Điểm đơn giản = trung bình 2 tín hiệu: pick_frequency=0.964; content=0.960; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana, Viktor, Pantheon
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Lee Sin, Wukong, Nocturne
+Top: Ambessa | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 8/20: BLUE T1 — CHỌN
+ĐÃ CHỌN: Gnar [top]
+  Căn cứ: Điểm đơn giản = trung bình 3 tín hiệu: pick_frequency=0.607; content=0.977; matchup=0.833; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana, Viktor, Pantheon
+Top: Gnar | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Lee Sin, Wukong, Nocturne
+Top: Ambessa | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 9/20: BLUE T1 — CHỌN
+ĐÃ CHỌN: Seraphine [sup]
+  Căn cứ: Điểm đơn giản = trung bình 3 tín hiệu: pick_frequency=0.741; content=0.887; matchup=0.650; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana, Viktor, Pantheon
+Top: Gnar | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: Seraphine
+RED Gen.G | Cấm: Lee Sin, Wukong, Nocturne
+Top: Ambessa | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 10/20: RED Gen.G — CHỌN
+ĐÃ CHỌN: Cassiopeia [mid]
+  Căn cứ: Điểm đơn giản = trung bình 3 tín hiệu: pick_frequency=0.654; content=0.976; matchup=0.647; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana, Viktor, Pantheon
+Top: Gnar | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: Seraphine
+RED Gen.G | Cấm: Lee Sin, Wukong, Nocturne
+Top: Ambessa | Rừng: — | Mid: Cassiopeia | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 11/20: RED Gen.G — CHỌN
+ĐÃ CHỌN: Yunara [bot]
+  Căn cứ: Điểm đơn giản = trung bình 3 tín hiệu: pick_frequency=0.688; content=0.970; matchup=0.591; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana, Viktor, Pantheon
+Top: Gnar | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: Seraphine
+RED Gen.G | Cấm: Lee Sin, Wukong, Nocturne
+Top: Ambessa | Rừng: — | Mid: Cassiopeia | Xạ thủ: Yunara | Hỗ trợ: —
+
+LƯỢT 12/20: BLUE T1 — CHỌN
+ĐÃ CHỌN: Jhin [bot]
+  Căn cứ: Điểm đơn giản = trung bình 3 tín hiệu: pick_frequency=0.750; content=0.943; matchup=0.542; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana, Viktor, Pantheon
+Top: Gnar | Rừng: — | Mid: — | Xạ thủ: Jhin | Hỗ trợ: Seraphine
+RED Gen.G | Cấm: Lee Sin, Wukong, Nocturne
+Top: Ambessa | Rừng: — | Mid: Cassiopeia | Xạ thủ: Yunara | Hỗ trợ: —
+
+LƯỢT 13/20: BLUE T1 — CẤM
+ĐÃ CẤM: Naafiri
+  Căn cứ: Mất pool địch 0.0099; chi phí tự cấm 0.0016; đội mình lấy lượt pick tới trước địch=True; Fearless khóa 10; chấm theo pool ngữ cảnh
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana, Viktor, Pantheon, Naafiri
+Top: Gnar | Rừng: — | Mid: — | Xạ thủ: Jhin | Hỗ trợ: Seraphine
+RED Gen.G | Cấm: Lee Sin, Wukong, Nocturne
+Top: Ambessa | Rừng: — | Mid: Cassiopeia | Xạ thủ: Yunara | Hỗ trợ: —
+
+LƯỢT 14/20: RED Gen.G — CẤM
+ĐÃ CẤM: Trundle
+  Căn cứ: Mất pool địch 0.0222; chi phí tự cấm 0.0100; đội mình lấy lượt pick tới trước địch=False; Fearless khóa 10; chấm theo pool ngữ cảnh
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana, Viktor, Pantheon, Naafiri
+Top: Gnar | Rừng: — | Mid: — | Xạ thủ: Jhin | Hỗ trợ: Seraphine
+RED Gen.G | Cấm: Lee Sin, Wukong, Nocturne, Trundle
+Top: Ambessa | Rừng: — | Mid: Cassiopeia | Xạ thủ: Yunara | Hỗ trợ: —
+
+LƯỢT 15/20: BLUE T1 — CẤM
+ĐÃ CẤM: Renata Glasc
+  Căn cứ: Mất pool địch 0.0064; chi phí tự cấm 0.0000; đội mình lấy lượt pick tới trước địch=True; Fearless khóa 10; chấm theo pool ngữ cảnh
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana, Viktor, Pantheon, Naafiri, Renata Glasc
+Top: Gnar | Rừng: — | Mid: — | Xạ thủ: Jhin | Hỗ trợ: Seraphine
+RED Gen.G | Cấm: Lee Sin, Wukong, Nocturne, Trundle
+Top: Ambessa | Rừng: — | Mid: Cassiopeia | Xạ thủ: Yunara | Hỗ trợ: —
+
+LƯỢT 16/20: RED Gen.G — CẤM
+ĐÃ CẤM: Xin Zhao
+  Căn cứ: Mất pool địch 0.0209; chi phí tự cấm 0.0114; đội mình lấy lượt pick tới trước địch=False; Fearless khóa 10; chấm theo pool ngữ cảnh
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana, Viktor, Pantheon, Naafiri, Renata Glasc
+Top: Gnar | Rừng: — | Mid: — | Xạ thủ: Jhin | Hỗ trợ: Seraphine
+RED Gen.G | Cấm: Lee Sin, Wukong, Nocturne, Trundle, Xin Zhao
+Top: Ambessa | Rừng: — | Mid: Cassiopeia | Xạ thủ: Yunara | Hỗ trợ: —
+
+LƯỢT 17/20: BLUE T1 — CHỌN
+ĐÃ CHỌN: Taliyah [mid]
+  Căn cứ: Điểm đơn giản = trung bình 3 tín hiệu: pick_frequency=0.385; content=0.964; matchup=0.700; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana, Viktor, Pantheon, Naafiri, Renata Glasc
+Top: Gnar | Rừng: — | Mid: Taliyah | Xạ thủ: Jhin | Hỗ trợ: Seraphine
+RED Gen.G | Cấm: Lee Sin, Wukong, Nocturne, Trundle, Xin Zhao
+Top: Ambessa | Rừng: — | Mid: Cassiopeia | Xạ thủ: Yunara | Hỗ trợ: —
+
+LƯỢT 18/20: RED Gen.G — CHỌN
+ĐÃ CHỌN: Alistar [sup]
+  Căn cứ: Điểm đơn giản = trung bình 3 tín hiệu: pick_frequency=1.000; content=0.780; matchup=0.370; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana, Viktor, Pantheon, Naafiri, Renata Glasc
+Top: Gnar | Rừng: — | Mid: Taliyah | Xạ thủ: Jhin | Hỗ trợ: Seraphine
+RED Gen.G | Cấm: Lee Sin, Wukong, Nocturne, Trundle, Xin Zhao
+Top: Ambessa | Rừng: — | Mid: Cassiopeia | Xạ thủ: Yunara | Hỗ trợ: Alistar
+
+LƯỢT 19/20: RED Gen.G — CHỌN
+ĐÃ CHỌN: Skarner [jng]
+  Căn cứ: Điểm đơn giản = trung bình 3 tín hiệu: pick_frequency=0.258; content=0.528; matchup=0.500; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana, Viktor, Pantheon, Naafiri, Renata Glasc
+Top: Gnar | Rừng: — | Mid: Taliyah | Xạ thủ: Jhin | Hỗ trợ: Seraphine
+RED Gen.G | Cấm: Lee Sin, Wukong, Nocturne, Trundle, Xin Zhao
+Top: Ambessa | Rừng: Skarner | Mid: Cassiopeia | Xạ thủ: Yunara | Hỗ trợ: Alistar
+
+LƯỢT 20/20: BLUE T1 — CHỌN
+ĐÃ CHỌN: Cho'Gath [jng]
+  Căn cứ: Điểm đơn giản = trung bình 3 tín hiệu: pick_frequency=0.194; content=0.591; matchup=0.167; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana, Viktor, Pantheon, Naafiri, Renata Glasc
+Top: Gnar | Rừng: Cho'Gath | Mid: Taliyah | Xạ thủ: Jhin | Hỗ trợ: Seraphine
+RED Gen.G | Cấm: Lee Sin, Wukong, Nocturne, Trundle, Xin Zhao
+Top: Ambessa | Rừng: Skarner | Mid: Cassiopeia | Xạ thủ: Yunara | Hỗ trợ: Alistar
+Căn cứ cặp T1: observed_pairs=0, sparse_pairs=4, unobserved_pairs=6, insufficient_anchor_pairs=0
+Căn cứ cặp Gen.G: observed_pairs=0, sparse_pairs=7, unobserved_pairs=3, insufficient_anchor_pairs=0
+
+===============================================================================================
+📋 BẢNG ĐỘI HÌNH HOÀN THIỆN SAU KHI CẤM/CHỌN (FINAL DRAFT)
+===============================================================================================
+🔷 PHE XANH (T1):
+   • TOP: Gnar (Doran)
+   • JNG: Cho'Gath (Oner)
+   • MID: Taliyah (Faker)
+   • BOT: Jhin (Peyz)
+   • SUP: Seraphine (Keria)
+
+🔴 PHE ĐỎ (Gen.G):
+   • TOP: Ambessa (Kiin)
+   • JNG: Skarner (Canyon)
+   • MID: Cassiopeia (Chovy)
+   • BOT: Yunara (Ruler)
+   • SUP: Alistar (Duro)
+Radar và thẻ chiến thuật dùng thuộc tính/quy tắc chuyên gia; chưa được xác nhận như điều kiện thắng nhân quả.
+
+────────────────────────────────────── THẺ CHIẾN THUẬT: T1 (BLUE) ──────────────────────────────────────
+🏆 Trường phái: [LATE-GAME HYPERCARRY]
+📊 Radar 5 trục: Early: 0.595 | Scaling: 0.775 | Combat: 0.745 | Pick: 0.627 | Obj: 0.753
+⭐ Chủ lực (Core Carry): Taliyah
+⏱️ Điểm rơi sức mạnh: Cuối trận (Sau Phút 28 - Khi chủ lực đạt ngưỡng 3-4 trang bị chuẩn)
+🐉 Mục tiêu số 1: Baron Nashor & Rồng Ngàn Tuổi (Elder Dragon)
+✅ Điều kiện thắng: Bảo kê tuyệt đối cho siêu chủ lực farm an toàn; chấp nhận nhường mục tiêu sớm nếu cần; hủy diệt giao tranh cuối trận.
+❌ Cần tránh: Bị đối thủ băng trụ lăn cầu tuyết thua > 2,500 vàng lúc 10 phút dẫn đến vỡ trận sớm.
+
+────────────────────────────────────── THẺ CHIẾN THUẬT: GEN.G (RED) ──────────────────────────────────────
+🏆 Trường phái: [EARLY SNOWBALL & DIVE]
+📊 Radar 5 trục: Early: 0.627 | Scaling: 0.702 | Combat: 0.788 | Pick: 0.813 | Obj: 0.638
+⭐ Chủ lực (Core Carry): Cassiopeia
+⏱️ Điểm rơi sức mạnh: Đầu trận (Phút 1 đến Phút 20 - Trước mốc Baron xuất hiện)
+🐉 Mục tiêu số 1: Sâu Hư Không đợt 1 + Trụ Đầu (First Tower) trước phút 14
+✅ Điều kiện thắng: Tạo chênh lệch >= 2,000 vàng lúc 10 phút, băng trụ 2 cánh liên tục, ép đối thủ vỡ trận trước 25 phút.
+❌ Cần tránh: Bị đối thủ phòng ngự kéo dài trận đấu qua phút 30 khi chất tướng hết thời gian lăn cầu tuyết.
+Phiên có mốc lịch sử: bỏ dự báo từ model lưu sẵn vì chưa bảo đảm model được fit trước mốc này.
+Đã lưu phiên: reports\simple_scoring_bo5\game_2.json

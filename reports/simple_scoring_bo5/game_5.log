@@ -1,0 +1,254 @@
+Đang nạp lịch sử trận đấu và hồ sơ tướng...
+GIẢ LẬP BAN/PICK MỘT VÁN — LỊCH SỬ + CONTENT-BASED
+Bạn: blue; phe chọn trước: blue; dữ liệu: WLDS
+SNAPSHOT LỊCH SỬ: patch dataset 16.20, dữ liệu đến 2026-11-14T23:18:11+00:00, cũ 10 ngày so với mốc yêu cầu
+110 trận trong cửa sổ 60 ngày, 98 trận patch đích; không gọi là live meta.
+Lineup T1 (latest_observed_lineup_not_live_roster): top=Doran, jng=Oner, mid=Faker, bot=Peyz, sup=Keria
+Lineup Gen.G (latest_observed_lineup_not_live_roster): top=Kiin, jng=Canyon, mid=Chovy, bot=Ruler, sup=Duro
+Ưu tiên presence/nhịp draft gần đây; bể tướng, đối đầu và cosine là tín hiệu hỗ trợ. Điểm không phải xác suất.
+
+==========================================================================================
+BLUE T1 | Cấm: —
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: —
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 1/20: BLUE T1 — CẤM
+ĐÃ CẤM: Corki
+  Căn cứ: Mất pool địch 0.0060; chi phí tự cấm 0.0000; đội mình lấy lượt pick tới trước địch=True; Fearless khóa 40; chấm theo pool ngữ cảnh
+
+==========================================================================================
+BLUE T1 | Cấm: Corki
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: —
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 2/20: RED Gen.G — CẤM
+ĐÃ CẤM: Rumble
+  Căn cứ: Mất pool địch 0.0287; chi phí tự cấm 0.0135; đội mình lấy lượt pick tới trước địch=False; Fearless khóa 40; chấm theo pool ngữ cảnh
+
+==========================================================================================
+BLUE T1 | Cấm: Corki
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Rumble
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 3/20: BLUE T1 — CẤM
+ĐÃ CẤM: Qiyana
+  Căn cứ: Mất pool địch 0.0110; chi phí tự cấm 0.0059; đội mình lấy lượt pick tới trước địch=True; Fearless khóa 40; chấm theo pool ngữ cảnh
+
+==========================================================================================
+BLUE T1 | Cấm: Corki, Qiyana
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Rumble
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 4/20: RED Gen.G — CẤM
+ĐÃ CẤM: Jayce
+  Căn cứ: Mất pool địch 0.0380; chi phí tự cấm 0.0135; đội mình lấy lượt pick tới trước địch=False; Fearless khóa 40; chấm theo pool ngữ cảnh
+
+==========================================================================================
+BLUE T1 | Cấm: Corki, Qiyana
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Rumble, Jayce
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 5/20: BLUE T1 — CẤM
+ĐÃ CẤM: Ornn
+  Căn cứ: Mất pool địch 0.0832; chi phí tự cấm 0.0696; đội mình lấy lượt pick tới trước địch=True; Fearless khóa 40; chấm theo pool ngữ cảnh
+
+==========================================================================================
+BLUE T1 | Cấm: Corki, Qiyana, Ornn
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Rumble, Jayce
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 6/20: RED Gen.G — CẤM
+ĐÃ CẤM: Lee Sin
+  Căn cứ: Mất pool địch 0.0270; chi phí tự cấm 0.0091; đội mình lấy lượt pick tới trước địch=False; Fearless khóa 40; chấm theo pool ngữ cảnh
+
+==========================================================================================
+BLUE T1 | Cấm: Corki, Qiyana, Ornn
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Rumble, Jayce, Lee Sin
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 7/20: BLUE T1 — CHỌN
+ĐÃ CHỌN: Wukong [jng]
+  Căn cứ: Điểm đơn giản = trung bình 2 tín hiệu: pick_frequency=0.516; content=0.963; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Corki, Qiyana, Ornn
+Top: — | Rừng: Wukong | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Rumble, Jayce, Lee Sin
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 8/20: RED Gen.G — CHỌN
+ĐÃ CHỌN: Pantheon [jng]
+  Căn cứ: Điểm đơn giản = trung bình 3 tín hiệu: pick_frequency=0.613; content=0.957; matchup=0.474; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Corki, Qiyana, Ornn
+Top: — | Rừng: Wukong | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Rumble, Jayce, Lee Sin
+Top: — | Rừng: Pantheon | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 9/20: RED Gen.G — CHỌN
+ĐÃ CHỌN: Locke [mid]
+  Căn cứ: Điểm đơn giản = trung bình 3 tín hiệu: pick_frequency=0.577; content=0.720; matchup=0.467; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Corki, Qiyana, Ornn
+Top: — | Rừng: Wukong | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Rumble, Jayce, Lee Sin
+Top: — | Rừng: Pantheon | Mid: Locke | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 10/20: BLUE T1 — CHỌN
+ĐÃ CHỌN: Nami [sup]
+  Căn cứ: Điểm đơn giản = trung bình 3 tín hiệu: pick_frequency=0.185; content=0.729; matchup=0.800; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Corki, Qiyana, Ornn
+Top: — | Rừng: Wukong | Mid: — | Xạ thủ: — | Hỗ trợ: Nami
+RED Gen.G | Cấm: Rumble, Jayce, Lee Sin
+Top: — | Rừng: Pantheon | Mid: Locke | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 11/20: BLUE T1 — CHỌN
+ĐÃ CHỌN: Ryze [mid]
+  Căn cứ: Điểm đơn giản = trung bình 3 tín hiệu: pick_frequency=0.423; content=0.958; matchup=0.273; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Corki, Qiyana, Ornn
+Top: — | Rừng: Wukong | Mid: Ryze | Xạ thủ: — | Hỗ trợ: Nami
+RED Gen.G | Cấm: Rumble, Jayce, Lee Sin
+Top: — | Rừng: Pantheon | Mid: Locke | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 12/20: RED Gen.G — CHỌN
+ĐÃ CHỌN: Sivir [bot]
+  Căn cứ: Điểm đơn giản = trung bình 3 tín hiệu: pick_frequency=0.188; content=0.982; matchup=0.500; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Corki, Qiyana, Ornn
+Top: — | Rừng: Wukong | Mid: Ryze | Xạ thủ: — | Hỗ trợ: Nami
+RED Gen.G | Cấm: Rumble, Jayce, Lee Sin
+Top: — | Rừng: Pantheon | Mid: Locke | Xạ thủ: Sivir | Hỗ trợ: —
+
+LƯỢT 13/20: RED Gen.G — CẤM
+ĐÃ CẤM: Miss Fortune
+  Căn cứ: Mất pool địch 0.0099; chi phí tự cấm 0.0000; đội mình lấy lượt pick tới trước địch=True; Fearless khóa 40; chấm theo pool ngữ cảnh
+
+==========================================================================================
+BLUE T1 | Cấm: Corki, Qiyana, Ornn
+Top: — | Rừng: Wukong | Mid: Ryze | Xạ thủ: — | Hỗ trợ: Nami
+RED Gen.G | Cấm: Rumble, Jayce, Lee Sin, Miss Fortune
+Top: — | Rừng: Pantheon | Mid: Locke | Xạ thủ: Sivir | Hỗ trợ: —
+
+LƯỢT 14/20: BLUE T1 — CẤM
+ĐÃ CẤM: Milio
+  Căn cứ: Mất pool địch 0.0035; chi phí tự cấm 0.0000; đội mình lấy lượt pick tới trước địch=False; Fearless khóa 40; chấm theo pool ngữ cảnh
+
+==========================================================================================
+BLUE T1 | Cấm: Corki, Qiyana, Ornn, Milio
+Top: — | Rừng: Wukong | Mid: Ryze | Xạ thủ: — | Hỗ trợ: Nami
+RED Gen.G | Cấm: Rumble, Jayce, Lee Sin, Miss Fortune
+Top: — | Rừng: Pantheon | Mid: Locke | Xạ thủ: Sivir | Hỗ trợ: —
+
+LƯỢT 15/20: RED Gen.G — CẤM
+ĐÃ CẤM: Tristana
+  Căn cứ: Mất pool địch 0.0037; chi phí tự cấm 0.0000; đội mình lấy lượt pick tới trước địch=True; Fearless khóa 40; chấm theo pool ngữ cảnh
+
+==========================================================================================
+BLUE T1 | Cấm: Corki, Qiyana, Ornn, Milio
+Top: — | Rừng: Wukong | Mid: Ryze | Xạ thủ: — | Hỗ trợ: Nami
+RED Gen.G | Cấm: Rumble, Jayce, Lee Sin, Miss Fortune, Tristana
+Top: — | Rừng: Pantheon | Mid: Locke | Xạ thủ: Sivir | Hỗ trợ: —
+
+LƯỢT 16/20: BLUE T1 — CẤM
+ĐÃ CẤM: Rell
+  Căn cứ: Mất pool địch 0.0979; chi phí tự cấm 0.0000; đội mình lấy lượt pick tới trước địch=False; Fearless khóa 40; chấm theo pool ngữ cảnh
+
+==========================================================================================
+BLUE T1 | Cấm: Corki, Qiyana, Ornn, Milio, Rell
+Top: — | Rừng: Wukong | Mid: Ryze | Xạ thủ: — | Hỗ trợ: Nami
+RED Gen.G | Cấm: Rumble, Jayce, Lee Sin, Miss Fortune, Tristana
+Top: — | Rừng: Pantheon | Mid: Locke | Xạ thủ: Sivir | Hỗ trợ: —
+
+LƯỢT 17/20: RED Gen.G — CHỌN
+ĐÃ CHỌN: Gwen [top]
+  Căn cứ: Điểm đơn giản = trung bình 2 tín hiệu: pick_frequency=0.107; matchup=1.000; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Corki, Qiyana, Ornn, Milio, Rell
+Top: — | Rừng: Wukong | Mid: Ryze | Xạ thủ: — | Hỗ trợ: Nami
+RED Gen.G | Cấm: Rumble, Jayce, Lee Sin, Miss Fortune, Tristana
+Top: Gwen | Rừng: Pantheon | Mid: Locke | Xạ thủ: Sivir | Hỗ trợ: —
+
+LƯỢT 18/20: BLUE T1 — CHỌN
+ĐÃ CHỌN: Caitlyn [bot]
+  Căn cứ: Điểm đơn giản = trung bình 3 tín hiệu: pick_frequency=0.250; content=0.891; matchup=0.250; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Corki, Qiyana, Ornn, Milio, Rell
+Top: — | Rừng: Wukong | Mid: Ryze | Xạ thủ: Caitlyn | Hỗ trợ: Nami
+RED Gen.G | Cấm: Rumble, Jayce, Lee Sin, Miss Fortune, Tristana
+Top: Gwen | Rừng: Pantheon | Mid: Locke | Xạ thủ: Sivir | Hỗ trợ: —
+
+LƯỢT 19/20: BLUE T1 — CHỌN
+ĐÃ CHỌN: Irelia [top]
+  Căn cứ: Điểm đơn giản = trung bình 2 tín hiệu: pick_frequency=0.036; matchup=1.000; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Corki, Qiyana, Ornn, Milio, Rell
+Top: Irelia | Rừng: Wukong | Mid: Ryze | Xạ thủ: Caitlyn | Hỗ trợ: Nami
+RED Gen.G | Cấm: Rumble, Jayce, Lee Sin, Miss Fortune, Tristana
+Top: Gwen | Rừng: Pantheon | Mid: Locke | Xạ thủ: Sivir | Hỗ trợ: —
+
+LƯỢT 20/20: RED Gen.G — CHỌN
+ĐÃ CHỌN: Poppy [sup]
+  Căn cứ: Điểm đơn giản = trung bình 2 tín hiệu: pick_frequency=0.074; matchup=1.000; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Corki, Qiyana, Ornn, Milio, Rell
+Top: Irelia | Rừng: Wukong | Mid: Ryze | Xạ thủ: Caitlyn | Hỗ trợ: Nami
+RED Gen.G | Cấm: Rumble, Jayce, Lee Sin, Miss Fortune, Tristana
+Top: Gwen | Rừng: Pantheon | Mid: Locke | Xạ thủ: Sivir | Hỗ trợ: Poppy
+Căn cứ cặp T1: observed_pairs=0, sparse_pairs=3, unobserved_pairs=7, insufficient_anchor_pairs=0
+Căn cứ cặp Gen.G: observed_pairs=0, sparse_pairs=2, unobserved_pairs=4, insufficient_anchor_pairs=4
+
+===============================================================================================
+📋 BẢNG ĐỘI HÌNH HOÀN THIỆN SAU KHI CẤM/CHỌN (FINAL DRAFT)
+===============================================================================================
+🔷 PHE XANH (T1):
+   • TOP: Irelia (Doran)
+   • JNG: Wukong (Oner)
+   • MID: Ryze (Faker)
+   • BOT: Caitlyn (Peyz)
+   • SUP: Nami (Keria)
+
+🔴 PHE ĐỎ (Gen.G):
+   • TOP: Gwen (Kiin)
+   • JNG: Pantheon (Canyon)
+   • MID: Locke (Chovy)
+   • BOT: Sivir (Ruler)
+   • SUP: Poppy (Duro)
+Radar và thẻ chiến thuật dùng thuộc tính/quy tắc chuyên gia; chưa được xác nhận như điều kiện thắng nhân quả.
+
+────────────────────────────────────── THẺ CHIẾN THUẬT: T1 (BLUE) ──────────────────────────────────────
+🏆 Trường phái: [LATE-GAME HYPERCARRY]
+📊 Radar 5 trục: Early: 0.688 | Scaling: 0.81 | Combat: 0.733 | Pick: 0.75 | Obj: 0.703
+⭐ Chủ lực (Core Carry): Ryze
+⏱️ Điểm rơi sức mạnh: Cuối trận (Sau Phút 28 - Khi chủ lực đạt ngưỡng 3-4 trang bị chuẩn)
+🐉 Mục tiêu số 1: Baron Nashor & Rồng Ngàn Tuổi (Elder Dragon)
+✅ Điều kiện thắng: Bảo kê tuyệt đối cho siêu chủ lực farm an toàn; chấp nhận nhường mục tiêu sớm nếu cần; hủy diệt giao tranh cuối trận.
+❌ Cần tránh: Bị đối thủ băng trụ lăn cầu tuyết thua > 2,500 vàng lúc 10 phút dẫn đến vỡ trận sớm.
+
+────────────────────────────────────── THẺ CHIẾN THUẬT: GEN.G (RED) ──────────────────────────────────────
+🏆 Trường phái: [LATE-GAME HYPERCARRY]
+📊 Radar 5 trục: Early: 0.62 | Scaling: 0.728 | Combat: 0.652 | Pick: 0.715 | Obj: 0.618
+⭐ Chủ lực (Core Carry): Sivir
+⏱️ Điểm rơi sức mạnh: Cuối trận (Sau Phút 28 - Khi chủ lực đạt ngưỡng 3-4 trang bị chuẩn)
+🐉 Mục tiêu số 1: Baron Nashor & Rồng Ngàn Tuổi (Elder Dragon)
+✅ Điều kiện thắng: Bảo kê tuyệt đối cho siêu chủ lực farm an toàn; chấp nhận nhường mục tiêu sớm nếu cần; hủy diệt giao tranh cuối trận.
+❌ Cần tránh: Bị đối thủ băng trụ lăn cầu tuyết thua > 2,500 vàng lúc 10 phút dẫn đến vỡ trận sớm.
+Phiên có mốc lịch sử: bỏ dự báo từ model lưu sẵn vì chưa bảo đảm model được fit trước mốc này.
+Đã lưu phiên: reports\simple_scoring_bo5\game_5.json

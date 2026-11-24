@@ -17,6 +17,8 @@ ENV/
 data/raw/
 data/database/*.db
 data/database/*.sqlite
+data/database/*.db-*
+data/database/*.lock
 
 # Jupyter Notebook Checkpoints
 .ipynb_checkpoints/
@@ -37,4 +39,11 @@ Thumbs.db
 .pytest_cache/
 .ruff_cache/
 scratch/
+
+# Local UI dependencies, build and browser-test artifacts
+web/node_modules/
+web/dist/
+web/test-results/
+web/playwright-report/
+web/.browsers/
 

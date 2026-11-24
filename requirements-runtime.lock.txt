@@ -12,3 +12,10 @@ python-docx==1.2.0
 nbformat==5.11.1
 google-api-python-client==2.200.0
 google-auth-oauthlib==1.4.1
+
+# Added for the local UI API, 2026-11-24
+fastapi==0.165.0
+uvicorn==0.54.0
+starlette==1.10.0
+pydantic==2.14.4
+httpx==0.28.1

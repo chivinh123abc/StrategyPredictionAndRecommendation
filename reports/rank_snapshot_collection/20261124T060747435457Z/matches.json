@@ -1,0 +1,491 @@
+[
+  {
+    "match_id": "KR_8469916882",
+    "platform": "KR",
+    "game_version": "16.23.840.6595",
+    "queue": 420,
+    "status": "rejected",
+    "high_participants": 10,
+    "below_floor_participants": 0,
+    "missing_participants": 0,
+    "all_ten_high_at_observation": true,
+    "snapshot_delay_hours": 37.11700276,
+    "snapshot_spread_minutes": 0.1950850166666667,
+    "historical_rank_verified": false,
+    "reasons": [
+      "match_too_old_for_near_match_proxy"
+    ],
+    "participants": [
+      {
+        "team_id": 100,
+        "participant_id": 1,
+        "role": "TOP",
+        "tier": "CHALLENGER",
+        "observed_at": "2026-11-24T06:07:57.623835+00:00",
+        "status": "ok"
+      },
+      {
+        "team_id": 100,
+        "participant_id": 2,
+        "role": "JUNGLE",
+        "tier": "GRANDMASTER",
+        "observed_at": "2026-11-24T06:07:58.903820+00:00",
+        "status": "ok"
+      },
+      {
+        "team_id": 100,
+        "participant_id": 3,
+        "role": "MIDDLE",
+        "tier": "CHALLENGER",
+        "observed_at": "2026-11-24T06:08:00.473632+00:00",
+        "status": "ok"
+      },
+      {
+        "team_id": 100,
+        "participant_id": 4,
+        "role": "BOTTOM",
+        "tier": "CHALLENGER",
+        "observed_at": "2026-11-24T06:08:01.515303+00:00",
+        "status": "ok"
+      },
+      {
+        "team_id": 100,
+        "participant_id": 5,
+        "role": "UTILITY",
+        "tier": "CHALLENGER",
+        "observed_at": "2026-11-24T06:08:02.811137+00:00",
+        "status": "ok"
+      },
+      {
+        "team_id": 200,
+        "participant_id": 6,
+        "role": "TOP",
+        "tier": "GRANDMASTER",
+        "observed_at": "2026-11-24T06:08:04.501540+00:00",
+        "status": "ok"
+      },
+      {
+        "team_id": 200,
+        "participant_id": 7,
+        "role": "JUNGLE",
+        "tier": "GRANDMASTER",
+        "observed_at": "2026-11-24T06:08:05.421767+00:00",
+        "status": "ok"
+      },
+      {
+        "team_id": 200,
+        "participant_id": 8,
+        "role": "MIDDLE",
+        "tier": "CHALLENGER",
+        "observed_at": "2026-11-24T06:08:06.966132+00:00",
+        "status": "ok"
+      },
+      {
+        "team_id": 200,
+        "participant_id": 9,
+        "role": "BOTTOM",
+        "tier": "CHALLENGER",
+        "observed_at": "2026-11-24T06:08:08.025760+00:00",
+        "status": "ok"
+      },
+      {
+        "team_id": 200,
+        "participant_id": 10,
+        "role": "UTILITY",
+        "tier": "CHALLENGER",
+        "observed_at": "2026-11-24T06:08:09.328936+00:00",
+        "status": "ok"
+      }
+    ]
+  },
+  {
+    "match_id": "KR_8469208721",
+    "platform": "KR",
+    "game_version": "16.23.840.6595",
+    "queue": 420,
+    "status": "rejected",
+    "high_participants": 10,
+    "below_floor_participants": 0,
+    "missing_participants": 0,
+    "all_ten_high_at_observation": true,
+    "snapshot_delay_hours": 43.07592643361111,
+    "snapshot_spread_minutes": 0.23802041666666665,
+    "historical_rank_verified": false,
+    "reasons": [
+      "match_too_old_for_near_match_proxy"
+    ],
+    "participants": [
+      {
+        "team_id": 100,
+        "participant_id": 1,
+        "role": "TOP",
+        "tier": "CHALLENGER",
+        "observed_at": "2026-11-24T06:08:13.208389+00:00",
+        "status": "ok"
+      },
+      {
+        "team_id": 100,
+        "participant_id": 2,
+        "role": "JUNGLE",
+        "tier": "CHALLENGER",
+        "observed_at": "2026-11-24T06:08:14.774342+00:00",
+        "status": "ok"
+      },
+      {
+        "team_id": 100,
+        "participant_id": 3,
+        "role": "MIDDLE",
+        "tier": "GRANDMASTER",
+        "observed_at": "2026-11-24T06:08:15.807517+00:00",
+        "status": "ok"
+      },
+      {
+        "team_id": 100,
+        "participant_id": 4,
+        "role": "BOTTOM",
+        "tier": "CHALLENGER",
+        "observed_at": "2026-11-24T06:08:17.155658+00:00",
+        "status": "ok"
+      },
+      {
+        "team_id": 100,
+        "participant_id": 5,
+        "role": "UTILITY",
+        "tier": "CHALLENGER",
+        "observed_at": "2026-11-24T06:08:18.393138+00:00",
+        "status": "ok"
+      },
+      {
+        "team_id": 200,
+        "participant_id": 6,
+        "role": "TOP",
+        "tier": "CHALLENGER",
+        "observed_at": "2026-11-24T06:08:19.747743+00:00",
+        "status": "ok"
+      },
+      {
+        "team_id": 200,
+        "participant_id": 7,
+        "role": "JUNGLE",
+        "tier": "CHALLENGER",
+        "observed_at": "2026-11-24T06:08:09.328936+00:00",
+        "status": "ok"
+      },
+      {
+        "team_id": 200,
+        "participant_id": 8,
+        "role": "MIDDLE",
+        "tier": "MASTER",
+        "observed_at": "2026-11-24T06:08:21.594553+00:00",
+        "status": "ok"
+      },
+      {
+        "team_id": 200,
+        "participant_id": 9,
+        "role": "BOTTOM",
+        "tier": "CHALLENGER",
+        "observed_at": "2026-11-24T06:08:22.328242+00:00",
+        "status": "ok"
+      },
+      {
+        "team_id": 200,
+        "participant_id": 10,
+        "role": "UTILITY",
+        "tier": "GRANDMASTER",
+        "observed_at": "2026-11-24T06:08:23.610161+00:00",
+        "status": "ok"
+      }
+    ]
+  },
+  {
+    "match_id": "KR_8471150183",
+    "platform": "KR",
+    "game_version": "16.23.840.6595",
+    "queue": 420,
+    "status": "accepted",
+    "high_participants": 10,
+    "below_floor_participants": 0,
+    "missing_participants": 0,
+    "all_ten_high_at_observation": true,
+    "snapshot_delay_hours": 11.954394069166668,
+    "snapshot_spread_minutes": 0.26017345000000003,
+    "historical_rank_verified": false,
+    "reasons": [],
+    "participants": [
+      {
+        "team_id": 100,
+        "participant_id": 1,
+        "role": "TOP",
+        "tier": "CHALLENGER",
+        "observed_at": "2026-11-24T06:08:22.328242+00:00",
+        "status": "ok"
+      },
+      {
+        "team_id": 100,
+        "participant_id": 2,
+        "role": "JUNGLE",
+        "tier": "CHALLENGER",
+        "observed_at": "2026-11-24T06:08:27.518966+00:00",
+        "status": "ok"
+      },
+      {
+        "team_id": 100,
+        "participant_id": 3,
+        "role": "MIDDLE",
+        "tier": "GRANDMASTER",
+        "observed_at": "2026-11-24T06:08:28.811909+00:00",
+        "status": "ok"
+      },
+      {
+        "team_id": 100,
+        "participant_id": 4,
+        "role": "BOTTOM",
+        "tier": "CHALLENGER",
+        "observed_at": "2026-11-24T06:08:30.405058+00:00",
+        "status": "ok"
+      },
+      {
+        "team_id": 100,
+        "participant_id": 5,
+        "role": "UTILITY",
+        "tier": "CHALLENGER",
+        "observed_at": "2026-11-24T06:08:31.414881+00:00",
+        "status": "ok"
+      },
+      {
+        "team_id": 200,
+        "participant_id": 6,
+        "role": "TOP",
+        "tier": "GRANDMASTER",
+        "observed_at": "2026-11-24T06:08:32.731205+00:00",
+        "status": "ok"
+      },
+      {
+        "team_id": 200,
+        "participant_id": 7,
+        "role": "JUNGLE",
+        "tier": "CHALLENGER",
+        "observed_at": "2026-11-24T06:08:34.012277+00:00",
+        "status": "ok"
+      },
+      {
+        "team_id": 200,
+        "participant_id": 8,
+        "role": "MIDDLE",
+        "tier": "GRANDMASTER",
+        "observed_at": "2026-11-24T06:08:35.591113+00:00",
+        "status": "ok"
+      },
+      {
+        "team_id": 200,
+        "participant_id": 9,
+        "role": "BOTTOM",
+        "tier": "GRANDMASTER",
+        "observed_at": "2026-11-24T06:08:36.612960+00:00",
+        "status": "ok"
+      },
+      {
+        "team_id": 200,
+        "participant_id": 10,
+        "role": "UTILITY",
+        "tier": "CHALLENGER",
+        "observed_at": "2026-11-24T06:08:37.938649+00:00",
+        "status": "ok"
+      }
+    ]
+  },
+  {
+    "match_id": "KR_8471053204",
+    "platform": "KR",
+    "game_version": "16.23.840.6595",
+    "queue": 420,
+    "status": "accepted",
+    "high_participants": 10,
+    "below_floor_participants": 0,
+    "missing_participants": 0,
+    "all_ten_high_at_observation": true,
+    "snapshot_delay_hours": 13.938467104444443,
+    "snapshot_spread_minutes": 0.7108074,
+    "historical_rank_verified": false,
+    "reasons": [],
+    "participants": [
+      {
+        "team_id": 100,
+        "participant_id": 1,
+        "role": "TOP",
+        "tier": "CHALLENGER",
+        "observed_at": "2026-11-24T06:08:22.328242+00:00",
+        "status": "ok"
+      },
+      {
+        "team_id": 100,
+        "participant_id": 2,
+        "role": "JUNGLE",
+        "tier": "CHALLENGER",
+        "observed_at": "2026-11-24T06:08:41.814409+00:00",
+        "status": "ok"
+      },
+      {
+        "team_id": 100,
+        "participant_id": 3,
+        "role": "MIDDLE",
+        "tier": "CHALLENGER",
+        "observed_at": "2026-11-24T06:08:43.364906+00:00",
+        "status": "ok"
+      },
+      {
+        "team_id": 100,
+        "participant_id": 4,
+        "role": "BOTTOM",
+        "tier": "CHALLENGER",
+        "observed_at": "2026-11-24T06:08:44.443552+00:00",
+        "status": "ok"
+      },
+      {
+        "team_id": 100,
+        "participant_id": 5,
+        "role": "UTILITY",
+        "tier": "GRANDMASTER",
+        "observed_at": "2026-11-24T06:08:45.715600+00:00",
+        "status": "ok"
+      },
+      {
+        "team_id": 200,
+        "participant_id": 6,
+        "role": "TOP",
+        "tier": "GRANDMASTER",
+        "observed_at": "2026-11-24T06:08:15.807517+00:00",
+        "status": "ok"
+      },
+      {
+        "team_id": 200,
+        "participant_id": 7,
+        "role": "JUNGLE",
+        "tier": "CHALLENGER",
+        "observed_at": "2026-11-24T06:08:47.351014+00:00",
+        "status": "ok"
+      },
+      {
+        "team_id": 200,
+        "participant_id": 8,
+        "role": "MIDDLE",
+        "tier": "CHALLENGER",
+        "observed_at": "2026-11-24T06:08:06.966132+00:00",
+        "status": "ok"
+      },
+      {
+        "team_id": 200,
+        "participant_id": 9,
+        "role": "BOTTOM",
+        "tier": "CHALLENGER",
+        "observed_at": "2026-11-24T06:08:48.575369+00:00",
+        "status": "ok"
+      },
+      {
+        "team_id": 200,
+        "participant_id": 10,
+        "role": "UTILITY",
+        "tier": "GRANDMASTER",
+        "observed_at": "2026-11-24T06:08:49.614576+00:00",
+        "status": "ok"
+      }
+    ]
+  },
+  {
+    "match_id": "KR_8471007112",
+    "platform": "KR",
+    "game_version": "16.23.840.6595",
+    "queue": 420,
+    "status": "accepted",
+    "high_participants": 10,
+    "below_floor_participants": 0,
+    "missing_participants": 0,
+    "all_ten_high_at_observation": true,
+    "snapshot_delay_hours": 14.555766317222222,
+    "snapshot_spread_minutes": 0.8626268333333333,
+    "historical_rank_verified": false,
+    "reasons": [],
+    "participants": [
+      {
+        "team_id": 100,
+        "participant_id": 1,
+        "role": "TOP",
+        "tier": "CHALLENGER",
+        "observed_at": "2026-11-24T06:08:06.966132+00:00",
+        "status": "ok"
+      },
+      {
+        "team_id": 100,
+        "participant_id": 2,
+        "role": "JUNGLE",
+        "tier": "CHALLENGER",
+        "observed_at": "2026-11-24T06:08:41.814409+00:00",
+        "status": "ok"
+      },
+      {
+        "team_id": 100,
+        "participant_id": 3,
+        "role": "MIDDLE",
+        "tier": "CHALLENGER",
+        "observed_at": "2026-11-24T06:08:53.506781+00:00",
+        "status": "ok"
+      },
+      {
+        "team_id": 100,
+        "participant_id": 4,
+        "role": "BOTTOM",
+        "tier": "GRANDMASTER",
+        "observed_at": "2026-11-24T06:08:54.849978+00:00",
+        "status": "ok"
+      },
+      {
+        "team_id": 100,
+        "participant_id": 5,
+        "role": "UTILITY",
+        "tier": "GRANDMASTER",
+        "observed_at": "2026-11-24T06:08:45.715600+00:00",
+        "status": "ok"
+      },
+      {
+        "team_id": 200,
+        "participant_id": 6,
+        "role": "TOP",
+        "tier": "MASTER",
+        "observed_at": "2026-11-24T06:08:56.127656+00:00",
+        "status": "ok"
+      },
+      {
+        "team_id": 200,
+        "participant_id": 7,
+        "role": "JUNGLE",
+        "tier": "CHALLENGER",
+        "observed_at": "2026-11-24T06:08:34.012277+00:00",
+        "status": "ok"
+      },
+      {
+        "team_id": 200,
+        "participant_id": 8,
+        "role": "MIDDLE",
+        "tier": "CHALLENGER",
+        "observed_at": "2026-11-24T06:08:43.364906+00:00",
+        "status": "ok"
+      },
+      {
+        "team_id": 200,
+        "participant_id": 9,
+        "role": "BOTTOM",
+        "tier": "CHALLENGER",
+        "observed_at": "2026-11-24T06:08:57.444367+00:00",
+        "status": "ok"
+      },
+      {
+        "team_id": 200,
+        "participant_id": 10,
+        "role": "UTILITY",
+        "tier": "CHALLENGER",
+        "observed_at": "2026-11-24T06:08:58.723742+00:00",
+        "status": "ok"
+      }
+    ]
+  }
+]

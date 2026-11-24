@@ -1,0 +1,64 @@
+{
+  "ready": false,
+  "blockers": [
+    "insufficient_history_with_snapshot_evidence_available_before_validation",
+    "KR/420/16.23/MASTER/top:fewer_than_two_supported_champions",
+    "KR/420/16.23/MASTER/jng:fewer_than_two_supported_champions",
+    "KR/420/16.23/MASTER/mid:fewer_than_two_supported_champions",
+    "KR/420/16.23/MASTER/bot:fewer_than_two_supported_champions",
+    "KR/420/16.23/MASTER/sup:fewer_than_two_supported_champions"
+  ],
+  "partitions": {
+    "history": {
+      "games": 6,
+      "match_ids": [
+        "KR_8470871571",
+        "KR_8471007112",
+        "KR_8471023945",
+        "KR_8471037323",
+        "KR_8471053204",
+        "KR_8471089359"
+      ],
+      "available_before_validation_games": 0,
+      "available_before_validation_match_ids": []
+    },
+    "validation": {
+      "games": 2,
+      "match_ids": [
+        "KR_8471113279",
+        "KR_8471150183"
+      ]
+    },
+    "test": {
+      "games": 2,
+      "match_ids": [
+        "KR_8471152777",
+        "KR_8471152856"
+      ]
+    }
+  },
+  "criteria_kind": "engineering_readiness_policy_not_statistical_power_analysis",
+  "criteria": {
+    "champion_games": 5,
+    "champion_unique_players": 3,
+    "supported_champions_per_role": 2,
+    "history_games": 5,
+    "validation_games": 2,
+    "test_games": 2
+  },
+  "split_semantics": "60/20/20 distinct game-start times; history evidence AND result available before validation start",
+  "rank_recommender_implemented": false,
+  "evaluation_status": "not_run",
+  "metrics": null,
+  "planned_baselines": [
+    "same_role_popularity_from_frozen_history",
+    "same_role_historical_result_with_Wilson"
+  ],
+  "limitation": "Match-v5 has no full ranked pick-order log. Do not fabricate draft turns from participant order.",
+  "target_scope": {
+    "platform": "KR",
+    "queue": 420,
+    "patch": "16.23",
+    "tier_floor": "MASTER"
+  }
+}

@@ -1,0 +1,1473 @@
+{
+  "protocol": "same_prefix_reported_failure_regression_not_independent_quality_test",
+  "source": "reports/contextual_ui_revision/export.json",
+  "original_first_ten_moves": [
+    {
+      "side": "blue",
+      "action": "ban",
+      "champion": "Qiyana",
+      "role": null
+    },
+    {
+      "side": "red",
+      "action": "ban",
+      "champion": "Nocturne",
+      "role": null
+    },
+    {
+      "side": "blue",
+      "action": "ban",
+      "champion": "Olaf",
+      "role": null
+    },
+    {
+      "side": "red",
+      "action": "ban",
+      "champion": "Vi",
+      "role": null
+    },
+    {
+      "side": "blue",
+      "action": "ban",
+      "champion": "Ezreal",
+      "role": null
+    },
+    {
+      "side": "red",
+      "action": "ban",
+      "champion": "Lee Sin",
+      "role": null
+    },
+    {
+      "side": "blue",
+      "action": "pick",
+      "champion": "Cassiopeia",
+      "role": "mid"
+    },
+    {
+      "side": "red",
+      "action": "pick",
+      "champion": "Renata Glasc",
+      "role": "sup"
+    },
+    {
+      "side": "red",
+      "action": "pick",
+      "champion": "Kalista",
+      "role": "bot"
+    },
+    {
+      "side": "blue",
+      "action": "pick",
+      "champion": "Nautilus",
+      "role": "sup"
+    }
+  ],
+  "scope": {
+    "region": "WLDS",
+    "dataset_patch": "16.20",
+    "data_through": "2026-11-14T23:18:11+00:00",
+    "requested_as_of": "2026-11-24T23:59:59.999999999+00:00",
+    "staleness_days": 10,
+    "history_games": 110,
+    "patch_games": 98,
+    "lookback_days": 60,
+    "half_life_days": 21.0,
+    "claim": "historical_snapshot_not_live_meta"
+  },
+  "configuration": {
+    "pick_scoring": "current",
+    "ban_strategy": "contextual",
+    "contextual_version": "fixed_capacity_v2",
+    "snapshot_id": "348b7f2589c622f2c3031b66a03d52862af6c428081a9cf79784f4f75673136e",
+    "pair_safety": "bot_reservation_v1"
+  },
+  "baseline_top5": [
+    {
+      "champion": "Jayce",
+      "ranking_score": 30.98,
+      "score_kind": "patch_aware_draft_priority_points",
+      "games": 14,
+      "historical": {
+        "wins": 6,
+        "games": 14,
+        "winrate": 0.42857142857142855,
+        "ci95_wilson": [
+          0.21380798904474121,
+          0.6740935542034926
+        ],
+        "statistic_kind": "historical_team_result",
+        "causal_uplift": null
+      },
+      "reasons": [
+        "Patch dataset 16.20: presence cửa sổ gần đây 49.9%; 12 lượt chọn đúng vị trí trên patch, 14 trận trong cửa sổ gần đây",
+        "Slot F3: ưu tiên chọn quan sát 0.032; không phải xác suất thắng",
+        "Chưa đủ căn cứ đối đầu cùng đường; không gán kèo khắc chế cố định",
+        "Đã xét cả đội địch được lộ; coverage đối đầu đủ mẫu 0%. Chưa có evaluator cơ chế kỹ năng; không xác nhận đây là counter hoặc lựa chọn tối ưu.",
+        "Cặp top/mid với Cassiopeia: 3/17 lần ghép, sparse_pair; association=0.6408676558429325; không phải xác suất thắng hoặc chứng minh tối ưu",
+        "Cặp top/sup với Nautilus: 2/27 lần ghép, sparse_pair; association=0.43699237266175783; không phải xác suất thắng hoặc chứng minh tối ưu",
+        "Cosine 0.955 từ profile tuyển thủ Doran; chỉ là hỗ trợ tương đồng"
+      ],
+      "cosine_similarity": 0.9551536467939193,
+      "score_components": {
+        "meta": {
+          "value": 0.4994357084831855,
+          "weight": 1.0
+        },
+        "draft_order": {
+          "value": 0.03161969318668575,
+          "weight": 1.0
+        },
+        "historical": {
+          "value": 0.21380798904474121,
+          "weight": 0.25
+        },
+        "matchup": {
+          "value": 0.5,
+          "weight": 0.5
+        },
+        "synergy": {
+          "value": 0.5,
+          "weight": 0.25
+        },
+        "composition": {
+          "value": 0.5301370948894021,
+          "weight": 1.0
+        },
+        "mastery": {
+          "value": 0.19459157216821202,
+          "weight": 0.5
+        },
+        "content": {
+          "value": 0.9551536467939193,
+          "weight": 0.1
+        }
+      },
+      "enemy_context_coverage": 0.0,
+      "mechanical_counter_status": "not_evaluated",
+      "selection_basis": "statistical_priority_not_validated_counter",
+      "review_required": true,
+      "evidence_status": "observed_candidate",
+      "matchup_source_comparison": [],
+      "role": "top",
+      "priority_pct": 30.98
+    },
+    {
+      "champion": "Jhin",
+      "ranking_score": 29.51,
+      "score_kind": "patch_aware_draft_priority_points",
+      "games": 24,
+      "historical": {
+        "wins": 13,
+        "games": 24,
+        "winrate": 0.5416666666666666,
+        "ci95_wilson": [
+          0.3507486535891948,
+          0.72108666268789
+        ],
+        "statistic_kind": "historical_team_result",
+        "causal_uplift": null
+      },
+      "reasons": [
+        "Patch dataset 16.20: presence cửa sổ gần đây 32.9%; 21 lượt chọn đúng vị trí trên patch, 24 trận trong cửa sổ gần đây",
+        "Slot F3: ưu tiên chọn quan sát 0.056; không phải xác suất thắng",
+        "Vị trí địch còn là giả định: Kalista p(role)=1.00, n=1",
+        "Phối hợp lịch sử: Nautilus n=5",
+        "Đã xét cả đội địch được lộ; coverage đối đầu đủ mẫu 0%. Chưa có evaluator cơ chế kỹ năng; không xác nhận đây là counter hoặc lựa chọn tối ưu.",
+        "Cặp bot/mid với Cassiopeia: 2/17 lần ghép, sparse_pair; association=0.5343037551144236; không phải xác suất thắng hoặc chứng minh tối ưu",
+        "Cặp bot/sup với Nautilus: 5/27 lần ghép, observed_pair; association=0.5342844271672907; không phải xác suất thắng hoặc chứng minh tối ưu",
+        "Cosine 0.943 từ profile tuyển thủ Peyz; chỉ là hỗ trợ tương đồng"
+      ],
+      "cosine_similarity": 0.9434515996416499,
+      "score_components": {
+        "meta": {
+          "value": 0.32928472081469473,
+          "weight": 1.0
+        },
+        "draft_order": {
+          "value": 0.05630633934221183,
+          "weight": 1.0
+        },
+        "historical": {
+          "value": 0.3507486535891948,
+          "weight": 0.25
+        },
+        "matchup": {
+          "value": 0.5,
+          "weight": 0.5
+        },
+        "synergy": {
+          "value": 0.3861111111111111,
+          "weight": 0.25
+        },
+        "composition": {
+          "value": 0.5342932575475058,
+          "weight": 1.0
+        },
+        "mastery": {
+          "value": 0.26675512657315426,
+          "weight": 0.5
+        },
+        "content": {
+          "value": 0.9434515996416499,
+          "weight": 0.1
+        }
+      },
+      "enemy_context_coverage": 0.0,
+      "mechanical_counter_status": "not_evaluated",
+      "selection_basis": "statistical_priority_not_validated_counter",
+      "review_required": true,
+      "evidence_status": "observed_candidate",
+      "matchup_source_comparison": [
+        {
+          "role": "bot",
+          "champion": "Jhin",
+          "opponent": "Kalista",
+          "enemy_role_probability": 1.0,
+          "pro": {
+            "platform": "ALL_OBSERVED",
+            "queue": "PRO",
+            "patch": "ALL_OBSERVED",
+            "tier_floor": "PRO",
+            "role": "bot",
+            "champion_id": 202,
+            "opponent_id": 429,
+            "champion": "Jhin",
+            "opponent": "Kalista",
+            "games": 1,
+            "wins": 0,
+            "winrate": 0.0,
+            "win_ci95_low": 0.0,
+            "win_ci95_high": 0.7934506856227626,
+            "champion_players": 1,
+            "opponent_players": 1,
+            "unique_players": 2,
+            "evidence_status": "insufficient_samples",
+            "patch_count": 1,
+            "patches": "[\"16.20\"]",
+            "platform_count": 1,
+            "platforms": "[\"WLDS\"]",
+            "target_games": null,
+            "games_remaining": null,
+            "target_reached": null,
+            "supported_patch_count": 0,
+            "gd15_patch_direction": "insufficient_patch_evidence",
+            "patch_gd15_details": "{}",
+            "gold_diff_10_n": 1,
+            "gold_diff_10_mean": 227.0,
+            "gold_diff_10_median": 227.0,
+            "gold_diff_10_sd": null,
+            "gold_diff_10_mean_ci95_low": null,
+            "gold_diff_10_mean_ci95_high": null,
+            "xp_diff_10_n": 1,
+            "xp_diff_10_mean": -211.0,
+            "xp_diff_10_median": -211.0,
+            "xp_diff_10_sd": null,
+            "xp_diff_10_mean_ci95_low": null,
+            "xp_diff_10_mean_ci95_high": null,
+            "cs_diff_10_n": 1,
+            "cs_diff_10_mean": -19.0,
+            "cs_diff_10_median": -19.0,
+            "cs_diff_10_sd": null,
+            "cs_diff_10_mean_ci95_low": null,
+            "cs_diff_10_mean_ci95_high": null,
+            "gold_diff_15_n": 1,
+            "gold_diff_15_mean": -244.0,
+            "gold_diff_15_median": -244.0,
+            "gold_diff_15_sd": null,
+            "gold_diff_15_mean_ci95_low": null,
+            "gold_diff_15_mean_ci95_high": null,
+            "xp_diff_15_n": 1,
+            "xp_diff_15_mean": -310.0,
+            "xp_diff_15_median": -310.0,
+            "xp_diff_15_sd": null,
+            "xp_diff_15_mean_ci95_low": null,
+            "xp_diff_15_mean_ci95_high": null,
+            "cs_diff_15_n": 1,
+            "cs_diff_15_mean": -21.0,
+            "cs_diff_15_median": -21.0,
+            "cs_diff_15_sd": null,
+            "cs_diff_15_mean_ci95_low": null,
+            "cs_diff_15_mean_ci95_high": null,
+            "early_status": "insufficient_samples",
+            "ci95_wilson": [
+              0.0,
+              0.7934506856227626
+            ]
+          },
+          "rank": {
+            "platform": "ALL_OBSERVED",
+            "queue": 420,
+            "patch": "ALL_OBSERVED",
+            "tier_floor": "MASTER",
+            "role": "bot",
+            "champion_id": 202,
+            "opponent_id": 429,
+            "champion": "Jhin",
+            "opponent": "Kalista",
+            "games": 6,
+            "wins": 5,
+            "winrate": 0.8333333333333334,
+            "win_ci95_low": 0.43649717781352987,
+            "win_ci95_high": 0.9699466302516935,
+            "champion_players": 6,
+            "opponent_players": 6,
+            "unique_players": 12,
+            "evidence_status": "observed",
+            "patch_count": 1,
+            "patches": "[\"16.23\"]",
+            "platform_count": 2,
+            "platforms": "[\"EUW1\", \"KR\"]",
+            "target_games": null,
+            "games_remaining": null,
+            "target_reached": null,
+            "supported_patch_count": 1,
+            "gd15_patch_direction": "insufficient_patch_evidence",
+            "patch_gd15_details": "{\"16.23\": {\"mean\": -925.8333333333334, \"n\": 6}}",
+            "gold_diff_10_n": 6,
+            "gold_diff_10_mean": -359.5,
+            "gold_diff_10_median": -457.5,
+            "gold_diff_10_sd": 1308.52691986065,
+            "gold_diff_10_mean_ci95_low": -1732.7147854650827,
+            "gold_diff_10_mean_ci95_high": 1013.7147854650827,
+            "xp_diff_10_n": 6,
+            "xp_diff_10_mean": -161.5,
+            "xp_diff_10_median": -176.5,
+            "xp_diff_10_sd": 702.192210153317,
+            "xp_diff_10_mean_ci95_low": -898.4055313922217,
+            "xp_diff_10_mean_ci95_high": 575.4055313922217,
+            "cs_diff_10_n": 6,
+            "cs_diff_10_mean": -7.333333333333333,
+            "cs_diff_10_median": -9.0,
+            "cs_diff_10_sd": 19.42850140043402,
+            "cs_diff_10_mean_ci95_low": -27.722295132717836,
+            "cs_diff_10_mean_ci95_high": 13.055628466051171,
+            "gold_diff_15_n": 6,
+            "gold_diff_15_mean": -925.8333333333334,
+            "gold_diff_15_median": -1170.0,
+            "gold_diff_15_sd": 1999.0980382829318,
+            "gold_diff_15_mean_ci95_low": -3023.758062353589,
+            "gold_diff_15_mean_ci95_high": 1172.0913956869222,
+            "xp_diff_15_n": 6,
+            "xp_diff_15_mean": -362.8333333333333,
+            "xp_diff_15_median": -271.5,
+            "xp_diff_15_sd": 1046.5978055904122,
+            "xp_diff_15_mean_ci95_low": -1461.1703711568407,
+            "xp_diff_15_mean_ci95_high": 735.5037044901742,
+            "cs_diff_15_n": 6,
+            "cs_diff_15_mean": -17.833333333333332,
+            "cs_diff_15_median": -17.0,
+            "cs_diff_15_sd": 30.122527561057467,
+            "cs_diff_15_mean_ci95_low": -49.44498731965611,
+            "cs_diff_15_mean_ci95_high": 13.77832065298944,
+            "early_status": "inconclusive",
+            "ci95_wilson": [
+              0.43649717781352987,
+              0.9699466302516935
+            ]
+          },
+          "comparison": {
+            "sample_status": "insufficient_samples",
+            "gd15_comparison": "insufficient_measurements",
+            "winrate_direction_conflict": false,
+            "mechanical_counter_confirmed": false
+          },
+          "pro_scope": "current advisor historical window/region, unweighted descriptive observations",
+          "rank_scope": "all observed patches/servers available before requested as_of",
+          "rank_frozen_at": "2026-11-24T10:02:29.474284+00:00",
+          "unknown_rank_games_excluded": 0,
+          "affects_main_score": false
+        }
+      ],
+      "role": "bot",
+      "priority_pct": 29.51
+    },
+    {
+      "champion": "Jarvan IV",
+      "ranking_score": 29.42,
+      "score_kind": "patch_aware_draft_priority_points",
+      "games": 28,
+      "historical": {
+        "wins": 14,
+        "games": 28,
+        "winrate": 0.5,
+        "ci95_wilson": [
+          0.32633127457293465,
+          0.6736687254270654
+        ],
+        "statistic_kind": "historical_team_result",
+        "causal_uplift": null
+      },
+      "reasons": [
+        "Patch dataset 16.20: presence cửa sổ gần đây 52.0%; 26 lượt chọn đúng vị trí trên patch, 28 trận trong cửa sổ gần đây",
+        "Slot F3: ưu tiên chọn quan sát 0.028; không phải xác suất thắng",
+        "Chưa đủ căn cứ đối đầu cùng đường; không gán kèo khắc chế cố định",
+        "Đã xét cả đội địch được lộ; coverage đối đầu đủ mẫu 0%. Chưa có evaluator cơ chế kỹ năng; không xác nhận đây là counter hoặc lựa chọn tối ưu.",
+        "Cặp jng/mid với Cassiopeia: 2/17 lần ghép, sparse_pair; association=0.47341701981934664; không phải xác suất thắng hoặc chứng minh tối ưu",
+        "Cặp jng/sup với Nautilus: 1/27 lần ghép, sparse_pair; association=0.3635242546228175; không phải xác suất thắng hoặc chứng minh tối ưu",
+        "Cosine 0.955 từ profile tuyển thủ Oner; chỉ là hỗ trợ tương đồng"
+      ],
+      "cosine_similarity": 0.954752100492143,
+      "score_components": {
+        "meta": {
+          "value": 0.5202332265785551,
+          "weight": 1.0
+        },
+        "draft_order": {
+          "value": 0.02758173442129979,
+          "weight": 1.0
+        },
+        "historical": {
+          "value": 0.32633127457293465,
+          "weight": 0.25
+        },
+        "matchup": {
+          "value": 0.5,
+          "weight": 0.5
+        },
+        "synergy": {
+          "value": 0.5,
+          "weight": 0.25
+        },
+        "composition": {
+          "value": 0.4137310817052463,
+          "weight": 1.0
+        },
+        "mastery": {
+          "value": 0.23947755679904395,
+          "weight": 0.5
+        },
+        "content": {
+          "value": 0.954752100492143,
+          "weight": 0.1
+        }
+      },
+      "enemy_context_coverage": 0.0,
+      "mechanical_counter_status": "not_evaluated",
+      "selection_basis": "statistical_priority_not_validated_counter",
+      "review_required": true,
+      "evidence_status": "observed_candidate",
+      "matchup_source_comparison": [],
+      "role": "jng",
+      "priority_pct": 29.42
+    },
+    {
+      "champion": "Ambessa",
+      "ranking_score": 28.28,
+      "score_kind": "patch_aware_draft_priority_points",
+      "games": 27,
+      "historical": {
+        "wins": 12,
+        "games": 27,
+        "winrate": 0.4444444444444444,
+        "ci95_wilson": [
+          0.27585858177023004,
+          0.6268697548677552
+        ],
+        "statistic_kind": "historical_team_result",
+        "causal_uplift": null
+      },
+      "reasons": [
+        "Patch dataset 16.20: presence cửa sổ gần đây 33.5%; 24 lượt chọn đúng vị trí trên patch, 27 trận trong cửa sổ gần đây",
+        "Slot F3: ưu tiên chọn quan sát 0.018; không phải xác suất thắng",
+        "Chưa đủ căn cứ đối đầu cùng đường; không gán kèo khắc chế cố định",
+        "Phối hợp lịch sử: Nautilus n=5",
+        "Đã xét cả đội địch được lộ; coverage đối đầu đủ mẫu 0%. Chưa có evaluator cơ chế kỹ năng; không xác nhận đây là counter hoặc lựa chọn tối ưu.",
+        "Cặp top/mid với Cassiopeia: 1/17 lần ghép, sparse_pair; association=0.4383427927330583; không phải xác suất thắng hoặc chứng minh tối ưu",
+        "Cặp top/sup với Nautilus: 5/27 lần ghép, observed_pair; association=0.5795794954367001; không phải xác suất thắng hoặc chứng minh tối ưu",
+        "Cosine 0.971 từ profile tuyển thủ Doran; chỉ là hỗ trợ tương đồng"
+      ],
+      "cosine_similarity": 0.9707939848916853,
+      "score_components": {
+        "meta": {
+          "value": 0.3352873874344395,
+          "weight": 1.0
+        },
+        "draft_order": {
+          "value": 0.017966663115283218,
+          "weight": 1.0
+        },
+        "historical": {
+          "value": 0.27585858177023004,
+          "weight": 0.25
+        },
+        "matchup": {
+          "value": 0.5,
+          "weight": 0.5
+        },
+        "synergy": {
+          "value": 0.6185185185185186,
+          "weight": 0.25
+        },
+        "composition": {
+          "value": 0.5150525295563465,
+          "weight": 1.0
+        },
+        "mastery": {
+          "value": 0.21306072496307388,
+          "weight": 0.5
+        },
+        "content": {
+          "value": 0.9707939848916853,
+          "weight": 0.1
+        }
+      },
+      "enemy_context_coverage": 0.0,
+      "mechanical_counter_status": "not_evaluated",
+      "selection_basis": "statistical_priority_not_validated_counter",
+      "review_required": true,
+      "evidence_status": "observed_candidate",
+      "matchup_source_comparison": [],
+      "role": "top",
+      "priority_pct": 28.28
+    },
+    {
+      "champion": "Rumble",
+      "ranking_score": 27.5,
+      "score_kind": "patch_aware_draft_priority_points",
+      "games": 28,
+      "historical": {
+        "wins": 6,
+        "games": 28,
+        "winrate": 0.21428571428571427,
+        "ci95_wilson": [
+          0.1021246033289788,
+          0.3953858565372187
+        ],
+        "statistic_kind": "historical_team_result",
+        "causal_uplift": null
+      },
+      "reasons": [
+        "Patch dataset 16.20: presence cửa sổ gần đây 47.5%; 25 lượt chọn đúng vị trí trên patch, 28 trận trong cửa sổ gần đây",
+        "Slot F3: ưu tiên chọn quan sát 0.059; không phải xác suất thắng",
+        "Chưa đủ căn cứ đối đầu cùng đường; không gán kèo khắc chế cố định",
+        "Đã xét cả đội địch được lộ; coverage đối đầu đủ mẫu 0%. Chưa có evaluator cơ chế kỹ năng; không xác nhận đây là counter hoặc lựa chọn tối ưu.",
+        "Cặp top/mid với Cassiopeia: 2/17 lần ghép, sparse_pair; association=0.4873519351059849; không phải xác suất thắng hoặc chứng minh tối ưu",
+        "Cặp top/sup với Nautilus: 3/27 lần ghép, sparse_pair; association=0.4216537377362207; không phải xác suất thắng hoặc chứng minh tối ưu",
+        "Cosine 0.935 từ profile tuyển thủ Doran; chỉ là hỗ trợ tương đồng"
+      ],
+      "cosine_similarity": 0.9353343142913993,
+      "score_components": {
+        "meta": {
+          "value": 0.4750976737642223,
+          "weight": 1.0
+        },
+        "draft_order": {
+          "value": 0.059213860616710585,
+          "weight": 1.0
+        },
+        "historical": {
+          "value": 0.1021246033289788,
+          "weight": 0.25
+        },
+        "matchup": {
+          "value": 0.5,
+          "weight": 0.5
+        },
+        "synergy": {
+          "value": 0.5,
+          "weight": 0.25
+        },
+        "composition": {
+          "value": 0.45166934457869196,
+          "weight": 1.0
+        },
+        "mastery": {
+          "value": 0.09095147952317927,
+          "weight": 0.5
+        },
+        "content": {
+          "value": 0.9353343142913993,
+          "weight": 0.1
+        }
+      },
+      "enemy_context_coverage": 0.0,
+      "mechanical_counter_status": "not_evaluated",
+      "selection_basis": "statistical_priority_not_validated_counter",
+      "review_required": true,
+      "evidence_status": "observed_candidate",
+      "matchup_source_comparison": [],
+      "role": "top",
+      "priority_pct": 27.5
+    }
+  ],
+  "guarded_top5": [
+    {
+      "champion": "Jhin",
+      "ranking_score": 29.51,
+      "score_kind": "patch_aware_draft_priority_points",
+      "games": 24,
+      "historical": {
+        "wins": 13,
+        "games": 24,
+        "winrate": 0.5416666666666666,
+        "ci95_wilson": [
+          0.3507486535891948,
+          0.72108666268789
+        ],
+        "statistic_kind": "historical_team_result",
+        "causal_uplift": null
+      },
+      "reasons": [
+        "Giữ cặp bot ngay: chỉ còn 2 đối tác có n≥5 và association≥1; địch có 2 lượt ban trước lượt pick kế tiếp. Đây là phòng ngừa theo lịch, không dự đoán chắc địch sẽ ban.",
+        "Patch dataset 16.20: presence cửa sổ gần đây 32.9%; 21 lượt chọn đúng vị trí trên patch, 24 trận trong cửa sổ gần đây",
+        "Slot F3: ưu tiên chọn quan sát 0.056; không phải xác suất thắng",
+        "Vị trí địch còn là giả định: Kalista p(role)=1.00, n=1",
+        "Phối hợp lịch sử: Nautilus n=5",
+        "Đã xét cả đội địch được lộ; coverage đối đầu đủ mẫu 0%. Chưa có evaluator cơ chế kỹ năng; không xác nhận đây là counter hoặc lựa chọn tối ưu.",
+        "Cặp bot/mid với Cassiopeia: 2/17 lần ghép, sparse_pair; association=0.5343037551144236; không phải xác suất thắng hoặc chứng minh tối ưu",
+        "Cặp bot/sup với Nautilus: 5/27 lần ghép, observed_pair; association=0.5342844271672907; không phải xác suất thắng hoặc chứng minh tối ưu",
+        "Cosine 0.943 từ profile tuyển thủ Peyz; chỉ là hỗ trợ tương đồng"
+      ],
+      "cosine_similarity": 0.9434515996416499,
+      "score_components": {
+        "meta": {
+          "value": 0.32928472081469473,
+          "weight": 1.0
+        },
+        "draft_order": {
+          "value": 0.05630633934221183,
+          "weight": 1.0
+        },
+        "historical": {
+          "value": 0.3507486535891948,
+          "weight": 0.25
+        },
+        "matchup": {
+          "value": 0.5,
+          "weight": 0.5
+        },
+        "synergy": {
+          "value": 0.3861111111111111,
+          "weight": 0.25
+        },
+        "composition": {
+          "value": 0.5342932575475058,
+          "weight": 1.0
+        },
+        "mastery": {
+          "value": 0.26675512657315426,
+          "weight": 0.5
+        },
+        "content": {
+          "value": 0.9434515996416499,
+          "weight": 0.1
+        }
+      },
+      "enemy_context_coverage": 0.0,
+      "mechanical_counter_status": "not_evaluated",
+      "selection_basis": "statistical_priority_not_validated_counter",
+      "review_required": true,
+      "evidence_status": "observed_candidate",
+      "matchup_source_comparison": [
+        {
+          "role": "bot",
+          "champion": "Jhin",
+          "opponent": "Kalista",
+          "enemy_role_probability": 1.0,
+          "pro": {
+            "platform": "ALL_OBSERVED",
+            "queue": "PRO",
+            "patch": "ALL_OBSERVED",
+            "tier_floor": "PRO",
+            "role": "bot",
+            "champion_id": 202,
+            "opponent_id": 429,
+            "champion": "Jhin",
+            "opponent": "Kalista",
+            "games": 1,
+            "wins": 0,
+            "winrate": 0.0,
+            "win_ci95_low": 0.0,
+            "win_ci95_high": 0.7934506856227626,
+            "champion_players": 1,
+            "opponent_players": 1,
+            "unique_players": 2,
+            "evidence_status": "insufficient_samples",
+            "patch_count": 1,
+            "patches": "[\"16.20\"]",
+            "platform_count": 1,
+            "platforms": "[\"WLDS\"]",
+            "target_games": null,
+            "games_remaining": null,
+            "target_reached": null,
+            "supported_patch_count": 0,
+            "gd15_patch_direction": "insufficient_patch_evidence",
+            "patch_gd15_details": "{}",
+            "gold_diff_10_n": 1,
+            "gold_diff_10_mean": 227.0,
+            "gold_diff_10_median": 227.0,
+            "gold_diff_10_sd": null,
+            "gold_diff_10_mean_ci95_low": null,
+            "gold_diff_10_mean_ci95_high": null,
+            "xp_diff_10_n": 1,
+            "xp_diff_10_mean": -211.0,
+            "xp_diff_10_median": -211.0,
+            "xp_diff_10_sd": null,
+            "xp_diff_10_mean_ci95_low": null,
+            "xp_diff_10_mean_ci95_high": null,
+            "cs_diff_10_n": 1,
+            "cs_diff_10_mean": -19.0,
+            "cs_diff_10_median": -19.0,
+            "cs_diff_10_sd": null,
+            "cs_diff_10_mean_ci95_low": null,
+            "cs_diff_10_mean_ci95_high": null,
+            "gold_diff_15_n": 1,
+            "gold_diff_15_mean": -244.0,
+            "gold_diff_15_median": -244.0,
+            "gold_diff_15_sd": null,
+            "gold_diff_15_mean_ci95_low": null,
+            "gold_diff_15_mean_ci95_high": null,
+            "xp_diff_15_n": 1,
+            "xp_diff_15_mean": -310.0,
+            "xp_diff_15_median": -310.0,
+            "xp_diff_15_sd": null,
+            "xp_diff_15_mean_ci95_low": null,
+            "xp_diff_15_mean_ci95_high": null,
+            "cs_diff_15_n": 1,
+            "cs_diff_15_mean": -21.0,
+            "cs_diff_15_median": -21.0,
+            "cs_diff_15_sd": null,
+            "cs_diff_15_mean_ci95_low": null,
+            "cs_diff_15_mean_ci95_high": null,
+            "early_status": "insufficient_samples",
+            "ci95_wilson": [
+              0.0,
+              0.7934506856227626
+            ]
+          },
+          "rank": {
+            "platform": "ALL_OBSERVED",
+            "queue": 420,
+            "patch": "ALL_OBSERVED",
+            "tier_floor": "MASTER",
+            "role": "bot",
+            "champion_id": 202,
+            "opponent_id": 429,
+            "champion": "Jhin",
+            "opponent": "Kalista",
+            "games": 6,
+            "wins": 5,
+            "winrate": 0.8333333333333334,
+            "win_ci95_low": 0.43649717781352987,
+            "win_ci95_high": 0.9699466302516935,
+            "champion_players": 6,
+            "opponent_players": 6,
+            "unique_players": 12,
+            "evidence_status": "observed",
+            "patch_count": 1,
+            "patches": "[\"16.23\"]",
+            "platform_count": 2,
+            "platforms": "[\"EUW1\", \"KR\"]",
+            "target_games": null,
+            "games_remaining": null,
+            "target_reached": null,
+            "supported_patch_count": 1,
+            "gd15_patch_direction": "insufficient_patch_evidence",
+            "patch_gd15_details": "{\"16.23\": {\"mean\": -925.8333333333334, \"n\": 6}}",
+            "gold_diff_10_n": 6,
+            "gold_diff_10_mean": -359.5,
+            "gold_diff_10_median": -457.5,
+            "gold_diff_10_sd": 1308.52691986065,
+            "gold_diff_10_mean_ci95_low": -1732.7147854650827,
+            "gold_diff_10_mean_ci95_high": 1013.7147854650827,
+            "xp_diff_10_n": 6,
+            "xp_diff_10_mean": -161.5,
+            "xp_diff_10_median": -176.5,
+            "xp_diff_10_sd": 702.192210153317,
+            "xp_diff_10_mean_ci95_low": -898.4055313922217,
+            "xp_diff_10_mean_ci95_high": 575.4055313922217,
+            "cs_diff_10_n": 6,
+            "cs_diff_10_mean": -7.333333333333333,
+            "cs_diff_10_median": -9.0,
+            "cs_diff_10_sd": 19.42850140043402,
+            "cs_diff_10_mean_ci95_low": -27.722295132717836,
+            "cs_diff_10_mean_ci95_high": 13.055628466051171,
+            "gold_diff_15_n": 6,
+            "gold_diff_15_mean": -925.8333333333334,
+            "gold_diff_15_median": -1170.0,
+            "gold_diff_15_sd": 1999.0980382829318,
+            "gold_diff_15_mean_ci95_low": -3023.758062353589,
+            "gold_diff_15_mean_ci95_high": 1172.0913956869222,
+            "xp_diff_15_n": 6,
+            "xp_diff_15_mean": -362.8333333333333,
+            "xp_diff_15_median": -271.5,
+            "xp_diff_15_sd": 1046.5978055904122,
+            "xp_diff_15_mean_ci95_low": -1461.1703711568407,
+            "xp_diff_15_mean_ci95_high": 735.5037044901742,
+            "cs_diff_15_n": 6,
+            "cs_diff_15_mean": -17.833333333333332,
+            "cs_diff_15_median": -17.0,
+            "cs_diff_15_sd": 30.122527561057467,
+            "cs_diff_15_mean_ci95_low": -49.44498731965611,
+            "cs_diff_15_mean_ci95_high": 13.77832065298944,
+            "early_status": "inconclusive",
+            "ci95_wilson": [
+              0.43649717781352987,
+              0.9699466302516935
+            ]
+          },
+          "comparison": {
+            "sample_status": "insufficient_samples",
+            "gd15_comparison": "insufficient_measurements",
+            "winrate_direction_conflict": false,
+            "mechanical_counter_confirmed": false
+          },
+          "pro_scope": "current advisor historical window/region, unweighted descriptive observations",
+          "rank_scope": "all observed patches/servers available before requested as_of",
+          "rank_frozen_at": "2026-11-24T10:02:29.474284+00:00",
+          "unknown_rank_games_excluded": 0,
+          "affects_main_score": false
+        }
+      ],
+      "role": "bot",
+      "priority_pct": 29.51,
+      "pair_reservation": {
+        "version": "bot_reservation_v1",
+        "enemy_bans_before_next_own_pick": 2,
+        "opponent_bot_revealed": true,
+        "priority_tier": 0,
+        "requires_review": false,
+        "interpretation": "observed_co_pick_support_not_mechanical_synergy",
+        "status": "secure_now",
+        "pair_evidence": {
+          "wins": 1,
+          "games": 5,
+          "winrate": 0.2,
+          "ci95_wilson": [
+            0.03622410863243014,
+            0.6244653702374747
+          ],
+          "statistic_kind": "historical_team_result",
+          "causal_uplift": null,
+          "role": "bot",
+          "champion": "Jhin",
+          "ally_role": "sup",
+          "ally": "Nautilus",
+          "anchor_games": 27,
+          "co_pick_share": 0.18518518518518517,
+          "co_pick_share_ci95_wilson": [
+            0.08180707142976529,
+            0.3669868361854843
+          ],
+          "weighted_pair_games": 1.9848779837070474,
+          "weighted_anchor_games": 14.831123342983926,
+          "marginal_pick_share": 0.10736561223071271,
+          "smoothed_conditional_pick_share": 0.12317340878089464,
+          "smoothed_lift": 1.1472333293849555,
+          "association_reliability": 0.1656152016236968,
+          "effective_lift": 1.0230084889970628,
+          "association_score": 0.5342844271672907,
+          "status": "observed_pair",
+          "score_kind": "observed_role_pair_association_not_causal_synergy"
+        },
+        "reason": "Giữ cặp bot ngay: chỉ còn 2 đối tác có n≥5 và association≥1; địch có 2 lượt ban trước lượt pick kế tiếp. Đây là phòng ngừa theo lịch, không dự đoán chắc địch sẽ ban."
+      }
+    },
+    {
+      "champion": "Kai'Sa",
+      "ranking_score": 26.85,
+      "score_kind": "patch_aware_draft_priority_points",
+      "games": 12,
+      "historical": {
+        "wins": 6,
+        "games": 12,
+        "winrate": 0.5,
+        "ci95_wilson": [
+          0.2537815976337061,
+          0.7462184023662939
+        ],
+        "statistic_kind": "historical_team_result",
+        "causal_uplift": null
+      },
+      "reasons": [
+        "Giữ cặp bot ngay: chỉ còn 2 đối tác có n≥5 và association≥1; địch có 2 lượt ban trước lượt pick kế tiếp. Đây là phòng ngừa theo lịch, không dự đoán chắc địch sẽ ban.",
+        "Patch dataset 16.20: presence cửa sổ gần đây 20.4%; 12 lượt chọn đúng vị trí trên patch, 12 trận trong cửa sổ gần đây",
+        "Slot F3: ưu tiên chọn quan sát 0.017; không phải xác suất thắng",
+        "Vị trí địch còn là giả định: Kalista p(role)=1.00, n=0",
+        "Phối hợp lịch sử: Nautilus n=6",
+        "Đã xét cả đội địch được lộ; coverage đối đầu đủ mẫu 0%. Chưa có evaluator cơ chế kỹ năng; không xác nhận đây là counter hoặc lựa chọn tối ưu.",
+        "Cặp bot/mid với Cassiopeia: 3/17 lần ghép, sparse_pair; association=0.677584023081351; không phải xác suất thắng hoặc chứng minh tối ưu",
+        "Cặp bot/sup với Nautilus: 6/27 lần ghép, observed_pair; association=0.7411925852279957; không phải xác suất thắng hoặc chứng minh tối ưu",
+        "Cosine 0.944 từ profile tuyển thủ Peyz; chỉ là hỗ trợ tương đồng"
+      ],
+      "cosine_similarity": 0.9442451046474358,
+      "score_components": {
+        "meta": {
+          "value": 0.20424806889427988,
+          "weight": 1.0
+        },
+        "draft_order": {
+          "value": 0.01705943806672814,
+          "weight": 1.0
+        },
+        "historical": {
+          "value": 0.2537815976337061,
+          "weight": 0.25
+        },
+        "matchup": {
+          "value": 0.5,
+          "weight": 0.5
+        },
+        "synergy": {
+          "value": 0.625,
+          "weight": 0.25
+        },
+        "composition": {
+          "value": 0.7121316723012239,
+          "weight": 1.0
+        },
+        "mastery": {
+          "value": 0.08526143238721956,
+          "weight": 0.5
+        },
+        "content": {
+          "value": 0.9442451046474358,
+          "weight": 0.1
+        }
+      },
+      "enemy_context_coverage": 0.0,
+      "mechanical_counter_status": "not_evaluated",
+      "selection_basis": "statistical_priority_not_validated_counter",
+      "review_required": true,
+      "evidence_status": "observed_candidate",
+      "matchup_source_comparison": [
+        {
+          "role": "bot",
+          "champion": "Kai'Sa",
+          "opponent": "Kalista",
+          "enemy_role_probability": 1.0,
+          "pro": {
+            "wins": 0,
+            "games": 0,
+            "winrate": null,
+            "ci95_wilson": [
+              null,
+              null
+            ],
+            "statistic_kind": "historical_team_result",
+            "causal_uplift": null,
+            "evidence_status": "missing",
+            "early_status": "missing",
+            "gold_diff_10_n": 0,
+            "gold_diff_10_mean": null,
+            "gold_diff_10_mean_ci95_low": null,
+            "gold_diff_10_mean_ci95_high": null,
+            "xp_diff_10_n": 0,
+            "xp_diff_10_mean": null,
+            "xp_diff_10_mean_ci95_low": null,
+            "xp_diff_10_mean_ci95_high": null,
+            "cs_diff_10_n": 0,
+            "cs_diff_10_mean": null,
+            "cs_diff_10_mean_ci95_low": null,
+            "cs_diff_10_mean_ci95_high": null,
+            "gold_diff_15_n": 0,
+            "gold_diff_15_mean": null,
+            "gold_diff_15_mean_ci95_low": null,
+            "gold_diff_15_mean_ci95_high": null,
+            "xp_diff_15_n": 0,
+            "xp_diff_15_mean": null,
+            "xp_diff_15_mean_ci95_low": null,
+            "xp_diff_15_mean_ci95_high": null,
+            "cs_diff_15_n": 0,
+            "cs_diff_15_mean": null,
+            "cs_diff_15_mean_ci95_low": null,
+            "cs_diff_15_mean_ci95_high": null,
+            "patches": "[]",
+            "platforms": "[]"
+          },
+          "rank": {
+            "platform": "ALL_OBSERVED",
+            "queue": 420,
+            "patch": "ALL_OBSERVED",
+            "tier_floor": "MASTER",
+            "role": "bot",
+            "champion_id": 145,
+            "opponent_id": 429,
+            "champion": "Kai'Sa",
+            "opponent": "Kalista",
+            "games": 5,
+            "wins": 2,
+            "winrate": 0.4,
+            "win_ci95_low": 0.11762077423264783,
+            "win_ci95_high": 0.769275718723987,
+            "champion_players": 5,
+            "opponent_players": 5,
+            "unique_players": 10,
+            "evidence_status": "observed",
+            "patch_count": 1,
+            "patches": "[\"16.23\"]",
+            "platform_count": 1,
+            "platforms": "[\"KR\"]",
+            "target_games": null,
+            "games_remaining": null,
+            "target_reached": null,
+            "supported_patch_count": 1,
+            "gd15_patch_direction": "insufficient_patch_evidence",
+            "patch_gd15_details": "{\"16.23\": {\"mean\": 91.0, \"n\": 5}}",
+            "gold_diff_10_n": 5,
+            "gold_diff_10_mean": 214.6,
+            "gold_diff_10_median": -88.0,
+            "gold_diff_10_sd": 810.5046576053712,
+            "gold_diff_10_mean_ci95_low": -791.774453725058,
+            "gold_diff_10_mean_ci95_high": 1220.974453725058,
+            "xp_diff_10_n": 5,
+            "xp_diff_10_mean": -39.2,
+            "xp_diff_10_median": -53.0,
+            "xp_diff_10_sd": 300.87073636364175,
+            "xp_diff_10_mean_ci95_low": -412.78036145579,
+            "xp_diff_10_mean_ci95_high": 334.38036145579,
+            "cs_diff_10_n": 5,
+            "cs_diff_10_mean": -3.6,
+            "cs_diff_10_median": -1.0,
+            "cs_diff_10_sd": 11.610340218959994,
+            "cs_diff_10_mean_ci95_low": -18.016141456779835,
+            "cs_diff_10_mean_ci95_high": 10.816141456779834,
+            "gold_diff_15_n": 5,
+            "gold_diff_15_mean": 91.0,
+            "gold_diff_15_median": 147.0,
+            "gold_diff_15_sd": 1664.5263590583359,
+            "gold_diff_15_mean_ci95_low": -1975.7824541039276,
+            "gold_diff_15_mean_ci95_high": 2157.7824541039276,
+            "xp_diff_15_n": 5,
+            "xp_diff_15_mean": 228.8,
+            "xp_diff_15_median": 134.0,
+            "xp_diff_15_sd": 392.2023712319955,
+            "xp_diff_15_mean_ci95_low": -258.1835643689165,
+            "xp_diff_15_mean_ci95_high": 715.7835643689166,
+            "cs_diff_15_n": 5,
+            "cs_diff_15_mean": 3.0,
+            "cs_diff_15_median": 3.0,
+            "cs_diff_15_sd": 19.45507645834372,
+            "cs_diff_15_mean_ci95_low": -21.156668020626988,
+            "cs_diff_15_mean_ci95_high": 27.156668020626988,
+            "early_status": "inconclusive",
+            "ci95_wilson": [
+              0.11762077423264783,
+              0.769275718723987
+            ]
+          },
+          "comparison": {
+            "sample_status": "insufficient_samples",
+            "gd15_comparison": "insufficient_measurements",
+            "winrate_direction_conflict": false,
+            "mechanical_counter_confirmed": false
+          },
+          "pro_scope": "current advisor historical window/region, unweighted descriptive observations",
+          "rank_scope": "all observed patches/servers available before requested as_of",
+          "rank_frozen_at": "2026-11-24T10:02:29.474284+00:00",
+          "unknown_rank_games_excluded": 0,
+          "affects_main_score": false
+        }
+      ],
+      "role": "bot",
+      "priority_pct": 26.85,
+      "pair_reservation": {
+        "version": "bot_reservation_v1",
+        "enemy_bans_before_next_own_pick": 2,
+        "opponent_bot_revealed": true,
+        "priority_tier": 0,
+        "requires_review": false,
+        "interpretation": "observed_co_pick_support_not_mechanical_synergy",
+        "status": "secure_now",
+        "pair_evidence": {
+          "wins": 5,
+          "games": 6,
+          "winrate": 0.8333333333333334,
+          "ci95_wilson": [
+            0.43649717781352987,
+            0.9699466302516935
+          ],
+          "statistic_kind": "historical_team_result",
+          "causal_uplift": null,
+          "role": "bot",
+          "champion": "Kai'Sa",
+          "ally_role": "sup",
+          "ally": "Nautilus",
+          "anchor_games": 27,
+          "co_pick_share": 0.2222222222222222,
+          "co_pick_share_ci95_wilson": [
+            0.10607239452360037,
+            0.4075692886663257
+          ],
+          "weighted_pair_games": 3.6171525601151444,
+          "weighted_anchor_games": 14.831123342983926,
+          "marginal_pick_share": 0.0591876672243374,
+          "smoothed_conditional_pick_share": 0.1695061948757057,
+          "smoothed_lift": 2.8638769328960203,
+          "association_reliability": 0.2656320801391211,
+          "effective_lift": 1.3224575333545587,
+          "association_score": 0.7411925852279957,
+          "status": "observed_pair",
+          "score_kind": "observed_role_pair_association_not_causal_synergy"
+        },
+        "reason": "Giữ cặp bot ngay: chỉ còn 2 đối tác có n≥5 và association≥1; địch có 2 lượt ban trước lượt pick kế tiếp. Đây là phòng ngừa theo lịch, không dự đoán chắc địch sẽ ban."
+      }
+    },
+    {
+      "champion": "Jayce",
+      "ranking_score": 30.98,
+      "score_kind": "patch_aware_draft_priority_points",
+      "games": 14,
+      "historical": {
+        "wins": 6,
+        "games": 14,
+        "winrate": 0.42857142857142855,
+        "ci95_wilson": [
+          0.21380798904474121,
+          0.6740935542034926
+        ],
+        "statistic_kind": "historical_team_result",
+        "causal_uplift": null
+      },
+      "reasons": [
+        "Để Nautilus chờ ghép: còn 2 đối tác đủ mẫu; địch có 2 lượt ban trước lượt pick tiếp. Có thể mất toàn bộ nhóm này.",
+        "Patch dataset 16.20: presence cửa sổ gần đây 49.9%; 12 lượt chọn đúng vị trí trên patch, 14 trận trong cửa sổ gần đây",
+        "Slot F3: ưu tiên chọn quan sát 0.032; không phải xác suất thắng",
+        "Chưa đủ căn cứ đối đầu cùng đường; không gán kèo khắc chế cố định",
+        "Đã xét cả đội địch được lộ; coverage đối đầu đủ mẫu 0%. Chưa có evaluator cơ chế kỹ năng; không xác nhận đây là counter hoặc lựa chọn tối ưu.",
+        "Cặp top/mid với Cassiopeia: 3/17 lần ghép, sparse_pair; association=0.6408676558429325; không phải xác suất thắng hoặc chứng minh tối ưu",
+        "Cặp top/sup với Nautilus: 2/27 lần ghép, sparse_pair; association=0.43699237266175783; không phải xác suất thắng hoặc chứng minh tối ưu",
+        "Cosine 0.955 từ profile tuyển thủ Doran; chỉ là hỗ trợ tương đồng"
+      ],
+      "cosine_similarity": 0.9551536467939193,
+      "score_components": {
+        "meta": {
+          "value": 0.4994357084831855,
+          "weight": 1.0
+        },
+        "draft_order": {
+          "value": 0.03161969318668575,
+          "weight": 1.0
+        },
+        "historical": {
+          "value": 0.21380798904474121,
+          "weight": 0.25
+        },
+        "matchup": {
+          "value": 0.5,
+          "weight": 0.5
+        },
+        "synergy": {
+          "value": 0.5,
+          "weight": 0.25
+        },
+        "composition": {
+          "value": 0.5301370948894021,
+          "weight": 1.0
+        },
+        "mastery": {
+          "value": 0.19459157216821202,
+          "weight": 0.5
+        },
+        "content": {
+          "value": 0.9551536467939193,
+          "weight": 0.1
+        }
+      },
+      "enemy_context_coverage": 0.0,
+      "mechanical_counter_status": "not_evaluated",
+      "selection_basis": "statistical_priority_not_validated_counter",
+      "review_required": true,
+      "evidence_status": "observed_candidate",
+      "matchup_source_comparison": [],
+      "role": "top",
+      "priority_pct": 30.98,
+      "pair_reservation": {
+        "version": "bot_reservation_v1",
+        "enemy_bans_before_next_own_pick": 2,
+        "opponent_bot_revealed": true,
+        "priority_tier": 1,
+        "requires_review": false,
+        "interpretation": "observed_co_pick_support_not_mechanical_synergy",
+        "status": "at_risk",
+        "anchor_role": "sup",
+        "anchor": "Nautilus",
+        "missing_role": "bot",
+        "supported_partners": [
+          {
+            "champion": "Jhin",
+            "games": 5,
+            "winrate": 0.2,
+            "ci95_wilson": [
+              0.03622410863243014,
+              0.6244653702374747
+            ],
+            "effective_lift": 1.0230084889970628
+          },
+          {
+            "champion": "Kai'Sa",
+            "games": 6,
+            "winrate": 0.8333333333333334,
+            "ci95_wilson": [
+              0.43649717781352987,
+              0.9699466302516935
+            ],
+            "effective_lift": 1.3224575333545587
+          }
+        ],
+        "supported_partner_count": 2,
+        "worst_case_partners_remaining": 0,
+        "reason": "Để Nautilus chờ ghép: còn 2 đối tác đủ mẫu; địch có 2 lượt ban trước lượt pick tiếp. Có thể mất toàn bộ nhóm này."
+      }
+    },
+    {
+      "champion": "Jarvan IV",
+      "ranking_score": 29.42,
+      "score_kind": "patch_aware_draft_priority_points",
+      "games": 28,
+      "historical": {
+        "wins": 14,
+        "games": 28,
+        "winrate": 0.5,
+        "ci95_wilson": [
+          0.32633127457293465,
+          0.6736687254270654
+        ],
+        "statistic_kind": "historical_team_result",
+        "causal_uplift": null
+      },
+      "reasons": [
+        "Để Nautilus chờ ghép: còn 2 đối tác đủ mẫu; địch có 2 lượt ban trước lượt pick tiếp. Có thể mất toàn bộ nhóm này.",
+        "Patch dataset 16.20: presence cửa sổ gần đây 52.0%; 26 lượt chọn đúng vị trí trên patch, 28 trận trong cửa sổ gần đây",
+        "Slot F3: ưu tiên chọn quan sát 0.028; không phải xác suất thắng",
+        "Chưa đủ căn cứ đối đầu cùng đường; không gán kèo khắc chế cố định",
+        "Đã xét cả đội địch được lộ; coverage đối đầu đủ mẫu 0%. Chưa có evaluator cơ chế kỹ năng; không xác nhận đây là counter hoặc lựa chọn tối ưu.",
+        "Cặp jng/mid với Cassiopeia: 2/17 lần ghép, sparse_pair; association=0.47341701981934664; không phải xác suất thắng hoặc chứng minh tối ưu",
+        "Cặp jng/sup với Nautilus: 1/27 lần ghép, sparse_pair; association=0.3635242546228175; không phải xác suất thắng hoặc chứng minh tối ưu",
+        "Cosine 0.955 từ profile tuyển thủ Oner; chỉ là hỗ trợ tương đồng"
+      ],
+      "cosine_similarity": 0.954752100492143,
+      "score_components": {
+        "meta": {
+          "value": 0.5202332265785551,
+          "weight": 1.0
+        },
+        "draft_order": {
+          "value": 0.02758173442129979,
+          "weight": 1.0
+        },
+        "historical": {
+          "value": 0.32633127457293465,
+          "weight": 0.25
+        },
+        "matchup": {
+          "value": 0.5,
+          "weight": 0.5
+        },
+        "synergy": {
+          "value": 0.5,
+          "weight": 0.25
+        },
+        "composition": {
+          "value": 0.4137310817052463,
+          "weight": 1.0
+        },
+        "mastery": {
+          "value": 0.23947755679904395,
+          "weight": 0.5
+        },
+        "content": {
+          "value": 0.954752100492143,
+          "weight": 0.1
+        }
+      },
+      "enemy_context_coverage": 0.0,
+      "mechanical_counter_status": "not_evaluated",
+      "selection_basis": "statistical_priority_not_validated_counter",
+      "review_required": true,
+      "evidence_status": "observed_candidate",
+      "matchup_source_comparison": [],
+      "role": "jng",
+      "priority_pct": 29.42,
+      "pair_reservation": {
+        "version": "bot_reservation_v1",
+        "enemy_bans_before_next_own_pick": 2,
+        "opponent_bot_revealed": true,
+        "priority_tier": 1,
+        "requires_review": false,
+        "interpretation": "observed_co_pick_support_not_mechanical_synergy",
+        "status": "at_risk",
+        "anchor_role": "sup",
+        "anchor": "Nautilus",
+        "missing_role": "bot",
+        "supported_partners": [
+          {
+            "champion": "Jhin",
+            "games": 5,
+            "winrate": 0.2,
+            "ci95_wilson": [
+              0.03622410863243014,
+              0.6244653702374747
+            ],
+            "effective_lift": 1.0230084889970628
+          },
+          {
+            "champion": "Kai'Sa",
+            "games": 6,
+            "winrate": 0.8333333333333334,
+            "ci95_wilson": [
+              0.43649717781352987,
+              0.9699466302516935
+            ],
+            "effective_lift": 1.3224575333545587
+          }
+        ],
+        "supported_partner_count": 2,
+        "worst_case_partners_remaining": 0,
+        "reason": "Để Nautilus chờ ghép: còn 2 đối tác đủ mẫu; địch có 2 lượt ban trước lượt pick tiếp. Có thể mất toàn bộ nhóm này."
+      }
+    },
+    {
+      "champion": "Ambessa",
+      "ranking_score": 28.28,
+      "score_kind": "patch_aware_draft_priority_points",
+      "games": 27,
+      "historical": {
+        "wins": 12,
+        "games": 27,
+        "winrate": 0.4444444444444444,
+        "ci95_wilson": [
+          0.27585858177023004,
+          0.6268697548677552
+        ],
+        "statistic_kind": "historical_team_result",
+        "causal_uplift": null
+      },
+      "reasons": [
+        "Để Nautilus chờ ghép: còn 2 đối tác đủ mẫu; địch có 2 lượt ban trước lượt pick tiếp. Có thể mất toàn bộ nhóm này.",
+        "Patch dataset 16.20: presence cửa sổ gần đây 33.5%; 24 lượt chọn đúng vị trí trên patch, 27 trận trong cửa sổ gần đây",
+        "Slot F3: ưu tiên chọn quan sát 0.018; không phải xác suất thắng",
+        "Chưa đủ căn cứ đối đầu cùng đường; không gán kèo khắc chế cố định",
+        "Phối hợp lịch sử: Nautilus n=5",
+        "Đã xét cả đội địch được lộ; coverage đối đầu đủ mẫu 0%. Chưa có evaluator cơ chế kỹ năng; không xác nhận đây là counter hoặc lựa chọn tối ưu.",
+        "Cặp top/mid với Cassiopeia: 1/17 lần ghép, sparse_pair; association=0.4383427927330583; không phải xác suất thắng hoặc chứng minh tối ưu",
+        "Cặp top/sup với Nautilus: 5/27 lần ghép, observed_pair; association=0.5795794954367001; không phải xác suất thắng hoặc chứng minh tối ưu",
+        "Cosine 0.971 từ profile tuyển thủ Doran; chỉ là hỗ trợ tương đồng"
+      ],
+      "cosine_similarity": 0.9707939848916853,
+      "score_components": {
+        "meta": {
+          "value": 0.3352873874344395,
+          "weight": 1.0
+        },
+        "draft_order": {
+          "value": 0.017966663115283218,
+          "weight": 1.0
+        },
+        "historical": {
+          "value": 0.27585858177023004,
+          "weight": 0.25
+        },
+        "matchup": {
+          "value": 0.5,
+          "weight": 0.5
+        },
+        "synergy": {
+          "value": 0.6185185185185186,
+          "weight": 0.25
+        },
+        "composition": {
+          "value": 0.5150525295563465,
+          "weight": 1.0
+        },
+        "mastery": {
+          "value": 0.21306072496307388,
+          "weight": 0.5
+        },
+        "content": {
+          "value": 0.9707939848916853,
+          "weight": 0.1
+        }
+      },
+      "enemy_context_coverage": 0.0,
+      "mechanical_counter_status": "not_evaluated",
+      "selection_basis": "statistical_priority_not_validated_counter",
+      "review_required": true,
+      "evidence_status": "observed_candidate",
+      "matchup_source_comparison": [],
+      "role": "top",
+      "priority_pct": 28.28,
+      "pair_reservation": {
+        "version": "bot_reservation_v1",
+        "enemy_bans_before_next_own_pick": 2,
+        "opponent_bot_revealed": true,
+        "priority_tier": 1,
+        "requires_review": false,
+        "interpretation": "observed_co_pick_support_not_mechanical_synergy",
+        "status": "at_risk",
+        "anchor_role": "sup",
+        "anchor": "Nautilus",
+        "missing_role": "bot",
+        "supported_partners": [
+          {
+            "champion": "Jhin",
+            "games": 5,
+            "winrate": 0.2,
+            "ci95_wilson": [
+              0.03622410863243014,
+              0.6244653702374747
+            ],
+            "effective_lift": 1.0230084889970628
+          },
+          {
+            "champion": "Kai'Sa",
+            "games": 6,
+            "winrate": 0.8333333333333334,
+            "ci95_wilson": [
+              0.43649717781352987,
+              0.9699466302516935
+            ],
+            "effective_lift": 1.3224575333545587
+          }
+        ],
+        "supported_partner_count": 2,
+        "worst_case_partners_remaining": 0,
+        "reason": "Để Nautilus chờ ghép: còn 2 đối tác đủ mẫu; địch có 2 lượt ban trước lượt pick tiếp. Có thể mất toàn bộ nhóm này."
+      }
+    }
+  ],
+  "original_second_phase_red_bans": [
+    "Jhin",
+    "Kai'Sa"
+  ],
+  "original_completed_pair": {
+    "wins": 1,
+    "games": 1,
+    "winrate": 1.0,
+    "ci95_wilson": [
+      0.20654931437723745,
+      1.0
+    ],
+    "statistic_kind": "historical_team_result",
+    "causal_uplift": null,
+    "role": "bot",
+    "champion": "Yunara",
+    "ally_role": "sup",
+    "ally": "Nautilus",
+    "anchor_games": 27,
+    "co_pick_share": 0.037037037037037035,
+    "co_pick_share_ci95_wilson": [
+      0.006568145980785103,
+      0.18283465933575843
+    ],
+    "weighted_pair_games": 0.7944771332355808,
+    "weighted_anchor_games": 14.831123342983926,
+    "marginal_pick_share": 0.09980361065113483,
+    "smoothed_conditional_pick_share": 0.07218816543204867,
+    "smoothed_lift": 0.7233021426888412,
+    "association_reliability": 0.5972795969850668,
+    "effective_lift": 0.8240898363794582,
+    "association_score": 0.419718704440467,
+    "status": "sparse_pair",
+    "score_kind": "observed_role_pair_association_not_causal_synergy"
+  },
+  "raw_pick_scores_unchanged_for_common_candidates": true,
+  "red_first_mirror_same_suggestions": true,
+  "partner_scan": "full legal bot/support role pools, not a truncated top5; positive existing association and n>=5",
+  "limitations": [
+    "Historical co-picks are not mechanical synergy or proof of an optimal lane.",
+    "Two enemy bans are capacity before the next own pick, not a forecast of those bans.",
+    "This regression reuses a generated draft; no claim of independent accuracy or win uplift."
+  ]
+}

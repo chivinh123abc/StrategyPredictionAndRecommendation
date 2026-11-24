@@ -1,0 +1,70 @@
+  • Patch dataset 16.20: presence cửa sổ gần đây 32.9%; 21 lượt chọn đúng vị trí trên patch, 24 trận trong cửa sổ gần đây
+  • Slot chưa chỉ định: ưu tiên chọn quan sát 0.107; không phải xác suất thắng
+  • Vị trí địch còn là giả định: Ezreal p(role)=1.00, n=7
+  • Đã xét cả đội địch được lộ; coverage đối đầu đủ mẫu 100%. Chưa có evaluator cơ chế kỹ năng; không xác nhận đây là counter hoặc lựa chọn tối ưu.
+  Jhin vs Ezreal (bot, p(role)=1.00)
+    PRO: n=7, WR=57.1%, Wilson95=25.0%..84.2%; GD10=-96 (n=7); XPD10=+17 (n=7); CSD10=-3 (n=7); GD15=-74 (n=7); XPD15=+321 (n=7); CSD15=-0 (n=7)
+      GD15 mean CI95=[-1110, +962]; inconclusive; patches=["16.17", "16.20"]; sources=["WLDS"]
+    RANK: n=6, WR=33.3%, Wilson95=9.7%..70.0%; GD10=-494 (n=6); XPD10=-304 (n=6); CSD10=-8 (n=6); GD15=+364 (n=6); XPD15=+373 (n=6); CSD15=+0 (n=6)
+      GD15 mean CI95=[-1066, +1794]; inconclusive; patches=["16.23"]; sources=["EUW1", "KR", "NA1"]
+    both_observed; opposite_means_uncertain; WR trung bình trái chiều=True
+  • meta: 0.329 × trọng số 1
+  • historical: 0.351 × trọng số 0.25
+  • matchup: 0.512 × trọng số 0.5
+  Điểm là heuristic tham khảo; không phải xác suất hay mức tăng thắng.
+  • Patch dataset 16.20: presence cửa sổ gần đây 22.7%; 19 lượt chọn đúng vị trí trên patch, 22 trận trong cửa sổ gần đây
+  • Slot chưa chỉ định: ưu tiên chọn quan sát 0.100; không phải xác suất thắng
+  • Vị trí địch còn là giả định: Ezreal p(role)=1.00, n=4
+  • Đã xét cả đội địch được lộ; coverage đối đầu đủ mẫu 0%. Chưa có evaluator cơ chế kỹ năng; không xác nhận đây là counter hoặc lựa chọn tối ưu.
+  Yunara vs Ezreal (bot, p(role)=1.00)
+    PRO: n=4, WR=75.0%, Wilson95=30.1%..95.4%; GD10=-133 (n=4); XPD10=-34 (n=4); CSD10=-1 (n=4); GD15=+308 (n=4); XPD15=-162 (n=4); CSD15=+0 (n=4)
+      GD15 mean CI95=[-1010, +1626]; insufficient_samples; patches=["16.20"]; sources=["WLDS"]
+    RANK: n=12, WR=41.7%, Wilson95=19.3%..68.0%; GD10=+65 (n=12); XPD10=-34 (n=12); CSD10=-3 (n=12); GD15=+236 (n=12); XPD15=-59 (n=12); CSD15=-2 (n=12)
+      GD15 mean CI95=[-969, +1441]; inconclusive; patches=["16.23"]; sources=["EUW1", "KR", "NA1"]
+    insufficient_samples; insufficient_measurements; WR trung bình trái chiều=False
+  • meta: 0.227 × trọng số 1
+  • historical: 0.387 × trọng số 0.25
+  • matchup: 0.500 × trọng số 0.5
+  Điểm là heuristic tham khảo; không phải xác suất hay mức tăng thắng.
+  • Patch dataset 16.20: presence cửa sổ gần đây 25.0%; 18 lượt chọn đúng vị trí trên patch, 20 trận trong cửa sổ gần đây
+  • Slot chưa chỉ định: ưu tiên chọn quan sát 0.088; không phải xác suất thắng
+  • Vị trí địch còn là giả định: Ezreal p(role)=1.00, n=3
+  • Đã xét cả đội địch được lộ; coverage đối đầu đủ mẫu 0%. Chưa có evaluator cơ chế kỹ năng; không xác nhận đây là counter hoặc lựa chọn tối ưu.
+  Lucian vs Ezreal (bot, p(role)=1.00)
+    PRO: n=3, WR=33.3%, Wilson95=6.1%..79.2%; GD10=+159 (n=3); XPD10=+79 (n=3); CSD10=+7 (n=3); GD15=+176 (n=3); XPD15=-242 (n=3); CSD15=+5 (n=3)
+      GD15 mean CI95=[-2514, +2866]; insufficient_samples; patches=["16.20"]; sources=["WLDS"]
+    RANK: n=1, WR=100.0%, Wilson95=20.7%..100.0%; GD10=-1901 (n=1); XPD10=-1218 (n=1); CSD10=-16 (n=1); GD15=-2045 (n=1); XPD15=-1012 (n=1); CSD15=-16 (n=1)
+      GD15 mean CI95=[NA, NA]; insufficient_samples; patches=["16.23"]; sources=["KR"]
+    insufficient_samples; insufficient_measurements; WR trung bình trái chiều=False
+  • meta: 0.250 × trọng số 1
+  • historical: 0.219 × trọng số 0.25
+  • matchup: 0.500 × trọng số 0.5
+  Điểm là heuristic tham khảo; không phải xác suất hay mức tăng thắng.
+  • Patch dataset 16.20: presence cửa sổ gần đây 18.0%; 15 lượt chọn đúng vị trí trên patch, 17 trận trong cửa sổ gần đây
+  • Slot chưa chỉ định: ưu tiên chọn quan sát 0.078; không phải xác suất thắng
+  • Vị trí địch còn là giả định: Ezreal p(role)=1.00, n=4
+  • Đã xét cả đội địch được lộ; coverage đối đầu đủ mẫu 0%. Chưa có evaluator cơ chế kỹ năng; không xác nhận đây là counter hoặc lựa chọn tối ưu.
+  Ashe vs Ezreal (bot, p(role)=1.00)
+    PRO: n=4, WR=50.0%, Wilson95=15.0%..85.0%; GD10=+34 (n=4); XPD10=-100 (n=4); CSD10=+10 (n=4); GD15=+20 (n=4); XPD15=-571 (n=4); CSD15=+3 (n=4)
+      GD15 mean CI95=[-1521, +1561]; insufficient_samples; patches=["16.17", "16.20"]; sources=["WLDS"]
+    RANK: n=1, WR=100.0%, Wilson95=20.7%..100.0%; GD10=-1082 (n=1); XPD10=-598 (n=1); CSD10=-25 (n=1); GD15=-1428 (n=1); XPD15=+229 (n=1); CSD15=-26 (n=1)
+      GD15 mean CI95=[NA, NA]; insufficient_samples; patches=["16.23"]; sources=["EUW1"]
+    insufficient_samples; insufficient_measurements; WR trung bình trái chiều=False
+  • meta: 0.180 × trọng số 1
+  • historical: 0.413 × trọng số 0.25
+  • matchup: 0.500 × trọng số 0.5
+  Điểm là heuristic tham khảo; không phải xác suất hay mức tăng thắng.
+  • Patch dataset 16.20: presence cửa sổ gần đây 20.4%; 12 lượt chọn đúng vị trí trên patch, 12 trận trong cửa sổ gần đây
+  • Slot chưa chỉ định: ưu tiên chọn quan sát 0.059; không phải xác suất thắng
+  • Vị trí địch còn là giả định: Ezreal p(role)=1.00, n=4
+  • Đã xét cả đội địch được lộ; coverage đối đầu đủ mẫu 0%. Chưa có evaluator cơ chế kỹ năng; không xác nhận đây là counter hoặc lựa chọn tối ưu.
+  Kai'Sa vs Ezreal (bot, p(role)=1.00)
+    PRO: n=4, WR=75.0%, Wilson95=30.1%..95.4%; GD10=-259 (n=4); XPD10=+15 (n=4); CSD10=-4 (n=4); GD15=-96 (n=4); XPD15=-157 (n=4); CSD15=-10 (n=4)
+      GD15 mean CI95=[-848, +655]; insufficient_samples; patches=["16.20"]; sources=["WLDS"]
+    RANK: n=13, WR=38.5%, Wilson95=17.7%..64.5%; GD10=+156 (n=13); XPD10=+164 (n=13); CSD10=-1 (n=13); GD15=+106 (n=13); XPD15=+172 (n=13); CSD15=-4 (n=13)
+      GD15 mean CI95=[-1081, +1293]; inconclusive; patches=["16.23"]; sources=["KR", "NA1"]
+    insufficient_samples; insufficient_measurements; WR trung bình trái chiều=False
+  • meta: 0.204 × trọng số 1
+  • historical: 0.254 × trọng số 0.25
+  • matchup: 0.500 × trọng số 0.5
+  Điểm là heuristic tham khảo; không phải xác suất hay mức tăng thắng.

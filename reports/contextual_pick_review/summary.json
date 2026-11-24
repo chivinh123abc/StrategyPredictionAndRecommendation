@@ -1,0 +1,61 @@
+{
+  "source": "reports\\legacy_contextual_comparison\\contextual\\series.json",
+  "source_sha256": "aab391f1e0705470cf5c3cbeea5eb14c520b3a72c1d703620984030efb86d70b",
+  "scope": "frozen_contextual_pick_audit_no_policy_change",
+  "picks_audited": 50,
+  "no_enemy_revealed_picks": 5,
+  "unsupported_enemy_context_picks": 38,
+  "supported_enemy_context_picks": 7,
+  "sparse_candidates": [
+    {
+      "game": 5,
+      "turn": 17,
+      "team": "Gen.G",
+      "role": "sup",
+      "champion": "Poppy",
+      "games": 2
+    },
+    {
+      "game": 5,
+      "turn": 19,
+      "team": "T1",
+      "role": "top",
+      "champion": "Aurora",
+      "games": 2
+    },
+    {
+      "game": 5,
+      "turn": 20,
+      "team": "Gen.G",
+      "role": "jng",
+      "champion": "Nasus",
+      "games": 1
+    }
+  ],
+  "top1_changes_under_ablation": {
+    "meta": 13,
+    "content": 1,
+    "composition": 14,
+    "mastery": 3,
+    "matchup": 3
+  },
+  "pair_evidence_statuses": {
+    "sparse_pair": 59,
+    "observed_pair": 8,
+    "unobserved_pair": 32,
+    "insufficient_anchor_history": 1
+  },
+  "checks": {
+    "pre_action_state_matches_saved_history": true,
+    "legal_alternatives_checked": 248,
+    "saved_scores_and_top1_reproduced": 50,
+    "no_model_training": true,
+    "no_pick_policy_changed": true
+  },
+  "limitations": [
+    "All50picks are simulated outputs, not expert quality labels.",
+    "Ablation changes the scoring formula, not evidence of alternative match outcomes.",
+    "Same-role alternatives do not evaluate other pick roles or flex reassignment.",
+    "Co-pick data and whole-game outcomes do not establish mechanical synergy/counters."
+  ]
+}

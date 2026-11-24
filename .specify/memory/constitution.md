@@ -27,9 +27,15 @@
 - Changes with no knowledge/method/function impact MAY record a reasoned no-impact note instead of inventing a new register entry. Do not create routine approval requests or retrain unchanged models to satisfy this principle.
 - Project template overrides under `.specify/templates/overrides/` and root agent instructions MUST carry this rule; verify preservation after SpecKit upgrades. Installation manifests are metadata, not the policy location.
 
+### VII. Course-Sized Scope and Explainable Extensions
+- Prioritize Chapters1–6 and a small set of necessary, explainable extensions, following [the current scope](../../docs/PHAM_VI_DO_AN_VUA_SUC.md).
+- Reuse existing pipelines and methods. Do not automatically add models, frameworks, strategies or research tracks; do not restore removed lookahead/global BO5 search. Keep legacy/contextual and existing draft/Fearless interaction without claiming optimality.
+- Preserve historical prototypes/evaluators for provenance rather than treating all of them as mandatory product work. Runtime custom formulas remain extensions when used; do not relabel them as course material.
+- Record the reason, course mapping or extension source, implementation, output and evidence for changes. This scope rule does not add routine approval requests for already assigned work.
+
 ## Architecture & Scope Constraints
 
-- **Target Platform**: 100% Web Application & FastAPI REST Backend (`src/api/` & `web/`) for the Introduction to Data Science course (PTIT).
+- **Current Deliverable**: Executable Python CLI/notebooks, data/statistical outputs and a course report. Following explicit user authorization on 2026-11-24, `src/api/` and `web/` implement a small local FastAPI + React/TypeScript draft UI reusing the existing engine. This is NV-21 engineering support; a full production Web platform, new learning algorithm or global BO5 optimization is not mandatory. See `docs/UI_REACT_TYPESCRIPT.md` and knowledge ledger section 27.
 - **Database Standard**: SQLite 3 (`data/database/lol_live_data.db`) normalized to 1NF and 3NF (`matches_10min`, `tournament_matches`, `tournament_players` — 37,009 total rows).
 - **Regional Meta Segmentation**: Full support for `LCK`, `LPL`, `LCP`, `WLDS` (Worlds/CKTG), `MSI`, `EWC`, `INTERNATIONAL`, and `ALL`.
 
@@ -38,4 +44,4 @@
 - This Constitution and `AI/AI_RULES.md` supersede all ad-hoc practices.
 - Priority hierarchy: `ALGORITHMIC GENERALITY > STATISTICAL RIGOR > CORRECTNESS > CONSISTENCY > TRACEABILITY > SPEED`.
 
-**Version**: 1.1.0 | **Ratified**: 2026-11-23 | **Last Amended**: 2026-11-23
+**Version**: 1.3.0 | **Ratified**: 2026-11-23 | **Last Amended**: 2026-11-24

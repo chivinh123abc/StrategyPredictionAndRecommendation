@@ -1,0 +1,42 @@
+[
+  {
+    "first_picks": [
+      "blue",
+      "blue",
+      "blue",
+      "blue",
+      "blue"
+    ],
+    "games": 5,
+    "actions": 100,
+    "unique_picks": 50,
+    "prior_locks": [
+      0,
+      10,
+      20,
+      30,
+      40
+    ],
+    "provenance": "synthetic legal manual-input replay using real catalog; not recommender quality"
+  },
+  {
+    "first_picks": [
+      "red",
+      "red",
+      "red",
+      "red",
+      "red"
+    ],
+    "games": 5,
+    "actions": 100,
+    "unique_picks": 50,
+    "prior_locks": [
+      0,
+      10,
+      20,
+      30,
+      40
+    ],
+    "provenance": "synthetic legal manual-input replay using real catalog; not recommender quality"
+  }
+]

@@ -1,3 +1,82 @@
+## 24/11 — MR24/NV23 giữ cặp bot và per-game First Selection
+
+`pair_reservation.reserve_pairs/enemy_bans_before_next_pick`: n/lift/legalscannedpartners vàbanbudgettheoschedule,prioritytierkhôngđổiscore. `simulate_draft_match.pick_candidates/needs_tactical_review`: contextualguard/fullbot-sup/rolefilter/review; simJSONlưutrace. APIrecommend/explain/configurationdùngcùngpolicy. `simulate_fearless_series.first_selection_order/run_series` nhậnexplicitfirst_picks,UIchoiceeachgame. [Phươngpháp](GIU_CAP_BOT_VA_FIRST_SELECTION.md), [minhchứng](../reports/pair_reservation_revision/REPORT.md),sổ29;khôngnewmodel/search/service.
+
+## 24/11 — UI React/TS và API nhỏ (NV-21)
+
+- `src/api/app.py`: registry/advisor cache; restore/states_for validate replay + Fearless; recommend/make_view reuse engine; action/swap/explain endpoints không tạo score ở frontend.
+- `web/src/App.tsx`: React settings/manual/recommendations/board/history/evidence/auto/localStorage/export; `types.ts` hợp đồng JSON, `api.ts` fetch; CSS thuần responsive.
+- `start_ui.ps1`: build web rồi serve API+static local; `tests/test_ui_api.py`, `web/e2e/draft.spec.ts` kiểm backend và Edge. [Hướng dẫn](UI_REACT_TYPESCRIPT.md), [minh chứng](../reports/ui_demo/REPORT.md), sổ27. Không thuật toán khoa học mới, engine/mapping chương cũ giữ nguyên.
+
+## 24/11 — Rà điểm và một công thức thử đơn giản
+
+- `draft_advisor.AdvisorPolicy.scoring/effective_weights`: currentmặcđịnh hoặc simple explicit; khôngthêmchiếnlượcban.
+- `DraftAdvisor._simple_rows`: meanfrequency/cosine/same-roleWR; missingprofilebỏtínhiệu, matchupthiếu dùngWRfallbackcónhãn. `_attach_explanations` dùngchungkhôngđổiscore.
+- `compare_pick_scoring.collapse/replay_pair/evaluate`: reusefrozenhistory/series/metrics/CI/ablation,assertpoolroleidentical/lưuhash,3rankingcurrent/simple/presence;520queries và8componentdiagnostics.
+- Simulator/series thêm`--pick-scoring`, JSONgiữscope/sourcecomparison, BO5Markdownđầyđủ100actions và50pickreasons.146tests+integrationPASS,defaultcurrentvìsimplegiảmretrieval.
+- [Phương pháp và kiến thức](TINH_GIAN_DIEM_RECOMMENDER.md), sổ26/MR-23/NV-20; outputs reports/pick_scoring_comparison vàreports/simple_scoring_bo5.
+
+## 24/11 — Phạm vi vừa sức và quota mẫu mặc định null
+
+Không thêm module runtime/thuậttoán. `rank_matchup_tables.aggregate/export_tables` và CLI `update_rank_evidence.main` bỏ default2.000; giữ trường cũnull, summaryv3/referencechưanạp/parityFalse. Manualtarget chỉđểreprocũ. Collectorwatchhiệnhành vẫn một đường chạy, giữ DB/checkpoint; Pro export chỉđổi metadata quota. Phạm vi/Chương/core/phụ: [PHAM_VI_DO_AN_VUA_SUC](PHAM_VI_DO_AN_VUA_SUC.md), sổ25/NV-19.139testsPASS; chưa đổi score/ranking hoặc xóa prototype cóphụthuộc.
+
+## 24/11 — Pro/Rank matchup evidence và contextual experiment
+
+- `matchup_evidence.pro_observations/export_pro`: luồng sạch -> ghép game/role khác side -> signed/missing GD-XP-CS10/15 -> Pro CSV/stats/CI.
+- `read_rank_snapshot/normalize_rank/available_before`: transaction chỉ đọc, identity chính thức, thời điểm khả dụng tính cả ingestion, không hồi tố nguồn.
+- `SourceView/compare_sources/MatchupExplanations/format_evidence`: lookup stats hai miền riêng, thiếu/trái chiều/CI và nguồn; attach sau điểm ở `DraftAdvisor.recommend_picks`, render ở simulator gợi ý/why, không thay ranking.
+- `evaluate_contextual_evidence.LaneRankEvidence/prospective_partitions/run/run_replay`: same-role Rank source ablation, private freeze/repro, prospective5+5series hoặc diagnostic cónhãnfuture/reused, null nếu chưasẵnsàng.
+- Outputs: reports/pro_matchups, reports/pro_rank_explanations, reports/contextual_rank_experiment; doc [PRO_RANK_MATCHUP_EVIDENCE](PRO_RANK_MATCHUP_EVIDENCE.md), sổ24/MR-22/NV-18.138tests + integrationPASS, chưaqualityproof/khôngpromote.
+
+## 24/11 — Bảng gộp patch/server và tiến độ mỗi kèo
+
+- `rank_matchup_tables.aggregate(...,pooled,target_games)`: thống kê từ rows khử trùng, scope gộp có provenance/dấu GD15 theo patch, mục tiêu không chặn mẫu.
+- `rank_matchup_tables.export_tables`: thêm pooled_all/best/unfavorable/early và matchup_collection_progress; report schema v2.
+- `update_rank_evidence.next_job`: round-robin platform, cả khám phá seed giữa backlog, cursor metadata bền vững. CLI `--target-games-per-matchup` mặc định2.000.
+- Tài liệu: [POOLED_MATCHUPS_UGG_STYLE](POOLED_MATCHUPS_UGG_STYLE.md), sổ MR-21/NV-17. Không đổi policytier/Proscore/ML.
+
+## 24/11 — Kho Rank tăng dần và thống kê theo stage
+
+- `rank_lake.py`: `exclusive_writer`, `RankLake` vàcáchàmmetadata/seed/job/snapshot/transaction/import; privateSQLite mới ranked_evidence.db, khôngcanonical.
+- `update_rank_evidence.py`: `fetch_snapshot`, `process_job`, `qualify`, `discover_seed`, `bootstrap`, `session`, `main` — C/GM/M/BFS/pagedrecentIDs/checkpointresumable/cachetime/budgetdeadline/watch.
+- `rank_matchup_tables.py`: `aggregate`, `export_tables` — allrows/sparse, winratecao/thấp/GD15riêngvớiWilson+tmeanCI; thốngkêngaykhôngchờ1.000.
+- [Hướngdẫn](CONTINUOUS_RANK_EVIDENCE.md), [report](../reports/rank_matchups_live/REPORT.md), [checks](../reports/rank_matchups_live/checks.json), sổmục22/MR-20/NV-16.63testsPASS,88completegames880rows382người/714pairs(8n5),600+2requests; Pro/Rankruntime/MLkhôngđổi.
+
+## 24/11 — Campaign và coverage/readiness Rank
+
+- `collect_rank_batches.py`: `seen_matches`, `campaign`, `main` — boundedbatch, seedoffset/registry, seenIDs vàcampaignmanifest.
+- `ranked_matchups.py:RiotClient.get`: caprequestattemptkểcảretry; collector nhậnseedoffset/excludedIDs.
+- `rank_coverage.py`: `load_cohort`, `observations`, `coverage_tables`, `chronological_plan`, `build`, `main` — revalidate/dedup/scopedcounts/uniqueplayers/zerouniverse/deficit/temporalreadiness, chưaRankranker.
+- [Protocol](RANK_BATCHES_COVERAGE_AND_EVALUATION.md), [report](../reports/rank_coverage/REPORT.md), sổ mục21/MR-19/NV-15.49testsPASS,10accepted/72người,0championrole đủn5 và0historyavailabletrướcval. ConditionalRankrecommender/eval/UI cònplanned, Prokhôngđổi.
+
+## 24/11 — Collector snapshot tier từng người
+
+- `collect_rank_snapshots.py`: `parse_snapshot`, `classify_match`, `collect_run`, `main` — thu vàlưurankSolo/Duocủa10người, cohortproxy/age/spread, privateperruncache vàreportaccepted/rejected/missing.
+- `ranked_matchups.py:RiotError/RiotClient.get`: typedstatuscode, giữ boundedretry/khônglộtoken; configv2snapshot_collection24h/15min.
+- [Hướng dẫn](COLLECTOR_RANK_SNAPSHOTS.md), [runreport](../reports/rank_snapshot_collection/20261124T055630861038Z/REPORT.md), sổ mục20/MR-18/NV-14.40testsPASS, live5trận/49người ->2accepted/3quácũ/0missing,20observations; chưa runtimeRank hoặcProRanksignal.
+
+## 24/11 — Hai chế độ và kiểm tra cohort Rank cao
+
+- `src/config/draft_modes.json`: Rank/Pro tách biệt, working floor Master+, trạng thái runtime và quy tắc bằng chứng.
+- `rank_eligibility.py`: `utc/read_policy/participant_evidence/assess_match/audit/main`, admission audit đầu vào, không recommenderRank hoặc verifier độc lập nguồn lịch sử.
+- `evaluate_rank_transfer.py:evaluate/main`: default cohort gate theo freeze và eligible ID; --allow-seed-only-research cho phép tái lập nghiên cứu cũ có nhãn, không active runtime. [Thiết kế/tiêu chuẩn](HAI_CHE_DO_VA_TIEU_CHUAN_RANK_CAO.md), [audit](../reports/rank_cohort_audit/REPORT.md), sổ mục19/MR-17/NV-13.29testsPASS; runtimeRank/chụpsnapshotcánhâncònkếhoạch.
+
+## 24/11 — Chuẩn hóa và thí nghiệm Rank transfer
+
+- `rank_data_contract.py`: `token`, `ChampionCatalog`, `normalize_observations`, `main` — chuẩn ID/alias chính thức, tải pin catalog không dùng token.
+- `ranked_matchups.py`: collector thêm historical range/per-seed/interval, extraction thêm ended_at và official catalog; sidecar v2, không sửa DB.
+- `evaluate_rank_transfer.py`: `normalize_tables`, `split_series`, `RankEvidence`, `TransferAdvisor`, `replay`, `metrics`, `paired_interval`, `audit_contract`, `evaluate` — chỉ nghiên cứu nguồn matchup, không dùng trong runtime. Outputs [report](../reports/rank_transfer_evaluation/REPORT.md), [protocol](RANK_TRANSFER_PROTOCOL.md), sổ MR-16/NV-12.19unit tests + integration; kết quả chưa cải thiện, không bật hybrid.
+
+## 24/11 — Dữ liệu Rank matchup riêng
+
+- `src/01_data_pipeline/ranked_matchups.py`: `RiotClient.get`, `collect`, `extract_match`, `load_rank`, `pro_observations`, `summarize`, `report`, `main` — thu thập/cache/strict role/timestamp và thống kê Rank/Pro độc lập. Không tích hợp điểm draft. Output/tái lập trong [RIOT_RANK_MATCHUPS.md](RIOT_RANK_MATCHUPS.md), sổ mục17/MR-15/NV-11.10unit tests và integration5trận thật; nearest chỉ mô tả, before không sau mốc.
+
+## 24/11 — Review pick contextual
+
+- `audit_draft_choices.py`: `compact`thêmevidencecomposition/player/role; `diagnostic_score`/`ablation`kiểmđộnhạythànhphần, chỉphụcvụaudit,khôngđổiđiểmchọnruntime.
+- `review_contextual_picks.py:review`: validatefrozenstate/unavailable/savedscorevà248alternative, xuất50lượtchitiếtvàsummary; [review](../reports/contextual_pick_review/REVIEW.md).
+- SổkiếnthứcMR-14/NV-10 ghiMH/UD/MR,status/giới hạn vàlệnh táilập. Chưasửaflexhoặcđiểmchọn.
+
 ## Hiện hành24/11 — legacy/contextual
 
 - `ban_planner.py`: `ContextualBanPolicy`, `BanPlanner.contextual/recommend`, `contextual_trace`; gỡsearch/rollout/predictorban, khôngcònBanSearchPolicy.

@@ -1,0 +1,24 @@
+test_collection_limits_each_seed_and_passes_historical_range (test_rank_transfer.RankTransferTests.test_collection_limits_each_seed_and_passes_historical_range) ... ok
+test_hybrid_averages_supported_pair_residuals (test_rank_transfer.RankTransferTests.test_hybrid_averages_supported_pair_residuals) ... ok
+test_hybrid_missing_rank_preserves_control_exactly (test_rank_transfer.RankTransferTests.test_hybrid_missing_rank_preserves_control_exactly) ... ok
+test_metrics_and_bootstrap_pair_identity (test_rank_transfer.RankTransferTests.test_metrics_and_bootstrap_pair_identity) ... ok
+test_official_alias_collision_rejected (test_rank_transfer.RankTransferTests.test_official_alias_collision_rejected) ... ok
+test_official_aliases_ids_and_unknown_rejection (test_rank_transfer.RankTransferTests.test_official_aliases_ids_and_unknown_rejection) ... ok
+test_rank_residual_requires_samples_and_has_correct_sign (test_rank_transfer.RankTransferTests.test_rank_residual_requires_samples_and_has_correct_sign) ... ok
+test_series_disjoint_chronology_and_overlap_rejection (test_rank_transfer.RankTransferTests.test_series_disjoint_chronology_and_overlap_rejection) ... ok
+test_temporal_scope_uses_end_time_patch_platform (test_rank_transfer.RankTransferTests.test_temporal_scope_uses_end_time_patch_platform) ... ok
+test_ambiguous_roles_rejected (test_ranked_matchups.RankedMatchupsTests.test_ambiguous_roles_rejected) ... ok
+test_cache_dedup_rejection_and_summary (test_ranked_matchups.RankedMatchupsTests.test_cache_dedup_rejection_and_summary) ... ok
+test_client_auth_no_retry_and_no_leak (test_ranked_matchups.RankedMatchupsTests.test_client_auth_no_retry_and_no_leak) ... ok
+test_client_rate_limit_and_bounded_retry (test_ranked_matchups.RankedMatchupsTests.test_client_rate_limit_and_bounded_retry) ... ok
+test_frame_tolerance_and_descriptive_only_nearest (test_ranked_matchups.RankedMatchupsTests.test_frame_tolerance_and_descriptive_only_nearest) ... ok
+test_identity_queue_result_guards (test_ranked_matchups.RankedMatchupsTests.test_identity_queue_result_guards) ... ok
+test_missing_measurements_never_zero_or_future (test_ranked_matchups.RankedMatchupsTests.test_missing_measurements_never_zero_or_future) ... ok
+test_pro_strict_roles_and_actual_measurements (test_ranked_matchups.RankedMatchupsTests.test_pro_strict_roles_and_actual_measurements) ... ok
+test_short_game_no_15_backfill (test_ranked_matchups.RankedMatchupsTests.test_short_game_no_15_backfill) ... ok
+test_signed_mirrors_ids_and_no_future_frame (test_ranked_matchups.RankedMatchupsTests.test_signed_mirrors_ids_and_no_future_frame) ... ok
+
+----------------------------------------------------------------------
+Ran 19 tests in 0.155s
+
+OK

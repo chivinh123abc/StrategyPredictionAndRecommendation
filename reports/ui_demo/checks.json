@@ -1,0 +1,58 @@
+{
+  "checked_at_utc": "2026-11-24T09:26:51.446108+00:00",
+  "build": "PASS: TypeScript typecheck + Vite production build",
+  "python_tests": {
+    "passed": 154,
+    "failed": 0,
+    "log": "tests.log"
+  },
+  "browser": {
+    "status": "PASS",
+    "runner": "Playwright + Microsoft Edge",
+    "workflow": [
+      "real engine ban/pick",
+      "Pro/Rank evidence",
+      "flex swap",
+      "undo",
+      "auto completes one draft",
+      "next game locks ten champions",
+      "archive inspection",
+      "JSON export",
+      "reload restores session",
+      "390px mobile without horizontal overflow",
+      "no pageerror"
+    ]
+  },
+  "api_tests": {
+    "count": 8,
+    "includes": [
+      "invalid/repeated turns",
+      "manual role + swap replay",
+      "review guard with explicit test override",
+      "five legal draft inputs with derived locks",
+      "no fabricated score for manual choice outside history",
+      "static file boundary"
+    ]
+  },
+  "pick_scoring": "current",
+  "new_model_or_score_formula": false,
+  "rank_mode": "evidence_only",
+  "database_sha256": "20e3d9739b271283f35a1ba33f345e3593bafe4e31212906d35939d91b2f740c",
+  "canonical_database_unchanged": true,
+  "export_private_keys_absent": true,
+  "browser_draft_games_completed": 1,
+  "api_five_game_lock_validation": true,
+  "global_bo5_optimization": false,
+  "scope_from_browser_export": {
+    "region": "WLDS",
+    "dataset_patch": "16.20",
+    "data_through": "2026-11-14T23:18:11+00:00",
+    "requested_as_of": "2026-11-24T09:16:10.157780+00:00",
+    "staleness_days": 9,
+    "history_games": 110,
+    "patch_games": 98,
+    "lookback_days": 60,
+    "half_life_days": 21,
+    "claim": "historical_snapshot_not_live_meta"
+  }
+}

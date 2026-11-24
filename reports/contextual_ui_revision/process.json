@@ -1,0 +1,17 @@
+﻿{
+    "url":  "http://127.0.0.1:8000",
+    "arguments":  [
+                      "-m",
+                      "uvicorn",
+                      "src.api.app:app",
+                      "--host",
+                      "127.0.0.1",
+                      "--port",
+                      "8000"
+                  ],
+    "pid":  44116,
+    "started_at_utc":  "2026-11-24T09:43:32.0294428Z",
+    "worker_pids":  [
+                        40492
+                    ]
+}

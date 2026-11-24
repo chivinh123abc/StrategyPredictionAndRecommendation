@@ -1,0 +1,63 @@
+{
+  "schema": "ten-player-rank-snapshots-v1",
+  "run_id": "20261124T060747435457Z",
+  "started_at": "2026-11-24T06:07:47.435457+00:00",
+  "finished_at": "2026-11-24T06:09:00.311085+00:00",
+  "collection_status": "complete",
+  "platform": "KR",
+  "routing": "asia",
+  "queue": "RANKED_SOLO_5x5",
+  "tier_floor": "MASTER",
+  "max_match_age_hours": 24,
+  "max_snapshot_spread_minutes": 15,
+  "seed_counts": [
+    {
+      "seed_index": 16,
+      "returned_ids": 1
+    },
+    {
+      "seed_index": 17,
+      "returned_ids": 1
+    },
+    {
+      "seed_index": 18,
+      "returned_ids": 1
+    },
+    {
+      "seed_index": 19,
+      "returned_ids": 1
+    },
+    {
+      "seed_index": 20,
+      "returned_ids": 1
+    }
+  ],
+  "candidate_games": 5,
+  "seed_offset": 15,
+  "excluded_seen_match_ids_count": 15,
+  "accepted_games": 3,
+  "rejected_games": 2,
+  "missing_games": 0,
+  "all_ten_high_at_observation_games": 5,
+  "games_with_missing_participants": 0,
+  "unique_participants_checked": 40,
+  "snapshot_status_counts": {
+    "ok": 40
+  },
+  "request_calls": {
+    "seed_league": 1,
+    "match_list": 5,
+    "match_detail": 5,
+    "participant_rank": 40,
+    "timeline": 5
+  },
+  "issues": [],
+  "accepted_observations": 30,
+  "reason_counts": {
+    "match_too_old_for_near_match_proxy": 2
+  },
+  "historical_rank_verified": false,
+  "pro_rank_signal_enabled": false,
+  "interpretation": "All ten ranks observed serially during collection; near-match proxy, not rank at match time.",
+  "private_manifest_sha256": "235c8e2650056d39b5ed1df1efac67ff862769111559ebc46b819037e7f36de8"
+}

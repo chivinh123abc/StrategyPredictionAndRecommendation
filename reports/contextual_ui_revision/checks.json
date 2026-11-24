@@ -1,0 +1,22 @@
+{
+  "checked_at_utc": "2026-11-24T09:45:47.150652+00:00",
+  "build": "PASS",
+  "python_tests": 159,
+  "browser_workflows_passed": 2,
+  "two_panels_simultaneously_visible": true,
+  "manual_confirmation_tested": true,
+  "flex_undo_auto_next_game_archive_export_reload_mobile_tested": true,
+  "snapshot_conflict_export_and_new_session_tested": true,
+  "source_cache_mismatch_guard_unit_tested": true,
+  "fixed_date_and_snapshot_preserved_in_export": true,
+  "same_legal_candidate_pool_for_80_queries": true,
+  "old_removal_increases": 31,
+  "new_removal_increases": 0,
+  "observed_ban_recall5_improved": false,
+  "strategic_accuracy_improvement_proven": false,
+  "database_unchanged": true,
+  "database_sha256": "20e3d9739b271283f35a1ba33f345e3593bafe4e31212906d35939d91b2f740c",
+  "private_identifiers_absent": true,
+  "pick_scoring": "current",
+  "contextual_version": "fixed_capacity_v2"
+}

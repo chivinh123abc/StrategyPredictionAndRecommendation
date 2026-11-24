@@ -1,0 +1,2402 @@
+[
+  {
+    "split": "validation",
+    "gameid": "LOLTMNT02_483840",
+    "series_id": "WLDS:LOLTMNT02_483840",
+    "turn": 1,
+    "observed_ban": "Locke",
+    "old_top5": [
+      "Seraphine",
+      "Nautilus",
+      "Lee Sin",
+      "Jhin",
+      "Akali"
+    ],
+    "new_top5": [
+      "Seraphine",
+      "Nautilus",
+      "Lee Sin",
+      "Jhin",
+      "Akali"
+    ],
+    "old_rank": 19,
+    "new_rank": 19,
+    "same_legal_pool": true,
+    "pool_sha256": "bfe7b8d6676f80cdac7c77577611cf4d944641ee81c612d1e13e01c2ea3eaa9e",
+    "short_role_pools": 0,
+    "pool_value_increases_on_removal": {
+      "old": 0,
+      "new": 0
+    }
+  },
+  {
+    "split": "validation",
+    "gameid": "LOLTMNT02_483840",
+    "series_id": "WLDS:LOLTMNT02_483840",
+    "turn": 6,
+    "observed_ban": "Qiyana",
+    "old_top5": [
+      "Qiyana",
+      "Cassiopeia",
+      "Jarvan IV",
+      "Lee Sin",
+      "Ezreal"
+    ],
+    "new_top5": [
+      "Qiyana",
+      "Cassiopeia",
+      "Jarvan IV",
+      "Lee Sin",
+      "Ezreal"
+    ],
+    "old_rank": 1,
+    "new_rank": 1,
+    "same_legal_pool": true,
+    "pool_sha256": "5b88774a992a7477ddc3417c2bed11761589cfc9a848846627f18e161906ab82",
+    "short_role_pools": 0,
+    "pool_value_increases_on_removal": {
+      "old": 0,
+      "new": 0
+    }
+  },
+  {
+    "split": "validation",
+    "gameid": "LOLTMNT02_483861",
+    "series_id": "WLDS:LOLTMNT02_483861",
+    "turn": 1,
+    "observed_ban": "Syndra",
+    "old_top5": [
+      "Nocturne",
+      "Kalista",
+      "Syndra",
+      "Renata Glasc",
+      "Orianna"
+    ],
+    "new_top5": [
+      "Nocturne",
+      "Kalista",
+      "Syndra",
+      "Renata Glasc",
+      "Orianna"
+    ],
+    "old_rank": 3,
+    "new_rank": 3,
+    "same_legal_pool": true,
+    "pool_sha256": "bfe7b8d6676f80cdac7c77577611cf4d944641ee81c612d1e13e01c2ea3eaa9e",
+    "short_role_pools": 0,
+    "pool_value_increases_on_removal": {
+      "old": 0,
+      "new": 0
+    }
+  },
+  {
+    "split": "validation",
+    "gameid": "LOLTMNT02_483861",
+    "series_id": "WLDS:LOLTMNT02_483861",
+    "turn": 6,
+    "observed_ban": "Vi",
+    "old_top5": [
+      "Vi",
+      "Lee Sin",
+      "Ezreal",
+      "Rumble",
+      "Jarvan IV"
+    ],
+    "new_top5": [
+      "Vi",
+      "Lee Sin",
+      "Ezreal",
+      "Rumble",
+      "Jarvan IV"
+    ],
+    "old_rank": 1,
+    "new_rank": 1,
+    "same_legal_pool": true,
+    "pool_sha256": "326477fce16b2027a79be71efffaa4987eeaf8cb2f6412949d627e49ea7d800b",
+    "short_role_pools": 0,
+    "pool_value_increases_on_removal": {
+      "old": 0,
+      "new": 0
+    }
+  },
+  {
+    "split": "validation",
+    "gameid": "LOLTMNT02_482893",
+    "series_id": "WLDS:LOLTMNT02_483861",
+    "turn": 1,
+    "observed_ban": "Syndra",
+    "old_top5": [
+      "Syndra",
+      "Nocturne",
+      "K'Sante",
+      "Cassiopeia",
+      "Jayce"
+    ],
+    "new_top5": [
+      "Syndra",
+      "Nocturne",
+      "K'Sante",
+      "Cassiopeia",
+      "Jayce"
+    ],
+    "old_rank": 1,
+    "new_rank": 1,
+    "same_legal_pool": true,
+    "pool_sha256": "3cf5fd0c02a147caa9766e4329aeb0c75473396b38b7d2f121fa2358470d1f7e",
+    "short_role_pools": 0,
+    "pool_value_increases_on_removal": {
+      "old": 0,
+      "new": 0
+    }
+  },
+  {
+    "split": "validation",
+    "gameid": "LOLTMNT02_482893",
+    "series_id": "WLDS:LOLTMNT02_483861",
+    "turn": 6,
+    "observed_ban": "Olaf",
+    "old_top5": [
+      "Vi",
+      "Ezreal",
+      "Locke",
+      "Rumble",
+      "Nautilus"
+    ],
+    "new_top5": [
+      "Vi",
+      "Ezreal",
+      "Locke",
+      "Rumble",
+      "Nautilus"
+    ],
+    "old_rank": 7,
+    "new_rank": 7,
+    "same_legal_pool": true,
+    "pool_sha256": "d4bfd09dac6d6e9ab7e0c5db7f9efbc39c2b2af9dd6e7c7c5f4fe5f0878083b8",
+    "short_role_pools": 0,
+    "pool_value_increases_on_removal": {
+      "old": 0,
+      "new": 0
+    }
+  },
+  {
+    "split": "validation",
+    "gameid": "LOLTMNT02_482911",
+    "series_id": "WLDS:LOLTMNT02_482911",
+    "turn": 1,
+    "observed_ban": "Cassiopeia",
+    "old_top5": [
+      "Rumble",
+      "Nocturne",
+      "Olaf",
+      "Jarvan IV",
+      "Lucian"
+    ],
+    "new_top5": [
+      "Rumble",
+      "Nocturne",
+      "Olaf",
+      "Jarvan IV",
+      "Lucian"
+    ],
+    "old_rank": 41,
+    "new_rank": 41,
+    "same_legal_pool": true,
+    "pool_sha256": "bfe7b8d6676f80cdac7c77577611cf4d944641ee81c612d1e13e01c2ea3eaa9e",
+    "short_role_pools": 0,
+    "pool_value_increases_on_removal": {
+      "old": 0,
+      "new": 0
+    }
+  },
+  {
+    "split": "validation",
+    "gameid": "LOLTMNT02_482911",
+    "series_id": "WLDS:LOLTMNT02_482911",
+    "turn": 6,
+    "observed_ban": "Renata Glasc",
+    "old_top5": [
+      "Ezreal",
+      "Lee Sin",
+      "Jhin",
+      "Jarvan IV",
+      "Syndra"
+    ],
+    "new_top5": [
+      "Ezreal",
+      "Lee Sin",
+      "Jhin",
+      "Jarvan IV",
+      "Syndra"
+    ],
+    "old_rank": 10,
+    "new_rank": 10,
+    "same_legal_pool": true,
+    "pool_sha256": "38a0b289492bf425c14f646c60fcdbefdfb379d968f35a164e98092af37f6e9e",
+    "short_role_pools": 0,
+    "pool_value_increases_on_removal": {
+      "old": 0,
+      "new": 0
+    }
+  },
+  {
+    "split": "validation",
+    "gameid": "LOLTMNT02_483885",
+    "series_id": "WLDS:LOLTMNT02_482911",
+    "turn": 1,
+    "observed_ban": "Jarvan IV",
+    "old_top5": [
+      "K'Sante",
+      "Ezreal",
+      "Jhin",
+      "Syndra",
+      "Locke"
+    ],
+    "new_top5": [
+      "K'Sante",
+      "Ezreal",
+      "Jhin",
+      "Syndra",
+      "Locke"
+    ],
+    "old_rank": 7,
+    "new_rank": 7,
+    "same_legal_pool": true,
+    "pool_sha256": "f50cccd7034a289394cb0c0825d07dd8e008df44604c886ce11a58654371ae2b",
+    "short_role_pools": 0,
+    "pool_value_increases_on_removal": {
+      "old": 0,
+      "new": 0
+    }
+  },
+  {
+    "split": "validation",
+    "gameid": "LOLTMNT02_483885",
+    "series_id": "WLDS:LOLTMNT02_482911",
+    "turn": 6,
+    "observed_ban": "Qiyana",
+    "old_top5": [
+      "Nocturne",
+      "Olaf",
+      "Akali",
+      "Rumble",
+      "Qiyana"
+    ],
+    "new_top5": [
+      "Nocturne",
+      "Olaf",
+      "Akali",
+      "Rumble",
+      "Qiyana"
+    ],
+    "old_rank": 5,
+    "new_rank": 5,
+    "same_legal_pool": true,
+    "pool_sha256": "43a8e8135ec9f0aa0bcef55f7e5acda6ddaf9a0a5fa5fb5f64bbb80530140262",
+    "short_role_pools": 0,
+    "pool_value_increases_on_removal": {
+      "old": 0,
+      "new": 0
+    }
+  },
+  {
+    "split": "validation",
+    "gameid": "LOLTMNT02_486159",
+    "series_id": "WLDS:LOLTMNT02_486159",
+    "turn": 2,
+    "observed_ban": "Cassiopeia",
+    "old_top5": [
+      "Ezreal",
+      "Cassiopeia",
+      "Nocturne",
+      "Olaf",
+      "Qiyana"
+    ],
+    "new_top5": [
+      "Ezreal",
+      "Cassiopeia",
+      "Nocturne",
+      "Olaf",
+      "Qiyana"
+    ],
+    "old_rank": 2,
+    "new_rank": 2,
+    "same_legal_pool": true,
+    "pool_sha256": "f98eaca02acc018f4512ac4a119b1ccf4b16ad67d4eab61c0eb4697c00b00360",
+    "short_role_pools": 0,
+    "pool_value_increases_on_removal": {
+      "old": 0,
+      "new": 0
+    }
+  },
+  {
+    "split": "validation",
+    "gameid": "LOLTMNT02_486159",
+    "series_id": "WLDS:LOLTMNT02_486159",
+    "turn": 13,
+    "observed_ban": "Locke",
+    "old_top5": [
+      "Rumble",
+      "Locke",
+      "Olaf",
+      "Ahri",
+      "Anivia"
+    ],
+    "new_top5": [
+      "Rumble",
+      "Locke",
+      "Olaf",
+      "Ahri",
+      "Anivia"
+    ],
+    "old_rank": 2,
+    "new_rank": 2,
+    "same_legal_pool": true,
+    "pool_sha256": "acbcf148f92446f348ffe56e5d95e9dcfd714f51b66f70719e4c6fd407b5f83e",
+    "short_role_pools": 0,
+    "pool_value_increases_on_removal": {
+      "old": 0,
+      "new": 0
+    }
+  },
+  {
+    "split": "validation",
+    "gameid": "LOLTMNT02_486172",
+    "series_id": "WLDS:LOLTMNT02_486159",
+    "turn": 2,
+    "observed_ban": "Cassiopeia",
+    "old_top5": [
+      "Cassiopeia",
+      "Karma",
+      "Ezreal",
+      "Nocturne",
+      "Lulu"
+    ],
+    "new_top5": [
+      "Cassiopeia",
+      "Karma",
+      "Ezreal",
+      "Nocturne",
+      "Lulu"
+    ],
+    "old_rank": 1,
+    "new_rank": 1,
+    "same_legal_pool": true,
+    "pool_sha256": "30d7eb0c2469321409f3752611262c1f66f928c5ecd573ad8645a8ab81312f0b",
+    "short_role_pools": 0,
+    "pool_value_increases_on_removal": {
+      "old": 0,
+      "new": 0
+    }
+  },
+  {
+    "split": "validation",
+    "gameid": "LOLTMNT02_486172",
+    "series_id": "WLDS:LOLTMNT02_486159",
+    "turn": 13,
+    "observed_ban": "Locke",
+    "old_top5": [
+      "Orianna",
+      "Anivia",
+      "Locke",
+      "K'Sante",
+      "Ahri"
+    ],
+    "new_top5": [
+      "Orianna",
+      "Anivia",
+      "Locke",
+      "K'Sante",
+      "Ahri"
+    ],
+    "old_rank": 3,
+    "new_rank": 3,
+    "same_legal_pool": true,
+    "pool_sha256": "e7723b423dbe7f32891cba0abe4b7d0a69a3b0ad236036d76a27c5791fec60c0",
+    "short_role_pools": 0,
+    "pool_value_increases_on_removal": {
+      "old": 0,
+      "new": 0
+    }
+  },
+  {
+    "split": "validation",
+    "gameid": "LOLTMNT02_486183",
+    "series_id": "WLDS:LOLTMNT02_486183",
+    "turn": 2,
+    "observed_ban": "Syndra",
+    "old_top5": [
+      "Nocturne",
+      "Jhin",
+      "Rumble",
+      "Ezreal",
+      "Olaf"
+    ],
+    "new_top5": [
+      "Nocturne",
+      "Jhin",
+      "Rumble",
+      "Ezreal",
+      "Olaf"
+    ],
+    "old_rank": 11,
+    "new_rank": 11,
+    "same_legal_pool": true,
+    "pool_sha256": "df499eb4baa64b3a3ed8c601576557a53fc85353f36c8e4d5749b6ef859c1698",
+    "short_role_pools": 0,
+    "pool_value_increases_on_removal": {
+      "old": 0,
+      "new": 0
+    }
+  },
+  {
+    "split": "validation",
+    "gameid": "LOLTMNT02_486183",
+    "series_id": "WLDS:LOLTMNT02_486183",
+    "turn": 13,
+    "observed_ban": "Ambessa",
+    "old_top5": [
+      "Viktor",
+      "Akali",
+      "Rumble",
+      "Olaf",
+      "Ahri"
+    ],
+    "new_top5": [
+      "Viktor",
+      "Akali",
+      "Rumble",
+      "Olaf",
+      "Ahri"
+    ],
+    "old_rank": 7,
+    "new_rank": 7,
+    "same_legal_pool": true,
+    "pool_sha256": "5d8fb476ccd5522c5e8dc809dc172fe119d7002821792a4469f41a92eab1307d",
+    "short_role_pools": 0,
+    "pool_value_increases_on_removal": {
+      "old": 0,
+      "new": 0
+    }
+  },
+  {
+    "split": "validation",
+    "gameid": "LOLTMNT02_486186",
+    "series_id": "WLDS:LOLTMNT02_486183",
+    "turn": 2,
+    "observed_ban": "Renata Glasc",
+    "old_top5": [
+      "Olaf",
+      "K'Sante",
+      "Renata Glasc",
+      "Lucian",
+      "Cassiopeia"
+    ],
+    "new_top5": [
+      "Olaf",
+      "K'Sante",
+      "Renata Glasc",
+      "Lucian",
+      "Cassiopeia"
+    ],
+    "old_rank": 3,
+    "new_rank": 3,
+    "same_legal_pool": true,
+    "pool_sha256": "70183766751a8c5a49aa290abe4f80fb497292e5aa9ec78088572f0341ae85e6",
+    "short_role_pools": 0,
+    "pool_value_increases_on_removal": {
+      "old": 0,
+      "new": 0
+    }
+  },
+  {
+    "split": "validation",
+    "gameid": "LOLTMNT02_486186",
+    "series_id": "WLDS:LOLTMNT02_486183",
+    "turn": 13,
+    "observed_ban": "Ahri",
+    "old_top5": [
+      "Olaf",
+      "K'Sante",
+      "Anivia",
+      "Ahri",
+      "Ryze"
+    ],
+    "new_top5": [
+      "Olaf",
+      "K'Sante",
+      "Anivia",
+      "Ahri",
+      "Ryze"
+    ],
+    "old_rank": 4,
+    "new_rank": 4,
+    "same_legal_pool": true,
+    "pool_sha256": "8d58ef4d975444ebb96d10f882ed3a986e5498c10d4befab3af372ff51b01998",
+    "short_role_pools": 0,
+    "pool_value_increases_on_removal": {
+      "old": 0,
+      "new": 0
+    }
+  },
+  {
+    "split": "validation",
+    "gameid": "LOLTMNT02_486192",
+    "series_id": "WLDS:LOLTMNT02_486183",
+    "turn": 2,
+    "observed_ban": "Syndra",
+    "old_top5": [
+      "Seraphine",
+      "Jarvan IV",
+      "Renata Glasc",
+      "Cassiopeia",
+      "Orianna"
+    ],
+    "new_top5": [
+      "Seraphine",
+      "Jarvan IV",
+      "Renata Glasc",
+      "Cassiopeia",
+      "Orianna"
+    ],
+    "old_rank": 7,
+    "new_rank": 7,
+    "same_legal_pool": true,
+    "pool_sha256": "fc372d06b0783904d765786e8e350c7d10696e950cbd90c8a074304af2f0bade",
+    "short_role_pools": 0,
+    "pool_value_increases_on_removal": {
+      "old": 0,
+      "new": 0
+    }
+  },
+  {
+    "split": "validation",
+    "gameid": "LOLTMNT02_486192",
+    "series_id": "WLDS:LOLTMNT02_486183",
+    "turn": 13,
+    "observed_ban": "Naafiri",
+    "old_top5": [
+      "Seraphine",
+      "Kalista",
+      "Ashe",
+      "Kai'Sa",
+      "Leona"
+    ],
+    "new_top5": [
+      "Seraphine",
+      "Rakan",
+      "Leona",
+      "Kalista",
+      "Ashe"
+    ],
+    "old_rank": null,
+    "new_rank": null,
+    "same_legal_pool": true,
+    "pool_sha256": "f5802e0665cec1a02dc53e37fbf141ef0e01a1cfec99098412a9ea2c1cf0276d",
+    "short_role_pools": 0,
+    "pool_value_increases_on_removal": {
+      "old": 2,
+      "new": 0
+    }
+  },
+  {
+    "split": "validation",
+    "gameid": "LOLTMNT02_486299",
+    "series_id": "WLDS:LOLTMNT02_486299",
+    "turn": 3,
+    "observed_ban": "Renata Glasc",
+    "old_top5": [
+      "Kalista",
+      "Renata Glasc",
+      "Syndra",
+      "Ezreal",
+      "Orianna"
+    ],
+    "new_top5": [
+      "Kalista",
+      "Renata Glasc",
+      "Syndra",
+      "Ezreal",
+      "Orianna"
+    ],
+    "old_rank": 2,
+    "new_rank": 2,
+    "same_legal_pool": true,
+    "pool_sha256": "701a966291ec010f33a7d53f143be6cab73dca9f533b21cc0ac5ed6c25717fad",
+    "short_role_pools": 0,
+    "pool_value_increases_on_removal": {
+      "old": 0,
+      "new": 0
+    }
+  },
+  {
+    "split": "validation",
+    "gameid": "LOLTMNT02_486299",
+    "series_id": "WLDS:LOLTMNT02_486299",
+    "turn": 14,
+    "observed_ban": "Ezreal",
+    "old_top5": [
+      "Ezreal",
+      "Seraphine",
+      "Nautilus",
+      "Lulu",
+      "Kalista"
+    ],
+    "new_top5": [
+      "Ezreal",
+      "Seraphine",
+      "Nautilus",
+      "Lulu",
+      "Kalista"
+    ],
+    "old_rank": 1,
+    "new_rank": 1,
+    "same_legal_pool": true,
+    "pool_sha256": "7db02c53cd39748940d3a48382817351332da76691ed080ab689a929353636da",
+    "short_role_pools": 0,
+    "pool_value_increases_on_removal": {
+      "old": 0,
+      "new": 0
+    }
+  },
+  {
+    "split": "validation",
+    "gameid": "LOLTMNT02_486309",
+    "series_id": "WLDS:LOLTMNT02_486299",
+    "turn": 3,
+    "observed_ban": "Ezreal",
+    "old_top5": [
+      "Kalista",
+      "Orianna",
+      "Jayce",
+      "Ezreal",
+      "Locke"
+    ],
+    "new_top5": [
+      "Kalista",
+      "Orianna",
+      "Jayce",
+      "Ezreal",
+      "Locke"
+    ],
+    "old_rank": 4,
+    "new_rank": 4,
+    "same_legal_pool": true,
+    "pool_sha256": "513e45d5e81146c54aee91a0b964a93b916dd2d9d49200ef4b27d019f7239613",
+    "short_role_pools": 0,
+    "pool_value_increases_on_removal": {
+      "old": 0,
+      "new": 0
+    }
+  },
+  {
+    "split": "validation",
+    "gameid": "LOLTMNT02_486309",
+    "series_id": "WLDS:LOLTMNT02_486299",
+    "turn": 14,
+    "observed_ban": "Orianna",
+    "old_top5": [
+      "Orianna",
+      "Viktor",
+      "Olaf",
+      "Ambessa",
+      "Locke"
+    ],
+    "new_top5": [
+      "Orianna",
+      "Viktor",
+      "Olaf",
+      "Ambessa",
+      "Locke"
+    ],
+    "old_rank": 1,
+    "new_rank": 1,
+    "same_legal_pool": true,
+    "pool_sha256": "f8d3231e61529efbd6ec4f00435f8f7852e3a1e53cb270f9514be2c2a372df95",
+    "short_role_pools": 0,
+    "pool_value_increases_on_removal": {
+      "old": 0,
+      "new": 0
+    }
+  },
+  {
+    "split": "validation",
+    "gameid": "LOLTMNT02_486325",
+    "series_id": "WLDS:LOLTMNT02_486325",
+    "turn": 3,
+    "observed_ban": "Renata Glasc",
+    "old_top5": [
+      "Kalista",
+      "Ezreal",
+      "K'Sante",
+      "Renata Glasc",
+      "Nocturne"
+    ],
+    "new_top5": [
+      "Kalista",
+      "Ezreal",
+      "K'Sante",
+      "Renata Glasc",
+      "Nocturne"
+    ],
+    "old_rank": 4,
+    "new_rank": 4,
+    "same_legal_pool": true,
+    "pool_sha256": "6d0b1161aca3dd2b4e473c7a95a8c624925f3545b072783e888d1d4f44baf55c",
+    "short_role_pools": 0,
+    "pool_value_increases_on_removal": {
+      "old": 0,
+      "new": 0
+    }
+  },
+  {
+    "split": "validation",
+    "gameid": "LOLTMNT02_486325",
+    "series_id": "WLDS:LOLTMNT02_486325",
+    "turn": 14,
+    "observed_ban": "Locke",
+    "old_top5": [
+      "Locke",
+      "Syndra",
+      "Rumble",
+      "K'Sante",
+      "Viktor"
+    ],
+    "new_top5": [
+      "Locke",
+      "Syndra",
+      "Rumble",
+      "K'Sante",
+      "Viktor"
+    ],
+    "old_rank": 1,
+    "new_rank": 1,
+    "same_legal_pool": true,
+    "pool_sha256": "ff705d9eaecf4228734fba31cd7b9db334b43a21183f52b270408505f386c503",
+    "short_role_pools": 0,
+    "pool_value_increases_on_removal": {
+      "old": 0,
+      "new": 0
+    }
+  },
+  {
+    "split": "validation",
+    "gameid": "LOLTMNT02_485267",
+    "series_id": "WLDS:LOLTMNT02_486325",
+    "turn": 3,
+    "observed_ban": "Ambessa",
+    "old_top5": [
+      "Akali",
+      "Seraphine",
+      "Pantheon",
+      "Ashe",
+      "Lee Sin"
+    ],
+    "new_top5": [
+      "Akali",
+      "Seraphine",
+      "Pantheon",
+      "Ashe",
+      "Lee Sin"
+    ],
+    "old_rank": 30,
+    "new_rank": 30,
+    "same_legal_pool": true,
+    "pool_sha256": "8c6d98f07d529d77a4e563495f0153bc088c67707745b4fb467bd70e93c75bed",
+    "short_role_pools": 0,
+    "pool_value_increases_on_removal": {
+      "old": 0,
+      "new": 0
+    }
+  },
+  {
+    "split": "validation",
+    "gameid": "LOLTMNT02_485267",
+    "series_id": "WLDS:LOLTMNT02_486325",
+    "turn": 14,
+    "observed_ban": "Akali",
+    "old_top5": [
+      "Akali",
+      "Syndra",
+      "Galio",
+      "Locke",
+      "Ahri"
+    ],
+    "new_top5": [
+      "Akali",
+      "Syndra",
+      "Galio",
+      "Locke",
+      "Ahri"
+    ],
+    "old_rank": 1,
+    "new_rank": 1,
+    "same_legal_pool": true,
+    "pool_sha256": "7b353d3f4f887c78783d2f39998437e45d7a6d6cec46b6794df9493a58b898ab",
+    "short_role_pools": 0,
+    "pool_value_increases_on_removal": {
+      "old": 0,
+      "new": 0
+    }
+  },
+  {
+    "split": "validation",
+    "gameid": "LOLTMNT02_486341",
+    "series_id": "WLDS:LOLTMNT02_486325",
+    "turn": 3,
+    "observed_ban": "Rumble",
+    "old_top5": [
+      "Ambessa",
+      "Kalista",
+      "Rumble",
+      "Galio",
+      "Renata Glasc"
+    ],
+    "new_top5": [
+      "Ambessa",
+      "Kalista",
+      "Rumble",
+      "Galio",
+      "Renata Glasc"
+    ],
+    "old_rank": 3,
+    "new_rank": 3,
+    "same_legal_pool": true,
+    "pool_sha256": "0e4e4ebd43396eebeb328a5af3a6118b44fde71648ffc4288b1b50168ce0bcbe",
+    "short_role_pools": 0,
+    "pool_value_increases_on_removal": {
+      "old": 0,
+      "new": 0
+    }
+  },
+  {
+    "split": "validation",
+    "gameid": "LOLTMNT02_486341",
+    "series_id": "WLDS:LOLTMNT02_486325",
+    "turn": 14,
+    "observed_ban": "Yunara",
+    "old_top5": [
+      "Yunara",
+      "Maokai",
+      "Trundle",
+      "Kai'Sa",
+      "Xayah"
+    ],
+    "new_top5": [
+      "Yunara",
+      "Xayah",
+      "Kai'Sa",
+      "Maokai",
+      "Trundle"
+    ],
+    "old_rank": 1,
+    "new_rank": 1,
+    "same_legal_pool": true,
+    "pool_sha256": "282d4a42f2dccb97568491d5556ebcdddb1a1eddfa74ffbc0ab5aa57ceee5d18",
+    "short_role_pools": 1,
+    "pool_value_increases_on_removal": {
+      "old": 3,
+      "new": 0
+    }
+  },
+  {
+    "split": "validation",
+    "gameid": "LOLTMNT02_485366",
+    "series_id": "WLDS:LOLTMNT02_485366",
+    "turn": 4,
+    "observed_ban": "Lee Sin",
+    "old_top5": [
+      "Lee Sin",
+      "Jarvan IV",
+      "Nocturne",
+      "Ezreal",
+      "Jhin"
+    ],
+    "new_top5": [
+      "Lee Sin",
+      "Jarvan IV",
+      "Nocturne",
+      "Ezreal",
+      "Jhin"
+    ],
+    "old_rank": 1,
+    "new_rank": 1,
+    "same_legal_pool": true,
+    "pool_sha256": "a2151cc856abd29147e8841b84b2a69821749a4fe6c07f26558c53ac6acf098d",
+    "short_role_pools": 0,
+    "pool_value_increases_on_removal": {
+      "old": 0,
+      "new": 0
+    }
+  },
+  {
+    "split": "validation",
+    "gameid": "LOLTMNT02_485366",
+    "series_id": "WLDS:LOLTMNT02_485366",
+    "turn": 15,
+    "observed_ban": "Camille",
+    "old_top5": [
+      "Locke",
+      "Akali",
+      "Galio",
+      "Viktor",
+      "Ahri"
+    ],
+    "new_top5": [
+      "Locke",
+      "Akali",
+      "Galio",
+      "Viktor",
+      "Ahri"
+    ],
+    "old_rank": 9,
+    "new_rank": 9,
+    "same_legal_pool": true,
+    "pool_sha256": "c5dbf5db2b7f1f535771c524050ac6ca170f7bddc79cf98d33a42b4700ab5b11",
+    "short_role_pools": 0,
+    "pool_value_increases_on_removal": {
+      "old": 0,
+      "new": 0
+    }
+  },
+  {
+    "split": "validation",
+    "gameid": "LOLTMNT02_485368",
+    "series_id": "WLDS:LOLTMNT02_485366",
+    "turn": 4,
+    "observed_ban": "Cassiopeia",
+    "old_top5": [
+      "Orianna",
+      "Olaf",
+      "Kalista",
+      "Pantheon",
+      "Cassiopeia"
+    ],
+    "new_top5": [
+      "Orianna",
+      "Olaf",
+      "Kalista",
+      "Pantheon",
+      "Cassiopeia"
+    ],
+    "old_rank": 5,
+    "new_rank": 5,
+    "same_legal_pool": true,
+    "pool_sha256": "65096461bef728bdae7f331b46cbe4ac287dff51b9a1cfa866b877b8fdd00e70",
+    "short_role_pools": 0,
+    "pool_value_increases_on_removal": {
+      "old": 0,
+      "new": 0
+    }
+  },
+  {
+    "split": "validation",
+    "gameid": "LOLTMNT02_485368",
+    "series_id": "WLDS:LOLTMNT02_485366",
+    "turn": 15,
+    "observed_ban": "Akali",
+    "old_top5": [
+      "Akali",
+      "Olaf",
+      "K'Sante",
+      "Rumble",
+      "Ahri"
+    ],
+    "new_top5": [
+      "Akali",
+      "Olaf",
+      "K'Sante",
+      "Rumble",
+      "Ahri"
+    ],
+    "old_rank": 1,
+    "new_rank": 1,
+    "same_legal_pool": true,
+    "pool_sha256": "16a162cee2df4ecc4f998766101fd514d5e1abafe518127eb2e3de7559e633ae",
+    "short_role_pools": 0,
+    "pool_value_increases_on_removal": {
+      "old": 2,
+      "new": 0
+    }
+  },
+  {
+    "split": "validation",
+    "gameid": "LOLTMNT02_485371",
+    "series_id": "WLDS:LOLTMNT02_485366",
+    "turn": 4,
+    "observed_ban": "Qiyana",
+    "old_top5": [
+      "Jhin",
+      "Locke",
+      "Qiyana",
+      "K'Sante",
+      "Olaf"
+    ],
+    "new_top5": [
+      "Jhin",
+      "Locke",
+      "Qiyana",
+      "K'Sante",
+      "Olaf"
+    ],
+    "old_rank": 3,
+    "new_rank": 3,
+    "same_legal_pool": true,
+    "pool_sha256": "a4102ded870a5c2a5933cc3bea82b62ace9f7bb7c8fb5b18b08354bb43c2f8f8",
+    "short_role_pools": 0,
+    "pool_value_increases_on_removal": {
+      "old": 0,
+      "new": 0
+    }
+  },
+  {
+    "split": "validation",
+    "gameid": "LOLTMNT02_485371",
+    "series_id": "WLDS:LOLTMNT02_485366",
+    "turn": 15,
+    "observed_ban": "Skarner",
+    "old_top5": [
+      "Gnar",
+      "Maokai",
+      "Naafiri",
+      "Camille",
+      "Renekton"
+    ],
+    "new_top5": [
+      "Maokai",
+      "Naafiri",
+      "Gnar",
+      "Camille",
+      "Renekton"
+    ],
+    "old_rank": null,
+    "new_rank": null,
+    "same_legal_pool": true,
+    "pool_sha256": "95a9dded53c3e217eda719e5635eadaa605122a9b72a92c7b224bb0f9ae6d67e",
+    "short_role_pools": 1,
+    "pool_value_increases_on_removal": {
+      "old": 3,
+      "new": 0
+    }
+  },
+  {
+    "split": "validation",
+    "gameid": "LOLTMNT02_486479",
+    "series_id": "WLDS:LOLTMNT02_486479",
+    "turn": 4,
+    "observed_ban": "Nocturne",
+    "old_top5": [
+      "Nocturne",
+      "Jhin",
+      "Qiyana",
+      "Olaf",
+      "Vi"
+    ],
+    "new_top5": [
+      "Nocturne",
+      "Jhin",
+      "Qiyana",
+      "Olaf",
+      "Vi"
+    ],
+    "old_rank": 1,
+    "new_rank": 1,
+    "same_legal_pool": true,
+    "pool_sha256": "52292e36165fbf618780d892f8c5e08e2e6b06a3f6f5ffc7d98bba59fe383f61",
+    "short_role_pools": 0,
+    "pool_value_increases_on_removal": {
+      "old": 0,
+      "new": 0
+    }
+  },
+  {
+    "split": "validation",
+    "gameid": "LOLTMNT02_486479",
+    "series_id": "WLDS:LOLTMNT02_486479",
+    "turn": 15,
+    "observed_ban": "Ambessa",
+    "old_top5": [
+      "Jhin",
+      "Rumble",
+      "K'Sante",
+      "Ambessa",
+      "Galio"
+    ],
+    "new_top5": [
+      "Jhin",
+      "Rumble",
+      "K'Sante",
+      "Ambessa",
+      "Galio"
+    ],
+    "old_rank": 4,
+    "new_rank": 4,
+    "same_legal_pool": true,
+    "pool_sha256": "262c67fd29da0d5a1613ce1c93c6512d946012872caf3171cc7803aae028cdac",
+    "short_role_pools": 0,
+    "pool_value_increases_on_removal": {
+      "old": 0,
+      "new": 0
+    }
+  },
+  {
+    "split": "validation",
+    "gameid": "LOLTMNT02_486481",
+    "series_id": "WLDS:LOLTMNT02_486479",
+    "turn": 4,
+    "observed_ban": "Vi",
+    "old_top5": [
+      "Ezreal",
+      "Karma",
+      "Vi",
+      "Seraphine",
+      "Lulu"
+    ],
+    "new_top5": [
+      "Ezreal",
+      "Karma",
+      "Vi",
+      "Seraphine",
+      "Lulu"
+    ],
+    "old_rank": 3,
+    "new_rank": 3,
+    "same_legal_pool": true,
+    "pool_sha256": "78394a3fd32f6dd353c60c3465292427abd72f62f2fba78c398185846554c692",
+    "short_role_pools": 0,
+    "pool_value_increases_on_removal": {
+      "old": 0,
+      "new": 0
+    }
+  },
+  {
+    "split": "validation",
+    "gameid": "LOLTMNT02_486481",
+    "series_id": "WLDS:LOLTMNT02_486479",
+    "turn": 16,
+    "observed_ban": "Renekton",
+    "old_top5": [
+      "Ambessa",
+      "Locke",
+      "Rumble",
+      "Ahri",
+      "Camille"
+    ],
+    "new_top5": [
+      "Ambessa",
+      "Locke",
+      "Rumble",
+      "Ahri",
+      "Camille"
+    ],
+    "old_rank": 8,
+    "new_rank": 8,
+    "same_legal_pool": true,
+    "pool_sha256": "f159f2340bb783a3a15c3b2736411056b9042776b78ff575e239f5bfa35f3622",
+    "short_role_pools": 0,
+    "pool_value_increases_on_removal": {
+      "old": 0,
+      "new": 0
+    }
+  },
+  {
+    "split": "test",
+    "gameid": "LOLTMNT02_486541",
+    "series_id": "WLDS:LOLTMNT02_486541",
+    "turn": 1,
+    "observed_ban": "Renata Glasc",
+    "old_top5": [
+      "Rumble",
+      "Syndra",
+      "Kalista",
+      "Orianna",
+      "Nautilus"
+    ],
+    "new_top5": [
+      "Rumble",
+      "Syndra",
+      "Kalista",
+      "Orianna",
+      "Nautilus"
+    ],
+    "old_rank": 8,
+    "new_rank": 8,
+    "same_legal_pool": true,
+    "pool_sha256": "bfe7b8d6676f80cdac7c77577611cf4d944641ee81c612d1e13e01c2ea3eaa9e",
+    "short_role_pools": 0,
+    "pool_value_increases_on_removal": {
+      "old": 0,
+      "new": 0
+    }
+  },
+  {
+    "split": "test",
+    "gameid": "LOLTMNT02_486541",
+    "series_id": "WLDS:LOLTMNT02_486541",
+    "turn": 15,
+    "observed_ban": "Lee Sin",
+    "old_top5": [
+      "Jayce",
+      "Trundle",
+      "Maokai",
+      "Naafiri",
+      "Ambessa"
+    ],
+    "new_top5": [
+      "Jayce",
+      "Trundle",
+      "Maokai",
+      "Naafiri",
+      "Ambessa"
+    ],
+    "old_rank": 10,
+    "new_rank": 10,
+    "same_legal_pool": true,
+    "pool_sha256": "0e3c5aba83d37d4bda7547ee4c440e6884dd7a4e07c01e84db230ef7114e866e",
+    "short_role_pools": 0,
+    "pool_value_increases_on_removal": {
+      "old": 0,
+      "new": 0
+    }
+  },
+  {
+    "split": "test",
+    "gameid": "LOLTMNT02_485476",
+    "series_id": "WLDS:LOLTMNT02_486541",
+    "turn": 13,
+    "observed_ban": "Galio",
+    "old_top5": [
+      "Locke",
+      "K'Sante",
+      "Orianna",
+      "Jayce",
+      "Ahri"
+    ],
+    "new_top5": [
+      "Locke",
+      "K'Sante",
+      "Orianna",
+      "Jayce",
+      "Ahri"
+    ],
+    "old_rank": 14,
+    "new_rank": 14,
+    "same_legal_pool": true,
+    "pool_sha256": "e527cb743eb5ed0b9c688d84d2e05c458b41743777a219d8f245ea8ed03cb3b8",
+    "short_role_pools": 0,
+    "pool_value_increases_on_removal": {
+      "old": 0,
+      "new": 0
+    }
+  },
+  {
+    "split": "test",
+    "gameid": "LOLTMNT02_485482",
+    "series_id": "WLDS:LOLTMNT02_485482",
+    "turn": 5,
+    "observed_ban": "Trundle",
+    "old_top5": [
+      "Kalista",
+      "Pantheon",
+      "Orianna",
+      "Syndra",
+      "Jhin"
+    ],
+    "new_top5": [
+      "Kalista",
+      "Pantheon",
+      "Orianna",
+      "Syndra",
+      "Jhin"
+    ],
+    "old_rank": 11,
+    "new_rank": 11,
+    "same_legal_pool": true,
+    "pool_sha256": "8e53c4deafeab279dfe489c8a66e04246f1b34f238049516eedb2bbce0364c0a",
+    "short_role_pools": 0,
+    "pool_value_increases_on_removal": {
+      "old": 0,
+      "new": 0
+    }
+  },
+  {
+    "split": "test",
+    "gameid": "LOLTMNT02_485488",
+    "series_id": "WLDS:LOLTMNT02_485482",
+    "turn": 3,
+    "observed_ban": "Wukong",
+    "old_top5": [
+      "Lulu",
+      "Galio",
+      "Akali",
+      "Olaf",
+      "Yunara"
+    ],
+    "new_top5": [
+      "Lulu",
+      "Galio",
+      "Akali",
+      "Olaf",
+      "Yunara"
+    ],
+    "old_rank": 21,
+    "new_rank": 21,
+    "same_legal_pool": true,
+    "pool_sha256": "bdd92ac005b636055653344cd2950e3c8b51e3a199df660b6e758cf75ed273c4",
+    "short_role_pools": 0,
+    "pool_value_increases_on_removal": {
+      "old": 0,
+      "new": 0
+    }
+  },
+  {
+    "split": "test",
+    "gameid": "LOLTMNT02_486555",
+    "series_id": "WLDS:LOLTMNT02_485482",
+    "turn": 1,
+    "observed_ban": "Trundle",
+    "old_top5": [
+      "Rakan",
+      "Renata Glasc",
+      "Jayce",
+      "Kalista",
+      "Viktor"
+    ],
+    "new_top5": [
+      "Rakan",
+      "Renata Glasc",
+      "Jayce",
+      "Kalista",
+      "Viktor"
+    ],
+    "old_rank": 11,
+    "new_rank": 11,
+    "same_legal_pool": true,
+    "pool_sha256": "c702dc063af59b7ebffa5cb25603406ab42e0d9e9a3dd76851f9d57978376e40",
+    "short_role_pools": 0,
+    "pool_value_increases_on_removal": {
+      "old": 0,
+      "new": 0
+    }
+  },
+  {
+    "split": "test",
+    "gameid": "LOLTMNT02_486555",
+    "series_id": "WLDS:LOLTMNT02_485482",
+    "turn": 16,
+    "observed_ban": "Jayce",
+    "old_top5": [
+      "Jayce",
+      "K'Sante",
+      "Maokai",
+      "Naafiri",
+      "Camille"
+    ],
+    "new_top5": [
+      "Maokai",
+      "Naafiri",
+      "Jayce",
+      "K'Sante",
+      "Camille"
+    ],
+    "old_rank": 1,
+    "new_rank": 3,
+    "same_legal_pool": true,
+    "pool_sha256": "a0520d54ac912094c67a3477ff43c03da313253c5033a896d653cc7810224750",
+    "short_role_pools": 1,
+    "pool_value_increases_on_removal": {
+      "old": 2,
+      "new": 0
+    }
+  },
+  {
+    "split": "test",
+    "gameid": "LOLTMNT02_486564",
+    "series_id": "WLDS:LOLTMNT02_486564",
+    "turn": 14,
+    "observed_ban": "Wukong",
+    "old_top5": [
+      "Lee Sin",
+      "K'Sante",
+      "Pantheon",
+      "Trundle",
+      "Maokai"
+    ],
+    "new_top5": [
+      "Lee Sin",
+      "K'Sante",
+      "Pantheon",
+      "Trundle",
+      "Maokai"
+    ],
+    "old_rank": 7,
+    "new_rank": 7,
+    "same_legal_pool": true,
+    "pool_sha256": "f3fd60b051c71c19151a61fa52bb30771766057c0ea55970b8b98a1b76056582",
+    "short_role_pools": 0,
+    "pool_value_increases_on_removal": {
+      "old": 0,
+      "new": 0
+    }
+  },
+  {
+    "split": "test",
+    "gameid": "LOLTMNT02_486571",
+    "series_id": "WLDS:LOLTMNT02_486564",
+    "turn": 6,
+    "observed_ban": "Nocturne",
+    "old_top5": [
+      "Nocturne",
+      "Olaf",
+      "Jhin",
+      "Renata Glasc",
+      "Locke"
+    ],
+    "new_top5": [
+      "Nocturne",
+      "Olaf",
+      "Jhin",
+      "Renata Glasc",
+      "Locke"
+    ],
+    "old_rank": 1,
+    "new_rank": 1,
+    "same_legal_pool": true,
+    "pool_sha256": "df15e6cf8da1b321b48104b0eaaf4d55ae83a26abf6e48599902fce0264a789d",
+    "short_role_pools": 0,
+    "pool_value_increases_on_removal": {
+      "old": 0,
+      "new": 0
+    }
+  },
+  {
+    "split": "test",
+    "gameid": "LOLTMNT02_485703",
+    "series_id": "WLDS:LOLTMNT02_485703",
+    "turn": 4,
+    "observed_ban": "Renata Glasc",
+    "old_top5": [
+      "Vi",
+      "Ezreal",
+      "Lee Sin",
+      "Renata Glasc",
+      "Qiyana"
+    ],
+    "new_top5": [
+      "Vi",
+      "Ezreal",
+      "Lee Sin",
+      "Renata Glasc",
+      "Qiyana"
+    ],
+    "old_rank": 4,
+    "new_rank": 4,
+    "same_legal_pool": true,
+    "pool_sha256": "09df72adf7528d4944ce474f837fa8cba556c36fa80a0b652ed62fcef61d7d5a",
+    "short_role_pools": 0,
+    "pool_value_increases_on_removal": {
+      "old": 0,
+      "new": 0
+    }
+  },
+  {
+    "split": "test",
+    "gameid": "LOLTMNT02_485705",
+    "series_id": "WLDS:LOLTMNT02_485703",
+    "turn": 2,
+    "observed_ban": "Nocturne",
+    "old_top5": [
+      "Nocturne",
+      "Orianna",
+      "Lee Sin",
+      "Locke",
+      "Renata Glasc"
+    ],
+    "new_top5": [
+      "Nocturne",
+      "Orianna",
+      "Lee Sin",
+      "Locke",
+      "Renata Glasc"
+    ],
+    "old_rank": 1,
+    "new_rank": 1,
+    "same_legal_pool": true,
+    "pool_sha256": "78c5c84eaa51cb7f59980b777946bfa88837aa8487ff98737ccf361c89e17c2c",
+    "short_role_pools": 0,
+    "pool_value_increases_on_removal": {
+      "old": 0,
+      "new": 0
+    }
+  },
+  {
+    "split": "test",
+    "gameid": "LOLTMNT02_485705",
+    "series_id": "WLDS:LOLTMNT02_485703",
+    "turn": 16,
+    "observed_ban": "Trundle",
+    "old_top5": [
+      "Galio",
+      "K'Sante",
+      "Trundle",
+      "Jax",
+      "Naafiri"
+    ],
+    "new_top5": [
+      "Trundle",
+      "Wukong",
+      "Galio",
+      "Naafiri",
+      "K'Sante"
+    ],
+    "old_rank": 3,
+    "new_rank": 1,
+    "same_legal_pool": true,
+    "pool_sha256": "1f3f8b724d054a50390110b82e8242547658845315f8b88023f14ea2d2f931cb",
+    "short_role_pools": 0,
+    "pool_value_increases_on_removal": {
+      "old": 3,
+      "new": 0
+    }
+  },
+  {
+    "split": "test",
+    "gameid": "LOLTMNT02_485710",
+    "series_id": "WLDS:LOLTMNT02_485703",
+    "turn": 15,
+    "observed_ban": "Maokai",
+    "old_top5": [
+      "Anivia",
+      "Naafiri",
+      "Ryze",
+      "Maokai",
+      "Ahri"
+    ],
+    "new_top5": [
+      "Naafiri",
+      "Maokai",
+      "Anivia",
+      "Ryze",
+      "Ahri"
+    ],
+    "old_rank": 4,
+    "new_rank": 2,
+    "same_legal_pool": true,
+    "pool_sha256": "14d5bcb781705edd1aaa802b04ffa34856b4c7f2c59ce4451501e3e330c3004f",
+    "short_role_pools": 1,
+    "pool_value_increases_on_removal": {
+      "old": 1,
+      "new": 0
+    }
+  },
+  {
+    "split": "test",
+    "gameid": "LOLTMNT05_234191",
+    "series_id": "WLDS:LOLTMNT02_485703",
+    "turn": 13,
+    "observed_ban": "Locke",
+    "old_top5": [
+      "K'Sante",
+      "Akali",
+      "Locke",
+      "Camille",
+      "Galio"
+    ],
+    "new_top5": [
+      "K'Sante",
+      "Akali",
+      "Locke",
+      "Camille",
+      "Galio"
+    ],
+    "old_rank": 3,
+    "new_rank": 3,
+    "same_legal_pool": true,
+    "pool_sha256": "e9ef4a817192d0c014a5ab24e9fc1bc7de4f6aa5940ed7249d18540508813c06",
+    "short_role_pools": 0,
+    "pool_value_increases_on_removal": {
+      "old": 0,
+      "new": 0
+    }
+  },
+  {
+    "split": "test",
+    "gameid": "LOLTMNT02_488030",
+    "series_id": "WLDS:LOLTMNT02_488030",
+    "turn": 5,
+    "observed_ban": "Vi",
+    "old_top5": [
+      "Rumble",
+      "Ezreal",
+      "Jhin",
+      "Qiyana",
+      "Nautilus"
+    ],
+    "new_top5": [
+      "Rumble",
+      "Ezreal",
+      "Jhin",
+      "Qiyana",
+      "Nautilus"
+    ],
+    "old_rank": 41,
+    "new_rank": 41,
+    "same_legal_pool": true,
+    "pool_sha256": "88eee1e63a61f0c09fd6017e7d49bfa010ea5d906352c404fe872261a98255f0",
+    "short_role_pools": 0,
+    "pool_value_increases_on_removal": {
+      "old": 0,
+      "new": 0
+    }
+  },
+  {
+    "split": "test",
+    "gameid": "LOLTMNT02_488033",
+    "series_id": "WLDS:LOLTMNT02_488030",
+    "turn": 3,
+    "observed_ban": "Syndra",
+    "old_top5": [
+      "Rumble",
+      "Jarvan IV",
+      "Seraphine",
+      "Pantheon",
+      "Ashe"
+    ],
+    "new_top5": [
+      "Rumble",
+      "Jarvan IV",
+      "Seraphine",
+      "Pantheon",
+      "Ashe"
+    ],
+    "old_rank": 7,
+    "new_rank": 7,
+    "same_legal_pool": true,
+    "pool_sha256": "1fe36cc83a7a727d352f9bdc0749310fc2eb7b2d2796d3e30cbead091db98438",
+    "short_role_pools": 0,
+    "pool_value_increases_on_removal": {
+      "old": 0,
+      "new": 0
+    }
+  },
+  {
+    "split": "test",
+    "gameid": "LOLTMNT02_488039",
+    "series_id": "WLDS:LOLTMNT02_488030",
+    "turn": 1,
+    "observed_ban": "Renata Glasc",
+    "old_top5": [
+      "K'Sante",
+      "Yunara",
+      "Lulu",
+      "Kalista",
+      "Renata Glasc"
+    ],
+    "new_top5": [
+      "K'Sante",
+      "Yunara",
+      "Lulu",
+      "Kalista",
+      "Renata Glasc"
+    ],
+    "old_rank": 5,
+    "new_rank": 5,
+    "same_legal_pool": true,
+    "pool_sha256": "127d4ad6c699b6bbde668e2f2067605836ecad866244ae8235eb1be8ab00192e",
+    "short_role_pools": 0,
+    "pool_value_increases_on_removal": {
+      "old": 0,
+      "new": 0
+    }
+  },
+  {
+    "split": "test",
+    "gameid": "LOLTMNT02_488039",
+    "series_id": "WLDS:LOLTMNT02_488030",
+    "turn": 16,
+    "observed_ban": "Ahri",
+    "old_top5": [
+      "K'Sante",
+      "Rumble",
+      "Renekton",
+      "Locke",
+      "Anivia"
+    ],
+    "new_top5": [
+      "K'Sante",
+      "Rumble",
+      "Renekton",
+      "Locke",
+      "Anivia"
+    ],
+    "old_rank": 6,
+    "new_rank": 6,
+    "same_legal_pool": true,
+    "pool_sha256": "7817682680c1b5eb136646419beb2a741e7c661af259563663f5835ba121de26",
+    "short_role_pools": 0,
+    "pool_value_increases_on_removal": {
+      "old": 0,
+      "new": 0
+    }
+  },
+  {
+    "split": "test",
+    "gameid": "LOLTMNT02_487095",
+    "series_id": "WLDS:LOLTMNT02_487095",
+    "turn": 14,
+    "observed_ban": "Orianna",
+    "old_top5": [
+      "Jhin",
+      "Orianna",
+      "Akali",
+      "Ashe",
+      "Ezreal"
+    ],
+    "new_top5": [
+      "Jhin",
+      "Orianna",
+      "Akali",
+      "Ashe",
+      "Ezreal"
+    ],
+    "old_rank": 2,
+    "new_rank": 2,
+    "same_legal_pool": true,
+    "pool_sha256": "f0aa9eb1af8eefea7b9cc9a631827d2d5711995c640721648f72ba8310fa4a03",
+    "short_role_pools": 0,
+    "pool_value_increases_on_removal": {
+      "old": 0,
+      "new": 0
+    }
+  },
+  {
+    "split": "test",
+    "gameid": "LOLTMNT02_488087",
+    "series_id": "WLDS:LOLTMNT02_487095",
+    "turn": 6,
+    "observed_ban": "Lucian",
+    "old_top5": [
+      "Jarvan IV",
+      "K'Sante",
+      "Syndra",
+      "Ezreal",
+      "Lee Sin"
+    ],
+    "new_top5": [
+      "Jarvan IV",
+      "K'Sante",
+      "Syndra",
+      "Ezreal",
+      "Lee Sin"
+    ],
+    "old_rank": 23,
+    "new_rank": 23,
+    "same_legal_pool": true,
+    "pool_sha256": "c0569234083a29eb7a7386dc69f73ffc750ca3bacbf35ccad19ad0b846e86812",
+    "short_role_pools": 0,
+    "pool_value_increases_on_removal": {
+      "old": 0,
+      "new": 0
+    }
+  },
+  {
+    "split": "test",
+    "gameid": "LOLTMNT02_488090",
+    "series_id": "WLDS:LOLTMNT02_487095",
+    "turn": 4,
+    "observed_ban": "Caitlyn",
+    "old_top5": [
+      "Syndra",
+      "Olaf",
+      "K'Sante",
+      "Viktor",
+      "Jayce"
+    ],
+    "new_top5": [
+      "Syndra",
+      "Olaf",
+      "K'Sante",
+      "Viktor",
+      "Jayce"
+    ],
+    "old_rank": null,
+    "new_rank": null,
+    "same_legal_pool": true,
+    "pool_sha256": "3b8cdb297d2bbb75b8f43a72dd4578e72aa72b927f12ddcbc81d312362ea12e9",
+    "short_role_pools": 0,
+    "pool_value_increases_on_removal": {
+      "old": 0,
+      "new": 0
+    }
+  },
+  {
+    "split": "test",
+    "gameid": "LOLTMNT02_488135",
+    "series_id": "WLDS:LOLTMNT02_488135",
+    "turn": 2,
+    "observed_ban": "Cassiopeia",
+    "old_top5": [
+      "Cassiopeia",
+      "Ezreal",
+      "Olaf",
+      "Syndra",
+      "Renata Glasc"
+    ],
+    "new_top5": [
+      "Cassiopeia",
+      "Ezreal",
+      "Olaf",
+      "Syndra",
+      "Renata Glasc"
+    ],
+    "old_rank": 1,
+    "new_rank": 1,
+    "same_legal_pool": true,
+    "pool_sha256": "75fe8a4b51d1261f2ae736b7dd479a5a387103994cf9850c05c51d3058e3a905",
+    "short_role_pools": 0,
+    "pool_value_increases_on_removal": {
+      "old": 0,
+      "new": 0
+    }
+  },
+  {
+    "split": "test",
+    "gameid": "LOLTMNT02_488135",
+    "series_id": "WLDS:LOLTMNT02_488135",
+    "turn": 16,
+    "observed_ban": "Orianna",
+    "old_top5": [
+      "Olaf",
+      "Akali",
+      "Syndra",
+      "Jayce",
+      "Ambessa"
+    ],
+    "new_top5": [
+      "Olaf",
+      "Akali",
+      "Syndra",
+      "Jayce",
+      "Ambessa"
+    ],
+    "old_rank": 15,
+    "new_rank": 15,
+    "same_legal_pool": true,
+    "pool_sha256": "d5e4512a8f0d3f36e6e0d4a3a876125a46d56d9c53d128d13c81bbd3264a061d",
+    "short_role_pools": 0,
+    "pool_value_increases_on_removal": {
+      "old": 0,
+      "new": 0
+    }
+  },
+  {
+    "split": "test",
+    "gameid": "LOLTMNT02_487158",
+    "series_id": "WLDS:LOLTMNT02_488135",
+    "turn": 15,
+    "observed_ban": "Wukong",
+    "old_top5": [
+      "Jhin",
+      "Trundle",
+      "Wukong",
+      "Naafiri",
+      "Maokai"
+    ],
+    "new_top5": [
+      "Jhin",
+      "Trundle",
+      "Wukong",
+      "Naafiri",
+      "Maokai"
+    ],
+    "old_rank": 3,
+    "new_rank": 3,
+    "same_legal_pool": true,
+    "pool_sha256": "e4159775b8bda58274b8e8aebd2e15aef38fde41acf99170770e52bab945e633",
+    "short_role_pools": 0,
+    "pool_value_increases_on_removal": {
+      "old": 0,
+      "new": 0
+    }
+  },
+  {
+    "split": "test",
+    "gameid": "LOLTMNT02_487168",
+    "series_id": "WLDS:LOLTMNT02_488135",
+    "turn": 13,
+    "observed_ban": "Sylas",
+    "old_top5": [
+      "Anivia",
+      "Naafiri",
+      "Ryze",
+      "Maokai",
+      "Akali"
+    ],
+    "new_top5": [
+      "Naafiri",
+      "Maokai",
+      "Anivia",
+      "Ryze",
+      "Akali"
+    ],
+    "old_rank": null,
+    "new_rank": null,
+    "same_legal_pool": true,
+    "pool_sha256": "14d5bcb781705edd1aaa802b04ffa34856b4c7f2c59ce4451501e3e330c3004f",
+    "short_role_pools": 1,
+    "pool_value_increases_on_removal": {
+      "old": 1,
+      "new": 0
+    }
+  },
+  {
+    "split": "test",
+    "gameid": "LOLTMNT02_487172",
+    "series_id": "WLDS:LOLTMNT02_488135",
+    "turn": 5,
+    "observed_ban": "Maokai",
+    "old_top5": [
+      "Kalista",
+      "Naafiri",
+      "Galio",
+      "Ahri",
+      "Ryze"
+    ],
+    "new_top5": [
+      "Ahri",
+      "Kalista",
+      "Naafiri",
+      "Ryze",
+      "Galio"
+    ],
+    "old_rank": 12,
+    "new_rank": 13,
+    "same_legal_pool": true,
+    "pool_sha256": "6c2be89173245119a72acff1351feb8a616624bfa98694e1e86c8a448097247f",
+    "short_role_pools": 0,
+    "pool_value_increases_on_removal": {
+      "old": 4,
+      "new": 0
+    }
+  },
+  {
+    "split": "test",
+    "gameid": "LOLTMNT02_487213",
+    "series_id": "WLDS:LOLTMNT02_487213",
+    "turn": 3,
+    "observed_ban": "Ezreal",
+    "old_top5": [
+      "Qiyana",
+      "Ezreal",
+      "Nautilus",
+      "Akali",
+      "Rumble"
+    ],
+    "new_top5": [
+      "Qiyana",
+      "Ezreal",
+      "Nautilus",
+      "Akali",
+      "Rumble"
+    ],
+    "old_rank": 2,
+    "new_rank": 2,
+    "same_legal_pool": true,
+    "pool_sha256": "40cbc490548aa9c034e49036db4ead81216754c0d8037c96d62294abff814470",
+    "short_role_pools": 0,
+    "pool_value_increases_on_removal": {
+      "old": 0,
+      "new": 0
+    }
+  },
+  {
+    "split": "test",
+    "gameid": "LOLTMNT02_488209",
+    "series_id": "WLDS:LOLTMNT02_487213",
+    "turn": 1,
+    "observed_ban": "Pantheon",
+    "old_top5": [
+      "Ezreal",
+      "Nautilus",
+      "Akali",
+      "Rumble",
+      "Kalista"
+    ],
+    "new_top5": [
+      "Ezreal",
+      "Nautilus",
+      "Akali",
+      "Rumble",
+      "Kalista"
+    ],
+    "old_rank": 21,
+    "new_rank": 21,
+    "same_legal_pool": true,
+    "pool_sha256": "40ebb8f3a6277ee8e24fd10cfc881e2855774fbcc89b7881ddffb493aedc3cb9",
+    "short_role_pools": 0,
+    "pool_value_increases_on_removal": {
+      "old": 0,
+      "new": 0
+    }
+  },
+  {
+    "split": "test",
+    "gameid": "LOLTMNT02_488209",
+    "series_id": "WLDS:LOLTMNT02_487213",
+    "turn": 16,
+    "observed_ban": "Akali",
+    "old_top5": [
+      "Akali",
+      "Rumble",
+      "Ahri",
+      "Viktor",
+      "K'Sante"
+    ],
+    "new_top5": [
+      "Akali",
+      "Rumble",
+      "Ahri",
+      "Viktor",
+      "K'Sante"
+    ],
+    "old_rank": 1,
+    "new_rank": 1,
+    "same_legal_pool": true,
+    "pool_sha256": "c700fa83f5bc5e9e49eb3096dffdc68015459fe683b445d4e72753c8c13825c8",
+    "short_role_pools": 0,
+    "pool_value_increases_on_removal": {
+      "old": 0,
+      "new": 0
+    }
+  },
+  {
+    "split": "test",
+    "gameid": "LOLTMNT02_487214",
+    "series_id": "WLDS:LOLTMNT02_487213",
+    "turn": 14,
+    "observed_ban": "Sivir",
+    "old_top5": [
+      "K'Sante",
+      "Ezreal",
+      "Ambessa",
+      "Gnar",
+      "Kalista"
+    ],
+    "new_top5": [
+      "Ezreal",
+      "K'Sante",
+      "Yunara",
+      "Kalista",
+      "Ambessa"
+    ],
+    "old_rank": null,
+    "new_rank": null,
+    "same_legal_pool": true,
+    "pool_sha256": "6a23c425b73ba725fa6bad690b94c48465f95847324078b4a8f43c5593e35977",
+    "short_role_pools": 0,
+    "pool_value_increases_on_removal": {
+      "old": 4,
+      "new": 0
+    }
+  },
+  {
+    "split": "test",
+    "gameid": "LOLTMNT02_488293",
+    "series_id": "WLDS:LOLTMNT02_488293",
+    "turn": 6,
+    "observed_ban": "Olaf",
+    "old_top5": [
+      "Vi",
+      "Jhin",
+      "Nocturne",
+      "Jayce",
+      "Olaf"
+    ],
+    "new_top5": [
+      "Vi",
+      "Jhin",
+      "Nocturne",
+      "Jayce",
+      "Olaf"
+    ],
+    "old_rank": 5,
+    "new_rank": 5,
+    "same_legal_pool": true,
+    "pool_sha256": "69adacfbfba3702856c9bd6ecfe7f0c7133ea38d2e6cbaeeff1567d4db7c00b4",
+    "short_role_pools": 0,
+    "pool_value_increases_on_removal": {
+      "old": 0,
+      "new": 0
+    }
+  },
+  {
+    "split": "test",
+    "gameid": "LOLTMNT02_488295",
+    "series_id": "WLDS:LOLTMNT02_488293",
+    "turn": 4,
+    "observed_ban": "Cassiopeia",
+    "old_top5": [
+      "Vi",
+      "Jhin",
+      "Jayce",
+      "Alistar",
+      "Cassiopeia"
+    ],
+    "new_top5": [
+      "Vi",
+      "Jhin",
+      "Jayce",
+      "Alistar",
+      "Cassiopeia"
+    ],
+    "old_rank": 5,
+    "new_rank": 5,
+    "same_legal_pool": true,
+    "pool_sha256": "130ec00e0c4fd0f2c08e725c42acbc8465d81f8d556f13d58996a47adb72ad04",
+    "short_role_pools": 0,
+    "pool_value_increases_on_removal": {
+      "old": 0,
+      "new": 0
+    }
+  },
+  {
+    "split": "test",
+    "gameid": "LOLTMNT02_488296",
+    "series_id": "WLDS:LOLTMNT02_488293",
+    "turn": 2,
+    "observed_ban": "Cassiopeia",
+    "old_top5": [
+      "Seraphine",
+      "Akali",
+      "Cassiopeia",
+      "Vi",
+      "Pantheon"
+    ],
+    "new_top5": [
+      "Seraphine",
+      "Akali",
+      "Cassiopeia",
+      "Vi",
+      "Pantheon"
+    ],
+    "old_rank": 3,
+    "new_rank": 3,
+    "same_legal_pool": true,
+    "pool_sha256": "96addbe3988f8e8475856ff99ffc81cdc2929adcabfaae1cf8fae87f35322e5e",
+    "short_role_pools": 0,
+    "pool_value_increases_on_removal": {
+      "old": 0,
+      "new": 0
+    }
+  },
+  {
+    "split": "test",
+    "gameid": "LOLTMNT02_488296",
+    "series_id": "WLDS:LOLTMNT02_488293",
+    "turn": 16,
+    "observed_ban": "Viktor",
+    "old_top5": [
+      "Kalista",
+      "Viktor",
+      "Lucian",
+      "Ashe",
+      "Akali"
+    ],
+    "new_top5": [
+      "Kalista",
+      "Viktor",
+      "Lucian",
+      "Ashe",
+      "Akali"
+    ],
+    "old_rank": 2,
+    "new_rank": 2,
+    "same_legal_pool": true,
+    "pool_sha256": "775f85094c9a88763532d8dfb0c03d1b66a60b2ae72b3c798f7d0d2023054250",
+    "short_role_pools": 1,
+    "pool_value_increases_on_removal": {
+      "old": 0,
+      "new": 0
+    }
+  },
+  {
+    "split": "test",
+    "gameid": "LOLTMNT02_488304",
+    "series_id": "WLDS:LOLTMNT02_488293",
+    "turn": 15,
+    "observed_ban": "Xin Zhao",
+    "old_top5": [
+      "Galio",
+      "Maokai",
+      "Jax",
+      "Renekton",
+      "Wukong"
+    ],
+    "new_top5": [
+      "Galio",
+      "Renekton",
+      "Maokai",
+      "Jax",
+      "Wukong"
+    ],
+    "old_rank": null,
+    "new_rank": null,
+    "same_legal_pool": true,
+    "pool_sha256": "7e9b710494ef04d38f74f1dd82e254ac0edb2fc00e91aa357549da52997c18b2",
+    "short_role_pools": 2,
+    "pool_value_increases_on_removal": {
+      "old": 6,
+      "new": 0
+    }
+  },
+  {
+    "split": "test",
+    "gameid": "LOLTMNT02_487405",
+    "series_id": "WLDS:LOLTMNT02_487405",
+    "turn": 13,
+    "observed_ban": "Ezreal",
+    "old_top5": [
+      "Ezreal",
+      "Nautilus",
+      "Jhin",
+      "Seraphine",
+      "Alistar"
+    ],
+    "new_top5": [
+      "Ezreal",
+      "Nautilus",
+      "Jhin",
+      "Seraphine",
+      "Alistar"
+    ],
+    "old_rank": 1,
+    "new_rank": 1,
+    "same_legal_pool": true,
+    "pool_sha256": "387ea9bb1aaf66ad49888ad53b87315b99a061fa3cb02e1fc7498aa1e6b8226f",
+    "short_role_pools": 0,
+    "pool_value_increases_on_removal": {
+      "old": 0,
+      "new": 0
+    }
+  },
+  {
+    "split": "test",
+    "gameid": "LOLTMNT02_487406",
+    "series_id": "WLDS:LOLTMNT02_487405",
+    "turn": 5,
+    "observed_ban": "Galio",
+    "old_top5": [
+      "Rumble",
+      "Ezreal",
+      "Galio",
+      "Lucian",
+      "Ambessa"
+    ],
+    "new_top5": [
+      "Rumble",
+      "Ezreal",
+      "Galio",
+      "Lucian",
+      "Ambessa"
+    ],
+    "old_rank": 3,
+    "new_rank": 3,
+    "same_legal_pool": true,
+    "pool_sha256": "a228ed0dfa98759d9077a5944ffba7b16f8b10623d010460167e16a35bf2abca",
+    "short_role_pools": 0,
+    "pool_value_increases_on_removal": {
+      "old": 0,
+      "new": 0
+    }
+  },
+  {
+    "split": "test",
+    "gameid": "LOLTMNT02_487408",
+    "series_id": "WLDS:LOLTMNT02_487405",
+    "turn": 3,
+    "observed_ban": "Renekton",
+    "old_top5": [
+      "Pantheon",
+      "Akali",
+      "Ashe",
+      "Ambessa",
+      "Seraphine"
+    ],
+    "new_top5": [
+      "Pantheon",
+      "Akali",
+      "Ashe",
+      "Ambessa",
+      "Seraphine"
+    ],
+    "old_rank": 19,
+    "new_rank": 19,
+    "same_legal_pool": true,
+    "pool_sha256": "76b42a818d4e3a3c6e8baff36261e32a7a15f30af250605775a5da7557b30a9c",
+    "short_role_pools": 0,
+    "pool_value_increases_on_removal": {
+      "old": 0,
+      "new": 0
+    }
+  },
+  {
+    "split": "test",
+    "gameid": "LOLTMNT02_488489",
+    "series_id": "WLDS:LOLTMNT02_487405",
+    "turn": 1,
+    "observed_ban": "Nautilus",
+    "old_top5": [
+      "Pantheon",
+      "Seraphine",
+      "Akali",
+      "Ashe",
+      "Nautilus"
+    ],
+    "new_top5": [
+      "Pantheon",
+      "Seraphine",
+      "Akali",
+      "Ashe",
+      "Nautilus"
+    ],
+    "old_rank": 5,
+    "new_rank": 5,
+    "same_legal_pool": true,
+    "pool_sha256": "d2c4c515ef6781dd58b6b20677570e976fe8228b5442cb5e656e823889dd4204",
+    "short_role_pools": 0,
+    "pool_value_increases_on_removal": {
+      "old": 0,
+      "new": 0
+    }
+  },
+  {
+    "split": "test",
+    "gameid": "LOLTMNT02_488489",
+    "series_id": "WLDS:LOLTMNT02_487405",
+    "turn": 16,
+    "observed_ban": "Galio",
+    "old_top5": [
+      "Galio",
+      "Akali",
+      "Anivia",
+      "Ryze",
+      "Ahri"
+    ],
+    "new_top5": [
+      "Akali",
+      "Galio",
+      "Anivia",
+      "Ryze",
+      "Ahri"
+    ],
+    "old_rank": 1,
+    "new_rank": 2,
+    "same_legal_pool": true,
+    "pool_sha256": "d94d50d34bdbff0b17b6b0933d50278dc4dd3561c9ab82656df0c4af164a9440",
+    "short_role_pools": 2,
+    "pool_value_increases_on_removal": {
+      "old": 0,
+      "new": 0
+    }
+  }
+]

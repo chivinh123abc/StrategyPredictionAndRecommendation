@@ -1,0 +1,367 @@
+{
+  "version": 1,
+  "session": {
+    "settings": {
+      "region": "WLDS",
+      "blue_team": "T1",
+      "red_team": "Gen.G",
+      "ban_strategy": "contextual",
+      "as_of": null,
+      "allow_statistical_auto": true
+    },
+    "completed": [
+      {
+        "first_side": "blue",
+        "history": [
+          {
+            "side": "blue",
+            "action": "ban",
+            "champion": "Qiyana",
+            "role": null
+          },
+          {
+            "side": "red",
+            "action": "ban",
+            "champion": "Nocturne",
+            "role": null
+          },
+          {
+            "side": "blue",
+            "action": "ban",
+            "champion": "Olaf",
+            "role": null
+          },
+          {
+            "side": "red",
+            "action": "ban",
+            "champion": "Vi",
+            "role": null
+          },
+          {
+            "side": "blue",
+            "action": "ban",
+            "champion": "Ezreal",
+            "role": null
+          },
+          {
+            "side": "red",
+            "action": "ban",
+            "champion": "Lee Sin",
+            "role": null
+          },
+          {
+            "side": "blue",
+            "action": "pick",
+            "champion": "Cassiopeia",
+            "role": "mid"
+          },
+          {
+            "side": "red",
+            "action": "pick",
+            "champion": "Renata Glasc",
+            "role": "sup"
+          },
+          {
+            "side": "red",
+            "action": "pick",
+            "champion": "Kalista",
+            "role": "bot"
+          },
+          {
+            "side": "blue",
+            "action": "pick",
+            "champion": "Nautilus",
+            "role": "sup"
+          },
+          {
+            "side": "blue",
+            "action": "pick",
+            "champion": "Jayce",
+            "role": "top"
+          },
+          {
+            "side": "red",
+            "action": "pick",
+            "champion": "Orianna",
+            "role": "mid"
+          },
+          {
+            "side": "red",
+            "action": "ban",
+            "champion": "Jhin",
+            "role": null
+          },
+          {
+            "side": "blue",
+            "action": "ban",
+            "champion": "Jarvan IV",
+            "role": null
+          },
+          {
+            "side": "red",
+            "action": "ban",
+            "champion": "Kai'Sa",
+            "role": null
+          },
+          {
+            "side": "blue",
+            "action": "ban",
+            "champion": "Pantheon",
+            "role": null
+          },
+          {
+            "side": "red",
+            "action": "pick",
+            "champion": "K'Sante",
+            "role": "top"
+          },
+          {
+            "side": "blue",
+            "action": "pick",
+            "champion": "Wukong",
+            "role": "jng"
+          },
+          {
+            "side": "blue",
+            "action": "pick",
+            "champion": "Yunara",
+            "role": "bot"
+          },
+          {
+            "side": "red",
+            "action": "pick",
+            "champion": "Xin Zhao",
+            "role": "jng"
+          }
+        ],
+        "swaps": []
+      }
+    ],
+    "current": {
+      "first_side": "red",
+      "history": [],
+      "swaps": []
+    }
+  },
+  "scope": {
+    "region": "WLDS",
+    "dataset_patch": "16.20",
+    "data_through": "2026-11-14T23:18:11+00:00",
+    "requested_as_of": "2026-11-24T09:16:10.157780+00:00",
+    "staleness_days": 9,
+    "history_games": 110,
+    "patch_games": 98,
+    "lookback_days": 60,
+    "half_life_days": 21,
+    "claim": "historical_snapshot_not_live_meta"
+  },
+  "boards": [
+    {
+      "first_pick_side": "blue",
+      "picks": {
+        "blue": {
+          "mid": "Cassiopeia",
+          "sup": "Nautilus",
+          "top": "Jayce",
+          "jng": "Wukong",
+          "bot": "Yunara"
+        },
+        "red": {
+          "sup": "Renata Glasc",
+          "bot": "Kalista",
+          "mid": "Orianna",
+          "top": "K'Sante",
+          "jng": "Xin Zhao"
+        }
+      },
+      "bans": {
+        "blue": [
+          "Qiyana",
+          "Olaf",
+          "Ezreal",
+          "Jarvan IV",
+          "Pantheon"
+        ],
+        "red": [
+          "Nocturne",
+          "Vi",
+          "Lee Sin",
+          "Jhin",
+          "Kai'Sa"
+        ]
+      },
+      "history": [
+        {
+          "turn": 1,
+          "side": "blue",
+          "action": "ban",
+          "champion": "Qiyana",
+          "role": null
+        },
+        {
+          "turn": 2,
+          "side": "red",
+          "action": "ban",
+          "champion": "Nocturne",
+          "role": null
+        },
+        {
+          "turn": 3,
+          "side": "blue",
+          "action": "ban",
+          "champion": "Olaf",
+          "role": null
+        },
+        {
+          "turn": 4,
+          "side": "red",
+          "action": "ban",
+          "champion": "Vi",
+          "role": null
+        },
+        {
+          "turn": 5,
+          "side": "blue",
+          "action": "ban",
+          "champion": "Ezreal",
+          "role": null
+        },
+        {
+          "turn": 6,
+          "side": "red",
+          "action": "ban",
+          "champion": "Lee Sin",
+          "role": null
+        },
+        {
+          "turn": 7,
+          "side": "blue",
+          "action": "pick",
+          "champion": "Cassiopeia",
+          "role": "mid"
+        },
+        {
+          "turn": 8,
+          "side": "red",
+          "action": "pick",
+          "champion": "Renata Glasc",
+          "role": "sup"
+        },
+        {
+          "turn": 9,
+          "side": "red",
+          "action": "pick",
+          "champion": "Kalista",
+          "role": "bot"
+        },
+        {
+          "turn": 10,
+          "side": "blue",
+          "action": "pick",
+          "champion": "Nautilus",
+          "role": "sup"
+        },
+        {
+          "turn": 11,
+          "side": "blue",
+          "action": "pick",
+          "champion": "Jayce",
+          "role": "top"
+        },
+        {
+          "turn": 12,
+          "side": "red",
+          "action": "pick",
+          "champion": "Orianna",
+          "role": "mid"
+        },
+        {
+          "turn": 13,
+          "side": "red",
+          "action": "ban",
+          "champion": "Jhin",
+          "role": null
+        },
+        {
+          "turn": 14,
+          "side": "blue",
+          "action": "ban",
+          "champion": "Jarvan IV",
+          "role": null
+        },
+        {
+          "turn": 15,
+          "side": "red",
+          "action": "ban",
+          "champion": "Kai'Sa",
+          "role": null
+        },
+        {
+          "turn": 16,
+          "side": "blue",
+          "action": "ban",
+          "champion": "Pantheon",
+          "role": null
+        },
+        {
+          "turn": 17,
+          "side": "red",
+          "action": "pick",
+          "champion": "K'Sante",
+          "role": "top"
+        },
+        {
+          "turn": 18,
+          "side": "blue",
+          "action": "pick",
+          "champion": "Wukong",
+          "role": "jng"
+        },
+        {
+          "turn": 19,
+          "side": "blue",
+          "action": "pick",
+          "champion": "Yunara",
+          "role": "bot"
+        },
+        {
+          "turn": 20,
+          "side": "red",
+          "action": "pick",
+          "champion": "Xin Zhao",
+          "role": "jng"
+        }
+      ],
+      "swaps": [],
+      "complete": true,
+      "used_champions": []
+    },
+    {
+      "first_pick_side": "red",
+      "picks": {
+        "blue": {},
+        "red": {}
+      },
+      "bans": {
+        "blue": [],
+        "red": []
+      },
+      "history": [],
+      "swaps": [],
+      "complete": false,
+      "used_champions": [
+        "Cassiopeia",
+        "Nautilus",
+        "Jayce",
+        "Wukong",
+        "Yunara",
+        "Renata Glasc",
+        "Kalista",
+        "Orianna",
+        "K'Sante",
+        "Xin Zhao"
+      ]
+    }
+  ],
+  "interpretation": "Draft demo; no game results or causal win uplift."
+}

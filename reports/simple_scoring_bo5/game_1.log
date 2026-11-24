@@ -1,0 +1,254 @@
+Đang nạp lịch sử trận đấu và hồ sơ tướng...
+GIẢ LẬP BAN/PICK MỘT VÁN — LỊCH SỬ + CONTENT-BASED
+Bạn: blue; phe chọn trước: blue; dữ liệu: WLDS
+SNAPSHOT LỊCH SỬ: patch dataset 16.20, dữ liệu đến 2026-11-14T23:18:11+00:00, cũ 10 ngày so với mốc yêu cầu
+110 trận trong cửa sổ 60 ngày, 98 trận patch đích; không gọi là live meta.
+Lineup T1 (latest_observed_lineup_not_live_roster): top=Doran, jng=Oner, mid=Faker, bot=Peyz, sup=Keria
+Lineup Gen.G (latest_observed_lineup_not_live_roster): top=Kiin, jng=Canyon, mid=Chovy, bot=Ruler, sup=Duro
+Ưu tiên presence/nhịp draft gần đây; bể tướng, đối đầu và cosine là tín hiệu hỗ trợ. Điểm không phải xác suất.
+
+==========================================================================================
+BLUE T1 | Cấm: —
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: —
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 1/20: BLUE T1 — CẤM
+ĐÃ CẤM: Qiyana
+  Căn cứ: Mất pool địch 0.0065; chi phí tự cấm 0.0000; đội mình lấy lượt pick tới trước địch=True; Fearless khóa 0; chấm theo pool ngữ cảnh
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: —
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 2/20: RED Gen.G — CẤM
+ĐÃ CẤM: Lee Sin
+  Căn cứ: Mất pool địch 0.0146; chi phí tự cấm 0.0036; đội mình lấy lượt pick tới trước địch=False; Fearless khóa 0; chấm theo pool ngữ cảnh
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Lee Sin
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 3/20: BLUE T1 — CẤM
+ĐÃ CẤM: Pantheon
+  Căn cứ: Mất pool địch 0.0033; chi phí tự cấm 0.0000; đội mình lấy lượt pick tới trước địch=True; Fearless khóa 0; chấm theo pool ngữ cảnh
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana, Pantheon
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Lee Sin
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 4/20: RED Gen.G — CẤM
+ĐÃ CẤM: Rumble
+  Căn cứ: Mất pool địch 0.0103; chi phí tự cấm 0.0036; đội mình lấy lượt pick tới trước địch=False; Fearless khóa 0; chấm theo pool ngữ cảnh
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana, Pantheon
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Lee Sin, Rumble
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 5/20: BLUE T1 — CẤM
+ĐÃ CẤM: K'Sante
+  Căn cứ: Mất pool địch 0.0053; chi phí tự cấm 0.0014; đội mình lấy lượt pick tới trước địch=True; Fearless khóa 0; chấm theo pool ngữ cảnh
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana, Pantheon, K'Sante
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Lee Sin, Rumble
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 6/20: RED Gen.G — CẤM
+ĐÃ CẤM: Ambessa
+  Căn cứ: Mất pool địch 0.0160; chi phí tự cấm 0.0085; đội mình lấy lượt pick tới trước địch=False; Fearless khóa 0; chấm theo pool ngữ cảnh
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana, Pantheon, K'Sante
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Lee Sin, Rumble, Ambessa
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 7/20: BLUE T1 — CHỌN
+ĐÃ CHỌN: Orianna [mid]
+  Căn cứ: Điểm đơn giản = trung bình 2 tín hiệu: pick_frequency=1.000; content=0.981; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana, Pantheon, K'Sante
+Top: — | Rừng: — | Mid: Orianna | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Lee Sin, Rumble, Ambessa
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 8/20: RED Gen.G — CHỌN
+ĐÃ CHỌN: Syndra [mid]
+  Căn cứ: Điểm đơn giản = trung bình 3 tín hiệu: pick_frequency=1.000; content=0.955; matchup=0.615; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana, Pantheon, K'Sante
+Top: — | Rừng: — | Mid: Orianna | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Lee Sin, Rumble, Ambessa
+Top: — | Rừng: — | Mid: Syndra | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 9/20: RED Gen.G — CHỌN
+ĐÃ CHỌN: Nautilus [sup]
+  Căn cứ: Điểm đơn giản = trung bình 3 tín hiệu: pick_frequency=1.000; content=0.877; matchup=0.630; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana, Pantheon, K'Sante
+Top: — | Rừng: — | Mid: Orianna | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Lee Sin, Rumble, Ambessa
+Top: — | Rừng: — | Mid: Syndra | Xạ thủ: — | Hỗ trợ: Nautilus
+
+LƯỢT 10/20: BLUE T1 — CHỌN
+ĐÃ CHỌN: Olaf [top]
+  Căn cứ: Điểm đơn giản = trung bình 3 tín hiệu: pick_frequency=0.750; content=0.961; matchup=0.714; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana, Pantheon, K'Sante
+Top: Olaf | Rừng: — | Mid: Orianna | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Lee Sin, Rumble, Ambessa
+Top: — | Rừng: — | Mid: Syndra | Xạ thủ: — | Hỗ trợ: Nautilus
+
+LƯỢT 11/20: BLUE T1 — CHỌN
+ĐÃ CHỌN: Lulu [sup]
+  Căn cứ: Điểm đơn giản = trung bình 3 tín hiệu: pick_frequency=0.963; content=0.867; matchup=0.577; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana, Pantheon, K'Sante
+Top: Olaf | Rừng: — | Mid: Orianna | Xạ thủ: — | Hỗ trợ: Lulu
+RED Gen.G | Cấm: Lee Sin, Rumble, Ambessa
+Top: — | Rừng: — | Mid: Syndra | Xạ thủ: — | Hỗ trợ: Nautilus
+
+LƯỢT 12/20: RED Gen.G — CHỌN
+ĐÃ CHỌN: Ezreal [bot]
+  Căn cứ: Điểm đơn giản = trung bình 3 tín hiệu: pick_frequency=1.000; content=0.877; matchup=0.469; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana, Pantheon, K'Sante
+Top: Olaf | Rừng: — | Mid: Orianna | Xạ thủ: — | Hỗ trợ: Lulu
+RED Gen.G | Cấm: Lee Sin, Rumble, Ambessa
+Top: — | Rừng: — | Mid: Syndra | Xạ thủ: Ezreal | Hỗ trợ: Nautilus
+
+LƯỢT 13/20: RED Gen.G — CẤM
+ĐÃ CẤM: Jhin
+  Căn cứ: Mất pool địch 0.0073; chi phí tự cấm 0.0000; đội mình lấy lượt pick tới trước địch=True; Fearless khóa 0; chấm theo pool ngữ cảnh
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana, Pantheon, K'Sante
+Top: Olaf | Rừng: — | Mid: Orianna | Xạ thủ: — | Hỗ trợ: Lulu
+RED Gen.G | Cấm: Lee Sin, Rumble, Ambessa, Jhin
+Top: — | Rừng: — | Mid: Syndra | Xạ thủ: Ezreal | Hỗ trợ: Nautilus
+
+LƯỢT 14/20: BLUE T1 — CẤM
+ĐÃ CẤM: Gnar
+  Căn cứ: Mất pool địch 0.0099; chi phí tự cấm 0.0000; đội mình lấy lượt pick tới trước địch=False; Fearless khóa 0; chấm theo pool ngữ cảnh
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana, Pantheon, K'Sante, Gnar
+Top: Olaf | Rừng: — | Mid: Orianna | Xạ thủ: — | Hỗ trợ: Lulu
+RED Gen.G | Cấm: Lee Sin, Rumble, Ambessa, Jhin
+Top: — | Rừng: — | Mid: Syndra | Xạ thủ: Ezreal | Hỗ trợ: Nautilus
+
+LƯỢT 15/20: RED Gen.G — CẤM
+ĐÃ CẤM: Yunara
+  Căn cứ: Mất pool địch 0.0073; chi phí tự cấm 0.0000; đội mình lấy lượt pick tới trước địch=True; Fearless khóa 0; chấm theo pool ngữ cảnh
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana, Pantheon, K'Sante, Gnar
+Top: Olaf | Rừng: — | Mid: Orianna | Xạ thủ: — | Hỗ trợ: Lulu
+RED Gen.G | Cấm: Lee Sin, Rumble, Ambessa, Jhin, Yunara
+Top: — | Rừng: — | Mid: Syndra | Xạ thủ: Ezreal | Hỗ trợ: Nautilus
+
+LƯỢT 16/20: BLUE T1 — CẤM
+ĐÃ CẤM: Renekton
+  Căn cứ: Mất pool địch 0.0048; chi phí tự cấm 0.0000; đội mình lấy lượt pick tới trước địch=False; Fearless khóa 0; chấm theo pool ngữ cảnh
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana, Pantheon, K'Sante, Gnar, Renekton
+Top: Olaf | Rừng: — | Mid: Orianna | Xạ thủ: — | Hỗ trợ: Lulu
+RED Gen.G | Cấm: Lee Sin, Rumble, Ambessa, Jhin, Yunara
+Top: — | Rừng: — | Mid: Syndra | Xạ thủ: Ezreal | Hỗ trợ: Nautilus
+
+LƯỢT 17/20: RED Gen.G — CHỌN
+ĐÃ CHỌN: Jarvan IV [jng]
+  Căn cứ: Điểm đơn giản = trung bình 3 tín hiệu: pick_frequency=0.903; content=0.927; matchup=0.500; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana, Pantheon, K'Sante, Gnar, Renekton
+Top: Olaf | Rừng: — | Mid: Orianna | Xạ thủ: — | Hỗ trợ: Lulu
+RED Gen.G | Cấm: Lee Sin, Rumble, Ambessa, Jhin, Yunara
+Top: — | Rừng: Jarvan IV | Mid: Syndra | Xạ thủ: Ezreal | Hỗ trợ: Nautilus
+
+LƯỢT 18/20: BLUE T1 — CHỌN
+ĐÃ CHỌN: Vi [jng]
+  Căn cứ: Điểm đơn giản = trung bình 3 tín hiệu: pick_frequency=0.645; content=0.943; matchup=0.650; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana, Pantheon, K'Sante, Gnar, Renekton
+Top: Olaf | Rừng: Vi | Mid: Orianna | Xạ thủ: — | Hỗ trợ: Lulu
+RED Gen.G | Cấm: Lee Sin, Rumble, Ambessa, Jhin, Yunara
+Top: — | Rừng: Jarvan IV | Mid: Syndra | Xạ thủ: Ezreal | Hỗ trợ: Nautilus
+
+LƯỢT 19/20: BLUE T1 — CHỌN
+ĐÃ CHỌN: Ashe [bot]
+  Căn cứ: Điểm đơn giản = trung bình 3 tín hiệu: pick_frequency=0.531; content=0.967; matchup=0.647; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana, Pantheon, K'Sante, Gnar, Renekton
+Top: Olaf | Rừng: Vi | Mid: Orianna | Xạ thủ: Ashe | Hỗ trợ: Lulu
+RED Gen.G | Cấm: Lee Sin, Rumble, Ambessa, Jhin, Yunara
+Top: — | Rừng: Jarvan IV | Mid: Syndra | Xạ thủ: Ezreal | Hỗ trợ: Nautilus
+
+LƯỢT 20/20: RED Gen.G — CHỌN
+ĐÃ CHỌN: Camille [top]
+  Căn cứ: Điểm đơn giản = trung bình 3 tín hiệu: pick_frequency=0.429; content=0.983; matchup=0.500; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana, Pantheon, K'Sante, Gnar, Renekton
+Top: Olaf | Rừng: Vi | Mid: Orianna | Xạ thủ: Ashe | Hỗ trợ: Lulu
+RED Gen.G | Cấm: Lee Sin, Rumble, Ambessa, Jhin, Yunara
+Top: Camille | Rừng: Jarvan IV | Mid: Syndra | Xạ thủ: Ezreal | Hỗ trợ: Nautilus
+Căn cứ cặp T1: observed_pairs=0, sparse_pairs=8, unobserved_pairs=2, insufficient_anchor_pairs=0
+Căn cứ cặp Gen.G: observed_pairs=0, sparse_pairs=9, unobserved_pairs=1, insufficient_anchor_pairs=0
+
+===============================================================================================
+📋 BẢNG ĐỘI HÌNH HOÀN THIỆN SAU KHI CẤM/CHỌN (FINAL DRAFT)
+===============================================================================================
+🔷 PHE XANH (T1):
+   • TOP: Olaf (Doran)
+   • JNG: Vi (Oner)
+   • MID: Orianna (Faker)
+   • BOT: Ashe (Peyz)
+   • SUP: Lulu (Keria)
+
+🔴 PHE ĐỎ (Gen.G):
+   • TOP: Camille (Kiin)
+   • JNG: Jarvan IV (Canyon)
+   • MID: Syndra (Chovy)
+   • BOT: Ezreal (Ruler)
+   • SUP: Nautilus (Duro)
+Radar và thẻ chiến thuật dùng thuộc tính/quy tắc chuyên gia; chưa được xác nhận như điều kiện thắng nhân quả.
+
+────────────────────────────────────── THẺ CHIẾN THUẬT: T1 (BLUE) ──────────────────────────────────────
+🏆 Trường phái: [WOMBOCOMBO & OBJECTIVE CONTROL]
+📊 Radar 5 trục: Early: 0.742 | Scaling: 0.735 | Combat: 0.68 | Pick: 0.758 | Obj: 0.703
+⭐ Chủ lực (Core Carry): Orianna
+⏱️ Điểm rơi sức mạnh: Giữa và Cuối trận (Phút 20 đến Phút 35 - Giai đoạn Rồng 3, 4 và Baron)
+🐉 Mục tiêu số 1: Rồng Nguyên Tố (Thiết lập Linh Hồn Rồng) & Hang Baron
+✅ Điều kiện thắng: Kiểm soát tầm nhìn trước 1 phút tại hang mục tiêu lớn, ép đối thủ vào các góc hẹp của sông và tung Wombocombo 5v5 quét sạch.
+❌ Cần tránh: Để đối thủ chia cắt đội hình đẩy lẻ 1-3-1 hoặc giao tranh khi chưa có đủ chiêu cuối mở combat.
+
+────────────────────────────────────── THẺ CHIẾN THUẬT: GEN.G (RED) ──────────────────────────────────────
+🏆 Trường phái: [EARLY SNOWBALL & DIVE]
+📊 Radar 5 trục: Early: 0.715 | Scaling: 0.787 | Combat: 0.7 | Pick: 0.907 | Obj: 0.675
+⭐ Chủ lực (Core Carry): Syndra
+⏱️ Điểm rơi sức mạnh: Đầu trận (Phút 1 đến Phút 20 - Trước mốc Baron xuất hiện)
+🐉 Mục tiêu số 1: Sâu Hư Không đợt 1 + Trụ Đầu (First Tower) trước phút 14
+✅ Điều kiện thắng: Tạo chênh lệch >= 2,000 vàng lúc 10 phút, băng trụ 2 cánh liên tục, ép đối thủ vỡ trận trước 25 phút.
+❌ Cần tránh: Bị đối thủ phòng ngự kéo dài trận đấu qua phút 30 khi chất tướng hết thời gian lăn cầu tuyết.
+Phiên có mốc lịch sử: bỏ dự báo từ model lưu sẵn vì chưa bảo đảm model được fit trước mốc này.
+Đã lưu phiên: reports\simple_scoring_bo5\game_1.json

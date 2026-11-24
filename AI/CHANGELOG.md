@@ -1,3 +1,125 @@
+## Thu gọn toàn bộ Hiểu lựa chọn — 2026-11-24 (NV-24)
+
+InspectorReactthêmcollapsedstate/nútThu gọn toàn bộ ởheader. Collapsedunmounttoànbộbody(tên/cảnhbáo/lýdo/thànhphần/bảngnguồn/footer),chỉheadernhỏcóMở rộng/Đóng;timelineygiảmkhi collapse. Khôiphụcbodynhưcũ,selectionkhôngđổi,click-only/deselecthànhvicũgiữ. CSSheaderbuttonflex vàaria-expanded/controls. BuildTS/VitePASS,Edge1workflowPASSbodyabsent/header<100px/timelinecloser/reopenbody>100px/close-deselect-reset-reload. reports/ui_inspector_collapse/{REPORT.md,browser.log}. ChỉUIpresentationNV24,khôngscience/API/score/schema/modelchange,khôngPythontestrerun/retrain/commit/push;serve8000CtrlF5.
+
+## Thu gọn toàn bộ Hiểu lựa chọn — 2026-11-24 (NV-24)
+
+InspectorReactthêmcollapsedstate/nútThu gọn toàn bộ ởheader. Collapsedunmounttoànbộbody(tên/cảnhbáo/lýdo/thànhphần/bảngnguồn/footer),chỉheadernhỏcóMở rộng/Đóng;timelineygiảmkhi collapse. Khôiphụcbodynhưcũ,selectionkhôngđổi,click-only/deselecthànhvicũgiữ. CSSheaderbuttonflex vàaria-expanded/controls. BuildTS/VitePASS,Edge1workflowPASSbodyabsent/header<100px/timelinecloser/reopenbody>100px/close-deselect-reset-reload. reports/ui_inspector_collapse/{REPORT.md,browser.log}. ChỉUIpresentationNV24,khôngscience/API/score/schema/modelchange,khôngPythontestrerun/retrain/commit/push;serve8000CtrlF5.
+
+## Hiểu lựa chọn ẩn mặc định và click-toggle — 2026-11-24 (NV-24)
+
+ReactAppselectednull/inspectorOpenfalsemặcđịnh vàsauaccept/đổiván. Bấmthẻgợiý/manualmởInspector,bấmlạithẻđangchọnbỏchọn/ẩn. Đónggiữselectionvàchophépmởlạiquanút;deselectkhôngcònnútmở. Lịchsửclickmở/bấmlạiẩn,khôngautopopupquachuyểnlượt/reload. Nofakeadviceformanualoutsidepool. ChỉUIstate/CSS,khôngscientificmethod/API/scoring/model/DBchange,nênkhôngtrain/Pythontestrerun. TS/VitebuildPASS,toànbộ7EdgeworkflowPASS(layoutmultiwidth/draft/Fearless/drag/role/countercase/toggle/reset). reports/ui_inspector_toggle/REPORT.md+browser.log+browserartifacts. Sổ30NV24bổsung,cáchdùngđồngbộ;serve8000CtrlF5khôngPhiênmới.Khôngcommit/push.
+
+## Sửa responsive hai khu chọn bị xuống — 2026-11-24 (NV-24)
+
+CSSbreakpointba cộthạ1200→900px,cộtco giãnđối xứng1/2.7/1,bỏminwidthnộidungcứng,margin0/alignstretchcả3khuđểcùnghàng/cùngchiềucao. Giữa vẫnrolevertical,setuptrên/inspectordưới. BuildTS/VitePASS,Edge1layouttestqua7width900/1024/1100/1199/1366/1553/1920pxvàmobile390nooverflow. reports/ui_sidebars_fit/{REPORT.md,browser.log,desktop.png,mobile.png}. ChỉNV24trìnhbày,khôngscientificmethod/API/score/DBchange,nênkhôngtrain/Pythontestrerun. Bundleđãserve8000,CtrlF5lấyCSSmới,khôngPhiênmới/commit/push.
+
+## Làm rõ hai khu nằm hai bên khung giữa — 2026-11-24 (NV-24)
+
+Userlàm rõ desktop:Gợiýcộttrái | haiđộihìnhgiữa | Chọntaycộtphải,cả3cùnghàng. CSSGrid>=1200pxđãđổigridareas,haiđộivẫnroledọc,căngiữa;setuptrên/inspectordưới. Mànnhỏresponsivegiữnguyên. Khônglogic/API/score/DB/modelchange;chỉtrìnhbàyNV24nênkhôngretrain/chạylạiPython. TS/VitebuildPASS,Edgecentered-boardtestPASS3cột/trái-giữa-phải/vertical/inspector/mobile390. reports/ui_flanking_choices/{REPORT.md,browser.log,desktop.png,mobile.png}đãcó;bundleđangserve8000,chỉtảilạitrang.Khôngcommit/push.Sổ30NV24bổsungmốclàm rõ.
+
+## Căn giữa lại bảng tướng theo bố cục cũ — 2026-11-24 (NV-24)
+
+Theo user chỉnh hướng: bỏ5pickcardsnằmngang mới thêm, giữhaiđộiBlue/Redởgiữa,maxwidth1000px,mỗiđội5rolehàngdọc/portrait47px. Setuptrênđầu/gợiýtrái-manualphải/inspectordưới giữnguyên;drag/auto-rolekhôngđổi. ChỉCSStrìnhbày,khôngảnhhưởngkiếnthứckhoahọc/algorithm/DB/model/API/nênkhôngretrainhoặcchạylạiPythontests. TS/VitebuildPASS,Edgecentered-boardtestPASScenter/vertical/parallelchoices/inspectorbelow/mobile390nooverflow. Reports/ui_centered_board/{REPORT.md,browser.log,desktop.png,mobile.png};sổ30/NV24bổsungmốcmới. Khôngcommit/push;bundleđãserve8000,khôngrestartPython.
+
+## UI gọn / kiểm kèo đã lộ / Renekton / First Selection — 2026-11-24 (MR-12 sửa, NV-24)
+
+Đã hoàn tất yêu cầu: thiết lập trên đầu, gợi ý trái/chọn tay phải, inspector dưới; bảng đội hình ngang gọn, native drag/drop đổi slot cùng đội (trống hoặc occupied), rejectcross-team/archive, menu dự phòng bàn phím/chạm. Manualpickkhôngdropdownrole: snapshotPro role_counts giảm dần, bỏ slotbận, preview+APIcommit cùngrule; unknown/noobservedfree báoerrorkhônginventrole. draft_safety.py vàAPI trảrole_preferences.
+
+Tái hiệnGalioTopvsAmbessaởturn19/pick9toàntrận,enemy4:gatecũchờ5nênlọt. lane_review assignedrole trực tiếp/n<5review cảkhiđịchchưa5;blindrolekhônggánn0. Contextual same-role hoặc allopenrolesexposed dùngWilsonlower95%trướcbasecurrent score (wishlist/supportedtier/pairguardgiữtrước). SameprefixoldGalio→newGnar,Renektonlêntop2;neworderGnar/Renekton/Camille/K'Sante/Galio.Rawscoreunchanged/GDkhôngfeature/Rankkhôngscore. Renekton2/2WR100%,GD15+787,Wilson34.2-100%;Gnar5/6,GD15+686,Wilson43.6-97.0%;CIchồnglấn,khôngclaimvượttrội. RawRenektoncompositionlift.718giải thíchvịtrícũ,khôngmechanicalsynergyproof.
+
+FirstSelectionUIđãuserconfigured,CLIgiờbắtbuộclistđủnchonhiềuván;bỏlegacyalternatingfallback. ChoallBlue/allRed5ván;khôngclaimluậtchínhthứcmọigiải. VERIFIED178tests/TSbuild/5EdgeworkflowPASS,realprefixautotopGnar,manualGalioMidbận→Top,dragoccupied/crossteam,reload/export/mobile0overflow. CLIallBlue5ván100actions/50unique/locks0-10-20-30-40(testoverride);allRed/allBluemanuallegalreplayPASS. Khôngfreshindependentquality/winupliftproof. reports/ui_lane_revision/{REPORT,checks,lane_audit,automatic_top_response,first_selection_checks,tests,browser,desktop,mobile,drag-and-auto-role,lane-audit,export} vàbo5_blue_first.Thêmfingerprintlane_review/manual_rolepolicy;phiêncũcóthểcầnPhiênmới.URL127.0.0.1:8000/processmanifestfoldernày.ProSHA20e3d973...khôngđổi;khôngtrain/Rankcollector/commit/push.Sổ30/MR12sửa/NV24,ADR043,docUI_COMPACT_VA_KIEM_KEO_DA_LO.
+
+## Giữ cặp bot / First Selection người dùng chọn — 2026-11-24 (MR-24/NV-23)
+
+Tái hiệnđúngcase10lượtđầu:BlueNautilus→Jayce,RedbanJhin/Kai’Sa→BlueYunara. pairn5/6/1đượckiểm, khôngnhậnyếu/mạnhcơchếtừmẫuít. pair_reservation.pyđếmbanđịchsaulượtcurrentđếntrướcpickmìnhtiếp, scanfulllegalbot/sup/n>=5/effectivelift>=1, ưu tiênsecurenowkhipartnercountdương<=banbudget. Khôngđổiscorecurrent,cóprioritytier/lýdo/count/CIriêng;giữwishlist/lớpđủmẫu/lọcrole vàchọntay. Guardbậtcho contextualpickAPI/CLI,bancontextualv2khôngđổi,khôngsearch/lookahead/modelmới/nerfRed. Thiếucăn cứcặpthìautocầnreviewhoặctestoverride,khônggiảsynergy.
+
+UIchọnBlue/Redfirstselectionmỗiván,bỏautoluânphiên,bắtbuộcchọntrướckhiSangván;giữmàuđội,cho lặpside.First_sideđãđiềukhiểnlịchban/pickđộc lậpmapcolor,CLIthêm--first-picks,báocáolịchtừngván/user_configured. CLIkhôngtruyềnvẫngiữlegacyalternatingdemochotáilậpcũ,khôngnhậnnólàluậtgiải;luậtphiendoUsercungcấp,khônggánnguồnFearless2025thànhxácnhậnluậtFirstSelectionmới.
+
+VERIFIED170tests(11mới),TS/Vitebuild,3Edgeworkflow/mobilePASS. SameprefixoldtopJayce→guardJhin,scoregốcchungkhôngđổi,mirroredRedfirstcùnggợiý;chạytiếp20lượthợplệNautilus–Jhin. CLI5vánuserfirstred,red,blue,blue,redđủ100actions/50unique/locks0-10-20-30-40,allowtestgiữnhãn. Đây làregression/legality,khôngindependentstrategyaccuracy/optimalpair/winupliftproof. Reports/pair_reservation_revisiongồmregression,casecontinued,bo5full,checks/logs/ảnh/export/process. SourceProSHA20e3d973...khôngđổi,khôngretrain/Rankcollector/commit/push. Sổ29/MR24/NV23,docsGIU_CAP_BOT_VA_FIRST_SELECTION+UI,AI/ADR042đồngbộ. Serverlocal8000đãnạpnewpolicy;fingerprintthêmpair_safetynênphiêncũcóthểcầnexport/Phiênmới.
+
+## Hai khu UI và contextual v2 — 2026-11-24 (MR-13 sửa / NV-22)
+
+User giao táchgợiý/chọntay thành2khu và cải thiệncontextual. UIkhôngcòntab: hai panelđồnghiện/nútconfirmriêng, inputmanualreset sauchuyểnlượt; gợiý/auto vẫncurrentpick/contextualhoặclegacyban. BanPlanner.pool_value v2=sum(nonnegative top3)/3 cốđịnh, slotthiếukhôngutility; khôngimpute0vàomeasurements. Sửa bất nhất mấtbackupmàtăngpoolởn<3; selfcost/accessfactor/weights/pickformula và luậtgiữnguyên. Khônglookahead/modelmới/casechampion.
+
+Paired80banstates thậtWLDS16.20,40val/40testserieschronological/freezehistorybeforeval/samepool. Oldremovalincreases10+21→0; top1đổi1/7,top5đổi3/8; Recall5vẫn.675/.525 ởcả2bản. Chưa chứngminh tăngaccuracy chiếnthuật/counter/winrate; dữliệuauditcũkhôngfreshfinaltest. Source/report/queries trongreports/contextual_ui_revision. MR-13 làpolicytựthiếtkếđãcóđượcsửa, khôngnhậnfixedcapacitylàbàiChương6.
+
+APIchốtngàyUTCkhias_oftrống, trảsnapshot_id+configuration(Ban/Pick/version); hashProDB/scope/roster/teams/ngưỡng/version. Session/exportràngbuộcmã, mismatched409; ProDBđổitrongcacheđòirestart, khôngtrộnđiểmcũvớinguồnmới. KhônglưuDB/codehistoricalbackup, khôngclaimtáilậpenginecũchỉtừhash. Browserxungđộtvẫnexportinputs/vàtạophiênmớiđược.159unittestsPASS(5mới),buildPASS,2EdgeworkflowsPASS/manual/flex/undo/Fearless/reload/export/archive/mobile/conflict. ProDBhashkhôngđổi/khôngtrain/commit/push. Sổ28,NV22,ADR041,docsBAN/UIđồngbộ. APIđãnạplạifinal, URL127.0.0.1:8000; processmanifest hiện hànhởreports/contextual_ui_revision/process.json. Rankcollectorkhôngđổi.
+
+## UI React + TypeScript local đã chạy — 2026-11-24 (NV-21)
+
+Theo user đã chốt TypeScript và giao triển khai, thêm `web/` (React/TS/Vite, CSS thuần) và `src/api/app.py` (FastAPI adapter). Dùng lại DraftState/advisor/BanPlanner; default pick `current`, ban contextual/legacy, không thêm thuật toán/model/lookahead. UI Pro draft có chọn tay/top5, 20 lượt Ban/Pick đánh số, flex swap/undo, xem lịch sử, auto một ván và test override rõ, Fearless tối đa5ván, browser localStorage input và xuất JSON. Rank chỉ ở bảng nguồn riêng với n/WR/CI/GD-XP-CS10/15, missing giữ thiếu. Candidate n1 hỗ trợ demo, evidence n5, không gọi điểm là xác suất/counter thật.
+
+Build/typecheck PASS;154Python testsPASS (8API mới);browserEdge thậtPASS một ván→ván2khóa10, đổiđường/undo/archive/export/reload/mobile390px, khôngpageerror. APItest riêng validate đủ5ván chọn tay/khóa, không claim browserauto5ván. CanonicalSQLiteSHA20e3d973... không đổi, không retrain/commit/push. `start_ui.ps1` build và serve local127.0.0.1:8000; hướng dẫn `docs/UI_REACT_TYPESCRIPT.md`, minh chứng `reports/ui_demo/{REPORT.md,checks.json,tests.log,browser.log,desktop.png,mobile.png,export.json}`. Sổ kiến thức mục27/NV-21: UI/API là kỹ thuật ngoài môn, engine MH/MR cũ giữ mapping. Rank recommender riêng/đồng bộ nhiều máy/globalBO5 chưa triển khai, không là điều kiện UI này. Cache advisor cần restart khi đổi nguồn; DB/key không đưa ra static frontend.
+
+## So sánh điểm đơn giản, không đổi default và BO5 minh họa — 2026-11-24
+
+ThêmAdvisorPolicy.scoring/current-simple/effectiveweights vàDraftAdvisor._simple_rows; simple3tínhiệu frequency/cosine/same-roleWR, bỏbonusnângcaokhỏiđiểmpick, fallbackhistoricalWRghiSource,khôngfakecosine0. RefactorattachExplanationdùngchung; CLI2simulatorsthêm--pick-scoring mặcđịnhcurrent, khôngthêmbanstrategy. JSONsavechoicegiữmatchup_scope/supportedmass/sourcecomparisons; BO5reportthêmcăn cứ50pickvàphânbiệtsimplekhôngdùngassociationbonus.
+
+compare_pick_scoring.py reuseexistingreplay/splits/metrics/CI/ablation;200validation/320testsamefrozenrolepool,1560recordshashpool. TestcurrentRecall5.49375/MRR.3026,Simple.425/.2334;deltaR5-.06875CI[-.11034,-.03235].Giữcurrent, khôngtune. Ablation8thànhphầnsensitivitycócounts/netHit,khôngcausalnecessity. BO5simpleT1–Gen.G5games100actions50uniquepicks,44fallbackWR/5sparse,testoverridegiữnhãn;khôngfakegameoutcome.146tests+integrationPASS,canonicalDBhashunchanged. DocTINH_GIAN_DIEM_RECOMMENDER/sổ26MR-23NV-20,AI/README/moduleindex/địnhhướngcậpnhật;khôngMLtrain/commit/push.
+
+## Phạm vi môn học vừa sức, target mặc định null — 2026-11-24
+
+Ràsoátmodule/đềcươngvàmappingChương1–6, thêm docs/PHAM_VI_DO_AN_VUA_SUC, điều chỉnhAIrules/knowledge vàconstitution1.2.0: ưu tiên coredata/SQL-Pandas/EDA/MLhiệncó/CB, demo legacy-contextual/Fearless; nghiêncứu/productionWeb/U.GGscale khôngbắtbuộc. Khôngxóaproto/côngthứcđangchạy, khôngđổimodel/score hoặcgiảMRthànhMH. NV-19sổ25, khôngthêmMRlýthuyết.
+
+aggregate/export_tables/CLI defaulttargetNone thay2.000; summaryv3, reference_statusnot_loaded/parityFalse, progressnullmục tiêu, optionalmanualtarget giữreprocũ.139testsfull+70ranksubsetPASS;integration418games/4.180rows/408qualification/2.364bulkmemberships/DB-FK/mirror/privacy/dedup/ProhashPASS. Proexportn/mean/CIkhôngđổi. Oldwatchđãđóngphiên486attempttheotimelimittrướcreload;khôngsửahttprequestcounter. Khởiwatchmới08:05:27UTC,PID29828/worker7992,argsbỏtarget2.000,logno_quota/manifest. Cácmốc2.000trongdoccũgiữlịchsửvàcóoverridehiệnhành. Khôngcommit/push/retrain.
+
+## Bằng chứng Pro/Rank, bảng giải thích và thử contextual — 2026-11-24
+
+Thêm matchup_evidence.py và evaluate_contextual_evidence.py; DraftAdvisor chỉdecorategợiý sauxếpđiểm, simulatorinbảngởgợiý/why. RawSQL Pro/Rank khôngđổi; nguồnPro cùnggame/role/opposingside, sốâm/missing, catalogidentity; RankreadonlyWALtransaction, availabilitytínhcảingestion tránhbiếttrướctimeline, publickhôngPUUID. ExportPro3.000games/30.000rows/3.098pooledpairs/1.170n5, 24.370/24.380measurements tại10/15 cho từngmetric. Wilson/tCI dùnglại; khôngđưa tài nguyêntrậnqueryvàofeaturedraft.
+
+Freeze261Rank07:36:57UTC24/11, experimentcontrolPro/Rankmatchup/hybridfixed50-50same-role, diagnostic30validation/30test ×3. Cả3Recall5=.6/.533333,MRR5=.313889/.315;hybridtop5khôngđổi.0RankknownởcutoffProquákhứ, dữliệuProđãdùngaudit:thăm dòhànhvi,khôngqualityproof. Prospective0series/readyFalse/resultNull,5+5series protocolvà--freezerepro; khôngtạofinalmetricsgiả/đổiweightsmain.138tests(12mới)+integration6stored-diff/mirror/roles/privacy/console/hashPASS. DocPRO_RANK_MATCHUP_EVIDENCE, sổ24/MR-22/NV-18, moduleindex/AI cậpnhật. KhôngMLtrain/commit/push, khôngservicecollectorchange.
+
+## U.GG-style pooled tables và hiệu quả thu nhiều server — 2026-11-24
+
+Nghiệmthu cuối:150games/1.500rows/725người,1.248scoped/1.170pooledpairs,14scopedn5/0pooledđạt2.000;69testsPASS + DB/FK/mirrors/dedup/privacy/sourcehash,140qualification và389listmembership kiểmraw. Phiênbulk101HTTPattempt xửlý40jobs (39accepted/1rejected),1freshindividualsnapshot, khônglàbenchmarkđối chứngspeed. WatchthậtPID23100 khởichạy07:17:06UTC/14:17VN24/11, manifestcollector_process.json/logs riêng; khôngcàiservice. Summarylive khácchecksnghiệmthu; sốliệusaucóthểtăng.
+
+rank_matchup_tables.aggregate/export_tables thêm pooled scope ALL_OBSERVED nhưng giữqueue/tier/role, provenance patch/platform, n/CI tính từrawdedup, patchGD15direction mô tả, progress2.000/kèo vàreportv2. Ngưỡng2.000chỉmục tiêu; khôngtuyênbốthuậttoánU.GG/Worldcoverage/counterbấtbiến. update_rank_evidence thêm CLI target, next_job round-robinmetadata; bootstrap từ currentLeague-v4lists archive/typedqueue-tiercheck, batchupsert membershipsnapshot đúngPUUID, refresh15min/TTL giữtime, individualfallback nếu cần. KhôngschemaSQLite/Proscore/MLchange. 69testsPASS (6mới), livecảKR/EUW/NA và9listarchives đãcó; phiên153attempt thêm15games, phiên80attempt thêm8games; phiênbulk tiếp theo xem sessions/checks cuối. Doc POOLED_MATCHUPS_UGG_STYLE, sổMR-21/NV-17 và AI cậpnhật. Khôngcommit/push. Watchprocess/log ghi riêng khi khởi chạy; khôngservice/autostart và khôngđánhdấuthoàn tấtmục tiêu dữliệu.
+
+## Rank evidence lake và bảngwinrate/GD15 tăngdần — 2026-11-24
+
+Thêm rank_lake.py/update_rank_evidence.py/rank_matchup_tables.py,14test mới; typedclientdeadline vàatomicJSON, gitignoreDB-WAL/lock. Newranked_evidence.db schema metadata/seeds/jobs/snapshots/observations/sessions, policyfingerprint, canonicalguard, SQLiteWAL/filelock/FK/PK/10rowtransaction. Import10oldacceptedmộtlần, bootstrapC/GM/M,participantBFS,100recentIDs/page,cursor/polltime vàjobs persist, checkpointfieldqualificationtrướctimeline, TTL15mingiữtimestamp, exactall10Master+/24h/15min. Cap600HTTPattempt/15minmỗiphiên, watchlặpphiênkhôngtrầntổngkhôngcài service;auth/errorstopcheckpoint. Raw/SQLprivate, publickhôngPUUID.
+
+Live600requestphiên063723199769Z ->87trận đủobs và1qualificationđangchờtimeline. Tiếpphiên065152611238Z 2requests/0snapshotmới ->88completegames(78mới),880rows382người;714pairs/8n5,11.012seeds/5pending/7rejected.63unit tests + integrationDB/FK/rebuildallnewqualifications/mirror/privacy/idempotence/canonicalhashPASS. all_matchups giữ sparse;3bảng xếptáchwinratecao/thấp/GD15 vớiWilson+meanCIStudenttNIST vàlimits, khônggọiU.GGinternalreplica. Khôngtrain/đổiProscore/canonicalDB. Docs vàsổmục22/MR-20/NV-16đãghi nguồn/giớihạn/output/trạngthái;2phiênđãkếtthúc, khôngđểserviceẩn.
+
+## Rank campaigns/độphủ và temporalreadiness — 2026-11-24
+
+Thêm collect_rank_batches.py (seen_matches/campaign/main), rank_coverage.py (load_cohort/observations/coverage_tables/chronological_plan/build/main),9testmới. Collector thêmoffset/exclusion/private seedregistry; RiotClientbudgetđếmHTTPattemptgồmretry; dừng đúngbudget/terminal, khôngthu vôhạn. Revalidateaccepted/dedup sớmnhất, identitychampID, distinctPUUIDtrongmemory, reportkhôngPUUID. Rejected chỉđịnhuniverse tênkhôngtăngn; scopegiữriêng. HeaderchoemptyCSV,JSONscalar,targetscope mới nhất và time ties cùngsplit được kiểm.
+
+Campaign20261124T060507936864Z,3run mới060507936998/060626740398/060747435457Z:15seed/15IDs mới,179/200attempt,8accepted/7quácũ/0missing. Tổng10accepted/100rows/72người.115champion-role/2156directedpair,0supportn5/3người;46championrole/2058pairzeroevidence. Plan6/2/2nhưng0historyavailable trướcval; available_at=maxsnapshot/detailfetch, nếuthiếuprovdùngfinished_at. Khôngbenchmarkgiả,recommenderRank/UIđểconditionalplanned.49tests + integration DB/raw/source/count/privacy/budgetPASS. Docs vàsổmục21/MR-19/NV-15đồngbộ; khôngtrain/đổiPro/ML/DB.
+
+## Thu thập rank snapshot từng người — 2026-11-24
+
+Thêm collect_rank_snapshots.py (parse_snapshot/classify_match/collect_run/main),11test mới; typed status_code cho RiotError và clientthrows, configv2snapshot24h/15min. 10Solo/Duoentries phảiđúngqueue/server/identity; currenttier/chụpnốitiếp, khônghistorical. Snapshotcache riêngrun; private rawresponse + normalizedrecords, publicreport khôngPUUID/names. Nhận/loại/thiếu córeason; APIauth/rate/networkterminal dừngpartialreport,404participantthiếu; không điềntier từseed/Flex/noentry.
+
+Live run20261124T055630861038Z:5seed/5trận,65clientcall,49unique người/50lượt do1lặp.5all10Master+ hiện tại,2nhận gầntrận/3loạivìquá24h/0thiếu;20observations đủ6phépđo.40tests + đối chiếureal49payloads/5classifications/signedmirror/privacy/DBrawPASS; historical gate nhận0snapshots. Khôngsửaolddata/model/runtimedraft hoặctrain. Artifacts reports/rank_snapshot_collection/{runid}/ vàlatest.json; docs/COLLECTOR_RANK_SNAPSHOTS, sổmục20/MR-18/NV-14, AI/indexdocsđồngbộ. Benchmark vàruntimeRankcònlộtrình.
+
+## Thiết kế hai chế độ và admission Rank cao — 2026-11-24
+
+Thêm config draft_modes.json và rank_eligibility.py (utc/read_policy/participant_evidence/assess_match/audit/main),10tests mới. Master+ ngưỡng làm việc chỉnh được, all10 historical interval đúngqueue/server/source/time; không suy current snapshot/seed thành historical rank. Unknown không là thấp; conflict loại, evidence chỉ kiểm hợp đồng chưa xác thực độc lập. Rank mode mới chỉ thiết kế/cổng dữ liệu, chưa chạy recommender.
+
+Evaluator mặc định dùng admission đúng freeze, chỉ eligible IDs; thiếu chứng cứ dừng exit2 trước replay/ghiđè metric; cờ --allow-seed-only-research công khai phép thử cũ.92raw hiện có đều seed-only/0historical-qualified;29testsPASS, DB/raw/metric JSON cũ không đổi. Thêm cohort note cho report mốc18 và cập nhật lệnh tái lập có output riêng. Reports/rank_cohort_audit và docs/HAI_CHE_DO_VA_TIEU_CHUAN_RANK_CAO, sổ mục19/MR-17/NV-13, AI/index docs đồng bộ. Không retrain/đổi runtime advisor/ban/BO5 hoặc gọi411API lấy currentrank để hồi tố.
+
+## Chuẩn hóa và thử nghiệm Rank transfer — 2026-11-24
+
+Thêm rank_data_contract.py (official catalog ID/name, unknown/collision reject), evaluate_rank_transfer.py (temporal series split, frozen Pro/Rank evidence,3mode chỉ matchup, bootstrap/replay/contract audit),9test mới, mở collector date range/per-seed/interval1.3s/ended_at/catalog/schema v2. Không gọi evaluator từ simulator; hybrid là nghiên cứu, không runtime.
+
+Tải96ID từ20seed ->92trận duy nhất,83đúng16.20;411participant khác nhau,18tên nội bộ chuẩn hóa, raw private gitignored. Audit30.000Pro CS không mismatch; diff10/15 khi có phép đo không mismatch. History/val/test27/9/10series, freeze trước26/10/2026 18:03:09UTC, Rank dùng ended_at và đúngpatch/KR. Validation200query R5=.515 cả3; test320 R5=.49375/MRR5=.302604 cả3,13query có hỗ trợ Rank n5. Test orderedtop5 khác control ở3Rank/1Hybrid query nhưng rank pick thật không đổi. CI[0,0] là suy biến mẫu, không equivalence.19unit tests + integration checks PASS; DB không đổi.
+
+Giữ toàn bộ legacy/contextual/model/DB; không train hoặc tune để ép cải thiện. Dữ liệu Pro đã dùng trước nên chỉ thăm dò, cần tập mới độc lập; chưa tích hợp. Outputs reports/rank_pro_study_data và reports/rank_transfer_evaluation; protocol docs/RANK_TRANSFER_PROTOCOL.md, sổ mục18/MR-16/NV-12, module index và AI docs đồng bộ. Mốc smoke5trận/report v1 giữ như lịch sử.
+
+## Đối đầu Rank riêng với Pro — 2026-11-24
+
+Thêm `ranked_matchups.py` và10unit tests: client Riot retry hữu hạn/không in khóa; cache/provenance; reject role mơ hồ, ghép team/participant ID; signed gold/XP/CS10/15, missing không điền0. before mặc định không sau mốc, nearest±1000ms chỉ mô tả, ghi timestamp/offset thật; không dùng phút9 thay10. Pro từ shared cleaning, phép đo complete, nhóm riêng platform/queue/patch/role/tướng/đối thủ; ghép cùngpatch không pooling. Output5CSV/REPORT/summary/checks/tests.log ở `reports/rank_pro_matchups/`.
+
+Đã lấy thật5trận KR16.23 ngày22/11/2026 UTC từ1seed,50dòng nearest đủ6phép đo; before thiếu đúng do frame sau mốc128–254ms. Worlds206trận/2060dòng trên4patch,1940dòng đủ phép đo; không patch chung nên ghép0dòng.10tests và integration signed mirror/cutoff/coverage/timestamp/DB SHA256 PASS;110link sổ PASS. Không sửa DB/model/điểm draft/train. Đồng bộ AI docs, danh mục module, hướng dẫn và sổ MR-15/NV-11; còn thiếu dữ liệu/benchmark chuyển miền, không nhận smoke là minh chứng counter/tăng thắng.
+
+## Rà soát50pick contextual, chưa sửa điểm chọn — 2026-11-24
+
+VERIFIED AUDIT: user đã đồng ý bước1 trước, nên chỉ tái dựng50state của5draftcontextual và so248alternativecùngrole hợp lệ; khôngthêmsearch/flexhoặcsửapolicy. audit_draft_choices.py bổsungcompositionevidence/playerhistory/slot/sourcehash/scoregap vàdiagnosticablation; review_contextual_picks.py kiểmtra state/pool/score vàxuấtREVIEW/summary. 50score/top1táilậpkhớpphiênđãlưu, đây khônglàqualitylabel. 38/50pickcóđịchlộnhưngthiếumẫuđốidầu;5blind;7cóítmẫuđủngưỡng.3candidateítmẫuván5:Poppy2,Aurora2,Nasus1.100cặpphốihợp:8đủmẫu,59ítmẫu,32chưathấy,1thiếuanchor. Ablationbỏmetađổitop1ở13lượt,composition14,content1,mastery3,matchup3; khôngsuytướngthaythếtốthơnhoặcđếmsốpicksaibằngtổngnày.
+
+Artifacts reports/contextual_pick_audit.json/md, reports/contextual_pick_review/REVIEW.md vàsummary.json. Sourcehash/state/248legalalternatives/savedscorechecksPASS, khôngthayđổiquyếtđịnhđãlưu/model/DB/train. PhươngphápkiểmđộnhạyMRmớighiởsổmục16; nềnChương1/5x, phầnablationngoàimônvớipolicychẩnđoántựthiếtkế. Phạmvihiệnhànhvẫnlegacy/contextual; bướcflex/đa-serieschưalàmtronglượtnày.
+
 ## Hiện hành: chỉ legacy và contextual — 2026-11-24
 
 Theo yêu cầu người dùng, đã BỎ lookahead khỏi mã ban và CLI; không chỉ ẩn menu. BanPlanner chỉ còn one-stepcontextual, ContextualBanPolicy(top3pool/owncost). Gỡ response_distribution/evaluate_root/rollout/leaf/predictor dependency và --ban-response-model; --ban-strategy chỉ legacy|contextual, legacygiữmặcđịnh. Contextual dùng pool_impact/contextual_trace, không xuất search_trace/branches/sensitivity. OpponentModelcũ giữ độc lập, không được contextual dùng đểban; không mởrộngchứcnăngkhác.

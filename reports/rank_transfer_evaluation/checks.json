@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "unit_tests_passed": 19,
+  "seed_players": 20,
+  "unique_cached_rank_games": 92,
+  "eligible_rank_games": 83,
+  "distinct_cached_rank_participants": 411,
+  "validation_queries_per_mode": 200,
+  "test_queries_per_mode": 320,
+  "rank_signed_mirror_missing_timestamp_checks": "PASS",
+  "historical_end_time_exact_patch_platform_checks": "PASS",
+  "series_disjoint_and_paired_queries_checks": "PASS",
+  "same_legal_pool_checks": "PASS_asserted_during_replay",
+  "canonical_db_unchanged_since_initial_smoke": true,
+  "db_sha256": "20e3d9739b271283f35a1ba33f345e3593bafe4e31212906d35939d91b2f740c",
+  "pro_cs_and_signed_diff_checks": "PASS",
+  "integration_enabled": false,
+  "source_sha256": {
+    "ranked_matchups.py": "0e9a0ece85e1654a69c7ef2076699c33fdcdfe62643a0aed8f7098c650c8d70f",
+    "rank_data_contract.py": "b20d863d844f3cf3c41d9666a948c80985afea6a3eb3bce27fc9432ddfa4d656",
+    "evaluate_rank_transfer.py": "5a0bd288319c2cc38551e1d852bdf21684680bd88bfba6e9463b2fc6505ba47e"
+  }
+}

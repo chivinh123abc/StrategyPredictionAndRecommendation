@@ -38,8 +38,10 @@ class AdvisorPolicy:
                                                  'synergy':.25,'composition':1.0,'mastery':.5,'content':.1})
     min_games: int = 5
     candidate_min_games: int | None = None
+    scoring: str = 'current'
 
     def __post_init__(self):
+        if self.scoring not in {'current','simple'}:raise ValueError('Unknown pick scoring formula')
         if self.candidate_min_games is None:self.candidate_min_games=self.min_games
         required={'meta','draft_order','historical','matchup','synergy','composition','mastery','content'}
         if set(self.weights)!=required or not all(np.isfinite(v) and v>=0 for v in self.weights.values()):
@@ -47,9 +49,14 @@ class AdvisorPolicy:
         if self.weights['meta']+self.weights['historical']<=0 or self.min_games<1 or self.candidate_min_games<1:
             raise ValueError('A supported historical objective is required')
 
+    @property
+    def effective_weights(self):
+        return {'pick_frequency':1.,'content':1.,'matchup':1.} if self.scoring=='simple' else self.weights
+
 
 class DraftAdvisor:
-    def __init__(self,db_path=None,policy=None,historical=None,content=None,meta_policy=None):
+    def __init__(self,db_path=None,policy=None,historical=None,content=None,meta_policy=None,
+                 explain_matchups=True,matchup_explanations=None):
         self.policy=policy or AdvisorPolicy()
         kwargs={} if db_path is None else {'db_path':db_path}
         self.history=historical or HistoricalRecommender(**kwargs,min_games=self.policy.candidate_min_games)
@@ -57,6 +64,8 @@ class DraftAdvisor:
         self._content_cache={}
         self.meta_policy=meta_policy or MetaPolicy()
         self._contexts={}
+        self.explain_matchups=explain_matchups
+        self.matchup_explanations=matchup_explanations
 
     def context(self,region):
         if region not in self._contexts:
@@ -133,6 +142,9 @@ class DraftAdvisor:
         all_role_masses=self.infer_enemy_roles(enemies,snapshot) if enemies else {}
         role_masses=all_role_masses.get(role,{})
         cosine,content_source=self.content_scores(player_name,role,region,seeds)
+        if self.policy.scoring=='simple':
+            selected=self._simple_rows(rows,role,enemies,snapshot,role_masses,cosine,content_source,matchups,draft_slot)
+            return self._attach_explanations(selected[:top_k],role,all_role_masses,snapshot,enemies)
         active={'meta','historical'}
         if draft_slot:active.add('draft_order')
         if snapshot.player_totals.get((player_name,role),0)>0:active.add('mastery')
@@ -207,7 +219,64 @@ class DraftAdvisor:
                        matchup=None,meta_scope=snapshot.metadata(),draft_slot=draft_slot,
                        objective='recent_patch_presence_and_observed_draft_order_with_context',
                        policy={'weights':self.policy.weights,'min_games':self.policy.min_games,'candidate_min_games':self.policy.candidate_min_games})
-        return sorted(rows,key=lambda r:(r['evidence_status']=='sparse_candidate',-r['score'],-r['games'],r['champion']))[:top_k]
+        selected=sorted(rows,key=lambda r:(r['evidence_status']=='sparse_candidate',-r['score'],-r['games'],r['champion']))[:top_k]
+        return self._attach_explanations(selected,role,all_role_masses,snapshot,enemies)
+
+    def _attach_explanations(self,selected,role,all_role_masses,snapshot,enemies):
+        if getattr(self,'explain_matchups',True) and enemies:
+            from matchup_evidence import MatchupExplanations
+            if getattr(self,'matchup_explanations',None) is None:
+                self.matchup_explanations=MatchupExplanations()
+            for row in selected:
+                row['matchup_source_comparison']=self.matchup_explanations.explain(
+                    role,row['champion'],all_role_masses,snapshot,self.policy.min_games)
+        return selected
+
+    def _simple_rows(self,rows,role,enemies,snapshot,role_masses,cosine,content_source,matchups,draft_slot):
+        """Arithmetic mean of available signals; no synergy lift, odds or shrinkage."""
+        maximum=max((n for (r,c),n in snapshot.role_counts.items() if r==role),default=1)
+        for row in rows:
+            row.pop('ranking_components',None)
+            row['synergies']=[]
+            champion=row['champion'];frequency=snapshot.role_counts.get((role,champion),0)/maximum
+            components={'pick_frequency':{'value':float(frequency),'weight':1.,'source':'role_pick_count_divided_by_max_role_count'}}
+            if champion in cosine:
+                components['content']={'value':float(cosine[champion]),'weight':1.,'source':content_source}
+            matchup=[];supported=[]
+            for opponent,probability in role_masses.items():
+                wins,n=matchups.get((role,champion,opponent),(0,0))
+                item={**evidence(wins,n),'opponent':opponent,'enemy_role':role,'role_probability':float(probability),
+                    'status':'observed_context' if n>=self.policy.min_games else 'insufficient_context'}
+                matchup.append(item)
+                if n>=self.policy.min_games:supported.append(item)
+            mass=sum(e['role_probability'] for e in supported)
+            if enemies:
+                # Unknown matchup uses this champion's recorded overall WR, explicitly labelled.
+                value=sum(e['role_probability']*e['winrate'] for e in supported)/mass if mass else row['historical']['winrate']
+                components['matchup']={'value':float(value),'weight':1.,
+                    'source':'same_role_observed_team_winrate' if mass else 'historical_role_winrate_fallback'}
+            score=float(np.mean([v['value'] for v in components.values()]))
+            details='; '.join(f"{key}={value['value']:.3f}" for key,value in components.items())
+            reasons=[f"Lịch sử {role}: {row['games']} trận; tần suất tương đối {frequency:.3f}",
+                f"Điểm đơn giản = trung bình {len(components)} tín hiệu: {details}; không phải xác suất thắng",
+                f"Cosine từ {content_source}" if champion in cosine else 'Thiếu hồ sơ cosine: bỏ thành phần này, không bịa similarity0',
+                ('Đối đầu cùng vị trí: '+', '.join(f"{e['opponent']} n={e['games']}, p(role)={e['role_probability']:.2f}" for e in matchup)) if matchup else 'Chưa xác định đối thủ cùng vị trí']
+            if enemies and not mass:reasons.append('Thiếu mẫu đối đầu: dùng WR lịch sử của tướng/role làm fallback, không xác nhận counter')
+            reasons.append('Không cộng synergy/lift/odds, mastery, presence decay hoặc draft-order; tương tác khác vị trí chưa được chấm')
+            row.update(score=score,ranking_score=round(score*100,2),score_kind='simple_descriptive_priority_points',
+                score_components=components,score_formula='arithmetic_mean_of_available_frequency_cosine_matchup',
+                reasons=reasons,lane=DISPLAY_ROLES[role],cosine_similarity=cosine.get(champion),
+                matchup_candidates=matchup,enemy_context_evidence=matchup,enemy_context_coverage=float(mass/max(1,len(enemies))),
+                matchup_scope='same_role_only',same_role_supported_mass=float(mass),
+                composition_evidence=[],composition_lift=1.,base_priority=score,
+                mechanical_counter_status='not_evaluated',selection_basis='statistical_priority_not_validated_counter',
+                review_required=bool(enemies and not mass),
+                evidence_status='sparse_candidate' if row['games']<self.policy.min_games else 'observed_candidate',
+                meta_scope=snapshot.metadata(),draft_slot=draft_slot,
+                objective='simple_history_content_same_role_matchup',
+                policy={'scoring':'simple','weights':self.policy.effective_weights,'min_games':self.policy.min_games,
+                    'candidate_min_games':self.policy.candidate_min_games})
+        return sorted(rows,key=lambda r:(r['evidence_status']=='sparse_candidate',-r['score'],-r['games'],r['champion']))
 
     def recommend_bans(self,enemy_roster,enemy_picks,own_picks,banned=None,region='ALL',
                        top_k=5,protected=None,target_role=None,enemy_next_slot=None):

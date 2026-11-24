@@ -1,0 +1,73 @@
+{
+  "series_ids": {
+    "history": [
+      "WLDS:LOLTMNT02_479621",
+      "WLDS:LOLTMNT02_478715",
+      "WLDS:LOLTMNT02_479982",
+      "WLDS:LOLTMNT02_480078",
+      "WLDS:LOLTMNT02_481268",
+      "WLDS:LOLTMNT02_480507",
+      "WLDS:LOLTMNT02_482269",
+      "WLDS:LOLTMNT02_483314",
+      "WLDS:LOLTMNT02_483342",
+      "WLDS:LOLTMNT02_482292",
+      "WLDS:LOLTMNT02_482304",
+      "WLDS:LOLTMNT02_482313",
+      "WLDS:LOLTMNT02_482325",
+      "WLDS:LOLTMNT02_482335",
+      "WLDS:LOLTMNT02_482539",
+      "WLDS:LOLTMNT02_482559",
+      "WLDS:LOLTMNT02_482570",
+      "WLDS:LOLTMNT02_483571",
+      "WLDS:LOLTMNT02_482587",
+      "WLDS:LOLTMNT02_482599",
+      "WLDS:LOLTMNT02_482606",
+      "WLDS:LOLTMNT02_482620",
+      "WLDS:LOLTMNT02_483687",
+      "WLDS:LOLTMNT02_482761",
+      "WLDS:LOLTMNT02_483708",
+      "WLDS:LOLTMNT02_482793",
+      "WLDS:LOLTMNT02_483824"
+    ],
+    "validation": [
+      "WLDS:LOLTMNT02_483840",
+      "WLDS:LOLTMNT02_483861",
+      "WLDS:LOLTMNT02_482911",
+      "WLDS:LOLTMNT02_486159",
+      "WLDS:LOLTMNT02_486183",
+      "WLDS:LOLTMNT02_486299",
+      "WLDS:LOLTMNT02_486325",
+      "WLDS:LOLTMNT02_485366",
+      "WLDS:LOLTMNT02_486479"
+    ],
+    "test": [
+      "WLDS:LOLTMNT02_486541",
+      "WLDS:LOLTMNT02_485482",
+      "WLDS:LOLTMNT02_486564",
+      "WLDS:LOLTMNT02_485703",
+      "WLDS:LOLTMNT02_488030",
+      "WLDS:LOLTMNT02_487095",
+      "WLDS:LOLTMNT02_488135",
+      "WLDS:LOLTMNT02_487213",
+      "WLDS:LOLTMNT02_488293",
+      "WLDS:LOLTMNT02_487405"
+    ]
+  },
+  "cutoff": "2026-10-26T18:03:08.999999999+00:00",
+  "states_manifest": {
+    "region": "WLDS",
+    "games": 206,
+    "series": 93,
+    "states": 4120,
+    "rejected_games": [],
+    "sha256": "43e5f475e6706631859f649d784c398903013fb2feb39bd8815011d9cdd50b65",
+    "series_policy": "same league/year/split/unordered team pair, game1 then consecutive game numbers within24h; reject bad series",
+    "limitations": [
+      "Series IDs are reconstructed, not verified official event IDs.",
+      "Observed roles/outcomes/future picks are excluded from features.",
+      "This builder assumes hard Fearless for the requested event; validate event rules before other regions.",
+      "Unknown prefixes, skipped bans and invalid Fearless series are excluded."
+    ]
+  },
+  "policy": "chronological series 60/20/20; frozen history at validation start; no tuning"
+}

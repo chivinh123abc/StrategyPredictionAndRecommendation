@@ -1,0 +1,17 @@
+﻿partition,component,active_queries,top1_changes,recall5_hit_changes,net_hit5_gain_current
+validation,meta,200,91,31,5
+validation,draft_order,200,21,6,0
+validation,historical,200,14,4,0
+validation,matchup,180,8,2,0
+validation,synergy,160,6,1,-1
+validation,composition,156,39,20,8
+validation,mastery,200,64,10,6
+validation,content,200,10,4,0
+test,meta,319,137,54,8
+test,draft_order,319,27,7,3
+test,historical,319,39,8,-2
+test,matchup,287,17,3,1
+test,synergy,255,7,0,0
+test,composition,254,78,22,12
+test,mastery,319,96,27,3
+test,content,319,18,6,-2

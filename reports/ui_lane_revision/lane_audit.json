@@ -1,0 +1,424 @@
+{
+  "protocol": "same_prefix_late_lane_review_regression",
+  "source": "reports/pair_reservation_revision/same_prefix_completed.json",
+  "scope": {
+    "region": "WLDS",
+    "dataset_patch": "16.20",
+    "data_through": "2026-11-14T23:18:11+00:00",
+    "requested_as_of": "2026-11-24T23:59:59.999999999+00:00",
+    "staleness_days": 10,
+    "history_games": 110,
+    "patch_games": 98,
+    "lookback_days": 60,
+    "half_life_days": 21.0,
+    "claim": "historical_snapshot_not_live_meta"
+  },
+  "configuration": {
+    "pick_scoring": "current",
+    "ban_strategy": "contextual",
+    "contextual_version": "fixed_capacity_v2",
+    "snapshot_id": "fa8f6935c4d0d98efe9aa3bacdd7b9022a61b7e66ada546456a8e66f00528c49",
+    "pair_safety": "bot_reservation_v1",
+    "lane_review_policy": "assigned_lane_review_v2",
+    "manual_role_policy": "observed_free_role_v1"
+  },
+  "turn": 19,
+  "pick_number_overall": 9,
+  "enemy_picks_revealed": 4,
+  "opponent_top": "Ambessa",
+  "baseline_top5": [
+    "Galio",
+    "Camille",
+    "K'Sante",
+    "Gnar",
+    "Renekton"
+  ],
+  "new_top5": [
+    "Gnar",
+    "Renekton",
+    "Camille",
+    "K'Sante",
+    "Galio"
+  ],
+  "common_candidate_raw_scores_unchanged": true,
+  "comparisons": [
+    {
+      "champion": "Galio",
+      "original_score": 27.24,
+      "lane_review": {
+        "wins": 0,
+        "games": 0,
+        "winrate": null,
+        "ci95_wilson": [
+          null,
+          null
+        ],
+        "statistic_kind": "historical_team_result",
+        "causal_uplift": null,
+        "enemy_role": "top",
+        "opponent": "Ambessa",
+        "interpretation": "observed_whole_game_result_not_mechanical_counter",
+        "role": "top",
+        "requires_review": true,
+        "status": "insufficient_lane",
+        "ranking_confidence_bound": null,
+        "ranking_basis": "same_lane_full_game_winrate_wilson_lower_bound_not_lane_win_probability",
+        "version": "assigned_lane_review_v2",
+        "assignment_source": "current_draft_role_not_inferred_counter",
+        "reason": "Đối thủ cùng vị trí đã lộ: Ambessa (top); kèo này có 0 mẫu Pro, dưới 5. Không tự chốt dựa vào điểm tổng."
+      },
+      "score_components": {
+        "meta": {
+          "value": 0.36946218764949795,
+          "weight": 1.0
+        },
+        "draft_order": {
+          "value": 0.038646290847227587,
+          "weight": 1.0
+        },
+        "historical": {
+          "value": 0.43649717781352987,
+          "weight": 0.25
+        },
+        "matchup": {
+          "value": 0.5,
+          "weight": 0.5
+        },
+        "synergy": {
+          "value": 0.5,
+          "weight": 0.25
+        },
+        "composition": {
+          "value": 0.6440615084677089,
+          "weight": 1.0
+        },
+        "mastery": {
+          "value": 0.0,
+          "weight": 0.5
+        },
+        "content": {
+          "value": 0.5753402581302521,
+          "weight": 0.1
+        }
+      },
+      "composition_lift": 1.0446153708009713,
+      "pro_matchup": {
+        "wins": 0,
+        "games": 0,
+        "winrate": null,
+        "ci95_wilson": [
+          null,
+          null
+        ],
+        "statistic_kind": "historical_team_result",
+        "causal_uplift": null,
+        "evidence_status": "missing",
+        "early_status": "missing",
+        "gold_diff_10_n": 0,
+        "gold_diff_10_mean": null,
+        "gold_diff_10_mean_ci95_low": null,
+        "gold_diff_10_mean_ci95_high": null,
+        "xp_diff_10_n": 0,
+        "xp_diff_10_mean": null,
+        "xp_diff_10_mean_ci95_low": null,
+        "xp_diff_10_mean_ci95_high": null,
+        "cs_diff_10_n": 0,
+        "cs_diff_10_mean": null,
+        "cs_diff_10_mean_ci95_low": null,
+        "cs_diff_10_mean_ci95_high": null,
+        "gold_diff_15_n": 0,
+        "gold_diff_15_mean": null,
+        "gold_diff_15_mean_ci95_low": null,
+        "gold_diff_15_mean_ci95_high": null,
+        "xp_diff_15_n": 0,
+        "xp_diff_15_mean": null,
+        "xp_diff_15_mean_ci95_low": null,
+        "xp_diff_15_mean_ci95_high": null,
+        "cs_diff_15_n": 0,
+        "cs_diff_15_mean": null,
+        "cs_diff_15_mean_ci95_low": null,
+        "cs_diff_15_mean_ci95_high": null,
+        "patches": "[]",
+        "platforms": "[]"
+      }
+    },
+    {
+      "champion": "Gnar",
+      "original_score": 22.85,
+      "lane_review": {
+        "wins": 5,
+        "games": 6,
+        "winrate": 0.8333333333333334,
+        "ci95_wilson": [
+          0.43649717781352987,
+          0.9699466302516935
+        ],
+        "statistic_kind": "historical_team_result",
+        "causal_uplift": null,
+        "enemy_role": "top",
+        "opponent": "Ambessa",
+        "interpretation": "observed_whole_game_result_not_mechanical_counter",
+        "role": "top",
+        "requires_review": false,
+        "status": "observed_lane",
+        "ranking_confidence_bound": 0.43649717781352987,
+        "ranking_basis": "same_lane_full_game_winrate_wilson_lower_bound_not_lane_win_probability",
+        "version": "assigned_lane_review_v2",
+        "assignment_source": "current_draft_role_not_inferred_counter"
+      },
+      "score_components": {
+        "meta": {
+          "value": 0.22640235034521752,
+          "weight": 1.0
+        },
+        "draft_order": {
+          "value": 0.040067850791130094,
+          "weight": 1.0
+        },
+        "historical": {
+          "value": 0.4686688993346016,
+          "weight": 0.25
+        },
+        "matchup": {
+          "value": 0.5119485294117647,
+          "weight": 0.5
+        },
+        "synergy": {
+          "value": 0.5,
+          "weight": 0.25
+        },
+        "composition": {
+          "value": 0.4917951368030508,
+          "weight": 1.0
+        },
+        "mastery": {
+          "value": 0.0,
+          "weight": 0.5
+        },
+        "content": {
+          "value": 0.976550087880619,
+          "weight": 0.1
+        }
+      },
+      "composition_lift": 0.9401318247308909,
+      "pro_matchup": {
+        "platform": "ALL_OBSERVED",
+        "queue": "PRO",
+        "patch": "ALL_OBSERVED",
+        "tier_floor": "PRO",
+        "role": "top",
+        "champion_id": 150,
+        "opponent_id": 799,
+        "champion": "Gnar",
+        "opponent": "Ambessa",
+        "games": 6,
+        "wins": 5,
+        "winrate": 0.8333333333333334,
+        "win_ci95_low": 0.43649717781352987,
+        "win_ci95_high": 0.9699466302516935,
+        "champion_players": 5,
+        "opponent_players": 5,
+        "unique_players": 10,
+        "evidence_status": "observed",
+        "patch_count": 2,
+        "patches": "[\"16.17\", \"16.20\"]",
+        "platform_count": 1,
+        "platforms": "[\"WLDS\"]",
+        "target_games": null,
+        "games_remaining": null,
+        "target_reached": null,
+        "supported_patch_count": 1,
+        "gd15_patch_direction": "insufficient_patch_evidence",
+        "patch_gd15_details": "{\"16.20\": {\"mean\": 718.6, \"n\": 5}}",
+        "gold_diff_10_n": 6,
+        "gold_diff_10_mean": 407.3333333333333,
+        "gold_diff_10_median": 268.0,
+        "gold_diff_10_sd": 434.2734929358073,
+        "gold_diff_10_mean_ci95_low": -48.408747615619916,
+        "gold_diff_10_mean_ci95_high": 863.0754142822866,
+        "xp_diff_10_n": 6,
+        "xp_diff_10_mean": 17.833333333333332,
+        "xp_diff_10_median": -98.5,
+        "xp_diff_10_sd": 298.9223422005566,
+        "xp_diff_10_mean_ci95_low": -295.86642613311426,
+        "xp_diff_10_mean_ci95_high": 331.5330927997809,
+        "cs_diff_10_n": 6,
+        "cs_diff_10_mean": 6.5,
+        "cs_diff_10_median": 6.5,
+        "cs_diff_10_sd": 12.275992831539126,
+        "cs_diff_10_mean_ci95_low": -6.38286439252478,
+        "cs_diff_10_mean_ci95_high": 19.38286439252478,
+        "gold_diff_15_n": 6,
+        "gold_diff_15_mean": 686.1666666666666,
+        "gold_diff_15_median": 851.5,
+        "gold_diff_15_sd": 384.30530397935786,
+        "gold_diff_15_mean_ci95_low": 282.8629840696684,
+        "gold_diff_15_mean_ci95_high": 1089.470349263665,
+        "xp_diff_15_n": 6,
+        "xp_diff_15_mean": 436.6666666666667,
+        "xp_diff_15_median": 430.5,
+        "xp_diff_15_sd": 531.1318731413759,
+        "xp_diff_15_mean_ci95_low": -120.722050492606,
+        "xp_diff_15_mean_ci95_high": 994.0553838259393,
+        "cs_diff_15_n": 6,
+        "cs_diff_15_mean": 12.666666666666666,
+        "cs_diff_15_median": 14.0,
+        "cs_diff_15_sd": 11.147495981908522,
+        "cs_diff_15_mean_ci95_low": 0.9680870876545811,
+        "cs_diff_15_mean_ci95_high": 24.36524624567875,
+        "early_status": "observed_early_advantage",
+        "ci95_wilson": [
+          0.43649717781352987,
+          0.9699466302516935
+        ]
+      }
+    },
+    {
+      "champion": "Renekton",
+      "original_score": 18.59,
+      "lane_review": {
+        "wins": 2,
+        "games": 2,
+        "winrate": 1.0,
+        "ci95_wilson": [
+          0.34238022750665303,
+          1.0
+        ],
+        "statistic_kind": "historical_team_result",
+        "causal_uplift": null,
+        "enemy_role": "top",
+        "opponent": "Ambessa",
+        "interpretation": "observed_whole_game_result_not_mechanical_counter",
+        "role": "top",
+        "requires_review": true,
+        "status": "insufficient_lane",
+        "ranking_confidence_bound": 0.34238022750665303,
+        "ranking_basis": "same_lane_full_game_winrate_wilson_lower_bound_not_lane_win_probability",
+        "version": "assigned_lane_review_v2",
+        "assignment_source": "current_draft_role_not_inferred_counter",
+        "reason": "Đối thủ cùng vị trí đã lộ: Ambessa (top); kèo này có 2 mẫu Pro, dưới 5. Không tự chốt dựa vào điểm tổng."
+      },
+      "score_components": {
+        "meta": {
+          "value": 0.2865220709942985,
+          "weight": 1.0
+        },
+        "draft_order": {
+          "value": 0.029690803909607297,
+          "weight": 1.0
+        },
+        "historical": {
+          "value": 0.39062208887279953,
+          "weight": 0.25
+        },
+        "matchup": {
+          "value": 0.5,
+          "weight": 0.5
+        },
+        "synergy": {
+          "value": 0.5,
+          "weight": 0.25
+        },
+        "composition": {
+          "value": 0.38802694301420276,
+          "weight": 1.0
+        },
+        "mastery": {
+          "value": 0.0,
+          "weight": 0.5
+        },
+        "content": {
+          "value": 0.7978643471684566,
+          "weight": 0.1
+        }
+      },
+      "composition_lift": 0.7182305103031197,
+      "pro_matchup": {
+        "platform": "ALL_OBSERVED",
+        "queue": "PRO",
+        "patch": "ALL_OBSERVED",
+        "tier_floor": "PRO",
+        "role": "top",
+        "champion_id": 58,
+        "opponent_id": 799,
+        "champion": "Renekton",
+        "opponent": "Ambessa",
+        "games": 2,
+        "wins": 2,
+        "winrate": 1.0,
+        "win_ci95_low": 0.34238022750665303,
+        "win_ci95_high": 1.0,
+        "champion_players": 2,
+        "opponent_players": 1,
+        "unique_players": 3,
+        "evidence_status": "insufficient_samples",
+        "patch_count": 1,
+        "patches": "[\"16.20\"]",
+        "platform_count": 1,
+        "platforms": "[\"WLDS\"]",
+        "target_games": null,
+        "games_remaining": null,
+        "target_reached": null,
+        "supported_patch_count": 0,
+        "gd15_patch_direction": "insufficient_patch_evidence",
+        "patch_gd15_details": "{}",
+        "gold_diff_10_n": 2,
+        "gold_diff_10_mean": 396.0,
+        "gold_diff_10_median": 396.0,
+        "gold_diff_10_sd": 188.09040379562165,
+        "gold_diff_10_mean_ci95_low": -1293.9252299112343,
+        "gold_diff_10_mean_ci95_high": 2085.925229911234,
+        "xp_diff_10_n": 2,
+        "xp_diff_10_mean": 90.5,
+        "xp_diff_10_median": 90.5,
+        "xp_diff_10_sd": 98.2878425849301,
+        "xp_diff_10_mean_ci95_low": -792.5812291641412,
+        "xp_diff_10_mean_ci95_high": 973.5812291641412,
+        "cs_diff_10_n": 2,
+        "cs_diff_10_mean": 16.5,
+        "cs_diff_10_median": 16.5,
+        "cs_diff_10_sd": 6.363961030678928,
+        "cs_diff_10_mean_ci95_low": -40.67792131278612,
+        "cs_diff_10_mean_ci95_high": 73.67792131278611,
+        "gold_diff_15_n": 2,
+        "gold_diff_15_mean": 787.0,
+        "gold_diff_15_median": 787.0,
+        "gold_diff_15_sd": 29.698484809834994,
+        "gold_diff_15_mean_ci95_low": 520.1697005403314,
+        "gold_diff_15_mean_ci95_high": 1053.8302994596686,
+        "xp_diff_15_n": 2,
+        "xp_diff_15_mean": 321.5,
+        "xp_diff_15_median": 321.5,
+        "xp_diff_15_sd": 159.0990257669732,
+        "xp_diff_15_mean_ci95_low": -1107.948032819653,
+        "xp_diff_15_mean_ci95_high": 1750.948032819653,
+        "cs_diff_15_n": 2,
+        "cs_diff_15_mean": 24.0,
+        "cs_diff_15_median": 24.0,
+        "cs_diff_15_sd": 2.8284271247461903,
+        "cs_diff_15_mean_ci95_low": -1.4124094723493883,
+        "cs_diff_15_mean_ci95_high": 49.41240947234939,
+        "early_status": "insufficient_samples",
+        "ci95_wilson": [
+          0.34238022750665303,
+          1.0
+        ]
+      }
+    }
+  ],
+  "gold_is_score_input": false,
+  "rank_is_score_input": false,
+  "strategic_accuracy_improvement_proven": false,
+  "lane_ranking": "existing Wilson lower bound before unchanged aggregate score; no observations last; n<5 still review",
+  "statistical_note": "Renekton 2/2 is not proof of superiority; Wilson intervals and GD15 mean CIs overlap with Gnar.",
+  "manual_role_preferences_galio": [
+    {
+      "role": "mid",
+      "games": 10
+    },
+    {
+      "role": "top",
+      "games": 6
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "status": "PASS",
+  "unit_tests_passed": 138,
+  "pro_games": 3000,
+  "pro_rows": 30000,
+  "stored_diff_checks": {
+    "gold_10": {
+      "checked": 24370,
+      "mismatch": 0
+    },
+    "xp_10": {
+      "checked": 24370,
+      "mismatch": 0
+    },
+    "cs_10": {
+      "checked": 24370,
+      "mismatch": 0
+    },
+    "gold_15": {
+      "checked": 24380,
+      "mismatch": 0
+    },
+    "xp_15": {
+      "checked": 24380,
+      "mismatch": 0
+    },
+    "cs_15": {
+      "checked": 24380,
+      "mismatch": 0
+    }
+  },
+  "signed_mirrors": "PASS",
+  "complete_roles": "PASS",
+  "console_both_sources": "PASS",
+  "no_rank_identifiers_in_public_exports": true,
+  "main_score_invariance": "unit_test_PASS",
+  "prospective_status": "awaiting_prospective_pro_series",
+  "prospective_metrics": null,
+  "frozen_rank_games": 261,
+  "diagnostic_queries_per_split": 30,
+  "future_rank_detected_and_not_promoted": true,
+  "canonical_db_unchanged": true,
+  "canonical_db_sha256": "20e3d9739b271283f35a1ba33f345e3593bafe4e31212906d35939d91b2f740c",
+  "source_sha256": {
+    "matchup_evidence.py": "a1e09a60014343de3bb0b2137a02785d3aa7965913ab4cc3a4659153d12b22be",
+    "evaluate_contextual_evidence.py": "ba440150832170ebca9f195e4c9b0c59fdd74c722e7964f50c78291153613bd2",
+    "draft_advisor.py": "c8d8de1d1111e0b507c223616355c9acff27aa38d13f5aed773fb58966387891",
+    "simulate_draft_match.py": "525c4601d05c1d07d893ce7797ef6aac756e9ee72424d3d9705ded7f7ca40b10"
+  }
+}

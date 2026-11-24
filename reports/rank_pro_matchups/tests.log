@@ -1,0 +1,15 @@
+test_ambiguous_roles_rejected (test_ranked_matchups.RankedMatchupsTests.test_ambiguous_roles_rejected) ... ok
+test_cache_dedup_rejection_and_summary (test_ranked_matchups.RankedMatchupsTests.test_cache_dedup_rejection_and_summary) ... ok
+test_client_auth_no_retry_and_no_leak (test_ranked_matchups.RankedMatchupsTests.test_client_auth_no_retry_and_no_leak) ... ok
+test_client_rate_limit_and_bounded_retry (test_ranked_matchups.RankedMatchupsTests.test_client_rate_limit_and_bounded_retry) ... ok
+test_frame_tolerance_and_descriptive_only_nearest (test_ranked_matchups.RankedMatchupsTests.test_frame_tolerance_and_descriptive_only_nearest) ... ok
+test_identity_queue_result_guards (test_ranked_matchups.RankedMatchupsTests.test_identity_queue_result_guards) ... ok
+test_missing_measurements_never_zero_or_future (test_ranked_matchups.RankedMatchupsTests.test_missing_measurements_never_zero_or_future) ... ok
+test_pro_strict_roles_and_actual_measurements (test_ranked_matchups.RankedMatchupsTests.test_pro_strict_roles_and_actual_measurements) ... ok
+test_short_game_no_15_backfill (test_ranked_matchups.RankedMatchupsTests.test_short_game_no_15_backfill) ... ok
+test_signed_mirrors_ids_and_no_future_frame (test_ranked_matchups.RankedMatchupsTests.test_signed_mirrors_ids_and_no_future_frame) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.031s
+
+OK

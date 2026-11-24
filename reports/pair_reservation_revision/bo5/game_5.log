@@ -1,0 +1,254 @@
+Đang nạp lịch sử trận đấu và hồ sơ tướng...
+GIẢ LẬP BAN/PICK MỘT VÁN — LỊCH SỬ + CONTENT-BASED
+Bạn: blue; phe chọn trước: red; dữ liệu: WLDS
+SNAPSHOT LỊCH SỬ: patch dataset 16.20, dữ liệu đến 2026-11-14T23:18:11+00:00, cũ 10 ngày so với mốc yêu cầu
+110 trận trong cửa sổ 60 ngày, 98 trận patch đích; không gọi là live meta.
+Lineup T1 (latest_observed_lineup_not_live_roster): top=Doran, jng=Oner, mid=Faker, bot=Peyz, sup=Keria
+Lineup Gen.G (latest_observed_lineup_not_live_roster): top=Kiin, jng=Canyon, mid=Chovy, bot=Ruler, sup=Duro
+Ưu tiên presence/nhịp draft gần đây; bể tướng, đối đầu và cosine là tín hiệu hỗ trợ. Điểm không phải xác suất.
+
+==========================================================================================
+BLUE T1 | Cấm: —
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: —
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 1/20: RED Gen.G — CẤM
+ĐÃ CẤM: Jarvan IV
+  Căn cứ: Mất pool địch 0.0161; chi phí tự cấm 0.0135; đội mình lấy lượt pick tới trước địch=True; Fearless khóa 40; chấm theo pool ngữ cảnh
+
+==========================================================================================
+BLUE T1 | Cấm: —
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Jarvan IV
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 2/20: BLUE T1 — CẤM
+ĐÃ CẤM: Qiyana
+  Căn cứ: Mất pool địch 0.0205; chi phí tự cấm 0.0078; đội mình lấy lượt pick tới trước địch=False; Fearless khóa 40; chấm theo pool ngữ cảnh
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Jarvan IV
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 3/20: RED Gen.G — CẤM
+ĐÃ CẤM: Jayce
+  Căn cứ: Mất pool địch 0.0176; chi phí tự cấm 0.0157; đội mình lấy lượt pick tới trước địch=True; Fearless khóa 40; chấm theo pool ngữ cảnh
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Jarvan IV, Jayce
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 4/20: BLUE T1 — CẤM
+ĐÃ CẤM: Ezreal
+  Căn cứ: Mất pool địch 0.0154; chi phí tự cấm 0.0061; đội mình lấy lượt pick tới trước địch=False; Fearless khóa 40; chấm theo pool ngữ cảnh
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana, Ezreal
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Jarvan IV, Jayce
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 5/20: RED Gen.G — CẤM
+ĐÃ CẤM: Sejuani
+  Căn cứ: Mất pool địch 0.0011; chi phí tự cấm 0.0000; đội mình lấy lượt pick tới trước địch=True; Fearless khóa 40; chấm theo pool ngữ cảnh
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana, Ezreal
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Jarvan IV, Jayce, Sejuani
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 6/20: BLUE T1 — CẤM
+ĐÃ CẤM: Lee Sin
+  Căn cứ: Mất pool địch 0.0203; chi phí tự cấm 0.0099; đội mình lấy lượt pick tới trước địch=False; Fearless khóa 40; chấm theo pool ngữ cảnh
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana, Ezreal, Lee Sin
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Jarvan IV, Jayce, Sejuani
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+
+LƯỢT 7/20: RED Gen.G — CHỌN
+ĐÃ CHỌN: Ashe [bot]
+  Căn cứ: Slot F1: ưu tiên chọn quan sát 0.012; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana, Ezreal, Lee Sin
+Top: — | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Jarvan IV, Jayce, Sejuani
+Top: — | Rừng: — | Mid: — | Xạ thủ: Ashe | Hỗ trợ: —
+
+LƯỢT 8/20: BLUE T1 — CHỌN
+ĐÃ CHỌN: Gnar [top]
+  Căn cứ: Slot S1: ưu tiên chọn quan sát 0.012; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana, Ezreal, Lee Sin
+Top: Gnar | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: —
+RED Gen.G | Cấm: Jarvan IV, Jayce, Sejuani
+Top: — | Rừng: — | Mid: — | Xạ thủ: Ashe | Hỗ trợ: —
+
+LƯỢT 9/20: BLUE T1 — CHỌN
+ĐÃ CHỌN: Leona [sup]
+  Căn cứ: Slot S2: ưu tiên chọn quan sát 0.006; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana, Ezreal, Lee Sin
+Top: Gnar | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: Leona
+RED Gen.G | Cấm: Jarvan IV, Jayce, Sejuani
+Top: — | Rừng: — | Mid: — | Xạ thủ: Ashe | Hỗ trợ: —
+
+LƯỢT 10/20: RED Gen.G — CHỌN
+ĐÃ CHỌN: Ahri [mid]
+  Căn cứ: Slot F2: ưu tiên chọn quan sát 0.009; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana, Ezreal, Lee Sin
+Top: Gnar | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: Leona
+RED Gen.G | Cấm: Jarvan IV, Jayce, Sejuani
+Top: — | Rừng: — | Mid: Ahri | Xạ thủ: Ashe | Hỗ trợ: —
+
+LƯỢT 11/20: RED Gen.G — CHỌN
+ĐÃ CHỌN: Maokai [jng]
+  Căn cứ: Slot F3: ưu tiên chọn quan sát 0.014; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana, Ezreal, Lee Sin
+Top: Gnar | Rừng: — | Mid: — | Xạ thủ: — | Hỗ trợ: Leona
+RED Gen.G | Cấm: Jarvan IV, Jayce, Sejuani
+Top: — | Rừng: Maokai | Mid: Ahri | Xạ thủ: Ashe | Hỗ trợ: —
+
+LƯỢT 12/20: BLUE T1 — CHỌN
+ĐÃ CHỌN: Sylas [mid]
+  Căn cứ: Slot S3: ưu tiên chọn quan sát 0.010; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana, Ezreal, Lee Sin
+Top: Gnar | Rừng: — | Mid: Sylas | Xạ thủ: — | Hỗ trợ: Leona
+RED Gen.G | Cấm: Jarvan IV, Jayce, Sejuani
+Top: — | Rừng: Maokai | Mid: Ahri | Xạ thủ: Ashe | Hỗ trợ: —
+
+LƯỢT 13/20: BLUE T1 — CẤM
+ĐÃ CẤM: Nami
+  Căn cứ: Mất pool địch 0.0104; chi phí tự cấm 0.0000; đội mình lấy lượt pick tới trước địch=True; Fearless khóa 40; chấm theo pool ngữ cảnh
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana, Ezreal, Lee Sin, Nami
+Top: Gnar | Rừng: — | Mid: Sylas | Xạ thủ: — | Hỗ trợ: Leona
+RED Gen.G | Cấm: Jarvan IV, Jayce, Sejuani
+Top: — | Rừng: Maokai | Mid: Ahri | Xạ thủ: Ashe | Hỗ trợ: —
+
+LƯỢT 14/20: RED Gen.G — CẤM
+ĐÃ CẤM: Cho'Gath
+  Căn cứ: Mất pool địch 0.0077; chi phí tự cấm 0.0000; đội mình lấy lượt pick tới trước địch=False; Fearless khóa 40; chấm theo pool ngữ cảnh
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana, Ezreal, Lee Sin, Nami
+Top: Gnar | Rừng: — | Mid: Sylas | Xạ thủ: — | Hỗ trợ: Leona
+RED Gen.G | Cấm: Jarvan IV, Jayce, Sejuani, Cho'Gath
+Top: — | Rừng: Maokai | Mid: Ahri | Xạ thủ: Ashe | Hỗ trợ: —
+
+LƯỢT 15/20: BLUE T1 — CẤM
+ĐÃ CẤM: Ornn
+  Căn cứ: Mất pool địch 0.0103; chi phí tự cấm 0.0000; đội mình lấy lượt pick tới trước địch=True; Fearless khóa 40; chấm theo pool ngữ cảnh
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana, Ezreal, Lee Sin, Nami, Ornn
+Top: Gnar | Rừng: — | Mid: Sylas | Xạ thủ: — | Hỗ trợ: Leona
+RED Gen.G | Cấm: Jarvan IV, Jayce, Sejuani, Cho'Gath
+Top: — | Rừng: Maokai | Mid: Ahri | Xạ thủ: Ashe | Hỗ trợ: —
+
+LƯỢT 16/20: RED Gen.G — CẤM
+ĐÃ CẤM: Sivir
+  Căn cứ: Mất pool địch 0.0012; chi phí tự cấm 0.0000; đội mình lấy lượt pick tới trước địch=False; Fearless khóa 40; chấm theo pool ngữ cảnh
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana, Ezreal, Lee Sin, Nami, Ornn
+Top: Gnar | Rừng: — | Mid: Sylas | Xạ thủ: — | Hỗ trợ: Leona
+RED Gen.G | Cấm: Jarvan IV, Jayce, Sejuani, Cho'Gath, Sivir
+Top: — | Rừng: Maokai | Mid: Ahri | Xạ thủ: Ashe | Hỗ trợ: —
+
+LƯỢT 17/20: BLUE T1 — CHỌN
+ĐÃ CHỌN: Ziggs [bot]
+  Căn cứ: Slot S4: ưu tiên chọn quan sát 0.004; không phải xác suất thắng
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana, Ezreal, Lee Sin, Nami, Ornn
+Top: Gnar | Rừng: — | Mid: Sylas | Xạ thủ: Ziggs | Hỗ trợ: Leona
+RED Gen.G | Cấm: Jarvan IV, Jayce, Sejuani, Cho'Gath, Sivir
+Top: — | Rừng: Maokai | Mid: Ahri | Xạ thủ: Ashe | Hỗ trợ: —
+
+LƯỢT 18/20: RED Gen.G — CHỌN
+ĐÃ CHỌN: Rell [sup]
+  Căn cứ: Patch dataset 16.20: presence cửa sổ gần đây 5.4%; 5 lượt chọn đúng vị trí trên patch, 6 trận trong cửa sổ gần đây
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana, Ezreal, Lee Sin, Nami, Ornn
+Top: Gnar | Rừng: — | Mid: Sylas | Xạ thủ: Ziggs | Hỗ trợ: Leona
+RED Gen.G | Cấm: Jarvan IV, Jayce, Sejuani, Cho'Gath, Sivir
+Top: — | Rừng: Maokai | Mid: Ahri | Xạ thủ: Ashe | Hỗ trợ: Rell
+
+LƯỢT 19/20: RED Gen.G — CHỌN
+ĐÃ CHỌN: Gwen [top]
+  Căn cứ: Patch dataset 16.20: presence cửa sổ gần đây 6.4%; 3 lượt chọn đúng vị trí trên patch, 3 trận trong cửa sổ gần đây
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana, Ezreal, Lee Sin, Nami, Ornn
+Top: Gnar | Rừng: — | Mid: Sylas | Xạ thủ: Ziggs | Hỗ trợ: Leona
+RED Gen.G | Cấm: Jarvan IV, Jayce, Sejuani, Cho'Gath, Sivir
+Top: Gwen | Rừng: Maokai | Mid: Ahri | Xạ thủ: Ashe | Hỗ trợ: Rell
+
+LƯỢT 20/20: BLUE T1 — CHỌN
+ĐÃ CHỌN: Aatrox [jng]
+  Căn cứ: Patch dataset 16.20: presence cửa sổ gần đây 3.6%; 1 lượt chọn đúng vị trí trên patch, 1 trận trong cửa sổ gần đây
+
+==========================================================================================
+BLUE T1 | Cấm: Qiyana, Ezreal, Lee Sin, Nami, Ornn
+Top: Gnar | Rừng: Aatrox | Mid: Sylas | Xạ thủ: Ziggs | Hỗ trợ: Leona
+RED Gen.G | Cấm: Jarvan IV, Jayce, Sejuani, Cho'Gath, Sivir
+Top: Gwen | Rừng: Maokai | Mid: Ahri | Xạ thủ: Ashe | Hỗ trợ: Rell
+Căn cứ cặp T1: observed_pairs=0, sparse_pairs=5, unobserved_pairs=4, insufficient_anchor_pairs=1
+Căn cứ cặp Gen.G: observed_pairs=0, sparse_pairs=5, unobserved_pairs=5, insufficient_anchor_pairs=0
+
+===============================================================================================
+📋 BẢNG ĐỘI HÌNH HOÀN THIỆN SAU KHI CẤM/CHỌN (FINAL DRAFT)
+===============================================================================================
+🔷 PHE XANH (T1):
+   • TOP: Gnar (Doran)
+   • JNG: Aatrox (Oner)
+   • MID: Sylas (Faker)
+   • BOT: Ziggs (Peyz)
+   • SUP: Leona (Keria)
+
+🔴 PHE ĐỎ (Gen.G):
+   • TOP: Gwen (Kiin)
+   • JNG: Maokai (Canyon)
+   • MID: Ahri (Chovy)
+   • BOT: Ashe (Ruler)
+   • SUP: Rell (Duro)
+Radar và thẻ chiến thuật dùng thuộc tính/quy tắc chuyên gia; chưa được xác nhận như điều kiện thắng nhân quả.
+
+────────────────────────────────────── THẺ CHIẾN THUẬT: T1 (BLUE) ──────────────────────────────────────
+🏆 Trường phái: [EARLY SNOWBALL & DIVE]
+📊 Radar 5 trục: Early: 0.685 | Scaling: 0.777 | Combat: 0.83 | Pick: 0.772 | Obj: 0.69
+⭐ Chủ lực (Core Carry): Sylas
+⏱️ Điểm rơi sức mạnh: Đầu trận (Phút 1 đến Phút 20 - Trước mốc Baron xuất hiện)
+🐉 Mục tiêu số 1: Sâu Hư Không đợt 1 + Trụ Đầu (First Tower) trước phút 14
+✅ Điều kiện thắng: Tạo chênh lệch >= 2,000 vàng lúc 10 phút, băng trụ 2 cánh liên tục, ép đối thủ vỡ trận trước 25 phút.
+❌ Cần tránh: Bị đối thủ phòng ngự kéo dài trận đấu qua phút 30 khi chất tướng hết thời gian lăn cầu tuyết.
+
+────────────────────────────────────── THẺ CHIẾN THUẬT: GEN.G (RED) ──────────────────────────────────────
+🏆 Trường phái: [EARLY SNOWBALL & DIVE]
+📊 Radar 5 trục: Early: 0.593 | Scaling: 0.727 | Combat: 0.738 | Pick: 0.735 | Obj: 0.62
+⭐ Chủ lực (Core Carry): Ahri
+⏱️ Điểm rơi sức mạnh: Đầu trận (Phút 1 đến Phút 20 - Trước mốc Baron xuất hiện)
+🐉 Mục tiêu số 1: Sâu Hư Không đợt 1 + Trụ Đầu (First Tower) trước phút 14
+✅ Điều kiện thắng: Tạo chênh lệch >= 2,000 vàng lúc 10 phút, băng trụ 2 cánh liên tục, ép đối thủ vỡ trận trước 25 phút.
+❌ Cần tránh: Bị đối thủ phòng ngự kéo dài trận đấu qua phút 30 khi chất tướng hết thời gian lăn cầu tuyết.
+Phiên có mốc lịch sử: bỏ dự báo từ model lưu sẵn vì chưa bảo đảm model được fit trước mốc này.
+Đã lưu phiên: reports\pair_reservation_revision\bo5\game_5.json

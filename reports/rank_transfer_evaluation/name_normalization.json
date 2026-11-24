@@ -1,0 +1,6827 @@
+[
+  {
+    "column": "champion",
+    "raw": "Jayce",
+    "canonical": "Jayce"
+  },
+  {
+    "column": "champion",
+    "raw": "Pantheon",
+    "canonical": "Pantheon"
+  },
+  {
+    "column": "champion",
+    "raw": "Ahri",
+    "canonical": "Ahri"
+  },
+  {
+    "column": "champion",
+    "raw": "Xayah",
+    "canonical": "Xayah"
+  },
+  {
+    "column": "champion",
+    "raw": "Rakan",
+    "canonical": "Rakan"
+  },
+  {
+    "column": "champion",
+    "raw": "Gwen",
+    "canonical": "Gwen"
+  },
+  {
+    "column": "champion",
+    "raw": "Wukong",
+    "canonical": "Wukong"
+  },
+  {
+    "column": "champion",
+    "raw": "Azir",
+    "canonical": "Azir"
+  },
+  {
+    "column": "champion",
+    "raw": "Ezreal",
+    "canonical": "Ezreal"
+  },
+  {
+    "column": "champion",
+    "raw": "Leona",
+    "canonical": "Leona"
+  },
+  {
+    "column": "champion",
+    "raw": "Rumble",
+    "canonical": "Rumble"
+  },
+  {
+    "column": "champion",
+    "raw": "Viego",
+    "canonical": "Viego"
+  },
+  {
+    "column": "champion",
+    "raw": "Ornn",
+    "canonical": "Ornn"
+  },
+  {
+    "column": "champion",
+    "raw": "Varus",
+    "canonical": "Varus"
+  },
+  {
+    "column": "champion",
+    "raw": "Renata Glasc",
+    "canonical": "Renata Glasc"
+  },
+  {
+    "column": "champion",
+    "raw": "K'Sante",
+    "canonical": "K'Sante"
+  },
+  {
+    "column": "champion",
+    "raw": "Skarner",
+    "canonical": "Skarner"
+  },
+  {
+    "column": "champion",
+    "raw": "Taliyah",
+    "canonical": "Taliyah"
+  },
+  {
+    "column": "champion",
+    "raw": "Kalista",
+    "canonical": "Kalista"
+  },
+  {
+    "column": "champion",
+    "raw": "Neeko",
+    "canonical": "Neeko"
+  },
+  {
+    "column": "champion",
+    "raw": "Renekton",
+    "canonical": "Renekton"
+  },
+  {
+    "column": "champion",
+    "raw": "Lillia",
+    "canonical": "Lillia"
+  },
+  {
+    "column": "champion",
+    "raw": "Corki",
+    "canonical": "Corki"
+  },
+  {
+    "column": "champion",
+    "raw": "Nautilus",
+    "canonical": "Nautilus"
+  },
+  {
+    "column": "champion",
+    "raw": "Jax",
+    "canonical": "Jax"
+  },
+  {
+    "column": "champion",
+    "raw": "Ambessa",
+    "canonical": "Ambessa"
+  },
+  {
+    "column": "champion",
+    "raw": "Aurelion Sol",
+    "canonical": "Aurelion Sol"
+  },
+  {
+    "column": "champion",
+    "raw": "Sivir",
+    "canonical": "Sivir"
+  },
+  {
+    "column": "champion",
+    "raw": "Alistar",
+    "canonical": "Alistar"
+  },
+  {
+    "column": "champion",
+    "raw": "Aurora",
+    "canonical": "Aurora"
+  },
+  {
+    "column": "champion",
+    "raw": "Naafiri",
+    "canonical": "Naafiri"
+  },
+  {
+    "column": "champion",
+    "raw": "Sylas",
+    "canonical": "Sylas"
+  },
+  {
+    "column": "champion",
+    "raw": "Lucian",
+    "canonical": "Lucian"
+  },
+  {
+    "column": "champion",
+    "raw": "Nami",
+    "canonical": "Nami"
+  },
+  {
+    "column": "champion",
+    "raw": "Zed",
+    "canonical": "Zed"
+  },
+  {
+    "column": "champion",
+    "raw": "Galio",
+    "canonical": "Galio"
+  },
+  {
+    "column": "champion",
+    "raw": "Zeri",
+    "canonical": "Zeri"
+  },
+  {
+    "column": "champion",
+    "raw": "Lulu",
+    "canonical": "Lulu"
+  },
+  {
+    "column": "champion",
+    "raw": "Nocturne",
+    "canonical": "Nocturne"
+  },
+  {
+    "column": "champion",
+    "raw": "Ryze",
+    "canonical": "Ryze"
+  },
+  {
+    "column": "champion",
+    "raw": "Xin Zhao",
+    "canonical": "Xin Zhao"
+  },
+  {
+    "column": "champion",
+    "raw": "Miss Fortune",
+    "canonical": "Miss Fortune"
+  },
+  {
+    "column": "champion",
+    "raw": "Jhin",
+    "canonical": "Jhin"
+  },
+  {
+    "column": "champion",
+    "raw": "Sejuani",
+    "canonical": "Sejuani"
+  },
+  {
+    "column": "champion",
+    "raw": "Yone",
+    "canonical": "Yone"
+  },
+  {
+    "column": "champion",
+    "raw": "Kai'Sa",
+    "canonical": "Kai'Sa"
+  },
+  {
+    "column": "champion",
+    "raw": "Poppy",
+    "canonical": "Poppy"
+  },
+  {
+    "column": "champion",
+    "raw": "Annie",
+    "canonical": "Annie"
+  },
+  {
+    "column": "champion",
+    "raw": "Yorick",
+    "canonical": "Yorick"
+  },
+  {
+    "column": "champion",
+    "raw": "Rell",
+    "canonical": "Rell"
+  },
+  {
+    "column": "champion",
+    "raw": "Akali",
+    "canonical": "Akali"
+  },
+  {
+    "column": "champion",
+    "raw": "Braum",
+    "canonical": "Braum"
+  },
+  {
+    "column": "champion",
+    "raw": "Nidalee",
+    "canonical": "Nidalee"
+  },
+  {
+    "column": "champion",
+    "raw": "Hwei",
+    "canonical": "Hwei"
+  },
+  {
+    "column": "champion",
+    "raw": "Sion",
+    "canonical": "Sion"
+  },
+  {
+    "column": "champion",
+    "raw": "Shen",
+    "canonical": "Shen"
+  },
+  {
+    "column": "champion",
+    "raw": "Graves",
+    "canonical": "Graves"
+  },
+  {
+    "column": "champion",
+    "raw": "Caitlyn",
+    "canonical": "Caitlyn"
+  },
+  {
+    "column": "champion",
+    "raw": "Lux",
+    "canonical": "Lux"
+  },
+  {
+    "column": "champion",
+    "raw": "Sett",
+    "canonical": "Sett"
+  },
+  {
+    "column": "champion",
+    "raw": "Anivia",
+    "canonical": "Anivia"
+  },
+  {
+    "column": "champion",
+    "raw": "Vi",
+    "canonical": "Vi"
+  },
+  {
+    "column": "champion",
+    "raw": "Maokai",
+    "canonical": "Maokai"
+  },
+  {
+    "column": "champion",
+    "raw": "Jinx",
+    "canonical": "Jinx"
+  },
+  {
+    "column": "champion",
+    "raw": "Udyr",
+    "canonical": "Udyr"
+  },
+  {
+    "column": "champion",
+    "raw": "Karma",
+    "canonical": "Karma"
+  },
+  {
+    "column": "champion",
+    "raw": "Viktor",
+    "canonical": "Viktor"
+  },
+  {
+    "column": "champion",
+    "raw": "Zyra",
+    "canonical": "Zyra"
+  },
+  {
+    "column": "champion",
+    "raw": "Senna",
+    "canonical": "Senna"
+  },
+  {
+    "column": "champion",
+    "raw": "Ashe",
+    "canonical": "Ashe"
+  },
+  {
+    "column": "champion",
+    "raw": "Gnar",
+    "canonical": "Gnar"
+  },
+  {
+    "column": "champion",
+    "raw": "Yasuo",
+    "canonical": "Yasuo"
+  },
+  {
+    "column": "champion",
+    "raw": "Kindred",
+    "canonical": "Kindred"
+  },
+  {
+    "column": "champion",
+    "raw": "Nasus",
+    "canonical": "Nasus"
+  },
+  {
+    "column": "champion",
+    "raw": "Jarvan IV",
+    "canonical": "Jarvan IV"
+  },
+  {
+    "column": "champion",
+    "raw": "Orianna",
+    "canonical": "Orianna"
+  },
+  {
+    "column": "champion",
+    "raw": "Kled",
+    "canonical": "Kled"
+  },
+  {
+    "column": "champion",
+    "raw": "Aatrox",
+    "canonical": "Aatrox"
+  },
+  {
+    "column": "champion",
+    "raw": "Elise",
+    "canonical": "Elise"
+  },
+  {
+    "column": "champion",
+    "raw": "Tristana",
+    "canonical": "Tristana"
+  },
+  {
+    "column": "champion",
+    "raw": "Milio",
+    "canonical": "Milio"
+  },
+  {
+    "column": "champion",
+    "raw": "Blitzcrank",
+    "canonical": "Blitzcrank"
+  },
+  {
+    "column": "champion",
+    "raw": "Fiddlesticks",
+    "canonical": "Fiddlesticks"
+  },
+  {
+    "column": "champion",
+    "raw": "Lee Sin",
+    "canonical": "Lee Sin"
+  },
+  {
+    "column": "champion",
+    "raw": "Camille",
+    "canonical": "Camille"
+  },
+  {
+    "column": "champion",
+    "raw": "Gragas",
+    "canonical": "Gragas"
+  },
+  {
+    "column": "champion",
+    "raw": "Kennen",
+    "canonical": "Kennen"
+  },
+  {
+    "column": "champion",
+    "raw": "Bard",
+    "canonical": "Bard"
+  },
+  {
+    "column": "champion",
+    "raw": "Talon",
+    "canonical": "Talon"
+  },
+  {
+    "column": "champion",
+    "raw": "Trundle",
+    "canonical": "Trundle"
+  },
+  {
+    "column": "champion",
+    "raw": "Zoe",
+    "canonical": "Zoe"
+  },
+  {
+    "column": "champion",
+    "raw": "Pyke",
+    "canonical": "Pyke"
+  },
+  {
+    "column": "champion",
+    "raw": "Seraphine",
+    "canonical": "Seraphine"
+  },
+  {
+    "column": "champion",
+    "raw": "Malzahar",
+    "canonical": "Malzahar"
+  },
+  {
+    "column": "champion",
+    "raw": "Draven",
+    "canonical": "Draven"
+  },
+  {
+    "column": "champion",
+    "raw": "Vladimir",
+    "canonical": "Vladimir"
+  },
+  {
+    "column": "champion",
+    "raw": "Soraka",
+    "canonical": "Soraka"
+  },
+  {
+    "column": "champion",
+    "raw": "LeBlanc",
+    "canonical": "LeBlanc"
+  },
+  {
+    "column": "champion",
+    "raw": "Olaf",
+    "canonical": "Olaf"
+  },
+  {
+    "column": "champion",
+    "raw": "Smolder",
+    "canonical": "Smolder"
+  },
+  {
+    "column": "champion",
+    "raw": "Syndra",
+    "canonical": "Syndra"
+  },
+  {
+    "column": "champion",
+    "raw": "Shyvana",
+    "canonical": "Shyvana"
+  },
+  {
+    "column": "champion",
+    "raw": "Cho'Gath",
+    "canonical": "Cho'Gath"
+  },
+  {
+    "column": "champion",
+    "raw": "Kog'Maw",
+    "canonical": "Kog'Maw"
+  },
+  {
+    "column": "champion",
+    "raw": "Kassadin",
+    "canonical": "Kassadin"
+  },
+  {
+    "column": "champion",
+    "raw": "Aphelios",
+    "canonical": "Aphelios"
+  },
+  {
+    "column": "champion",
+    "raw": "Ziggs",
+    "canonical": "Ziggs"
+  },
+  {
+    "column": "champion",
+    "raw": "Zilean",
+    "canonical": "Zilean"
+  },
+  {
+    "column": "champion",
+    "raw": "Diana",
+    "canonical": "Diana"
+  },
+  {
+    "column": "champion",
+    "raw": "Morgana",
+    "canonical": "Morgana"
+  },
+  {
+    "column": "champion",
+    "raw": "Nilah",
+    "canonical": "Nilah"
+  },
+  {
+    "column": "champion",
+    "raw": "Mel",
+    "canonical": "Mel"
+  },
+  {
+    "column": "champion",
+    "raw": "Volibear",
+    "canonical": "Volibear"
+  },
+  {
+    "column": "champion",
+    "raw": "Tahm Kench",
+    "canonical": "Tahm Kench"
+  },
+  {
+    "column": "champion",
+    "raw": "Lissandra",
+    "canonical": "Lissandra"
+  },
+  {
+    "column": "champion",
+    "raw": "Yuumi",
+    "canonical": "Yuumi"
+  },
+  {
+    "column": "champion",
+    "raw": "Cassiopeia",
+    "canonical": "Cassiopeia"
+  },
+  {
+    "column": "champion",
+    "raw": "Twitch",
+    "canonical": "Twitch"
+  },
+  {
+    "column": "champion",
+    "raw": "Fiora",
+    "canonical": "Fiora"
+  },
+  {
+    "column": "champion",
+    "raw": "Dr. Mundo",
+    "canonical": "Dr. Mundo"
+  },
+  {
+    "column": "champion",
+    "raw": "Heimerdinger",
+    "canonical": "Heimerdinger"
+  },
+  {
+    "column": "champion",
+    "raw": "Twisted Fate",
+    "canonical": "Twisted Fate"
+  },
+  {
+    "column": "champion",
+    "raw": "Warwick",
+    "canonical": "Warwick"
+  },
+  {
+    "column": "champion",
+    "raw": "Kha'Zix",
+    "canonical": "Kha'Zix"
+  },
+  {
+    "column": "champion",
+    "raw": "Gangplank",
+    "canonical": "Gangplank"
+  },
+  {
+    "column": "champion",
+    "raw": "Veigar",
+    "canonical": "Veigar"
+  },
+  {
+    "column": "champion",
+    "raw": "Nunu & Willump",
+    "canonical": "Nunu & Willump"
+  },
+  {
+    "column": "champion",
+    "raw": "Mordekaiser",
+    "canonical": "Mordekaiser"
+  },
+  {
+    "column": "champion",
+    "raw": "Thresh",
+    "canonical": "Thresh"
+  },
+  {
+    "column": "champion",
+    "raw": "Swain",
+    "canonical": "Swain"
+  },
+  {
+    "column": "champion",
+    "raw": "Garen",
+    "canonical": "Garen"
+  },
+  {
+    "column": "champion",
+    "raw": "Irelia",
+    "canonical": "Irelia"
+  },
+  {
+    "column": "champion",
+    "raw": "Urgot",
+    "canonical": "Urgot"
+  },
+  {
+    "column": "champion",
+    "raw": "Taric",
+    "canonical": "Taric"
+  },
+  {
+    "column": "champion",
+    "raw": "Ekko",
+    "canonical": "Ekko"
+  },
+  {
+    "column": "champion",
+    "raw": "Vayne",
+    "canonical": "Vayne"
+  },
+  {
+    "column": "champion",
+    "raw": "Ivern",
+    "canonical": "Ivern"
+  },
+  {
+    "column": "champion",
+    "raw": "Yunara",
+    "canonical": "Yunara"
+  },
+  {
+    "column": "champion",
+    "raw": "Janna",
+    "canonical": "Janna"
+  },
+  {
+    "column": "champion",
+    "raw": "Hecarim",
+    "canonical": "Hecarim"
+  },
+  {
+    "column": "champion",
+    "raw": "Brand",
+    "canonical": "Brand"
+  },
+  {
+    "column": "champion",
+    "raw": "Qiyana",
+    "canonical": "Qiyana"
+  },
+  {
+    "column": "champion",
+    "raw": "Rek'Sai",
+    "canonical": "Rek'Sai"
+  },
+  {
+    "column": "champion",
+    "raw": "Tryndamere",
+    "canonical": "Tryndamere"
+  },
+  {
+    "column": "champion",
+    "raw": "Rammus",
+    "canonical": "Rammus"
+  },
+  {
+    "column": "champion",
+    "raw": "Vex",
+    "canonical": "Vex"
+  },
+  {
+    "column": "champion",
+    "raw": "Samira",
+    "canonical": "Samira"
+  },
+  {
+    "column": "champion",
+    "raw": "Malphite",
+    "canonical": "Malphite"
+  },
+  {
+    "column": "champion",
+    "raw": "Zaahen",
+    "canonical": "Zaahen"
+  },
+  {
+    "column": "champion",
+    "raw": "Sona",
+    "canonical": "Sona"
+  },
+  {
+    "column": "champion",
+    "raw": "Zac",
+    "canonical": "Zac"
+  },
+  {
+    "column": "champion",
+    "raw": "Xerath",
+    "canonical": "Xerath"
+  },
+  {
+    "column": "champion",
+    "raw": "Amumu",
+    "canonical": "Amumu"
+  },
+  {
+    "column": "champion",
+    "raw": "Illaoi",
+    "canonical": "Illaoi"
+  },
+  {
+    "column": "champion",
+    "raw": "Riven",
+    "canonical": "Riven"
+  },
+  {
+    "column": "champion",
+    "raw": "Vel'Koz",
+    "canonical": "Vel'Koz"
+  },
+  {
+    "column": "champion",
+    "raw": "Fizz",
+    "canonical": "Fizz"
+  },
+  {
+    "column": "champion",
+    "raw": "Locke",
+    "canonical": "Locke"
+  },
+  {
+    "column": "champion",
+    "raw": "Bel'Veth",
+    "canonical": "Bel'Veth"
+  },
+  {
+    "column": "pick1",
+    "raw": "Pantheon",
+    "canonical": "Pantheon"
+  },
+  {
+    "column": "pick1",
+    "raw": "Azir",
+    "canonical": "Azir"
+  },
+  {
+    "column": "pick1",
+    "raw": "Rumble",
+    "canonical": "Rumble"
+  },
+  {
+    "column": "pick1",
+    "raw": "Neeko",
+    "canonical": "Neeko"
+  },
+  {
+    "column": "pick1",
+    "raw": "Lillia",
+    "canonical": "Lillia"
+  },
+  {
+    "column": "pick1",
+    "raw": "Alistar",
+    "canonical": "Alistar"
+  },
+  {
+    "column": "pick1",
+    "raw": "Naafiri",
+    "canonical": "Naafiri"
+  },
+  {
+    "column": "pick1",
+    "raw": "Varus",
+    "canonical": "Varus"
+  },
+  {
+    "column": "pick1",
+    "raw": "Taliyah",
+    "canonical": "Taliyah"
+  },
+  {
+    "column": "pick1",
+    "raw": "Sejuani",
+    "canonical": "Sejuani"
+  },
+  {
+    "column": "pick1",
+    "raw": "Skarner",
+    "canonical": "Skarner"
+  },
+  {
+    "column": "pick1",
+    "raw": "Gwen",
+    "canonical": "Gwen"
+  },
+  {
+    "column": "pick1",
+    "raw": "Ezreal",
+    "canonical": "Ezreal"
+  },
+  {
+    "column": "pick1",
+    "raw": "Miss Fortune",
+    "canonical": "Miss Fortune"
+  },
+  {
+    "column": "pick1",
+    "raw": "Lucian",
+    "canonical": "Lucian"
+  },
+  {
+    "column": "pick1",
+    "raw": "Caitlyn",
+    "canonical": "Caitlyn"
+  },
+  {
+    "column": "pick1",
+    "raw": "Yone",
+    "canonical": "Yone"
+  },
+  {
+    "column": "pick1",
+    "raw": "Xin Zhao",
+    "canonical": "Xin Zhao"
+  },
+  {
+    "column": "pick1",
+    "raw": "Jayce",
+    "canonical": "Jayce"
+  },
+  {
+    "column": "pick1",
+    "raw": "Xayah",
+    "canonical": "Xayah"
+  },
+  {
+    "column": "pick1",
+    "raw": "Ryze",
+    "canonical": "Ryze"
+  },
+  {
+    "column": "pick1",
+    "raw": "Sion",
+    "canonical": "Sion"
+  },
+  {
+    "column": "pick1",
+    "raw": "Viktor",
+    "canonical": "Viktor"
+  },
+  {
+    "column": "pick1",
+    "raw": "Vi",
+    "canonical": "Vi"
+  },
+  {
+    "column": "pick1",
+    "raw": "Kalista",
+    "canonical": "Kalista"
+  },
+  {
+    "column": "pick1",
+    "raw": "Galio",
+    "canonical": "Galio"
+  },
+  {
+    "column": "pick1",
+    "raw": "Renekton",
+    "canonical": "Renekton"
+  },
+  {
+    "column": "pick1",
+    "raw": "Yorick",
+    "canonical": "Yorick"
+  },
+  {
+    "column": "pick1",
+    "raw": "Poppy",
+    "canonical": "Poppy"
+  },
+  {
+    "column": "pick1",
+    "raw": "Nidalee",
+    "canonical": "Nidalee"
+  },
+  {
+    "column": "pick1",
+    "raw": "Wukong",
+    "canonical": "Wukong"
+  },
+  {
+    "column": "pick1",
+    "raw": "Zeri",
+    "canonical": "Zeri"
+  },
+  {
+    "column": "pick1",
+    "raw": "Ahri",
+    "canonical": "Ahri"
+  },
+  {
+    "column": "pick1",
+    "raw": "Nocturne",
+    "canonical": "Nocturne"
+  },
+  {
+    "column": "pick1",
+    "raw": "Annie",
+    "canonical": "Annie"
+  },
+  {
+    "column": "pick1",
+    "raw": "Jax",
+    "canonical": "Jax"
+  },
+  {
+    "column": "pick1",
+    "raw": "Ashe",
+    "canonical": "Ashe"
+  },
+  {
+    "column": "pick1",
+    "raw": "Ambessa",
+    "canonical": "Ambessa"
+  },
+  {
+    "column": "pick1",
+    "raw": "Viego",
+    "canonical": "Viego"
+  },
+  {
+    "column": "pick1",
+    "raw": "Orianna",
+    "canonical": "Orianna"
+  },
+  {
+    "column": "pick1",
+    "raw": "Cho'Gath",
+    "canonical": "Cho'Gath"
+  },
+  {
+    "column": "pick1",
+    "raw": "Corki",
+    "canonical": "Corki"
+  },
+  {
+    "column": "pick1",
+    "raw": "K'Sante",
+    "canonical": "K'Sante"
+  },
+  {
+    "column": "pick1",
+    "raw": "Sylas",
+    "canonical": "Sylas"
+  },
+  {
+    "column": "pick1",
+    "raw": "Kai'Sa",
+    "canonical": "Kai'Sa"
+  },
+  {
+    "column": "pick1",
+    "raw": "Maokai",
+    "canonical": "Maokai"
+  },
+  {
+    "column": "pick1",
+    "raw": "Udyr",
+    "canonical": "Udyr"
+  },
+  {
+    "column": "pick1",
+    "raw": "Jhin",
+    "canonical": "Jhin"
+  },
+  {
+    "column": "pick1",
+    "raw": "Trundle",
+    "canonical": "Trundle"
+  },
+  {
+    "column": "pick1",
+    "raw": "Ornn",
+    "canonical": "Ornn"
+  },
+  {
+    "column": "pick1",
+    "raw": "Renata Glasc",
+    "canonical": "Renata Glasc"
+  },
+  {
+    "column": "pick1",
+    "raw": "Senna",
+    "canonical": "Senna"
+  },
+  {
+    "column": "pick1",
+    "raw": "Nautilus",
+    "canonical": "Nautilus"
+  },
+  {
+    "column": "pick1",
+    "raw": "Rakan",
+    "canonical": "Rakan"
+  },
+  {
+    "column": "pick1",
+    "raw": "Karma",
+    "canonical": "Karma"
+  },
+  {
+    "column": "pick1",
+    "raw": "Leona",
+    "canonical": "Leona"
+  },
+  {
+    "column": "pick1",
+    "raw": "Tristana",
+    "canonical": "Tristana"
+  },
+  {
+    "column": "pick1",
+    "raw": "Gragas",
+    "canonical": "Gragas"
+  },
+  {
+    "column": "pick1",
+    "raw": "Jinx",
+    "canonical": "Jinx"
+  },
+  {
+    "column": "pick1",
+    "raw": "Akali",
+    "canonical": "Akali"
+  },
+  {
+    "column": "pick1",
+    "raw": "Aurora",
+    "canonical": "Aurora"
+  },
+  {
+    "column": "pick1",
+    "raw": "Twisted Fate",
+    "canonical": "Twisted Fate"
+  },
+  {
+    "column": "pick1",
+    "raw": "Rell",
+    "canonical": "Rell"
+  },
+  {
+    "column": "pick1",
+    "raw": "Lee Sin",
+    "canonical": "Lee Sin"
+  },
+  {
+    "column": "pick1",
+    "raw": "Jarvan IV",
+    "canonical": "Jarvan IV"
+  },
+  {
+    "column": "pick1",
+    "raw": "Cassiopeia",
+    "canonical": "Cassiopeia"
+  },
+  {
+    "column": "pick1",
+    "raw": "Ziggs",
+    "canonical": "Ziggs"
+  },
+  {
+    "column": "pick1",
+    "raw": "Sivir",
+    "canonical": "Sivir"
+  },
+  {
+    "column": "pick1",
+    "raw": "Braum",
+    "canonical": "Braum"
+  },
+  {
+    "column": "pick1",
+    "raw": "Thresh",
+    "canonical": "Thresh"
+  },
+  {
+    "column": "pick1",
+    "raw": "Aatrox",
+    "canonical": "Aatrox"
+  },
+  {
+    "column": "pick1",
+    "raw": "Yunara",
+    "canonical": "Yunara"
+  },
+  {
+    "column": "pick1",
+    "raw": "Qiyana",
+    "canonical": "Qiyana"
+  },
+  {
+    "column": "pick1",
+    "raw": "Bard",
+    "canonical": "Bard"
+  },
+  {
+    "column": "pick1",
+    "raw": "Gnar",
+    "canonical": "Gnar"
+  },
+  {
+    "column": "pick1",
+    "raw": "Rek'Sai",
+    "canonical": "Rek'Sai"
+  },
+  {
+    "column": "pick1",
+    "raw": "Draven",
+    "canonical": "Draven"
+  },
+  {
+    "column": "pick1",
+    "raw": "Dr. Mundo",
+    "canonical": "Dr. Mundo"
+  },
+  {
+    "column": "pick1",
+    "raw": "Malphite",
+    "canonical": "Malphite"
+  },
+  {
+    "column": "pick1",
+    "raw": "Aphelios",
+    "canonical": "Aphelios"
+  },
+  {
+    "column": "pick1",
+    "raw": "Syndra",
+    "canonical": "Syndra"
+  },
+  {
+    "column": "pick1",
+    "raw": "Zaahen",
+    "canonical": "Zaahen"
+  },
+  {
+    "column": "pick1",
+    "raw": "Volibear",
+    "canonical": "Volibear"
+  },
+  {
+    "column": "pick1",
+    "raw": "Zoe",
+    "canonical": "Zoe"
+  },
+  {
+    "column": "pick1",
+    "raw": "Kennen",
+    "canonical": "Kennen"
+  },
+  {
+    "column": "pick1",
+    "raw": "Vladimir",
+    "canonical": "Vladimir"
+  },
+  {
+    "column": "pick1",
+    "raw": "LeBlanc",
+    "canonical": "LeBlanc"
+  },
+  {
+    "column": "pick1",
+    "raw": "Lulu",
+    "canonical": "Lulu"
+  },
+  {
+    "column": "pick1",
+    "raw": "Anivia",
+    "canonical": "Anivia"
+  },
+  {
+    "column": "pick1",
+    "raw": "Mel",
+    "canonical": "Mel"
+  },
+  {
+    "column": "pick1",
+    "raw": "Seraphine",
+    "canonical": "Seraphine"
+  },
+  {
+    "column": "pick1",
+    "raw": "Nami",
+    "canonical": "Nami"
+  },
+  {
+    "column": "pick1",
+    "raw": "Milio",
+    "canonical": "Milio"
+  },
+  {
+    "column": "pick1",
+    "raw": "Vayne",
+    "canonical": "Vayne"
+  },
+  {
+    "column": "pick1",
+    "raw": "Olaf",
+    "canonical": "Olaf"
+  },
+  {
+    "column": "pick1",
+    "raw": "Camille",
+    "canonical": "Camille"
+  },
+  {
+    "column": "pick1",
+    "raw": "Locke",
+    "canonical": "Locke"
+  },
+  {
+    "column": "pick1",
+    "raw": "Shen",
+    "canonical": "Shen"
+  },
+  {
+    "column": "pick1",
+    "raw": "Kled",
+    "canonical": "Kled"
+  },
+  {
+    "column": "pick1",
+    "raw": "Yuumi",
+    "canonical": "Yuumi"
+  },
+  {
+    "column": "pick2",
+    "raw": "Ahri",
+    "canonical": "Ahri"
+  },
+  {
+    "column": "pick2",
+    "raw": "Gwen",
+    "canonical": "Gwen"
+  },
+  {
+    "column": "pick2",
+    "raw": "Varus",
+    "canonical": "Varus"
+  },
+  {
+    "column": "pick2",
+    "raw": "Skarner",
+    "canonical": "Skarner"
+  },
+  {
+    "column": "pick2",
+    "raw": "Renekton",
+    "canonical": "Renekton"
+  },
+  {
+    "column": "pick2",
+    "raw": "Ambessa",
+    "canonical": "Ambessa"
+  },
+  {
+    "column": "pick2",
+    "raw": "Lucian",
+    "canonical": "Lucian"
+  },
+  {
+    "column": "pick2",
+    "raw": "Zed",
+    "canonical": "Zed"
+  },
+  {
+    "column": "pick2",
+    "raw": "Nocturne",
+    "canonical": "Nocturne"
+  },
+  {
+    "column": "pick2",
+    "raw": "Naafiri",
+    "canonical": "Naafiri"
+  },
+  {
+    "column": "pick2",
+    "raw": "Xin Zhao",
+    "canonical": "Xin Zhao"
+  },
+  {
+    "column": "pick2",
+    "raw": "Rumble",
+    "canonical": "Rumble"
+  },
+  {
+    "column": "pick2",
+    "raw": "Yone",
+    "canonical": "Yone"
+  },
+  {
+    "column": "pick2",
+    "raw": "Jayce",
+    "canonical": "Jayce"
+  },
+  {
+    "column": "pick2",
+    "raw": "Poppy",
+    "canonical": "Poppy"
+  },
+  {
+    "column": "pick2",
+    "raw": "Taliyah",
+    "canonical": "Taliyah"
+  },
+  {
+    "column": "pick2",
+    "raw": "Azir",
+    "canonical": "Azir"
+  },
+  {
+    "column": "pick2",
+    "raw": "Sejuani",
+    "canonical": "Sejuani"
+  },
+  {
+    "column": "pick2",
+    "raw": "Wukong",
+    "canonical": "Wukong"
+  },
+  {
+    "column": "pick2",
+    "raw": "Nautilus",
+    "canonical": "Nautilus"
+  },
+  {
+    "column": "pick2",
+    "raw": "Corki",
+    "canonical": "Corki"
+  },
+  {
+    "column": "pick2",
+    "raw": "Annie",
+    "canonical": "Annie"
+  },
+  {
+    "column": "pick2",
+    "raw": "Yorick",
+    "canonical": "Yorick"
+  },
+  {
+    "column": "pick2",
+    "raw": "Pantheon",
+    "canonical": "Pantheon"
+  },
+  {
+    "column": "pick2",
+    "raw": "Kai'Sa",
+    "canonical": "Kai'Sa"
+  },
+  {
+    "column": "pick2",
+    "raw": "Vi",
+    "canonical": "Vi"
+  },
+  {
+    "column": "pick2",
+    "raw": "Lulu",
+    "canonical": "Lulu"
+  },
+  {
+    "column": "pick2",
+    "raw": "Rakan",
+    "canonical": "Rakan"
+  },
+  {
+    "column": "pick2",
+    "raw": "Udyr",
+    "canonical": "Udyr"
+  },
+  {
+    "column": "pick2",
+    "raw": "Neeko",
+    "canonical": "Neeko"
+  },
+  {
+    "column": "pick2",
+    "raw": "Ryze",
+    "canonical": "Ryze"
+  },
+  {
+    "column": "pick2",
+    "raw": "Aurora",
+    "canonical": "Aurora"
+  },
+  {
+    "column": "pick2",
+    "raw": "Renata Glasc",
+    "canonical": "Renata Glasc"
+  },
+  {
+    "column": "pick2",
+    "raw": "Zyra",
+    "canonical": "Zyra"
+  },
+  {
+    "column": "pick2",
+    "raw": "Ornn",
+    "canonical": "Ornn"
+  },
+  {
+    "column": "pick2",
+    "raw": "Viktor",
+    "canonical": "Viktor"
+  },
+  {
+    "column": "pick2",
+    "raw": "Kalista",
+    "canonical": "Kalista"
+  },
+  {
+    "column": "pick2",
+    "raw": "Nidalee",
+    "canonical": "Nidalee"
+  },
+  {
+    "column": "pick2",
+    "raw": "Sylas",
+    "canonical": "Sylas"
+  },
+  {
+    "column": "pick2",
+    "raw": "Maokai",
+    "canonical": "Maokai"
+  },
+  {
+    "column": "pick2",
+    "raw": "K'Sante",
+    "canonical": "K'Sante"
+  },
+  {
+    "column": "pick2",
+    "raw": "Jhin",
+    "canonical": "Jhin"
+  },
+  {
+    "column": "pick2",
+    "raw": "Lillia",
+    "canonical": "Lillia"
+  },
+  {
+    "column": "pick2",
+    "raw": "Gnar",
+    "canonical": "Gnar"
+  },
+  {
+    "column": "pick2",
+    "raw": "Sion",
+    "canonical": "Sion"
+  },
+  {
+    "column": "pick2",
+    "raw": "Miss Fortune",
+    "canonical": "Miss Fortune"
+  },
+  {
+    "column": "pick2",
+    "raw": "Xayah",
+    "canonical": "Xayah"
+  },
+  {
+    "column": "pick2",
+    "raw": "Nami",
+    "canonical": "Nami"
+  },
+  {
+    "column": "pick2",
+    "raw": "Galio",
+    "canonical": "Galio"
+  },
+  {
+    "column": "pick2",
+    "raw": "Senna",
+    "canonical": "Senna"
+  },
+  {
+    "column": "pick2",
+    "raw": "Alistar",
+    "canonical": "Alistar"
+  },
+  {
+    "column": "pick2",
+    "raw": "Ashe",
+    "canonical": "Ashe"
+  },
+  {
+    "column": "pick2",
+    "raw": "Orianna",
+    "canonical": "Orianna"
+  },
+  {
+    "column": "pick2",
+    "raw": "Ezreal",
+    "canonical": "Ezreal"
+  },
+  {
+    "column": "pick2",
+    "raw": "Viego",
+    "canonical": "Viego"
+  },
+  {
+    "column": "pick2",
+    "raw": "Jax",
+    "canonical": "Jax"
+  },
+  {
+    "column": "pick2",
+    "raw": "Hwei",
+    "canonical": "Hwei"
+  },
+  {
+    "column": "pick2",
+    "raw": "Shen",
+    "canonical": "Shen"
+  },
+  {
+    "column": "pick2",
+    "raw": "Trundle",
+    "canonical": "Trundle"
+  },
+  {
+    "column": "pick2",
+    "raw": "Kindred",
+    "canonical": "Kindred"
+  },
+  {
+    "column": "pick2",
+    "raw": "Cho'Gath",
+    "canonical": "Cho'Gath"
+  },
+  {
+    "column": "pick2",
+    "raw": "Akali",
+    "canonical": "Akali"
+  },
+  {
+    "column": "pick2",
+    "raw": "Aphelios",
+    "canonical": "Aphelios"
+  },
+  {
+    "column": "pick2",
+    "raw": "Leona",
+    "canonical": "Leona"
+  },
+  {
+    "column": "pick2",
+    "raw": "Rell",
+    "canonical": "Rell"
+  },
+  {
+    "column": "pick2",
+    "raw": "Lee Sin",
+    "canonical": "Lee Sin"
+  },
+  {
+    "column": "pick2",
+    "raw": "Braum",
+    "canonical": "Braum"
+  },
+  {
+    "column": "pick2",
+    "raw": "Smolder",
+    "canonical": "Smolder"
+  },
+  {
+    "column": "pick2",
+    "raw": "Tristana",
+    "canonical": "Tristana"
+  },
+  {
+    "column": "pick2",
+    "raw": "Jarvan IV",
+    "canonical": "Jarvan IV"
+  },
+  {
+    "column": "pick2",
+    "raw": "Caitlyn",
+    "canonical": "Caitlyn"
+  },
+  {
+    "column": "pick2",
+    "raw": "Camille",
+    "canonical": "Camille"
+  },
+  {
+    "column": "pick2",
+    "raw": "Seraphine",
+    "canonical": "Seraphine"
+  },
+  {
+    "column": "pick2",
+    "raw": "Yasuo",
+    "canonical": "Yasuo"
+  },
+  {
+    "column": "pick2",
+    "raw": "Veigar",
+    "canonical": "Veigar"
+  },
+  {
+    "column": "pick2",
+    "raw": "Nunu & Willump",
+    "canonical": "Nunu & Willump"
+  },
+  {
+    "column": "pick2",
+    "raw": "Ziggs",
+    "canonical": "Ziggs"
+  },
+  {
+    "column": "pick2",
+    "raw": "Twisted Fate",
+    "canonical": "Twisted Fate"
+  },
+  {
+    "column": "pick2",
+    "raw": "Karma",
+    "canonical": "Karma"
+  },
+  {
+    "column": "pick2",
+    "raw": "Jinx",
+    "canonical": "Jinx"
+  },
+  {
+    "column": "pick2",
+    "raw": "Aatrox",
+    "canonical": "Aatrox"
+  },
+  {
+    "column": "pick2",
+    "raw": "Gragas",
+    "canonical": "Gragas"
+  },
+  {
+    "column": "pick2",
+    "raw": "Sivir",
+    "canonical": "Sivir"
+  },
+  {
+    "column": "pick2",
+    "raw": "Cassiopeia",
+    "canonical": "Cassiopeia"
+  },
+  {
+    "column": "pick2",
+    "raw": "Bard",
+    "canonical": "Bard"
+  },
+  {
+    "column": "pick2",
+    "raw": "Ivern",
+    "canonical": "Ivern"
+  },
+  {
+    "column": "pick2",
+    "raw": "Yunara",
+    "canonical": "Yunara"
+  },
+  {
+    "column": "pick2",
+    "raw": "Brand",
+    "canonical": "Brand"
+  },
+  {
+    "column": "pick2",
+    "raw": "Olaf",
+    "canonical": "Olaf"
+  },
+  {
+    "column": "pick2",
+    "raw": "Zeri",
+    "canonical": "Zeri"
+  },
+  {
+    "column": "pick2",
+    "raw": "Blitzcrank",
+    "canonical": "Blitzcrank"
+  },
+  {
+    "column": "pick2",
+    "raw": "Qiyana",
+    "canonical": "Qiyana"
+  },
+  {
+    "column": "pick2",
+    "raw": "Morgana",
+    "canonical": "Morgana"
+  },
+  {
+    "column": "pick2",
+    "raw": "Syndra",
+    "canonical": "Syndra"
+  },
+  {
+    "column": "pick2",
+    "raw": "Elise",
+    "canonical": "Elise"
+  },
+  {
+    "column": "pick2",
+    "raw": "Rek'Sai",
+    "canonical": "Rek'Sai"
+  },
+  {
+    "column": "pick2",
+    "raw": "Dr. Mundo",
+    "canonical": "Dr. Mundo"
+  },
+  {
+    "column": "pick2",
+    "raw": "Anivia",
+    "canonical": "Anivia"
+  },
+  {
+    "column": "pick2",
+    "raw": "Thresh",
+    "canonical": "Thresh"
+  },
+  {
+    "column": "pick2",
+    "raw": "Malphite",
+    "canonical": "Malphite"
+  },
+  {
+    "column": "pick2",
+    "raw": "Zoe",
+    "canonical": "Zoe"
+  },
+  {
+    "column": "pick2",
+    "raw": "Zaahen",
+    "canonical": "Zaahen"
+  },
+  {
+    "column": "pick2",
+    "raw": "Draven",
+    "canonical": "Draven"
+  },
+  {
+    "column": "pick2",
+    "raw": "Mel",
+    "canonical": "Mel"
+  },
+  {
+    "column": "pick2",
+    "raw": "Milio",
+    "canonical": "Milio"
+  },
+  {
+    "column": "pick2",
+    "raw": "Yuumi",
+    "canonical": "Yuumi"
+  },
+  {
+    "column": "pick2",
+    "raw": "Kog'Maw",
+    "canonical": "Kog'Maw"
+  },
+  {
+    "column": "pick2",
+    "raw": "Lux",
+    "canonical": "Lux"
+  },
+  {
+    "column": "pick2",
+    "raw": "Pyke",
+    "canonical": "Pyke"
+  },
+  {
+    "column": "pick2",
+    "raw": "Lissandra",
+    "canonical": "Lissandra"
+  },
+  {
+    "column": "pick2",
+    "raw": "Nasus",
+    "canonical": "Nasus"
+  },
+  {
+    "column": "pick2",
+    "raw": "Vayne",
+    "canonical": "Vayne"
+  },
+  {
+    "column": "pick2",
+    "raw": "Locke",
+    "canonical": "Locke"
+  },
+  {
+    "column": "pick2",
+    "raw": "Xerath",
+    "canonical": "Xerath"
+  },
+  {
+    "column": "pick2",
+    "raw": "Shyvana",
+    "canonical": "Shyvana"
+  },
+  {
+    "column": "pick2",
+    "raw": "Kled",
+    "canonical": "Kled"
+  },
+  {
+    "column": "pick3",
+    "raw": "Jayce",
+    "canonical": "Jayce"
+  },
+  {
+    "column": "pick3",
+    "raw": "Ezreal",
+    "canonical": "Ezreal"
+  },
+  {
+    "column": "pick3",
+    "raw": "Viego",
+    "canonical": "Viego"
+  },
+  {
+    "column": "pick3",
+    "raw": "Taliyah",
+    "canonical": "Taliyah"
+  },
+  {
+    "column": "pick3",
+    "raw": "Azir",
+    "canonical": "Azir"
+  },
+  {
+    "column": "pick3",
+    "raw": "Aurelion Sol",
+    "canonical": "Aurelion Sol"
+  },
+  {
+    "column": "pick3",
+    "raw": "Nami",
+    "canonical": "Nami"
+  },
+  {
+    "column": "pick3",
+    "raw": "Galio",
+    "canonical": "Galio"
+  },
+  {
+    "column": "pick3",
+    "raw": "Kalista",
+    "canonical": "Kalista"
+  },
+  {
+    "column": "pick3",
+    "raw": "Ahri",
+    "canonical": "Ahri"
+  },
+  {
+    "column": "pick3",
+    "raw": "Miss Fortune",
+    "canonical": "Miss Fortune"
+  },
+  {
+    "column": "pick3",
+    "raw": "Kai'Sa",
+    "canonical": "Kai'Sa"
+  },
+  {
+    "column": "pick3",
+    "raw": "Corki",
+    "canonical": "Corki"
+  },
+  {
+    "column": "pick3",
+    "raw": "Ryze",
+    "canonical": "Ryze"
+  },
+  {
+    "column": "pick3",
+    "raw": "Yorick",
+    "canonical": "Yorick"
+  },
+  {
+    "column": "pick3",
+    "raw": "Skarner",
+    "canonical": "Skarner"
+  },
+  {
+    "column": "pick3",
+    "raw": "Xin Zhao",
+    "canonical": "Xin Zhao"
+  },
+  {
+    "column": "pick3",
+    "raw": "Yone",
+    "canonical": "Yone"
+  },
+  {
+    "column": "pick3",
+    "raw": "Ornn",
+    "canonical": "Ornn"
+  },
+  {
+    "column": "pick3",
+    "raw": "Ambessa",
+    "canonical": "Ambessa"
+  },
+  {
+    "column": "pick3",
+    "raw": "Leona",
+    "canonical": "Leona"
+  },
+  {
+    "column": "pick3",
+    "raw": "Lux",
+    "canonical": "Lux"
+  },
+  {
+    "column": "pick3",
+    "raw": "Gwen",
+    "canonical": "Gwen"
+  },
+  {
+    "column": "pick3",
+    "raw": "Jinx",
+    "canonical": "Jinx"
+  },
+  {
+    "column": "pick3",
+    "raw": "Nocturne",
+    "canonical": "Nocturne"
+  },
+  {
+    "column": "pick3",
+    "raw": "Shen",
+    "canonical": "Shen"
+  },
+  {
+    "column": "pick3",
+    "raw": "Annie",
+    "canonical": "Annie"
+  },
+  {
+    "column": "pick3",
+    "raw": "Sejuani",
+    "canonical": "Sejuani"
+  },
+  {
+    "column": "pick3",
+    "raw": "Wukong",
+    "canonical": "Wukong"
+  },
+  {
+    "column": "pick3",
+    "raw": "Aurora",
+    "canonical": "Aurora"
+  },
+  {
+    "column": "pick3",
+    "raw": "Jhin",
+    "canonical": "Jhin"
+  },
+  {
+    "column": "pick3",
+    "raw": "Varus",
+    "canonical": "Varus"
+  },
+  {
+    "column": "pick3",
+    "raw": "Viktor",
+    "canonical": "Viktor"
+  },
+  {
+    "column": "pick3",
+    "raw": "Gnar",
+    "canonical": "Gnar"
+  },
+  {
+    "column": "pick3",
+    "raw": "Renekton",
+    "canonical": "Renekton"
+  },
+  {
+    "column": "pick3",
+    "raw": "Sett",
+    "canonical": "Sett"
+  },
+  {
+    "column": "pick3",
+    "raw": "Nautilus",
+    "canonical": "Nautilus"
+  },
+  {
+    "column": "pick3",
+    "raw": "Renata Glasc",
+    "canonical": "Renata Glasc"
+  },
+  {
+    "column": "pick3",
+    "raw": "Zeri",
+    "canonical": "Zeri"
+  },
+  {
+    "column": "pick3",
+    "raw": "Jax",
+    "canonical": "Jax"
+  },
+  {
+    "column": "pick3",
+    "raw": "Alistar",
+    "canonical": "Alistar"
+  },
+  {
+    "column": "pick3",
+    "raw": "Elise",
+    "canonical": "Elise"
+  },
+  {
+    "column": "pick3",
+    "raw": "Milio",
+    "canonical": "Milio"
+  },
+  {
+    "column": "pick3",
+    "raw": "Lee Sin",
+    "canonical": "Lee Sin"
+  },
+  {
+    "column": "pick3",
+    "raw": "Ashe",
+    "canonical": "Ashe"
+  },
+  {
+    "column": "pick3",
+    "raw": "Sylas",
+    "canonical": "Sylas"
+  },
+  {
+    "column": "pick3",
+    "raw": "Kennen",
+    "canonical": "Kennen"
+  },
+  {
+    "column": "pick3",
+    "raw": "Naafiri",
+    "canonical": "Naafiri"
+  },
+  {
+    "column": "pick3",
+    "raw": "Rakan",
+    "canonical": "Rakan"
+  },
+  {
+    "column": "pick3",
+    "raw": "Trundle",
+    "canonical": "Trundle"
+  },
+  {
+    "column": "pick3",
+    "raw": "Sion",
+    "canonical": "Sion"
+  },
+  {
+    "column": "pick3",
+    "raw": "Nidalee",
+    "canonical": "Nidalee"
+  },
+  {
+    "column": "pick3",
+    "raw": "Karma",
+    "canonical": "Karma"
+  },
+  {
+    "column": "pick3",
+    "raw": "Xayah",
+    "canonical": "Xayah"
+  },
+  {
+    "column": "pick3",
+    "raw": "Pantheon",
+    "canonical": "Pantheon"
+  },
+  {
+    "column": "pick3",
+    "raw": "Rumble",
+    "canonical": "Rumble"
+  },
+  {
+    "column": "pick3",
+    "raw": "K'Sante",
+    "canonical": "K'Sante"
+  },
+  {
+    "column": "pick3",
+    "raw": "Soraka",
+    "canonical": "Soraka"
+  },
+  {
+    "column": "pick3",
+    "raw": "Rell",
+    "canonical": "Rell"
+  },
+  {
+    "column": "pick3",
+    "raw": "Akali",
+    "canonical": "Akali"
+  },
+  {
+    "column": "pick3",
+    "raw": "Orianna",
+    "canonical": "Orianna"
+  },
+  {
+    "column": "pick3",
+    "raw": "Neeko",
+    "canonical": "Neeko"
+  },
+  {
+    "column": "pick3",
+    "raw": "Lillia",
+    "canonical": "Lillia"
+  },
+  {
+    "column": "pick3",
+    "raw": "Aatrox",
+    "canonical": "Aatrox"
+  },
+  {
+    "column": "pick3",
+    "raw": "Braum",
+    "canonical": "Braum"
+  },
+  {
+    "column": "pick3",
+    "raw": "Smolder",
+    "canonical": "Smolder"
+  },
+  {
+    "column": "pick3",
+    "raw": "Jarvan IV",
+    "canonical": "Jarvan IV"
+  },
+  {
+    "column": "pick3",
+    "raw": "Hwei",
+    "canonical": "Hwei"
+  },
+  {
+    "column": "pick3",
+    "raw": "Cho'Gath",
+    "canonical": "Cho'Gath"
+  },
+  {
+    "column": "pick3",
+    "raw": "Poppy",
+    "canonical": "Poppy"
+  },
+  {
+    "column": "pick3",
+    "raw": "Kassadin",
+    "canonical": "Kassadin"
+  },
+  {
+    "column": "pick3",
+    "raw": "Zyra",
+    "canonical": "Zyra"
+  },
+  {
+    "column": "pick3",
+    "raw": "Senna",
+    "canonical": "Senna"
+  },
+  {
+    "column": "pick3",
+    "raw": "Draven",
+    "canonical": "Draven"
+  },
+  {
+    "column": "pick3",
+    "raw": "Tristana",
+    "canonical": "Tristana"
+  },
+  {
+    "column": "pick3",
+    "raw": "Lucian",
+    "canonical": "Lucian"
+  },
+  {
+    "column": "pick3",
+    "raw": "Vi",
+    "canonical": "Vi"
+  },
+  {
+    "column": "pick3",
+    "raw": "Seraphine",
+    "canonical": "Seraphine"
+  },
+  {
+    "column": "pick3",
+    "raw": "Caitlyn",
+    "canonical": "Caitlyn"
+  },
+  {
+    "column": "pick3",
+    "raw": "Bard",
+    "canonical": "Bard"
+  },
+  {
+    "column": "pick3",
+    "raw": "Camille",
+    "canonical": "Camille"
+  },
+  {
+    "column": "pick3",
+    "raw": "Tahm Kench",
+    "canonical": "Tahm Kench"
+  },
+  {
+    "column": "pick3",
+    "raw": "Ziggs",
+    "canonical": "Ziggs"
+  },
+  {
+    "column": "pick3",
+    "raw": "LeBlanc",
+    "canonical": "LeBlanc"
+  },
+  {
+    "column": "pick3",
+    "raw": "Syndra",
+    "canonical": "Syndra"
+  },
+  {
+    "column": "pick3",
+    "raw": "Mordekaiser",
+    "canonical": "Mordekaiser"
+  },
+  {
+    "column": "pick3",
+    "raw": "Swain",
+    "canonical": "Swain"
+  },
+  {
+    "column": "pick3",
+    "raw": "Cassiopeia",
+    "canonical": "Cassiopeia"
+  },
+  {
+    "column": "pick3",
+    "raw": "Irelia",
+    "canonical": "Irelia"
+  },
+  {
+    "column": "pick3",
+    "raw": "Gragas",
+    "canonical": "Gragas"
+  },
+  {
+    "column": "pick3",
+    "raw": "Fiora",
+    "canonical": "Fiora"
+  },
+  {
+    "column": "pick3",
+    "raw": "Sivir",
+    "canonical": "Sivir"
+  },
+  {
+    "column": "pick3",
+    "raw": "Maokai",
+    "canonical": "Maokai"
+  },
+  {
+    "column": "pick3",
+    "raw": "Twisted Fate",
+    "canonical": "Twisted Fate"
+  },
+  {
+    "column": "pick3",
+    "raw": "Yunara",
+    "canonical": "Yunara"
+  },
+  {
+    "column": "pick3",
+    "raw": "Lulu",
+    "canonical": "Lulu"
+  },
+  {
+    "column": "pick3",
+    "raw": "Zed",
+    "canonical": "Zed"
+  },
+  {
+    "column": "pick3",
+    "raw": "Qiyana",
+    "canonical": "Qiyana"
+  },
+  {
+    "column": "pick3",
+    "raw": "Udyr",
+    "canonical": "Udyr"
+  },
+  {
+    "column": "pick3",
+    "raw": "Kindred",
+    "canonical": "Kindred"
+  },
+  {
+    "column": "pick3",
+    "raw": "Olaf",
+    "canonical": "Olaf"
+  },
+  {
+    "column": "pick3",
+    "raw": "Morgana",
+    "canonical": "Morgana"
+  },
+  {
+    "column": "pick3",
+    "raw": "Blitzcrank",
+    "canonical": "Blitzcrank"
+  },
+  {
+    "column": "pick3",
+    "raw": "Rek'Sai",
+    "canonical": "Rek'Sai"
+  },
+  {
+    "column": "pick3",
+    "raw": "Taric",
+    "canonical": "Taric"
+  },
+  {
+    "column": "pick3",
+    "raw": "Pyke",
+    "canonical": "Pyke"
+  },
+  {
+    "column": "pick3",
+    "raw": "Aphelios",
+    "canonical": "Aphelios"
+  },
+  {
+    "column": "pick3",
+    "raw": "Kled",
+    "canonical": "Kled"
+  },
+  {
+    "column": "pick3",
+    "raw": "Dr. Mundo",
+    "canonical": "Dr. Mundo"
+  },
+  {
+    "column": "pick3",
+    "raw": "Thresh",
+    "canonical": "Thresh"
+  },
+  {
+    "column": "pick3",
+    "raw": "Mel",
+    "canonical": "Mel"
+  },
+  {
+    "column": "pick3",
+    "raw": "Malphite",
+    "canonical": "Malphite"
+  },
+  {
+    "column": "pick3",
+    "raw": "Anivia",
+    "canonical": "Anivia"
+  },
+  {
+    "column": "pick3",
+    "raw": "Zaahen",
+    "canonical": "Zaahen"
+  },
+  {
+    "column": "pick3",
+    "raw": "Malzahar",
+    "canonical": "Malzahar"
+  },
+  {
+    "column": "pick3",
+    "raw": "Zoe",
+    "canonical": "Zoe"
+  },
+  {
+    "column": "pick3",
+    "raw": "Yuumi",
+    "canonical": "Yuumi"
+  },
+  {
+    "column": "pick3",
+    "raw": "Vayne",
+    "canonical": "Vayne"
+  },
+  {
+    "column": "pick3",
+    "raw": "Lissandra",
+    "canonical": "Lissandra"
+  },
+  {
+    "column": "pick3",
+    "raw": "Nasus",
+    "canonical": "Nasus"
+  },
+  {
+    "column": "pick3",
+    "raw": "Yasuo",
+    "canonical": "Yasuo"
+  },
+  {
+    "column": "pick3",
+    "raw": "Locke",
+    "canonical": "Locke"
+  },
+  {
+    "column": "pick3",
+    "raw": "Volibear",
+    "canonical": "Volibear"
+  },
+  {
+    "column": "pick3",
+    "raw": "Kog'Maw",
+    "canonical": "Kog'Maw"
+  },
+  {
+    "column": "pick3",
+    "raw": "Twitch",
+    "canonical": "Twitch"
+  },
+  {
+    "column": "pick3",
+    "raw": "Ekko",
+    "canonical": "Ekko"
+  },
+  {
+    "column": "pick4",
+    "raw": "Xayah",
+    "canonical": "Xayah"
+  },
+  {
+    "column": "pick4",
+    "raw": "Wukong",
+    "canonical": "Wukong"
+  },
+  {
+    "column": "pick4",
+    "raw": "Ornn",
+    "canonical": "Ornn"
+  },
+  {
+    "column": "pick4",
+    "raw": "Kalista",
+    "canonical": "Kalista"
+  },
+  {
+    "column": "pick4",
+    "raw": "Corki",
+    "canonical": "Corki"
+  },
+  {
+    "column": "pick4",
+    "raw": "Jax",
+    "canonical": "Jax"
+  },
+  {
+    "column": "pick4",
+    "raw": "Sylas",
+    "canonical": "Sylas"
+  },
+  {
+    "column": "pick4",
+    "raw": "Zeri",
+    "canonical": "Zeri"
+  },
+  {
+    "column": "pick4",
+    "raw": "Ryze",
+    "canonical": "Ryze"
+  },
+  {
+    "column": "pick4",
+    "raw": "Nautilus",
+    "canonical": "Nautilus"
+  },
+  {
+    "column": "pick4",
+    "raw": "Galio",
+    "canonical": "Galio"
+  },
+  {
+    "column": "pick4",
+    "raw": "Alistar",
+    "canonical": "Alistar"
+  },
+  {
+    "column": "pick4",
+    "raw": "Leona",
+    "canonical": "Leona"
+  },
+  {
+    "column": "pick4",
+    "raw": "Rakan",
+    "canonical": "Rakan"
+  },
+  {
+    "column": "pick4",
+    "raw": "Annie",
+    "canonical": "Annie"
+  },
+  {
+    "column": "pick4",
+    "raw": "Kai'Sa",
+    "canonical": "Kai'Sa"
+  },
+  {
+    "column": "pick4",
+    "raw": "Renekton",
+    "canonical": "Renekton"
+  },
+  {
+    "column": "pick4",
+    "raw": "Ezreal",
+    "canonical": "Ezreal"
+  },
+  {
+    "column": "pick4",
+    "raw": "Lucian",
+    "canonical": "Lucian"
+  },
+  {
+    "column": "pick4",
+    "raw": "Braum",
+    "canonical": "Braum"
+  },
+  {
+    "column": "pick4",
+    "raw": "Nidalee",
+    "canonical": "Nidalee"
+  },
+  {
+    "column": "pick4",
+    "raw": "Sion",
+    "canonical": "Sion"
+  },
+  {
+    "column": "pick4",
+    "raw": "Shen",
+    "canonical": "Shen"
+  },
+  {
+    "column": "pick4",
+    "raw": "Poppy",
+    "canonical": "Poppy"
+  },
+  {
+    "column": "pick4",
+    "raw": "Miss Fortune",
+    "canonical": "Miss Fortune"
+  },
+  {
+    "column": "pick4",
+    "raw": "Varus",
+    "canonical": "Varus"
+  },
+  {
+    "column": "pick4",
+    "raw": "Caitlyn",
+    "canonical": "Caitlyn"
+  },
+  {
+    "column": "pick4",
+    "raw": "Jhin",
+    "canonical": "Jhin"
+  },
+  {
+    "column": "pick4",
+    "raw": "Viktor",
+    "canonical": "Viktor"
+  },
+  {
+    "column": "pick4",
+    "raw": "Skarner",
+    "canonical": "Skarner"
+  },
+  {
+    "column": "pick4",
+    "raw": "K'Sante",
+    "canonical": "K'Sante"
+  },
+  {
+    "column": "pick4",
+    "raw": "Senna",
+    "canonical": "Senna"
+  },
+  {
+    "column": "pick4",
+    "raw": "Ashe",
+    "canonical": "Ashe"
+  },
+  {
+    "column": "pick4",
+    "raw": "Aurora",
+    "canonical": "Aurora"
+  },
+  {
+    "column": "pick4",
+    "raw": "Rell",
+    "canonical": "Rell"
+  },
+  {
+    "column": "pick4",
+    "raw": "Akali",
+    "canonical": "Akali"
+  },
+  {
+    "column": "pick4",
+    "raw": "Orianna",
+    "canonical": "Orianna"
+  },
+  {
+    "column": "pick4",
+    "raw": "Kled",
+    "canonical": "Kled"
+  },
+  {
+    "column": "pick4",
+    "raw": "Jarvan IV",
+    "canonical": "Jarvan IV"
+  },
+  {
+    "column": "pick4",
+    "raw": "Maokai",
+    "canonical": "Maokai"
+  },
+  {
+    "column": "pick4",
+    "raw": "Jinx",
+    "canonical": "Jinx"
+  },
+  {
+    "column": "pick4",
+    "raw": "Karma",
+    "canonical": "Karma"
+  },
+  {
+    "column": "pick4",
+    "raw": "Renata Glasc",
+    "canonical": "Renata Glasc"
+  },
+  {
+    "column": "pick4",
+    "raw": "Gragas",
+    "canonical": "Gragas"
+  },
+  {
+    "column": "pick4",
+    "raw": "Neeko",
+    "canonical": "Neeko"
+  },
+  {
+    "column": "pick4",
+    "raw": "Tristana",
+    "canonical": "Tristana"
+  },
+  {
+    "column": "pick4",
+    "raw": "Zoe",
+    "canonical": "Zoe"
+  },
+  {
+    "column": "pick4",
+    "raw": "Naafiri",
+    "canonical": "Naafiri"
+  },
+  {
+    "column": "pick4",
+    "raw": "Ahri",
+    "canonical": "Ahri"
+  },
+  {
+    "column": "pick4",
+    "raw": "Seraphine",
+    "canonical": "Seraphine"
+  },
+  {
+    "column": "pick4",
+    "raw": "Xin Zhao",
+    "canonical": "Xin Zhao"
+  },
+  {
+    "column": "pick4",
+    "raw": "Aatrox",
+    "canonical": "Aatrox"
+  },
+  {
+    "column": "pick4",
+    "raw": "Yorick",
+    "canonical": "Yorick"
+  },
+  {
+    "column": "pick4",
+    "raw": "Jayce",
+    "canonical": "Jayce"
+  },
+  {
+    "column": "pick4",
+    "raw": "Viego",
+    "canonical": "Viego"
+  },
+  {
+    "column": "pick4",
+    "raw": "Nocturne",
+    "canonical": "Nocturne"
+  },
+  {
+    "column": "pick4",
+    "raw": "Yone",
+    "canonical": "Yone"
+  },
+  {
+    "column": "pick4",
+    "raw": "Vladimir",
+    "canonical": "Vladimir"
+  },
+  {
+    "column": "pick4",
+    "raw": "Azir",
+    "canonical": "Azir"
+  },
+  {
+    "column": "pick4",
+    "raw": "Gnar",
+    "canonical": "Gnar"
+  },
+  {
+    "column": "pick4",
+    "raw": "Smolder",
+    "canonical": "Smolder"
+  },
+  {
+    "column": "pick4",
+    "raw": "Syndra",
+    "canonical": "Syndra"
+  },
+  {
+    "column": "pick4",
+    "raw": "Hwei",
+    "canonical": "Hwei"
+  },
+  {
+    "column": "pick4",
+    "raw": "Zed",
+    "canonical": "Zed"
+  },
+  {
+    "column": "pick4",
+    "raw": "Camille",
+    "canonical": "Camille"
+  },
+  {
+    "column": "pick4",
+    "raw": "Lulu",
+    "canonical": "Lulu"
+  },
+  {
+    "column": "pick4",
+    "raw": "Sett",
+    "canonical": "Sett"
+  },
+  {
+    "column": "pick4",
+    "raw": "Sejuani",
+    "canonical": "Sejuani"
+  },
+  {
+    "column": "pick4",
+    "raw": "Ambessa",
+    "canonical": "Ambessa"
+  },
+  {
+    "column": "pick4",
+    "raw": "Diana",
+    "canonical": "Diana"
+  },
+  {
+    "column": "pick4",
+    "raw": "LeBlanc",
+    "canonical": "LeBlanc"
+  },
+  {
+    "column": "pick4",
+    "raw": "Trundle",
+    "canonical": "Trundle"
+  },
+  {
+    "column": "pick4",
+    "raw": "Aurelion Sol",
+    "canonical": "Aurelion Sol"
+  },
+  {
+    "column": "pick4",
+    "raw": "Lillia",
+    "canonical": "Lillia"
+  },
+  {
+    "column": "pick4",
+    "raw": "Sivir",
+    "canonical": "Sivir"
+  },
+  {
+    "column": "pick4",
+    "raw": "Lissandra",
+    "canonical": "Lissandra"
+  },
+  {
+    "column": "pick4",
+    "raw": "Kindred",
+    "canonical": "Kindred"
+  },
+  {
+    "column": "pick4",
+    "raw": "Yuumi",
+    "canonical": "Yuumi"
+  },
+  {
+    "column": "pick4",
+    "raw": "Zyra",
+    "canonical": "Zyra"
+  },
+  {
+    "column": "pick4",
+    "raw": "Cho'Gath",
+    "canonical": "Cho'Gath"
+  },
+  {
+    "column": "pick4",
+    "raw": "Pantheon",
+    "canonical": "Pantheon"
+  },
+  {
+    "column": "pick4",
+    "raw": "Nilah",
+    "canonical": "Nilah"
+  },
+  {
+    "column": "pick4",
+    "raw": "Warwick",
+    "canonical": "Warwick"
+  },
+  {
+    "column": "pick4",
+    "raw": "Rumble",
+    "canonical": "Rumble"
+  },
+  {
+    "column": "pick4",
+    "raw": "Blitzcrank",
+    "canonical": "Blitzcrank"
+  },
+  {
+    "column": "pick4",
+    "raw": "Kha'Zix",
+    "canonical": "Kha'Zix"
+  },
+  {
+    "column": "pick4",
+    "raw": "Bard",
+    "canonical": "Bard"
+  },
+  {
+    "column": "pick4",
+    "raw": "Cassiopeia",
+    "canonical": "Cassiopeia"
+  },
+  {
+    "column": "pick4",
+    "raw": "Ziggs",
+    "canonical": "Ziggs"
+  },
+  {
+    "column": "pick4",
+    "raw": "Aphelios",
+    "canonical": "Aphelios"
+  },
+  {
+    "column": "pick4",
+    "raw": "Thresh",
+    "canonical": "Thresh"
+  },
+  {
+    "column": "pick4",
+    "raw": "Gangplank",
+    "canonical": "Gangplank"
+  },
+  {
+    "column": "pick4",
+    "raw": "Urgot",
+    "canonical": "Urgot"
+  },
+  {
+    "column": "pick4",
+    "raw": "Draven",
+    "canonical": "Draven"
+  },
+  {
+    "column": "pick4",
+    "raw": "Lee Sin",
+    "canonical": "Lee Sin"
+  },
+  {
+    "column": "pick4",
+    "raw": "Gwen",
+    "canonical": "Gwen"
+  },
+  {
+    "column": "pick4",
+    "raw": "Yasuo",
+    "canonical": "Yasuo"
+  },
+  {
+    "column": "pick4",
+    "raw": "Tahm Kench",
+    "canonical": "Tahm Kench"
+  },
+  {
+    "column": "pick4",
+    "raw": "Twisted Fate",
+    "canonical": "Twisted Fate"
+  },
+  {
+    "column": "pick4",
+    "raw": "Vayne",
+    "canonical": "Vayne"
+  },
+  {
+    "column": "pick4",
+    "raw": "Ivern",
+    "canonical": "Ivern"
+  },
+  {
+    "column": "pick4",
+    "raw": "Yunara",
+    "canonical": "Yunara"
+  },
+  {
+    "column": "pick4",
+    "raw": "Udyr",
+    "canonical": "Udyr"
+  },
+  {
+    "column": "pick4",
+    "raw": "Vi",
+    "canonical": "Vi"
+  },
+  {
+    "column": "pick4",
+    "raw": "Taliyah",
+    "canonical": "Taliyah"
+  },
+  {
+    "column": "pick4",
+    "raw": "Elise",
+    "canonical": "Elise"
+  },
+  {
+    "column": "pick4",
+    "raw": "Mordekaiser",
+    "canonical": "Mordekaiser"
+  },
+  {
+    "column": "pick4",
+    "raw": "Talon",
+    "canonical": "Talon"
+  },
+  {
+    "column": "pick4",
+    "raw": "Ekko",
+    "canonical": "Ekko"
+  },
+  {
+    "column": "pick4",
+    "raw": "Kog'Maw",
+    "canonical": "Kog'Maw"
+  },
+  {
+    "column": "pick4",
+    "raw": "Qiyana",
+    "canonical": "Qiyana"
+  },
+  {
+    "column": "pick4",
+    "raw": "Pyke",
+    "canonical": "Pyke"
+  },
+  {
+    "column": "pick4",
+    "raw": "Mel",
+    "canonical": "Mel"
+  },
+  {
+    "column": "pick4",
+    "raw": "Swain",
+    "canonical": "Swain"
+  },
+  {
+    "column": "pick4",
+    "raw": "Kassadin",
+    "canonical": "Kassadin"
+  },
+  {
+    "column": "pick4",
+    "raw": "Rek'Sai",
+    "canonical": "Rek'Sai"
+  },
+  {
+    "column": "pick4",
+    "raw": "Tryndamere",
+    "canonical": "Tryndamere"
+  },
+  {
+    "column": "pick4",
+    "raw": "Olaf",
+    "canonical": "Olaf"
+  },
+  {
+    "column": "pick4",
+    "raw": "Morgana",
+    "canonical": "Morgana"
+  },
+  {
+    "column": "pick4",
+    "raw": "Janna",
+    "canonical": "Janna"
+  },
+  {
+    "column": "pick4",
+    "raw": "Samira",
+    "canonical": "Samira"
+  },
+  {
+    "column": "pick4",
+    "raw": "Anivia",
+    "canonical": "Anivia"
+  },
+  {
+    "column": "pick4",
+    "raw": "Soraka",
+    "canonical": "Soraka"
+  },
+  {
+    "column": "pick4",
+    "raw": "Zaahen",
+    "canonical": "Zaahen"
+  },
+  {
+    "column": "pick4",
+    "raw": "Malzahar",
+    "canonical": "Malzahar"
+  },
+  {
+    "column": "pick4",
+    "raw": "Dr. Mundo",
+    "canonical": "Dr. Mundo"
+  },
+  {
+    "column": "pick4",
+    "raw": "Taric",
+    "canonical": "Taric"
+  },
+  {
+    "column": "pick4",
+    "raw": "Nami",
+    "canonical": "Nami"
+  },
+  {
+    "column": "pick4",
+    "raw": "Hecarim",
+    "canonical": "Hecarim"
+  },
+  {
+    "column": "pick4",
+    "raw": "Kennen",
+    "canonical": "Kennen"
+  },
+  {
+    "column": "pick4",
+    "raw": "Malphite",
+    "canonical": "Malphite"
+  },
+  {
+    "column": "pick4",
+    "raw": "Zac",
+    "canonical": "Zac"
+  },
+  {
+    "column": "pick4",
+    "raw": "Rammus",
+    "canonical": "Rammus"
+  },
+  {
+    "column": "pick4",
+    "raw": "Milio",
+    "canonical": "Milio"
+  },
+  {
+    "column": "pick4",
+    "raw": "Shyvana",
+    "canonical": "Shyvana"
+  },
+  {
+    "column": "pick4",
+    "raw": "Vel'Koz",
+    "canonical": "Vel'Koz"
+  },
+  {
+    "column": "pick4",
+    "raw": "Vex",
+    "canonical": "Vex"
+  },
+  {
+    "column": "pick4",
+    "raw": "Volibear",
+    "canonical": "Volibear"
+  },
+  {
+    "column": "pick4",
+    "raw": "Xerath",
+    "canonical": "Xerath"
+  },
+  {
+    "column": "pick4",
+    "raw": "Locke",
+    "canonical": "Locke"
+  },
+  {
+    "column": "pick4",
+    "raw": "Nasus",
+    "canonical": "Nasus"
+  },
+  {
+    "column": "pick4",
+    "raw": "Lux",
+    "canonical": "Lux"
+  },
+  {
+    "column": "pick4",
+    "raw": "Bel'Veth",
+    "canonical": "Bel'Veth"
+  },
+  {
+    "column": "pick4",
+    "raw": "Graves",
+    "canonical": "Graves"
+  },
+  {
+    "column": "pick4",
+    "raw": "Irelia",
+    "canonical": "Irelia"
+  },
+  {
+    "column": "pick5",
+    "raw": "Rakan",
+    "canonical": "Rakan"
+  },
+  {
+    "column": "pick5",
+    "raw": "Leona",
+    "canonical": "Leona"
+  },
+  {
+    "column": "pick5",
+    "raw": "Renata Glasc",
+    "canonical": "Renata Glasc"
+  },
+  {
+    "column": "pick5",
+    "raw": "K'Sante",
+    "canonical": "K'Sante"
+  },
+  {
+    "column": "pick5",
+    "raw": "Nautilus",
+    "canonical": "Nautilus"
+  },
+  {
+    "column": "pick5",
+    "raw": "Sivir",
+    "canonical": "Sivir"
+  },
+  {
+    "column": "pick5",
+    "raw": "Aurora",
+    "canonical": "Aurora"
+  },
+  {
+    "column": "pick5",
+    "raw": "Lulu",
+    "canonical": "Lulu"
+  },
+  {
+    "column": "pick5",
+    "raw": "Gwen",
+    "canonical": "Gwen"
+  },
+  {
+    "column": "pick5",
+    "raw": "Jax",
+    "canonical": "Jax"
+  },
+  {
+    "column": "pick5",
+    "raw": "Jhin",
+    "canonical": "Jhin"
+  },
+  {
+    "column": "pick5",
+    "raw": "Xayah",
+    "canonical": "Xayah"
+  },
+  {
+    "column": "pick5",
+    "raw": "Neeko",
+    "canonical": "Neeko"
+  },
+  {
+    "column": "pick5",
+    "raw": "Rell",
+    "canonical": "Rell"
+  },
+  {
+    "column": "pick5",
+    "raw": "Alistar",
+    "canonical": "Alistar"
+  },
+  {
+    "column": "pick5",
+    "raw": "Sylas",
+    "canonical": "Sylas"
+  },
+  {
+    "column": "pick5",
+    "raw": "Viego",
+    "canonical": "Viego"
+  },
+  {
+    "column": "pick5",
+    "raw": "Nami",
+    "canonical": "Nami"
+  },
+  {
+    "column": "pick5",
+    "raw": "Akali",
+    "canonical": "Akali"
+  },
+  {
+    "column": "pick5",
+    "raw": "Hwei",
+    "canonical": "Hwei"
+  },
+  {
+    "column": "pick5",
+    "raw": "Ryze",
+    "canonical": "Ryze"
+  },
+  {
+    "column": "pick5",
+    "raw": "Graves",
+    "canonical": "Graves"
+  },
+  {
+    "column": "pick5",
+    "raw": "Sett",
+    "canonical": "Sett"
+  },
+  {
+    "column": "pick5",
+    "raw": "Anivia",
+    "canonical": "Anivia"
+  },
+  {
+    "column": "pick5",
+    "raw": "Corki",
+    "canonical": "Corki"
+  },
+  {
+    "column": "pick5",
+    "raw": "Maokai",
+    "canonical": "Maokai"
+  },
+  {
+    "column": "pick5",
+    "raw": "Sion",
+    "canonical": "Sion"
+  },
+  {
+    "column": "pick5",
+    "raw": "Braum",
+    "canonical": "Braum"
+  },
+  {
+    "column": "pick5",
+    "raw": "Karma",
+    "canonical": "Karma"
+  },
+  {
+    "column": "pick5",
+    "raw": "Ambessa",
+    "canonical": "Ambessa"
+  },
+  {
+    "column": "pick5",
+    "raw": "Nidalee",
+    "canonical": "Nidalee"
+  },
+  {
+    "column": "pick5",
+    "raw": "Ornn",
+    "canonical": "Ornn"
+  },
+  {
+    "column": "pick5",
+    "raw": "Yasuo",
+    "canonical": "Yasuo"
+  },
+  {
+    "column": "pick5",
+    "raw": "Viktor",
+    "canonical": "Viktor"
+  },
+  {
+    "column": "pick5",
+    "raw": "Kindred",
+    "canonical": "Kindred"
+  },
+  {
+    "column": "pick5",
+    "raw": "Yorick",
+    "canonical": "Yorick"
+  },
+  {
+    "column": "pick5",
+    "raw": "Jayce",
+    "canonical": "Jayce"
+  },
+  {
+    "column": "pick5",
+    "raw": "Nasus",
+    "canonical": "Nasus"
+  },
+  {
+    "column": "pick5",
+    "raw": "Poppy",
+    "canonical": "Poppy"
+  },
+  {
+    "column": "pick5",
+    "raw": "Jarvan IV",
+    "canonical": "Jarvan IV"
+  },
+  {
+    "column": "pick5",
+    "raw": "Orianna",
+    "canonical": "Orianna"
+  },
+  {
+    "column": "pick5",
+    "raw": "Wukong",
+    "canonical": "Wukong"
+  },
+  {
+    "column": "pick5",
+    "raw": "Shen",
+    "canonical": "Shen"
+  },
+  {
+    "column": "pick5",
+    "raw": "Aatrox",
+    "canonical": "Aatrox"
+  },
+  {
+    "column": "pick5",
+    "raw": "Tristana",
+    "canonical": "Tristana"
+  },
+  {
+    "column": "pick5",
+    "raw": "Blitzcrank",
+    "canonical": "Blitzcrank"
+  },
+  {
+    "column": "pick5",
+    "raw": "Annie",
+    "canonical": "Annie"
+  },
+  {
+    "column": "pick5",
+    "raw": "Kalista",
+    "canonical": "Kalista"
+  },
+  {
+    "column": "pick5",
+    "raw": "Fiddlesticks",
+    "canonical": "Fiddlesticks"
+  },
+  {
+    "column": "pick5",
+    "raw": "Renekton",
+    "canonical": "Renekton"
+  },
+  {
+    "column": "pick5",
+    "raw": "Camille",
+    "canonical": "Camille"
+  },
+  {
+    "column": "pick5",
+    "raw": "Bard",
+    "canonical": "Bard"
+  },
+  {
+    "column": "pick5",
+    "raw": "Azir",
+    "canonical": "Azir"
+  },
+  {
+    "column": "pick5",
+    "raw": "Elise",
+    "canonical": "Elise"
+  },
+  {
+    "column": "pick5",
+    "raw": "Milio",
+    "canonical": "Milio"
+  },
+  {
+    "column": "pick5",
+    "raw": "Ezreal",
+    "canonical": "Ezreal"
+  },
+  {
+    "column": "pick5",
+    "raw": "Xin Zhao",
+    "canonical": "Xin Zhao"
+  },
+  {
+    "column": "pick5",
+    "raw": "Ahri",
+    "canonical": "Ahri"
+  },
+  {
+    "column": "pick5",
+    "raw": "Talon",
+    "canonical": "Talon"
+  },
+  {
+    "column": "pick5",
+    "raw": "Zeri",
+    "canonical": "Zeri"
+  },
+  {
+    "column": "pick5",
+    "raw": "Pyke",
+    "canonical": "Pyke"
+  },
+  {
+    "column": "pick5",
+    "raw": "Malzahar",
+    "canonical": "Malzahar"
+  },
+  {
+    "column": "pick5",
+    "raw": "Draven",
+    "canonical": "Draven"
+  },
+  {
+    "column": "pick5",
+    "raw": "Varus",
+    "canonical": "Varus"
+  },
+  {
+    "column": "pick5",
+    "raw": "Gnar",
+    "canonical": "Gnar"
+  },
+  {
+    "column": "pick5",
+    "raw": "Sejuani",
+    "canonical": "Sejuani"
+  },
+  {
+    "column": "pick5",
+    "raw": "Trundle",
+    "canonical": "Trundle"
+  },
+  {
+    "column": "pick5",
+    "raw": "Caitlyn",
+    "canonical": "Caitlyn"
+  },
+  {
+    "column": "pick5",
+    "raw": "Miss Fortune",
+    "canonical": "Miss Fortune"
+  },
+  {
+    "column": "pick5",
+    "raw": "Kai'Sa",
+    "canonical": "Kai'Sa"
+  },
+  {
+    "column": "pick5",
+    "raw": "Galio",
+    "canonical": "Galio"
+  },
+  {
+    "column": "pick5",
+    "raw": "LeBlanc",
+    "canonical": "LeBlanc"
+  },
+  {
+    "column": "pick5",
+    "raw": "Olaf",
+    "canonical": "Olaf"
+  },
+  {
+    "column": "pick5",
+    "raw": "Senna",
+    "canonical": "Senna"
+  },
+  {
+    "column": "pick5",
+    "raw": "Lee Sin",
+    "canonical": "Lee Sin"
+  },
+  {
+    "column": "pick5",
+    "raw": "Nocturne",
+    "canonical": "Nocturne"
+  },
+  {
+    "column": "pick5",
+    "raw": "Shyvana",
+    "canonical": "Shyvana"
+  },
+  {
+    "column": "pick5",
+    "raw": "Jinx",
+    "canonical": "Jinx"
+  },
+  {
+    "column": "pick5",
+    "raw": "Kog'Maw",
+    "canonical": "Kog'Maw"
+  },
+  {
+    "column": "pick5",
+    "raw": "Naafiri",
+    "canonical": "Naafiri"
+  },
+  {
+    "column": "pick5",
+    "raw": "Syndra",
+    "canonical": "Syndra"
+  },
+  {
+    "column": "pick5",
+    "raw": "Ziggs",
+    "canonical": "Ziggs"
+  },
+  {
+    "column": "pick5",
+    "raw": "Skarner",
+    "canonical": "Skarner"
+  },
+  {
+    "column": "pick5",
+    "raw": "Gragas",
+    "canonical": "Gragas"
+  },
+  {
+    "column": "pick5",
+    "raw": "Pantheon",
+    "canonical": "Pantheon"
+  },
+  {
+    "column": "pick5",
+    "raw": "Zed",
+    "canonical": "Zed"
+  },
+  {
+    "column": "pick5",
+    "raw": "Lucian",
+    "canonical": "Lucian"
+  },
+  {
+    "column": "pick5",
+    "raw": "Ashe",
+    "canonical": "Ashe"
+  },
+  {
+    "column": "pick5",
+    "raw": "Zilean",
+    "canonical": "Zilean"
+  },
+  {
+    "column": "pick5",
+    "raw": "Vladimir",
+    "canonical": "Vladimir"
+  },
+  {
+    "column": "pick5",
+    "raw": "Morgana",
+    "canonical": "Morgana"
+  },
+  {
+    "column": "pick5",
+    "raw": "Nilah",
+    "canonical": "Nilah"
+  },
+  {
+    "column": "pick5",
+    "raw": "Mel",
+    "canonical": "Mel"
+  },
+  {
+    "column": "pick5",
+    "raw": "Seraphine",
+    "canonical": "Seraphine"
+  },
+  {
+    "column": "pick5",
+    "raw": "Volibear",
+    "canonical": "Volibear"
+  },
+  {
+    "column": "pick5",
+    "raw": "Tahm Kench",
+    "canonical": "Tahm Kench"
+  },
+  {
+    "column": "pick5",
+    "raw": "Cassiopeia",
+    "canonical": "Cassiopeia"
+  },
+  {
+    "column": "pick5",
+    "raw": "Zyra",
+    "canonical": "Zyra"
+  },
+  {
+    "column": "pick5",
+    "raw": "Smolder",
+    "canonical": "Smolder"
+  },
+  {
+    "column": "pick5",
+    "raw": "Kennen",
+    "canonical": "Kennen"
+  },
+  {
+    "column": "pick5",
+    "raw": "Twitch",
+    "canonical": "Twitch"
+  },
+  {
+    "column": "pick5",
+    "raw": "Fiora",
+    "canonical": "Fiora"
+  },
+  {
+    "column": "pick5",
+    "raw": "Dr. Mundo",
+    "canonical": "Dr. Mundo"
+  },
+  {
+    "column": "pick5",
+    "raw": "Heimerdinger",
+    "canonical": "Heimerdinger"
+  },
+  {
+    "column": "pick5",
+    "raw": "Soraka",
+    "canonical": "Soraka"
+  },
+  {
+    "column": "pick5",
+    "raw": "Zoe",
+    "canonical": "Zoe"
+  },
+  {
+    "column": "pick5",
+    "raw": "Twisted Fate",
+    "canonical": "Twisted Fate"
+  },
+  {
+    "column": "pick5",
+    "raw": "Kassadin",
+    "canonical": "Kassadin"
+  },
+  {
+    "column": "pick5",
+    "raw": "Gangplank",
+    "canonical": "Gangplank"
+  },
+  {
+    "column": "pick5",
+    "raw": "Thresh",
+    "canonical": "Thresh"
+  },
+  {
+    "column": "pick5",
+    "raw": "Garen",
+    "canonical": "Garen"
+  },
+  {
+    "column": "pick5",
+    "raw": "Aurelion Sol",
+    "canonical": "Aurelion Sol"
+  },
+  {
+    "column": "pick5",
+    "raw": "Lillia",
+    "canonical": "Lillia"
+  },
+  {
+    "column": "pick5",
+    "raw": "Rumble",
+    "canonical": "Rumble"
+  },
+  {
+    "column": "pick5",
+    "raw": "Taric",
+    "canonical": "Taric"
+  },
+  {
+    "column": "pick5",
+    "raw": "Cho'Gath",
+    "canonical": "Cho'Gath"
+  },
+  {
+    "column": "pick5",
+    "raw": "Ekko",
+    "canonical": "Ekko"
+  },
+  {
+    "column": "pick5",
+    "raw": "Vi",
+    "canonical": "Vi"
+  },
+  {
+    "column": "pick5",
+    "raw": "Janna",
+    "canonical": "Janna"
+  },
+  {
+    "column": "pick5",
+    "raw": "Aphelios",
+    "canonical": "Aphelios"
+  },
+  {
+    "column": "pick5",
+    "raw": "Hecarim",
+    "canonical": "Hecarim"
+  },
+  {
+    "column": "pick5",
+    "raw": "Ivern",
+    "canonical": "Ivern"
+  },
+  {
+    "column": "pick5",
+    "raw": "Qiyana",
+    "canonical": "Qiyana"
+  },
+  {
+    "column": "pick5",
+    "raw": "Rek'Sai",
+    "canonical": "Rek'Sai"
+  },
+  {
+    "column": "pick5",
+    "raw": "Mordekaiser",
+    "canonical": "Mordekaiser"
+  },
+  {
+    "column": "pick5",
+    "raw": "Taliyah",
+    "canonical": "Taliyah"
+  },
+  {
+    "column": "pick5",
+    "raw": "Vayne",
+    "canonical": "Vayne"
+  },
+  {
+    "column": "pick5",
+    "raw": "Yone",
+    "canonical": "Yone"
+  },
+  {
+    "column": "pick5",
+    "raw": "Lissandra",
+    "canonical": "Lissandra"
+  },
+  {
+    "column": "pick5",
+    "raw": "Swain",
+    "canonical": "Swain"
+  },
+  {
+    "column": "pick5",
+    "raw": "Veigar",
+    "canonical": "Veigar"
+  },
+  {
+    "column": "pick5",
+    "raw": "Rammus",
+    "canonical": "Rammus"
+  },
+  {
+    "column": "pick5",
+    "raw": "Vex",
+    "canonical": "Vex"
+  },
+  {
+    "column": "pick5",
+    "raw": "Kled",
+    "canonical": "Kled"
+  },
+  {
+    "column": "pick5",
+    "raw": "Zaahen",
+    "canonical": "Zaahen"
+  },
+  {
+    "column": "pick5",
+    "raw": "Yunara",
+    "canonical": "Yunara"
+  },
+  {
+    "column": "pick5",
+    "raw": "Yuumi",
+    "canonical": "Yuumi"
+  },
+  {
+    "column": "pick5",
+    "raw": "Sona",
+    "canonical": "Sona"
+  },
+  {
+    "column": "pick5",
+    "raw": "Diana",
+    "canonical": "Diana"
+  },
+  {
+    "column": "pick5",
+    "raw": "Kha'Zix",
+    "canonical": "Kha'Zix"
+  },
+  {
+    "column": "pick5",
+    "raw": "Zac",
+    "canonical": "Zac"
+  },
+  {
+    "column": "pick5",
+    "raw": "Malphite",
+    "canonical": "Malphite"
+  },
+  {
+    "column": "pick5",
+    "raw": "Urgot",
+    "canonical": "Urgot"
+  },
+  {
+    "column": "pick5",
+    "raw": "Lux",
+    "canonical": "Lux"
+  },
+  {
+    "column": "pick5",
+    "raw": "Xerath",
+    "canonical": "Xerath"
+  },
+  {
+    "column": "pick5",
+    "raw": "Amumu",
+    "canonical": "Amumu"
+  },
+  {
+    "column": "pick5",
+    "raw": "Illaoi",
+    "canonical": "Illaoi"
+  },
+  {
+    "column": "pick5",
+    "raw": "Brand",
+    "canonical": "Brand"
+  },
+  {
+    "column": "pick5",
+    "raw": "Irelia",
+    "canonical": "Irelia"
+  },
+  {
+    "column": "pick5",
+    "raw": "Samira",
+    "canonical": "Samira"
+  },
+  {
+    "column": "pick5",
+    "raw": "Udyr",
+    "canonical": "Udyr"
+  },
+  {
+    "column": "pick5",
+    "raw": "Riven",
+    "canonical": "Riven"
+  },
+  {
+    "column": "pick5",
+    "raw": "Fizz",
+    "canonical": "Fizz"
+  },
+  {
+    "column": "pick5",
+    "raw": "Tryndamere",
+    "canonical": "Tryndamere"
+  },
+  {
+    "column": "pick5",
+    "raw": "Warwick",
+    "canonical": "Warwick"
+  },
+  {
+    "column": "pick5",
+    "raw": "Locke",
+    "canonical": "Locke"
+  },
+  {
+    "column": "ban1",
+    "raw": "Varus",
+    "canonical": "Varus"
+  },
+  {
+    "column": "ban1",
+    "raw": "Vi",
+    "canonical": "Vi"
+  },
+  {
+    "column": "ban1",
+    "raw": "Pantheon",
+    "canonical": "Pantheon"
+  },
+  {
+    "column": "ban1",
+    "raw": "Yone",
+    "canonical": "Yone"
+  },
+  {
+    "column": "ban1",
+    "raw": "Viktor",
+    "canonical": "Viktor"
+  },
+  {
+    "column": "ban1",
+    "raw": "Xin Zhao",
+    "canonical": "Xin Zhao"
+  },
+  {
+    "column": "ban1",
+    "raw": "Jayce",
+    "canonical": "Jayce"
+  },
+  {
+    "column": "ban1",
+    "raw": "Gwen",
+    "canonical": "Gwen"
+  },
+  {
+    "column": "ban1",
+    "raw": "Naafiri",
+    "canonical": "Naafiri"
+  },
+  {
+    "column": "ban1",
+    "raw": "Lillia",
+    "canonical": "Lillia"
+  },
+  {
+    "column": "ban1",
+    "raw": "Rumble",
+    "canonical": "Rumble"
+  },
+  {
+    "column": "ban1",
+    "raw": "Azir",
+    "canonical": "Azir"
+  },
+  {
+    "column": "ban1",
+    "raw": "Kalista",
+    "canonical": "Kalista"
+  },
+  {
+    "column": "ban1",
+    "raw": "Sion",
+    "canonical": "Sion"
+  },
+  {
+    "column": "ban1",
+    "raw": "Renata Glasc",
+    "canonical": "Renata Glasc"
+  },
+  {
+    "column": "ban1",
+    "raw": "Neeko",
+    "canonical": "Neeko"
+  },
+  {
+    "column": "ban1",
+    "raw": "Yorick",
+    "canonical": "Yorick"
+  },
+  {
+    "column": "ban1",
+    "raw": "Hwei",
+    "canonical": "Hwei"
+  },
+  {
+    "column": "ban1",
+    "raw": "Galio",
+    "canonical": "Galio"
+  },
+  {
+    "column": "ban1",
+    "raw": "Taliyah",
+    "canonical": "Taliyah"
+  },
+  {
+    "column": "ban1",
+    "raw": "Ryze",
+    "canonical": "Ryze"
+  },
+  {
+    "column": "ban1",
+    "raw": "Nidalee",
+    "canonical": "Nidalee"
+  },
+  {
+    "column": "ban1",
+    "raw": "Poppy",
+    "canonical": "Poppy"
+  },
+  {
+    "column": "ban1",
+    "raw": "Lucian",
+    "canonical": "Lucian"
+  },
+  {
+    "column": "ban1",
+    "raw": "Sejuani",
+    "canonical": "Sejuani"
+  },
+  {
+    "column": "ban1",
+    "raw": "Ezreal",
+    "canonical": "Ezreal"
+  },
+  {
+    "column": "ban1",
+    "raw": "Nocturne",
+    "canonical": "Nocturne"
+  },
+  {
+    "column": "ban1",
+    "raw": "Annie",
+    "canonical": "Annie"
+  },
+  {
+    "column": "ban1",
+    "raw": "Elise",
+    "canonical": "Elise"
+  },
+  {
+    "column": "ban1",
+    "raw": "Ahri",
+    "canonical": "Ahri"
+  },
+  {
+    "column": "ban1",
+    "raw": "Senna",
+    "canonical": "Senna"
+  },
+  {
+    "column": "ban1",
+    "raw": "Ashe",
+    "canonical": "Ashe"
+  },
+  {
+    "column": "ban1",
+    "raw": "Ornn",
+    "canonical": "Ornn"
+  },
+  {
+    "column": "ban1",
+    "raw": "Wukong",
+    "canonical": "Wukong"
+  },
+  {
+    "column": "ban1",
+    "raw": "Jax",
+    "canonical": "Jax"
+  },
+  {
+    "column": "ban1",
+    "raw": "Renekton",
+    "canonical": "Renekton"
+  },
+  {
+    "column": "ban1",
+    "raw": "Sylas",
+    "canonical": "Sylas"
+  },
+  {
+    "column": "ban1",
+    "raw": "Caitlyn",
+    "canonical": "Caitlyn"
+  },
+  {
+    "column": "ban1",
+    "raw": "Draven",
+    "canonical": "Draven"
+  },
+  {
+    "column": "ban1",
+    "raw": "Miss Fortune",
+    "canonical": "Miss Fortune"
+  },
+  {
+    "column": "ban1",
+    "raw": "Twisted Fate",
+    "canonical": "Twisted Fate"
+  },
+  {
+    "column": "ban1",
+    "raw": "Maokai",
+    "canonical": "Maokai"
+  },
+  {
+    "column": "ban1",
+    "raw": "Cassiopeia",
+    "canonical": "Cassiopeia"
+  },
+  {
+    "column": "ban1",
+    "raw": "Trundle",
+    "canonical": "Trundle"
+  },
+  {
+    "column": "ban1",
+    "raw": "Lee Sin",
+    "canonical": "Lee Sin"
+  },
+  {
+    "column": "ban1",
+    "raw": "Skarner",
+    "canonical": "Skarner"
+  },
+  {
+    "column": "ban1",
+    "raw": "Gragas",
+    "canonical": "Gragas"
+  },
+  {
+    "column": "ban1",
+    "raw": "Nami",
+    "canonical": "Nami"
+  },
+  {
+    "column": "ban1",
+    "raw": "Nautilus",
+    "canonical": "Nautilus"
+  },
+  {
+    "column": "ban1",
+    "raw": "Ambessa",
+    "canonical": "Ambessa"
+  },
+  {
+    "column": "ban1",
+    "raw": "Orianna",
+    "canonical": "Orianna"
+  },
+  {
+    "column": "ban1",
+    "raw": "Aurora",
+    "canonical": "Aurora"
+  },
+  {
+    "column": "ban1",
+    "raw": "Alistar",
+    "canonical": "Alistar"
+  },
+  {
+    "column": "ban1",
+    "raw": "Viego",
+    "canonical": "Viego"
+  },
+  {
+    "column": "ban1",
+    "raw": "Rakan",
+    "canonical": "Rakan"
+  },
+  {
+    "column": "ban1",
+    "raw": "Yunara",
+    "canonical": "Yunara"
+  },
+  {
+    "column": "ban1",
+    "raw": "Kai'Sa",
+    "canonical": "Kai'Sa"
+  },
+  {
+    "column": "ban1",
+    "raw": "Ziggs",
+    "canonical": "Ziggs"
+  },
+  {
+    "column": "ban1",
+    "raw": "Bard",
+    "canonical": "Bard"
+  },
+  {
+    "column": "ban1",
+    "raw": "Zyra",
+    "canonical": "Zyra"
+  },
+  {
+    "column": "ban1",
+    "raw": "Jarvan IV",
+    "canonical": "Jarvan IV"
+  },
+  {
+    "column": "ban1",
+    "raw": "Akali",
+    "canonical": "Akali"
+  },
+  {
+    "column": "ban1",
+    "raw": "Zeri",
+    "canonical": "Zeri"
+  },
+  {
+    "column": "ban1",
+    "raw": "Sivir",
+    "canonical": "Sivir"
+  },
+  {
+    "column": "ban1",
+    "raw": "Qiyana",
+    "canonical": "Qiyana"
+  },
+  {
+    "column": "ban1",
+    "raw": "Tristana",
+    "canonical": "Tristana"
+  },
+  {
+    "column": "ban1",
+    "raw": "Shen",
+    "canonical": "Shen"
+  },
+  {
+    "column": "ban1",
+    "raw": "Corki",
+    "canonical": "Corki"
+  },
+  {
+    "column": "ban1",
+    "raw": "Kindred",
+    "canonical": "Kindred"
+  },
+  {
+    "column": "ban1",
+    "raw": "Karma",
+    "canonical": "Karma"
+  },
+  {
+    "column": "ban1",
+    "raw": "Malphite",
+    "canonical": "Malphite"
+  },
+  {
+    "column": "ban1",
+    "raw": "K'Sante",
+    "canonical": "K'Sante"
+  },
+  {
+    "column": "ban1",
+    "raw": "Gnar",
+    "canonical": "Gnar"
+  },
+  {
+    "column": "ban1",
+    "raw": "Anivia",
+    "canonical": "Anivia"
+  },
+  {
+    "column": "ban1",
+    "raw": "Aphelios",
+    "canonical": "Aphelios"
+  },
+  {
+    "column": "ban1",
+    "raw": "LeBlanc",
+    "canonical": "LeBlanc"
+  },
+  {
+    "column": "ban1",
+    "raw": "Dr. Mundo",
+    "canonical": "Dr. Mundo"
+  },
+  {
+    "column": "ban1",
+    "raw": "Volibear",
+    "canonical": "Volibear"
+  },
+  {
+    "column": "ban1",
+    "raw": "Zoe",
+    "canonical": "Zoe"
+  },
+  {
+    "column": "ban1",
+    "raw": "Lulu",
+    "canonical": "Lulu"
+  },
+  {
+    "column": "ban1",
+    "raw": "Kennen",
+    "canonical": "Kennen"
+  },
+  {
+    "column": "ban1",
+    "raw": "Seraphine",
+    "canonical": "Seraphine"
+  },
+  {
+    "column": "ban1",
+    "raw": "Milio",
+    "canonical": "Milio"
+  },
+  {
+    "column": "ban1",
+    "raw": "Pyke",
+    "canonical": "Pyke"
+  },
+  {
+    "column": "ban1",
+    "raw": "Olaf",
+    "canonical": "Olaf"
+  },
+  {
+    "column": "ban1",
+    "raw": "Aatrox",
+    "canonical": "Aatrox"
+  },
+  {
+    "column": "ban1",
+    "raw": "Vayne",
+    "canonical": "Vayne"
+  },
+  {
+    "column": "ban1",
+    "raw": "Camille",
+    "canonical": "Camille"
+  },
+  {
+    "column": "ban1",
+    "raw": "Syndra",
+    "canonical": "Syndra"
+  },
+  {
+    "column": "ban1",
+    "raw": "Locke",
+    "canonical": "Locke"
+  },
+  {
+    "column": "ban1",
+    "raw": "Shyvana",
+    "canonical": "Shyvana"
+  },
+  {
+    "column": "ban1",
+    "raw": "Kled",
+    "canonical": "Kled"
+  },
+  {
+    "column": "ban2",
+    "raw": "Naafiri",
+    "canonical": "Naafiri"
+  },
+  {
+    "column": "ban2",
+    "raw": "Xin Zhao",
+    "canonical": "Xin Zhao"
+  },
+  {
+    "column": "ban2",
+    "raw": "Viktor",
+    "canonical": "Viktor"
+  },
+  {
+    "column": "ban2",
+    "raw": "Lillia",
+    "canonical": "Lillia"
+  },
+  {
+    "column": "ban2",
+    "raw": "Kindred",
+    "canonical": "Kindred"
+  },
+  {
+    "column": "ban2",
+    "raw": "Taliyah",
+    "canonical": "Taliyah"
+  },
+  {
+    "column": "ban2",
+    "raw": "Sion",
+    "canonical": "Sion"
+  },
+  {
+    "column": "ban2",
+    "raw": "Rumble",
+    "canonical": "Rumble"
+  },
+  {
+    "column": "ban2",
+    "raw": "Yone",
+    "canonical": "Yone"
+  },
+  {
+    "column": "ban2",
+    "raw": "Vi",
+    "canonical": "Vi"
+  },
+  {
+    "column": "ban2",
+    "raw": "Azir",
+    "canonical": "Azir"
+  },
+  {
+    "column": "ban2",
+    "raw": "Gwen",
+    "canonical": "Gwen"
+  },
+  {
+    "column": "ban2",
+    "raw": "Kalista",
+    "canonical": "Kalista"
+  },
+  {
+    "column": "ban2",
+    "raw": "Poppy",
+    "canonical": "Poppy"
+  },
+  {
+    "column": "ban2",
+    "raw": "Jayce",
+    "canonical": "Jayce"
+  },
+  {
+    "column": "ban2",
+    "raw": "Hwei",
+    "canonical": "Hwei"
+  },
+  {
+    "column": "ban2",
+    "raw": "Neeko",
+    "canonical": "Neeko"
+  },
+  {
+    "column": "ban2",
+    "raw": "Yorick",
+    "canonical": "Yorick"
+  },
+  {
+    "column": "ban2",
+    "raw": "Ahri",
+    "canonical": "Ahri"
+  },
+  {
+    "column": "ban2",
+    "raw": "Nautilus",
+    "canonical": "Nautilus"
+  },
+  {
+    "column": "ban2",
+    "raw": "Nocturne",
+    "canonical": "Nocturne"
+  },
+  {
+    "column": "ban2",
+    "raw": "Varus",
+    "canonical": "Varus"
+  },
+  {
+    "column": "ban2",
+    "raw": "Annie",
+    "canonical": "Annie"
+  },
+  {
+    "column": "ban2",
+    "raw": "Pantheon",
+    "canonical": "Pantheon"
+  },
+  {
+    "column": "ban2",
+    "raw": "Wukong",
+    "canonical": "Wukong"
+  },
+  {
+    "column": "ban2",
+    "raw": "Galio",
+    "canonical": "Galio"
+  },
+  {
+    "column": "ban2",
+    "raw": "Ryze",
+    "canonical": "Ryze"
+  },
+  {
+    "column": "ban2",
+    "raw": "Lucian",
+    "canonical": "Lucian"
+  },
+  {
+    "column": "ban2",
+    "raw": "Nidalee",
+    "canonical": "Nidalee"
+  },
+  {
+    "column": "ban2",
+    "raw": "Sejuani",
+    "canonical": "Sejuani"
+  },
+  {
+    "column": "ban2",
+    "raw": "Miss Fortune",
+    "canonical": "Miss Fortune"
+  },
+  {
+    "column": "ban2",
+    "raw": "Ezreal",
+    "canonical": "Ezreal"
+  },
+  {
+    "column": "ban2",
+    "raw": "Skarner",
+    "canonical": "Skarner"
+  },
+  {
+    "column": "ban2",
+    "raw": "Corki",
+    "canonical": "Corki"
+  },
+  {
+    "column": "ban2",
+    "raw": "Maokai",
+    "canonical": "Maokai"
+  },
+  {
+    "column": "ban2",
+    "raw": "Shen",
+    "canonical": "Shen"
+  },
+  {
+    "column": "ban2",
+    "raw": "Sylas",
+    "canonical": "Sylas"
+  },
+  {
+    "column": "ban2",
+    "raw": "Akali",
+    "canonical": "Akali"
+  },
+  {
+    "column": "ban2",
+    "raw": "Trundle",
+    "canonical": "Trundle"
+  },
+  {
+    "column": "ban2",
+    "raw": "Jax",
+    "canonical": "Jax"
+  },
+  {
+    "column": "ban2",
+    "raw": "Orianna",
+    "canonical": "Orianna"
+  },
+  {
+    "column": "ban2",
+    "raw": "Ornn",
+    "canonical": "Ornn"
+  },
+  {
+    "column": "ban2",
+    "raw": "Renata Glasc",
+    "canonical": "Renata Glasc"
+  },
+  {
+    "column": "ban2",
+    "raw": "Camille",
+    "canonical": "Camille"
+  },
+  {
+    "column": "ban2",
+    "raw": "Ambessa",
+    "canonical": "Ambessa"
+  },
+  {
+    "column": "ban2",
+    "raw": "Renekton",
+    "canonical": "Renekton"
+  },
+  {
+    "column": "ban2",
+    "raw": "Caitlyn",
+    "canonical": "Caitlyn"
+  },
+  {
+    "column": "ban2",
+    "raw": "Twisted Fate",
+    "canonical": "Twisted Fate"
+  },
+  {
+    "column": "ban2",
+    "raw": "Aurora",
+    "canonical": "Aurora"
+  },
+  {
+    "column": "ban2",
+    "raw": "Lee Sin",
+    "canonical": "Lee Sin"
+  },
+  {
+    "column": "ban2",
+    "raw": "Cassiopeia",
+    "canonical": "Cassiopeia"
+  },
+  {
+    "column": "ban2",
+    "raw": "Xayah",
+    "canonical": "Xayah"
+  },
+  {
+    "column": "ban2",
+    "raw": "Leona",
+    "canonical": "Leona"
+  },
+  {
+    "column": "ban2",
+    "raw": "Gragas",
+    "canonical": "Gragas"
+  },
+  {
+    "column": "ban2",
+    "raw": "Jhin",
+    "canonical": "Jhin"
+  },
+  {
+    "column": "ban2",
+    "raw": "Karma",
+    "canonical": "Karma"
+  },
+  {
+    "column": "ban2",
+    "raw": "Kai'Sa",
+    "canonical": "Kai'Sa"
+  },
+  {
+    "column": "ban2",
+    "raw": "Senna",
+    "canonical": "Senna"
+  },
+  {
+    "column": "ban2",
+    "raw": "Jarvan IV",
+    "canonical": "Jarvan IV"
+  },
+  {
+    "column": "ban2",
+    "raw": "Rell",
+    "canonical": "Rell"
+  },
+  {
+    "column": "ban2",
+    "raw": "Braum",
+    "canonical": "Braum"
+  },
+  {
+    "column": "ban2",
+    "raw": "Alistar",
+    "canonical": "Alistar"
+  },
+  {
+    "column": "ban2",
+    "raw": "K'Sante",
+    "canonical": "K'Sante"
+  },
+  {
+    "column": "ban2",
+    "raw": "Viego",
+    "canonical": "Viego"
+  },
+  {
+    "column": "ban2",
+    "raw": "Yunara",
+    "canonical": "Yunara"
+  },
+  {
+    "column": "ban2",
+    "raw": "Zyra",
+    "canonical": "Zyra"
+  },
+  {
+    "column": "ban2",
+    "raw": "Rakan",
+    "canonical": "Rakan"
+  },
+  {
+    "column": "ban2",
+    "raw": "Sivir",
+    "canonical": "Sivir"
+  },
+  {
+    "column": "ban2",
+    "raw": "Bard",
+    "canonical": "Bard"
+  },
+  {
+    "column": "ban2",
+    "raw": "Aphelios",
+    "canonical": "Aphelios"
+  },
+  {
+    "column": "ban2",
+    "raw": "Draven",
+    "canonical": "Draven"
+  },
+  {
+    "column": "ban2",
+    "raw": "Thresh",
+    "canonical": "Thresh"
+  },
+  {
+    "column": "ban2",
+    "raw": "Zed",
+    "canonical": "Zed"
+  },
+  {
+    "column": "ban2",
+    "raw": "Ziggs",
+    "canonical": "Ziggs"
+  },
+  {
+    "column": "ban2",
+    "raw": "Qiyana",
+    "canonical": "Qiyana"
+  },
+  {
+    "column": "ban2",
+    "raw": "Smolder",
+    "canonical": "Smolder"
+  },
+  {
+    "column": "ban2",
+    "raw": "Ivern",
+    "canonical": "Ivern"
+  },
+  {
+    "column": "ban2",
+    "raw": "LeBlanc",
+    "canonical": "LeBlanc"
+  },
+  {
+    "column": "ban2",
+    "raw": "Mordekaiser",
+    "canonical": "Mordekaiser"
+  },
+  {
+    "column": "ban2",
+    "raw": "Malphite",
+    "canonical": "Malphite"
+  },
+  {
+    "column": "ban2",
+    "raw": "Dr. Mundo",
+    "canonical": "Dr. Mundo"
+  },
+  {
+    "column": "ban2",
+    "raw": "Anivia",
+    "canonical": "Anivia"
+  },
+  {
+    "column": "ban2",
+    "raw": "Lulu",
+    "canonical": "Lulu"
+  },
+  {
+    "column": "ban2",
+    "raw": "Kennen",
+    "canonical": "Kennen"
+  },
+  {
+    "column": "ban2",
+    "raw": "Volibear",
+    "canonical": "Volibear"
+  },
+  {
+    "column": "ban2",
+    "raw": "Olaf",
+    "canonical": "Olaf"
+  },
+  {
+    "column": "ban2",
+    "raw": "Nami",
+    "canonical": "Nami"
+  },
+  {
+    "column": "ban2",
+    "raw": "Gnar",
+    "canonical": "Gnar"
+  },
+  {
+    "column": "ban2",
+    "raw": "Blitzcrank",
+    "canonical": "Blitzcrank"
+  },
+  {
+    "column": "ban2",
+    "raw": "Ashe",
+    "canonical": "Ashe"
+  },
+  {
+    "column": "ban2",
+    "raw": "Pyke",
+    "canonical": "Pyke"
+  },
+  {
+    "column": "ban2",
+    "raw": "Mel",
+    "canonical": "Mel"
+  },
+  {
+    "column": "ban2",
+    "raw": "Seraphine",
+    "canonical": "Seraphine"
+  },
+  {
+    "column": "ban2",
+    "raw": "Aatrox",
+    "canonical": "Aatrox"
+  },
+  {
+    "column": "ban2",
+    "raw": "Milio",
+    "canonical": "Milio"
+  },
+  {
+    "column": "ban2",
+    "raw": "Vayne",
+    "canonical": "Vayne"
+  },
+  {
+    "column": "ban2",
+    "raw": "Zaahen",
+    "canonical": "Zaahen"
+  },
+  {
+    "column": "ban2",
+    "raw": "Syndra",
+    "canonical": "Syndra"
+  },
+  {
+    "column": "ban2",
+    "raw": "Locke",
+    "canonical": "Locke"
+  },
+  {
+    "column": "ban2",
+    "raw": "Irelia",
+    "canonical": "Irelia"
+  },
+  {
+    "column": "ban3",
+    "raw": "Kalista",
+    "canonical": "Kalista"
+  },
+  {
+    "column": "ban3",
+    "raw": "Taliyah",
+    "canonical": "Taliyah"
+  },
+  {
+    "column": "ban3",
+    "raw": "Azir",
+    "canonical": "Azir"
+  },
+  {
+    "column": "ban3",
+    "raw": "Naafiri",
+    "canonical": "Naafiri"
+  },
+  {
+    "column": "ban3",
+    "raw": "Jayce",
+    "canonical": "Jayce"
+  },
+  {
+    "column": "ban3",
+    "raw": "Ezreal",
+    "canonical": "Ezreal"
+  },
+  {
+    "column": "ban3",
+    "raw": "Nidalee",
+    "canonical": "Nidalee"
+  },
+  {
+    "column": "ban3",
+    "raw": "Shen",
+    "canonical": "Shen"
+  },
+  {
+    "column": "ban3",
+    "raw": "Vi",
+    "canonical": "Vi"
+  },
+  {
+    "column": "ban3",
+    "raw": "Neeko",
+    "canonical": "Neeko"
+  },
+  {
+    "column": "ban3",
+    "raw": "Varus",
+    "canonical": "Varus"
+  },
+  {
+    "column": "ban3",
+    "raw": "Pantheon",
+    "canonical": "Pantheon"
+  },
+  {
+    "column": "ban3",
+    "raw": "Sion",
+    "canonical": "Sion"
+  },
+  {
+    "column": "ban3",
+    "raw": "Yone",
+    "canonical": "Yone"
+  },
+  {
+    "column": "ban3",
+    "raw": "Ahri",
+    "canonical": "Ahri"
+  },
+  {
+    "column": "ban3",
+    "raw": "Nocturne",
+    "canonical": "Nocturne"
+  },
+  {
+    "column": "ban3",
+    "raw": "Xayah",
+    "canonical": "Xayah"
+  },
+  {
+    "column": "ban3",
+    "raw": "Gwen",
+    "canonical": "Gwen"
+  },
+  {
+    "column": "ban3",
+    "raw": "Rumble",
+    "canonical": "Rumble"
+  },
+  {
+    "column": "ban3",
+    "raw": "Alistar",
+    "canonical": "Alistar"
+  },
+  {
+    "column": "ban3",
+    "raw": "Jax",
+    "canonical": "Jax"
+  },
+  {
+    "column": "ban3",
+    "raw": "Lucian",
+    "canonical": "Lucian"
+  },
+  {
+    "column": "ban3",
+    "raw": "Poppy",
+    "canonical": "Poppy"
+  },
+  {
+    "column": "ban3",
+    "raw": "Sylas",
+    "canonical": "Sylas"
+  },
+  {
+    "column": "ban3",
+    "raw": "Miss Fortune",
+    "canonical": "Miss Fortune"
+  },
+  {
+    "column": "ban3",
+    "raw": "Yorick",
+    "canonical": "Yorick"
+  },
+  {
+    "column": "ban3",
+    "raw": "Aurora",
+    "canonical": "Aurora"
+  },
+  {
+    "column": "ban3",
+    "raw": "Lillia",
+    "canonical": "Lillia"
+  },
+  {
+    "column": "ban3",
+    "raw": "Viktor",
+    "canonical": "Viktor"
+  },
+  {
+    "column": "ban3",
+    "raw": "Ambessa",
+    "canonical": "Ambessa"
+  },
+  {
+    "column": "ban3",
+    "raw": "Galio",
+    "canonical": "Galio"
+  },
+  {
+    "column": "ban3",
+    "raw": "Xin Zhao",
+    "canonical": "Xin Zhao"
+  },
+  {
+    "column": "ban3",
+    "raw": "Sejuani",
+    "canonical": "Sejuani"
+  },
+  {
+    "column": "ban3",
+    "raw": "Ashe",
+    "canonical": "Ashe"
+  },
+  {
+    "column": "ban3",
+    "raw": "Viego",
+    "canonical": "Viego"
+  },
+  {
+    "column": "ban3",
+    "raw": "Ryze",
+    "canonical": "Ryze"
+  },
+  {
+    "column": "ban3",
+    "raw": "Annie",
+    "canonical": "Annie"
+  },
+  {
+    "column": "ban3",
+    "raw": "Akali",
+    "canonical": "Akali"
+  },
+  {
+    "column": "ban3",
+    "raw": "Hwei",
+    "canonical": "Hwei"
+  },
+  {
+    "column": "ban3",
+    "raw": "Nautilus",
+    "canonical": "Nautilus"
+  },
+  {
+    "column": "ban3",
+    "raw": "Skarner",
+    "canonical": "Skarner"
+  },
+  {
+    "column": "ban3",
+    "raw": "Lulu",
+    "canonical": "Lulu"
+  },
+  {
+    "column": "ban3",
+    "raw": "Kai'Sa",
+    "canonical": "Kai'Sa"
+  },
+  {
+    "column": "ban3",
+    "raw": "Wukong",
+    "canonical": "Wukong"
+  },
+  {
+    "column": "ban3",
+    "raw": "LeBlanc",
+    "canonical": "LeBlanc"
+  },
+  {
+    "column": "ban3",
+    "raw": "Trundle",
+    "canonical": "Trundle"
+  },
+  {
+    "column": "ban3",
+    "raw": "Braum",
+    "canonical": "Braum"
+  },
+  {
+    "column": "ban3",
+    "raw": "Renekton",
+    "canonical": "Renekton"
+  },
+  {
+    "column": "ban3",
+    "raw": "Draven",
+    "canonical": "Draven"
+  },
+  {
+    "column": "ban3",
+    "raw": "Orianna",
+    "canonical": "Orianna"
+  },
+  {
+    "column": "ban3",
+    "raw": "Rakan",
+    "canonical": "Rakan"
+  },
+  {
+    "column": "ban3",
+    "raw": "Kennen",
+    "canonical": "Kennen"
+  },
+  {
+    "column": "ban3",
+    "raw": "Zyra",
+    "canonical": "Zyra"
+  },
+  {
+    "column": "ban3",
+    "raw": "Jhin",
+    "canonical": "Jhin"
+  },
+  {
+    "column": "ban3",
+    "raw": "Zeri",
+    "canonical": "Zeri"
+  },
+  {
+    "column": "ban3",
+    "raw": "Renata Glasc",
+    "canonical": "Renata Glasc"
+  },
+  {
+    "column": "ban3",
+    "raw": "Ornn",
+    "canonical": "Ornn"
+  },
+  {
+    "column": "ban3",
+    "raw": "Senna",
+    "canonical": "Senna"
+  },
+  {
+    "column": "ban3",
+    "raw": "Twisted Fate",
+    "canonical": "Twisted Fate"
+  },
+  {
+    "column": "ban3",
+    "raw": "Yasuo",
+    "canonical": "Yasuo"
+  },
+  {
+    "column": "ban3",
+    "raw": "Dr. Mundo",
+    "canonical": "Dr. Mundo"
+  },
+  {
+    "column": "ban3",
+    "raw": "Smolder",
+    "canonical": "Smolder"
+  },
+  {
+    "column": "ban3",
+    "raw": "Caitlyn",
+    "canonical": "Caitlyn"
+  },
+  {
+    "column": "ban3",
+    "raw": "Maokai",
+    "canonical": "Maokai"
+  },
+  {
+    "column": "ban3",
+    "raw": "Jinx",
+    "canonical": "Jinx"
+  },
+  {
+    "column": "ban3",
+    "raw": "Gragas",
+    "canonical": "Gragas"
+  },
+  {
+    "column": "ban3",
+    "raw": "K'Sante",
+    "canonical": "K'Sante"
+  },
+  {
+    "column": "ban3",
+    "raw": "Karma",
+    "canonical": "Karma"
+  },
+  {
+    "column": "ban3",
+    "raw": "Jarvan IV",
+    "canonical": "Jarvan IV"
+  },
+  {
+    "column": "ban3",
+    "raw": "Bard",
+    "canonical": "Bard"
+  },
+  {
+    "column": "ban3",
+    "raw": "Blitzcrank",
+    "canonical": "Blitzcrank"
+  },
+  {
+    "column": "ban3",
+    "raw": "Lee Sin",
+    "canonical": "Lee Sin"
+  },
+  {
+    "column": "ban3",
+    "raw": "Ekko",
+    "canonical": "Ekko"
+  },
+  {
+    "column": "ban3",
+    "raw": "Sivir",
+    "canonical": "Sivir"
+  },
+  {
+    "column": "ban3",
+    "raw": "Yunara",
+    "canonical": "Yunara"
+  },
+  {
+    "column": "ban3",
+    "raw": "Rell",
+    "canonical": "Rell"
+  },
+  {
+    "column": "ban3",
+    "raw": "Corki",
+    "canonical": "Corki"
+  },
+  {
+    "column": "ban3",
+    "raw": "Gnar",
+    "canonical": "Gnar"
+  },
+  {
+    "column": "ban3",
+    "raw": "Cassiopeia",
+    "canonical": "Cassiopeia"
+  },
+  {
+    "column": "ban3",
+    "raw": "Ziggs",
+    "canonical": "Ziggs"
+  },
+  {
+    "column": "ban3",
+    "raw": "Tristana",
+    "canonical": "Tristana"
+  },
+  {
+    "column": "ban3",
+    "raw": "Qiyana",
+    "canonical": "Qiyana"
+  },
+  {
+    "column": "ban3",
+    "raw": "Morgana",
+    "canonical": "Morgana"
+  },
+  {
+    "column": "ban3",
+    "raw": "Kindred",
+    "canonical": "Kindred"
+  },
+  {
+    "column": "ban3",
+    "raw": "Olaf",
+    "canonical": "Olaf"
+  },
+  {
+    "column": "ban3",
+    "raw": "Volibear",
+    "canonical": "Volibear"
+  },
+  {
+    "column": "ban3",
+    "raw": "Rek'Sai",
+    "canonical": "Rek'Sai"
+  },
+  {
+    "column": "ban3",
+    "raw": "Mordekaiser",
+    "canonical": "Mordekaiser"
+  },
+  {
+    "column": "ban3",
+    "raw": "Zoe",
+    "canonical": "Zoe"
+  },
+  {
+    "column": "ban3",
+    "raw": "Aphelios",
+    "canonical": "Aphelios"
+  },
+  {
+    "column": "ban3",
+    "raw": "Malphite",
+    "canonical": "Malphite"
+  },
+  {
+    "column": "ban3",
+    "raw": "Anivia",
+    "canonical": "Anivia"
+  },
+  {
+    "column": "ban3",
+    "raw": "Zed",
+    "canonical": "Zed"
+  },
+  {
+    "column": "ban3",
+    "raw": "Leona",
+    "canonical": "Leona"
+  },
+  {
+    "column": "ban3",
+    "raw": "Aatrox",
+    "canonical": "Aatrox"
+  },
+  {
+    "column": "ban3",
+    "raw": "Zaahen",
+    "canonical": "Zaahen"
+  },
+  {
+    "column": "ban3",
+    "raw": "Mel",
+    "canonical": "Mel"
+  },
+  {
+    "column": "ban3",
+    "raw": "Seraphine",
+    "canonical": "Seraphine"
+  },
+  {
+    "column": "ban3",
+    "raw": "Nami",
+    "canonical": "Nami"
+  },
+  {
+    "column": "ban3",
+    "raw": "Pyke",
+    "canonical": "Pyke"
+  },
+  {
+    "column": "ban3",
+    "raw": "Nasus",
+    "canonical": "Nasus"
+  },
+  {
+    "column": "ban3",
+    "raw": "Milio",
+    "canonical": "Milio"
+  },
+  {
+    "column": "ban3",
+    "raw": "Vayne",
+    "canonical": "Vayne"
+  },
+  {
+    "column": "ban3",
+    "raw": "Syndra",
+    "canonical": "Syndra"
+  },
+  {
+    "column": "ban3",
+    "raw": "Elise",
+    "canonical": "Elise"
+  },
+  {
+    "column": "ban3",
+    "raw": "Camille",
+    "canonical": "Camille"
+  },
+  {
+    "column": "ban3",
+    "raw": "Yuumi",
+    "canonical": "Yuumi"
+  },
+  {
+    "column": "ban3",
+    "raw": "Locke",
+    "canonical": "Locke"
+  },
+  {
+    "column": "ban3",
+    "raw": "Lissandra",
+    "canonical": "Lissandra"
+  },
+  {
+    "column": "ban3",
+    "raw": "Kha'Zix",
+    "canonical": "Kha'Zix"
+  },
+  {
+    "column": "ban4",
+    "raw": "Skarner",
+    "canonical": "Skarner"
+  },
+  {
+    "column": "ban4",
+    "raw": "Jhin",
+    "canonical": "Jhin"
+  },
+  {
+    "column": "ban4",
+    "raw": "Miss Fortune",
+    "canonical": "Miss Fortune"
+  },
+  {
+    "column": "ban4",
+    "raw": "Annie",
+    "canonical": "Annie"
+  },
+  {
+    "column": "ban4",
+    "raw": "Varus",
+    "canonical": "Varus"
+  },
+  {
+    "column": "ban4",
+    "raw": "Ornn",
+    "canonical": "Ornn"
+  },
+  {
+    "column": "ban4",
+    "raw": "Rakan",
+    "canonical": "Rakan"
+  },
+  {
+    "column": "ban4",
+    "raw": "Taliyah",
+    "canonical": "Taliyah"
+  },
+  {
+    "column": "ban4",
+    "raw": "Sion",
+    "canonical": "Sion"
+  },
+  {
+    "column": "ban4",
+    "raw": "Akali",
+    "canonical": "Akali"
+  },
+  {
+    "column": "ban4",
+    "raw": "Rell",
+    "canonical": "Rell"
+  },
+  {
+    "column": "ban4",
+    "raw": "Karma",
+    "canonical": "Karma"
+  },
+  {
+    "column": "ban4",
+    "raw": "Kai'Sa",
+    "canonical": "Kai'Sa"
+  },
+  {
+    "column": "ban4",
+    "raw": "Pantheon",
+    "canonical": "Pantheon"
+  },
+  {
+    "column": "ban4",
+    "raw": "Zed",
+    "canonical": "Zed"
+  },
+  {
+    "column": "ban4",
+    "raw": "Nautilus",
+    "canonical": "Nautilus"
+  },
+  {
+    "column": "ban4",
+    "raw": "Lee Sin",
+    "canonical": "Lee Sin"
+  },
+  {
+    "column": "ban4",
+    "raw": "Orianna",
+    "canonical": "Orianna"
+  },
+  {
+    "column": "ban4",
+    "raw": "Jarvan IV",
+    "canonical": "Jarvan IV"
+  },
+  {
+    "column": "ban4",
+    "raw": "Alistar",
+    "canonical": "Alistar"
+  },
+  {
+    "column": "ban4",
+    "raw": "Elise",
+    "canonical": "Elise"
+  },
+  {
+    "column": "ban4",
+    "raw": "Braum",
+    "canonical": "Braum"
+  },
+  {
+    "column": "ban4",
+    "raw": "Lucian",
+    "canonical": "Lucian"
+  },
+  {
+    "column": "ban4",
+    "raw": "Xayah",
+    "canonical": "Xayah"
+  },
+  {
+    "column": "ban4",
+    "raw": "Poppy",
+    "canonical": "Poppy"
+  },
+  {
+    "column": "ban4",
+    "raw": "Draven",
+    "canonical": "Draven"
+  },
+  {
+    "column": "ban4",
+    "raw": "Jax",
+    "canonical": "Jax"
+  },
+  {
+    "column": "ban4",
+    "raw": "Kalista",
+    "canonical": "Kalista"
+  },
+  {
+    "column": "ban4",
+    "raw": "Ryze",
+    "canonical": "Ryze"
+  },
+  {
+    "column": "ban4",
+    "raw": "Sejuani",
+    "canonical": "Sejuani"
+  },
+  {
+    "column": "ban4",
+    "raw": "Viego",
+    "canonical": "Viego"
+  },
+  {
+    "column": "ban4",
+    "raw": "Ambessa",
+    "canonical": "Ambessa"
+  },
+  {
+    "column": "ban4",
+    "raw": "Pyke",
+    "canonical": "Pyke"
+  },
+  {
+    "column": "ban4",
+    "raw": "Ashe",
+    "canonical": "Ashe"
+  },
+  {
+    "column": "ban4",
+    "raw": "Jayce",
+    "canonical": "Jayce"
+  },
+  {
+    "column": "ban4",
+    "raw": "Azir",
+    "canonical": "Azir"
+  },
+  {
+    "column": "ban4",
+    "raw": "Ahri",
+    "canonical": "Ahri"
+  },
+  {
+    "column": "ban4",
+    "raw": "Sylas",
+    "canonical": "Sylas"
+  },
+  {
+    "column": "ban4",
+    "raw": "Ezreal",
+    "canonical": "Ezreal"
+  },
+  {
+    "column": "ban4",
+    "raw": "Viktor",
+    "canonical": "Viktor"
+  },
+  {
+    "column": "ban4",
+    "raw": "Lillia",
+    "canonical": "Lillia"
+  },
+  {
+    "column": "ban4",
+    "raw": "Camille",
+    "canonical": "Camille"
+  },
+  {
+    "column": "ban4",
+    "raw": "Zeri",
+    "canonical": "Zeri"
+  },
+  {
+    "column": "ban4",
+    "raw": "Aurora",
+    "canonical": "Aurora"
+  },
+  {
+    "column": "ban4",
+    "raw": "Shen",
+    "canonical": "Shen"
+  },
+  {
+    "column": "ban4",
+    "raw": "Leona",
+    "canonical": "Leona"
+  },
+  {
+    "column": "ban4",
+    "raw": "Renata Glasc",
+    "canonical": "Renata Glasc"
+  },
+  {
+    "column": "ban4",
+    "raw": "Lulu",
+    "canonical": "Lulu"
+  },
+  {
+    "column": "ban4",
+    "raw": "Nocturne",
+    "canonical": "Nocturne"
+  },
+  {
+    "column": "ban4",
+    "raw": "Yasuo",
+    "canonical": "Yasuo"
+  },
+  {
+    "column": "ban4",
+    "raw": "Neeko",
+    "canonical": "Neeko"
+  },
+  {
+    "column": "ban4",
+    "raw": "Hwei",
+    "canonical": "Hwei"
+  },
+  {
+    "column": "ban4",
+    "raw": "Gnar",
+    "canonical": "Gnar"
+  },
+  {
+    "column": "ban4",
+    "raw": "Wukong",
+    "canonical": "Wukong"
+  },
+  {
+    "column": "ban4",
+    "raw": "Blitzcrank",
+    "canonical": "Blitzcrank"
+  },
+  {
+    "column": "ban4",
+    "raw": "Yorick",
+    "canonical": "Yorick"
+  },
+  {
+    "column": "ban4",
+    "raw": "Yone",
+    "canonical": "Yone"
+  },
+  {
+    "column": "ban4",
+    "raw": "Galio",
+    "canonical": "Galio"
+  },
+  {
+    "column": "ban4",
+    "raw": "Kennen",
+    "canonical": "Kennen"
+  },
+  {
+    "column": "ban4",
+    "raw": "Xin Zhao",
+    "canonical": "Xin Zhao"
+  },
+  {
+    "column": "ban4",
+    "raw": "Renekton",
+    "canonical": "Renekton"
+  },
+  {
+    "column": "ban4",
+    "raw": "Gwen",
+    "canonical": "Gwen"
+  },
+  {
+    "column": "ban4",
+    "raw": "Caitlyn",
+    "canonical": "Caitlyn"
+  },
+  {
+    "column": "ban4",
+    "raw": "Trundle",
+    "canonical": "Trundle"
+  },
+  {
+    "column": "ban4",
+    "raw": "Tristana",
+    "canonical": "Tristana"
+  },
+  {
+    "column": "ban4",
+    "raw": "Yuumi",
+    "canonical": "Yuumi"
+  },
+  {
+    "column": "ban4",
+    "raw": "Smolder",
+    "canonical": "Smolder"
+  },
+  {
+    "column": "ban4",
+    "raw": "Naafiri",
+    "canonical": "Naafiri"
+  },
+  {
+    "column": "ban4",
+    "raw": "Senna",
+    "canonical": "Senna"
+  },
+  {
+    "column": "ban4",
+    "raw": "Zyra",
+    "canonical": "Zyra"
+  },
+  {
+    "column": "ban4",
+    "raw": "Ziggs",
+    "canonical": "Ziggs"
+  },
+  {
+    "column": "ban4",
+    "raw": "LeBlanc",
+    "canonical": "LeBlanc"
+  },
+  {
+    "column": "ban4",
+    "raw": "Vi",
+    "canonical": "Vi"
+  },
+  {
+    "column": "ban4",
+    "raw": "Nidalee",
+    "canonical": "Nidalee"
+  },
+  {
+    "column": "ban4",
+    "raw": "Aatrox",
+    "canonical": "Aatrox"
+  },
+  {
+    "column": "ban4",
+    "raw": "Bard",
+    "canonical": "Bard"
+  },
+  {
+    "column": "ban4",
+    "raw": "Tahm Kench",
+    "canonical": "Tahm Kench"
+  },
+  {
+    "column": "ban4",
+    "raw": "Twisted Fate",
+    "canonical": "Twisted Fate"
+  },
+  {
+    "column": "ban4",
+    "raw": "Sivir",
+    "canonical": "Sivir"
+  },
+  {
+    "column": "ban4",
+    "raw": "Syndra",
+    "canonical": "Syndra"
+  },
+  {
+    "column": "ban4",
+    "raw": "Gragas",
+    "canonical": "Gragas"
+  },
+  {
+    "column": "ban4",
+    "raw": "Cassiopeia",
+    "canonical": "Cassiopeia"
+  },
+  {
+    "column": "ban4",
+    "raw": "Corki",
+    "canonical": "Corki"
+  },
+  {
+    "column": "ban4",
+    "raw": "Kassadin",
+    "canonical": "Kassadin"
+  },
+  {
+    "column": "ban4",
+    "raw": "Rumble",
+    "canonical": "Rumble"
+  },
+  {
+    "column": "ban4",
+    "raw": "Olaf",
+    "canonical": "Olaf"
+  },
+  {
+    "column": "ban4",
+    "raw": "Cho'Gath",
+    "canonical": "Cho'Gath"
+  },
+  {
+    "column": "ban4",
+    "raw": "K'Sante",
+    "canonical": "K'Sante"
+  },
+  {
+    "column": "ban4",
+    "raw": "Aphelios",
+    "canonical": "Aphelios"
+  },
+  {
+    "column": "ban4",
+    "raw": "Yunara",
+    "canonical": "Yunara"
+  },
+  {
+    "column": "ban4",
+    "raw": "Maokai",
+    "canonical": "Maokai"
+  },
+  {
+    "column": "ban4",
+    "raw": "Qiyana",
+    "canonical": "Qiyana"
+  },
+  {
+    "column": "ban4",
+    "raw": "Mel",
+    "canonical": "Mel"
+  },
+  {
+    "column": "ban4",
+    "raw": "Mordekaiser",
+    "canonical": "Mordekaiser"
+  },
+  {
+    "column": "ban4",
+    "raw": "Morgana",
+    "canonical": "Morgana"
+  },
+  {
+    "column": "ban4",
+    "raw": "Swain",
+    "canonical": "Swain"
+  },
+  {
+    "column": "ban4",
+    "raw": "Lissandra",
+    "canonical": "Lissandra"
+  },
+  {
+    "column": "ban4",
+    "raw": "Ivern",
+    "canonical": "Ivern"
+  },
+  {
+    "column": "ban4",
+    "raw": "Zoe",
+    "canonical": "Zoe"
+  },
+  {
+    "column": "ban4",
+    "raw": "Rek'Sai",
+    "canonical": "Rek'Sai"
+  },
+  {
+    "column": "ban4",
+    "raw": "Thresh",
+    "canonical": "Thresh"
+  },
+  {
+    "column": "ban4",
+    "raw": "Zaahen",
+    "canonical": "Zaahen"
+  },
+  {
+    "column": "ban4",
+    "raw": "Seraphine",
+    "canonical": "Seraphine"
+  },
+  {
+    "column": "ban4",
+    "raw": "Nami",
+    "canonical": "Nami"
+  },
+  {
+    "column": "ban4",
+    "raw": "Malphite",
+    "canonical": "Malphite"
+  },
+  {
+    "column": "ban4",
+    "raw": "Anivia",
+    "canonical": "Anivia"
+  },
+  {
+    "column": "ban4",
+    "raw": "Volibear",
+    "canonical": "Volibear"
+  },
+  {
+    "column": "ban4",
+    "raw": "Dr. Mundo",
+    "canonical": "Dr. Mundo"
+  },
+  {
+    "column": "ban4",
+    "raw": "Kha'Zix",
+    "canonical": "Kha'Zix"
+  },
+  {
+    "column": "ban4",
+    "raw": "Kindred",
+    "canonical": "Kindred"
+  },
+  {
+    "column": "ban4",
+    "raw": "Soraka",
+    "canonical": "Soraka"
+  },
+  {
+    "column": "ban4",
+    "raw": "Jinx",
+    "canonical": "Jinx"
+  },
+  {
+    "column": "ban4",
+    "raw": "Vayne",
+    "canonical": "Vayne"
+  },
+  {
+    "column": "ban4",
+    "raw": "Shyvana",
+    "canonical": "Shyvana"
+  },
+  {
+    "column": "ban4",
+    "raw": "Milio",
+    "canonical": "Milio"
+  },
+  {
+    "column": "ban4",
+    "raw": "Nasus",
+    "canonical": "Nasus"
+  },
+  {
+    "column": "ban4",
+    "raw": "Warwick",
+    "canonical": "Warwick"
+  },
+  {
+    "column": "ban4",
+    "raw": "Xerath",
+    "canonical": "Xerath"
+  },
+  {
+    "column": "ban4",
+    "raw": "Kled",
+    "canonical": "Kled"
+  },
+  {
+    "column": "ban4",
+    "raw": "Locke",
+    "canonical": "Locke"
+  },
+  {
+    "column": "ban4",
+    "raw": "Urgot",
+    "canonical": "Urgot"
+  },
+  {
+    "column": "ban4",
+    "raw": "Lux",
+    "canonical": "Lux"
+  },
+  {
+    "column": "ban4",
+    "raw": "Kog'Maw",
+    "canonical": "Kog'Maw"
+  },
+  {
+    "column": "ban5",
+    "raw": "Karma",
+    "canonical": "Karma"
+  },
+  {
+    "column": "ban5",
+    "raw": "Miss Fortune",
+    "canonical": "Miss Fortune"
+  },
+  {
+    "column": "ban5",
+    "raw": "Ezreal",
+    "canonical": "Ezreal"
+  },
+  {
+    "column": "ban5",
+    "raw": "Aurora",
+    "canonical": "Aurora"
+  },
+  {
+    "column": "ban5",
+    "raw": "Lee Sin",
+    "canonical": "Lee Sin"
+  },
+  {
+    "column": "ban5",
+    "raw": "Draven",
+    "canonical": "Draven"
+  },
+  {
+    "column": "ban5",
+    "raw": "Sion",
+    "canonical": "Sion"
+  },
+  {
+    "column": "ban5",
+    "raw": "Rell",
+    "canonical": "Rell"
+  },
+  {
+    "column": "ban5",
+    "raw": "Annie",
+    "canonical": "Annie"
+  },
+  {
+    "column": "ban5",
+    "raw": "Poppy",
+    "canonical": "Poppy"
+  },
+  {
+    "column": "ban5",
+    "raw": "Viktor",
+    "canonical": "Viktor"
+  },
+  {
+    "column": "ban5",
+    "raw": "Rakan",
+    "canonical": "Rakan"
+  },
+  {
+    "column": "ban5",
+    "raw": "Neeko",
+    "canonical": "Neeko"
+  },
+  {
+    "column": "ban5",
+    "raw": "Lucian",
+    "canonical": "Lucian"
+  },
+  {
+    "column": "ban5",
+    "raw": "Skarner",
+    "canonical": "Skarner"
+  },
+  {
+    "column": "ban5",
+    "raw": "Kai'Sa",
+    "canonical": "Kai'Sa"
+  },
+  {
+    "column": "ban5",
+    "raw": "Jax",
+    "canonical": "Jax"
+  },
+  {
+    "column": "ban5",
+    "raw": "Maokai",
+    "canonical": "Maokai"
+  },
+  {
+    "column": "ban5",
+    "raw": "Pantheon",
+    "canonical": "Pantheon"
+  },
+  {
+    "column": "ban5",
+    "raw": "Braum",
+    "canonical": "Braum"
+  },
+  {
+    "column": "ban5",
+    "raw": "Elise",
+    "canonical": "Elise"
+  },
+  {
+    "column": "ban5",
+    "raw": "Renata Glasc",
+    "canonical": "Renata Glasc"
+  },
+  {
+    "column": "ban5",
+    "raw": "Varus",
+    "canonical": "Varus"
+  },
+  {
+    "column": "ban5",
+    "raw": "Galio",
+    "canonical": "Galio"
+  },
+  {
+    "column": "ban5",
+    "raw": "Caitlyn",
+    "canonical": "Caitlyn"
+  },
+  {
+    "column": "ban5",
+    "raw": "Gnar",
+    "canonical": "Gnar"
+  },
+  {
+    "column": "ban5",
+    "raw": "Xayah",
+    "canonical": "Xayah"
+  },
+  {
+    "column": "ban5",
+    "raw": "Alistar",
+    "canonical": "Alistar"
+  },
+  {
+    "column": "ban5",
+    "raw": "Hwei",
+    "canonical": "Hwei"
+  },
+  {
+    "column": "ban5",
+    "raw": "Nocturne",
+    "canonical": "Nocturne"
+  },
+  {
+    "column": "ban5",
+    "raw": "Nautilus",
+    "canonical": "Nautilus"
+  },
+  {
+    "column": "ban5",
+    "raw": "Ashe",
+    "canonical": "Ashe"
+  },
+  {
+    "column": "ban5",
+    "raw": "Sylas",
+    "canonical": "Sylas"
+  },
+  {
+    "column": "ban5",
+    "raw": "Zeri",
+    "canonical": "Zeri"
+  },
+  {
+    "column": "ban5",
+    "raw": "Ryze",
+    "canonical": "Ryze"
+  },
+  {
+    "column": "ban5",
+    "raw": "Ahri",
+    "canonical": "Ahri"
+  },
+  {
+    "column": "ban5",
+    "raw": "Leona",
+    "canonical": "Leona"
+  },
+  {
+    "column": "ban5",
+    "raw": "Ornn",
+    "canonical": "Ornn"
+  },
+  {
+    "column": "ban5",
+    "raw": "Orianna",
+    "canonical": "Orianna"
+  },
+  {
+    "column": "ban5",
+    "raw": "Azir",
+    "canonical": "Azir"
+  },
+  {
+    "column": "ban5",
+    "raw": "Naafiri",
+    "canonical": "Naafiri"
+  },
+  {
+    "column": "ban5",
+    "raw": "Kalista",
+    "canonical": "Kalista"
+  },
+  {
+    "column": "ban5",
+    "raw": "Kindred",
+    "canonical": "Kindred"
+  },
+  {
+    "column": "ban5",
+    "raw": "Jhin",
+    "canonical": "Jhin"
+  },
+  {
+    "column": "ban5",
+    "raw": "Jayce",
+    "canonical": "Jayce"
+  },
+  {
+    "column": "ban5",
+    "raw": "Seraphine",
+    "canonical": "Seraphine"
+  },
+  {
+    "column": "ban5",
+    "raw": "Yuumi",
+    "canonical": "Yuumi"
+  },
+  {
+    "column": "ban5",
+    "raw": "Akali",
+    "canonical": "Akali"
+  },
+  {
+    "column": "ban5",
+    "raw": "Jarvan IV",
+    "canonical": "Jarvan IV"
+  },
+  {
+    "column": "ban5",
+    "raw": "Renekton",
+    "canonical": "Renekton"
+  },
+  {
+    "column": "ban5",
+    "raw": "Jinx",
+    "canonical": "Jinx"
+  },
+  {
+    "column": "ban5",
+    "raw": "Xin Zhao",
+    "canonical": "Xin Zhao"
+  },
+  {
+    "column": "ban5",
+    "raw": "Pyke",
+    "canonical": "Pyke"
+  },
+  {
+    "column": "ban5",
+    "raw": "Rumble",
+    "canonical": "Rumble"
+  },
+  {
+    "column": "ban5",
+    "raw": "Wukong",
+    "canonical": "Wukong"
+  },
+  {
+    "column": "ban5",
+    "raw": "Yorick",
+    "canonical": "Yorick"
+  },
+  {
+    "column": "ban5",
+    "raw": "Ambessa",
+    "canonical": "Ambessa"
+  },
+  {
+    "column": "ban5",
+    "raw": "Lulu",
+    "canonical": "Lulu"
+  },
+  {
+    "column": "ban5",
+    "raw": "Aatrox",
+    "canonical": "Aatrox"
+  },
+  {
+    "column": "ban5",
+    "raw": "Taliyah",
+    "canonical": "Taliyah"
+  },
+  {
+    "column": "ban5",
+    "raw": "Zyra",
+    "canonical": "Zyra"
+  },
+  {
+    "column": "ban5",
+    "raw": "Sejuani",
+    "canonical": "Sejuani"
+  },
+  {
+    "column": "ban5",
+    "raw": "Lillia",
+    "canonical": "Lillia"
+  },
+  {
+    "column": "ban5",
+    "raw": "Vi",
+    "canonical": "Vi"
+  },
+  {
+    "column": "ban5",
+    "raw": "K'Sante",
+    "canonical": "K'Sante"
+  },
+  {
+    "column": "ban5",
+    "raw": "Kennen",
+    "canonical": "Kennen"
+  },
+  {
+    "column": "ban5",
+    "raw": "Zed",
+    "canonical": "Zed"
+  },
+  {
+    "column": "ban5",
+    "raw": "Blitzcrank",
+    "canonical": "Blitzcrank"
+  },
+  {
+    "column": "ban5",
+    "raw": "Corki",
+    "canonical": "Corki"
+  },
+  {
+    "column": "ban5",
+    "raw": "Senna",
+    "canonical": "Senna"
+  },
+  {
+    "column": "ban5",
+    "raw": "Shen",
+    "canonical": "Shen"
+  },
+  {
+    "column": "ban5",
+    "raw": "Gragas",
+    "canonical": "Gragas"
+  },
+  {
+    "column": "ban5",
+    "raw": "Trundle",
+    "canonical": "Trundle"
+  },
+  {
+    "column": "ban5",
+    "raw": "Smolder",
+    "canonical": "Smolder"
+  },
+  {
+    "column": "ban5",
+    "raw": "LeBlanc",
+    "canonical": "LeBlanc"
+  },
+  {
+    "column": "ban5",
+    "raw": "Ziggs",
+    "canonical": "Ziggs"
+  },
+  {
+    "column": "ban5",
+    "raw": "Thresh",
+    "canonical": "Thresh"
+  },
+  {
+    "column": "ban5",
+    "raw": "Nidalee",
+    "canonical": "Nidalee"
+  },
+  {
+    "column": "ban5",
+    "raw": "Kassadin",
+    "canonical": "Kassadin"
+  },
+  {
+    "column": "ban5",
+    "raw": "Syndra",
+    "canonical": "Syndra"
+  },
+  {
+    "column": "ban5",
+    "raw": "Viego",
+    "canonical": "Viego"
+  },
+  {
+    "column": "ban5",
+    "raw": "Yasuo",
+    "canonical": "Yasuo"
+  },
+  {
+    "column": "ban5",
+    "raw": "Yone",
+    "canonical": "Yone"
+  },
+  {
+    "column": "ban5",
+    "raw": "Volibear",
+    "canonical": "Volibear"
+  },
+  {
+    "column": "ban5",
+    "raw": "Gwen",
+    "canonical": "Gwen"
+  },
+  {
+    "column": "ban5",
+    "raw": "Cassiopeia",
+    "canonical": "Cassiopeia"
+  },
+  {
+    "column": "ban5",
+    "raw": "Dr. Mundo",
+    "canonical": "Dr. Mundo"
+  },
+  {
+    "column": "ban5",
+    "raw": "Warwick",
+    "canonical": "Warwick"
+  },
+  {
+    "column": "ban5",
+    "raw": "Bard",
+    "canonical": "Bard"
+  },
+  {
+    "column": "ban5",
+    "raw": "Olaf",
+    "canonical": "Olaf"
+  },
+  {
+    "column": "ban5",
+    "raw": "Camille",
+    "canonical": "Camille"
+  },
+  {
+    "column": "ban5",
+    "raw": "Tahm Kench",
+    "canonical": "Tahm Kench"
+  },
+  {
+    "column": "ban5",
+    "raw": "Sivir",
+    "canonical": "Sivir"
+  },
+  {
+    "column": "ban5",
+    "raw": "Twisted Fate",
+    "canonical": "Twisted Fate"
+  },
+  {
+    "column": "ban5",
+    "raw": "Cho'Gath",
+    "canonical": "Cho'Gath"
+  },
+  {
+    "column": "ban5",
+    "raw": "Tryndamere",
+    "canonical": "Tryndamere"
+  },
+  {
+    "column": "ban5",
+    "raw": "Aphelios",
+    "canonical": "Aphelios"
+  },
+  {
+    "column": "ban5",
+    "raw": "Yunara",
+    "canonical": "Yunara"
+  },
+  {
+    "column": "ban5",
+    "raw": "Nami",
+    "canonical": "Nami"
+  },
+  {
+    "column": "ban5",
+    "raw": "Talon",
+    "canonical": "Talon"
+  },
+  {
+    "column": "ban5",
+    "raw": "Swain",
+    "canonical": "Swain"
+  },
+  {
+    "column": "ban5",
+    "raw": "Tristana",
+    "canonical": "Tristana"
+  },
+  {
+    "column": "ban5",
+    "raw": "Morgana",
+    "canonical": "Morgana"
+  },
+  {
+    "column": "ban5",
+    "raw": "Mordekaiser",
+    "canonical": "Mordekaiser"
+  },
+  {
+    "column": "ban5",
+    "raw": "Qiyana",
+    "canonical": "Qiyana"
+  },
+  {
+    "column": "ban5",
+    "raw": "Mel",
+    "canonical": "Mel"
+  },
+  {
+    "column": "ban5",
+    "raw": "Ivern",
+    "canonical": "Ivern"
+  },
+  {
+    "column": "ban5",
+    "raw": "Lissandra",
+    "canonical": "Lissandra"
+  },
+  {
+    "column": "ban5",
+    "raw": "Rek'Sai",
+    "canonical": "Rek'Sai"
+  },
+  {
+    "column": "ban5",
+    "raw": "Brand",
+    "canonical": "Brand"
+  },
+  {
+    "column": "ban5",
+    "raw": "Rengar",
+    "canonical": "Rengar"
+  },
+  {
+    "column": "ban5",
+    "raw": "Vex",
+    "canonical": "Vex"
+  },
+  {
+    "column": "ban5",
+    "raw": "Kled",
+    "canonical": "Kled"
+  },
+  {
+    "column": "ban5",
+    "raw": "Zaahen",
+    "canonical": "Zaahen"
+  },
+  {
+    "column": "ban5",
+    "raw": "Anivia",
+    "canonical": "Anivia"
+  },
+  {
+    "column": "ban5",
+    "raw": "Malphite",
+    "canonical": "Malphite"
+  },
+  {
+    "column": "ban5",
+    "raw": "Malzahar",
+    "canonical": "Malzahar"
+  },
+  {
+    "column": "ban5",
+    "raw": "Udyr",
+    "canonical": "Udyr"
+  },
+  {
+    "column": "ban5",
+    "raw": "Zoe",
+    "canonical": "Zoe"
+  },
+  {
+    "column": "ban5",
+    "raw": "Kha'Zix",
+    "canonical": "Kha'Zix"
+  },
+  {
+    "column": "ban5",
+    "raw": "Kog'Maw",
+    "canonical": "Kog'Maw"
+  },
+  {
+    "column": "ban5",
+    "raw": "Vayne",
+    "canonical": "Vayne"
+  },
+  {
+    "column": "ban5",
+    "raw": "Veigar",
+    "canonical": "Veigar"
+  },
+  {
+    "column": "ban5",
+    "raw": "Milio",
+    "canonical": "Milio"
+  },
+  {
+    "column": "ban5",
+    "raw": "Shyvana",
+    "canonical": "Shyvana"
+  },
+  {
+    "column": "ban5",
+    "raw": "Irelia",
+    "canonical": "Irelia"
+  },
+  {
+    "column": "ban5",
+    "raw": "Gangplank",
+    "canonical": "Gangplank"
+  },
+  {
+    "column": "ban5",
+    "raw": "Lux",
+    "canonical": "Lux"
+  },
+  {
+    "column": "ban5",
+    "raw": "Illaoi",
+    "canonical": "Illaoi"
+  },
+  {
+    "column": "ban5",
+    "raw": "Sett",
+    "canonical": "Sett"
+  },
+  {
+    "column": "ban5",
+    "raw": "Xerath",
+    "canonical": "Xerath"
+  },
+  {
+    "column": "ban5",
+    "raw": "Locke",
+    "canonical": "Locke"
+  },
+  {
+    "column": "ban5",
+    "raw": "Vladimir",
+    "canonical": "Vladimir"
+  },
+  {
+    "column": "ban5",
+    "raw": "Diana",
+    "canonical": "Diana"
+  },
+  {
+    "column": "ban5",
+    "raw": "Nasus",
+    "canonical": "Nasus"
+  },
+  {
+    "column": "ban5",
+    "raw": "Fiora",
+    "canonical": "Fiora"
+  },
+  {
+    "column": "ban5",
+    "raw": "Riven",
+    "canonical": "Riven"
+  },
+  {
+    "column": "ban5",
+    "raw": "Ekko",
+    "canonical": "Ekko"
+  }
+]

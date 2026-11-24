@@ -1,0 +1,903 @@
+{
+  "official_catalog_version": "16.20.1",
+  "rank_distinct_participants": 411,
+  "rank_name_mapping": [
+    {
+      "raw": "Gragas",
+      "champion_id": 79,
+      "canonical": "Gragas"
+    },
+    {
+      "raw": "LeeSin",
+      "champion_id": 64,
+      "canonical": "Lee Sin"
+    },
+    {
+      "raw": "Akali",
+      "champion_id": 84,
+      "canonical": "Akali"
+    },
+    {
+      "raw": "Kaisa",
+      "champion_id": 145,
+      "canonical": "Kai'Sa"
+    },
+    {
+      "raw": "Anivia",
+      "champion_id": 34,
+      "canonical": "Anivia"
+    },
+    {
+      "raw": "DrMundo",
+      "champion_id": 36,
+      "canonical": "Dr. Mundo"
+    },
+    {
+      "raw": "Lillia",
+      "champion_id": 876,
+      "canonical": "Lillia"
+    },
+    {
+      "raw": "Qiyana",
+      "champion_id": 246,
+      "canonical": "Qiyana"
+    },
+    {
+      "raw": "Yunara",
+      "champion_id": 804,
+      "canonical": "Yunara"
+    },
+    {
+      "raw": "Elise",
+      "champion_id": 60,
+      "canonical": "Elise"
+    },
+    {
+      "raw": "Jayce",
+      "champion_id": 126,
+      "canonical": "Jayce"
+    },
+    {
+      "raw": "Ivern",
+      "champion_id": 427,
+      "canonical": "Ivern"
+    },
+    {
+      "raw": "Lucian",
+      "champion_id": 236,
+      "canonical": "Lucian"
+    },
+    {
+      "raw": "Jhin",
+      "champion_id": 202,
+      "canonical": "Jhin"
+    },
+    {
+      "raw": "Shen",
+      "champion_id": 98,
+      "canonical": "Shen"
+    },
+    {
+      "raw": "Pantheon",
+      "champion_id": 80,
+      "canonical": "Pantheon"
+    },
+    {
+      "raw": "JarvanIV",
+      "champion_id": 59,
+      "canonical": "Jarvan IV"
+    },
+    {
+      "raw": "TwistedFate",
+      "champion_id": 4,
+      "canonical": "Twisted Fate"
+    },
+    {
+      "raw": "Corki",
+      "champion_id": 42,
+      "canonical": "Corki"
+    },
+    {
+      "raw": "Bard",
+      "champion_id": 432,
+      "canonical": "Bard"
+    },
+    {
+      "raw": "Tryndamere",
+      "champion_id": 23,
+      "canonical": "Tryndamere"
+    },
+    {
+      "raw": "Graves",
+      "champion_id": 104,
+      "canonical": "Graves"
+    },
+    {
+      "raw": "Xerath",
+      "champion_id": 101,
+      "canonical": "Xerath"
+    },
+    {
+      "raw": "Tristana",
+      "champion_id": 18,
+      "canonical": "Tristana"
+    },
+    {
+      "raw": "Rakan",
+      "champion_id": 497,
+      "canonical": "Rakan"
+    },
+    {
+      "raw": "Malphite",
+      "champion_id": 54,
+      "canonical": "Malphite"
+    },
+    {
+      "raw": "Alistar",
+      "champion_id": 12,
+      "canonical": "Alistar"
+    },
+    {
+      "raw": "Fiora",
+      "champion_id": 114,
+      "canonical": "Fiora"
+    },
+    {
+      "raw": "Nautilus",
+      "champion_id": 111,
+      "canonical": "Nautilus"
+    },
+    {
+      "raw": "Zoe",
+      "champion_id": 142,
+      "canonical": "Zoe"
+    },
+    {
+      "raw": "Naafiri",
+      "champion_id": 950,
+      "canonical": "Naafiri"
+    },
+    {
+      "raw": "Ambessa",
+      "champion_id": 799,
+      "canonical": "Ambessa"
+    },
+    {
+      "raw": "Caitlyn",
+      "champion_id": 51,
+      "canonical": "Caitlyn"
+    },
+    {
+      "raw": "Leona",
+      "champion_id": 89,
+      "canonical": "Leona"
+    },
+    {
+      "raw": "Sejuani",
+      "champion_id": 113,
+      "canonical": "Sejuani"
+    },
+    {
+      "raw": "Sylas",
+      "champion_id": 517,
+      "canonical": "Sylas"
+    },
+    {
+      "raw": "Sett",
+      "champion_id": 875,
+      "canonical": "Sett"
+    },
+    {
+      "raw": "Lulu",
+      "champion_id": 117,
+      "canonical": "Lulu"
+    },
+    {
+      "raw": "Kennen",
+      "champion_id": 85,
+      "canonical": "Kennen"
+    },
+    {
+      "raw": "Yasuo",
+      "champion_id": 157,
+      "canonical": "Yasuo"
+    },
+    {
+      "raw": "Thresh",
+      "champion_id": 412,
+      "canonical": "Thresh"
+    },
+    {
+      "raw": "Chogath",
+      "champion_id": 31,
+      "canonical": "Cho'Gath"
+    },
+    {
+      "raw": "Taliyah",
+      "champion_id": 163,
+      "canonical": "Taliyah"
+    },
+    {
+      "raw": "Rumble",
+      "champion_id": 68,
+      "canonical": "Rumble"
+    },
+    {
+      "raw": "Yone",
+      "champion_id": 777,
+      "canonical": "Yone"
+    },
+    {
+      "raw": "Zeri",
+      "champion_id": 221,
+      "canonical": "Zeri"
+    },
+    {
+      "raw": "Karma",
+      "champion_id": 43,
+      "canonical": "Karma"
+    },
+    {
+      "raw": "Lissandra",
+      "champion_id": 127,
+      "canonical": "Lissandra"
+    },
+    {
+      "raw": "Rengar",
+      "champion_id": 107,
+      "canonical": "Rengar"
+    },
+    {
+      "raw": "Maokai",
+      "champion_id": 57,
+      "canonical": "Maokai"
+    },
+    {
+      "raw": "XinZhao",
+      "champion_id": 5,
+      "canonical": "Xin Zhao"
+    },
+    {
+      "raw": "Cassiopeia",
+      "champion_id": 69,
+      "canonical": "Cassiopeia"
+    },
+    {
+      "raw": "Pyke",
+      "champion_id": 555,
+      "canonical": "Pyke"
+    },
+    {
+      "raw": "Irelia",
+      "champion_id": 39,
+      "canonical": "Irelia"
+    },
+    {
+      "raw": "Karthus",
+      "champion_id": 30,
+      "canonical": "Karthus"
+    },
+    {
+      "raw": "Nasus",
+      "champion_id": 75,
+      "canonical": "Nasus"
+    },
+    {
+      "raw": "Nocturne",
+      "champion_id": 56,
+      "canonical": "Nocturne"
+    },
+    {
+      "raw": "Orianna",
+      "champion_id": 61,
+      "canonical": "Orianna"
+    },
+    {
+      "raw": "Ezreal",
+      "champion_id": 81,
+      "canonical": "Ezreal"
+    },
+    {
+      "raw": "Camille",
+      "champion_id": 164,
+      "canonical": "Camille"
+    },
+    {
+      "raw": "Khazix",
+      "champion_id": 121,
+      "canonical": "Kha'Zix"
+    },
+    {
+      "raw": "Kayle",
+      "champion_id": 10,
+      "canonical": "Kayle"
+    },
+    {
+      "raw": "Renekton",
+      "champion_id": 58,
+      "canonical": "Renekton"
+    },
+    {
+      "raw": "Skarner",
+      "champion_id": 72,
+      "canonical": "Skarner"
+    },
+    {
+      "raw": "MissFortune",
+      "champion_id": 21,
+      "canonical": "Miss Fortune"
+    },
+    {
+      "raw": "Locke",
+      "champion_id": 805,
+      "canonical": "Locke"
+    },
+    {
+      "raw": "Katarina",
+      "champion_id": 55,
+      "canonical": "Katarina"
+    },
+    {
+      "raw": "Yuumi",
+      "champion_id": 350,
+      "canonical": "Yuumi"
+    },
+    {
+      "raw": "Talon",
+      "champion_id": 91,
+      "canonical": "Talon"
+    },
+    {
+      "raw": "Poppy",
+      "champion_id": 78,
+      "canonical": "Poppy"
+    },
+    {
+      "raw": "Syndra",
+      "champion_id": 134,
+      "canonical": "Syndra"
+    },
+    {
+      "raw": "Olaf",
+      "champion_id": 2,
+      "canonical": "Olaf"
+    },
+    {
+      "raw": "Galio",
+      "champion_id": 3,
+      "canonical": "Galio"
+    },
+    {
+      "raw": "KSante",
+      "champion_id": 897,
+      "canonical": "K'Sante"
+    },
+    {
+      "raw": "Belveth",
+      "champion_id": 200,
+      "canonical": "Bel'Veth"
+    },
+    {
+      "raw": "Ryze",
+      "champion_id": 13,
+      "canonical": "Ryze"
+    },
+    {
+      "raw": "Aurora",
+      "champion_id": 893,
+      "canonical": "Aurora"
+    },
+    {
+      "raw": "Braum",
+      "champion_id": 201,
+      "canonical": "Braum"
+    },
+    {
+      "raw": "Draven",
+      "champion_id": 119,
+      "canonical": "Draven"
+    },
+    {
+      "raw": "Gangplank",
+      "champion_id": 41,
+      "canonical": "Gangplank"
+    },
+    {
+      "raw": "Kalista",
+      "champion_id": 429,
+      "canonical": "Kalista"
+    },
+    {
+      "raw": "Renata",
+      "champion_id": 888,
+      "canonical": "Renata Glasc"
+    },
+    {
+      "raw": "Riven",
+      "champion_id": 92,
+      "canonical": "Riven"
+    },
+    {
+      "raw": "Nami",
+      "champion_id": 267,
+      "canonical": "Nami"
+    },
+    {
+      "raw": "Gnar",
+      "champion_id": 150,
+      "canonical": "Gnar"
+    },
+    {
+      "raw": "Viego",
+      "champion_id": 234,
+      "canonical": "Viego"
+    },
+    {
+      "raw": "Xayah",
+      "champion_id": 498,
+      "canonical": "Xayah"
+    },
+    {
+      "raw": "Zed",
+      "champion_id": 238,
+      "canonical": "Zed"
+    },
+    {
+      "raw": "Udyr",
+      "champion_id": 77,
+      "canonical": "Udyr"
+    },
+    {
+      "raw": "Nidalee",
+      "champion_id": 76,
+      "canonical": "Nidalee"
+    },
+    {
+      "raw": "Leblanc",
+      "champion_id": 7,
+      "canonical": "LeBlanc"
+    },
+    {
+      "raw": "Jinx",
+      "champion_id": 222,
+      "canonical": "Jinx"
+    },
+    {
+      "raw": "Teemo",
+      "champion_id": 17,
+      "canonical": "Teemo"
+    },
+    {
+      "raw": "Hecarim",
+      "champion_id": 120,
+      "canonical": "Hecarim"
+    },
+    {
+      "raw": "Aphelios",
+      "champion_id": 523,
+      "canonical": "Aphelios"
+    },
+    {
+      "raw": "Rell",
+      "champion_id": 526,
+      "canonical": "Rell"
+    },
+    {
+      "raw": "Darius",
+      "champion_id": 122,
+      "canonical": "Darius"
+    },
+    {
+      "raw": "Zaahen",
+      "champion_id": 904,
+      "canonical": "Zaahen"
+    },
+    {
+      "raw": "Kled",
+      "champion_id": 240,
+      "canonical": "Kled"
+    },
+    {
+      "raw": "Seraphine",
+      "champion_id": 147,
+      "canonical": "Seraphine"
+    },
+    {
+      "raw": "Velkoz",
+      "champion_id": 161,
+      "canonical": "Vel'Koz"
+    },
+    {
+      "raw": "Vayne",
+      "champion_id": 67,
+      "canonical": "Vayne"
+    },
+    {
+      "raw": "Trundle",
+      "champion_id": 48,
+      "canonical": "Trundle"
+    },
+    {
+      "raw": "Mel",
+      "champion_id": 800,
+      "canonical": "Mel"
+    },
+    {
+      "raw": "Vex",
+      "champion_id": 711,
+      "canonical": "Vex"
+    },
+    {
+      "raw": "Varus",
+      "champion_id": 110,
+      "canonical": "Varus"
+    },
+    {
+      "raw": "Blitzcrank",
+      "champion_id": 53,
+      "canonical": "Blitzcrank"
+    },
+    {
+      "raw": "Zac",
+      "champion_id": 154,
+      "canonical": "Zac"
+    },
+    {
+      "raw": "Jax",
+      "champion_id": 24,
+      "canonical": "Jax"
+    },
+    {
+      "raw": "Fizz",
+      "champion_id": 105,
+      "canonical": "Fizz"
+    },
+    {
+      "raw": "Aatrox",
+      "champion_id": 266,
+      "canonical": "Aatrox"
+    },
+    {
+      "raw": "Milio",
+      "champion_id": 902,
+      "canonical": "Milio"
+    },
+    {
+      "raw": "Kindred",
+      "champion_id": 203,
+      "canonical": "Kindred"
+    },
+    {
+      "raw": "Ahri",
+      "champion_id": 103,
+      "canonical": "Ahri"
+    },
+    {
+      "raw": "RekSai",
+      "champion_id": 421,
+      "canonical": "Rek'Sai"
+    },
+    {
+      "raw": "Diana",
+      "champion_id": 131,
+      "canonical": "Diana"
+    },
+    {
+      "raw": "Sion",
+      "champion_id": 14,
+      "canonical": "Sion"
+    },
+    {
+      "raw": "Akshan",
+      "champion_id": 166,
+      "canonical": "Akshan"
+    },
+    {
+      "raw": "AurelionSol",
+      "champion_id": 136,
+      "canonical": "Aurelion Sol"
+    },
+    {
+      "raw": "Vi",
+      "champion_id": 254,
+      "canonical": "Vi"
+    },
+    {
+      "raw": "Morgana",
+      "champion_id": 25,
+      "canonical": "Morgana"
+    },
+    {
+      "raw": "Zyra",
+      "champion_id": 143,
+      "canonical": "Zyra"
+    },
+    {
+      "raw": "Azir",
+      "champion_id": 268,
+      "canonical": "Azir"
+    },
+    {
+      "raw": "Ekko",
+      "champion_id": 245,
+      "canonical": "Ekko"
+    },
+    {
+      "raw": "Shyvana",
+      "champion_id": 102,
+      "canonical": "Shyvana"
+    },
+    {
+      "raw": "Sivir",
+      "champion_id": 15,
+      "canonical": "Sivir"
+    },
+    {
+      "raw": "Ziggs",
+      "champion_id": 115,
+      "canonical": "Ziggs"
+    },
+    {
+      "raw": "Viktor",
+      "champion_id": 112,
+      "canonical": "Viktor"
+    },
+    {
+      "raw": "Lux",
+      "champion_id": 99,
+      "canonical": "Lux"
+    },
+    {
+      "raw": "Neeko",
+      "champion_id": 518,
+      "canonical": "Neeko"
+    },
+    {
+      "raw": "Vladimir",
+      "champion_id": 8,
+      "canonical": "Vladimir"
+    },
+    {
+      "raw": "Evelynn",
+      "champion_id": 28,
+      "canonical": "Evelynn"
+    },
+    {
+      "raw": "Swain",
+      "champion_id": 50,
+      "canonical": "Swain"
+    },
+    {
+      "raw": "Senna",
+      "champion_id": 235,
+      "canonical": "Senna"
+    },
+    {
+      "raw": "FiddleSticks",
+      "champion_id": 9,
+      "canonical": "Fiddlesticks"
+    },
+    {
+      "raw": "TahmKench",
+      "champion_id": 223,
+      "canonical": "Tahm Kench"
+    },
+    {
+      "raw": "Hwei",
+      "champion_id": 910,
+      "canonical": "Hwei"
+    },
+    {
+      "raw": "Garen",
+      "champion_id": 86,
+      "canonical": "Garen"
+    },
+    {
+      "raw": "Gwen",
+      "champion_id": 887,
+      "canonical": "Gwen"
+    },
+    {
+      "raw": "Malzahar",
+      "champion_id": 90,
+      "canonical": "Malzahar"
+    },
+    {
+      "raw": "Janna",
+      "champion_id": 40,
+      "canonical": "Janna"
+    },
+    {
+      "raw": "Taric",
+      "champion_id": 44,
+      "canonical": "Taric"
+    },
+    {
+      "raw": "Yorick",
+      "champion_id": 83,
+      "canonical": "Yorick"
+    },
+    {
+      "raw": "Warwick",
+      "champion_id": 19,
+      "canonical": "Warwick"
+    }
+  ],
+  "pro_stored_diff_checks": {
+    "gold_10": {
+      "available": 24370,
+      "mismatch": 0
+    },
+    "xp_10": {
+      "available": 24370,
+      "mismatch": 0
+    },
+    "cs_10": {
+      "available": 24370,
+      "mismatch": 0
+    },
+    "gold_15": {
+      "available": 24380,
+      "mismatch": 0
+    },
+    "xp_15": {
+      "available": 24380,
+      "mismatch": 0
+    },
+    "cs_15": {
+      "available": 24380,
+      "mismatch": 0
+    }
+  },
+  "pro_total_cs_check": {
+    "available": 30000,
+    "mismatch": 0
+  },
+  "rank_frame_offsets_ms": {
+    "10": [
+      104,
+      110,
+      115,
+      116,
+      122,
+      144,
+      145,
+      147,
+      151,
+      161,
+      177,
+      178,
+      180,
+      191,
+      195,
+      196,
+      200,
+      202,
+      207,
+      210,
+      211,
+      214,
+      215,
+      219,
+      220,
+      221,
+      222,
+      226,
+      227,
+      228,
+      229,
+      232,
+      234,
+      236,
+      237,
+      238,
+      242,
+      245,
+      246,
+      247,
+      252,
+      253,
+      255,
+      257,
+      258,
+      260,
+      265,
+      267,
+      268,
+      271,
+      272,
+      273,
+      274,
+      275,
+      276,
+      277,
+      279,
+      281,
+      289,
+      295,
+      311,
+      317,
+      320
+    ],
+    "15": [
+      169,
+      188,
+      195,
+      214,
+      230,
+      244,
+      249,
+      261,
+      265,
+      268,
+      272,
+      275,
+      276,
+      278,
+      282,
+      285,
+      286,
+      288,
+      292,
+      293,
+      294,
+      296,
+      297,
+      298,
+      299,
+      300,
+      303,
+      305,
+      306,
+      307,
+      308,
+      309,
+      315,
+      318,
+      320,
+      321,
+      322,
+      323,
+      325,
+      326,
+      327,
+      329,
+      330,
+      331,
+      332,
+      333,
+      334,
+      335,
+      336,
+      337,
+      338,
+      341,
+      343,
+      344,
+      347,
+      349,
+      350,
+      351,
+      353,
+      354,
+      355,
+      356,
+      358,
+      361,
+      364,
+      368,
+      370,
+      374,
+      376,
+      378,
+      386,
+      391,
+      392,
+      405,
+      407
+    ]
+  },
+  "cs_definition_source": "https://lol.timsevenhuysen.com/matchdata/match-data-dictionary/",
+  "role_semantics": "postgame reported/inferred role, not observed lane occupancy or draft intent",
+  "timestamp_semantics": "UTC start; nearest +/-1000ms is descriptive only; Pro exact frame timestamps unavailable"
+}

@@ -1,0 +1,37 @@
+{
+  "status": "PASS",
+  "unit_tests_passed": 49,
+  "new_batches": 3,
+  "new_unique_seeds": 15,
+  "new_unique_candidates": 15,
+  "new_http_attempts": 179,
+  "http_budget": 200,
+  "new_accepted_games": 8,
+  "total_accepted_games": 10,
+  "total_participant_rows": 100,
+  "total_unique_accepted_players": 72,
+  "champion_roles": 115,
+  "directed_lane_pairs": 2156,
+  "supported_champion_roles": 0,
+  "supported_lane_pairs": 0,
+  "zero_evidence_champion_roles": 46,
+  "zero_evidence_lane_pairs": 2058,
+  "chronological_split_games": [
+    6,
+    2,
+    2
+  ],
+  "history_available_before_validation_games": 0,
+  "metrics_not_fabricated": true,
+  "readiness": false,
+  "raw_unchanged": true,
+  "db_unchanged": true,
+  "db_sha256": "20e3d9739b271283f35a1ba33f345e3593bafe4e31212906d35939d91b2f740c",
+  "no_puuid_in_coverage_exports": true,
+  "verification_source_sha256": {
+    "rank_coverage.py": "3882ee02a8fd34b649b0943439e3ec1a62cc8c75698751bbb13dd704b6e126e0",
+    "collect_rank_batches.py": "28cab46f1f6893995fe1e759a2ff9c2cdacc892c0466a97a7d3e5c2df0d28b6a",
+    "collect_rank_snapshots.py": "a587c25d3162390388513a286088db31f73713f25225c73d4a706832342daca7",
+    "ranked_matchups.py": "53d4b03a6cc7ecdb2c83491425e6c753c680027540fc13b7310c7df514ace405"
+  }
+}

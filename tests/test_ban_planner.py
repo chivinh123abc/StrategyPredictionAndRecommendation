@@ -29,6 +29,23 @@ def planner(**kwargs):
 
 
 class BanPlannerTests(unittest.TestCase):
+    def test_removing_a_backup_cannot_increase_short_pool_value(self):
+        p=planner()
+        rows=[{'score':.9},{'score':.6}]
+        self.assertAlmostEqual(p.pool_value(rows),.5)
+        self.assertAlmostEqual(p.pool_value(rows[:1]),.3)
+        self.assertGreater(p.pool_value(rows),p.pool_value(rows[:1]))
+        self.assertEqual(p.pool_value([]),0.)
+
+    def test_fixed_capacity_monotone_for_every_removed_option(self):
+        p=planner()
+        for count in range(1,13):
+            rows=[{'score':1-i/20} for i in range(count)]
+            before=p.pool_value(rows)
+            for index in range(count):
+                self.assertLessEqual(p.pool_value(rows[:index]+rows[index+1:]),before+1e-12)
+        self.assertAlmostEqual(p.pool_value([{'score':.9},{'score':.6},{'score':.3}]),.6)
+
     def test_side_selection_and_pool_cost_change_context_without_name_rules(self):
         p=planner();first=DraftState(first_side='blue')
         second=DraftState(first_side='red');second.apply('red','ban','OutsideCatalog')

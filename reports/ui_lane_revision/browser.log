@@ -1,0 +1,16 @@
+
+> draft-lab-ui@0.1.0 test:e2e
+> playwright test
+
+
+Running 5 tests using 1 worker
+
+(node:45604) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 e2e\draft.spec.ts:4:1 › real draft: ban/pick, evidence, flex, undo, next game, export and restore (17.1s)
+  ok 2 e2e\draft.spec.ts:98:1 › changed snapshot preserves input export and can start a fresh session (1.3s)
+  ok 3 e2e\draft.spec.ts:114:1 › Red may select first; exposed bot lane displays partner reservation (2.0s)
+  ok 4 e2e\draft.spec.ts:139:1 › manual placement skips occupied popular role and drag swaps occupied slots (1.6s)
+  ok 5 e2e\draft.spec.ts:171:1 › late top suggestion exposes Galio zero samples and Renekton two-game winrate (1.3s)
+
+  5 passed (24.3s)

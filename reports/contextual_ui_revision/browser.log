@@ -1,0 +1,13 @@
+
+> draft-lab-ui@0.1.0 test:e2e
+> playwright test
+
+
+Running 2 tests using 1 worker
+
+(node:7484) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok 1 e2e\draft.spec.ts:4:1 › real draft: ban/pick, evidence, flex, undo, next game, export and restore (12.3s)
+  ok 2 e2e\draft.spec.ts:88:1 › changed snapshot preserves input export and can start a fresh session (1.0s)
+
+  2 passed (14.3s)

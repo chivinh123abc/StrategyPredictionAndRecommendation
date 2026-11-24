@@ -1,0 +1,40 @@
+{
+  "checked_at_utc": "2026-11-24T10:08:44.300810+00:00",
+  "python_tests": 170,
+  "browser_workflows": 3,
+  "typecheck_and_build": "PASS",
+  "baseline_same_prefix_pick": "Jayce",
+  "guarded_same_prefix_pick": "Jhin",
+  "common_raw_scores_unchanged": true,
+  "mirrored_red_first_identical": true,
+  "same_prefix_draft_completed_legally": true,
+  "bo5_complete_games": 5,
+  "bo5_actions": 100,
+  "bo5_unique_picks": 50,
+  "first_picks": [
+    "red",
+    "red",
+    "blue",
+    "blue",
+    "red"
+  ],
+  "prior_locks": [
+    0,
+    10,
+    20,
+    30,
+    40
+  ],
+  "bo5_pair_review_picks": 4,
+  "bo5_secure_now_picks": 1,
+  "test_override_enabled": true,
+  "ui_repeat_blue_first_tested": true,
+  "api_repeat_red_first_tested": true,
+  "private_identifiers_absent": true,
+  "canonical_db_unchanged": true,
+  "database_sha256": "20e3d9739b271283f35a1ba33f345e3593bafe4e31212906d35939d91b2f740c",
+  "independent_strategic_improvement_proven": false,
+  "pair_optimality_proven": false,
+  "opponent_response_search": false,
+  "model_retrained": false
+}

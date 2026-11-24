@@ -1,0 +1,35 @@
+{"policy_version": "draft-modes-v1", "tier_floor": "MASTER", "tier_floor_status": "configurable_working_default_not_empirically_optimized", "knowledge_cutoff": "2026-05-29T20:26:40+00:00", "games": 1, "cohort_status_counts": {"historical_rank_unknown": 1}, "rank_mode_data_admissible_games": 1, "pro_high_rank_data_admissible_games": 0, "rank_mode_runtime": "planned", "pro_rank_signal_enabled": false, "note": "Unknown historical tier is not low rank. Supplied historical intervals are not independently authenticated.", "policy_sha256": "773281ad700b0db620ebcbac0f659a48f46de2c9fd11a57aeb849e18e0596177"}
+test_all_ten_documented_high_required (test_rank_eligibility.RankEligibilityTests.test_all_ten_documented_high_required) ... ok
+test_audit_dedup_private_export_and_read_only (test_rank_eligibility.RankEligibilityTests.test_audit_dedup_private_export_and_read_only) ... ok
+test_conflicting_historical_intervals_rejected (test_rank_eligibility.RankEligibilityTests.test_conflicting_historical_intervals_rejected) ... ok
+test_lower_tier_is_distinct_from_unknown (test_rank_eligibility.RankEligibilityTests.test_lower_tier_is_distinct_from_unknown) ... ok
+test_malformed_match_not_admitted_in_either_mode (test_rank_eligibility.RankEligibilityTests.test_malformed_match_not_admitted_in_either_mode) ... ok
+test_missing_source_invalid_interval_or_naive_time_rejected (test_rank_eligibility.RankEligibilityTests.test_missing_source_invalid_interval_or_naive_time_rejected) ... ok
+test_policy_refuses_unsafe_assumptions (test_rank_eligibility.RankEligibilityTests.test_policy_refuses_unsafe_assumptions) ... ok
+test_seed_only_is_unknown_not_low (test_rank_eligibility.RankEligibilityTests.test_seed_only_is_unknown_not_low) ... ok
+test_snapshots_never_become_historical_rank (test_rank_eligibility.RankEligibilityTests.test_snapshots_never_become_historical_rank) ... ok
+test_wrong_queue_server_future_observation_rejected (test_rank_eligibility.RankEligibilityTests.test_wrong_queue_server_future_observation_rejected) ... ok
+test_collection_limits_each_seed_and_passes_historical_range (test_rank_transfer.RankTransferTests.test_collection_limits_each_seed_and_passes_historical_range) ... ok
+test_hybrid_averages_supported_pair_residuals (test_rank_transfer.RankTransferTests.test_hybrid_averages_supported_pair_residuals) ... ok
+test_hybrid_missing_rank_preserves_control_exactly (test_rank_transfer.RankTransferTests.test_hybrid_missing_rank_preserves_control_exactly) ... ok
+test_metrics_and_bootstrap_pair_identity (test_rank_transfer.RankTransferTests.test_metrics_and_bootstrap_pair_identity) ... ok
+test_official_alias_collision_rejected (test_rank_transfer.RankTransferTests.test_official_alias_collision_rejected) ... ok
+test_official_aliases_ids_and_unknown_rejection (test_rank_transfer.RankTransferTests.test_official_aliases_ids_and_unknown_rejection) ... ok
+test_rank_residual_requires_samples_and_has_correct_sign (test_rank_transfer.RankTransferTests.test_rank_residual_requires_samples_and_has_correct_sign) ... ok
+test_series_disjoint_chronology_and_overlap_rejection (test_rank_transfer.RankTransferTests.test_series_disjoint_chronology_and_overlap_rejection) ... ok
+test_temporal_scope_uses_end_time_patch_platform (test_rank_transfer.RankTransferTests.test_temporal_scope_uses_end_time_patch_platform) ... ok
+test_ambiguous_roles_rejected (test_ranked_matchups.RankedMatchupsTests.test_ambiguous_roles_rejected) ... ok
+test_cache_dedup_rejection_and_summary (test_ranked_matchups.RankedMatchupsTests.test_cache_dedup_rejection_and_summary) ... ok
+test_client_auth_no_retry_and_no_leak (test_ranked_matchups.RankedMatchupsTests.test_client_auth_no_retry_and_no_leak) ... ok
+test_client_rate_limit_and_bounded_retry (test_ranked_matchups.RankedMatchupsTests.test_client_rate_limit_and_bounded_retry) ... ok
+test_frame_tolerance_and_descriptive_only_nearest (test_ranked_matchups.RankedMatchupsTests.test_frame_tolerance_and_descriptive_only_nearest) ... ok
+test_identity_queue_result_guards (test_ranked_matchups.RankedMatchupsTests.test_identity_queue_result_guards) ... ok
+test_missing_measurements_never_zero_or_future (test_ranked_matchups.RankedMatchupsTests.test_missing_measurements_never_zero_or_future) ... ok
+test_pro_strict_roles_and_actual_measurements (test_ranked_matchups.RankedMatchupsTests.test_pro_strict_roles_and_actual_measurements) ... ok
+test_short_game_no_15_backfill (test_ranked_matchups.RankedMatchupsTests.test_short_game_no_15_backfill) ... ok
+test_signed_mirrors_ids_and_no_future_frame (test_ranked_matchups.RankedMatchupsTests.test_signed_mirrors_ids_and_no_future_frame) ... ok
+
+----------------------------------------------------------------------
+Ran 29 tests in 0.126s
+
+OK

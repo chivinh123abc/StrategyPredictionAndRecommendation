@@ -1,5 +1,7 @@
 # Quy định cập nhật kiến thức và minh chứng báo cáo
 
+**Giới hạn phạm vi24/11/2026:** vận dụng bài học với một số mở rộng vừa sức, theo [phạm vi hiện hành](../docs/PHAM_VI_DO_AN_VUA_SUC.md). Trước khi thêm phương pháp, ưu tiên cách trong môn hoặc module sẵn có; ghi vì sao phần mở rộng cần thiết, giải thích được và dùng ở đâu. Không nhóm/đổi nhãn để nhận một công thức MR đang chạy thành MH. Không biến mỗi ý tưởng nghiên cứu thành chức năng bắt buộc; thay đổi không thêm lý thuyết thì ghi NV/chính sách, không tạo MR giả.
+
 Có hiệu lực từ23/11/2026, theo yêu cầu người dùng. Áp dụng cho người phát triển, AI và mọi bước SpecKit. Các đường dẫn dưới đây tính từ gốc dự án.
 
 ## 1. Tài liệu tổng hợp bắt buộc
